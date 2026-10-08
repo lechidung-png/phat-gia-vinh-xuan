@@ -36,14 +36,14 @@ Cloudflare Pages có cụm máy chủ CDN đặt trực tiếp tại Hà Nội v
 4. Kéo thả toàn bộ thư mục `web/out/` vào khung tải lên.
 5. Bấm **Deploy site**. Trang web sẽ hoạt động ngay lập tức với tên miền `*.pages.dev`.
 
-### Cách 2.2: Triển khai tự động qua Cloudflare Pages Git Integration
-1. Tại Cloudflare Pages, chọn **Connect to Git** và liên kết repo GitHub.
-2. Cấu hình bản dựng:
+### Cách 2.2: Triển khai tự động qua Cloudflare Pages Git Integration (Khuyến nghị số 1)
+1. Tại Cloudflare Pages, chọn **Connect to Git** và chọn repository **lechidung-png/phat-gia-vinh-xuan**.
+2. Cấu hình bản dựng (Build settings):
    - **Framework preset:** `Next.js (Static HTML Export)`
-   - **Root directory:** `web`
+   - **Root directory:** *(Để trống - không điền gì vì repo root chính là thư mục dự án)*
    - **Build command:** `npm run build`
    - **Build output directory:** `out`
-3. Bấm **Save and Deploy**. Mỗi khi bạn commit mã mới, Cloudflare sẽ tự động build lại trong 1 phút.
+3. Bấm **Save and Deploy**. Cloudflare sẽ tự động build và cấp phát tên miền `https://phat-gia-vinh-xuan.pages.dev` vĩnh viễn!
 
 ### Cách 2.3: Triển khai bằng Wrangler CLI
 Trong thư mục `web/`, chạy lệnh:
