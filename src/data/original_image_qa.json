@@ -1,0 +1,3204 @@
+{
+  "CHIEU_01": {
+    "code": "CHIEU_01",
+    "name": "Chiêu 1: Chiêu 1: Bái Tổ & Xỉa Song Thủ",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "199x431",
+    "laplacianVar": 308.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (116x348 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-001": {
+    "code": "CHIEU_01",
+    "name": "Chiêu 1: Chiêu 1: Bái Tổ & Xỉa Song Thủ",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "199x431",
+    "laplacianVar": 308.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (116x348 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_02": {
+    "code": "CHIEU_02",
+    "name": "Chiêu 2: Chiêu 2: Song Chưởng Hạ Trảm",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "180x432",
+    "laplacianVar": 288.5,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (96x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-002": {
+    "code": "CHIEU_02",
+    "name": "Chiêu 2: Chiêu 2: Song Chưởng Hạ Trảm",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "180x432",
+    "laplacianVar": 288.5,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (96x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_03": {
+    "code": "CHIEU_03",
+    "name": "Chiêu 3: Chiêu 3: Biên Thân Gạt Ngang & Giật Cổ Tay Phóng Chưởng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "175x432",
+    "laplacianVar": 272.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (94x348 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-003": {
+    "code": "CHIEU_03",
+    "name": "Chiêu 3: Chiêu 3: Biên Thân Gạt Ngang & Giật Cổ Tay Phóng Chưởng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "175x432",
+    "laplacianVar": 272.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (94x348 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_04": {
+    "code": "CHIEU_04",
+    "name": "Chiêu 4: Chiêu 4: Biên Thân Gạt Ngang & Phóng Chưởng Trái",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "228x432",
+    "laplacianVar": 213.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (162x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 213.0). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-004": {
+    "code": "CHIEU_04",
+    "name": "Chiêu 4: Chiêu 4: Biên Thân Gạt Ngang & Phóng Chưởng Trái",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "228x432",
+    "laplacianVar": 213.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (162x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 213.0). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_05": {
+    "code": "CHIEU_05",
+    "name": "Chiêu 5: Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "235x432",
+    "laplacianVar": 250.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (169x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-005": {
+    "code": "CHIEU_05",
+    "name": "Chiêu 5: Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "235x432",
+    "laplacianVar": 250.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (169x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_06": {
+    "code": "CHIEU_06",
+    "name": "Chiêu 6: Chiêu 6: Biên Thân Đỡ & Chưởng Ngang Trái",
+    "status": "warning",
+    "qualityScore": 80,
+    "resolution": "251x490",
+    "laplacianVar": 308.3,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-006": {
+    "code": "CHIEU_06",
+    "name": "Chiêu 6: Chiêu 6: Biên Thân Đỡ & Chưởng Ngang Trái",
+    "status": "warning",
+    "qualityScore": 80,
+    "resolution": "251x490",
+    "laplacianVar": 308.3,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_07": {
+    "code": "CHIEU_07",
+    "name": "Chiêu 7: Chiêu 7: Than Thủ & Bàng Thủ Xoay Trục",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "171x428",
+    "laplacianVar": 297.1,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (88x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-007": {
+    "code": "CHIEU_07",
+    "name": "Chiêu 7: Chiêu 7: Than Thủ & Bàng Thủ Xoay Trục",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "171x428",
+    "laplacianVar": 297.1,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (88x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_08": {
+    "code": "CHIEU_08",
+    "name": "Chiêu 8: Chiêu 8: Than Thủ & Bàng Thủ Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "166x430",
+    "laplacianVar": 271.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (83x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-008": {
+    "code": "CHIEU_08",
+    "name": "Chiêu 8: Chiêu 8: Than Thủ & Bàng Thủ Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "166x430",
+    "laplacianVar": 271.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (83x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_09": {
+    "code": "CHIEU_09",
+    "name": "Chiêu 9: Chiêu 9: Song Quyền Thượng Trảm Hạ Giác",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "171x427",
+    "laplacianVar": 339.8,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (87x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-009": {
+    "code": "CHIEU_09",
+    "name": "Chiêu 9: Chiêu 9: Song Quyền Thượng Trảm Hạ Giác",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "171x427",
+    "laplacianVar": 339.8,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (87x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_10": {
+    "code": "CHIEU_10",
+    "name": "Chiêu 10: Chiêu 10: Song Quyền Thượng Trảm Đối Xứng Trái & Than Thủ Song Thôi Chưởng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "182x428",
+    "laplacianVar": 261.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (99x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-010": {
+    "code": "CHIEU_10",
+    "name": "Chiêu 10: Chiêu 10: Song Quyền Thượng Trảm Đối Xứng Trái & Than Thủ Song Thôi Chưởng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "182x428",
+    "laplacianVar": 261.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (99x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_11": {
+    "code": "CHIEU_11",
+    "name": "Chiêu 11: Chiêu 11: Song Xà Xỉa Thủ Biên Thân",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "174x430",
+    "laplacianVar": 292.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (90x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-011": {
+    "code": "CHIEU_11",
+    "name": "Chiêu 11: Chiêu 11: Song Xà Xỉa Thủ Biên Thân",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "174x430",
+    "laplacianVar": 292.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (90x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_12": {
+    "code": "CHIEU_12",
+    "name": "Chiêu 12: Chiêu 12: Song Xà Xỉa Thủ Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "168x430",
+    "laplacianVar": 342.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (85x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-012": {
+    "code": "CHIEU_12",
+    "name": "Chiêu 12: Chiêu 12: Song Xà Xỉa Thủ Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "168x430",
+    "laplacianVar": 342.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (85x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_13": {
+    "code": "CHIEU_13",
+    "name": "Chiêu 13: Chiêu 13: Song Chưởng Hất Thượng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "173x431",
+    "laplacianVar": 285.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (90x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-013": {
+    "code": "CHIEU_13",
+    "name": "Chiêu 13: Chiêu 13: Song Chưởng Hất Thượng",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "173x431",
+    "laplacianVar": 285.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (90x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_14": {
+    "code": "CHIEU_14",
+    "name": "Chiêu 14: Chiêu 14: Song Chưởng Hất Thượng Đối Xứng & Đấm Thẳng Lật Chém",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "191x433",
+    "laplacianVar": 233.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (108x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 233.2). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-014": {
+    "code": "CHIEU_14",
+    "name": "Chiêu 14: Chiêu 14: Song Chưởng Hất Thượng Đối Xứng & Đấm Thẳng Lật Chém",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "191x433",
+    "laplacianVar": 233.2,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (108x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 233.2). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_15": {
+    "code": "CHIEU_15",
+    "name": "Chiêu 15: Chiêu 15: Song Cẳng Tay Nghịch Hướng",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "174x428",
+    "laplacianVar": 218.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (94x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 218.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-015": {
+    "code": "CHIEU_15",
+    "name": "Chiêu 15: Chiêu 15: Song Cẳng Tay Nghịch Hướng",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "174x428",
+    "laplacianVar": 218.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (94x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 218.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_16": {
+    "code": "CHIEU_16",
+    "name": "Chiêu 16: Chiêu 16: Song Cẳng Tay Nghịch Hướng Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "188x429",
+    "laplacianVar": 185.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (107x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 185.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-016": {
+    "code": "CHIEU_16",
+    "name": "Chiêu 16: Chiêu 16: Song Cẳng Tay Nghịch Hướng Đối Xứng Bên Trái",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "188x429",
+    "laplacianVar": 185.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (107x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 185.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_17": {
+    "code": "CHIEU_17",
+    "name": "Chiêu 17: Chiêu 17: Thu Bụng Phóng Song Chưởng & Nhảy Bật Biên Thân 9 Quyền",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "173x427",
+    "laplacianVar": 225.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (91x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 225.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-017": {
+    "code": "CHIEU_17",
+    "name": "Chiêu 17: Chiêu 17: Thu Bụng Phóng Song Chưởng & Nhảy Bật Biên Thân 9 Quyền",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "173x427",
+    "laplacianVar": 225.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (91x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 225.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_18": {
+    "code": "CHIEU_18",
+    "name": "Chiêu 18: Chiêu 18: Nhảy Bật Biên Thân Đánh Ngược Lại 9 Quyền",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "179x426",
+    "laplacianVar": 329.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (96x342 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-018": {
+    "code": "CHIEU_18",
+    "name": "Chiêu 18: Chiêu 18: Nhảy Bật Biên Thân Đánh Ngược Lại 9 Quyền",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "179x426",
+    "laplacianVar": 329.7,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (96x342 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_19": {
+    "code": "CHIEU_19",
+    "name": "Chiêu 19: Chiêu 19: Liên Hoàn 9 Quyền, Kiềm Dương Lướt Chân & Bái Tổ",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "180x426",
+    "laplacianVar": 233.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (97x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 233.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-019": {
+    "code": "CHIEU_19",
+    "name": "Chiêu 19: Chiêu 19: Liên Hoàn 9 Quyền, Kiềm Dương Lướt Chân & Bái Tổ",
+    "status": "rejected_source",
+    "qualityScore": 30,
+    "resolution": "180x426",
+    "laplacianVar": 233.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (97x344 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 233.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_20": {
+    "code": "CHIEU_20",
+    "name": "Chiêu 20: Chiêu 20: Hồi Tấn Khởi Thế Giai Đoạn 2",
+    "status": "warning",
+    "qualityScore": 85,
+    "resolution": "240x488",
+    "laplacianVar": 239.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 239.1). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-020": {
+    "code": "CHIEU_20",
+    "name": "Chiêu 20: Chiêu 20: Hồi Tấn Khởi Thế Giai Đoạn 2",
+    "status": "warning",
+    "qualityScore": 85,
+    "resolution": "240x488",
+    "laplacianVar": 239.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 239.1). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_21": {
+    "code": "CHIEU_21",
+    "name": "Chiêu 21: Chiêu 21: Khoa Chân Bàng Thủ & Chưởng Hạ Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "271x404",
+    "laplacianVar": 278.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (188x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-021": {
+    "code": "CHIEU_21",
+    "name": "Chiêu 21: Chiêu 21: Khoa Chân Bàng Thủ & Chưởng Hạ Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "271x404",
+    "laplacianVar": 278.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (188x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_22": {
+    "code": "CHIEU_22",
+    "name": "Chiêu 22: Chiêu 22: Khoa Chân Bàng Thủ & Chưởng Hạ Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "263x402",
+    "laplacianVar": 296.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (180x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-022": {
+    "code": "CHIEU_22",
+    "name": "Chiêu 22: Chiêu 22: Khoa Chân Bàng Thủ & Chưởng Hạ Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "263x402",
+    "laplacianVar": 296.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (180x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_23": {
+    "code": "CHIEU_23",
+    "name": "Chiêu 23: Chiêu 23: Khấu Thủ Cuốn Cổ Tay & Phóng Tiêu Thủ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "323x407",
+    "laplacianVar": 273.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (240x324 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-023": {
+    "code": "CHIEU_23",
+    "name": "Chiêu 23: Chiêu 23: Khấu Thủ Cuốn Cổ Tay & Phóng Tiêu Thủ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "323x407",
+    "laplacianVar": 273.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (240x324 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_24": {
+    "code": "CHIEU_24",
+    "name": "Chiêu 24: Chiêu 24: Khấu Thủ Cuốn Cổ Tay Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "312x402",
+    "laplacianVar": 267.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (231x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-024": {
+    "code": "CHIEU_24",
+    "name": "Chiêu 24: Chiêu 24: Khấu Thủ Cuốn Cổ Tay Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "312x402",
+    "laplacianVar": 267.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (231x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_25": {
+    "code": "CHIEU_25",
+    "name": "Chiêu 25: Chiêu 25: Báo Chuỳ Đập Thái Dương & Trửu Pháp",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "302x464",
+    "laplacianVar": 308.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-025": {
+    "code": "CHIEU_25",
+    "name": "Chiêu 25: Chiêu 25: Báo Chuỳ Đập Thái Dương & Trửu Pháp",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "302x464",
+    "laplacianVar": 308.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_26": {
+    "code": "CHIEU_26",
+    "name": "Chiêu 26: Chiêu 26: Báo Chuỳ & Trửu Pháp Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "315x464",
+    "laplacianVar": 263.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-026": {
+    "code": "CHIEU_26",
+    "name": "Chiêu 26: Chiêu 26: Báo Chuỳ & Trửu Pháp Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "315x464",
+    "laplacianVar": 263.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_27": {
+    "code": "CHIEU_27",
+    "name": "Chiêu 27: Chiêu 27: Hạc Dực Quét Cánh & Hạc Chuỳ Điểm Huyệt",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "320x405",
+    "laplacianVar": 263.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-027": {
+    "code": "CHIEU_27",
+    "name": "Chiêu 27: Chiêu 27: Hạc Dực Quét Cánh & Hạc Chuỳ Điểm Huyệt",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "320x405",
+    "laplacianVar": 263.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_28": {
+    "code": "CHIEU_28",
+    "name": "Chiêu 28: Chiêu 28: Hạc Dực & Hạc Chuỳ Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "317x403",
+    "laplacianVar": 282.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (234x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-028": {
+    "code": "CHIEU_28",
+    "name": "Chiêu 28: Chiêu 28: Hạc Dực & Hạc Chuỳ Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "317x403",
+    "laplacianVar": 282.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (234x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_29": {
+    "code": "CHIEU_29",
+    "name": "Chiêu 29: Chiêu 29: Phục Thủ Đè Đòn & Nhật Tự Quyền Xuyên Tâm",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "292x402",
+    "laplacianVar": 256.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-029": {
+    "code": "CHIEU_29",
+    "name": "Chiêu 29: Chiêu 29: Phục Thủ Đè Đòn & Nhật Tự Quyền Xuyên Tâm",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "292x402",
+    "laplacianVar": 256.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_30": {
+    "code": "CHIEU_30",
+    "name": "Chiêu 30: Chiêu 30: Phục Thủ & Nhật Tự Quyền Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "311x460",
+    "laplacianVar": 275.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-030": {
+    "code": "CHIEU_30",
+    "name": "Chiêu 30: Chiêu 30: Phục Thủ & Nhật Tự Quyền Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "311x460",
+    "laplacianVar": 275.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_31": {
+    "code": "CHIEU_31",
+    "name": "Chiêu 31: Chiêu 31: Thao Thủ Cuốn Cẳng Tay & Bẻ Cổ Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "309x461",
+    "laplacianVar": 257.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-031": {
+    "code": "CHIEU_31",
+    "name": "Chiêu 31: Chiêu 31: Thao Thủ Cuốn Cẳng Tay & Bẻ Cổ Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "309x461",
+    "laplacianVar": 257.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_32": {
+    "code": "CHIEU_32",
+    "name": "Chiêu 32: Chiêu 32: Thao Thủ Cuốn Bẻ Khớp Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "306x402",
+    "laplacianVar": 285.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-032": {
+    "code": "CHIEU_32",
+    "name": "Chiêu 32: Chiêu 32: Thao Thủ Cuốn Bẻ Khớp Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "306x402",
+    "laplacianVar": 285.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_33": {
+    "code": "CHIEU_33",
+    "name": "Chiêu 33: Chiêu 33: Đát Thủ Gạt Tạt & Chưởng Vạt Cổ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "305x402",
+    "laplacianVar": 276.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-033": {
+    "code": "CHIEU_33",
+    "name": "Chiêu 33: Chiêu 33: Đát Thủ Gạt Tạt & Chưởng Vạt Cổ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "305x402",
+    "laplacianVar": 276.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_34": {
+    "code": "CHIEU_34",
+    "name": "Chiêu 34: Chiêu 34: Đát Thủ & Chưởng Vạt Cổ Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x424",
+    "laplacianVar": 266.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x340 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-034": {
+    "code": "CHIEU_34",
+    "name": "Chiêu 34: Chiêu 34: Đát Thủ & Chưởng Vạt Cổ Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x424",
+    "laplacianVar": 266.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x340 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_35": {
+    "code": "CHIEU_35",
+    "name": "Chiêu 35: Chiêu 35: Song Thao Thủ & Chưởng Chấn Thủy",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "284x467",
+    "laplacianVar": 340.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-035": {
+    "code": "CHIEU_35",
+    "name": "Chiêu 35: Chiêu 35: Song Thao Thủ & Chưởng Chấn Thủy",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "284x467",
+    "laplacianVar": 340.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_36": {
+    "code": "CHIEU_36",
+    "name": "Chiêu 36: Chiêu 36: Song Thao Thủ Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "302x403",
+    "laplacianVar": 246.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-036": {
+    "code": "CHIEU_36",
+    "name": "Chiêu 36: Chiêu 36: Song Thao Thủ Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "302x403",
+    "laplacianVar": 246.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (223x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_37": {
+    "code": "CHIEU_37",
+    "name": "Chiêu 37: Chiêu 37: Lan Thủ Đỡ Cản & Xỉa Độc Thủ",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x470",
+    "laplacianVar": 311.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-037": {
+    "code": "CHIEU_37",
+    "name": "Chiêu 37: Chiêu 37: Lan Thủ Đỡ Cản & Xỉa Độc Thủ",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x470",
+    "laplacianVar": 311.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_38": {
+    "code": "CHIEU_38",
+    "name": "Chiêu 38: Chiêu 38: Lan Thủ & Xỉa Độc Thủ Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "289x469",
+    "laplacianVar": 305.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-038": {
+    "code": "CHIEU_38",
+    "name": "Chiêu 38: Chiêu 38: Lan Thủ & Xỉa Độc Thủ Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "289x469",
+    "laplacianVar": 305.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_39": {
+    "code": "CHIEU_39",
+    "name": "Chiêu 39: Chiêu 39: Cầm Nã Khóa Cánh Tay & Lên Gối Sườn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "281x404",
+    "laplacianVar": 266.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (198x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-039": {
+    "code": "CHIEU_39",
+    "name": "Chiêu 39: Chiêu 39: Cầm Nã Khóa Cánh Tay & Lên Gối Sườn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "281x404",
+    "laplacianVar": 266.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (198x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_40": {
+    "code": "CHIEU_40",
+    "name": "Chiêu 40: Chiêu 40: Cầm Nã & Lên Gối Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "310x399",
+    "laplacianVar": 287.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (226x315 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-040": {
+    "code": "CHIEU_40",
+    "name": "Chiêu 40: Chiêu 40: Cầm Nã & Lên Gối Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "310x399",
+    "laplacianVar": 287.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (226x315 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_41": {
+    "code": "CHIEU_41",
+    "name": "Chiêu 41: Chiêu 41: Triệt Cước Quét Chân Hạ Bàn & Đấm Thẳng",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "309x402",
+    "laplacianVar": 230.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (227x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 230.7). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-041": {
+    "code": "CHIEU_41",
+    "name": "Chiêu 41: Chiêu 41: Triệt Cước Quét Chân Hạ Bàn & Đấm Thẳng",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "309x402",
+    "laplacianVar": 230.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (227x319 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 230.7). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_42": {
+    "code": "CHIEU_42",
+    "name": "Chiêu 42: Chiêu 42: Triệt Cước & Đấm Thẳng Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "316x464",
+    "laplacianVar": 271.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-042": {
+    "code": "CHIEU_42",
+    "name": "Chiêu 42: Chiêu 42: Triệt Cước & Đấm Thẳng Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "316x464",
+    "laplacianVar": 271.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_43": {
+    "code": "CHIEU_43",
+    "name": "Chiêu 43: Chiêu 43: Kéo Dính & Thiết Đầu Công Húc Trán",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "322x464",
+    "laplacianVar": 250.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-043": {
+    "code": "CHIEU_43",
+    "name": "Chiêu 43: Chiêu 43: Kéo Dính & Thiết Đầu Công Húc Trán",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "322x464",
+    "laplacianVar": 250.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_44": {
+    "code": "CHIEU_44",
+    "name": "Chiêu 44: Chiêu 44: Thung Kình Vẩy Cổ Tay Rung Giật",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "328x400",
+    "laplacianVar": 237.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (245x317 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 237.4). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-044": {
+    "code": "CHIEU_44",
+    "name": "Chiêu 44: Chiêu 44: Thung Kình Vẩy Cổ Tay Rung Giật",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "328x400",
+    "laplacianVar": 237.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (245x317 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 237.4). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_45": {
+    "code": "CHIEU_45",
+    "name": "Chiêu 45: Chiêu 45: Long Thủ Hộ Hạ Môn & Móc Giật Long Trảo",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "281x401",
+    "laplacianVar": 234.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (197x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 234.8). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-045": {
+    "code": "CHIEU_45",
+    "name": "Chiêu 45: Chiêu 45: Long Thủ Hộ Hạ Môn & Móc Giật Long Trảo",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "281x401",
+    "laplacianVar": 234.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (197x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 234.8). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_46": {
+    "code": "CHIEU_46",
+    "name": "Chiêu 46: Chiêu 46: Bắt Chéo Song Thủ & Chém Cạnh Bàn Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "307x462",
+    "laplacianVar": 258.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-046": {
+    "code": "CHIEU_46",
+    "name": "Chiêu 46: Chiêu 46: Bắt Chéo Song Thủ & Chém Cạnh Bàn Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "307x462",
+    "laplacianVar": 258.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_47": {
+    "code": "CHIEU_47",
+    "name": "Chiêu 47: Chiêu 47: Liên Hoàn Thúc Gối Phải Tầm Cao",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "281x462",
+    "laplacianVar": 244.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-047": {
+    "code": "CHIEU_47",
+    "name": "Chiêu 47: Chiêu 47: Liên Hoàn Thúc Gối Phải Tầm Cao",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "281x462",
+    "laplacianVar": 244.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_48": {
+    "code": "CHIEU_48",
+    "name": "Chiêu 48: Chiêu 48: Liên Hoàn Thúc Gối Vòng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "270x404",
+    "laplacianVar": 281.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (187x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-048": {
+    "code": "CHIEU_48",
+    "name": "Chiêu 48: Chiêu 48: Liên Hoàn Thúc Gối Vòng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "270x404",
+    "laplacianVar": 281.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (187x321 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_49": {
+    "code": "CHIEU_49",
+    "name": "Chiêu 49: Chiêu 49: Giật Chéo Đánh Miết Gối Hạ Trọng Tâm",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "283x462",
+    "laplacianVar": 339.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-049": {
+    "code": "CHIEU_49",
+    "name": "Chiêu 49: Chiêu 49: Giật Chéo Đánh Miết Gối Hạ Trọng Tâm",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "283x462",
+    "laplacianVar": 339.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_50": {
+    "code": "CHIEU_50",
+    "name": "Chiêu 50: Chiêu 50: Đẩy Song Cẳng Tay & Song Quyền Thẳng Bụng",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "313x462",
+    "laplacianVar": 259.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-050": {
+    "code": "CHIEU_50",
+    "name": "Chiêu 50: Chiêu 50: Đẩy Song Cẳng Tay & Song Quyền Thẳng Bụng",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "313x462",
+    "laplacianVar": 259.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_51": {
+    "code": "CHIEU_51",
+    "name": "Chiêu 51: Chiêu 51: Xà Thủ Thốc Thượng & Bàn Tay Dựng Đỡ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x400",
+    "laplacianVar": 266.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (238x317 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-051": {
+    "code": "CHIEU_51",
+    "name": "Chiêu 51: Chiêu 51: Xà Thủ Thốc Thượng & Bàn Tay Dựng Đỡ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x400",
+    "laplacianVar": 266.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (238x317 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_52": {
+    "code": "CHIEU_52",
+    "name": "Chiêu 52: Chiêu 52: Xà Thủ Thốc Thượng Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "288x402",
+    "laplacianVar": 245.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (205x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-052": {
+    "code": "CHIEU_52",
+    "name": "Chiêu 52: Chiêu 52: Xà Thủ Thốc Thượng Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "288x402",
+    "laplacianVar": 245.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (205x318 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_53": {
+    "code": "CHIEU_53",
+    "name": "Chiêu 53: Chiêu 53: Báo Thủ Vòng Đập Huyệt Thái Dương",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "299x403",
+    "laplacianVar": 221.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 221.6). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-053": {
+    "code": "CHIEU_53",
+    "name": "Chiêu 53: Chiêu 53: Báo Thủ Vòng Đập Huyệt Thái Dương",
+    "status": "warning",
+    "qualityScore": 60,
+    "resolution": "299x403",
+    "laplacianVar": 221.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x320 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 221.6). Chi tiết ngón tay có thể bị giảm độ tương phản."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_54": {
+    "code": "CHIEU_54",
+    "name": "Chiêu 54: Chiêu 54: Báo Thủ Vòng Thái Dương Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "299x409",
+    "laplacianVar": 248.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x340 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-054": {
+    "code": "CHIEU_54",
+    "name": "Chiêu 54: Chiêu 54: Báo Thủ Vòng Thái Dương Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "299x409",
+    "laplacianVar": 248.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x340 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_55": {
+    "code": "CHIEU_55",
+    "name": "Chiêu 55: Chiêu 55: Ép Chưởng Khớp Khuỷu & Kẹp Cổ Tay",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "289x390",
+    "laplacianVar": 385.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (206x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-055": {
+    "code": "CHIEU_55",
+    "name": "Chiêu 55: Chiêu 55: Ép Chưởng Khớp Khuỷu & Kẹp Cổ Tay",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "289x390",
+    "laplacianVar": 385.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (206x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_56": {
+    "code": "CHIEU_56",
+    "name": "Chiêu 56: Chiêu 56: Ép Chưởng Khớp Khuỷu Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "326x389",
+    "laplacianVar": 346.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (250x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-056": {
+    "code": "CHIEU_56",
+    "name": "Chiêu 56: Chiêu 56: Ép Chưởng Khớp Khuỷu Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "326x389",
+    "laplacianVar": 346.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (250x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_57": {
+    "code": "CHIEU_57",
+    "name": "Chiêu 57: Chiêu 57: Song Thủ Ôm Đẩy Cẳng Tay & Vững Hạ Bàn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "336x390",
+    "laplacianVar": 330.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (253x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-057": {
+    "code": "CHIEU_57",
+    "name": "Chiêu 57: Chiêu 57: Song Thủ Ôm Đẩy Cẳng Tay & Vững Hạ Bàn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "336x390",
+    "laplacianVar": 330.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (253x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_58": {
+    "code": "CHIEU_58",
+    "name": "Chiêu 58: Chiêu 58: Song Thủ Ôm Đẩy Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "607x389",
+    "laplacianVar": 372.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (525x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-058": {
+    "code": "CHIEU_58",
+    "name": "Chiêu 58: Chiêu 58: Song Thủ Ôm Đẩy Đối Xứng Bên Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "607x389",
+    "laplacianVar": 372.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (525x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_59": {
+    "code": "CHIEU_59",
+    "name": "Chiêu 59: Chiêu 59: Hóa Giải Đòn Đấm Kép Thượng Hạ & Đánh 2 Cổ Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "333x448",
+    "laplacianVar": 350.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-059": {
+    "code": "CHIEU_59",
+    "name": "Chiêu 59: Chiêu 59: Hóa Giải Đòn Đấm Kép Thượng Hạ & Đánh 2 Cổ Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "333x448",
+    "laplacianVar": 350.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_60": {
+    "code": "CHIEU_60",
+    "name": "Chiêu 60: Chiêu 60: Hóa Giải Đòn Đấm Kép Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "346x454",
+    "laplacianVar": 294.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-060": {
+    "code": "CHIEU_60",
+    "name": "Chiêu 60: Chiêu 60: Hóa Giải Đòn Đấm Kép Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "346x454",
+    "laplacianVar": 294.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_61": {
+    "code": "CHIEU_61",
+    "name": "Chiêu 61: Chiêu 61: Khuyên Thủ Cuốn Tròn & Khẩu Thủ Bẻ Cổ Tay",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "296x387",
+    "laplacianVar": 347.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (213x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-061": {
+    "code": "CHIEU_61",
+    "name": "Chiêu 61: Chiêu 61: Khuyên Thủ Cuốn Tròn & Khẩu Thủ Bẻ Cổ Tay",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "296x387",
+    "laplacianVar": 347.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (213x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_62": {
+    "code": "CHIEU_62",
+    "name": "Chiêu 62: Chiêu 62: Khuyên Thủ Cuốn Tròn Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "307x386",
+    "laplacianVar": 323.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (228x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-062": {
+    "code": "CHIEU_62",
+    "name": "Chiêu 62: Chiêu 62: Khuyên Thủ Cuốn Tròn Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "307x386",
+    "laplacianVar": 323.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (228x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_63": {
+    "code": "CHIEU_63",
+    "name": "Chiêu 63: Chiêu 63: Tiến Bước Xỉa Song Xà Thủ Tầm Thấp",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x387",
+    "laplacianVar": 260.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (239x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-063": {
+    "code": "CHIEU_63",
+    "name": "Chiêu 63: Chiêu 63: Tiến Bước Xỉa Song Xà Thủ Tầm Thấp",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x387",
+    "laplacianVar": 260.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (239x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_64": {
+    "code": "CHIEU_64",
+    "name": "Chiêu 64: Chiêu 64: Tiến Bước Xỉa Song Xà Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "323x386",
+    "laplacianVar": 291.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (240x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-064": {
+    "code": "CHIEU_64",
+    "name": "Chiêu 64: Chiêu 64: Tiến Bước Xỉa Song Xà Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "323x386",
+    "laplacianVar": 291.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (240x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_65": {
+    "code": "CHIEU_65",
+    "name": "Chiêu 65: Chiêu 65: Hoành Thoái Vắt Tay Long Trảo Đỡ Đòn",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "314x388",
+    "laplacianVar": 241.4,
+    "handClarity": "partially_blurred",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (230x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Chi tiết các đốt ngón tay bị bết dính. Khó xác định chính xác thủ ấn (Liễu diệp chưởng hay Tiêu chỉ)."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-065": {
+    "code": "CHIEU_65",
+    "name": "Chiêu 65: Chiêu 65: Hoành Thoái Vắt Tay Long Trảo Đỡ Đòn",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "314x388",
+    "laplacianVar": 241.4,
+    "handClarity": "partially_blurred",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (230x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Chi tiết các đốt ngón tay bị bết dính. Khó xác định chính xác thủ ấn (Liễu diệp chưởng hay Tiêu chỉ)."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_66": {
+    "code": "CHIEU_66",
+    "name": "Chiêu 66: Chiêu 66: Hoành Thoái Long Trảo Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x387",
+    "laplacianVar": 280.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-066": {
+    "code": "CHIEU_66",
+    "name": "Chiêu 66: Chiêu 66: Hoành Thoái Long Trảo Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "321x387",
+    "laplacianVar": 280.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_67": {
+    "code": "CHIEU_67",
+    "name": "Chiêu 67: Chiêu 67: Song Thủ Khẩu Quyền & Đánh Chỏ Hướng Sau",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "314x386",
+    "laplacianVar": 264.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (231x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-067": {
+    "code": "CHIEU_67",
+    "name": "Chiêu 67: Chiêu 67: Song Thủ Khẩu Quyền & Đánh Chỏ Hướng Sau",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "314x386",
+    "laplacianVar": 264.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (231x303 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_68": {
+    "code": "CHIEU_68",
+    "name": "Chiêu 68: Chiêu 68: Song Thủ Khẩu Quyền Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x389",
+    "laplacianVar": 334.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (210x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-068": {
+    "code": "CHIEU_68",
+    "name": "Chiêu 68: Chiêu 68: Song Thủ Khẩu Quyền Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x389",
+    "laplacianVar": 334.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (210x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_69": {
+    "code": "CHIEU_69",
+    "name": "Chiêu 69: Chiêu 69: Tiến Chân Đấm Nhật Tự Quyền & Thung Kình Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "310x387",
+    "laplacianVar": 311.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (227x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-069": {
+    "code": "CHIEU_69",
+    "name": "Chiêu 69: Chiêu 69: Tiến Chân Đấm Nhật Tự Quyền & Thung Kình Phải",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "310x387",
+    "laplacianVar": 311.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (227x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_70": {
+    "code": "CHIEU_70",
+    "name": "Chiêu 70: Chiêu 70: Tiến Chân Đấm Thẳng Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "604x390",
+    "laplacianVar": 375.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (521x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-070": {
+    "code": "CHIEU_70",
+    "name": "Chiêu 70: Chiêu 70: Tiến Chân Đấm Thẳng Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "604x390",
+    "laplacianVar": 375.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (521x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_71": {
+    "code": "CHIEU_71",
+    "name": "Chiêu 71: Chiêu 71: Khoa Chân Bàng Thủ Vòng Cung & Chém Trảm Nghịch",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "305x456",
+    "laplacianVar": 369.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-071": {
+    "code": "CHIEU_71",
+    "name": "Chiêu 71: Chiêu 71: Khoa Chân Bàng Thủ Vòng Cung & Chém Trảm Nghịch",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "305x456",
+    "laplacianVar": 369.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_72": {
+    "code": "CHIEU_72",
+    "name": "Chiêu 72: Chiêu 72: Khoa Chân Bàng Thủ Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "303x456",
+    "laplacianVar": 323.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-072": {
+    "code": "CHIEU_72",
+    "name": "Chiêu 72: Chiêu 72: Khoa Chân Bàng Thủ Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "303x456",
+    "laplacianVar": 323.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_73": {
+    "code": "CHIEU_73",
+    "name": "Chiêu 73: Chiêu 73: Song Long Trảo Cấu Bẻ Cổ & Quét Gót Hạ Bàn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "311x388",
+    "laplacianVar": 274.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (228x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-073": {
+    "code": "CHIEU_73",
+    "name": "Chiêu 73: Chiêu 73: Song Long Trảo Cấu Bẻ Cổ & Quét Gót Hạ Bàn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "311x388",
+    "laplacianVar": 274.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (228x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_74": {
+    "code": "CHIEU_74",
+    "name": "Chiêu 74: Chiêu 74: Song Long Trảo Quét Chân Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "333x389",
+    "laplacianVar": 289.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (250x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-074": {
+    "code": "CHIEU_74",
+    "name": "Chiêu 74: Chiêu 74: Song Long Trảo Quét Chân Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "333x389",
+    "laplacianVar": 289.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (250x306 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_75": {
+    "code": "CHIEU_75",
+    "name": "Chiêu 75: Chiêu 75: Đát Thủ Bung Lực & Xỉa Hầu Xuyên Tâm",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "322x388",
+    "laplacianVar": 309.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (239x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-075": {
+    "code": "CHIEU_75",
+    "name": "Chiêu 75: Chiêu 75: Đát Thủ Bung Lực & Xỉa Hầu Xuyên Tâm",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "322x388",
+    "laplacianVar": 309.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (239x304 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_76": {
+    "code": "CHIEU_76",
+    "name": "Chiêu 76: Chiêu 76: Đát Thủ Bung Lực Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "339x388",
+    "laplacianVar": 291.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (256x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-076": {
+    "code": "CHIEU_76",
+    "name": "Chiêu 76: Chiêu 76: Đát Thủ Bung Lực Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "339x388",
+    "laplacianVar": 291.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (256x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_77": {
+    "code": "CHIEU_77",
+    "name": "Chiêu 77: Chiêu 77: Chưởng Phạt Song Song & Kẹp Hạ Bộ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "320x388",
+    "laplacianVar": 300.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-077": {
+    "code": "CHIEU_77",
+    "name": "Chiêu 77: Chiêu 77: Chưởng Phạt Song Song & Kẹp Hạ Bộ",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "320x388",
+    "laplacianVar": 300.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (237x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_78": {
+    "code": "CHIEU_78",
+    "name": "Chiêu 78: Chiêu 78: Chưởng Phạt Song Song Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "611x388",
+    "laplacianVar": 312.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (528x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-078": {
+    "code": "CHIEU_78",
+    "name": "Chiêu 78: Chiêu 78: Chưởng Phạt Song Song Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "611x388",
+    "laplacianVar": 312.2,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (528x305 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_79": {
+    "code": "CHIEU_79",
+    "name": "Chiêu 79: Chiêu 79: Phục Thủ Đè Nách & Đấm Móc Chấn Thủy",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "289x391",
+    "laplacianVar": 307.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (206x308 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-079": {
+    "code": "CHIEU_79",
+    "name": "Chiêu 79: Chiêu 79: Phục Thủ Đè Nách & Đấm Móc Chấn Thủy",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "289x391",
+    "laplacianVar": 307.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (206x308 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_80": {
+    "code": "CHIEU_80",
+    "name": "Chiêu 80: Chiêu 80: Phục Thủ & Đấm Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x392",
+    "laplacianVar": 289.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x309 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-080": {
+    "code": "CHIEU_80",
+    "name": "Chiêu 80: Chiêu 80: Phục Thủ & Đấm Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x392",
+    "laplacianVar": 289.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x309 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_81": {
+    "code": "CHIEU_81",
+    "name": "Chiêu 81: Chiêu 81: Than Thủ Nâng Lực & Chém Cườm Tay Xuyên Sườn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x390",
+    "laplacianVar": 377.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (210x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-081": {
+    "code": "CHIEU_81",
+    "name": "Chiêu 81: Chiêu 81: Than Thủ Nâng Lực & Chém Cườm Tay Xuyên Sườn",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x390",
+    "laplacianVar": 377.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (210x307 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_82": {
+    "code": "CHIEU_82",
+    "name": "Chiêu 82: Chiêu 82: Than Thủ & Chém Cườm Tay Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "316x393",
+    "laplacianVar": 339.8,
+    "handClarity": "partially_blurred",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (233x310 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Chi tiết các đốt ngón tay bị bết dính. Khó xác định chính xác thủ ấn (Liễu diệp chưởng hay Tiêu chỉ)."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-082": {
+    "code": "CHIEU_82",
+    "name": "Chiêu 82: Chiêu 82: Than Thủ & Chém Cườm Tay Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 65,
+    "resolution": "316x393",
+    "laplacianVar": 339.8,
+    "handClarity": "partially_blurred",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (233x310 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Chi tiết các đốt ngón tay bị bết dính. Khó xác định chính xác thủ ấn (Liễu diệp chưởng hay Tiêu chỉ)."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_83": {
+    "code": "CHIEU_83",
+    "name": "Chiêu 83: Chiêu 83: Bắt Chéo Hai Cùi Chỏ Ép Cổ & Thúc Gối Nhập Nội",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "302x457",
+    "laplacianVar": 355.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-083": {
+    "code": "CHIEU_83",
+    "name": "Chiêu 83: Chiêu 83: Bắt Chéo Hai Cùi Chỏ Ép Cổ & Thúc Gối Nhập Nội",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "302x457",
+    "laplacianVar": 355.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_84": {
+    "code": "CHIEU_84",
+    "name": "Chiêu 84: Chiêu 84: Khóa Cổ Thúc Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "329x456",
+    "laplacianVar": 322.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-084": {
+    "code": "CHIEU_84",
+    "name": "Chiêu 84: Chiêu 84: Khóa Cổ Thúc Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "329x456",
+    "laplacianVar": 322.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_85": {
+    "code": "CHIEU_85",
+    "name": "Chiêu 85: Chiêu 85: Mộc Nhân: Tiến Bước Hạ Thấp Long Trảo Móc Bóp",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "315x451",
+    "laplacianVar": 465.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-085": {
+    "code": "CHIEU_85",
+    "name": "Chiêu 85: Chiêu 85: Mộc Nhân: Tiến Bước Hạ Thấp Long Trảo Móc Bóp",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "315x451",
+    "laplacianVar": 465.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_86": {
+    "code": "CHIEU_86",
+    "name": "Chiêu 86: Chiêu 86: Mộc Nhân: Thu Chân Phục Vị Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x450",
+    "laplacianVar": 405.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-086": {
+    "code": "CHIEU_86",
+    "name": "Chiêu 86: Chiêu 86: Mộc Nhân: Thu Chân Phục Vị Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x450",
+    "laplacianVar": 405.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_87": {
+    "code": "CHIEU_87",
+    "name": "Chiêu 87: Chiêu 87: Mộc Nhân: Bắt Chéo Đón Tay Gỗ & Chặt Cạnh Bàn Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "323x444",
+    "laplacianVar": 412.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-087": {
+    "code": "CHIEU_87",
+    "name": "Chiêu 87: Chiêu 87: Mộc Nhân: Bắt Chéo Đón Tay Gỗ & Chặt Cạnh Bàn Tay",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "323x444",
+    "laplacianVar": 412.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_88": {
+    "code": "CHIEU_88",
+    "name": "Chiêu 88: Chiêu 88: Mộc Nhân: Đón Tay & Chặt Cạnh Tay Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x486",
+    "laplacianVar": 440.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-088": {
+    "code": "CHIEU_88",
+    "name": "Chiêu 88: Chiêu 88: Mộc Nhân: Đón Tay & Chặt Cạnh Tay Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x486",
+    "laplacianVar": 440.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_89": {
+    "code": "CHIEU_89",
+    "name": "Chiêu 89: Chiêu 89: Mộc Nhân: Tóm Càng Giật Về & Lên Gối Phải",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "304x492",
+    "laplacianVar": 416.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-089": {
+    "code": "CHIEU_89",
+    "name": "Chiêu 89: Chiêu 89: Mộc Nhân: Tóm Càng Giật Về & Lên Gối Phải",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "304x492",
+    "laplacianVar": 416.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_90": {
+    "code": "CHIEU_90",
+    "name": "Chiêu 90: Chiêu 90: Mộc Nhân: Lên Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "297x437",
+    "laplacianVar": 358.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-090": {
+    "code": "CHIEU_90",
+    "name": "Chiêu 90: Chiêu 90: Mộc Nhân: Lên Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "297x437",
+    "laplacianVar": 358.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_91": {
+    "code": "CHIEU_91",
+    "name": "Chiêu 91: Chiêu 91: Mộc Nhân: Bước Chéo Chân, Tóm Càng Giật & Lên Gối Vòng Đá Móc",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "313x447",
+    "laplacianVar": 293.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-091": {
+    "code": "CHIEU_91",
+    "name": "Chiêu 91: Chiêu 91: Mộc Nhân: Bước Chéo Chân, Tóm Càng Giật & Lên Gối Vòng Đá Móc",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "313x447",
+    "laplacianVar": 293.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_92": {
+    "code": "CHIEU_92",
+    "name": "Chiêu 92: Chiêu 92: Mộc Nhân: Bước Chéo Lên Gối Vòng Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "289x447",
+    "laplacianVar": 412.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-092": {
+    "code": "CHIEU_92",
+    "name": "Chiêu 92: Chiêu 92: Mộc Nhân: Bước Chéo Lên Gối Vòng Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "289x447",
+    "laplacianVar": 412.8,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_93": {
+    "code": "CHIEU_93",
+    "name": "Chiêu 93: Chiêu 93: Mộc Nhân: Nhấc Chân Đánh Miết Gối Từ Trên Xuống",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "303x446",
+    "laplacianVar": 347.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-093": {
+    "code": "CHIEU_93",
+    "name": "Chiêu 93: Chiêu 93: Mộc Nhân: Nhấc Chân Đánh Miết Gối Từ Trên Xuống",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "303x446",
+    "laplacianVar": 347.6,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_94": {
+    "code": "CHIEU_94",
+    "name": "Chiêu 94: Chiêu 94: Mộc Nhân: Đánh Miết Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "311x490",
+    "laplacianVar": 381.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-094": {
+    "code": "CHIEU_94",
+    "name": "Chiêu 94: Chiêu 94: Mộc Nhân: Đánh Miết Gối Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "311x490",
+    "laplacianVar": 381.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_95": {
+    "code": "CHIEU_95",
+    "name": "Chiêu 95: Chiêu 95: Mộc Nhân: Ấn Tay Gỗ & Đánh Đầu Gối Phải Từ Dưới Lên",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "309x496",
+    "laplacianVar": 321.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-095": {
+    "code": "CHIEU_95",
+    "name": "Chiêu 95: Chiêu 95: Mộc Nhân: Ấn Tay Gỗ & Đánh Đầu Gối Phải Từ Dưới Lên",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "309x496",
+    "laplacianVar": 321.0,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_96": {
+    "code": "CHIEU_96",
+    "name": "Chiêu 96: Chiêu 96: Mộc Nhân: Vặn Ấn & Thốc Gối Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "269x436",
+    "laplacianVar": 362.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-096": {
+    "code": "CHIEU_96",
+    "name": "Chiêu 96: Chiêu 96: Mộc Nhân: Vặn Ấn & Thốc Gối Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "269x436",
+    "laplacianVar": 362.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_97": {
+    "code": "CHIEU_97",
+    "name": "Chiêu 97: Chiêu 97: Mộc Nhân: Vỗ Hạ Bàn, Co Gối Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "292x427",
+    "laplacianVar": 307.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-097": {
+    "code": "CHIEU_97",
+    "name": "Chiêu 97: Chiêu 97: Mộc Nhân: Vỗ Hạ Bàn, Co Gối Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "292x427",
+    "laplacianVar": 307.5,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (209x346 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_98": {
+    "code": "CHIEU_98",
+    "name": "Chiêu 98: Chiêu 98: Mộc Nhân: Ngoáy Cổ Chân Đá Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x414",
+    "laplacianVar": 298.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x332 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-098": {
+    "code": "CHIEU_98",
+    "name": "Chiêu 98: Chiêu 98: Mộc Nhân: Ngoáy Cổ Chân Đá Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "293x414",
+    "laplacianVar": 298.4,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x332 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_99": {
+    "code": "CHIEU_99",
+    "name": "Chiêu 99: Chiêu 99: Mộc Nhân: Xỉa Song Thủ, Nhấc Chân Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "265x416",
+    "laplacianVar": 427.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (199x335 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-099": {
+    "code": "CHIEU_99",
+    "name": "Chiêu 99: Chiêu 99: Mộc Nhân: Xỉa Song Thủ, Nhấc Chân Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "265x416",
+    "laplacianVar": 427.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (199x335 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_100": {
+    "code": "CHIEU_100",
+    "name": "Chiêu 100: Chiêu 100: Mộc Nhân: Xỉa Song Thủ & Đá Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "297x418",
+    "laplacianVar": 339.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x335 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-100": {
+    "code": "CHIEU_100",
+    "name": "Chiêu 100: Chiêu 100: Mộc Nhân: Xỉa Song Thủ & Đá Móc Đối Xứng Trái",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "297x418",
+    "laplacianVar": 339.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (216x335 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_101": {
+    "code": "CHIEU_101",
+    "name": "Chiêu 101: Chiêu 101: Mộc Nhân: Hất Càng Gỗ & Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x420",
+    "laplacianVar": 311.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x337 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-101": {
+    "code": "CHIEU_101",
+    "name": "Chiêu 101: Chiêu 101: Mộc Nhân: Hất Càng Gỗ & Ngoáy Cổ Chân Đá Móc",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "294x420",
+    "laplacianVar": 311.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (211x337 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_102": {
+    "code": "CHIEU_102",
+    "name": "Chiêu 102: Chiêu 102: Mộc Nhân: Hất Tay Gỗ Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "301x485",
+    "laplacianVar": 336.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-102": {
+    "code": "CHIEU_102",
+    "name": "Chiêu 102: Chiêu 102: Mộc Nhân: Hất Tay Gỗ Đối Xứng Bên Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "301x485",
+    "laplacianVar": 336.7,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_103": {
+    "code": "CHIEU_103",
+    "name": "Chiêu 103: Chiêu 103: Mộc Nhân: Khép Nách Đánh 2 Tay Ngược Chiều & Ngoáy Cổ Chân Đá Móc",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "319x491",
+    "laplacianVar": 285.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-103": {
+    "code": "CHIEU_103",
+    "name": "Chiêu 103: Chiêu 103: Mộc Nhân: Khép Nách Đánh 2 Tay Ngược Chiều & Ngoáy Cổ Chân Đá Móc",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "319x491",
+    "laplacianVar": 285.1,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_104": {
+    "code": "CHIEU_104",
+    "name": "Chiêu 104: Chiêu 104: Mộc Nhân: Đánh Tay Ngược Chiều Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x435",
+    "laplacianVar": 296.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "PGVX-TECH-108-104": {
+    "code": "CHIEU_104",
+    "name": "Chiêu 104: Chiêu 104: Mộc Nhân: Đánh Tay Ngược Chiều Đối Xứng Trái",
+    "status": "eligible",
+    "qualityScore": 100,
+    "resolution": "306x435",
+    "laplacianVar": 296.3,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [],
+    "recommendation": "✅ ĐỦ ĐIỀU KIỆN TÁI TẠO: Ảnh gốc rõ nét, quan sát đầy đủ hình thái tay và chân."
+  },
+  "CHIEU_105": {
+    "code": "CHIEU_105",
+    "name": "Chiêu 105: Chiêu 105: Mộc Nhân: Song Cẳng Tay Thượng Đẩy, Hạ Đè & BÁI TỔ KẾT THÚC BÀI",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "283x408",
+    "laplacianVar": 285.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (201x325 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "PGVX-TECH-108-105": {
+    "code": "CHIEU_105",
+    "name": "Chiêu 105: Chiêu 105: Mộc Nhân: Song Cẳng Tay Thượng Đẩy, Hạ Đè & BÁI TỔ KẾT THÚC BÀI",
+    "status": "warning",
+    "qualityScore": 75,
+    "resolution": "283x408",
+    "laplacianVar": 285.9,
+    "handClarity": "clear",
+    "kneeClarity": "clear",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (201x325 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu."
+    ],
+    "recommendation": "⚠️ CẢNH BÁO CHẤT LƯỢNG ẢNH GỐC: Một số chi tiết bị mờ hoặc che khuất bởi võ phục. Cần đối chiếu kỹ lưỡng với lý thuyết võ học môn phái khi xem xét."
+  },
+  "CHIEU_106": {
+    "code": "CHIEU_106",
+    "name": "Chiêu 106: Chiêu 106: Bài Luyện Tổng Hợp: Du Đẩy & Linh Giác Tại Chỗ 5 Động Tác Cầm Nã",
+    "status": "rejected_source",
+    "qualityScore": 40,
+    "resolution": "238x413",
+    "laplacianVar": 203.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (155x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 203.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-106": {
+    "code": "CHIEU_106",
+    "name": "Chiêu 106: Chiêu 106: Bài Luyện Tổng Hợp: Du Đẩy & Linh Giác Tại Chỗ 5 Động Tác Cầm Nã",
+    "status": "rejected_source",
+    "qualityScore": 40,
+    "resolution": "238x413",
+    "laplacianVar": 203.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (155x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc có độ mờ nhẹ (Chỉ số sắc nét: 203.9). Chi tiết ngón tay có thể bị giảm độ tương phản.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_107": {
+    "code": "CHIEU_107",
+    "name": "Chiêu 107: Chiêu 107: Bài Luyện Tổng Hợp: Bài 108 Di Chuyển Phải Trái & Song Luyện Cùng Thầy",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "182x412",
+    "laplacianVar": 246.1,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (99x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-107": {
+    "code": "CHIEU_107",
+    "name": "Chiêu 107: Chiêu 107: Bài Luyện Tổng Hợp: Bài 108 Di Chuyển Phải Trái & Song Luyện Cùng Thầy",
+    "status": "rejected_source",
+    "qualityScore": 45,
+    "resolution": "182x412",
+    "laplacianVar": 246.1,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "partially_occluded",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (99x349 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường.",
+      "Ảnh chụp từ góc nghiêng, chân sau bị chân trước che khuất một phần. Không nhìn rõ hướng xoay mũi chân sau."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "CHIEU_108": {
+    "code": "CHIEU_108",
+    "name": "Chiêu 108: Chiêu 108: Bài Luyện Tổng Hợp: Song Đấu Niêm Thủ Bịt Mắt & Thu Công Hoàn Tất Đại Đăng Khoa",
+    "status": "rejected_source",
+    "qualityScore": 25,
+    "resolution": "216x411",
+    "laplacianVar": 176.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (149x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc bị mờ nhòe nghiêm trọng (Chỉ số sắc nét: 176.9 < 180). Các đường viền khớp xương bị tán sắc.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  },
+  "PGVX-TECH-108-108": {
+    "code": "CHIEU_108",
+    "name": "Chiêu 108: Chiêu 108: Bài Luyện Tổng Hợp: Song Đấu Niêm Thủ Bịt Mắt & Thu Công Hoàn Tất Đại Đăng Khoa",
+    "status": "rejected_source",
+    "qualityScore": 25,
+    "resolution": "216x411",
+    "laplacianVar": 176.9,
+    "handClarity": "clear",
+    "kneeClarity": "occluded_by_clothing",
+    "feetClarity": "clear",
+    "unclearPoints": [
+      "Độ phân giải ảnh gốc quá thấp (149x347 px). Hình thể võ sư quá nhỏ để quan sát vi phẫu.",
+      "Ảnh gốc bị mờ nhòe nghiêm trọng (Chỉ số sắc nét: 176.9 < 180). Các đường viền khớp xương bị tán sắc.",
+      "Vải quần đen thụng che lấp hoàn toàn khoảng cách giữa hai đầu gối và đáy chậu. Không thể nhìn rõ độ chụm của hai đầu gối bằng mắt thường."
+    ],
+    "recommendation": "🚫 TỪ CHỐI TÁI TẠO 3D: Ảnh gốc không đảm bảo chất lượng giải phẫu võ học tối thiểu. Hệ thống từ chối tái tạo để bảo toàn tính xác thực, tránh AI phỏng đoán làm sai lệch đòn thế."
+  }
+}

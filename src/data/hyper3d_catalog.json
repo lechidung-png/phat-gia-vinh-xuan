@@ -1,0 +1,162 @@
+{
+  "PGVX-TECH-108-001": {
+    "code": "CHIEU_01",
+    "name": "Bái Tổ & Xỉa Song Thủ",
+    "img3d": "/assets/images/3d/chieu_01_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_01_audit.png",
+    "iou": "88.31%",
+    "stanceDiff": "-7.81%",
+    "elbowDiff": "+14.83%",
+    "note": "Khử triệt để bóng sàn nhà. Tấn Kiềm Dương chuẩn Tý Ngọ Tuyến, cùi chỏ khép chặt vào sườn theo đúng yếu lĩnh sư môn."
+  },
+  "CHIEU_01": {
+    "code": "CHIEU_01",
+    "name": "Chiêu 1: Chiêu 1: Bái Tổ & Xỉa Song Thủ",
+    "img3d": "/assets/images/3d/chieu_01_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_01_audit.jpg",
+    "iou": "90.31%",
+    "stanceDiff": "-6.77%",
+    "elbowDiff": "+5.86%",
+    "note": "Tái tạo vi giải phẫu: IoU 90.31%, Sai số tấn -6.77%, Sai số cùi chỏ +5.86%."
+  },
+  "PGVX-TECH-108-038": {
+    "code": "CHIEU_38",
+    "name": "Lan Thủ & Xỉa Độc Thủ Đối Xứng Trái",
+    "img3d": "/assets/images/3d/chieu_38_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_38_audit.png",
+    "iou": "70.68%",
+    "stanceDiff": "-1.18%",
+    "elbowDiff": "-2.69%",
+    "note": "Hai võ sư đứng cự ly cận chiến thân mật, cùi chỏ và cẳng tay khóa bắt chính xác, góc chân đứng thẳng dưới hông."
+  },
+  "CHIEU_38": {
+    "code": "CHIEU_38",
+    "name": "Lan Thủ & Xỉa Độc Thủ Đối Xứng Trái",
+    "img3d": "/assets/images/3d/chieu_38_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_38_audit.png",
+    "iou": "70.68%",
+    "stanceDiff": "-1.18%",
+    "elbowDiff": "-2.69%",
+    "note": "Hai võ sư đứng cự ly cận chiến thân mật, cùi chỏ và cẳng tay khóa bắt chính xác, góc chân đứng thẳng dưới hông."
+  },
+  "PGVX-TECH-108-002": {
+    "code": "CHIEU_02",
+    "name": "Song Chưởng Hạ Trảm",
+    "img3d": "/assets/images/3d/chieu_02_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_02_audit.png",
+    "iou": "81.19%",
+    "stanceDiff": "-1.02%",
+    "elbowDiff": "+5.41%",
+    "note": "Khắc phục triệt để hướng nhìn: Mặt và mắt quay thẳng nhìn về phía trước khóa mục tiêu giống ảnh gốc. Hai đầu gối chùng sâu và chụm khép kín bảo vệ hạ bộ, khoảng cách chân lệch chỉ -1.02%."
+  },
+  "CHIEU_02": {
+    "code": "CHIEU_02",
+    "name": "Chiêu 2: Chiêu 2: Song Chưởng Hạ Trảm",
+    "img3d": "/assets/images/3d/chieu_02_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_02_audit.jpg",
+    "iou": "79.38%",
+    "stanceDiff": "-14.8%",
+    "elbowDiff": "+6.31%",
+    "note": "Tái tạo vi giải phẫu: IoU 79.38%, Sai số tấn -14.8%, Sai số cùi chỏ +6.31%."
+  },
+  "PGVX-TECH-108-003": {
+    "code": "CHIEU_03",
+    "name": "Biên Thân Gạt Ngang & Giật Cổ Tay Phóng Chưởng",
+    "img3d": "/assets/images/3d/chieu_03_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_03_audit.png",
+    "iou": "84.57%",
+    "stanceDiff": "-1.98%",
+    "elbowDiff": "+12.32%",
+    "note": "Khắc phục triệt để hướng nhìn: Thân xoay biên nhưng mặt và mắt quay thẳng phía trước khóa mục tiêu giống ảnh gốc. Hai đầu gối chùng sâu và chụm khép kín hạ bộ, sai số chân chỉ -1.98%."
+  },
+  "CHIEU_03": {
+    "code": "CHIEU_03",
+    "name": "Biên Thân Gạt Ngang & Giật Cổ Tay Phóng Chưởng",
+    "img3d": "/assets/images/3d/chieu_03_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_03_audit.png",
+    "iou": "84.57%",
+    "stanceDiff": "-1.98%",
+    "elbowDiff": "+12.32%",
+    "note": "Khắc phục triệt để hướng nhìn: Thân xoay biên nhưng mặt và mắt quay thẳng phía trước khóa mục tiêu giống ảnh gốc. Hai đầu gối chùng sâu và chụm khép kín hạ bộ, sai số chân chỉ -1.98%."
+  },
+  "PGVX-TECH-108-01": {
+    "code": "CHIEU_01",
+    "name": "Chiêu 1: Chiêu 1: Bái Tổ & Xỉa Song Thủ",
+    "img3d": "/assets/images/3d/chieu_01_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_01_audit.jpg",
+    "iou": "90.31%",
+    "stanceDiff": "-6.77%",
+    "elbowDiff": "+5.86%",
+    "note": "Tái tạo vi giải phẫu: IoU 90.31%, Sai số tấn -6.77%, Sai số cùi chỏ +5.86%."
+  },
+  "PGVX-TECH-108-02": {
+    "code": "CHIEU_02",
+    "name": "Chiêu 2: Chiêu 2: Song Chưởng Hạ Trảm",
+    "img3d": "/assets/images/3d/chieu_02_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_02_audit.jpg",
+    "iou": "79.38%",
+    "stanceDiff": "-14.8%",
+    "elbowDiff": "+6.31%",
+    "note": "Tái tạo vi giải phẫu: IoU 79.38%, Sai số tấn -14.8%, Sai số cùi chỏ +6.31%."
+  },
+  "PGVX-TECH-108-04": {
+    "code": "CHIEU_04",
+    "name": "Chiêu 4: Chiêu 4: Biên Thân Gạt Ngang & Phóng Chưởng Trái",
+    "img3d": "/assets/images/3d/chieu_04_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_04_audit.jpg",
+    "iou": "75.63%",
+    "stanceDiff": "+22.14%",
+    "elbowDiff": "-0.87%",
+    "note": "Tái tạo vi giải phẫu: IoU 75.63%, Sai số tấn +22.14%, Sai số cùi chỏ -0.87%."
+  },
+  "CHIEU_04": {
+    "code": "CHIEU_04",
+    "name": "Chiêu 4: Chiêu 4: Biên Thân Gạt Ngang & Phóng Chưởng Trái",
+    "img3d": "/assets/images/3d/chieu_04_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_04_audit.jpg",
+    "iou": "75.63%",
+    "stanceDiff": "+22.14%",
+    "elbowDiff": "-0.87%",
+    "note": "Tái tạo vi giải phẫu: IoU 75.63%, Sai số tấn +22.14%, Sai số cùi chỏ -0.87%."
+  },
+  "PGVX-TECH-108-05": {
+    "code": "CHIEU_05",
+    "name": "Chiêu 5: Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "img3d": "/assets/images/3d/chieu_05_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_05_audit.jpg",
+    "iou": "64.57%",
+    "stanceDiff": "+28.89%",
+    "elbowDiff": "-14.96%",
+    "note": "Tái tạo vi giải phẫu: IoU 64.57%, Sai số tấn +28.89%, Sai số cùi chỏ -14.96%."
+  },
+  "CHIEU_05": {
+    "code": "CHIEU_05",
+    "name": "Chiêu 5: Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "img3d": "/assets/images/3d/chieu_05_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_05_audit.jpg",
+    "iou": "64.57%",
+    "stanceDiff": "+28.89%",
+    "elbowDiff": "-14.96%",
+    "note": "Tái tạo vi giải phẫu: IoU 64.57%, Sai số tấn +28.89%, Sai số cùi chỏ -14.96%."
+  },
+  "PGVX-TECH-108-06": {
+    "code": "CHIEU_06",
+    "name": "Chiêu 6: Chiêu 6: Biên Thân Đỡ & Chưởng Ngang Trái",
+    "img3d": "/assets/images/3d/chieu_06_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_06_audit.jpg",
+    "iou": "73.05%",
+    "stanceDiff": "-7.82%",
+    "elbowDiff": "+12.93%",
+    "note": "Tái tạo vi giải phẫu: IoU 73.05%, Sai số tấn -7.82%, Sai số cùi chỏ +12.93%."
+  },
+  "CHIEU_06": {
+    "code": "CHIEU_06",
+    "name": "Chiêu 6: Chiêu 6: Biên Thân Đỡ & Chưởng Ngang Trái",
+    "img3d": "/assets/images/3d/chieu_06_3d.jpg",
+    "auditImg": "/assets/images/audit/chieu_06_audit.jpg",
+    "iou": "73.05%",
+    "stanceDiff": "-7.82%",
+    "elbowDiff": "+12.93%",
+    "note": "Tái tạo vi giải phẫu: IoU 73.05%, Sai số tấn -7.82%, Sai số cùi chỏ +12.93%."
+  }
+}

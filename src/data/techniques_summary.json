@@ -1,0 +1,983 @@
+[
+  {
+    "order": 0,
+    "code": "BAI_TO",
+    "name": "Nghi Thức Bái Tổ Sư Môn (9 Bước Khai Khẩu Quyết)",
+    "stepCount": 9,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/bai_to/bai_to_1.png"
+  },
+  {
+    "order": 1,
+    "code": "CHIEU_01",
+    "name": "Chiêu 1: Bái Tổ & Xỉa Song Thủ",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_1_1.png"
+  },
+  {
+    "order": 2,
+    "code": "CHIEU_02",
+    "name": "Chiêu 2: Song Chưởng Đánh Thẳng Xuống Dưới",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_2.png"
+  },
+  {
+    "order": 3,
+    "code": "CHIEU_03",
+    "name": "Chiêu 3: Biên Thân Gạt Ngang, Giật Cổ Tay & Phóng Chưởng Phải",
+    "stepCount": 3,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_3_1.png"
+  },
+  {
+    "order": 4,
+    "code": "CHIEU_04",
+    "name": "Chiêu 4: Biên Thân Gạt Ngang, Giật Cổ Tay & Phóng Chưởng Trái",
+    "stepCount": 3,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 3: Biên Thân Gạt Ngang, Giật Cổ Tay & Phóng Chưởng Phải",
+    "mainImg": "/assets/images/techniques/series/fig_3_1.png"
+  },
+  {
+    "order": 5,
+    "code": "CHIEU_05",
+    "name": "Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_5.png"
+  },
+  {
+    "order": 6,
+    "code": "CHIEU_06",
+    "name": "Chiêu 6: Biên Thân Đỡ & Chưởng Ngang Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 5: Biên Thân Đỡ & Chưởng Ngang Phải",
+    "mainImg": "/assets/images/techniques/series/fig_5.png"
+  },
+  {
+    "order": 7,
+    "code": "CHIEU_07",
+    "name": "Chiêu 7: Than Thủ & Bàng Thủ Xoay Trục Liên Hoàn",
+    "stepCount": 3,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_7_1.png"
+  },
+  {
+    "order": 8,
+    "code": "CHIEU_08",
+    "name": "Chiêu 8: Than Thủ & Bàng Thủ Đối Xứng Bên Trái",
+    "stepCount": 3,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 7: Than Thủ & Bàng Thủ Xoay Trục Liên Hoàn",
+    "mainImg": "/assets/images/techniques/series/fig_7_1.png"
+  },
+  {
+    "order": 9,
+    "code": "CHIEU_09",
+    "name": "Chiêu 9: Song Quyền Bổ Thẳng Từ Trên Xuống",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_9_1.png"
+  },
+  {
+    "order": 10,
+    "code": "CHIEU_10",
+    "name": "Chiêu 10: Song Quyền Bổ Thẳng Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 9: Song Quyền Bổ Thẳng Từ Trên Xuống",
+    "mainImg": "/assets/images/techniques/series/fig_9_1.png"
+  },
+  {
+    "order": 11,
+    "code": "CHIEU_11",
+    "name": "Chiêu 11: Song Xà Xỉa Thủ Biên Thân",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_11_1.png"
+  },
+  {
+    "order": 12,
+    "code": "CHIEU_12",
+    "name": "Chiêu 12: Song Xà Xỉa Thủ Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 11: Song Xà Xỉa Thủ Biên Thân",
+    "mainImg": "/assets/images/techniques/series/fig_11_1.png"
+  },
+  {
+    "order": 13,
+    "code": "CHIEU_13",
+    "name": "Chiêu 13: Song Cẳng Tay Hất Thượng",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_13_2.png"
+  },
+  {
+    "order": 14,
+    "code": "CHIEU_14",
+    "name": "Chiêu 14: Song Cẳng Tay Hất Thượng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 13: Song Cẳng Tay Hất Thượng",
+    "mainImg": "/assets/images/techniques/series/fig_13_2.png"
+  },
+  {
+    "order": 15,
+    "code": "CHIEU_15",
+    "name": "Chiêu 15: Song Cẳng Tay Vuông Góc Đẩy Ngược Chiều",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_15.png"
+  },
+  {
+    "order": 16,
+    "code": "CHIEU_16",
+    "name": "Chiêu 16: Song Cẳng Tay Đẩy Ngược Chiều Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 15: Song Cẳng Tay Vuông Góc Đẩy Ngược Chiều",
+    "mainImg": "/assets/images/techniques/series/fig_15.png"
+  },
+  {
+    "order": 17,
+    "code": "CHIEU_17",
+    "name": "Chiêu 17: Thu Bụng Phóng Song Chưởng",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_17.png"
+  },
+  {
+    "order": 18,
+    "code": "CHIEU_18",
+    "name": "Chiêu 18: Thu Bụng Phóng Song Chưởng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 17: Thu Bụng Phóng Song Chưởng",
+    "mainImg": "/assets/images/techniques/series/fig_17.png"
+  },
+  {
+    "order": 19,
+    "code": "CHIEU_19",
+    "name": "Chiêu 19: Nắm Bắt Biên Thân & Kéo Đẩy Đảo Chiều",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_19_1.png"
+  },
+  {
+    "order": 20,
+    "code": "CHIEU_20",
+    "name": "Chiêu 20: Nắm Bắt Biên Thân Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 19: Nắm Bắt Biên Thân & Kéo Đẩy Đảo Chiều",
+    "mainImg": "/assets/images/techniques/series/fig_19_1.png"
+  },
+  {
+    "order": 21,
+    "code": "CHIEU_21",
+    "name": "Chiêu 21: Vít Tay Nắm Bắt & Kéo Đẩy Biên Thân",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_21_1.png"
+  },
+  {
+    "order": 22,
+    "code": "CHIEU_22",
+    "name": "Chiêu 22: Vít Tay Nắm Bắt Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 21: Vít Tay Nắm Bắt & Kéo Đẩy Biên Thân",
+    "mainImg": "/assets/images/techniques/series/fig_21_1.png"
+  },
+  {
+    "order": 23,
+    "code": "CHIEU_23",
+    "name": "Chiêu 23: Song Bàn Tay Cùng Bắt & Kéo Ngược Chiều",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_23.png"
+  },
+  {
+    "order": 24,
+    "code": "CHIEU_24",
+    "name": "Chiêu 24: Song Bàn Tay Bắt Kéo Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 23: Song Bàn Tay Cùng Bắt & Kéo Ngược Chiều",
+    "mainImg": "/assets/images/techniques/series/fig_23.png"
+  },
+  {
+    "order": 25,
+    "code": "CHIEU_25",
+    "name": "Chiêu 25: Cẳng Tay Kẹp Sát & Dựng Thẳng Biên Thân",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_25.png"
+  },
+  {
+    "order": 26,
+    "code": "CHIEU_26",
+    "name": "Chiêu 26: Cẳng Tay Kẹp Sát Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 25: Cẳng Tay Kẹp Sát & Dựng Thẳng Biên Thân",
+    "mainImg": "/assets/images/techniques/series/fig_25.png"
+  },
+  {
+    "order": 27,
+    "code": "CHIEU_27",
+    "name": "Chiêu 27: Song Cẳng Tay Hất Cạnh Cổ Tay Ra Ngoài",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_27.png"
+  },
+  {
+    "order": 28,
+    "code": "CHIEU_28",
+    "name": "Chiêu 28: Song Cẳng Tay Hất Ra Ngoài Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 27: Song Cẳng Tay Hất Cạnh Cổ Tay Ra Ngoài",
+    "mainImg": "/assets/images/techniques/series/fig_27.png"
+  },
+  {
+    "order": 29,
+    "code": "CHIEU_29",
+    "name": "Chiêu 29: Tay Phải Song Song Đất & Tay Trái Dựng Đứng",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_29.png"
+  },
+  {
+    "order": 30,
+    "code": "CHIEU_30",
+    "name": "Chiêu 30: Tay Song Song & Dựng Đứng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 29: Tay Phải Song Song Đất & Tay Trái Dựng Đứng",
+    "mainImg": "/assets/images/techniques/series/fig_29.png"
+  },
+  {
+    "order": 31,
+    "code": "CHIEU_31",
+    "name": "Chiêu 31: Song Thủ Kéo Vuốt & Chém Chếch Hai Phía",
+    "stepCount": 3,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_31_1.png"
+  },
+  {
+    "order": 32,
+    "code": "CHIEU_32",
+    "name": "Chiêu 32: Vỗ Xuống Hai Cổ Tay & Phóng Chưởng Phải",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_32_1.png"
+  },
+  {
+    "order": 33,
+    "code": "CHIEU_33",
+    "name": "Chiêu 33: Vỗ Xuống & Phóng Chưởng Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 32: Vỗ Xuống Hai Cổ Tay & Phóng Chưởng Phải",
+    "mainImg": "/assets/images/techniques/series/fig_32_1.png"
+  },
+  {
+    "order": 34,
+    "code": "CHIEU_34",
+    "name": "Chiêu 34: Đỡ Ngang Hai Cạnh Tay & Chưởng Ngang Đánh Cạnh Ngoài",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_34_1.png"
+  },
+  {
+    "order": 35,
+    "code": "CHIEU_35",
+    "name": "Chiêu 35: Đỡ Ngang & Chưởng Ngang Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 34: Đỡ Ngang Hai Cạnh Tay & Chưởng Ngang Đánh Cạnh Ngoài",
+    "mainImg": "/assets/images/techniques/series/fig_34_1.png"
+  },
+  {
+    "order": 36,
+    "code": "CHIEU_36",
+    "name": "Chiêu 36: Song Cánh Tay Hất Cườm Cổ Tay Ra Ngoài",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_36.png"
+  },
+  {
+    "order": 37,
+    "code": "CHIEU_37",
+    "name": "Chiêu 37: Song Cánh Tay Hất Cườm Tay Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 36: Song Cánh Tay Hất Cườm Cổ Tay Ra Ngoài",
+    "mainImg": "/assets/images/techniques/series/fig_36.png"
+  },
+  {
+    "order": 38,
+    "code": "CHIEU_38",
+    "name": "Chiêu 38: Dựng Cẳng Tay Kéo Xuống & Vuốt Thủ Chém Phải",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_38_1.png"
+  },
+  {
+    "order": 39,
+    "code": "CHIEU_39",
+    "name": "Chiêu 39: Dựng Cẳng Tay Kéo Xuống Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 38: Dựng Cẳng Tay Kéo Xuống & Vuốt Thủ Chém Phải",
+    "mainImg": "/assets/images/techniques/series/fig_38_1.png"
+  },
+  {
+    "order": 40,
+    "code": "CHIEU_40",
+    "name": "Chiêu 40: Gạt Ra Sau & Chém Ngược Cạnh Bàn Tay",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_40_1.png"
+  },
+  {
+    "order": 41,
+    "code": "CHIEU_41",
+    "name": "Chiêu 41: Gạt Sau & Chém Ngược Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 40: Gạt Ra Sau & Chém Ngược Cạnh Bàn Tay",
+    "mainImg": "/assets/images/techniques/series/fig_40_1.png"
+  },
+  {
+    "order": 42,
+    "code": "CHIEU_42",
+    "name": "Chiêu 42: Tổ Hợp Đỡ Cổ Tay & Bàng Thủ Liên Hoàn (4 Bước)",
+    "stepCount": 4,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_34_1.png"
+  },
+  {
+    "order": 43,
+    "code": "CHIEU_43",
+    "name": "Chiêu 43: Tổ Hợp Đỡ Cổ Tay & Bàng Thủ Đối Xứng Trái (4 Bước)",
+    "stepCount": 4,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 42: Tổ Hợp Đỡ Cổ Tay & Bàng Thủ Liên Hoàn (4 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_34_1.png"
+  },
+  {
+    "order": 44,
+    "code": "CHIEU_44",
+    "name": "Chiêu 44: Song Quyền Đưa Chéo Lên",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_44.png"
+  },
+  {
+    "order": 45,
+    "code": "CHIEU_45",
+    "name": "Chiêu 45: Song Quyền Đưa Chéo Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 44: Song Quyền Đưa Chéo Lên",
+    "mainImg": "/assets/images/techniques/series/fig_44.png"
+  },
+  {
+    "order": 46,
+    "code": "CHIEU_46",
+    "name": "Chiêu 46: Đánh Thốc Quyền Từ Dưới Lên",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_46.png"
+  },
+  {
+    "order": 47,
+    "code": "CHIEU_47",
+    "name": "Chiêu 47: Đánh Thốc Quyền Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 46: Đánh Thốc Quyền Từ Dưới Lên",
+    "mainImg": "/assets/images/techniques/series/fig_46.png"
+  },
+  {
+    "order": 48,
+    "code": "CHIEU_48",
+    "name": "Chiêu 48: Vuốt Thủ Về & Đấm Thẳng Tay Phải",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_48.png"
+  },
+  {
+    "order": 49,
+    "code": "CHIEU_49",
+    "name": "Chiêu 49: Vuốt Thủ & Đấm Thẳng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 48: Vuốt Thủ Về & Đấm Thẳng Tay Phải",
+    "mainImg": "/assets/images/techniques/series/fig_48.png"
+  },
+  {
+    "order": 50,
+    "code": "CHIEU_50",
+    "name": "Chiêu 50: Đẩy Bàn Tay Từ Dưới Lên, Đè Xuống & Đấm Thẳng Song Quyền (4 Bước)",
+    "stepCount": 4,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_50_1.png"
+  },
+  {
+    "order": 51,
+    "code": "CHIEU_51",
+    "name": "Chiêu 51: Tay Xà Đánh Thốc Từ Dưới Lên",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_51.png"
+  },
+  {
+    "order": 52,
+    "code": "CHIEU_52",
+    "name": "Chiêu 52: Tay Xà Đánh Thốc Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 51: Tay Xà Đánh Thốc Từ Dưới Lên",
+    "mainImg": "/assets/images/techniques/series/fig_51.png"
+  },
+  {
+    "order": 53,
+    "code": "CHIEU_53",
+    "name": "Chiêu 53: Hình Báo Đánh Vòng Từ Trái Sang Phải",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_53.png"
+  },
+  {
+    "order": 54,
+    "code": "CHIEU_54",
+    "name": "Chiêu 54: Hình Báo Đánh Vòng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 53: Hình Báo Đánh Vòng Từ Trái Sang Phải",
+    "mainImg": "/assets/images/techniques/series/fig_53.png"
+  },
+  {
+    "order": 55,
+    "code": "CHIEU_55",
+    "name": "Chiêu 55: Chưởng Phải Đẩy Ngang Ép Cẳng Tay Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_55.png"
+  },
+  {
+    "order": 56,
+    "code": "CHIEU_56",
+    "name": "Chiêu 56: Chưởng Đẩy Ngang Ép Tay Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 55: Chưởng Phải Đẩy Ngang Ép Cẳng Tay Trái",
+    "mainImg": "/assets/images/techniques/series/fig_55.png"
+  },
+  {
+    "order": 57,
+    "code": "CHIEU_57",
+    "name": "Chiêu 57: Song Bàn Tay Duỗi Thẳng Đẩy Sau Ra Trước",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_57.png"
+  },
+  {
+    "order": 58,
+    "code": "CHIEU_58",
+    "name": "Chiêu 58: Song Bàn Tay Đẩy Thẳng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 57: Song Bàn Tay Duỗi Thẳng Đẩy Sau Ra Trước",
+    "mainImg": "/assets/images/techniques/series/fig_57.png"
+  },
+  {
+    "order": 59,
+    "code": "CHIEU_59",
+    "name": "Chiêu 59: Đỡ Sang Trái Bằng Cẳng Tay Phải & Bàn Tay Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_59.png"
+  },
+  {
+    "order": 60,
+    "code": "CHIEU_60",
+    "name": "Chiêu 60: Đỡ Sang Trái Bằng Tay Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 59: Đỡ Sang Trái Bằng Cẳng Tay Phải & Bàn Tay Trái",
+    "mainImg": "/assets/images/techniques/series/fig_59.png"
+  },
+  {
+    "order": 61,
+    "code": "CHIEU_61",
+    "name": "Chiêu 61: Dựng Song Cẳng Tay & Xoay Trong Đẩy Ra",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_61_1.png"
+  },
+  {
+    "order": 62,
+    "code": "CHIEU_62",
+    "name": "Chiêu 62: Song Quyền Đấm Móc Ngược Chiều",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_62.png"
+  },
+  {
+    "order": 63,
+    "code": "CHIEU_63",
+    "name": "Chiêu 63: Song Quyền Đấm Móc Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 62: Song Quyền Đấm Móc Ngược Chiều",
+    "mainImg": "/assets/images/techniques/series/fig_62.png"
+  },
+  {
+    "order": 64,
+    "code": "CHIEU_64",
+    "name": "Chiêu 64: Kéo Tay Xà Lên Má & Phóng Chưởng Thẳng",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_64_1.png"
+  },
+  {
+    "order": 65,
+    "code": "CHIEU_65",
+    "name": "Chiêu 65: Kéo Tay Xà & Phóng Chưởng Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 64: Kéo Tay Xà Lên Má & Phóng Chưởng Thẳng",
+    "mainImg": "/assets/images/techniques/series/fig_64_1.png"
+  },
+  {
+    "order": 66,
+    "code": "CHIEU_66",
+    "name": "Chiêu 66: Song Thủ Trên Dưới Đánh Hất Cạnh Cổ Tay",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_66.png"
+  },
+  {
+    "order": 67,
+    "code": "CHIEU_67",
+    "name": "Chiêu 67: Song Thủ Trên Dưới Hất Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 66: Song Thủ Trên Dưới Đánh Hất Cạnh Cổ Tay",
+    "mainImg": "/assets/images/techniques/series/fig_66.png"
+  },
+  {
+    "order": 68,
+    "code": "CHIEU_68",
+    "name": "Chiêu 68: Tay Trái Than Thủ & Tay Phải Đấm Thẳng",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_68.png"
+  },
+  {
+    "order": 69,
+    "code": "CHIEU_69",
+    "name": "Chiêu 69: Than Thủ Đấm Thẳng Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 68: Tay Trái Than Thủ & Tay Phải Đấm Thẳng",
+    "mainImg": "/assets/images/techniques/series/fig_68.png"
+  },
+  {
+    "order": 70,
+    "code": "CHIEU_70",
+    "name": "Chiêu 70: Đánh Cùi Chỏ Thẳng Xuống & Đánh Mặt Sau Nắm Đấm",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_70_1.png"
+  },
+  {
+    "order": 71,
+    "code": "CHIEU_71",
+    "name": "Chiêu 71: Đánh Cùi Chỏ & Đánh Mu Quyền Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 70: Đánh Cùi Chỏ Thẳng Xuống & Đánh Mặt Sau Nắm Đấm",
+    "mainImg": "/assets/images/techniques/series/fig_70_1.png"
+  },
+  {
+    "order": 72,
+    "code": "CHIEU_72",
+    "name": "Chiêu 72: Đánh Khuỷu Tay Phải Sang Phía Trái & Đánh Mu Quyền (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_72_1.png"
+  },
+  {
+    "order": 73,
+    "code": "CHIEU_73",
+    "name": "Chiêu 73: Đánh Khuỷu Tay Sang Trái Đối Xứng (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 72: Đánh Khuỷu Tay Phải Sang Phía Trái & Đánh Mu Quyền (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_72_1.png"
+  },
+  {
+    "order": 74,
+    "code": "CHIEU_74",
+    "name": "Chiêu 74: Giật Khuỷu Tay Ra Sau & Đánh Mặt Sau Nắm Đấm Hất Lên",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_74_1.png"
+  },
+  {
+    "order": 75,
+    "code": "CHIEU_75",
+    "name": "Chiêu 75: Giật Khuỷu & Hất Mu Quyền Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 74: Giật Khuỷu Tay Ra Sau & Đánh Mặt Sau Nắm Đấm Hất Lên",
+    "mainImg": "/assets/images/techniques/series/fig_74_1.png"
+  },
+  {
+    "order": 76,
+    "code": "CHIEU_76",
+    "name": "Chiêu 76: Đánh Khuỷu Hất Lên & Đánh Mặt Sau Nắm Đấm",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_76_1.png"
+  },
+  {
+    "order": 77,
+    "code": "CHIEU_77",
+    "name": "Chiêu 77: Đánh Khuỷu Hất Lên Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 76: Đánh Khuỷu Hất Lên & Đánh Mặt Sau Nắm Đấm",
+    "mainImg": "/assets/images/techniques/series/fig_76_1.png"
+  },
+  {
+    "order": 78,
+    "code": "CHIEU_78",
+    "name": "Chiêu 78: Bàng Thủ & Đánh Cẳng Tay Sang Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_78.png"
+  },
+  {
+    "order": 79,
+    "code": "CHIEU_79",
+    "name": "Chiêu 79: Bàng Thủ Đánh Cẳng Tay Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 78: Bàng Thủ & Đánh Cẳng Tay Sang Trái",
+    "mainImg": "/assets/images/techniques/series/fig_78.png"
+  },
+  {
+    "order": 80,
+    "code": "CHIEU_80",
+    "name": "Chiêu 80: Tay Trái Nắm Bắt & Tay Phải Đánh Cẳng Tay Xuống",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_80.png"
+  },
+  {
+    "order": 81,
+    "code": "CHIEU_81",
+    "name": "Chiêu 81: Nắm Bắt Đánh Cẳng Tay Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 80: Tay Trái Nắm Bắt & Tay Phải Đánh Cẳng Tay Xuống",
+    "mainImg": "/assets/images/techniques/series/fig_80.png"
+  },
+  {
+    "order": 82,
+    "code": "CHIEU_82",
+    "name": "Chiêu 82: Nắm Kéo Biên Thân & Gật Đầu Đánh Trán Thiết Đầu Công (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_19_1.png"
+  },
+  {
+    "order": 83,
+    "code": "CHIEU_83",
+    "name": "Chiêu 83: Nắm Kéo Đánh Trán Đối Xứng Trái (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 82: Nắm Kéo Biên Thân & Gật Đầu Đánh Trán Thiết Đầu Công (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_19_1.png"
+  },
+  {
+    "order": 84,
+    "code": "CHIEU_84",
+    "name": "Chiêu 84: Đánh Móc Từ Trong Trục Trung Tâm Sang Hai Bên",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_84.png"
+  },
+  {
+    "order": 85,
+    "code": "CHIEU_85",
+    "name": "Chiêu 85: Hạ Thấp Người, Dùng Chảo Đánh Bóp Rồi Giật Về",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_85.png"
+  },
+  {
+    "order": 86,
+    "code": "CHIEU_86",
+    "name": "Chiêu 86: Dùng Chảo Đánh Bóp Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 85: Hạ Thấp Người, Dùng Chảo Đánh Bóp Rồi Giật Về",
+    "mainImg": "/assets/images/techniques/series/fig_85.png"
+  },
+  {
+    "order": 87,
+    "code": "CHIEU_87",
+    "name": "Chiêu 87: Hai Tay Đặt Chéo Dưới Lên & Chém Cạnh Tay Ra Trước",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_87_1.png"
+  },
+  {
+    "order": 88,
+    "code": "CHIEU_88",
+    "name": "Chiêu 88: Chéo Tay Nâng Chém Đối Xứng Trái",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 87: Hai Tay Đặt Chéo Dưới Lên & Chém Cạnh Tay Ra Trước",
+    "mainImg": "/assets/images/techniques/series/fig_87_1.png"
+  },
+  {
+    "order": 89,
+    "code": "CHIEU_89",
+    "name": "Chiêu 89: Nắm Bắt Kéo Giật & Chân Phải Lên Gối Thẳng",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_89.png"
+  },
+  {
+    "order": 90,
+    "code": "CHIEU_90",
+    "name": "Chiêu 90: Nắm Bắt Lên Gối Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 89: Nắm Bắt Kéo Giật & Chân Phải Lên Gối Thẳng",
+    "mainImg": "/assets/images/techniques/series/fig_89.png"
+  },
+  {
+    "order": 91,
+    "code": "CHIEU_91",
+    "name": "Chiêu 91: Nắm Bắt Kéo Giật & Chân Phải Đánh Gối Ngang Mạng Sườn",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_91.png"
+  },
+  {
+    "order": 92,
+    "code": "CHIEU_92",
+    "name": "Chiêu 92: Đánh Gối Ngang Sườn Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 91: Nắm Bắt Kéo Giật & Chân Phải Đánh Gối Ngang Mạng Sườn",
+    "mainImg": "/assets/images/techniques/series/fig_91.png"
+  },
+  {
+    "order": 93,
+    "code": "CHIEU_93",
+    "name": "Chiêu 93: Nắm Giật Sang Trái & Miết Đầu Gối Từ Trên Xuống",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_93.png"
+  },
+  {
+    "order": 94,
+    "code": "CHIEU_94",
+    "name": "Chiêu 94: Miết Đầu Gối Xuống Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 93: Nắm Giật Sang Trái & Miết Đầu Gối Từ Trên Xuống",
+    "mainImg": "/assets/images/techniques/series/fig_93.png"
+  },
+  {
+    "order": 95,
+    "code": "CHIEU_95",
+    "name": "Chiêu 95: Vặn Kéo, Nhấc Thẳng Đầu Gối & Hạ Hai Tay Xuống",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_95.png"
+  },
+  {
+    "order": 96,
+    "code": "CHIEU_96",
+    "name": "Chiêu 96: Vặn Kéo Nhấc Gối Đối Xứng Trái",
+    "stepCount": 1,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 95: Vặn Kéo, Nhấc Thẳng Đầu Gối & Hạ Hai Tay Xuống",
+    "mainImg": "/assets/images/techniques/series/fig_95.png"
+  },
+  {
+    "order": 97,
+    "code": "CHIEU_97",
+    "name": "Chiêu 97: Vỗ Hai Tay & Vòng Mũi Bàn Chân Đá Móc Lên (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_32_1.png"
+  },
+  {
+    "order": 98,
+    "code": "CHIEU_98",
+    "name": "Chiêu 98: Vỗ Tay Đá Móc Đối Xứng Trái (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 97: Vỗ Hai Tay & Vòng Mũi Bàn Chân Đá Móc Lên (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_32_1.png"
+  },
+  {
+    "order": 99,
+    "code": "CHIEU_99",
+    "name": "Chiêu 99: Xỉa Song Tay & Vòng Chân Đá Móc (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_11_2.png"
+  },
+  {
+    "order": 100,
+    "code": "CHIEU_100",
+    "name": "Chiêu 100: Xỉa Tay Đá Móc Đối Xứng Trái (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 99: Xỉa Song Tay & Vòng Chân Đá Móc (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_11_2.png"
+  },
+  {
+    "order": 101,
+    "code": "CHIEU_101",
+    "name": "Chiêu 101: Hất Song Tay & Vòng Chân Đá Móc (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_13_2.png"
+  },
+  {
+    "order": 102,
+    "code": "CHIEU_102",
+    "name": "Chiêu 102: Hất Tay Đá Móc Đối Xứng Trái (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 101: Hất Song Tay & Vòng Chân Đá Móc (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_13_2.png"
+  },
+  {
+    "order": 103,
+    "code": "CHIEU_103",
+    "name": "Chiêu 103: Tay Chém Gập & Vòng Chân Đá Móc (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_38_1.png"
+  },
+  {
+    "order": 104,
+    "code": "CHIEU_104",
+    "name": "Chiêu 104: Tay Chém Đá Móc Đối Xứng Trái (2 Bước)",
+    "stepCount": 2,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 103: Tay Chém Gập & Vòng Chân Đá Móc (2 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_38_1.png"
+  },
+  {
+    "order": 105,
+    "code": "CHIEU_105",
+    "name": "Chiêu 105: Đẩy Thượng, Đè Hạ, Song Đấm & Bái Tổ Hoàn Tất (5 Bước)",
+    "stepCount": 5,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_50_1.png"
+  },
+  {
+    "order": 106,
+    "code": "CHIEU_106",
+    "name": "Chiêu 106: Thế Thu Công & Điều Khí Thượng Thừa",
+    "stepCount": 5,
+    "isSymmetricLeft": true,
+    "symmetricRef": "Chiêu 105: Đẩy Thượng, Đè Hạ, Song Đấm & Bái Tổ Hoàn Tất (5 Bước)",
+    "mainImg": "/assets/images/techniques/series/fig_50_1.png"
+  },
+  {
+    "order": 107,
+    "code": "CHIEU_107",
+    "name": "Chiêu 107: Song Luyện Di Chuyển Phải Trái & Cảm Tri Kình Lực",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_34_2.png"
+  },
+  {
+    "order": 108,
+    "code": "CHIEU_108",
+    "name": "Chiêu 108: Bái Tổ Đại Đăng Khoa - Viên Mãn 108 Thế Võ",
+    "stepCount": 1,
+    "isSymmetricLeft": false,
+    "symmetricRef": null,
+    "mainImg": "/assets/images/techniques/series/fig_1_1.png"
+  }
+]
