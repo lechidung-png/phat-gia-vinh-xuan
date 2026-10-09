@@ -26,6 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://phat-gia-vinh-xuan.pages.dev"),
   title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
   description:
     "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 13 chuyên đề kinh điển từ công trình 225 trang của GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
@@ -55,11 +56,28 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Tra Cứu 108 Chiêu Thức",
+    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
     description:
-      "Nền tảng tương tác số hóa 100% tài liệu võ học Phật Gia Vịnh Xuân năm 2012.",
+      "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
+    url: "https://phat-gia-vinh-xuan.pages.dev",
+    siteName: "Phật Gia Vịnh Xuân",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+      },
+    ],
     type: "website",
     locale: "vi_VN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+    description:
+      "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
+    images: ["/og-image.png"],
   },
 };
 
