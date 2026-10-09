@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep Zen Bronze/Charcoal -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2D1A10"/>
+      <stop offset="60%" stop-color="#1A0F0A"/>
+      <stop offset="100%" stop-color="#100805"/>
+    </radialGradient>
+
+    <!-- Imperial Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="35%" stop-color="#F3C95A"/>
+      <stop offset="70%" stop-color="#D49E28"/>
+      <stop offset="100%" stop-color="#9E6E12"/>
+    </linearGradient>
+
+    <!-- Gold Border Ring Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D6"/>
+      <stop offset="50%" stop-color="#E2B743"/>
+      <stop offset="100%" stop-color="#8C5C13"/>
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <filter id="innerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#E2B743" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Squircle -->
+  <rect x="24" y="24" width="464" height="464" rx="112" ry="112" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="14" filter="url(#shadow)"/>
+
+  <!-- Inner Concentric Golden Border -->
+  <rect x="52" y="52" width="408" height="408" rx="84" ry="84" fill="none" stroke="#E2B743" stroke-width="4" stroke-opacity="0.7" stroke-dasharray="16 8"/>
+
+  <!-- Four Cardinal Studs (Tý - Ngọ - Mão - Dậu) -->
+  <circle cx="256" cy="40" r="7" fill="#FFF5D6"/>
+  <circle cx="256" cy="472" r="7" fill="#FFF5D6"/>
+  <circle cx="40" cy="256" r="7" fill="#FFF5D6"/>
+  <circle cx="472" cy="256" r="7" fill="#FFF5D6"/>
+
+  <!-- Central Character: 佛 (Phật Gia Vịnh Xuân) -->
+  <text x="256" y="348" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', 'SimSun', 'STSong', serif" font-weight="900" font-size="288" fill="url(#goldGrad)" filter="url(#innerGlow)">
+    佛
+  </text>
+</svg>
