@@ -48,10 +48,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
     return searchKnowledgeBase(query).slice(0, 12);
   }, [query]);
 
-  // Điều hướng bằng bàn phím (Arrow Up, Arrow Down, Enter)
-  useEffect(() => {
-    setSelectedIndex(0);
-  }, [query]);
+
 
   const handleKeyDownList = (e: React.KeyboardEvent) => {
     if (searchResults.length === 0) return;
@@ -99,13 +96,19 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
             type="text"
             autoFocus
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setSelectedIndex(0);
+            }}
             placeholder="Tra cứu: Chiêu 38, Bàng thủ, Mộc nhân, Kiềm dương, GS.TS Nguyễn Mạnh Nhâm..."
             className="flex-1 bg-transparent text-white placeholder-slate-500 focus:outline-none text-sm"
           />
           {query && (
             <button
-              onClick={() => setQuery("")}
+              onClick={() => {
+                setQuery("");
+                setSelectedIndex(0);
+              }}
               className="p-1 rounded-lg text-slate-400 hover:text-white mr-2 text-xs"
               title="Xóa tìm kiếm"
             >

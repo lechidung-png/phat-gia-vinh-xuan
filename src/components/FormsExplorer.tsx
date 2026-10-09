@@ -5,27 +5,22 @@ import Image from "next/image";
 import {
   Swords,
   Layers,
-  Sparkles,
-  Info,
   CheckCircle2,
-  ChevronRight,
   Maximize2,
   X,
-  Play,
   ArrowRight,
-  Shield,
-  Compass,
   Eye,
   Grid,
   Tv,
 } from "lucide-react";
-import { Technique, TechniqueStep } from "@/data/techniques";
+import { Technique } from "@/data/techniques";
 import { FORMS_CATALOG, getTechniquesByForm, FormCatalogItem } from "@/data/all_7_forms";
 import { DojoPlayer } from "@/components/DojoPlayer";
 
 interface FormsExplorerProps {
   allTechniques: Technique[];
   selectedFormId?: string;
+  selectedTechnique?: Technique;
   onSelectForm?: (formId: string) => void;
   onSelectTechnique?: (tech: Technique) => void;
 }
@@ -44,13 +39,30 @@ interface FlattenedMotionStep {
 export const FormsExplorer: React.FC<FormsExplorerProps> = ({
   allTechniques,
   selectedFormId = "01-tieu-niem-dau",
+  selectedTechnique: propSelectedTechnique,
   onSelectForm,
   onSelectTechnique,
 }) => {
   const [currentFormId, setCurrentFormId] = useState<string>(selectedFormId);
   const [viewMode, setViewMode] = useState<"gallery" | "dojo">("gallery");
-  const [selectedTechnique, setSelectedTechnique] = useState<Technique>(allTechniques[0]);
+  const [selectedTechnique, setSelectedTechnique] = useState<Technique>(
+    propSelectedTechnique || allTechniques[0]
+  );
   const [zoomedStep, setZoomedStep] = useState<FlattenedMotionStep | null>(null);
+
+  // Đồng bộ khi prop selectedFormId thay đổi
+  const [prevSelectedFormId, setPrevSelectedFormId] = useState(selectedFormId);
+  if (selectedFormId && prevSelectedFormId !== selectedFormId) {
+    setPrevSelectedFormId(selectedFormId);
+    setCurrentFormId(selectedFormId);
+  }
+
+  // Đồng bộ khi prop selectedTechnique thay đổi
+  const [prevPropTechniqueId, setPrevPropTechniqueId] = useState(propSelectedTechnique?.id);
+  if (propSelectedTechnique && prevPropTechniqueId !== propSelectedTechnique.id) {
+    setPrevPropTechniqueId(propSelectedTechnique.id);
+    setSelectedTechnique(propSelectedTechnique);
+  }
 
   // Danh mục 8 quyền pháp chính thống (Bái Tổ + 7 Bài Quyền)
   const fullFormsCatalog = useMemo(() => {

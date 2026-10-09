@@ -13,7 +13,6 @@ import {
   Crosshair,
   Swords,
   Info,
-  Maximize2,
   CheckCircle2,
 } from "lucide-react";
 

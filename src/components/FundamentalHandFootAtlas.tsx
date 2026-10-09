@@ -6,28 +6,18 @@ import {
   Hand,
   Footprints,
   RotateCw,
-  FileText,
-  ShieldAlert,
   Sparkles,
-  ChevronRight,
-  Eye,
-  Info,
   Maximize2,
   X,
-  Swords,
-  Layers,
   ArrowRight,
   CheckCircle2,
-  Compass,
   BookOpen,
 } from "lucide-react";
 import {
-  HAND_ANATOMY,
   FOOT_STANCES,
   BASIC_DRILLS,
   LEARNING_STAGES,
   SAN_SHOU_CORE_MOTO,
-  FootStanceTechnique,
 } from "@/data/fundamentals";
 
 interface FundamentalAtlasProps {
@@ -336,7 +326,6 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<"hands" | "feet" | "drills" | "scans">("hands");
   const [selectedHand, setSelectedHand] = useState<CoreHandTechnique>(CORE_HAND_POSTURES[0]);
-  const [selectedFoot, setSelectedFoot] = useState<FootStanceTechnique>(FOOT_STANCES[0]);
   const [zoomImg, setZoomImg] = useState<{ src: string; title: string } | null>(null);
 
   return (

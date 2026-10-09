@@ -13,7 +13,7 @@ import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { StanceCheckerModal } from "@/components/StanceCheckerModal";
 import { TECHNIQUES, Technique } from "@/data/techniques";
-import { FORMS_CATALOG, getTechniquesByForm, TIEU_NIEM_DAU_TECHNIQUES } from "@/data/all_7_forms";
+import { getTechniquesByForm, TIEU_NIEM_DAU_TECHNIQUES } from "@/data/all_7_forms";
 
 export default function Home() {
   // Mặc định mở Trang Chủ Chào Mừng (Welcome Portal) hoành tráng & ấn tượng
@@ -97,6 +97,7 @@ export default function Home() {
           <FormsExplorer
             allTechniques={TECHNIQUES}
             selectedFormId={selectedFormId}
+            selectedTechnique={selectedTechnique}
             onSelectForm={setSelectedFormId}
             onSelectTechnique={setSelectedTechnique}
           />

@@ -9,14 +9,12 @@ import {
   Compass,
   BookOpen,
   GitBranch,
-  ShieldAlert,
   Search,
   ArrowRight,
   ShieldCheck,
   ChevronRight,
   Award,
   Layers,
-  CheckCircle2,
 } from "lucide-react";
 import { NavTab } from "@/components/Header";
 

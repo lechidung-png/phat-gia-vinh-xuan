@@ -12,7 +12,6 @@ import {
   Compass,
   Feather,
   Eye,
-  Flame,
   CheckCircle2,
   MapPin,
   Clock,

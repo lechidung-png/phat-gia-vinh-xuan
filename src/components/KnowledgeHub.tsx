@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import {
   Search,
   Filter,
-  ShieldCheck,
   ChevronRight,
   BookOpen,
   Swords,
@@ -13,10 +12,7 @@ import {
   CheckCircle2,
   X,
   Bookmark,
-  Sparkles,
-  UserCheck,
   Clock,
-  Layers,
 } from "lucide-react";
 import { Technique, SECTIONS_CATALOG } from "@/data/techniques";
 import { MONOGRAPHS, MonographSection } from "@/data/monographs";
@@ -37,20 +33,19 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
   const [selectedStance, setSelectedStance] = useState("all");
   const [selectedHand, setSelectedHand] = useState("all");
   const [onlyBookmarks, setOnlyBookmarks] = useState(false);
-  const [bookmarkedIds, setBookmarkedIds] = useState<string[]>([]);
-  const [selectedMonograph, setSelectedMonograph] = useState<MonographSection | null>(null);
-
-  // Load bookmarks từ localStorage
-  useEffect(() => {
+  const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
     try {
       const saved = localStorage.getItem("pgvx_bookmarks");
       if (saved) {
-        setBookmarkedIds(JSON.parse(saved));
+        return JSON.parse(saved);
       }
     } catch {
       // Ignore
     }
-  }, []);
+    return [];
+  });
+  const [selectedMonograph, setSelectedMonograph] = useState<MonographSection | null>(null);
 
   const toggleBookmark = (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
@@ -266,6 +261,27 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
               ))}
             </div>
 
+            {/* Stance Filter Sub-filters */}
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <span className="text-slate-400 mr-1 font-semibold">Tấn pháp:</span>
+              {[
+                { id: "all", name: "Tất cả tấn" },
+                { id: "kiem-duong", name: "Kiềm Dương Tấn Hẹp" },
+              ].map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => setSelectedStance(s.id)}
+                  className={`px-2.5 py-1 rounded-md border text-[11px] transition ${
+                    selectedStance === s.id
+                      ? "bg-[#C27D38]/30 border-[#C27D38] text-[#FDF3D6] font-bold"
+                      : "bg-[#140C08] border-[#3D291F] text-slate-400 hover:text-slate-200"
+                  }`}
+                >
+                  {s.name}
+                </button>
+              ))}
+            </div>
+
           </div>
 
           {/* Results Summary Bar */}
@@ -273,12 +289,13 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
             <span>
               Tìm thấy <strong className="text-[#E2B743]">{filteredTechniques.length}</strong> / 108 chiêu thức
             </span>
-            {(searchQuery || selectedSection !== "all" || selectedHand !== "all" || onlyBookmarks) && (
+            {(searchQuery || selectedSection !== "all" || selectedHand !== "all" || selectedStance !== "all" || onlyBookmarks) && (
               <button
                 onClick={() => {
                   setSearchQuery("");
                   setSelectedSection("all");
                   setSelectedHand("all");
+                  setSelectedStance("all");
                   setOnlyBookmarks(false);
                 }}
                 className="text-[#E2B743] hover:underline"

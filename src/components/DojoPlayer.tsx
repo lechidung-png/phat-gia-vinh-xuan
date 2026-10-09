@@ -20,12 +20,11 @@ import {
   ZoomIn,
   Layers,
   ArrowRight,
-  Sparkles,
   Info,
   FlipHorizontal,
 } from "lucide-react";
 import { Technique, TechniqueStep } from "@/data/techniques";
-import { FORMS_CATALOG, getTechniquesByForm, FormCatalogItem } from "@/data/all_7_forms";
+import { FORMS_CATALOG, getTechniquesByForm } from "@/data/all_7_forms";
 
 interface DojoPlayerProps {
   technique: Technique;
@@ -45,24 +44,50 @@ export const DojoPlayer: React.FC<DojoPlayerProps> = ({
   const [currentFormId, setCurrentFormId] = useState<string>(
     selectedFormId || technique.formId || "01-tieu-niem-dau"
   );
-
-  useEffect(() => {
-    if (selectedFormId && selectedFormId !== currentFormId) {
-      setCurrentFormId(selectedFormId);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [isZoomedModalOpen, setIsZoomedModalOpen] = useState(false);
+  const [showCenterlineGrid, setShowCenterlineGrid] = useState(false);
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    try {
+      const saved = localStorage.getItem("pgvx_bookmarks");
+      if (saved) {
+        return JSON.parse(saved).includes(technique.id);
+      }
+    } catch {
+      // Ignore
     }
-  }, [selectedFormId, currentFormId]);
+    return false;
+  });
+  const [copiedShare, setCopiedShare] = useState(false);
+  const [isMirrorFlipped, setIsMirrorFlipped] = useState<boolean>(technique.isSymmetricLeft || false);
+  const [isPlayingSequence, setIsPlayingSequence] = useState(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState<number>(2200); // 2200ms per step
+  const autoPlayTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    if (technique.formId && technique.formId !== currentFormId) {
-      setCurrentFormId(technique.formId);
-    }
-  }, [technique.formId]);
-
-  // Tự động kích hoạt Chế độ Gương Võ Học khi đòn thế là đối xứng trái
-  useEffect(() => {
-    setIsMirrorFlipped(technique.isSymmetricLeft || false);
+  // Điều chỉnh state khi prop technique thay đổi (React pattern: Adjusting state during render)
+  const [prevTechniqueId, setPrevTechniqueId] = useState(technique.id);
+  if (prevTechniqueId !== technique.id) {
+    setPrevTechniqueId(technique.id);
     setCurrentStepIndex(0);
-  }, [technique.id, technique.isSymmetricLeft]);
+    setIsPlayingSequence(false);
+    setIsMirrorFlipped(technique.isSymmetricLeft || false);
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem("pgvx_bookmarks");
+        setIsBookmarked(saved ? JSON.parse(saved).includes(technique.id) : false);
+      } catch {
+        setIsBookmarked(false);
+      }
+    }
+  }
+
+  // Điều chỉnh currentFormId khi selectedFormId thay đổi
+  const [prevSelectedFormId, setPrevSelectedFormId] = useState(selectedFormId);
+  if (selectedFormId && prevSelectedFormId !== selectedFormId) {
+    setPrevSelectedFormId(selectedFormId);
+    setCurrentFormId(selectedFormId);
+  }
 
   // Danh sách kỹ thuật theo Bài Quyền đang chọn
   const activeTechniquesList = React.useMemo(() => {
@@ -84,22 +109,6 @@ export const DojoPlayer: React.FC<DojoPlayerProps> = ({
     }
   };
 
-  const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [isZoomedModalOpen, setIsZoomedModalOpen] = useState(false);
-  const [showCenterlineGrid, setShowCenterlineGrid] = useState(false);
-  const [isBookmarked, setIsBookmarked] = useState(false);
-  const [copiedShare, setCopiedShare] = useState(false);
-
-  // Chế độ Lật Gương Võ Học (Hỗ trợ môn sinh quan sát và luyện tập trực quan bên Trái)
-  const [isMirrorFlipped, setIsMirrorFlipped] = useState<boolean>(technique.isSymmetricLeft || false);
-
-  // Auto-play Motion Flow (Tự động phát chuỗi động tác liên hoàn)
-  const [isPlayingSequence, setIsPlayingSequence] = useState(false);
-  const [playbackSpeed, setPlaybackSpeed] = useState<number>(2200); // 2200ms per step
-  const autoPlayTimerRef = useRef<NodeJS.Timeout | null>(null);
-
-
-
   const steps: TechniqueStep[] = technique.steps || [];
   const totalSteps = steps.length;
   const currentStep: TechniqueStep =
@@ -110,26 +119,6 @@ export const DojoPlayer: React.FC<DojoPlayerProps> = ({
       imgUrl: "/assets/images/techniques/series/fig_1_1.png",
       keypoints: ["Giữ vững Kiềm Dương Tấn", "Định hình trục Tý Ngọ Tuyến"],
     };
-
-  // Reset step và tự động kích hoạt lật gương khi xem chiêu đối xứng trái
-  useEffect(() => {
-    setCurrentStepIndex(0);
-    setIsPlayingSequence(false);
-    setIsMirrorFlipped(technique.isSymmetricLeft || false);
-  }, [technique.id, technique.code, technique.isSymmetricLeft]);
-
-  // Quản lý Bookmark trong localStorage
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("pgvx_bookmarks");
-      if (saved) {
-        const list = JSON.parse(saved);
-        setIsBookmarked(list.includes(technique.id));
-      }
-    } catch {
-      // Ignore in SSR
-    }
-  }, [technique.id]);
 
   const toggleBookmark = () => {
     try {
@@ -165,7 +154,7 @@ export const DojoPlayer: React.FC<DojoPlayerProps> = ({
   const advanceStep = useCallback(() => {
     if (totalSteps <= 1) return;
     setCurrentStepIndex((prev) => (prev + 1) % totalSteps);
-  }, [totalSteps]);
+  }, [totalSteps, setCurrentStepIndex]);
 
   useEffect(() => {
     if (isPlayingSequence && totalSteps > 1) {

@@ -232,7 +232,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                 <span className="text-xs text-amber-200/70">Mức nguy hiểm:</span>
                 <select
                   value={selectedDanger}
-                  onChange={(e) => setSelectedDanger(e.target.value as any)}
+                  onChange={(e) => setSelectedDanger(e.target.value as "all" | ScenarioDangerLevel)}
                   className="bg-[#140C08] border border-[#3D291F] rounded-xl px-2.5 py-1.5 text-xs text-amber-100 focus:outline-none focus:border-[#E2B743]"
                 >
                   <option value="all">Tất cả cấp độ</option>

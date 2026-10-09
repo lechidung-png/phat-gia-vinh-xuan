@@ -12,10 +12,8 @@ import {
   Upload,
   Search,
   Sparkles,
-  Layers,
   AlertTriangle,
   Eye,
-  Filter,
 } from "lucide-react";
 import { Technique } from "@/data/techniques";
 import originalImageQaData from "@/data/original_image_qa.json";
@@ -82,7 +80,7 @@ export const CurationManagerModal: React.FC<CurationManagerModalProps> = ({
 
   // Tính toán thống kê
   const stats = useMemo(() => {
-    let total = allTechniques.length;
+    const total = allTechniques.length;
     let has3dCount = 0;
     let approvedCount = 0;
     let rejectedCount = 0;

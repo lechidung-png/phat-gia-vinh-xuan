@@ -3,25 +3,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  Info,
-  Sparkles,
   ChevronRight,
   Swords,
   Ruler,
   Shield,
-  Layers,
   Compass,
   History,
-  CheckCircle2,
   ZoomIn,
   Eye,
-  Maximize2,
   X,
-  ArrowRight,
-  RotateCw,
-  Move,
-  Square,
-  Circle,
 } from "lucide-react";
 import { Technique } from "@/data/techniques";
 
@@ -166,7 +156,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                     • <strong>Tay giữa (Trung thung / rốn):</strong> Đặt ngay trên trục Tý Ngọ Tuyến, vươn ra ngắn hơn hai tay trên 5-7cm để môn sinh luồn cùi chỏ vào trong.
                   </p>
                   <p>
-                    • <strong>Cơ cấu mộng phía sau:</strong> 3 đuôi tay xuyên thẳng qua thân cọc, có đục lỗ then cài chốt ngang để tạo <em>"độ giơ" (độ rơ cơ học)</em> rung lắc hấp thụ kình lực.
+                    • <strong>Cơ cấu mộng phía sau:</strong> 3 đuôi tay xuyên thẳng qua thân cọc, có đục lỗ then cài chốt ngang để tạo <em>&quot;độ giơ&quot; (độ rơ cơ học)</em> rung lắc hấp thụ kình lực.
                   </p>
                 </div>
               </div>
@@ -230,7 +220,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 <strong className="text-amber-300 block mb-1">Đặc Điểm Kết Cấu Khung Giá Treo (Trang 94):</strong>
                 • Thân mộc nhân được treo trên <strong>khung giá đỡ gồm 2 cột trụ đứng</strong> hai bên có chân đế bản mã bắt vít xuống sàn nhà.
                 <br />• <strong>2 thanh xà ngang giằng</strong> xuyên qua giữ thân cọc chắc chắn nhưng vẫn cho phép thân cọc có độ đàn hồi tự nhiên khi chịu đòn thung kình.
-                <br />• Chú thích nguyên văn sách gốc: <em>"• Một kiểu mộc nhân khác, thay vì 2 tay thẳng của đầu gối và bàn chân, chỉ dùng một tay cong xuống dưới."</em>
+                <br />• Chú thích nguyên văn sách gốc: <em>&quot;• Một kiểu mộc nhân khác, thay vì 2 tay thẳng của đầu gối và bàn chân, chỉ dùng một tay cong xuống dưới.&quot;</em>
               </div>
             </div>
 
