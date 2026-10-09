@@ -418,7 +418,7 @@ export const CurationManagerModal: React.FC<CurationManagerModalProps> = ({
               const has3d = hyper3dAssets[tech.id] || hyper3dAssets[tech.code];
               const record = curationMap[tech.id] || curationMap[tech.code];
               const status: CurationStatus = record?.status || "pending";
-              const firstStepImg = tech.steps?.[0]?.imgUrl || "/assets/images/techniques/series/fig_1_1.png";
+              const firstStepImg = tech.steps?.[0]?.imgUrl || "/assets/hinh-2x/p037-h01.png";
               const qa = originalImageQa[tech.code] || originalImageQa[tech.id];
               const isSourceRejected = qa?.status === "rejected_source";
 

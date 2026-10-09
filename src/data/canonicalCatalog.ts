@@ -240,30 +240,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-01-m-1",
-        "stepNo": "1",
-        "assetId": "p003-h01",
-        "displayId": "H0001",
-        "pdfPage": 3,
-        "imgUrl": "/assets/hinh/p003-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p003-h01.png",
-        "width": 826,
-        "height": 1255,
-        "desc": "Động tác trang PDF 3 (Mã thư viện: H0001)"
-      },
-      {
-        "id": "bai-01-m-2",
-        "stepNo": "2",
-        "assetId": "p004-h01",
-        "displayId": "H0002",
-        "pdfPage": 4,
-        "imgUrl": "/assets/hinh/p004-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p004-h01.png",
-        "width": 797,
-        "height": 1258,
-        "desc": "Động tác trang PDF 4 (Mã thư viện: H0002)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -574,318 +551,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-05-m-1",
-        "stepNo": "1",
-        "assetId": "p011-h01",
-        "displayId": "H0003",
-        "pdfPage": 11,
-        "imgUrl": "/assets/hinh/p011-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p011-h01.png",
-        "width": 855,
-        "height": 1243,
-        "desc": "Động tác trang PDF 11 (Mã thư viện: H0003)"
-      },
-      {
-        "id": "bai-05-m-2",
-        "stepNo": "2",
-        "assetId": "p013-h01",
-        "displayId": "H0004",
-        "pdfPage": 13,
-        "imgUrl": "/assets/hinh/p013-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p013-h01.png",
-        "width": 845,
-        "height": 593,
-        "desc": "Động tác trang PDF 13 (Mã thư viện: H0004)"
-      },
-      {
-        "id": "bai-05-m-3",
-        "stepNo": "3",
-        "assetId": "p014-h01",
-        "displayId": "H0005",
-        "pdfPage": 14,
-        "imgUrl": "/assets/hinh/p014-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p014-h01.png",
-        "width": 530,
-        "height": 764,
-        "desc": "Động tác trang PDF 14 (Mã thư viện: H0005)"
-      },
-      {
-        "id": "bai-05-m-4",
-        "stepNo": "4",
-        "assetId": "p015-h01",
-        "displayId": "H0006",
-        "pdfPage": 15,
-        "imgUrl": "/assets/hinh/p015-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p015-h01.png",
-        "width": 489,
-        "height": 518,
-        "desc": "Động tác trang PDF 15 (Mã thư viện: H0006)"
-      },
-      {
-        "id": "bai-05-m-5",
-        "stepNo": "5",
-        "assetId": "p016-h01",
-        "displayId": "H0007",
-        "pdfPage": 16,
-        "imgUrl": "/assets/hinh/p016-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p016-h01.png",
-        "width": 423,
-        "height": 691,
-        "desc": "Động tác trang PDF 16 (Mã thư viện: H0007)"
-      },
-      {
-        "id": "bai-05-m-6",
-        "stepNo": "6",
-        "assetId": "p016-h02",
-        "displayId": "H0008",
-        "pdfPage": 16,
-        "imgUrl": "/assets/hinh/p016-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p016-h02.png",
-        "width": 230,
-        "height": 327,
-        "desc": "Động tác trang PDF 16 (Mã thư viện: H0008)"
-      },
-      {
-        "id": "bai-05-m-7",
-        "stepNo": "7",
-        "assetId": "p016-h03",
-        "displayId": "H0009",
-        "pdfPage": 16,
-        "imgUrl": "/assets/hinh/p016-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p016-h03.png",
-        "width": 222,
-        "height": 327,
-        "desc": "Động tác trang PDF 16 (Mã thư viện: H0009)"
-      },
-      {
-        "id": "bai-05-m-8",
-        "stepNo": "8",
-        "assetId": "p016-h04",
-        "displayId": "H0010",
-        "pdfPage": 16,
-        "imgUrl": "/assets/hinh/p016-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p016-h04.png",
-        "width": 472,
-        "height": 305,
-        "desc": "Động tác trang PDF 16 (Mã thư viện: H0010)"
-      },
-      {
-        "id": "bai-05-m-9",
-        "stepNo": "9",
-        "assetId": "p018-h01",
-        "displayId": "H0011",
-        "pdfPage": 18,
-        "imgUrl": "/assets/hinh/p018-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p018-h01.png",
-        "width": 871,
-        "height": 741,
-        "desc": "Động tác trang PDF 18 (Mã thư viện: H0011)"
-      },
-      {
-        "id": "bai-05-m-10",
-        "stepNo": "10",
-        "assetId": "p019-h01",
-        "displayId": "H0012",
-        "pdfPage": 19,
-        "imgUrl": "/assets/hinh/p019-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p019-h01.png",
-        "width": 531,
-        "height": 592,
-        "desc": "Động tác trang PDF 19 (Mã thư viện: H0012)"
-      },
-      {
-        "id": "bai-05-m-11",
-        "stepNo": "11",
-        "assetId": "p020-h01",
-        "displayId": "H0013",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h01.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0013)"
-      },
-      {
-        "id": "bai-05-m-12",
-        "stepNo": "12",
-        "assetId": "p020-h02",
-        "displayId": "H0014",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h02.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0014)"
-      },
-      {
-        "id": "bai-05-m-13",
-        "stepNo": "13",
-        "assetId": "p020-h03",
-        "displayId": "H0015",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h03.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0015)"
-      },
-      {
-        "id": "bai-05-m-14",
-        "stepNo": "14",
-        "assetId": "p020-h04",
-        "displayId": "H0016",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h04.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0016)"
-      },
-      {
-        "id": "bai-05-m-15",
-        "stepNo": "15",
-        "assetId": "p020-h05",
-        "displayId": "H0017",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h05.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0017)"
-      },
-      {
-        "id": "bai-05-m-16",
-        "stepNo": "16",
-        "assetId": "p020-h06",
-        "displayId": "H0018",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h06.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0018)"
-      },
-      {
-        "id": "bai-05-m-17",
-        "stepNo": "17",
-        "assetId": "p020-h07",
-        "displayId": "H0019",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h07.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0019)"
-      },
-      {
-        "id": "bai-05-m-18",
-        "stepNo": "18",
-        "assetId": "p020-h08",
-        "displayId": "H0020",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h08.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0020)"
-      },
-      {
-        "id": "bai-05-m-19",
-        "stepNo": "19",
-        "assetId": "p020-h09",
-        "displayId": "H0021",
-        "pdfPage": 20,
-        "imgUrl": "/assets/hinh/p020-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p020-h09.png",
-        "width": 115,
-        "height": 280,
-        "desc": "Động tác trang PDF 20 (Mã thư viện: H0021)"
-      },
-      {
-        "id": "bai-05-m-20",
-        "stepNo": "20",
-        "assetId": "p021-h01",
-        "displayId": "H0022",
-        "pdfPage": 21,
-        "imgUrl": "/assets/hinh/p021-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p021-h01.png",
-        "width": 449,
-        "height": 650,
-        "desc": "Động tác trang PDF 21 (Mã thư viện: H0022)"
-      },
-      {
-        "id": "bai-05-m-21",
-        "stepNo": "21",
-        "assetId": "p021-h02",
-        "displayId": "H0023",
-        "pdfPage": 21,
-        "imgUrl": "/assets/hinh/p021-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p021-h02.png",
-        "width": 449,
-        "height": 650,
-        "desc": "Động tác trang PDF 21 (Mã thư viện: H0023)"
-      },
-      {
-        "id": "bai-05-m-22",
-        "stepNo": "22",
-        "assetId": "p021-h03",
-        "displayId": "H0024",
-        "pdfPage": 21,
-        "imgUrl": "/assets/hinh/p021-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p021-h03.png",
-        "width": 466,
-        "height": 635,
-        "desc": "Động tác trang PDF 21 (Mã thư viện: H0024)"
-      },
-      {
-        "id": "bai-05-m-23",
-        "stepNo": "23",
-        "assetId": "p022-h01",
-        "displayId": "H0025",
-        "pdfPage": 22,
-        "imgUrl": "/assets/hinh/p022-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p022-h01.png",
-        "width": 468,
-        "height": 609,
-        "desc": "Động tác trang PDF 22 (Mã thư viện: H0025)"
-      },
-      {
-        "id": "bai-05-m-24",
-        "stepNo": "24",
-        "assetId": "p022-h02",
-        "displayId": "H0026",
-        "pdfPage": 22,
-        "imgUrl": "/assets/hinh/p022-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p022-h02.png",
-        "width": 456,
-        "height": 610,
-        "desc": "Động tác trang PDF 22 (Mã thư viện: H0026)"
-      },
-      {
-        "id": "bai-05-m-25",
-        "stepNo": "25",
-        "assetId": "p022-h03",
-        "displayId": "H0027",
-        "pdfPage": 22,
-        "imgUrl": "/assets/hinh/p022-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p022-h03.png",
-        "width": 401,
-        "height": 595,
-        "desc": "Động tác trang PDF 22 (Mã thư viện: H0027)"
-      },
-      {
-        "id": "bai-05-m-26",
-        "stepNo": "26",
-        "assetId": "p024-h01",
-        "displayId": "H0028",
-        "pdfPage": 24,
-        "imgUrl": "/assets/hinh/p024-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p024-h01.png",
-        "width": 984,
-        "height": 547,
-        "desc": "Động tác trang PDF 24 (Mã thư viện: H0028)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -1238,7 +904,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p026-h01.png",
         "width": 831,
         "height": 1274,
-        "desc": "Động tác trang PDF 26 (Mã thư viện: H0029)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-2",
@@ -1250,7 +916,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h01.png",
         "width": 200,
         "height": 266,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0030)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-3",
@@ -1262,7 +928,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h02.png",
         "width": 234,
         "height": 82,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0031)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-4",
@@ -1274,7 +940,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h03.png",
         "width": 178,
         "height": 192,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0032)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-5",
@@ -1286,7 +952,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h04.png",
         "width": 245,
         "height": 208,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0033)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-6",
@@ -1298,7 +964,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h05.png",
         "width": 256,
         "height": 163,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0034)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-7",
@@ -1310,7 +976,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h06.png",
         "width": 412,
         "height": 252,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0035)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-8",
@@ -1322,7 +988,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h07.png",
         "width": 212,
         "height": 237,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0036)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-9",
@@ -1334,7 +1000,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h08.png",
         "width": 234,
         "height": 192,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0037)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-10",
@@ -1346,7 +1012,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h09.png",
         "width": 167,
         "height": 193,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0038)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-11",
@@ -1358,7 +1024,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h10.png",
         "width": 189,
         "height": 207,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0039)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-12",
@@ -1370,7 +1036,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h11.png",
         "width": 167,
         "height": 192,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0040)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-13",
@@ -1382,7 +1048,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p028-h12.png",
         "width": 212,
         "height": 252,
-        "desc": "Động tác trang PDF 28 (Mã thư viện: H0041)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-14",
@@ -1394,7 +1060,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p029-h01.png",
         "width": 222,
         "height": 221,
-        "desc": "Động tác trang PDF 29 (Mã thư viện: H0042)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-15",
@@ -1406,7 +1072,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p029-h02.png",
         "width": 223,
         "height": 221,
-        "desc": "Động tác trang PDF 29 (Mã thư viện: H0043)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-16",
@@ -1418,7 +1084,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p029-h03.png",
         "width": 245,
         "height": 354,
-        "desc": "Động tác trang PDF 29 (Mã thư viện: H0044)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-17",
@@ -1430,7 +1096,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p029-h04.png",
         "width": 223,
         "height": 265,
-        "desc": "Động tác trang PDF 29 (Mã thư viện: H0045)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-18",
@@ -1442,7 +1108,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p029-h05.png",
         "width": 501,
         "height": 634,
-        "desc": "Động tác trang PDF 29 (Mã thư viện: H0046)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-19",
@@ -1454,7 +1120,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p030-h01.png",
         "width": 260,
         "height": 465,
-        "desc": "Động tác trang PDF 30 (Mã thư viện: H0047)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-20",
@@ -1466,7 +1132,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p030-h02.png",
         "width": 260,
         "height": 465,
-        "desc": "Động tác trang PDF 30 (Mã thư viện: H0048)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-21",
@@ -1478,7 +1144,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p030-h03.png",
         "width": 257,
         "height": 465,
-        "desc": "Động tác trang PDF 30 (Mã thư viện: H0049)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-22",
@@ -1490,7 +1156,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p031-h01.png",
         "width": 871,
         "height": 593,
-        "desc": "Động tác trang PDF 31 (Mã thư viện: H0050)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-23",
@@ -1502,7 +1168,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p031-h02.png",
         "width": 386,
         "height": 623,
-        "desc": "Động tác trang PDF 31 (Mã thư viện: H0051)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-24",
@@ -1514,7 +1180,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p032-h01.png",
         "width": 484,
         "height": 563,
-        "desc": "Động tác trang PDF 32 (Mã thư viện: H0052)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-25",
@@ -1526,7 +1192,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p032-h02.png",
         "width": 352,
         "height": 266,
-        "desc": "Động tác trang PDF 32 (Mã thư viện: H0053)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-26",
@@ -1538,7 +1204,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p032-h03.png",
         "width": 352,
         "height": 296,
-        "desc": "Động tác trang PDF 32 (Mã thư viện: H0054)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-27",
@@ -1550,7 +1216,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p033-h01.png",
         "width": 935,
         "height": 417,
-        "desc": "Động tác trang PDF 33 (Mã thư viện: H0055)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-28",
@@ -1562,7 +1228,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p033-h02.png",
         "width": 408,
         "height": 244,
-        "desc": "Động tác trang PDF 33 (Mã thư viện: H0056)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-29",
@@ -1574,7 +1240,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p033-h03.png",
         "width": 408,
         "height": 297,
-        "desc": "Động tác trang PDF 33 (Mã thư viện: H0057)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-30",
@@ -1586,7 +1252,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p033-h04.png",
         "width": 405,
         "height": 662,
-        "desc": "Động tác trang PDF 33 (Mã thư viện: H0058)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-31",
@@ -1598,7 +1264,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p034-h01.png",
         "width": 411,
         "height": 319,
-        "desc": "Động tác trang PDF 34 (Mã thư viện: H0059)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-32",
@@ -1610,7 +1276,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p034-h02.png",
         "width": 410,
         "height": 376,
-        "desc": "Động tác trang PDF 34 (Mã thư viện: H0060)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-33",
@@ -1622,7 +1288,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p034-h03.png",
         "width": 410,
         "height": 370,
-        "desc": "Động tác trang PDF 34 (Mã thư viện: H0061)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-34",
@@ -1634,7 +1300,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p035-h01.png",
         "width": 831,
         "height": 368,
-        "desc": "Động tác trang PDF 35 (Mã thư viện: H0062)"
+        "desc": ""
       },
       {
         "id": "bai-06-m-35",
@@ -1646,7 +1312,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p035-h02.png",
         "width": 831,
         "height": 378,
-        "desc": "Động tác trang PDF 35 (Mã thư viện: H0063)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -2149,7 +1815,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h01.png",
         "width": 145,
         "height": 343,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0064)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-2",
@@ -2161,7 +1827,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h02.png",
         "width": 133,
         "height": 342,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0065)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-3",
@@ -2173,7 +1839,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h03.png",
         "width": 131,
         "height": 343,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0066)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-4",
@@ -2185,7 +1851,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h04.png",
         "width": 132,
         "height": 341,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0067)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-5",
@@ -2197,7 +1863,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h05.png",
         "width": 207,
         "height": 339,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0068)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-6",
@@ -2209,7 +1875,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h06.png",
         "width": 202,
         "height": 339,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0069)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-7",
@@ -2221,7 +1887,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h07.png",
         "width": 204,
         "height": 335,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0070)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-8",
@@ -2233,7 +1899,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h08.png",
         "width": 128,
         "height": 331,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0071)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-9",
@@ -2245,7 +1911,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p037-h09.png",
         "width": 128,
         "height": 332,
-        "desc": "Động tác trang PDF 37 (Mã thư viện: H0072)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-10",
@@ -2257,7 +1923,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h01.png",
         "width": 131,
         "height": 340,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0073)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-11",
@@ -2269,7 +1935,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h02.png",
         "width": 185,
         "height": 343,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0074)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-12",
@@ -2281,7 +1947,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h03.png",
         "width": 167,
         "height": 345,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0075)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-13",
@@ -2293,7 +1959,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h04.png",
         "width": 139,
         "height": 344,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0076)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-14",
@@ -2305,7 +1971,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h05.png",
         "width": 146,
         "height": 344,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0077)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-15",
@@ -2317,7 +1983,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h06.png",
         "width": 169,
         "height": 346,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0078)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-16",
@@ -2329,7 +1995,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h07.png",
         "width": 143,
         "height": 343,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0079)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-17",
@@ -2341,7 +2007,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h08.png",
         "width": 156,
         "height": 339,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0080)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-18",
@@ -2353,7 +2019,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h09.png",
         "width": 177,
         "height": 344,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0081)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-19",
@@ -2365,7 +2031,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p038-h10.png",
         "width": 219,
         "height": 345,
-        "desc": "Động tác trang PDF 38 (Mã thư viện: H0082)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-20",
@@ -2377,7 +2043,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h01.png",
         "width": 137,
         "height": 355,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0083)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-21",
@@ -2389,7 +2055,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h02.png",
         "width": 147,
         "height": 342,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0084)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-22",
@@ -2401,7 +2067,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h03.png",
         "width": 133,
         "height": 338,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0085)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-23",
@@ -2413,7 +2079,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h04.png",
         "width": 158,
         "height": 339,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0086)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-24",
@@ -2425,7 +2091,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h05.png",
         "width": 175,
         "height": 340,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0087)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-25",
@@ -2437,7 +2103,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h06.png",
         "width": 141,
         "height": 328,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0088)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-26",
@@ -2449,7 +2115,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h07.png",
         "width": 172,
         "height": 332,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0089)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-27",
@@ -2461,7 +2127,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h08.png",
         "width": 186,
         "height": 338,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0090)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-28",
@@ -2473,7 +2139,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p039-h09.png",
         "width": 351,
         "height": 373,
-        "desc": "Động tác trang PDF 39 (Mã thư viện: H0091)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-29",
@@ -2485,7 +2151,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h01.png",
         "width": 149,
         "height": 339,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0092)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-30",
@@ -2497,7 +2163,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h02.png",
         "width": 175,
         "height": 343,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0093)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-31",
@@ -2509,7 +2175,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h03.png",
         "width": 133,
         "height": 339,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0094)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-32",
@@ -2521,7 +2187,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h04.png",
         "width": 127,
         "height": 339,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0095)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-33",
@@ -2533,7 +2199,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h05.png",
         "width": 154,
         "height": 342,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0096)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-34",
@@ -2545,7 +2211,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h06.png",
         "width": 134,
         "height": 339,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0097)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-35",
@@ -2557,7 +2223,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h07.png",
         "width": 196,
         "height": 384,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0098)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-36",
@@ -2569,7 +2235,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h08.png",
         "width": 167,
         "height": 340,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0099)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-37",
@@ -2581,7 +2247,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p040-h09.png",
         "width": 216,
         "height": 388,
-        "desc": "Động tác trang PDF 40 (Mã thư viện: H0100)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-38",
@@ -2593,7 +2259,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h01.png",
         "width": 126,
         "height": 338,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0101)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-39",
@@ -2605,7 +2271,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h02.png",
         "width": 186,
         "height": 382,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0102)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-40",
@@ -2617,7 +2283,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h03.png",
         "width": 129,
         "height": 338,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0103)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-41",
@@ -2629,7 +2295,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h04.png",
         "width": 137,
         "height": 338,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0104)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-42",
@@ -2641,7 +2307,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h05.png",
         "width": 128,
         "height": 338,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0105)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-43",
@@ -2653,7 +2319,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h06.png",
         "width": 137,
         "height": 341,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0106)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-44",
@@ -2665,7 +2331,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h07.png",
         "width": 233,
         "height": 383,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0107)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-45",
@@ -2677,7 +2343,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p041-h08.png",
         "width": 142,
         "height": 339,
-        "desc": "Động tác trang PDF 41 (Mã thư viện: H0108)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-46",
@@ -2689,7 +2355,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h01.png",
         "width": 143,
         "height": 344,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0109)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-47",
@@ -2701,7 +2367,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h02.png",
         "width": 137,
         "height": 339,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0110)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-48",
@@ -2713,7 +2379,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h03.png",
         "width": 133,
         "height": 340,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0111)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-49",
@@ -2725,7 +2391,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h04.png",
         "width": 134,
         "height": 339,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0112)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-50",
@@ -2737,7 +2403,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h05.png",
         "width": 150,
         "height": 343,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0113)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-51",
@@ -2749,7 +2415,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h06.png",
         "width": 136,
         "height": 343,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0114)"
+        "desc": ""
       },
       {
         "id": "bai-07-m-52",
@@ -2761,7 +2427,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p042-h07.png",
         "width": 170,
         "height": 340,
-        "desc": "Động tác trang PDF 42 (Mã thư viện: H0115)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -2778,972 +2444,8 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
     "pageRange": "Trang PDF 43 – 43",
     "assetCount": 0,
     "assets": [],
-    "motions": [],
-    "recommendedPrerequisites": []
-  },
-  {
-    "id": "bai-09",
-    "title": "Tầm Kiều",
-    "groupId": "quyen-tay-khong",
-    "bookOrder": 9,
-    "contentType": "practice_or_mixed",
-    "pdfPages": [
-      44,
-      45,
-      46,
-      47,
-      48
-    ],
-    "pageRange": "Trang PDF 44 – 48",
-    "assetCount": 45,
-    "assets": [
-      {
-        "assetId": "p044-h01",
-        "displayId": "H0116",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h01.png",
-        "width": 136,
-        "height": 338
-      },
-      {
-        "assetId": "p044-h02",
-        "displayId": "H0117",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h02.png",
-        "width": 133,
-        "height": 339
-      },
-      {
-        "assetId": "p044-h03",
-        "displayId": "H0118",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h03.png",
-        "width": 132,
-        "height": 339
-      },
-      {
-        "assetId": "p044-h04",
-        "displayId": "H0119",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h04.png",
-        "width": 142,
-        "height": 338
-      },
-      {
-        "assetId": "p044-h05",
-        "displayId": "H0120",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h05.png",
-        "width": 252,
-        "height": 383
-      },
-      {
-        "assetId": "p044-h06",
-        "displayId": "H0121",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h06.png",
-        "width": 234,
-        "height": 384
-      },
-      {
-        "assetId": "p044-h07",
-        "displayId": "H0122",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h07.png",
-        "width": 209,
-        "height": 376
-      },
-      {
-        "assetId": "p044-h08",
-        "displayId": "H0123",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h08.png",
-        "width": 143,
-        "height": 339
-      },
-      {
-        "assetId": "p044-h09",
-        "displayId": "H0124",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h09.png",
-        "width": 141,
-        "height": 340
-      },
-      {
-        "assetId": "p045-h01",
-        "displayId": "H0125",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h01.png",
-        "width": 140,
-        "height": 339
-      },
-      {
-        "assetId": "p045-h02",
-        "displayId": "H0126",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h02.png",
-        "width": 141,
-        "height": 340
-      },
-      {
-        "assetId": "p045-h03",
-        "displayId": "H0127",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h03.png",
-        "width": 131,
-        "height": 338
-      },
-      {
-        "assetId": "p045-h04",
-        "displayId": "H0128",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h04.png",
-        "width": 136,
-        "height": 339
-      },
-      {
-        "assetId": "p045-h05",
-        "displayId": "H0129",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h05.png",
-        "width": 145,
-        "height": 339
-      },
-      {
-        "assetId": "p045-h06",
-        "displayId": "H0130",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h06.png",
-        "width": 137,
-        "height": 339
-      },
-      {
-        "assetId": "p045-h07",
-        "displayId": "H0131",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h07.png",
-        "width": 138,
-        "height": 341
-      },
-      {
-        "assetId": "p045-h08",
-        "displayId": "H0132",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h08.png",
-        "width": 235,
-        "height": 382
-      },
-      {
-        "assetId": "p045-h09",
-        "displayId": "H0133",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h09.png",
-        "width": 239,
-        "height": 383
-      },
-      {
-        "assetId": "p045-h10",
-        "displayId": "H0134",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h10.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h10.png",
-        "width": 230,
-        "height": 383
-      },
-      {
-        "assetId": "p046-h01",
-        "displayId": "H0135",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h01.png",
-        "width": 157,
-        "height": 337
-      },
-      {
-        "assetId": "p046-h02",
-        "displayId": "H0136",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h02.png",
-        "width": 168,
-        "height": 338
-      },
-      {
-        "assetId": "p046-h03",
-        "displayId": "H0137",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h03.png",
-        "width": 280,
-        "height": 380
-      },
-      {
-        "assetId": "p046-h04",
-        "displayId": "H0138",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h04.png",
-        "width": 252,
-        "height": 380
-      },
-      {
-        "assetId": "p046-h05",
-        "displayId": "H0139",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h05.png",
-        "width": 183,
-        "height": 336
-      },
-      {
-        "assetId": "p046-h06",
-        "displayId": "H0140",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h06.png",
-        "width": 142,
-        "height": 336
-      },
-      {
-        "assetId": "p046-h07",
-        "displayId": "H0141",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h07.png",
-        "width": 176,
-        "height": 335
-      },
-      {
-        "assetId": "p046-h08",
-        "displayId": "H0142",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h08.png",
-        "width": 262,
-        "height": 379
-      },
-      {
-        "assetId": "p046-h09",
-        "displayId": "H0143",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h09.png",
-        "width": 281,
-        "height": 379
-      },
-      {
-        "assetId": "p047-h01",
-        "displayId": "H0144",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h01.png",
-        "width": 110,
-        "height": 339
-      },
-      {
-        "assetId": "p047-h02",
-        "displayId": "H0145",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h02.png",
-        "width": 200,
-        "height": 320
-      },
-      {
-        "assetId": "p047-h03",
-        "displayId": "H0146",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h03.png",
-        "width": 275,
-        "height": 319
-      },
-      {
-        "assetId": "p047-h04",
-        "displayId": "H0147",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h04.png",
-        "width": 241,
-        "height": 383
-      },
-      {
-        "assetId": "p047-h05",
-        "displayId": "H0148",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h05.png",
-        "width": 213,
-        "height": 336
-      },
-      {
-        "assetId": "p047-h06",
-        "displayId": "H0149",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h06.png",
-        "width": 248,
-        "height": 333
-      },
-      {
-        "assetId": "p047-h07",
-        "displayId": "H0150",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h07.png",
-        "width": 202,
-        "height": 383
-      },
-      {
-        "assetId": "p047-h08",
-        "displayId": "H0151",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h08.png",
-        "width": 215,
-        "height": 383
-      },
-      {
-        "assetId": "p048-h01",
-        "displayId": "H0152",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h01.png",
-        "width": 193,
-        "height": 383
-      },
-      {
-        "assetId": "p048-h02",
-        "displayId": "H0153",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h02.png",
-        "width": 109,
-        "height": 340
-      },
-      {
-        "assetId": "p048-h03",
-        "displayId": "H0154",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h03.png",
-        "width": 172,
-        "height": 339
-      },
-      {
-        "assetId": "p048-h04",
-        "displayId": "H0155",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h04.png",
-        "width": 124,
-        "height": 339
-      },
-      {
-        "assetId": "p048-h05",
-        "displayId": "H0156",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h05.png",
-        "width": 203,
-        "height": 381
-      },
-      {
-        "assetId": "p048-h06",
-        "displayId": "H0157",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h06.png",
-        "width": 251,
-        "height": 334
-      },
-      {
-        "assetId": "p048-h07",
-        "displayId": "H0158",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h07.png",
-        "width": 203,
-        "height": 382
-      },
-      {
-        "assetId": "p048-h08",
-        "displayId": "H0159",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h08.png",
-        "width": 204,
-        "height": 382
-      },
-      {
-        "assetId": "p048-h09",
-        "displayId": "H0160",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h09.png",
-        "width": 209,
-        "height": 383
-      }
-    ],
     "motions": [
-      {
-        "id": "bai-09-m-1",
-        "stepNo": "1",
-        "assetId": "p044-h01",
-        "displayId": "H0116",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h01.png",
-        "width": 136,
-        "height": 338,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0116)"
-      },
-      {
-        "id": "bai-09-m-2",
-        "stepNo": "2",
-        "assetId": "p044-h02",
-        "displayId": "H0117",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h02.png",
-        "width": 133,
-        "height": 339,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0117)"
-      },
-      {
-        "id": "bai-09-m-3",
-        "stepNo": "3",
-        "assetId": "p044-h03",
-        "displayId": "H0118",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h03.png",
-        "width": 132,
-        "height": 339,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0118)"
-      },
-      {
-        "id": "bai-09-m-4",
-        "stepNo": "4",
-        "assetId": "p044-h04",
-        "displayId": "H0119",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h04.png",
-        "width": 142,
-        "height": 338,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0119)"
-      },
-      {
-        "id": "bai-09-m-5",
-        "stepNo": "5",
-        "assetId": "p044-h05",
-        "displayId": "H0120",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h05.png",
-        "width": 252,
-        "height": 383,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0120)"
-      },
-      {
-        "id": "bai-09-m-6",
-        "stepNo": "6",
-        "assetId": "p044-h06",
-        "displayId": "H0121",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h06.png",
-        "width": 234,
-        "height": 384,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0121)"
-      },
-      {
-        "id": "bai-09-m-7",
-        "stepNo": "7",
-        "assetId": "p044-h07",
-        "displayId": "H0122",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h07.png",
-        "width": 209,
-        "height": 376,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0122)"
-      },
-      {
-        "id": "bai-09-m-8",
-        "stepNo": "8",
-        "assetId": "p044-h08",
-        "displayId": "H0123",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h08.png",
-        "width": 143,
-        "height": 339,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0123)"
-      },
-      {
-        "id": "bai-09-m-9",
-        "stepNo": "9",
-        "assetId": "p044-h09",
-        "displayId": "H0124",
-        "pdfPage": 44,
-        "imgUrl": "/assets/hinh/p044-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p044-h09.png",
-        "width": 141,
-        "height": 340,
-        "desc": "Động tác trang PDF 44 (Mã thư viện: H0124)"
-      },
-      {
-        "id": "bai-09-m-10",
-        "stepNo": "10",
-        "assetId": "p045-h01",
-        "displayId": "H0125",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h01.png",
-        "width": 140,
-        "height": 339,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0125)"
-      },
-      {
-        "id": "bai-09-m-11",
-        "stepNo": "11",
-        "assetId": "p045-h02",
-        "displayId": "H0126",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h02.png",
-        "width": 141,
-        "height": 340,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0126)"
-      },
-      {
-        "id": "bai-09-m-12",
-        "stepNo": "12",
-        "assetId": "p045-h03",
-        "displayId": "H0127",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h03.png",
-        "width": 131,
-        "height": 338,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0127)"
-      },
-      {
-        "id": "bai-09-m-13",
-        "stepNo": "13",
-        "assetId": "p045-h04",
-        "displayId": "H0128",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h04.png",
-        "width": 136,
-        "height": 339,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0128)"
-      },
-      {
-        "id": "bai-09-m-14",
-        "stepNo": "14",
-        "assetId": "p045-h05",
-        "displayId": "H0129",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h05.png",
-        "width": 145,
-        "height": 339,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0129)"
-      },
-      {
-        "id": "bai-09-m-15",
-        "stepNo": "15",
-        "assetId": "p045-h06",
-        "displayId": "H0130",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h06.png",
-        "width": 137,
-        "height": 339,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0130)"
-      },
-      {
-        "id": "bai-09-m-16",
-        "stepNo": "16",
-        "assetId": "p045-h07",
-        "displayId": "H0131",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h07.png",
-        "width": 138,
-        "height": 341,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0131)"
-      },
-      {
-        "id": "bai-09-m-17",
-        "stepNo": "17",
-        "assetId": "p045-h08",
-        "displayId": "H0132",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h08.png",
-        "width": 235,
-        "height": 382,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0132)"
-      },
-      {
-        "id": "bai-09-m-18",
-        "stepNo": "18",
-        "assetId": "p045-h09",
-        "displayId": "H0133",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h09.png",
-        "width": 239,
-        "height": 383,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0133)"
-      },
-      {
-        "id": "bai-09-m-19",
-        "stepNo": "19",
-        "assetId": "p045-h10",
-        "displayId": "H0134",
-        "pdfPage": 45,
-        "imgUrl": "/assets/hinh/p045-h10.png",
-        "img2xUrl": "/assets/hinh-2x/p045-h10.png",
-        "width": 230,
-        "height": 383,
-        "desc": "Động tác trang PDF 45 (Mã thư viện: H0134)"
-      },
-      {
-        "id": "bai-09-m-20",
-        "stepNo": "20",
-        "assetId": "p046-h01",
-        "displayId": "H0135",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h01.png",
-        "width": 157,
-        "height": 337,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0135)"
-      },
-      {
-        "id": "bai-09-m-21",
-        "stepNo": "21",
-        "assetId": "p046-h02",
-        "displayId": "H0136",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h02.png",
-        "width": 168,
-        "height": 338,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0136)"
-      },
-      {
-        "id": "bai-09-m-22",
-        "stepNo": "22",
-        "assetId": "p046-h03",
-        "displayId": "H0137",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h03.png",
-        "width": 280,
-        "height": 380,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0137)"
-      },
-      {
-        "id": "bai-09-m-23",
-        "stepNo": "23",
-        "assetId": "p046-h04",
-        "displayId": "H0138",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h04.png",
-        "width": 252,
-        "height": 380,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0138)"
-      },
-      {
-        "id": "bai-09-m-24",
-        "stepNo": "24",
-        "assetId": "p046-h05",
-        "displayId": "H0139",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h05.png",
-        "width": 183,
-        "height": 336,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0139)"
-      },
-      {
-        "id": "bai-09-m-25",
-        "stepNo": "25",
-        "assetId": "p046-h06",
-        "displayId": "H0140",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h06.png",
-        "width": 142,
-        "height": 336,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0140)"
-      },
-      {
-        "id": "bai-09-m-26",
-        "stepNo": "26",
-        "assetId": "p046-h07",
-        "displayId": "H0141",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h07.png",
-        "width": 176,
-        "height": 335,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0141)"
-      },
-      {
-        "id": "bai-09-m-27",
-        "stepNo": "27",
-        "assetId": "p046-h08",
-        "displayId": "H0142",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h08.png",
-        "width": 262,
-        "height": 379,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0142)"
-      },
-      {
-        "id": "bai-09-m-28",
-        "stepNo": "28",
-        "assetId": "p046-h09",
-        "displayId": "H0143",
-        "pdfPage": 46,
-        "imgUrl": "/assets/hinh/p046-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p046-h09.png",
-        "width": 281,
-        "height": 379,
-        "desc": "Động tác trang PDF 46 (Mã thư viện: H0143)"
-      },
-      {
-        "id": "bai-09-m-29",
-        "stepNo": "29",
-        "assetId": "p047-h01",
-        "displayId": "H0144",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h01.png",
-        "width": 110,
-        "height": 339,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0144)"
-      },
-      {
-        "id": "bai-09-m-30",
-        "stepNo": "30",
-        "assetId": "p047-h02",
-        "displayId": "H0145",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h02.png",
-        "width": 200,
-        "height": 320,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0145)"
-      },
-      {
-        "id": "bai-09-m-31",
-        "stepNo": "31",
-        "assetId": "p047-h03",
-        "displayId": "H0146",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h03.png",
-        "width": 275,
-        "height": 319,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0146)"
-      },
-      {
-        "id": "bai-09-m-32",
-        "stepNo": "32",
-        "assetId": "p047-h04",
-        "displayId": "H0147",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h04.png",
-        "width": 241,
-        "height": 383,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0147)"
-      },
-      {
-        "id": "bai-09-m-33",
-        "stepNo": "33",
-        "assetId": "p047-h05",
-        "displayId": "H0148",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h05.png",
-        "width": 213,
-        "height": 336,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0148)"
-      },
-      {
-        "id": "bai-09-m-34",
-        "stepNo": "34",
-        "assetId": "p047-h06",
-        "displayId": "H0149",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h06.png",
-        "width": 248,
-        "height": 333,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0149)"
-      },
-      {
-        "id": "bai-09-m-35",
-        "stepNo": "35",
-        "assetId": "p047-h07",
-        "displayId": "H0150",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h07.png",
-        "width": 202,
-        "height": 383,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0150)"
-      },
-      {
-        "id": "bai-09-m-36",
-        "stepNo": "36",
-        "assetId": "p047-h08",
-        "displayId": "H0151",
-        "pdfPage": 47,
-        "imgUrl": "/assets/hinh/p047-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p047-h08.png",
-        "width": 215,
-        "height": 383,
-        "desc": "Động tác trang PDF 47 (Mã thư viện: H0151)"
-      },
-      {
-        "id": "bai-09-m-37",
-        "stepNo": "37",
-        "assetId": "p048-h01",
-        "displayId": "H0152",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h01.png",
-        "width": 193,
-        "height": 383,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0152)"
-      },
-      {
-        "id": "bai-09-m-38",
-        "stepNo": "38",
-        "assetId": "p048-h02",
-        "displayId": "H0153",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h02.png",
-        "width": 109,
-        "height": 340,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0153)"
-      },
-      {
-        "id": "bai-09-m-39",
-        "stepNo": "39",
-        "assetId": "p048-h03",
-        "displayId": "H0154",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h03.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h03.png",
-        "width": 172,
-        "height": 339,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0154)"
-      },
-      {
-        "id": "bai-09-m-40",
-        "stepNo": "40",
-        "assetId": "p048-h04",
-        "displayId": "H0155",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h04.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h04.png",
-        "width": 124,
-        "height": 339,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0155)"
-      },
-      {
-        "id": "bai-09-m-41",
-        "stepNo": "41",
-        "assetId": "p048-h05",
-        "displayId": "H0156",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h05.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h05.png",
-        "width": 203,
-        "height": 381,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0156)"
-      },
-      {
-        "id": "bai-09-m-42",
-        "stepNo": "42",
-        "assetId": "p048-h06",
-        "displayId": "H0157",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h06.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h06.png",
-        "width": 251,
-        "height": 334,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0157)"
-      },
-      {
-        "id": "bai-09-m-43",
-        "stepNo": "43",
-        "assetId": "p048-h07",
-        "displayId": "H0158",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h07.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h07.png",
-        "width": 203,
-        "height": 382,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0158)"
-      },
-      {
-        "id": "bai-09-m-44",
-        "stepNo": "44",
-        "assetId": "p048-h08",
-        "displayId": "H0159",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h08.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h08.png",
-        "width": 204,
-        "height": 382,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0159)"
-      },
-      {
-        "id": "bai-09-m-45",
-        "stepNo": "45",
-        "assetId": "p048-h09",
-        "displayId": "H0160",
-        "pdfPage": 48,
-        "imgUrl": "/assets/hinh/p048-h09.png",
-        "img2xUrl": "/assets/hinh-2x/p048-h09.png",
-        "width": 209,
-        "height": 383,
-        "desc": "Động tác trang PDF 48 (Mã thư viện: H0160)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -4153,7 +2855,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h01.png",
         "width": 134,
         "height": 341,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0161)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-2",
@@ -4165,7 +2867,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h02.png",
         "width": 146,
         "height": 339,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0162)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-3",
@@ -4177,7 +2879,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h03.png",
         "width": 141,
         "height": 339,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0163)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-4",
@@ -4189,7 +2891,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h04.png",
         "width": 213,
         "height": 385,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0164)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-5",
@@ -4201,7 +2903,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h05.png",
         "width": 252,
         "height": 385,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0165)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-6",
@@ -4213,7 +2915,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h06.png",
         "width": 222,
         "height": 386,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0166)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-7",
@@ -4225,7 +2927,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h07.png",
         "width": 218,
         "height": 387,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0167)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-8",
@@ -4237,7 +2939,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h08.png",
         "width": 207,
         "height": 387,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0168)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-9",
@@ -4249,7 +2951,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h09.png",
         "width": 131,
         "height": 338,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0169)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-10",
@@ -4261,7 +2963,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p049-h10.png",
         "width": 142,
         "height": 339,
-        "desc": "Động tác trang PDF 49 (Mã thư viện: H0170)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-11",
@@ -4273,7 +2975,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h01.png",
         "width": 132,
         "height": 339,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0171)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-12",
@@ -4285,7 +2987,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h02.png",
         "width": 172,
         "height": 388,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0172)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-13",
@@ -4297,7 +2999,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h03.png",
         "width": 211,
         "height": 387,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0173)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-14",
@@ -4309,7 +3011,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h04.png",
         "width": 240,
         "height": 386,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0174)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-15",
@@ -4321,7 +3023,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h05.png",
         "width": 241,
         "height": 383,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0175)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-16",
@@ -4333,7 +3035,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h06.png",
         "width": 272,
         "height": 383,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0176)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-17",
@@ -4345,7 +3047,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h07.png",
         "width": 131,
         "height": 338,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0177)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-18",
@@ -4357,7 +3059,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p050-h08.png",
         "width": 136,
         "height": 343,
-        "desc": "Động tác trang PDF 50 (Mã thư viện: H0178)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-19",
@@ -4369,7 +3071,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h01.png",
         "width": 150,
         "height": 342,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0179)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-20",
@@ -4381,7 +3083,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h02.png",
         "width": 150,
         "height": 337,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0180)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-21",
@@ -4393,7 +3095,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h03.png",
         "width": 221,
         "height": 380,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0181)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-22",
@@ -4405,7 +3107,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h04.png",
         "width": 149,
         "height": 342,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0182)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-23",
@@ -4417,7 +3119,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h05.png",
         "width": 275,
         "height": 384,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0183)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-24",
@@ -4429,7 +3131,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h06.png",
         "width": 230,
         "height": 384,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0184)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-25",
@@ -4441,7 +3143,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h07.png",
         "width": 212,
         "height": 383,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0185)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-26",
@@ -4453,7 +3155,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p051-h08.png",
         "width": 222,
         "height": 385,
-        "desc": "Động tác trang PDF 51 (Mã thư viện: H0186)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-27",
@@ -4465,7 +3167,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h01.png",
         "width": 234,
         "height": 387,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0187)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-28",
@@ -4477,7 +3179,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h02.png",
         "width": 132,
         "height": 340,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0188)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-29",
@@ -4489,7 +3191,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h03.png",
         "width": 116,
         "height": 340,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0189)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-30",
@@ -4501,7 +3203,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h04.png",
         "width": 116,
         "height": 340,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0190)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-31",
@@ -4513,7 +3215,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h05.png",
         "width": 112,
         "height": 340,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0191)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-32",
@@ -4525,7 +3227,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h06.png",
         "width": 111,
         "height": 341,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0192)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-33",
@@ -4537,7 +3239,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h07.png",
         "width": 245,
         "height": 386,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0193)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-34",
@@ -4549,7 +3251,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p052-h08.png",
         "width": 252,
         "height": 401,
-        "desc": "Động tác trang PDF 52 (Mã thư viện: H0194)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-35",
@@ -4561,7 +3263,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h01.png",
         "width": 249,
         "height": 394,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0195)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-36",
@@ -4573,7 +3275,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h02.png",
         "width": 232,
         "height": 384,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0196)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-37",
@@ -4585,7 +3287,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h03.png",
         "width": 183,
         "height": 225,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0197)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-38",
@@ -4597,7 +3299,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h04.png",
         "width": 242,
         "height": 385,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0198)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-39",
@@ -4609,7 +3311,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h05.png",
         "width": 130,
         "height": 341,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0199)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-40",
@@ -4621,7 +3323,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h06.png",
         "width": 126,
         "height": 338,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0200)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-41",
@@ -4633,7 +3335,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h07.png",
         "width": 128,
         "height": 342,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0201)"
+        "desc": ""
       },
       {
         "id": "bai-10-m-42",
@@ -4645,7 +3347,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p053-h08.png",
         "width": 142,
         "height": 343,
-        "desc": "Động tác trang PDF 53 (Mã thư viện: H0202)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -4673,18 +3375,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-11-m-1",
-        "stepNo": "1",
-        "assetId": "p054-h01",
-        "displayId": "H0203",
-        "pdfPage": 54,
-        "imgUrl": "/assets/hinh/p054-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p054-h01.png",
-        "width": 583,
-        "height": 502,
-        "desc": "Động tác trang PDF 54 (Mã thư viện: H0203)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -5396,7 +4087,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h01.png",
         "width": 155,
         "height": 338,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0204)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-2",
@@ -5408,7 +4099,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h02.png",
         "width": 147,
         "height": 339,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0205)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-3",
@@ -5420,7 +4111,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h03.png",
         "width": 159,
         "height": 338,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0206)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-4",
@@ -5432,7 +4123,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h04.png",
         "width": 129,
         "height": 337,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0207)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-5",
@@ -5444,7 +4135,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h05.png",
         "width": 128,
         "height": 339,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0208)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-6",
@@ -5456,7 +4147,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h06.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0209)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-7",
@@ -5468,7 +4159,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h07.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0210)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-8",
@@ -5480,7 +4171,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h08.png",
         "width": 155,
         "height": 338,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0211)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-9",
@@ -5492,7 +4183,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p055-h09.png",
         "width": 195,
         "height": 382,
-        "desc": "Động tác trang PDF 55 (Mã thư viện: H0212)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-10",
@@ -5504,7 +4195,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h01.png",
         "width": 136,
         "height": 337,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0213)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-11",
@@ -5516,7 +4207,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h02.png",
         "width": 125,
         "height": 339,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0214)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-12",
@@ -5528,7 +4219,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h03.png",
         "width": 228,
         "height": 384,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0215)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-13",
@@ -5540,7 +4231,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h04.png",
         "width": 112,
         "height": 338,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0216)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-14",
@@ -5552,7 +4243,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h05.png",
         "width": 213,
         "height": 383,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0217)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-15",
@@ -5564,7 +4255,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h06.png",
         "width": 124,
         "height": 337,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0218)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-16",
@@ -5576,7 +4267,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h07.png",
         "width": 128,
         "height": 338,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0219)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-17",
@@ -5588,7 +4279,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p056-h08.png",
         "width": 140,
         "height": 337,
-        "desc": "Động tác trang PDF 56 (Mã thư viện: H0220)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-18",
@@ -5600,7 +4291,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h01.png",
         "width": 120,
         "height": 337,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0221)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-19",
@@ -5612,7 +4303,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h02.png",
         "width": 120,
         "height": 338,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0222)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-20",
@@ -5624,7 +4315,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h03.png",
         "width": 116,
         "height": 340,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0223)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-21",
@@ -5636,7 +4327,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h04.png",
         "width": 172,
         "height": 333,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0224)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-22",
@@ -5648,7 +4339,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h05.png",
         "width": 120,
         "height": 336,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0225)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-23",
@@ -5660,7 +4351,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h06.png",
         "width": 146,
         "height": 337,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0226)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-24",
@@ -5672,7 +4363,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p057-h07.png",
         "width": 122,
         "height": 337,
-        "desc": "Động tác trang PDF 57 (Mã thư viện: H0227)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-25",
@@ -5684,7 +4375,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h01.png",
         "width": 141,
         "height": 340,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0228)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-26",
@@ -5696,7 +4387,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h02.png",
         "width": 122,
         "height": 338,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0229)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-27",
@@ -5708,7 +4399,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h03.png",
         "width": 124,
         "height": 338,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0230)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-28",
@@ -5720,7 +4411,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h04.png",
         "width": 118,
         "height": 337,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0231)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-29",
@@ -5732,7 +4423,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h05.png",
         "width": 116,
         "height": 338,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0232)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-30",
@@ -5744,7 +4435,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h06.png",
         "width": 122,
         "height": 339,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0233)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-31",
@@ -5756,7 +4447,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h07.png",
         "width": 123,
         "height": 340,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0234)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-32",
@@ -5768,7 +4459,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p058-h08.png",
         "width": 134,
         "height": 340,
-        "desc": "Động tác trang PDF 58 (Mã thư viện: H0235)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-33",
@@ -5780,7 +4471,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h01.png",
         "width": 129,
         "height": 339,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0236)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-34",
@@ -5792,7 +4483,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h02.png",
         "width": 118,
         "height": 337,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0237)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-35",
@@ -5804,7 +4495,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h03.png",
         "width": 209,
         "height": 382,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0238)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-36",
@@ -5816,7 +4507,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h04.png",
         "width": 178,
         "height": 380,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0239)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-37",
@@ -5828,7 +4519,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h05.png",
         "width": 129,
         "height": 339,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0240)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-38",
@@ -5840,7 +4531,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h06.png",
         "width": 137,
         "height": 338,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0241)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-39",
@@ -5852,7 +4543,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h07.png",
         "width": 121,
         "height": 336,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0242)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-40",
@@ -5864,7 +4555,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p059-h08.png",
         "width": 120,
         "height": 337,
-        "desc": "Động tác trang PDF 59 (Mã thư viện: H0243)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-41",
@@ -5876,7 +4567,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h01.png",
         "width": 129,
         "height": 336,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0244)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-42",
@@ -5888,7 +4579,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h02.png",
         "width": 131,
         "height": 339,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0245)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-43",
@@ -5900,7 +4591,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h03.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0246)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-44",
@@ -5912,7 +4603,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h04.png",
         "width": 123,
         "height": 336,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0247)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-45",
@@ -5924,7 +4615,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h05.png",
         "width": 128,
         "height": 337,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0248)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-46",
@@ -5936,7 +4627,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h06.png",
         "width": 131,
         "height": 339,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0249)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-47",
@@ -5948,7 +4639,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h07.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0250)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-48",
@@ -5960,7 +4651,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p060-h08.png",
         "width": 128,
         "height": 336,
-        "desc": "Động tác trang PDF 60 (Mã thư viện: H0251)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-49",
@@ -5972,7 +4663,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h01.png",
         "width": 133,
         "height": 339,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0252)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-50",
@@ -5984,7 +4675,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h02.png",
         "width": 120,
         "height": 339,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0253)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-51",
@@ -5996,7 +4687,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h03.png",
         "width": 131,
         "height": 340,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0254)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-52",
@@ -6008,7 +4699,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h04.png",
         "width": 116,
         "height": 338,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0255)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-53",
@@ -6020,7 +4711,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h05.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0256)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-54",
@@ -6032,7 +4723,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h06.png",
         "width": 192,
         "height": 382,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0257)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-55",
@@ -6044,7 +4735,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h07.png",
         "width": 115,
         "height": 338,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0258)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-56",
@@ -6056,7 +4747,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p061-h08.png",
         "width": 118,
         "height": 336,
-        "desc": "Động tác trang PDF 61 (Mã thư viện: H0259)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-57",
@@ -6068,7 +4759,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h01.png",
         "width": 125,
         "height": 338,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0260)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-58",
@@ -6080,7 +4771,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h02.png",
         "width": 172,
         "height": 366,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0261)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-59",
@@ -6092,7 +4783,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h03.png",
         "width": 137,
         "height": 322,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0262)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-60",
@@ -6104,7 +4795,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h04.png",
         "width": 132,
         "height": 321,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0263)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-61",
@@ -6116,7 +4807,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h05.png",
         "width": 129,
         "height": 338,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0264)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-62",
@@ -6128,7 +4819,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h06.png",
         "width": 177,
         "height": 384,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0265)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-63",
@@ -6140,7 +4831,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p062-h07.png",
         "width": 121,
         "height": 335,
-        "desc": "Động tác trang PDF 62 (Mã thư viện: H0266)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-64",
@@ -6152,7 +4843,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h01.png",
         "width": 139,
         "height": 337,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0267)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-65",
@@ -6164,7 +4855,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h02.png",
         "width": 138,
         "height": 326,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0268)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-66",
@@ -6176,7 +4867,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h03.png",
         "width": 124,
         "height": 336,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0269)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-67",
@@ -6188,7 +4879,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h04.png",
         "width": 126,
         "height": 337,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0270)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-68",
@@ -6200,7 +4891,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h05.png",
         "width": 176,
         "height": 334,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0271)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-69",
@@ -6212,7 +4903,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h06.png",
         "width": 195,
         "height": 320,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0272)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-70",
@@ -6224,7 +4915,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h07.png",
         "width": 122,
         "height": 337,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0273)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-71",
@@ -6236,7 +4927,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p063-h08.png",
         "width": 197,
         "height": 333,
-        "desc": "Động tác trang PDF 63 (Mã thư viện: H0274)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-72",
@@ -6248,7 +4939,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p064-h01.png",
         "width": 135,
         "height": 338,
-        "desc": "Động tác trang PDF 64 (Mã thư viện: H0275)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-73",
@@ -6260,7 +4951,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p064-h02.png",
         "width": 124,
         "height": 337,
-        "desc": "Động tác trang PDF 64 (Mã thư viện: H0276)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-74",
@@ -6272,7 +4963,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p064-h03.png",
         "width": 128,
         "height": 337,
-        "desc": "Động tác trang PDF 64 (Mã thư viện: H0277)"
+        "desc": ""
       },
       {
         "id": "bai-12-m-75",
@@ -6284,7 +4975,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p064-h04.png",
         "width": 131,
         "height": 336,
-        "desc": "Động tác trang PDF 64 (Mã thư viện: H0278)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -7015,7 +5706,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h01.png",
         "width": 232,
         "height": 318,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0279)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-2",
@@ -7027,7 +5718,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h02.png",
         "width": 247,
         "height": 319,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0280)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-3",
@@ -7039,7 +5730,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h03.png",
         "width": 211,
         "height": 318,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0281)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-4",
@@ -7051,7 +5742,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h04.png",
         "width": 205,
         "height": 317,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0282)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-5",
@@ -7063,7 +5754,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h05.png",
         "width": 249,
         "height": 317,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0283)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-6",
@@ -7075,7 +5766,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h06.png",
         "width": 259,
         "height": 314,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0284)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-7",
@@ -7087,7 +5778,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h07.png",
         "width": 239,
         "height": 317,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0285)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-8",
@@ -7099,7 +5790,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p065-h08.png",
         "width": 251,
         "height": 317,
-        "desc": "Động tác trang PDF 65 (Mã thư viện: H0286)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-9",
@@ -7111,7 +5802,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h01.png",
         "width": 209,
         "height": 321,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0287)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-10",
@@ -7123,7 +5814,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h02.png",
         "width": 219,
         "height": 315,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0288)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-11",
@@ -7135,7 +5826,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h03.png",
         "width": 256,
         "height": 317,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0289)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-12",
@@ -7147,7 +5838,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h04.png",
         "width": 256,
         "height": 317,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0290)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-13",
@@ -7159,7 +5850,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h05.png",
         "width": 253,
         "height": 317,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0291)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-14",
@@ -7171,7 +5862,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h06.png",
         "width": 231,
         "height": 317,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0292)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-15",
@@ -7183,7 +5874,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h07.png",
         "width": 247,
         "height": 316,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0293)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-16",
@@ -7195,7 +5886,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p066-h08.png",
         "width": 248,
         "height": 316,
-        "desc": "Động tác trang PDF 66 (Mã thư viện: H0294)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-17",
@@ -7207,7 +5898,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h01.png",
         "width": 212,
         "height": 314,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0295)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-18",
@@ -7219,7 +5910,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h02.png",
         "width": 258,
         "height": 314,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0296)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-19",
@@ -7231,7 +5922,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h03.png",
         "width": 242,
         "height": 315,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0297)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-20",
@@ -7243,7 +5934,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h04.png",
         "width": 243,
         "height": 314,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0298)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-21",
@@ -7255,7 +5946,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h05.png",
         "width": 283,
         "height": 362,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0299)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-22",
@@ -7267,7 +5958,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h06.png",
         "width": 211,
         "height": 315,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0300)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-23",
@@ -7279,7 +5970,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h07.png",
         "width": 214,
         "height": 314,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0301)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-24",
@@ -7291,7 +5982,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p067-h08.png",
         "width": 233,
         "height": 317,
-        "desc": "Động tác trang PDF 67 (Mã thư viện: H0302)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-25",
@@ -7303,7 +5994,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h01.png",
         "width": 247,
         "height": 316,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0303)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-26",
@@ -7315,7 +6006,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h02.png",
         "width": 256,
         "height": 316,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0304)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-27",
@@ -7327,7 +6018,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h03.png",
         "width": 249,
         "height": 315,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0305)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-28",
@@ -7339,7 +6030,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h04.png",
         "width": 239,
         "height": 316,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0306)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-29",
@@ -7351,7 +6042,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h05.png",
         "width": 243,
         "height": 316,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0307)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-30",
@@ -7363,7 +6054,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h06.png",
         "width": 236,
         "height": 317,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0308)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-31",
@@ -7375,7 +6066,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h07.png",
         "width": 244,
         "height": 316,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0309)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-32",
@@ -7387,7 +6078,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p068-h08.png",
         "width": 215,
         "height": 315,
-        "desc": "Động tác trang PDF 68 (Mã thư viện: H0310)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-33",
@@ -7399,7 +6090,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h01.png",
         "width": 220,
         "height": 317,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0311)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-34",
@@ -7411,7 +6102,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h02.png",
         "width": 258,
         "height": 315,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0312)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-35",
@@ -7423,7 +6114,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h03.png",
         "width": 199,
         "height": 314,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0313)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-36",
@@ -7435,7 +6126,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h04.png",
         "width": 246,
         "height": 314,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0314)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-37",
@@ -7447,7 +6138,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h05.png",
         "width": 254,
         "height": 316,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0315)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-38",
@@ -7459,7 +6150,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h06.png",
         "width": 247,
         "height": 317,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0316)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-39",
@@ -7471,7 +6162,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h07.png",
         "width": 251,
         "height": 314,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0317)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-40",
@@ -7483,7 +6174,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p069-h08.png",
         "width": 258,
         "height": 315,
-        "desc": "Động tác trang PDF 69 (Mã thư viện: H0318)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-41",
@@ -7495,7 +6186,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h01.png",
         "width": 218,
         "height": 315,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0319)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-42",
@@ -7507,7 +6198,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h02.png",
         "width": 224,
         "height": 317,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0320)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-43",
@@ -7519,7 +6210,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h03.png",
         "width": 224,
         "height": 316,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0321)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-44",
@@ -7531,7 +6222,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h04.png",
         "width": 264,
         "height": 314,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0322)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-45",
@@ -7543,7 +6234,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h05.png",
         "width": 221,
         "height": 316,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0323)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-46",
@@ -7555,7 +6246,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h06.png",
         "width": 247,
         "height": 316,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0324)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-47",
@@ -7567,7 +6258,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h07.png",
         "width": 245,
         "height": 316,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0325)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-48",
@@ -7579,7 +6270,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p070-h08.png",
         "width": 203,
         "height": 314,
-        "desc": "Động tác trang PDF 70 (Mã thư viện: H0326)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-49",
@@ -7591,7 +6282,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h01.png",
         "width": 224,
         "height": 316,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0327)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-50",
@@ -7603,7 +6294,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h02.png",
         "width": 214,
         "height": 314,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0328)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-51",
@@ -7615,7 +6306,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h03.png",
         "width": 253,
         "height": 317,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0329)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-52",
@@ -7627,7 +6318,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h04.png",
         "width": 234,
         "height": 319,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0330)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-53",
@@ -7639,7 +6330,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h05.png",
         "width": 234,
         "height": 315,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0331)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-54",
@@ -7651,7 +6342,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h06.png",
         "width": 208,
         "height": 316,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0332)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-55",
@@ -7663,7 +6354,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h07.png",
         "width": 221,
         "height": 321,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0333)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-56",
@@ -7675,7 +6366,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p071-h08.png",
         "width": 248,
         "height": 319,
-        "desc": "Động tác trang PDF 71 (Mã thư viện: H0334)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-57",
@@ -7687,7 +6378,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h01.png",
         "width": 256,
         "height": 314,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0335)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-58",
@@ -7699,7 +6390,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h02.png",
         "width": 227,
         "height": 315,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0336)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-59",
@@ -7711,7 +6402,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h03.png",
         "width": 237,
         "height": 316,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0337)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-60",
@@ -7723,7 +6414,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h04.png",
         "width": 252,
         "height": 320,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0338)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-61",
@@ -7735,7 +6426,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h05.png",
         "width": 260,
         "height": 308,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0339)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-62",
@@ -7747,7 +6438,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h06.png",
         "width": 290,
         "height": 360,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0340)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-63",
@@ -7759,7 +6450,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h07.png",
         "width": 254,
         "height": 320,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0341)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-64",
@@ -7771,7 +6462,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p072-h08.png",
         "width": 244,
         "height": 317,
-        "desc": "Động tác trang PDF 72 (Mã thư viện: H0342)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-65",
@@ -7783,7 +6474,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h01.png",
         "width": 227,
         "height": 313,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0343)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-66",
@@ -7795,7 +6486,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h02.png",
         "width": 236,
         "height": 309,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0344)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-67",
@@ -7807,7 +6498,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h03.png",
         "width": 234,
         "height": 320,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0345)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-68",
@@ -7819,7 +6510,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h04.png",
         "width": 257,
         "height": 318,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0346)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-69",
@@ -7831,7 +6522,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h05.png",
         "width": 236,
         "height": 315,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0347)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-70",
@@ -7843,7 +6534,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p073-h06.png",
         "width": 221,
         "height": 315,
-        "desc": "Động tác trang PDF 73 (Mã thư viện: H0348)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-71",
@@ -7855,7 +6546,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h01.png",
         "width": 233,
         "height": 305,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0349)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-72",
@@ -7867,7 +6558,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h02.png",
         "width": 256,
         "height": 314,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0350)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-73",
@@ -7879,7 +6570,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h03.png",
         "width": 244,
         "height": 309,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0351)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-74",
@@ -7891,7 +6582,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h04.png",
         "width": 250,
         "height": 319,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0352)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-75",
@@ -7903,7 +6594,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h05.png",
         "width": 252,
         "height": 315,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0353)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-76",
@@ -7915,7 +6606,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h06.png",
         "width": 248,
         "height": 315,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0354)"
+        "desc": ""
       },
       {
         "id": "bai-13-m-77",
@@ -7927,7 +6618,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p074-h07.png",
         "width": 233,
         "height": 312,
-        "desc": "Động tác trang PDF 74 (Mã thư viện: H0355)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -8620,7 +7311,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h01.png",
         "width": 165,
         "height": 382,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0356)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-2",
@@ -8632,7 +7323,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h02.png",
         "width": 122,
         "height": 336,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0357)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-3",
@@ -8644,7 +7335,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h03.png",
         "width": 138,
         "height": 340,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0358)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-4",
@@ -8656,7 +7347,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h04.png",
         "width": 168,
         "height": 341,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0359)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-5",
@@ -8668,7 +7359,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h05.png",
         "width": 219,
         "height": 382,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0360)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-6",
@@ -8680,7 +7371,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h06.png",
         "width": 235,
         "height": 382,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0361)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-7",
@@ -8692,7 +7383,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h07.png",
         "width": 279,
         "height": 382,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0362)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-8",
@@ -8704,7 +7395,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h08.png",
         "width": 137,
         "height": 339,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0363)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-9",
@@ -8716,7 +7407,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p075-h09.png",
         "width": 133,
         "height": 340,
-        "desc": "Động tác trang PDF 75 (Mã thư viện: H0364)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-10",
@@ -8728,7 +7419,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h01.png",
         "width": 238,
         "height": 383,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0365)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-11",
@@ -8740,7 +7431,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h02.png",
         "width": 236,
         "height": 383,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0366)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-12",
@@ -8752,7 +7443,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h03.png",
         "width": 138,
         "height": 338,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0367)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-13",
@@ -8764,7 +7455,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h04.png",
         "width": 146,
         "height": 339,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0368)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-14",
@@ -8776,7 +7467,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h05.png",
         "width": 120,
         "height": 339,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0369)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-15",
@@ -8788,7 +7479,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h06.png",
         "width": 175,
         "height": 383,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0370)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-16",
@@ -8800,7 +7491,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h07.png",
         "width": 210,
         "height": 340,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0371)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-17",
@@ -8812,7 +7503,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h08.png",
         "width": 278,
         "height": 382,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0372)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-18",
@@ -8824,7 +7515,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p076-h09.png",
         "width": 120,
         "height": 299,
-        "desc": "Động tác trang PDF 76 (Mã thư viện: H0373)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-19",
@@ -8836,7 +7527,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h01.png",
         "width": 231,
         "height": 366,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0374)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-20",
@@ -8848,7 +7539,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h02.png",
         "width": 116,
         "height": 340,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0375)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-21",
@@ -8860,7 +7551,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h03.png",
         "width": 176,
         "height": 339,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0376)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-22",
@@ -8872,7 +7563,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h04.png",
         "width": 246,
         "height": 382,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0377)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-23",
@@ -8884,7 +7575,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h05.png",
         "width": 130,
         "height": 342,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0378)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-24",
@@ -8896,7 +7587,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h06.png",
         "width": 132,
         "height": 340,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0379)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-25",
@@ -8908,7 +7599,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h07.png",
         "width": 147,
         "height": 342,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0380)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-26",
@@ -8920,7 +7611,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h08.png",
         "width": 116,
         "height": 338,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0381)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-27",
@@ -8932,7 +7623,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p077-h09.png",
         "width": 199,
         "height": 384,
-        "desc": "Động tác trang PDF 77 (Mã thư viện: H0382)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-28",
@@ -8944,7 +7635,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h01.png",
         "width": 156,
         "height": 339,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0383)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-29",
@@ -8956,7 +7647,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h02.png",
         "width": 242,
         "height": 383,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0384)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-30",
@@ -8968,7 +7659,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h03.png",
         "width": 162,
         "height": 339,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0385)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-31",
@@ -8980,7 +7671,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h04.png",
         "width": 242,
         "height": 383,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0386)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-32",
@@ -8992,7 +7683,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h05.png",
         "width": 237,
         "height": 383,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0387)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-33",
@@ -9004,7 +7695,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h06.png",
         "width": 131,
         "height": 338,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0388)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-34",
@@ -9016,7 +7707,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h07.png",
         "width": 219,
         "height": 366,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0389)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-35",
@@ -9028,7 +7719,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h08.png",
         "width": 285,
         "height": 382,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0390)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-36",
@@ -9040,7 +7731,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h09.png",
         "width": 210,
         "height": 383,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0391)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-37",
@@ -9052,7 +7743,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p078-h10.png",
         "width": 136,
         "height": 339,
-        "desc": "Động tác trang PDF 78 (Mã thư viện: H0392)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-38",
@@ -9064,7 +7755,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h01.png",
         "width": 177,
         "height": 342,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0393)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-39",
@@ -9076,7 +7767,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h02.png",
         "width": 194,
         "height": 381,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0394)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-40",
@@ -9088,7 +7779,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h03.png",
         "width": 148,
         "height": 337,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0395)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-41",
@@ -9100,7 +7791,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h04.png",
         "width": 128,
         "height": 339,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0396)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-42",
@@ -9112,7 +7803,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h05.png",
         "width": 280,
         "height": 381,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0397)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-43",
@@ -9124,7 +7815,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h06.png",
         "width": 116,
         "height": 339,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0398)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-44",
@@ -9136,7 +7827,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h07.png",
         "width": 286,
         "height": 381,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0399)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-45",
@@ -9148,7 +7839,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h08.png",
         "width": 157,
         "height": 339,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0400)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-46",
@@ -9160,7 +7851,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p079-h09.png",
         "width": 190,
         "height": 381,
-        "desc": "Động tác trang PDF 79 (Mã thư viện: H0401)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-47",
@@ -9172,7 +7863,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h01.png",
         "width": 118,
         "height": 338,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0402)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-48",
@@ -9184,7 +7875,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h02.png",
         "width": 249,
         "height": 383,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0403)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-49",
@@ -9196,7 +7887,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h03.png",
         "width": 115,
         "height": 338,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0404)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-50",
@@ -9208,7 +7899,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h04.png",
         "width": 237,
         "height": 382,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0405)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-51",
@@ -9220,7 +7911,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h05.png",
         "width": 130,
         "height": 339,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0406)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-52",
@@ -9232,7 +7923,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h06.png",
         "width": 134,
         "height": 333,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0407)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-53",
@@ -9244,7 +7935,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h07.png",
         "width": 150,
         "height": 337,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0408)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-54",
@@ -9256,7 +7947,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h08.png",
         "width": 131,
         "height": 328,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0409)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-55",
@@ -9268,7 +7959,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p080-h09.png",
         "width": 123,
         "height": 337,
-        "desc": "Động tác trang PDF 80 (Mã thư viện: H0410)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-56",
@@ -9280,7 +7971,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h01.png",
         "width": 184,
         "height": 382,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0411)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-57",
@@ -9292,7 +7983,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h02.png",
         "width": 116,
         "height": 338,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0412)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-58",
@@ -9304,7 +7995,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h03.png",
         "width": 139,
         "height": 338,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0413)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-59",
@@ -9316,7 +8007,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h04.png",
         "width": 131,
         "height": 331,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0414)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-60",
@@ -9328,7 +8019,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h05.png",
         "width": 166,
         "height": 382,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0415)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-61",
@@ -9340,7 +8031,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h06.png",
         "width": 170,
         "height": 382,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0416)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-62",
@@ -9352,7 +8043,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h07.png",
         "width": 168,
         "height": 334,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0417)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-63",
@@ -9364,7 +8055,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h08.png",
         "width": 257,
         "height": 321,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0418)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-64",
@@ -9376,7 +8067,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p081-h09.png",
         "width": 146,
         "height": 337,
-        "desc": "Động tác trang PDF 81 (Mã thư viện: H0419)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-65",
@@ -9388,7 +8079,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h01.png",
         "width": 158,
         "height": 337,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0420)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-66",
@@ -9400,7 +8091,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h02.png",
         "width": 148,
         "height": 338,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0421)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-67",
@@ -9412,7 +8103,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h03.png",
         "width": 188,
         "height": 366,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0422)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-68",
@@ -9424,7 +8115,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h04.png",
         "width": 141,
         "height": 338,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0423)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-69",
@@ -9436,7 +8127,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h05.png",
         "width": 135,
         "height": 339,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0424)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-70",
@@ -9448,7 +8139,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h06.png",
         "width": 131,
         "height": 337,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0425)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-71",
@@ -9460,7 +8151,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h07.png",
         "width": 136,
         "height": 338,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0426)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-72",
@@ -9472,7 +8163,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h08.png",
         "width": 136,
         "height": 338,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0427)"
+        "desc": ""
       },
       {
         "id": "bai-14-m-73",
@@ -9484,7 +8175,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p082-h09.png",
         "width": 157,
         "height": 337,
-        "desc": "Động tác trang PDF 82 (Mã thư viện: H0428)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -10160,7 +8851,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h01.png",
         "width": 232,
         "height": 304,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0429)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-2",
@@ -10172,7 +8863,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h02.png",
         "width": 228,
         "height": 302,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0430)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-3",
@@ -10184,7 +8875,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h03.png",
         "width": 247,
         "height": 301,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0431)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-4",
@@ -10196,7 +8887,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h04.png",
         "width": 270,
         "height": 303,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0432)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-5",
@@ -10208,7 +8899,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h05.png",
         "width": 261,
         "height": 302,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0433)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-6",
@@ -10220,7 +8911,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h06.png",
         "width": 275,
         "height": 301,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0434)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-7",
@@ -10232,7 +8923,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h07.png",
         "width": 268,
         "height": 302,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0435)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-8",
@@ -10244,7 +8935,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p083-h08.png",
         "width": 279,
         "height": 302,
-        "desc": "Động tác trang PDF 83 (Mã thư viện: H0436)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-9",
@@ -10256,7 +8947,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h01.png",
         "width": 234,
         "height": 302,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0437)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-10",
@@ -10268,7 +8959,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h02.png",
         "width": 267,
         "height": 302,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0438)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-11",
@@ -10280,7 +8971,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h03.png",
         "width": 247,
         "height": 301,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0439)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-12",
@@ -10292,7 +8983,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h04.png",
         "width": 258,
         "height": 301,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0440)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-13",
@@ -10304,7 +8995,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h05.png",
         "width": 259,
         "height": 301,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0441)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-14",
@@ -10316,7 +9007,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h06.png",
         "width": 250,
         "height": 305,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0442)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-15",
@@ -10328,7 +9019,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h07.png",
         "width": 257,
         "height": 302,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0443)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-16",
@@ -10340,7 +9031,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p084-h08.png",
         "width": 250,
         "height": 303,
-        "desc": "Động tác trang PDF 84 (Mã thư viện: H0444)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-17",
@@ -10352,7 +9043,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h01.png",
         "width": 232,
         "height": 306,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0445)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-18",
@@ -10364,7 +9055,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h02.png",
         "width": 232,
         "height": 303,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0446)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-19",
@@ -10376,7 +9067,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h03.png",
         "width": 246,
         "height": 301,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0447)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-20",
@@ -10388,7 +9079,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h04.png",
         "width": 268,
         "height": 302,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0448)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-21",
@@ -10400,7 +9091,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h05.png",
         "width": 267,
         "height": 303,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0449)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-22",
@@ -10412,7 +9103,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h06.png",
         "width": 240,
         "height": 303,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0450)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-23",
@@ -10424,7 +9115,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h07.png",
         "width": 242,
         "height": 305,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0451)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-24",
@@ -10436,7 +9127,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p085-h08.png",
         "width": 240,
         "height": 306,
-        "desc": "Động tác trang PDF 85 (Mã thư viện: H0452)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-25",
@@ -10448,7 +9139,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h01.png",
         "width": 248,
         "height": 301,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0453)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-26",
@@ -10460,7 +9151,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h02.png",
         "width": 261,
         "height": 304,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0454)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-27",
@@ -10472,7 +9163,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h03.png",
         "width": 247,
         "height": 305,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0455)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-28",
@@ -10484,7 +9175,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h04.png",
         "width": 268,
         "height": 302,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0456)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-29",
@@ -10496,7 +9187,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h05.png",
         "width": 258,
         "height": 305,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0457)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-30",
@@ -10508,7 +9199,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h06.png",
         "width": 273,
         "height": 302,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0458)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-31",
@@ -10520,7 +9211,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h07.png",
         "width": 255,
         "height": 303,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0459)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-32",
@@ -10532,7 +9223,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h08.png",
         "width": 279,
         "height": 304,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0460)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-33",
@@ -10544,7 +9235,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p086-h09.png",
         "width": 264,
         "height": 305,
-        "desc": "Động tác trang PDF 86 (Mã thư viện: H0461)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-34",
@@ -10556,7 +9247,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h01.png",
         "width": 263,
         "height": 301,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0462)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-35",
@@ -10568,7 +9259,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h02.png",
         "width": 227,
         "height": 305,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0463)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-36",
@@ -10580,7 +9271,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h03.png",
         "width": 231,
         "height": 305,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0464)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-37",
@@ -10592,7 +9283,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h04.png",
         "width": 231,
         "height": 306,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0465)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-38",
@@ -10604,7 +9295,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h05.png",
         "width": 251,
         "height": 308,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0466)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-39",
@@ -10616,7 +9307,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h06.png",
         "width": 254,
         "height": 301,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0467)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-40",
@@ -10628,7 +9319,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h07.png",
         "width": 238,
         "height": 305,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0468)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-41",
@@ -10640,7 +9331,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p087-h08.png",
         "width": 258,
         "height": 302,
-        "desc": "Động tác trang PDF 87 (Mã thư viện: H0469)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-42",
@@ -10652,7 +9343,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h01.png",
         "width": 223,
         "height": 306,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0470)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-43",
@@ -10664,7 +9355,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h02.png",
         "width": 206,
         "height": 303,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0471)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-44",
@@ -10676,7 +9367,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h03.png",
         "width": 278,
         "height": 303,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0472)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-45",
@@ -10688,7 +9379,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h04.png",
         "width": 259,
         "height": 303,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0473)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-46",
@@ -10700,7 +9391,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h05.png",
         "width": 269,
         "height": 303,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0474)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-47",
@@ -10712,7 +9403,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h06.png",
         "width": 228,
         "height": 301,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0475)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-48",
@@ -10724,7 +9415,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h07.png",
         "width": 236,
         "height": 302,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0476)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-49",
@@ -10736,7 +9427,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p088-h08.png",
         "width": 283,
         "height": 303,
-        "desc": "Động tác trang PDF 88 (Mã thư viện: H0477)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-50",
@@ -10748,7 +9439,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h01.png",
         "width": 255,
         "height": 301,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0478)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-51",
@@ -10760,7 +9451,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h02.png",
         "width": 268,
         "height": 300,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0479)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-52",
@@ -10772,7 +9463,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h03.png",
         "width": 245,
         "height": 301,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0480)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-53",
@@ -10784,7 +9475,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h04.png",
         "width": 266,
         "height": 301,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0481)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-54",
@@ -10796,7 +9487,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h05.png",
         "width": 249,
         "height": 302,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0482)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-55",
@@ -10808,7 +9499,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h06.png",
         "width": 253,
         "height": 302,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0483)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-56",
@@ -10820,7 +9511,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h07.png",
         "width": 265,
         "height": 301,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0484)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-57",
@@ -10832,7 +9523,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h08.png",
         "width": 261,
         "height": 302,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0485)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-58",
@@ -10844,7 +9535,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p089-h09.png",
         "width": 254,
         "height": 303,
-        "desc": "Động tác trang PDF 89 (Mã thư viện: H0486)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-59",
@@ -10856,7 +9547,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h01.png",
         "width": 263,
         "height": 300,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0487)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-60",
@@ -10868,7 +9559,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h02.png",
         "width": 226,
         "height": 303,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0488)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-61",
@@ -10880,7 +9571,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h03.png",
         "width": 241,
         "height": 301,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0489)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-62",
@@ -10892,7 +9583,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h04.png",
         "width": 270,
         "height": 303,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0490)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-63",
@@ -10904,7 +9595,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h05.png",
         "width": 256,
         "height": 300,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0491)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-64",
@@ -10916,7 +9607,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h06.png",
         "width": 173,
         "height": 301,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0492)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-65",
@@ -10928,7 +9619,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h07.png",
         "width": 229,
         "height": 302,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0493)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-66",
@@ -10940,7 +9631,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p090-h08.png",
         "width": 255,
         "height": 301,
-        "desc": "Động tác trang PDF 90 (Mã thư viện: H0494)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-67",
@@ -10952,7 +9643,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p091-h01.png",
         "width": 244,
         "height": 303,
-        "desc": "Động tác trang PDF 91 (Mã thư viện: H0495)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-68",
@@ -10964,7 +9655,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p091-h02.png",
         "width": 268,
         "height": 301,
-        "desc": "Động tác trang PDF 91 (Mã thư viện: H0496)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-69",
@@ -10976,7 +9667,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p091-h03.png",
         "width": 256,
         "height": 300,
-        "desc": "Động tác trang PDF 91 (Mã thư viện: H0497)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-70",
@@ -10988,7 +9679,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p091-h04.png",
         "width": 270,
         "height": 301,
-        "desc": "Động tác trang PDF 91 (Mã thư viện: H0498)"
+        "desc": ""
       },
       {
         "id": "bai-15-m-71",
@@ -11000,7 +9691,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p091-h05.png",
         "width": 257,
         "height": 300,
-        "desc": "Động tác trang PDF 91 (Mã thư viện: H0499)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -11057,54 +9748,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-16-m-1",
-        "stepNo": "1",
-        "assetId": "p092-h01",
-        "displayId": "H0500",
-        "pdfPage": 92,
-        "imgUrl": "/assets/hinh/p092-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p092-h01.png",
-        "width": 444,
-        "height": 754,
-        "desc": "Động tác trang PDF 92 (Mã thư viện: H0500)"
-      },
-      {
-        "id": "bai-16-m-2",
-        "stepNo": "2",
-        "assetId": "p093-h01",
-        "displayId": "H0501",
-        "pdfPage": 93,
-        "imgUrl": "/assets/hinh/p093-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p093-h01.png",
-        "width": 399,
-        "height": 503,
-        "desc": "Động tác trang PDF 93 (Mã thư viện: H0501)"
-      },
-      {
-        "id": "bai-16-m-3",
-        "stepNo": "3",
-        "assetId": "p093-h02",
-        "displayId": "H0502",
-        "pdfPage": 93,
-        "imgUrl": "/assets/hinh/p093-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p093-h02.png",
-        "width": 961,
-        "height": 443,
-        "desc": "Động tác trang PDF 93 (Mã thư viện: H0502)"
-      },
-      {
-        "id": "bai-16-m-4",
-        "stepNo": "4",
-        "assetId": "p094-h01",
-        "displayId": "H0503",
-        "pdfPage": 94,
-        "imgUrl": "/assets/hinh/p094-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p094-h01.png",
-        "width": 908,
-        "height": 726,
-        "desc": "Động tác trang PDF 94 (Mã thư viện: H0503)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -11862,7 +10506,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h01.png",
         "width": 248,
         "height": 347,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0504)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-2",
@@ -11874,7 +10518,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h02.png",
         "width": 230,
         "height": 346,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0505)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-3",
@@ -11886,7 +10530,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h03.png",
         "width": 227,
         "height": 347,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0506)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-4",
@@ -11898,7 +10542,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h04.png",
         "width": 250,
         "height": 356,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0507)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-5",
@@ -11910,7 +10554,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h05.png",
         "width": 243,
         "height": 356,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0508)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-6",
@@ -11922,7 +10566,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h06.png",
         "width": 259,
         "height": 351,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0509)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-7",
@@ -11934,7 +10578,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h07.png",
         "width": 242,
         "height": 341,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0510)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-8",
@@ -11946,7 +10590,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p095-h08.png",
         "width": 239,
         "height": 347,
-        "desc": "Động tác trang PDF 95 (Mã thư viện: H0511)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-9",
@@ -11958,7 +10602,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h01.png",
         "width": 229,
         "height": 342,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0512)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-10",
@@ -11970,7 +10614,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h02.png",
         "width": 234,
         "height": 348,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0513)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-11",
@@ -11982,7 +10626,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h03.png",
         "width": 249,
         "height": 356,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0514)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-12",
@@ -11994,7 +10638,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h04.png",
         "width": 243,
         "height": 355,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0515)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-13",
@@ -12006,7 +10650,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h05.png",
         "width": 248,
         "height": 356,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0516)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-14",
@@ -12018,7 +10662,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h06.png",
         "width": 239,
         "height": 355,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0517)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-15",
@@ -12030,7 +10674,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h07.png",
         "width": 247,
         "height": 347,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0518)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-16",
@@ -12042,7 +10686,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p096-h08.png",
         "width": 246,
         "height": 352,
-        "desc": "Động tác trang PDF 96 (Mã thư viện: H0519)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-17",
@@ -12054,7 +10698,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h01.png",
         "width": 236,
         "height": 354,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0520)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-18",
@@ -12066,7 +10710,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h02.png",
         "width": 220,
         "height": 344,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0521)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-19",
@@ -12078,7 +10722,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h03.png",
         "width": 222,
         "height": 359,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0522)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-20",
@@ -12090,7 +10734,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h04.png",
         "width": 230,
         "height": 357,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0523)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-21",
@@ -12102,7 +10746,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h05.png",
         "width": 222,
         "height": 353,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0524)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-22",
@@ -12114,7 +10758,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h06.png",
         "width": 222,
         "height": 347,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0525)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-23",
@@ -12126,7 +10770,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h07.png",
         "width": 239,
         "height": 337,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0526)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-24",
@@ -12138,7 +10782,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p097-h08.png",
         "width": 241,
         "height": 352,
-        "desc": "Động tác trang PDF 97 (Mã thư viện: H0527)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-25",
@@ -12150,7 +10794,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h01.png",
         "width": 249,
         "height": 346,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0528)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-26",
@@ -12162,7 +10806,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h02.png",
         "width": 245,
         "height": 344,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0529)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-27",
@@ -12174,7 +10818,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h03.png",
         "width": 245,
         "height": 349,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0530)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-28",
@@ -12186,7 +10830,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h04.png",
         "width": 235,
         "height": 349,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0531)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-29",
@@ -12198,7 +10842,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h05.png",
         "width": 224,
         "height": 359,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0532)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-30",
@@ -12210,7 +10854,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h06.png",
         "width": 227,
         "height": 358,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0533)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-31",
@@ -12222,7 +10866,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p098-h07.png",
         "width": 241,
         "height": 357,
-        "desc": "Động tác trang PDF 98 (Mã thư viện: H0534)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-32",
@@ -12234,7 +10878,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h01.png",
         "width": 245,
         "height": 344,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0535)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-33",
@@ -12246,7 +10890,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h02.png",
         "width": 237,
         "height": 344,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0536)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-34",
@@ -12258,7 +10902,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h03.png",
         "width": 246,
         "height": 349,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0537)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-35",
@@ -12270,7 +10914,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h04.png",
         "width": 231,
         "height": 334,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0538)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-36",
@@ -12282,7 +10926,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h05.png",
         "width": 250,
         "height": 346,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0539)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-37",
@@ -12294,7 +10938,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h06.png",
         "width": 245,
         "height": 343,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0540)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-38",
@@ -12306,7 +10950,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h07.png",
         "width": 229,
         "height": 357,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0541)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-39",
@@ -12318,7 +10962,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h08.png",
         "width": 235,
         "height": 354,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0542)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-40",
@@ -12330,7 +10974,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p099-h09.png",
         "width": 238,
         "height": 350,
-        "desc": "Động tác trang PDF 99 (Mã thư viện: H0543)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-41",
@@ -12342,7 +10986,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h01.png",
         "width": 229,
         "height": 344,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0544)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-42",
@@ -12354,7 +10998,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h02.png",
         "width": 237,
         "height": 343,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0545)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-43",
@@ -12366,7 +11010,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h03.png",
         "width": 247,
         "height": 349,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0546)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-44",
@@ -12378,7 +11022,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h04.png",
         "width": 247,
         "height": 348,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0547)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-45",
@@ -12390,7 +11034,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h05.png",
         "width": 247,
         "height": 354,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0548)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-46",
@@ -12402,7 +11046,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h06.png",
         "width": 237,
         "height": 345,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0549)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-47",
@@ -12414,7 +11058,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p100-h07.png",
         "width": 235,
         "height": 353,
-        "desc": "Động tác trang PDF 100 (Mã thư viện: H0550)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-48",
@@ -12426,7 +11070,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h01.png",
         "width": 238,
         "height": 354,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0551)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-49",
@@ -12438,7 +11082,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h02.png",
         "width": 241,
         "height": 353,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0552)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-50",
@@ -12450,7 +11094,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h03.png",
         "width": 224,
         "height": 347,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0553)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-51",
@@ -12462,7 +11106,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h04.png",
         "width": 223,
         "height": 350,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0554)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-52",
@@ -12474,7 +11118,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h05.png",
         "width": 238,
         "height": 355,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0555)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-53",
@@ -12486,7 +11130,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h06.png",
         "width": 241,
         "height": 348,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0556)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-54",
@@ -12498,7 +11142,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h07.png",
         "width": 245,
         "height": 344,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0557)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-55",
@@ -12510,7 +11154,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p101-h08.png",
         "width": 239,
         "height": 357,
-        "desc": "Động tác trang PDF 101 (Mã thư viện: H0558)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-56",
@@ -12522,7 +11166,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h01.png",
         "width": 238,
         "height": 348,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0559)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-57",
@@ -12534,7 +11178,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h02.png",
         "width": 248,
         "height": 353,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0560)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-58",
@@ -12546,7 +11190,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h03.png",
         "width": 244,
         "height": 352,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0561)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-59",
@@ -12558,7 +11202,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h04.png",
         "width": 241,
         "height": 348,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0562)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-60",
@@ -12570,7 +11214,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h05.png",
         "width": 242,
         "height": 355,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0563)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-61",
@@ -12582,7 +11226,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h06.png",
         "width": 250,
         "height": 362,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0564)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-62",
@@ -12594,7 +11238,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p102-h07.png",
         "width": 244,
         "height": 340,
-        "desc": "Động tác trang PDF 102 (Mã thư viện: H0565)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-63",
@@ -12606,7 +11250,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h01.png",
         "width": 244,
         "height": 352,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0566)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-64",
@@ -12618,7 +11262,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h02.png",
         "width": 239,
         "height": 349,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0567)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-65",
@@ -12630,7 +11274,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h03.png",
         "width": 256,
         "height": 357,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0568)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-66",
@@ -12642,7 +11286,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h04.png",
         "width": 240,
         "height": 355,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0569)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-67",
@@ -12654,7 +11298,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h05.png",
         "width": 248,
         "height": 349,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0570)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-68",
@@ -12666,7 +11310,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h06.png",
         "width": 233,
         "height": 348,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0571)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-69",
@@ -12678,7 +11322,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h07.png",
         "width": 250,
         "height": 360,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0572)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-70",
@@ -12690,7 +11334,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p103-h08.png",
         "width": 236,
         "height": 357,
-        "desc": "Động tác trang PDF 103 (Mã thư viện: H0573)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-71",
@@ -12702,7 +11346,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h01.png",
         "width": 238,
         "height": 349,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0574)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-72",
@@ -12714,7 +11358,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h02.png",
         "width": 214,
         "height": 350,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0575)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-73",
@@ -12726,7 +11370,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h03.png",
         "width": 234,
         "height": 359,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0576)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-74",
@@ -12738,7 +11382,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h04.png",
         "width": 178,
         "height": 332,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0577)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-75",
@@ -12750,7 +11394,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h05.png",
         "width": 237,
         "height": 353,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0578)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-76",
@@ -12762,7 +11406,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h06.png",
         "width": 249,
         "height": 345,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0579)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-77",
@@ -12774,7 +11418,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p104-h07.png",
         "width": 244,
         "height": 345,
-        "desc": "Động tác trang PDF 104 (Mã thư viện: H0580)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-78",
@@ -12786,7 +11430,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p105-h01.png",
         "width": 247,
         "height": 343,
-        "desc": "Động tác trang PDF 105 (Mã thư viện: H0581)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-79",
@@ -12798,7 +11442,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p105-h02.png",
         "width": 228,
         "height": 345,
-        "desc": "Động tác trang PDF 105 (Mã thư viện: H0582)"
+        "desc": ""
       },
       {
         "id": "bai-17-m-80",
@@ -12810,7 +11454,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p105-h03.png",
         "width": 227,
         "height": 343,
-        "desc": "Động tác trang PDF 105 (Mã thư viện: H0583)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -13596,7 +12240,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h01.png",
         "width": 170,
         "height": 323,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0584)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-2",
@@ -13608,7 +12252,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h02.png",
         "width": 217,
         "height": 322,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0585)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-3",
@@ -13620,7 +12264,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h03.png",
         "width": 231,
         "height": 327,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0586)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-4",
@@ -13632,7 +12276,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h04.png",
         "width": 205,
         "height": 324,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0587)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-5",
@@ -13644,7 +12288,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h05.png",
         "width": 230,
         "height": 314,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0588)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-6",
@@ -13656,7 +12300,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h06.png",
         "width": 231,
         "height": 331,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0589)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-7",
@@ -13668,7 +12312,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h07.png",
         "width": 237,
         "height": 338,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0590)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-8",
@@ -13680,7 +12324,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p106-h08.png",
         "width": 254,
         "height": 344,
-        "desc": "Động tác trang PDF 106 (Mã thư viện: H0591)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-9",
@@ -13692,7 +12336,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h01.png",
         "width": 243,
         "height": 333,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0592)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-10",
@@ -13704,7 +12348,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h02.png",
         "width": 224,
         "height": 319,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0593)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-11",
@@ -13716,7 +12360,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h03.png",
         "width": 232,
         "height": 324,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0594)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-12",
@@ -13728,7 +12372,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h04.png",
         "width": 239,
         "height": 323,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0595)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-13",
@@ -13740,7 +12384,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h05.png",
         "width": 200,
         "height": 321,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0596)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-14",
@@ -13752,7 +12396,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h06.png",
         "width": 242,
         "height": 327,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0597)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-15",
@@ -13764,7 +12408,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h07.png",
         "width": 240,
         "height": 326,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0598)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-16",
@@ -13776,7 +12420,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p107-h08.png",
         "width": 220,
         "height": 332,
-        "desc": "Động tác trang PDF 107 (Mã thư viện: H0599)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-17",
@@ -13788,7 +12432,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h01.png",
         "width": 227,
         "height": 335,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0600)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-18",
@@ -13800,7 +12444,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h02.png",
         "width": 241,
         "height": 344,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0601)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-19",
@@ -13812,7 +12456,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h03.png",
         "width": 236,
         "height": 348,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0602)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-20",
@@ -13824,7 +12468,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h04.png",
         "width": 207,
         "height": 340,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0603)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-21",
@@ -13836,7 +12480,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h05.png",
         "width": 206,
         "height": 341,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0604)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-22",
@@ -13848,7 +12492,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h06.png",
         "width": 231,
         "height": 335,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0605)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-23",
@@ -13860,7 +12504,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h07.png",
         "width": 226,
         "height": 342,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0606)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-24",
@@ -13872,7 +12516,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p108-h08.png",
         "width": 229,
         "height": 342,
-        "desc": "Động tác trang PDF 108 (Mã thư viện: H0607)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-25",
@@ -13884,7 +12528,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h01.png",
         "width": 227,
         "height": 339,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0608)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-26",
@@ -13896,7 +12540,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h02.png",
         "width": 229,
         "height": 339,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0609)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-27",
@@ -13908,7 +12552,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h03.png",
         "width": 240,
         "height": 340,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0610)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-28",
@@ -13920,7 +12564,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h04.png",
         "width": 247,
         "height": 347,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0611)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-29",
@@ -13932,7 +12576,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h05.png",
         "width": 238,
         "height": 347,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0612)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-30",
@@ -13944,7 +12588,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h06.png",
         "width": 247,
         "height": 340,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0613)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-31",
@@ -13956,7 +12600,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h07.png",
         "width": 237,
         "height": 349,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0614)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-32",
@@ -13968,7 +12612,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p109-h08.png",
         "width": 247,
         "height": 348,
-        "desc": "Động tác trang PDF 109 (Mã thư viện: H0615)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-33",
@@ -13980,7 +12624,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h01.png",
         "width": 218,
         "height": 340,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0616)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-34",
@@ -13992,7 +12636,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h02.png",
         "width": 228,
         "height": 337,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0617)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-35",
@@ -14004,7 +12648,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h03.png",
         "width": 234,
         "height": 338,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0618)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-36",
@@ -14016,7 +12660,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h04.png",
         "width": 244,
         "height": 352,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0619)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-37",
@@ -14028,7 +12672,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h05.png",
         "width": 241,
         "height": 351,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0620)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-38",
@@ -14040,7 +12684,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h06.png",
         "width": 217,
         "height": 330,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0621)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-39",
@@ -14052,7 +12696,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h07.png",
         "width": 237,
         "height": 347,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0622)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-40",
@@ -14064,7 +12708,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p110-h08.png",
         "width": 240,
         "height": 344,
-        "desc": "Động tác trang PDF 110 (Mã thư viện: H0623)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-41",
@@ -14076,7 +12720,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h01.png",
         "width": 238,
         "height": 345,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0624)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-42",
@@ -14088,7 +12732,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h02.png",
         "width": 241,
         "height": 344,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0625)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-43",
@@ -14100,7 +12744,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h03.png",
         "width": 240,
         "height": 346,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0626)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-44",
@@ -14112,7 +12756,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h04.png",
         "width": 245,
         "height": 346,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0627)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-45",
@@ -14124,7 +12768,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h05.png",
         "width": 242,
         "height": 343,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0628)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-46",
@@ -14136,7 +12780,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h06.png",
         "width": 225,
         "height": 346,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0629)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-47",
@@ -14148,7 +12792,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h07.png",
         "width": 248,
         "height": 348,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0630)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-48",
@@ -14160,7 +12804,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p111-h08.png",
         "width": 239,
         "height": 346,
-        "desc": "Động tác trang PDF 111 (Mã thư viện: H0631)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-49",
@@ -14172,7 +12816,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h01.png",
         "width": 228,
         "height": 339,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0632)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-50",
@@ -14184,7 +12828,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h02.png",
         "width": 234,
         "height": 351,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0633)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-51",
@@ -14196,7 +12840,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h03.png",
         "width": 246,
         "height": 344,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0634)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-52",
@@ -14208,7 +12852,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h04.png",
         "width": 236,
         "height": 348,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0635)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-53",
@@ -14220,7 +12864,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h05.png",
         "width": 221,
         "height": 344,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0636)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-54",
@@ -14232,7 +12876,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h06.png",
         "width": 247,
         "height": 343,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0637)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-55",
@@ -14244,7 +12888,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p112-h07.png",
         "width": 243,
         "height": 346,
-        "desc": "Động tác trang PDF 112 (Mã thư viện: H0638)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-56",
@@ -14256,7 +12900,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h01.png",
         "width": 240,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0639)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-57",
@@ -14268,7 +12912,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h02.png",
         "width": 230,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0640)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-58",
@@ -14280,7 +12924,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h03.png",
         "width": 235,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0641)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-59",
@@ -14292,7 +12936,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h04.png",
         "width": 240,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0642)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-60",
@@ -14304,7 +12948,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h05.png",
         "width": 230,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0643)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-61",
@@ -14316,7 +12960,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h06.png",
         "width": 235,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0644)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-62",
@@ -14328,7 +12972,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h07.png",
         "width": 230,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0645)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-63",
@@ -14340,7 +12984,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p113-h08.png",
         "width": 235,
         "height": 355,
-        "desc": "Động tác trang PDF 113 (Mã thư viện: H0646)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-64",
@@ -14352,7 +12996,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h01.png",
         "width": 235,
         "height": 340,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0647)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-65",
@@ -14364,7 +13008,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h02.png",
         "width": 239,
         "height": 346,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0648)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-66",
@@ -14376,7 +13020,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h03.png",
         "width": 253,
         "height": 343,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0649)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-67",
@@ -14388,7 +13032,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h04.png",
         "width": 243,
         "height": 350,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0650)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-68",
@@ -14400,7 +13044,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h05.png",
         "width": 228,
         "height": 344,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0651)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-69",
@@ -14412,7 +13056,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h06.png",
         "width": 234,
         "height": 343,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0652)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-70",
@@ -14424,7 +13068,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p114-h07.png",
         "width": 244,
         "height": 348,
-        "desc": "Động tác trang PDF 114 (Mã thư viện: H0653)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-71",
@@ -14436,7 +13080,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h01.png",
         "width": 242,
         "height": 348,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0654)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-72",
@@ -14448,7 +13092,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h02.png",
         "width": 256,
         "height": 346,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0655)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-73",
@@ -14460,7 +13104,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h03.png",
         "width": 243,
         "height": 350,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0656)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-74",
@@ -14472,7 +13116,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h04.png",
         "width": 246,
         "height": 343,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0657)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-75",
@@ -14484,7 +13128,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h05.png",
         "width": 215,
         "height": 365,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0658)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-76",
@@ -14496,7 +13140,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h06.png",
         "width": 223,
         "height": 350,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0659)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-77",
@@ -14508,7 +13152,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h07.png",
         "width": 233,
         "height": 345,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0660)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-78",
@@ -14520,7 +13164,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p115-h08.png",
         "width": 227,
         "height": 353,
-        "desc": "Động tác trang PDF 115 (Mã thư viện: H0661)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-79",
@@ -14532,7 +13176,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p116-h01.png",
         "width": 221,
         "height": 346,
-        "desc": "Động tác trang PDF 116 (Mã thư viện: H0662)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-80",
@@ -14544,7 +13188,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p116-h02.png",
         "width": 255,
         "height": 346,
-        "desc": "Động tác trang PDF 116 (Mã thư viện: H0663)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-81",
@@ -14556,7 +13200,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p116-h03.png",
         "width": 247,
         "height": 348,
-        "desc": "Động tác trang PDF 116 (Mã thư viện: H0664)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-82",
@@ -14568,7 +13212,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p116-h04.png",
         "width": 249,
         "height": 347,
-        "desc": "Động tác trang PDF 116 (Mã thư viện: H0665)"
+        "desc": ""
       },
       {
         "id": "bai-18-m-83",
@@ -14580,7 +13224,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p116-h05.png",
         "width": 236,
         "height": 353,
-        "desc": "Động tác trang PDF 116 (Mã thư viện: H0666)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -14664,7 +13308,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h01.png",
         "width": 459,
         "height": 355,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0667)"
+        "desc": ""
       },
       {
         "id": "bai-luyen-tong-hop-m-2",
@@ -14676,7 +13320,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h02.png",
         "width": 436,
         "height": 711,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0668)"
+        "desc": ""
       },
       {
         "id": "bai-luyen-tong-hop-m-3",
@@ -14688,7 +13332,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h03.png",
         "width": 459,
         "height": 370,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0669)"
+        "desc": ""
       },
       {
         "id": "bai-luyen-tong-hop-m-4",
@@ -14700,7 +13344,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h01.png",
         "width": 408,
         "height": 441,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0670)"
+        "desc": ""
       },
       {
         "id": "bai-luyen-tong-hop-m-5",
@@ -14712,7 +13356,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h02.png",
         "width": 409,
         "height": 440,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0671)"
+        "desc": ""
       },
       {
         "id": "bai-luyen-tong-hop-m-6",
@@ -14724,7 +13368,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h03.png",
         "width": 412,
         "height": 422,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0672)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -14826,7 +13470,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h01.png",
         "width": 459,
         "height": 355,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0667)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-2",
@@ -14838,7 +13482,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h02.png",
         "width": 436,
         "height": 711,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0668)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-3",
@@ -14850,7 +13494,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p117-h03.png",
         "width": 459,
         "height": 370,
-        "desc": "Động tác trang PDF 117 (Mã thư viện: H0669)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-4",
@@ -14862,7 +13506,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h01.png",
         "width": 408,
         "height": 441,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0670)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-5",
@@ -14874,7 +13518,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h02.png",
         "width": 409,
         "height": 440,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0671)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-6",
@@ -14886,7 +13530,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p118-h03.png",
         "width": 412,
         "height": 422,
-        "desc": "Động tác trang PDF 118 (Mã thư viện: H0672)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-7",
@@ -14898,7 +13542,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p119-h01.png",
         "width": 408,
         "height": 499,
-        "desc": "Động tác trang PDF 119 (Mã thư viện: H0673)"
+        "desc": ""
       },
       {
         "id": "gioi-thieu-ngu-hinh-m-8",
@@ -14910,7 +13554,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p119-h02.png",
         "width": 406,
         "height": 510,
-        "desc": "Động tác trang PDF 119 (Mã thư viện: H0674)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -15167,7 +13811,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h01.png",
         "width": 129,
         "height": 324,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0675)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-2",
@@ -15179,7 +13823,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h02.png",
         "width": 285,
         "height": 368,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0676)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-3",
@@ -15191,7 +13835,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h03.png",
         "width": 294,
         "height": 367,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0677)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-4",
@@ -15203,7 +13847,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h04.png",
         "width": 302,
         "height": 368,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0678)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-5",
@@ -15215,7 +13859,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h05.png",
         "width": 280,
         "height": 324,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0679)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-6",
@@ -15227,7 +13871,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h06.png",
         "width": 320,
         "height": 368,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0680)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-7",
@@ -15239,7 +13883,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p120-h07.png",
         "width": 121,
         "height": 326,
-        "desc": "Động tác trang PDF 120 (Mã thư viện: H0681)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-8",
@@ -15251,7 +13895,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h01.png",
         "width": 120,
         "height": 325,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0682)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-9",
@@ -15263,7 +13907,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h02.png",
         "width": 121,
         "height": 325,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0683)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-10",
@@ -15275,7 +13919,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h03.png",
         "width": 311,
         "height": 367,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0684)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-11",
@@ -15287,7 +13931,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h04.png",
         "width": 321,
         "height": 371,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0685)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-12",
@@ -15299,7 +13943,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h05.png",
         "width": 162,
         "height": 327,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0686)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-13",
@@ -15311,7 +13955,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h06.png",
         "width": 159,
         "height": 326,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0687)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-14",
@@ -15323,7 +13967,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p121-h07.png",
         "width": 164,
         "height": 326,
-        "desc": "Động tác trang PDF 121 (Mã thư viện: H0688)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-15",
@@ -15335,7 +13979,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h01.png",
         "width": 142,
         "height": 326,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0689)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-16",
@@ -15347,7 +13991,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h02.png",
         "width": 121,
         "height": 329,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0690)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-17",
@@ -15359,7 +14003,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h03.png",
         "width": 126,
         "height": 330,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0691)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-18",
@@ -15371,7 +14015,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h04.png",
         "width": 121,
         "height": 327,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0692)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-19",
@@ -15383,7 +14027,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h05.png",
         "width": 230,
         "height": 370,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0693)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-20",
@@ -15395,7 +14039,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h06.png",
         "width": 235,
         "height": 272,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0694)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-21",
@@ -15407,7 +14051,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p122-h07.png",
         "width": 237,
         "height": 372,
-        "desc": "Động tác trang PDF 122 (Mã thư viện: H0695)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-22",
@@ -15419,7 +14063,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p123-h01.png",
         "width": 140,
         "height": 321,
-        "desc": "Động tác trang PDF 123 (Mã thư viện: H0696)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-23",
@@ -15431,7 +14075,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p123-h02.png",
         "width": 130,
         "height": 319,
-        "desc": "Động tác trang PDF 123 (Mã thư viện: H0697)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-24",
@@ -15443,7 +14087,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p123-h03.png",
         "width": 170,
         "height": 357,
-        "desc": "Động tác trang PDF 123 (Mã thư viện: H0698)"
+        "desc": ""
       },
       {
         "id": "bai-21-m-25",
@@ -15455,7 +14099,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p123-h04.png",
         "width": 125,
         "height": 317,
-        "desc": "Động tác trang PDF 123 (Mã thư viện: H0699)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -15839,7 +14483,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h01.png",
         "width": 128,
         "height": 340,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0700)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-2",
@@ -15851,7 +14495,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h02.png",
         "width": 126,
         "height": 343,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0701)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-3",
@@ -15863,7 +14507,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h03.png",
         "width": 105,
         "height": 342,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0702)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-4",
@@ -15875,7 +14519,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h04.png",
         "width": 114,
         "height": 343,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0703)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-5",
@@ -15887,7 +14531,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h05.png",
         "width": 116,
         "height": 341,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0704)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-6",
@@ -15899,7 +14543,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h06.png",
         "width": 123,
         "height": 343,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0705)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-7",
@@ -15911,7 +14555,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h07.png",
         "width": 137,
         "height": 342,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0706)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-8",
@@ -15923,7 +14567,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p124-h08.png",
         "width": 179,
         "height": 343,
-        "desc": "Động tác trang PDF 124 (Mã thư viện: H0707)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-9",
@@ -15935,7 +14579,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h01.png",
         "width": 129,
         "height": 340,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0708)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-10",
@@ -15947,7 +14591,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h02.png",
         "width": 159,
         "height": 308,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0709)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-11",
@@ -15959,7 +14603,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h03.png",
         "width": 163,
         "height": 306,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0710)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-12",
@@ -15971,7 +14615,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h04.png",
         "width": 235,
         "height": 387,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0711)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-13",
@@ -15983,7 +14627,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h05.png",
         "width": 242,
         "height": 383,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0712)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-14",
@@ -15995,7 +14639,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h06.png",
         "width": 280,
         "height": 388,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0713)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-15",
@@ -16007,7 +14651,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h07.png",
         "width": 202,
         "height": 226,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0714)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-16",
@@ -16019,7 +14663,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p125-h08.png",
         "width": 236,
         "height": 271,
-        "desc": "Động tác trang PDF 125 (Mã thư viện: H0715)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-17",
@@ -16031,7 +14675,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h01.png",
         "width": 104,
         "height": 343,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0716)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-18",
@@ -16043,7 +14687,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h02.png",
         "width": 216,
         "height": 388,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0717)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-19",
@@ -16055,7 +14699,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h03.png",
         "width": 152,
         "height": 342,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0718)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-20",
@@ -16067,7 +14711,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h04.png",
         "width": 162,
         "height": 345,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0719)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-21",
@@ -16079,7 +14723,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h05.png",
         "width": 123,
         "height": 345,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0720)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-22",
@@ -16091,7 +14735,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h06.png",
         "width": 168,
         "height": 346,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0721)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-23",
@@ -16103,7 +14747,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h07.png",
         "width": 229,
         "height": 389,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0722)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-24",
@@ -16115,7 +14759,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p126-h08.png",
         "width": 130,
         "height": 344,
-        "desc": "Động tác trang PDF 126 (Mã thư viện: H0723)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-25",
@@ -16127,7 +14771,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h01.png",
         "width": 105,
         "height": 340,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0724)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-26",
@@ -16139,7 +14783,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h02.png",
         "width": 120,
         "height": 341,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0725)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-27",
@@ -16151,7 +14795,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h03.png",
         "width": 121,
         "height": 342,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0726)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-28",
@@ -16163,7 +14807,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h04.png",
         "width": 122,
         "height": 342,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0727)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-29",
@@ -16175,7 +14819,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h05.png",
         "width": 110,
         "height": 341,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0728)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-30",
@@ -16187,7 +14831,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h06.png",
         "width": 110,
         "height": 341,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0729)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-31",
@@ -16199,7 +14843,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p127-h07.png",
         "width": 130,
         "height": 341,
-        "desc": "Động tác trang PDF 127 (Mã thư viện: H0730)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-32",
@@ -16211,7 +14855,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h01.png",
         "width": 153,
         "height": 341,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0731)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-33",
@@ -16223,7 +14867,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h02.png",
         "width": 224,
         "height": 387,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0732)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-34",
@@ -16235,7 +14879,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h03.png",
         "width": 119,
         "height": 342,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0733)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-35",
@@ -16247,7 +14891,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h04.png",
         "width": 119,
         "height": 343,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0734)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-36",
@@ -16259,7 +14903,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h05.png",
         "width": 128,
         "height": 344,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0735)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-37",
@@ -16271,7 +14915,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h06.png",
         "width": 128,
         "height": 344,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0736)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-38",
@@ -16283,7 +14927,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h07.png",
         "width": 128,
         "height": 340,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0737)"
+        "desc": ""
       },
       {
         "id": "bai-22-m-39",
@@ -16295,7 +14939,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p128-h08.png",
         "width": 121,
         "height": 342,
-        "desc": "Động tác trang PDF 128 (Mã thư viện: H0738)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -16651,7 +15295,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h01.png",
         "width": 151,
         "height": 338,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0739)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-2",
@@ -16663,7 +15307,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h02.png",
         "width": 150,
         "height": 337,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0740)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-3",
@@ -16675,7 +15319,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h03.png",
         "width": 159,
         "height": 339,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0741)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-4",
@@ -16687,7 +15331,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h04.png",
         "width": 147,
         "height": 340,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0742)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-5",
@@ -16699,7 +15343,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h05.png",
         "width": 153,
         "height": 341,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0743)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-6",
@@ -16711,7 +15355,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h06.png",
         "width": 148,
         "height": 338,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0744)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-7",
@@ -16723,7 +15367,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h07.png",
         "width": 183,
         "height": 341,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0745)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-8",
@@ -16735,7 +15379,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h08.png",
         "width": 150,
         "height": 337,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0746)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-9",
@@ -16747,7 +15391,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p129-h09.png",
         "width": 147,
         "height": 340,
-        "desc": "Động tác trang PDF 129 (Mã thư viện: H0747)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-10",
@@ -16759,7 +15403,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h01.png",
         "width": 135,
         "height": 343,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0748)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-11",
@@ -16771,7 +15415,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h02.png",
         "width": 147,
         "height": 338,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0749)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-12",
@@ -16783,7 +15427,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h03.png",
         "width": 154,
         "height": 340,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0750)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-13",
@@ -16795,7 +15439,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h04.png",
         "width": 142,
         "height": 339,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0751)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-14",
@@ -16807,7 +15451,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h05.png",
         "width": 137,
         "height": 340,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0752)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-15",
@@ -16819,7 +15463,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h06.png",
         "width": 125,
         "height": 337,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0753)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-16",
@@ -16831,7 +15475,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h07.png",
         "width": 292,
         "height": 371,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0754)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-17",
@@ -16843,7 +15487,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h08.png",
         "width": 283,
         "height": 371,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0755)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-18",
@@ -16855,7 +15499,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p130-h09.png",
         "width": 281,
         "height": 369,
-        "desc": "Động tác trang PDF 130 (Mã thư viện: H0756)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-19",
@@ -16867,7 +15511,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h01.png",
         "width": 151,
         "height": 340,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0757)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-20",
@@ -16879,7 +15523,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h02.png",
         "width": 298,
         "height": 382,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0758)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-21",
@@ -16891,7 +15535,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h03.png",
         "width": 144,
         "height": 338,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0759)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-22",
@@ -16903,7 +15547,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h04.png",
         "width": 141,
         "height": 337,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0760)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-23",
@@ -16915,7 +15559,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h05.png",
         "width": 143,
         "height": 339,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0761)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-24",
@@ -16927,7 +15571,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h06.png",
         "width": 150,
         "height": 338,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0762)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-25",
@@ -16939,7 +15583,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h07.png",
         "width": 118,
         "height": 341,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0763)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-26",
@@ -16951,7 +15595,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p131-h08.png",
         "width": 144,
         "height": 339,
-        "desc": "Động tác trang PDF 131 (Mã thư viện: H0764)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-27",
@@ -16963,7 +15607,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h01.png",
         "width": 318,
         "height": 367,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0765)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-28",
@@ -16975,7 +15619,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h02.png",
         "width": 224,
         "height": 367,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0766)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-29",
@@ -16987,7 +15631,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h03.png",
         "width": 253,
         "height": 365,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0767)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-30",
@@ -16999,7 +15643,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h04.png",
         "width": 131,
         "height": 336,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0768)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-31",
@@ -17011,7 +15655,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h05.png",
         "width": 145,
         "height": 338,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0769)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-32",
@@ -17023,7 +15667,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h06.png",
         "width": 142,
         "height": 337,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0770)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-33",
@@ -17035,7 +15679,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h07.png",
         "width": 147,
         "height": 338,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0771)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-34",
@@ -17047,7 +15691,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h08.png",
         "width": 144,
         "height": 338,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0772)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-35",
@@ -17059,7 +15703,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h09.png",
         "width": 148,
         "height": 341,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0773)"
+        "desc": ""
       },
       {
         "id": "bai-23-m-36",
@@ -17071,7 +15715,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p132-h10.png",
         "width": 147,
         "height": 338,
-        "desc": "Động tác trang PDF 132 (Mã thư viện: H0774)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -17400,7 +16044,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h01.png",
         "width": 132,
         "height": 338,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0775)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-2",
@@ -17412,7 +16056,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h02.png",
         "width": 160,
         "height": 339,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0776)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-3",
@@ -17424,7 +16068,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h03.png",
         "width": 124,
         "height": 341,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0777)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-4",
@@ -17436,7 +16080,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h04.png",
         "width": 123,
         "height": 338,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0778)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-5",
@@ -17448,7 +16092,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h05.png",
         "width": 192,
         "height": 339,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0779)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-6",
@@ -17460,7 +16104,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h06.png",
         "width": 162,
         "height": 341,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0780)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-7",
@@ -17472,7 +16116,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h07.png",
         "width": 229,
         "height": 320,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0781)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-8",
@@ -17484,7 +16128,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h08.png",
         "width": 244,
         "height": 385,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0782)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-9",
@@ -17496,7 +16140,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p133-h09.png",
         "width": 219,
         "height": 387,
-        "desc": "Động tác trang PDF 133 (Mã thư viện: H0783)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-10",
@@ -17508,7 +16152,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h01.png",
         "width": 231,
         "height": 320,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0784)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-11",
@@ -17520,7 +16164,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h02.png",
         "width": 160,
         "height": 339,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0785)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-12",
@@ -17532,7 +16176,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h03.png",
         "width": 228,
         "height": 326,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0786)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-13",
@@ -17544,7 +16188,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h04.png",
         "width": 224,
         "height": 385,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0787)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-14",
@@ -17556,7 +16200,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h05.png",
         "width": 187,
         "height": 345,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0788)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-15",
@@ -17568,7 +16212,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h06.png",
         "width": 246,
         "height": 279,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0789)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-16",
@@ -17580,7 +16224,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h07.png",
         "width": 145,
         "height": 343,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0790)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-17",
@@ -17592,7 +16236,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p134-h08.png",
         "width": 190,
         "height": 234,
-        "desc": "Động tác trang PDF 134 (Mã thư viện: H0791)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-18",
@@ -17604,7 +16248,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h01.png",
         "width": 170,
         "height": 338,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0792)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-19",
@@ -17616,7 +16260,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h02.png",
         "width": 159,
         "height": 340,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0793)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-20",
@@ -17628,7 +16272,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h03.png",
         "width": 125,
         "height": 340,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0794)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-21",
@@ -17640,7 +16284,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h04.png",
         "width": 135,
         "height": 339,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0795)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-22",
@@ -17652,7 +16296,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h05.png",
         "width": 126,
         "height": 340,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0796)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-23",
@@ -17664,7 +16308,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h06.png",
         "width": 124,
         "height": 339,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0797)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-24",
@@ -17676,7 +16320,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h07.png",
         "width": 129,
         "height": 340,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0798)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-25",
@@ -17688,7 +16332,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p135-h08.png",
         "width": 115,
         "height": 341,
-        "desc": "Động tác trang PDF 135 (Mã thư viện: H0799)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-26",
@@ -17700,7 +16344,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h01.png",
         "width": 269,
         "height": 392,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0800)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-27",
@@ -17712,7 +16356,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h02.png",
         "width": 310,
         "height": 379,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0801)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-28",
@@ -17724,7 +16368,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h03.png",
         "width": 156,
         "height": 339,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0802)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-29",
@@ -17736,7 +16380,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h04.png",
         "width": 202,
         "height": 384,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0803)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-30",
@@ -17748,7 +16392,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h05.png",
         "width": 129,
         "height": 339,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0804)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-31",
@@ -17760,7 +16404,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h06.png",
         "width": 121,
         "height": 340,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0805)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-32",
@@ -17772,7 +16416,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h07.png",
         "width": 125,
         "height": 340,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0806)"
+        "desc": ""
       },
       {
         "id": "bai-24-m-33",
@@ -17784,7 +16428,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p136-h08.png",
         "width": 127,
         "height": 337,
-        "desc": "Động tác trang PDF 136 (Mã thư viện: H0807)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -18104,7 +16748,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h01.png",
         "width": 241,
         "height": 364,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0808)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-2",
@@ -18116,7 +16760,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h02.png",
         "width": 163,
         "height": 321,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0809)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-3",
@@ -18128,7 +16772,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h03.png",
         "width": 133,
         "height": 326,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0810)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-4",
@@ -18140,7 +16784,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h04.png",
         "width": 124,
         "height": 322,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0811)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-5",
@@ -18152,7 +16796,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h05.png",
         "width": 341,
         "height": 363,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0812)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-6",
@@ -18164,7 +16808,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h06.png",
         "width": 155,
         "height": 322,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0813)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-7",
@@ -18176,7 +16820,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h07.png",
         "width": 282,
         "height": 363,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0814)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-8",
@@ -18188,7 +16832,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p137-h08.png",
         "width": 181,
         "height": 322,
-        "desc": "Động tác trang PDF 137 (Mã thư viện: H0815)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-9",
@@ -18200,7 +16844,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h01.png",
         "width": 286,
         "height": 363,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0816)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-10",
@@ -18212,7 +16856,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h02.png",
         "width": 124,
         "height": 324,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0817)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-11",
@@ -18224,7 +16868,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h03.png",
         "width": 369,
         "height": 352,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0818)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-12",
@@ -18236,7 +16880,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h04.png",
         "width": 253,
         "height": 288,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0819)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-13",
@@ -18248,7 +16892,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h05.png",
         "width": 380,
         "height": 304,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0820)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-14",
@@ -18260,7 +16904,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h06.png",
         "width": 202,
         "height": 364,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0821)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-15",
@@ -18272,7 +16916,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h07.png",
         "width": 118,
         "height": 321,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0822)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-16",
@@ -18284,7 +16928,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p138-h08.png",
         "width": 115,
         "height": 322,
-        "desc": "Động tác trang PDF 138 (Mã thư viện: H0823)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-17",
@@ -18296,7 +16940,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h01.png",
         "width": 117,
         "height": 324,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0824)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-18",
@@ -18308,7 +16952,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h02.png",
         "width": 156,
         "height": 317,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0825)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-19",
@@ -18320,7 +16964,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h03.png",
         "width": 226,
         "height": 365,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0826)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-20",
@@ -18332,7 +16976,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h04.png",
         "width": 248,
         "height": 354,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0827)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-21",
@@ -18344,7 +16988,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h05.png",
         "width": 143,
         "height": 320,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0828)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-22",
@@ -18356,7 +17000,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h06.png",
         "width": 260,
         "height": 312,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0829)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-23",
@@ -18368,7 +17012,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h07.png",
         "width": 260,
         "height": 365,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0830)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-24",
@@ -18380,7 +17024,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p139-h08.png",
         "width": 182,
         "height": 320,
-        "desc": "Động tác trang PDF 139 (Mã thư viện: H0831)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-25",
@@ -18392,7 +17036,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h01.png",
         "width": 107,
         "height": 319,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0832)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-26",
@@ -18404,7 +17048,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h02.png",
         "width": 172,
         "height": 367,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0833)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-27",
@@ -18416,7 +17060,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h03.png",
         "width": 214,
         "height": 366,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0834)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-28",
@@ -18428,7 +17072,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h04.png",
         "width": 170,
         "height": 322,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0835)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-29",
@@ -18440,7 +17084,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h05.png",
         "width": 183,
         "height": 314,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0836)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-30",
@@ -18452,7 +17096,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h06.png",
         "width": 141,
         "height": 323,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0837)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-31",
@@ -18464,7 +17108,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h07.png",
         "width": 282,
         "height": 210,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0838)"
+        "desc": ""
       },
       {
         "id": "bai-25-m-32",
@@ -18476,7 +17120,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p140-h08.png",
         "width": 130,
         "height": 320,
-        "desc": "Động tác trang PDF 140 (Mã thư viện: H0839)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -18842,7 +17486,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h01.png",
         "width": 125,
         "height": 334,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0840)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-2",
@@ -18854,7 +17498,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h02.png",
         "width": 131,
         "height": 322,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0841)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-3",
@@ -18866,7 +17510,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h03.png",
         "width": 112,
         "height": 335,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0842)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-4",
@@ -18878,7 +17522,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h04.png",
         "width": 110,
         "height": 334,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0843)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-5",
@@ -18890,7 +17534,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h05.png",
         "width": 111,
         "height": 333,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0844)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-6",
@@ -18902,7 +17546,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h06.png",
         "width": 117,
         "height": 334,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0845)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-7",
@@ -18914,7 +17558,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h07.png",
         "width": 127,
         "height": 334,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0846)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-8",
@@ -18926,7 +17570,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h08.png",
         "width": 129,
         "height": 333,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0847)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-9",
@@ -18938,7 +17582,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p141-h09.png",
         "width": 116,
         "height": 334,
-        "desc": "Động tác trang PDF 141 (Mã thư viện: H0848)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-10",
@@ -18950,7 +17594,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h01.png",
         "width": 123,
         "height": 334,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0849)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-11",
@@ -18962,7 +17606,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h02.png",
         "width": 124,
         "height": 334,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0850)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-12",
@@ -18974,7 +17618,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h03.png",
         "width": 130,
         "height": 335,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0851)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-13",
@@ -18986,7 +17630,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h04.png",
         "width": 127,
         "height": 335,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0852)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-14",
@@ -18998,7 +17642,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h05.png",
         "width": 129,
         "height": 334,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0853)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-15",
@@ -19010,7 +17654,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h06.png",
         "width": 126,
         "height": 332,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0854)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-16",
@@ -19022,7 +17666,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h07.png",
         "width": 126,
         "height": 335,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0855)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-17",
@@ -19034,7 +17678,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h08.png",
         "width": 126,
         "height": 333,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0856)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-18",
@@ -19046,7 +17690,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p142-h09.png",
         "width": 121,
         "height": 336,
-        "desc": "Động tác trang PDF 142 (Mã thư viện: H0857)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-19",
@@ -19058,7 +17702,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h01.png",
         "width": 130,
         "height": 334,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0858)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-20",
@@ -19070,7 +17714,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h02.png",
         "width": 123,
         "height": 335,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0859)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-21",
@@ -19082,7 +17726,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h03.png",
         "width": 135,
         "height": 333,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0860)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-22",
@@ -19094,7 +17738,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h04.png",
         "width": 143,
         "height": 336,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0861)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-23",
@@ -19106,7 +17750,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h05.png",
         "width": 134,
         "height": 336,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0862)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-24",
@@ -19118,7 +17762,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h06.png",
         "width": 140,
         "height": 332,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0863)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-25",
@@ -19130,7 +17774,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h07.png",
         "width": 137,
         "height": 335,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0864)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-26",
@@ -19142,7 +17786,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h08.png",
         "width": 171,
         "height": 334,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0865)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-27",
@@ -19154,7 +17798,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p143-h09.png",
         "width": 161,
         "height": 336,
-        "desc": "Động tác trang PDF 143 (Mã thư viện: H0866)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-28",
@@ -19166,7 +17810,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h01.png",
         "width": 138,
         "height": 334,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0867)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-29",
@@ -19178,7 +17822,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h02.png",
         "width": 132,
         "height": 336,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0868)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-30",
@@ -19190,7 +17834,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h03.png",
         "width": 122,
         "height": 335,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0869)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-31",
@@ -19202,7 +17846,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h04.png",
         "width": 169,
         "height": 333,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0870)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-32",
@@ -19214,7 +17858,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h05.png",
         "width": 280,
         "height": 237,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0871)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-33",
@@ -19226,7 +17870,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h06.png",
         "width": 235,
         "height": 279,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0872)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-34",
@@ -19238,7 +17882,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p144-h07.png",
         "width": 137,
         "height": 334,
-        "desc": "Động tác trang PDF 144 (Mã thư viện: H0873)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-35",
@@ -19250,7 +17894,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p145-h01.png",
         "width": 133,
         "height": 335,
-        "desc": "Động tác trang PDF 145 (Mã thư viện: H0874)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-36",
@@ -19262,7 +17906,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p145-h02.png",
         "width": 124,
         "height": 335,
-        "desc": "Động tác trang PDF 145 (Mã thư viện: H0875)"
+        "desc": ""
       },
       {
         "id": "bai-26-m-37",
@@ -19274,7 +17918,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p145-h03.png",
         "width": 138,
         "height": 335,
-        "desc": "Động tác trang PDF 145 (Mã thư viện: H0876)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -19848,7 +18492,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p146-h01.png",
         "width": 556,
         "height": 742,
-        "desc": "Động tác trang PDF 146 (Mã thư viện: H0877)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-2",
@@ -19860,7 +18504,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p147-h01.png",
         "width": 469,
         "height": 167,
-        "desc": "Động tác trang PDF 147 (Mã thư viện: H0878)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-3",
@@ -19872,7 +18516,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p148-h01.png",
         "width": 561,
         "height": 564,
-        "desc": "Động tác trang PDF 148 (Mã thư viện: H0879)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-4",
@@ -19884,7 +18528,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p148-h02.png",
         "width": 560,
         "height": 719,
-        "desc": "Động tác trang PDF 148 (Mã thư viện: H0880)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-5",
@@ -19896,7 +18540,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p149-h01.png",
         "width": 891,
         "height": 770,
-        "desc": "Động tác trang PDF 149 (Mã thư viện: H0881)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-6",
@@ -19908,7 +18552,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p150-h01.png",
         "width": 578,
         "height": 769,
-        "desc": "Động tác trang PDF 150 (Mã thư viện: H0882)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-7",
@@ -19920,7 +18564,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p151-h01.png",
         "width": 581,
         "height": 803,
-        "desc": "Động tác trang PDF 151 (Mã thư viện: H0883)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-8",
@@ -19932,7 +18576,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p152-h01.png",
         "width": 976,
         "height": 830,
-        "desc": "Động tác trang PDF 152 (Mã thư viện: H0884)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-9",
@@ -19944,7 +18588,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h01.png",
         "width": 224,
         "height": 311,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0885)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-10",
@@ -19956,7 +18600,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h02.png",
         "width": 228,
         "height": 311,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0886)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-11",
@@ -19968,7 +18612,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h03.png",
         "width": 221,
         "height": 308,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0887)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-12",
@@ -19980,7 +18624,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h04.png",
         "width": 222,
         "height": 310,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0888)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-13",
@@ -19992,7 +18636,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h05.png",
         "width": 238,
         "height": 310,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0889)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-14",
@@ -20004,7 +18648,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p153-h06.png",
         "width": 224,
         "height": 307,
-        "desc": "Động tác trang PDF 153 (Mã thư viện: H0890)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-15",
@@ -20016,7 +18660,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h01.png",
         "width": 230,
         "height": 312,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0891)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-16",
@@ -20028,7 +18672,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h02.png",
         "width": 213,
         "height": 312,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0892)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-17",
@@ -20040,7 +18684,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h03.png",
         "width": 232,
         "height": 314,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0893)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-18",
@@ -20052,7 +18696,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h04.png",
         "width": 232,
         "height": 314,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0894)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-19",
@@ -20064,7 +18708,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h05.png",
         "width": 225,
         "height": 311,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0895)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-20",
@@ -20076,7 +18720,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p154-h06.png",
         "width": 250,
         "height": 310,
-        "desc": "Động tác trang PDF 154 (Mã thư viện: H0896)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-21",
@@ -20088,7 +18732,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p155-h01.png",
         "width": 252,
         "height": 305,
-        "desc": "Động tác trang PDF 155 (Mã thư viện: H0897)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-22",
@@ -20100,7 +18744,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p155-h02.png",
         "width": 284,
         "height": 305,
-        "desc": "Động tác trang PDF 155 (Mã thư viện: H0898)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-23",
@@ -20112,7 +18756,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p155-h03.png",
         "width": 274,
         "height": 305,
-        "desc": "Động tác trang PDF 155 (Mã thư viện: H0899)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-24",
@@ -20124,7 +18768,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p155-h04.png",
         "width": 237,
         "height": 352,
-        "desc": "Động tác trang PDF 155 (Mã thư viện: H0900)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-25",
@@ -20136,7 +18780,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p155-h05.png",
         "width": 223,
         "height": 304,
-        "desc": "Động tác trang PDF 155 (Mã thư viện: H0901)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-26",
@@ -20148,7 +18792,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h01.png",
         "width": 225,
         "height": 306,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0902)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-27",
@@ -20160,7 +18804,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h02.png",
         "width": 234,
         "height": 305,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0903)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-28",
@@ -20172,7 +18816,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h03.png",
         "width": 252,
         "height": 307,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0904)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-29",
@@ -20184,7 +18828,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h04.png",
         "width": 245,
         "height": 306,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0905)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-30",
@@ -20196,7 +18840,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h05.png",
         "width": 251,
         "height": 306,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0906)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-31",
@@ -20208,7 +18852,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h06.png",
         "width": 258,
         "height": 307,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0907)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-32",
@@ -20220,7 +18864,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p156-h07.png",
         "width": 228,
         "height": 304,
-        "desc": "Động tác trang PDF 156 (Mã thư viện: H0908)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-33",
@@ -20232,7 +18876,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h01.png",
         "width": 212,
         "height": 317,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0909)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-34",
@@ -20244,7 +18888,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h02.png",
         "width": 210,
         "height": 315,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0910)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-35",
@@ -20256,7 +18900,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h03.png",
         "width": 219,
         "height": 312,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0911)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-36",
@@ -20268,7 +18912,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h04.png",
         "width": 246,
         "height": 310,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0912)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-37",
@@ -20280,7 +18924,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h05.png",
         "width": 218,
         "height": 318,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0913)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-38",
@@ -20292,7 +18936,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h06.png",
         "width": 239,
         "height": 318,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0914)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-39",
@@ -20304,7 +18948,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p157-h07.png",
         "width": 223,
         "height": 312,
-        "desc": "Động tác trang PDF 157 (Mã thư viện: H0915)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-40",
@@ -20316,7 +18960,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h01.png",
         "width": 245,
         "height": 303,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0916)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-41",
@@ -20328,7 +18972,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h02.png",
         "width": 264,
         "height": 305,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0917)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-42",
@@ -20340,7 +18984,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h03.png",
         "width": 266,
         "height": 308,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0918)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-43",
@@ -20352,7 +18996,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h04.png",
         "width": 273,
         "height": 307,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0919)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-44",
@@ -20364,7 +19008,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h05.png",
         "width": 272,
         "height": 305,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0920)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-45",
@@ -20376,7 +19020,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h06.png",
         "width": 280,
         "height": 306,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0921)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-46",
@@ -20388,7 +19032,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h07.png",
         "width": 207,
         "height": 309,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0922)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-47",
@@ -20400,7 +19044,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h08.png",
         "width": 213,
         "height": 290,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0923)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-48",
@@ -20412,7 +19056,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p158-h09.png",
         "width": 235,
         "height": 313,
-        "desc": "Động tác trang PDF 158 (Mã thư viện: H0924)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-49",
@@ -20424,7 +19068,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p159-h01.png",
         "width": 233,
         "height": 310,
-        "desc": "Động tác trang PDF 159 (Mã thư viện: H0925)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-50",
@@ -20436,7 +19080,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p159-h02.png",
         "width": 229,
         "height": 310,
-        "desc": "Động tác trang PDF 159 (Mã thư viện: H0926)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-51",
@@ -20448,7 +19092,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p159-h03.png",
         "width": 230,
         "height": 310,
-        "desc": "Động tác trang PDF 159 (Mã thư viện: H0927)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-52",
@@ -20460,7 +19104,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p159-h04.png",
         "width": 229,
         "height": 310,
-        "desc": "Động tác trang PDF 159 (Mã thư viện: H0928)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-53",
@@ -20472,7 +19116,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h01.png",
         "width": 231,
         "height": 321,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0929)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-54",
@@ -20484,7 +19128,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h02.png",
         "width": 221,
         "height": 319,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0930)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-55",
@@ -20496,7 +19140,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h03.png",
         "width": 234,
         "height": 319,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0931)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-56",
@@ -20508,7 +19152,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h04.png",
         "width": 216,
         "height": 321,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0932)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-57",
@@ -20520,7 +19164,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h05.png",
         "width": 214,
         "height": 316,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0933)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-58",
@@ -20532,7 +19176,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h06.png",
         "width": 213,
         "height": 317,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0934)"
+        "desc": ""
       },
       {
         "id": "bai-27-m-59",
@@ -20544,7 +19188,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p160-h07.png",
         "width": 208,
         "height": 317,
-        "desc": "Động tác trang PDF 160 (Mã thư viện: H0935)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -20623,7 +19267,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p161-h01.png",
         "width": 369,
         "height": 633,
-        "desc": "Động tác trang PDF 161 (Mã thư viện: H0936)"
+        "desc": ""
       },
       {
         "id": "bai-28-m-2",
@@ -20635,7 +19279,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p162-h01.png",
         "width": 592,
         "height": 914,
-        "desc": "Động tác trang PDF 162 (Mã thư viện: H0937)"
+        "desc": ""
       },
       {
         "id": "bai-28-m-3",
@@ -20647,7 +19291,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p163-h01.png",
         "width": 560,
         "height": 882,
-        "desc": "Động tác trang PDF 163 (Mã thư viện: H0938)"
+        "desc": ""
       },
       {
         "id": "bai-28-m-4",
@@ -20659,7 +19303,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p164-h01.png",
         "width": 572,
         "height": 883,
-        "desc": "Động tác trang PDF 164 (Mã thư viện: H0939)"
+        "desc": ""
       },
       {
         "id": "bai-28-m-5",
@@ -20671,7 +19315,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p165-h01.png",
         "width": 920,
         "height": 741,
-        "desc": "Động tác trang PDF 165 (Mã thư viện: H0940)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -20870,7 +19514,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p168-h01.png",
         "width": 847,
         "height": 1260,
-        "desc": "Động tác trang PDF 168 (Mã thư viện: H0941)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-2",
@@ -20882,7 +19526,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p169-h01.png",
         "width": 860,
         "height": 610,
-        "desc": "Động tác trang PDF 169 (Mã thư viện: H0942)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-3",
@@ -20894,7 +19538,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p170-h01.png",
         "width": 868,
         "height": 587,
-        "desc": "Động tác trang PDF 170 (Mã thư viện: H0943)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-4",
@@ -20906,7 +19550,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p171-h01.png",
         "width": 454,
         "height": 550,
-        "desc": "Động tác trang PDF 171 (Mã thư viện: H0944)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-5",
@@ -20918,7 +19562,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p172-h01.png",
         "width": 547,
         "height": 1232,
-        "desc": "Động tác trang PDF 172 (Mã thư viện: H0945)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-6",
@@ -20930,7 +19574,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p172-h02.png",
         "width": 369,
         "height": 663,
-        "desc": "Động tác trang PDF 172 (Mã thư viện: H0946)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-7",
@@ -20942,7 +19586,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p172-h03.png",
         "width": 374,
         "height": 601,
-        "desc": "Động tác trang PDF 172 (Mã thư viện: H0947)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-8",
@@ -20954,7 +19598,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p174-h01.png",
         "width": 407,
         "height": 370,
-        "desc": "Động tác trang PDF 174 (Mã thư viện: H0948)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-9",
@@ -20966,7 +19610,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p174-h02.png",
         "width": 406,
         "height": 360,
-        "desc": "Động tác trang PDF 174 (Mã thư viện: H0949)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-10",
@@ -20978,7 +19622,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p174-h03.png",
         "width": 408,
         "height": 367,
-        "desc": "Động tác trang PDF 174 (Mã thư viện: H0950)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-11",
@@ -20990,7 +19634,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p174-h04.png",
         "width": 406,
         "height": 388,
-        "desc": "Động tác trang PDF 174 (Mã thư viện: H0951)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-12",
@@ -21002,7 +19646,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p176-h01.png",
         "width": 1025,
         "height": 667,
-        "desc": "Động tác trang PDF 176 (Mã thư viện: H0952)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-13",
@@ -21014,7 +19658,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p178-h01.png",
         "width": 539,
         "height": 713,
-        "desc": "Động tác trang PDF 178 (Mã thư viện: H0953)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-14",
@@ -21026,7 +19670,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p179-h01.png",
         "width": 404,
         "height": 436,
-        "desc": "Động tác trang PDF 179 (Mã thư viện: H0954)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-15",
@@ -21038,7 +19682,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p179-h02.png",
         "width": 399,
         "height": 709,
-        "desc": "Động tác trang PDF 179 (Mã thư viện: H0955)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-16",
@@ -21050,7 +19694,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p182-h01.png",
         "width": 893,
         "height": 635,
-        "desc": "Động tác trang PDF 182 (Mã thư viện: H0956)"
+        "desc": ""
       },
       {
         "id": "bai-29-m-17",
@@ -21062,7 +19706,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p184-h01.png",
         "width": 866,
         "height": 594,
-        "desc": "Động tác trang PDF 184 (Mã thư viện: H0957)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -21131,66 +19775,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-30-m-1",
-        "stepNo": "1",
-        "assetId": "p186-h01",
-        "displayId": "H0958",
-        "pdfPage": 186,
-        "imgUrl": "/assets/hinh/p186-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p186-h01.png",
-        "width": 888,
-        "height": 1270,
-        "desc": "Động tác trang PDF 186 (Mã thư viện: H0958)"
-      },
-      {
-        "id": "bai-30-m-2",
-        "stepNo": "2",
-        "assetId": "p187-h01",
-        "displayId": "H0959",
-        "pdfPage": 187,
-        "imgUrl": "/assets/hinh/p187-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p187-h01.png",
-        "width": 893,
-        "height": 636,
-        "desc": "Động tác trang PDF 187 (Mã thư viện: H0959)"
-      },
-      {
-        "id": "bai-30-m-3",
-        "stepNo": "3",
-        "assetId": "p187-h02",
-        "displayId": "H0960",
-        "pdfPage": 187,
-        "imgUrl": "/assets/hinh/p187-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p187-h02.png",
-        "width": 893,
-        "height": 591,
-        "desc": "Động tác trang PDF 187 (Mã thư viện: H0960)"
-      },
-      {
-        "id": "bai-30-m-4",
-        "stepNo": "4",
-        "assetId": "p188-h01",
-        "displayId": "H0961",
-        "pdfPage": 188,
-        "imgUrl": "/assets/hinh/p188-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p188-h01.png",
-        "width": 909,
-        "height": 619,
-        "desc": "Động tác trang PDF 188 (Mã thư viện: H0961)"
-      },
-      {
-        "id": "bai-30-m-5",
-        "stepNo": "5",
-        "assetId": "p190-h01",
-        "displayId": "H0962",
-        "pdfPage": 190,
-        "imgUrl": "/assets/hinh/p190-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p190-h01.png",
-        "width": 973,
-        "height": 828,
-        "desc": "Động tác trang PDF 190 (Mã thư viện: H0962)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -21610,6 +20195,15 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "height": 323
       },
       {
+        "assetId": "p196-h08",
+        "displayId": "H1006B",
+        "pdfPage": 196,
+        "imgUrl": "/assets/hinh/p196-h08.png",
+        "img2xUrl": "/assets/hinh-2x/p196-h08.png",
+        "width": 123,
+        "height": 314
+      },
+      {
         "assetId": "p197-h02",
         "displayId": "H1007",
         "pdfPage": 197,
@@ -21774,7 +20368,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h01.png",
         "width": 140,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0963)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-2",
@@ -21786,7 +20380,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h02.png",
         "width": 145,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0964)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-3",
@@ -21798,7 +20392,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h03.png",
         "width": 142,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0965)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-4",
@@ -21810,7 +20404,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h04.png",
         "width": 145,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0966)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-5",
@@ -21822,7 +20416,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h05.png",
         "width": 147,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0967)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-6",
@@ -21834,7 +20428,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h06.png",
         "width": 142,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0968)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-7",
@@ -21846,7 +20440,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h07.png",
         "width": 145,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0969)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-8",
@@ -21858,7 +20452,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h08.png",
         "width": 152,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0970)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-9",
@@ -21870,7 +20464,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p191-h09.png",
         "width": 140,
         "height": 320,
-        "desc": "Động tác trang PDF 191 (Mã thư viện: H0971)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-10",
@@ -21882,7 +20476,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h01.png",
         "width": 135,
         "height": 322,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0972)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-11",
@@ -21894,7 +20488,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h02.png",
         "width": 140,
         "height": 322,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0973)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-12",
@@ -21906,7 +20500,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h03.png",
         "width": 145,
         "height": 322,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0974)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-13",
@@ -21918,7 +20512,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h04.png",
         "width": 120,
         "height": 320,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0975)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-14",
@@ -21930,7 +20524,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h05.png",
         "width": 210,
         "height": 320,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0976)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-15",
@@ -21942,7 +20536,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h06.png",
         "width": 200,
         "height": 320,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0977)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-16",
@@ -21954,7 +20548,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h07.png",
         "width": 210,
         "height": 323,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0978)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-17",
@@ -21966,7 +20560,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p192-h08.png",
         "width": 195,
         "height": 323,
-        "desc": "Động tác trang PDF 192 (Mã thư viện: H0979)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-18",
@@ -21978,7 +20572,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h01.png",
         "width": 208,
         "height": 315,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0980)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-19",
@@ -21990,7 +20584,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h02.png",
         "width": 211,
         "height": 315,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0981)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-20",
@@ -22002,7 +20596,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h03.png",
         "width": 250,
         "height": 315,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0982)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-21",
@@ -22014,7 +20608,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h04.png",
         "width": 248,
         "height": 317,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0983)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-22",
@@ -22026,7 +20620,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h05.png",
         "width": 120,
         "height": 317,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0984)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-23",
@@ -22038,7 +20632,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p193-h06.png",
         "width": 125,
         "height": 317,
-        "desc": "Động tác trang PDF 193 (Mã thư viện: H0985)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-24",
@@ -22050,7 +20644,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h01.png",
         "width": 150,
         "height": 312,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0986)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-25",
@@ -22062,7 +20656,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h02.png",
         "width": 130,
         "height": 332,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0987)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-26",
@@ -22074,7 +20668,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h03.png",
         "width": 125,
         "height": 320,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0988)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-27",
@@ -22086,7 +20680,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h06.png",
         "width": 210,
         "height": 321,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0989)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-28",
@@ -22098,7 +20692,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h04.png",
         "width": 215,
         "height": 321,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0990)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-29",
@@ -22110,7 +20704,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p194-h05.png",
         "width": 130,
         "height": 321,
-        "desc": "Động tác trang PDF 194 (Mã thư viện: H0991)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-30",
@@ -22122,7 +20716,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h03.png",
         "width": 110,
         "height": 316,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0992)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-31",
@@ -22134,7 +20728,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h01.png",
         "width": 145,
         "height": 316,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0993)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-32",
@@ -22146,7 +20740,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h02.png",
         "width": 145,
         "height": 320,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0994)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-33",
@@ -22158,7 +20752,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h04.png",
         "width": 105,
         "height": 320,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0995)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-34",
@@ -22170,7 +20764,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h05.png",
         "width": 125,
         "height": 325,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0996)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-35",
@@ -22182,7 +20776,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h06.png",
         "width": 135,
         "height": 325,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0997)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-36",
@@ -22194,7 +20788,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h07.png",
         "width": 260,
         "height": 310,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0998)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-37",
@@ -22206,7 +20800,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p195-h08.png",
         "width": 268,
         "height": 310,
-        "desc": "Động tác trang PDF 195 (Mã thư viện: H0999)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-38",
@@ -22218,7 +20812,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h01.png",
         "width": 258,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1000)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-39",
@@ -22230,7 +20824,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h02.png",
         "width": 195,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1001)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-40",
@@ -22242,7 +20836,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h03.png",
         "width": 175,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1002)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-41",
@@ -22254,7 +20848,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h04.png",
         "width": 120,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1003)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-42",
@@ -22266,7 +20860,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h05.png",
         "width": 125,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1004)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-43",
@@ -22278,7 +20872,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h06.png",
         "width": 120,
         "height": 320,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1005)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-44",
@@ -22290,7 +20884,19 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p196-h07.png",
         "width": 125,
         "height": 323,
-        "desc": "Động tác trang PDF 196 (Mã thư viện: H1006)"
+        "desc": ""
+      },
+      {
+        "id": "bai-31-m-44b",
+        "stepNo": "44B",
+        "assetId": "p196-h08",
+        "displayId": "H1006B",
+        "pdfPage": 196,
+        "imgUrl": "/assets/hinh/p196-h08.png",
+        "img2xUrl": "/assets/hinh-2x/p196-h08.png",
+        "width": 123,
+        "height": 314,
+        "desc": ""
       },
       {
         "id": "bai-31-m-45",
@@ -22302,7 +20908,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h02.png",
         "width": 140,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1007)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-46",
@@ -22314,7 +20920,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h01.png",
         "width": 275,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1008)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-47",
@@ -22326,7 +20932,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h03.png",
         "width": 150,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1009)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-48",
@@ -22338,7 +20944,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h04.png",
         "width": 280,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1010)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-49",
@@ -22350,7 +20956,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h05.png",
         "width": 115,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1011)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-50",
@@ -22362,7 +20968,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h06.png",
         "width": 135,
         "height": 325,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1012)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-51",
@@ -22374,7 +20980,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h07.png",
         "width": 125,
         "height": 315,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1013)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-52",
@@ -22386,7 +20992,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h08.png",
         "width": 120,
         "height": 315,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1014)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-53",
@@ -22398,7 +21004,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p197-h09.png",
         "width": 150,
         "height": 315,
-        "desc": "Động tác trang PDF 197 (Mã thư viện: H1015)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-54",
@@ -22410,7 +21016,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h01.png",
         "width": 145,
         "height": 340,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1016)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-55",
@@ -22422,7 +21028,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h02.png",
         "width": 150,
         "height": 335,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1017)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-56",
@@ -22434,7 +21040,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h03.png",
         "width": 155,
         "height": 335,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1018)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-57",
@@ -22446,7 +21052,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h04.png",
         "width": 165,
         "height": 325,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1019)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-58",
@@ -22458,7 +21064,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h06.png",
         "width": 150,
         "height": 325,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1020)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-59",
@@ -22470,7 +21076,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h05.png",
         "width": 135,
         "height": 325,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1021)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-60",
@@ -22482,7 +21088,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h07.png",
         "width": 130,
         "height": 325,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1022)"
+        "desc": ""
       },
       {
         "id": "bai-31-m-61",
@@ -22494,7 +21100,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p198-h08.png",
         "width": 165,
         "height": 325,
-        "desc": "Động tác trang PDF 198 (Mã thư viện: H1023)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -22814,7 +21420,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h01.png",
         "width": 155,
         "height": 323,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1024)"
+        "desc": ""
       },
       {
         "id": "con-m-2",
@@ -22826,7 +21432,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h03.png",
         "width": 140,
         "height": 328,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1025)"
+        "desc": ""
       },
       {
         "id": "con-m-3",
@@ -22838,7 +21444,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h04.png",
         "width": 140,
         "height": 378,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1026)"
+        "desc": ""
       },
       {
         "id": "con-m-4",
@@ -22850,7 +21456,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h06.png",
         "width": 145,
         "height": 377,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1027)"
+        "desc": ""
       },
       {
         "id": "con-m-5",
@@ -22862,7 +21468,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h05.png",
         "width": 335,
         "height": 317,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1028)"
+        "desc": ""
       },
       {
         "id": "con-m-6",
@@ -22874,7 +21480,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h07.png",
         "width": 330,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1029)"
+        "desc": ""
       },
       {
         "id": "con-m-7",
@@ -22886,7 +21492,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h02.png",
         "width": 350,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1030)"
+        "desc": ""
       },
       {
         "id": "con-m-8",
@@ -22898,7 +21504,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h08.png",
         "width": 335,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1031)"
+        "desc": ""
       },
       {
         "id": "con-m-9",
@@ -22910,7 +21516,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h01.png",
         "width": 110,
         "height": 368,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1032)"
+        "desc": ""
       },
       {
         "id": "con-m-10",
@@ -22922,7 +21528,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h02.png",
         "width": 105,
         "height": 320,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1033)"
+        "desc": ""
       },
       {
         "id": "con-m-11",
@@ -22934,7 +21540,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h03.png",
         "width": 330,
         "height": 320,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1034)"
+        "desc": ""
       },
       {
         "id": "con-m-12",
@@ -22946,7 +21552,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h04.png",
         "width": 147,
         "height": 345,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1035)"
+        "desc": ""
       },
       {
         "id": "con-m-13",
@@ -22958,7 +21564,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h06.png",
         "width": 185,
         "height": 330,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1036)"
+        "desc": ""
       },
       {
         "id": "con-m-14",
@@ -22970,7 +21576,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h05.png",
         "width": 130,
         "height": 345,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1037)"
+        "desc": ""
       },
       {
         "id": "con-m-15",
@@ -22982,7 +21588,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h09.png",
         "width": 145,
         "height": 328,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1038)"
+        "desc": ""
       },
       {
         "id": "con-m-16",
@@ -22994,7 +21600,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h07.png",
         "width": 110,
         "height": 333,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1039)"
+        "desc": ""
       },
       {
         "id": "con-m-17",
@@ -23006,7 +21612,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h08.png",
         "width": 110,
         "height": 333,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1040)"
+        "desc": ""
       },
       {
         "id": "con-m-18",
@@ -23018,7 +21624,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h01.png",
         "width": 125,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1041)"
+        "desc": ""
       },
       {
         "id": "con-m-19",
@@ -23030,7 +21636,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h03.png",
         "width": 110,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1042)"
+        "desc": ""
       },
       {
         "id": "con-m-20",
@@ -23042,7 +21648,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h02.png",
         "width": 160,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1043)"
+        "desc": ""
       },
       {
         "id": "con-m-21",
@@ -23054,7 +21660,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h04.png",
         "width": 110,
         "height": 317,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1044)"
+        "desc": ""
       },
       {
         "id": "con-m-22",
@@ -23066,7 +21672,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h05.png",
         "width": 275,
         "height": 292,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1045)"
+        "desc": ""
       },
       {
         "id": "con-m-23",
@@ -23078,7 +21684,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h06.png",
         "width": 360,
         "height": 324,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1046)"
+        "desc": ""
       },
       {
         "id": "con-m-24",
@@ -23090,7 +21696,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h07.png",
         "width": 280,
         "height": 324,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1047)"
+        "desc": ""
       },
       {
         "id": "con-m-25",
@@ -23102,7 +21708,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h01.png",
         "width": 135,
         "height": 380,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1048)"
+        "desc": ""
       },
       {
         "id": "con-m-26",
@@ -23114,7 +21720,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h02.png",
         "width": 150,
         "height": 330,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1049)"
+        "desc": ""
       },
       {
         "id": "con-m-27",
@@ -23126,7 +21732,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h03.png",
         "width": 152,
         "height": 338,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1050)"
+        "desc": ""
       },
       {
         "id": "con-m-28",
@@ -23138,7 +21744,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h04.png",
         "width": 365,
         "height": 316,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1051)"
+        "desc": ""
       },
       {
         "id": "con-m-29",
@@ -23150,7 +21756,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h05.png",
         "width": 130,
         "height": 316,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1052)"
+        "desc": ""
       },
       {
         "id": "con-m-30",
@@ -23162,7 +21768,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h06.png",
         "width": 160,
         "height": 320,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1053)"
+        "desc": ""
       },
       {
         "id": "con-m-31",
@@ -23174,7 +21780,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h07.png",
         "width": 135,
         "height": 315,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1054)"
+        "desc": ""
       },
       {
         "id": "con-m-32",
@@ -23186,7 +21792,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h08.png",
         "width": 180,
         "height": 350,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1055)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -23723,7 +22329,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h01.png",
         "width": 155,
         "height": 323,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1024)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-2",
@@ -23735,7 +22341,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h03.png",
         "width": 140,
         "height": 328,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1025)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-3",
@@ -23747,7 +22353,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h04.png",
         "width": 140,
         "height": 378,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1026)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-4",
@@ -23759,7 +22365,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h06.png",
         "width": 145,
         "height": 377,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1027)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-5",
@@ -23771,7 +22377,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h05.png",
         "width": 335,
         "height": 317,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1028)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-6",
@@ -23783,7 +22389,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h07.png",
         "width": 330,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1029)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-7",
@@ -23795,7 +22401,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h02.png",
         "width": 350,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1030)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-8",
@@ -23807,7 +22413,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p199-h08.png",
         "width": 335,
         "height": 325,
-        "desc": "Động tác trang PDF 199 (Mã thư viện: H1031)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-9",
@@ -23819,7 +22425,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h01.png",
         "width": 110,
         "height": 368,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1032)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-10",
@@ -23831,7 +22437,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h02.png",
         "width": 105,
         "height": 320,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1033)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-11",
@@ -23843,7 +22449,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h03.png",
         "width": 330,
         "height": 320,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1034)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-12",
@@ -23855,7 +22461,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h04.png",
         "width": 147,
         "height": 345,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1035)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-13",
@@ -23867,7 +22473,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h06.png",
         "width": 185,
         "height": 330,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1036)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-14",
@@ -23879,7 +22485,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h05.png",
         "width": 130,
         "height": 345,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1037)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-15",
@@ -23891,7 +22497,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h09.png",
         "width": 145,
         "height": 328,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1038)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-16",
@@ -23903,7 +22509,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h07.png",
         "width": 110,
         "height": 333,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1039)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-17",
@@ -23915,7 +22521,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p200-h08.png",
         "width": 110,
         "height": 333,
-        "desc": "Động tác trang PDF 200 (Mã thư viện: H1040)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-18",
@@ -23927,7 +22533,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h01.png",
         "width": 125,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1041)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-19",
@@ -23939,7 +22545,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h03.png",
         "width": 110,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1042)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-20",
@@ -23951,7 +22557,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h02.png",
         "width": 160,
         "height": 322,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1043)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-21",
@@ -23963,7 +22569,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h04.png",
         "width": 110,
         "height": 317,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1044)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-22",
@@ -23975,7 +22581,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h05.png",
         "width": 275,
         "height": 292,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1045)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-23",
@@ -23987,7 +22593,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h06.png",
         "width": 360,
         "height": 324,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1046)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-24",
@@ -23999,7 +22605,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p201-h07.png",
         "width": 280,
         "height": 324,
-        "desc": "Động tác trang PDF 201 (Mã thư viện: H1047)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-25",
@@ -24011,7 +22617,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h01.png",
         "width": 135,
         "height": 380,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1048)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-26",
@@ -24023,7 +22629,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h02.png",
         "width": 150,
         "height": 330,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1049)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-27",
@@ -24035,7 +22641,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h03.png",
         "width": 152,
         "height": 338,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1050)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-28",
@@ -24047,7 +22653,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h04.png",
         "width": 365,
         "height": 316,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1051)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-29",
@@ -24059,7 +22665,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h05.png",
         "width": 130,
         "height": 316,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1052)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-30",
@@ -24071,7 +22677,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h06.png",
         "width": 160,
         "height": 320,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1053)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-31",
@@ -24083,7 +22689,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h07.png",
         "width": 135,
         "height": 315,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1054)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-32",
@@ -24095,7 +22701,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p202-h08.png",
         "width": 180,
         "height": 350,
-        "desc": "Động tác trang PDF 202 (Mã thư viện: H1055)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-33",
@@ -24107,7 +22713,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h01.png",
         "width": 370,
         "height": 318,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1056)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-34",
@@ -24119,7 +22725,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h03.png",
         "width": 360,
         "height": 318,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1057)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-35",
@@ -24131,7 +22737,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h05.png",
         "width": 102,
         "height": 317,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1058)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-36",
@@ -24143,7 +22749,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h02.png",
         "width": 192,
         "height": 317,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1059)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-37",
@@ -24155,7 +22761,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h04.png",
         "width": 272,
         "height": 317,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1060)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-38",
@@ -24167,7 +22773,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p203-h06.png",
         "width": 95,
         "height": 320,
-        "desc": "Động tác trang PDF 203 (Mã thư viện: H1061)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-39",
@@ -24179,7 +22785,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h01.png",
         "width": 440,
         "height": 293,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1062)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-40",
@@ -24191,7 +22797,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h02.png",
         "width": 280,
         "height": 333,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1063)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-41",
@@ -24203,7 +22809,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h03.png",
         "width": 255,
         "height": 315,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1064)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-42",
@@ -24215,7 +22821,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h04.png",
         "width": 200,
         "height": 320,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1065)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-43",
@@ -24227,7 +22833,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h05.png",
         "width": 100,
         "height": 395,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1066)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-44",
@@ -24239,7 +22845,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p204-h06.png",
         "width": 275,
         "height": 330,
-        "desc": "Động tác trang PDF 204 (Mã thư viện: H1067)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-45",
@@ -24251,7 +22857,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h01.png",
         "width": 205,
         "height": 329,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1068)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-46",
@@ -24263,7 +22869,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h02.png",
         "width": 205,
         "height": 329,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1069)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-47",
@@ -24275,7 +22881,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h03.png",
         "width": 265,
         "height": 324,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1070)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-48",
@@ -24287,7 +22893,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h04.png",
         "width": 172,
         "height": 334,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1071)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-49",
@@ -24299,7 +22905,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h06.png",
         "width": 105,
         "height": 334,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1072)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-50",
@@ -24311,7 +22917,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h05.png",
         "width": 170,
         "height": 401,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1073)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-51",
@@ -24323,7 +22929,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h07.png",
         "width": 100,
         "height": 331,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1074)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-52",
@@ -24335,7 +22941,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p205-h08.png",
         "width": 325,
         "height": 321,
-        "desc": "Động tác trang PDF 205 (Mã thư viện: H1075)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-53",
@@ -24347,7 +22953,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p206-h01.png",
         "width": 170,
         "height": 330,
-        "desc": "Động tác trang PDF 206 (Mã thư viện: H1076)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-54",
@@ -24359,7 +22965,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p206-h02.png",
         "width": 360,
         "height": 290,
-        "desc": "Động tác trang PDF 206 (Mã thư viện: H1077)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-55",
@@ -24371,7 +22977,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p206-h03.png",
         "width": 170,
         "height": 348,
-        "desc": "Động tác trang PDF 206 (Mã thư viện: H1078)"
+        "desc": ""
       },
       {
         "id": "lieu-diep-kiem-m-56",
@@ -24383,7 +22989,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p206-h04.png",
         "width": 145,
         "height": 323,
-        "desc": "Động tác trang PDF 206 (Mã thư viện: H1079)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -24461,78 +23067,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-34-m-1",
-        "stepNo": "1",
-        "assetId": "p208-h01",
-        "displayId": "H1080",
-        "pdfPage": 208,
-        "imgUrl": "/assets/hinh/p208-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p208-h01.png",
-        "width": 1023,
-        "height": 1276,
-        "desc": "Động tác trang PDF 208 (Mã thư viện: H1080)"
-      },
-      {
-        "id": "bai-34-m-2",
-        "stepNo": "2",
-        "assetId": "p209-h01",
-        "displayId": "H1081",
-        "pdfPage": 209,
-        "imgUrl": "/assets/hinh/p209-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p209-h01.png",
-        "width": 933,
-        "height": 605,
-        "desc": "Động tác trang PDF 209 (Mã thư viện: H1081)"
-      },
-      {
-        "id": "bai-34-m-3",
-        "stepNo": "3",
-        "assetId": "p210-h01",
-        "displayId": "H1082",
-        "pdfPage": 210,
-        "imgUrl": "/assets/hinh/p210-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p210-h01.png",
-        "width": 422,
-        "height": 566,
-        "desc": "Động tác trang PDF 210 (Mã thư viện: H1082)"
-      },
-      {
-        "id": "bai-34-m-4",
-        "stepNo": "4",
-        "assetId": "p210-h02",
-        "displayId": "H1083",
-        "pdfPage": 210,
-        "imgUrl": "/assets/hinh/p210-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p210-h02.png",
-        "width": 434,
-        "height": 503,
-        "desc": "Động tác trang PDF 210 (Mã thư viện: H1083)"
-      },
-      {
-        "id": "bai-34-m-5",
-        "stepNo": "5",
-        "assetId": "p212-h01",
-        "displayId": "H1084",
-        "pdfPage": 212,
-        "imgUrl": "/assets/hinh/p212-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p212-h01.png",
-        "width": 512,
-        "height": 425,
-        "desc": "Động tác trang PDF 212 (Mã thư viện: H1084)"
-      },
-      {
-        "id": "bai-34-m-6",
-        "stepNo": "6",
-        "assetId": "p212-h02",
-        "displayId": "H1085",
-        "pdfPage": 212,
-        "imgUrl": "/assets/hinh/p212-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p212-h02.png",
-        "width": 513,
-        "height": 541,
-        "desc": "Động tác trang PDF 212 (Mã thư viện: H1085)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   },
@@ -24643,7 +23178,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p213-h01.png",
         "width": 391,
         "height": 651,
-        "desc": "Động tác trang PDF 213 (Mã thư viện: H1086)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-2",
@@ -24655,7 +23190,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p214-h01.png",
         "width": 398,
         "height": 428,
-        "desc": "Động tác trang PDF 214 (Mã thư viện: H1087)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-3",
@@ -24667,7 +23202,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p216-h01.png",
         "width": 588,
         "height": 650,
-        "desc": "Động tác trang PDF 216 (Mã thư viện: H1088)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-4",
@@ -24679,7 +23214,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p217-h01.png",
         "width": 564,
         "height": 619,
-        "desc": "Động tác trang PDF 217 (Mã thư viện: H1089)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-5",
@@ -24691,7 +23226,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p219-h01.png",
         "width": 854,
         "height": 602,
-        "desc": "Động tác trang PDF 219 (Mã thư viện: H1090)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-6",
@@ -24703,7 +23238,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p223-h01.png",
         "width": 598,
         "height": 453,
-        "desc": "Động tác trang PDF 223 (Mã thư viện: H1091)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-7",
@@ -24715,7 +23250,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p224-h01.png",
         "width": 311,
         "height": 344,
-        "desc": "Động tác trang PDF 224 (Mã thư viện: H1092)"
+        "desc": ""
       },
       {
         "id": "bai-35-m-8",
@@ -24727,7 +23262,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
         "img2xUrl": "/assets/hinh-2x/p224-h02.png",
         "width": 933,
         "height": 657,
-        "desc": "Động tác trang PDF 224 (Mã thư viện: H1093)"
+        "desc": ""
       }
     ],
     "recommendedPrerequisites": []
@@ -24764,30 +23299,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
       }
     ],
     "motions": [
-      {
-        "id": "bai-36-m-1",
-        "stepNo": "1",
-        "assetId": "p225-h01",
-        "displayId": "H1094",
-        "pdfPage": 225,
-        "imgUrl": "/assets/hinh/p225-h01.png",
-        "img2xUrl": "/assets/hinh-2x/p225-h01.png",
-        "width": 210,
-        "height": 213,
-        "desc": "Động tác trang PDF 225 (Mã thư viện: H1094)"
-      },
-      {
-        "id": "bai-36-m-2",
-        "stepNo": "2",
-        "assetId": "p225-h02",
-        "displayId": "H1095",
-        "pdfPage": 225,
-        "imgUrl": "/assets/hinh/p225-h02.png",
-        "img2xUrl": "/assets/hinh-2x/p225-h02.png",
-        "width": 1004,
-        "height": 397,
-        "desc": "Động tác trang PDF 225 (Mã thư viện: H1095)"
-      }
+    
     ],
     "recommendedPrerequisites": []
   }

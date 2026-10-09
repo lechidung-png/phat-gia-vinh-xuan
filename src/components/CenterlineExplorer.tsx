@@ -284,12 +284,12 @@ export const CenterlineExplorer: React.FC = () => {
                   <Image
                     src={
                       stancePosture === "bai_to"
-                        ? "/assets/images/techniques/series/fig_1_1.png"
-                        : "/assets/images/techniques/series/fig_1_2.png"
+                        ? "/assets/hinh-2x/p037-h01.png"
+                        : "/assets/hinh-2x/p037-h02.png"
                     }
                     alt="Võ sư thị phạm trục Tý Ngọ Tuyến"
                     fill
-                    className="object-contain p-2 filter contrast-105"
+                    className="object-contain p-2 filter martial-filter"
                     sizes="300px"
                     priority
                   />

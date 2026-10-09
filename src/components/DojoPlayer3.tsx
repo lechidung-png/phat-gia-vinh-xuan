@@ -19,6 +19,7 @@ import {
   Grid,
 } from "lucide-react";
 import { CanonicalLesson, MotionStep } from "@/data/canonicalCatalog";
+import { getFormKinematics } from "@/data/martialKinematics";
 
 interface DojoPlayer3Props {
   lesson: CanonicalLesson;
@@ -298,54 +299,49 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
             </div>
 
             <h3 className="text-xl sm:text-2xl font-bold font-serif text-white pt-1">
-              Động Tác Thứ {currentMotion.stepNo}: {currentMotion.desc || `Phân thế động tác ${currentMotion.stepNo}`}
+              Động Tác Thứ {currentMotion.stepNo}
+              {currentMotion.desc && !currentMotion.desc.includes("trang PDF") ? `: ${currentMotion.desc}` : ""}
             </h3>
             <p className="text-xs text-amber-200/80 font-mono">
-              Động tác {currentMotion.stepNo} / {totalMotions} • Mã {currentMotion.displayId}
+              Động tác {currentMotion.stepNo} / {totalMotions} • {getFormKinematics(lesson.id).kieu}
             </p>
           </div>
 
-          {/* Khẩu Quyết & Ý Cảnh */}
-          <div className="p-4 rounded-2xl bg-[#F5D06C]/10 border border-[#F5D06C]/30 space-y-1 shadow-inner">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1">
+          {/* Khẩu Quyết Võ Đạo Chuyên Biệt */}
+          <div className="p-4 rounded-2xl bg-[#F5D06C]/10 border border-[#F5D06C]/30 space-y-1.5 shadow-inner">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
-              Khẩu Quyết & Ý Cảnh Võ Đạo:
+              Khẩu Quyết Cốt Tủy • {lesson.title}:
             </span>
             <p className="text-xs sm:text-sm text-amber-100 font-serif italic leading-relaxed">
-              &quot;Ý thủ đan điền • Trực chỉ trung tuyến • Nhu hòa phát kình • Tùy cơ ứng biến.&quot;
+              &quot;{getFormKinematics(lesson.id).khauQuyet}&quot;
             </p>
           </div>
 
-          {/* Yếu Lĩnh Thân Pháp & Giải Phẫu */}
+          {/* Yếu Lĩnh Thân Pháp & Điểm Đặt Lực Chuyên Biệt */}
           <div className="p-4 rounded-2xl bg-black/30 border border-[#F5D06C]/20 space-y-2">
             <span className="text-[11px] font-bold uppercase tracking-wider text-amber-200 flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-[#F5D06C]" />
-              Yếu Lĩnh Thân Pháp & Điểm Đặt Lực:
+              Yếu Lĩnh Thân Pháp &amp; Vận Lực:
             </span>
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-              Giữ thẳng cột sống, hạ bàn kiềm dương tấn vững chãi. Cùi chỏ ghì sát mạn sườn, đón lực và xuất lực xuyên suốt trên trục Tý Ngọ Tuyến. Hai vai buông lỏng, hơi thở tự nhiên hạ trầm đan điền.
+              {getFormKinematics(lesson.id).yeuLinh}
             </p>
           </div>
 
-          {/* 3 Điểm Cốt Tử Cần Khắc Ghi */}
+          {/* 3 Điểm Cốt Tử Cần Khắc Ghi Chuyên Biệt */}
           <div className="space-y-2 p-4 rounded-2xl bg-emerald-950/20 border border-emerald-500/25">
             <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
               3 Điểm Cốt Tử Khi Luyện Tập:
             </span>
             <ul className="space-y-1.5 text-xs sm:text-sm text-slate-300">
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-400 font-bold">•</span>
-                <span>Không gồng cứng cơ bắp; chuyển động mềm mại như nước chảy để tích lũy nội kình.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-400 font-bold">•</span>
-                <span>Khép hai đầu gối hướng tâm bảo vệ hạ bàn, không choãi chân làm hở cửa dưới.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-400 font-bold">•</span>
-                <span>Mắt nhìn thẳng tầm mắt đối phương, duy trì thần thái trầm tĩnh an định.</span>
-              </li>
+              {getFormKinematics(lesson.id).cotTu.map((point, pIdx) => (
+                <li key={pIdx} className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">•</span>
+                  <span>{point}</span>
+                </li>
+              ))}
             </ul>
           </div>
 

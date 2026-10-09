@@ -116,7 +116,7 @@ export const DojoPlayer: React.FC<DojoPlayerProps> = ({
     steps[0] || {
       stepNo: "1",
       desc: technique.summary,
-      imgUrl: "/assets/images/techniques/series/fig_1_1.png",
+      imgUrl: "/assets/hinh-2x/p037-h01.png",
       keypoints: ["Giữ vững Kiềm Dương Tấn", "Định hình trục Tý Ngọ Tuyến"],
     };
 
