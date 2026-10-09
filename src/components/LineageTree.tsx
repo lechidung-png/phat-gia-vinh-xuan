@@ -211,19 +211,19 @@ export const LineageTree: React.FC = () => {
         {/* Node 4: Võ Sư Lê Đắc Kiên - Võ Đường Huỳnh Thúc Kháng */}
         <div className="sm:ml-20 glass-panel p-6 sm:p-7 rounded-2xl border-2 border-[#E2B743]/60 relative group hover:border-[#E2B743] transition-all bg-gradient-to-br from-[#1C120B] to-[#120B07] shadow-2xl">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-            {/* Ảnh chân dung Võ sư Lê Đắc Kiên */}
-            <div className="relative w-32 h-44 sm:w-36 sm:h-48 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
+            {/* Ảnh chân dung Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
+            <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
               <Image
                 src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
                 alt="Võ sư Lê Đắc Kiên - Phụ trách Võ đường Huỳnh Thúc Kháng"
                 fill
-                sizes="(max-width: 640px) 140px, 160px"
+                sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 224px"
                 className="object-cover object-top"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
-              <div className="absolute bottom-1.5 inset-x-1 text-center">
-                <span className="text-[10px] font-mono font-bold text-[#E2B743] bg-black/80 px-2 py-0.5 rounded-full border border-[#E2B743]/40 shadow">
+              <div className="absolute bottom-2 inset-x-2 text-center">
+                <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow">
                   Võ Sư Nòng Cốt
                 </span>
               </div>

@@ -91,7 +91,7 @@ export const TECHNIQUES: Technique[] = [
     "sectionId": "khai-the-bai-to",
     "sectionName": "Khai Thế: Nghi Thức Bái Tổ Sư Môn",
     "order": 0,
-    "summary": "Chuỗi 9 bước động tác Bái Tổ bắt buộc trước khi bước vào luyện quyền hoặc thực hiện 108 thế Phật Gia Vịnh Xuân. Thị phạm: Võ sư Lê Văn Tùng (Trang scan 20, trang in 21).",
+    "summary": "Chuỗi 9 bước động tác Bái Tổ bắt buộc trước khi bước vào luyện quyền hoặc thực hiện 108 thế Phật Gia Vịnh Xuân. Thị phạm: Võ sư Lê Văn Tùng.",
     "stances": [
       "Nhi Tu Kiem Duong Tan",
       "Khai The Bai To"
@@ -212,7 +212,7 @@ export const TECHNIQUES: Technique[] = [
         ]
       }
     ],
-    "combatApplication": "Chuỗi 9 bước động tác Bái Tổ bắt buộc trước khi bước vào luyện quyền hoặc thực hiện 108 thế Phật Gia Vịnh Xuân. Thị phạm: Võ sư Lê Văn Tùng (Trang scan 20, trang in 21).",
+    "combatApplication": "Chuỗi 9 bước động tác Bái Tổ bắt buộc trước khi bước vào luyện quyền hoặc thực hiện 108 thế Phật Gia Vịnh Xuân. Thị phạm: Võ sư Lê Văn Tùng.",
     "instructor": "Võ sư Lê Văn Tùng",
     "isTwoPerson": false,
     "sparringInfo": null

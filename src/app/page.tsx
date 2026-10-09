@@ -150,15 +150,17 @@ export default function Home() {
       />
 
       {/* Modern Martial Footer */}
-      <footer className="mt-auto border-t border-[#3D291F] glass-panel py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-amber-200/60">
-          <p>© 2026 Phật Gia Vịnh Xuân Quyền. Nền tảng số hóa di sản võ học & tra cứu trực tuyến.</p>
-          <div className="flex items-center gap-4">
+      <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-amber-200/60">
+          <p className="text-center sm:text-left font-medium">
+            Võ đường Huỳnh Thúc Kháng xây dựng • Phật Gia Vịnh Xuân Quyền
+          </p>
+          <div className="flex items-center gap-4 text-[11px]">
+            <span className="text-[#E2B743]">Di Sản Võ Học 1954 - 2012</span>
+            <span>•</span>
             <span className="text-[#10B981]">Chuẩn WCAG 2.1 Level A</span>
             <span>•</span>
-            <span className="text-[#E2B743]">Next.js 15 Fullstack SSG</span>
-            <span>•</span>
-            <span className="text-amber-100/80">Sách Gốc 2012 (225 Trang)</span>
+            <span className="text-slate-400">GS.TS Nguyễn Mạnh Nhâm & ThS. Nguyễn Duy Thức</span>
           </div>
         </div>
       </footer>

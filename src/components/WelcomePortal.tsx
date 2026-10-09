@@ -159,9 +159,9 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             </p>
           </div>
 
-          {/* Detailed Paragraph */}
-          <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed max-w-3xl">
-            Bảo tồn nguyên bản 100% công trình khảo cứu của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)</strong>. Nối dài mạch nguồn chính tông từ <strong>Sư Tổ Nguyễn Tế Công (1954)</strong>, <strong>Cố Võ Sư Trần Thúc Tiển (1911–1980)</strong> đến ngọn lửa truyền thừa của <strong>Võ Sư Lê Đắc Kiên (Võ Đường Huỳnh Thúc Kháng)</strong>.
+          {/* Tagline */}
+          <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+            Bảo tồn & phát huy di sản võ học Phật Gia Vịnh Xuân — Võ Đường Huỳnh Thúc Kháng.
           </p>
 
           {/* CTA Action Buttons */}
@@ -283,18 +283,26 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       {/* 3. FEATURED WISDOM: VÕ SƯ LÊ ĐẮC KIÊN & TRIẾT LÝ VÕ ĐẠO */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#C27D38]/40 relative overflow-hidden shadow-xl">
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
-          {/* Portrait of Master Le Dac Kien */}
-          <div className="relative shrink-0">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-3xl overflow-hidden border-2 border-[#E2B743]/60 shadow-xl shadow-amber-950/50 relative bg-[#140C08]">
+          {/* Portrait of Master Le Dac Kien - To rõ & Trang trọng */}
+          <div className="relative shrink-0 flex flex-col items-center">
+            <div className="w-48 h-60 sm:w-60 sm:h-76 md:w-72 md:h-92 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shadow-amber-950/80 relative bg-[#140C08] group">
               <Image
                 src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                alt="Võ sư Lê Đắc Kiên"
+                alt="Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
                 fill
-                sizes="(max-width: 640px) 128px, 160px"
-                className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 640px) 192px, (max-width: 768px) 240px, 288px"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-3 inset-x-2 text-center">
+                <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow-lg">
+                  Võ Sư Lê Đắc Kiên
+                </span>
+              </div>
             </div>
-            <div className="absolute -bottom-2 -right-2 px-2.5 py-0.5 rounded-full bg-[#E2B743] text-black text-[10px] font-bold shadow font-mono">
+            <div className="mt-2.5 px-3 py-1 rounded-full bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
+              <Award className="w-3.5 h-3.5" />
               20 Năm Võ Nghiệp
             </div>
           </div>

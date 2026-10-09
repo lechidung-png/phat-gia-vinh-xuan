@@ -137,20 +137,17 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
           拳
         </div>
 
-        <div className="relative z-10 max-w-4xl space-y-3">
+        <div className="relative z-10 max-w-4xl space-y-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 text-xs font-bold uppercase tracking-widest">
-            <Swords className="w-3.5 h-3.5" /> Bách Khoa 7 Bài Quyền Chính Tông (1954 - 2012)
+            <Swords className="w-3.5 h-3.5" /> Bách Khoa 7 Bài Quyền Chính Tông
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-serif gold-gradient leading-tight">
             Hệ Thống 7 Bài Quyền Phật Gia Vịnh Xuân
           </h2>
-          <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed">
-            Hệ thống quyền pháp hoàn chỉnh được phục chế toàn văn và đối soát 100% hình ảnh từ công trình của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)</strong>. Thể hiện đầy đủ từng bước động tác liên hoàn, yếu lĩnh thân pháp, nhịp thở đan điền và phân thế thực chiến.
-          </p>
         </div>
 
         {/* 8 FORMS MATRIX SELECTOR (2x4 Grid View: 100% Visible, No Horizontal Scroll) */}
-        <div className="relative z-10 mt-6 pt-5 border-t border-[#3D291F]">
+        <div className="relative z-10 mt-5 pt-4 border-t border-[#3D291F]">
           <div className="flex items-center justify-between mb-3 text-xs text-amber-200/80">
             <span className="font-bold uppercase tracking-wider text-[11px] text-[#E2B743] flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5" /> Bảng Danh Mục 8 Bài Quyền (Nhấp Để Chuyển Bài):
@@ -177,13 +174,6 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
                     <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider mb-1">
                       <span className={isSelected ? "text-amber-950 font-extrabold" : "text-[#E2B743]"}>
                         {idx === 0 ? "Khởi Thức" : `Bài Quyền 0${idx}`}
-                      </span>
-                      <span
-                        className={`px-1.5 py-0.5 rounded text-[9px] ${
-                          isSelected ? "bg-black/20 text-black font-bold" : "bg-black/40 text-slate-400"
-                        }`}
-                      >
-                        {form.scanPages}
                       </span>
                     </div>
                     <h4 className={`text-xs sm:text-sm font-bold line-clamp-1 ${isSelected ? "text-black" : "text-white"}`}>
@@ -216,10 +206,6 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
               <span className="text-xs text-slate-400">•</span>
               <span className="text-xs text-amber-200 font-semibold">
                 Thị phạm: <strong>{currentForm.demonstrators}</strong>
-              </span>
-              <span className="text-xs text-slate-400">•</span>
-              <span className="text-xs text-[#10B981] font-mono">
-                Sách Gốc: {currentForm.scanPages}
               </span>
             </div>
             <h3 className="text-xl sm:text-2xl font-bold font-serif text-white">
@@ -281,9 +267,9 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
             </span>
           </div>
           <div className="p-3 rounded-xl bg-[#180E09] border border-[#3D291F]">
-            <span className="text-[10px] text-slate-400 block font-mono">NGUỒN TƯ LIỆU SÁCH</span>
-            <span className="text-sm sm:text-base font-bold text-amber-300 font-mono">
-              NXB TDTT 2012 (225 Trang)
+            <span className="text-[10px] text-slate-400 block font-mono">ĐƠN VỊ XÂY DỰNG</span>
+            <span className="text-sm sm:text-base font-bold text-amber-300">
+              Võ Đường Huỳnh Thúc Kháng
             </span>
           </div>
         </div>
