@@ -15,6 +15,8 @@ import {
   Bookmark,
   Layers,
   Zap,
+  X,
+  Grid,
 } from "lucide-react";
 import { CanonicalLesson, MotionStep } from "@/data/canonicalCatalog";
 
@@ -34,6 +36,7 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
   const [isMirrorFlipped, setIsMirrorFlipped] = useState(false);
   const [useRetina2x, setUseRetina2x] = useState(true); // Mặc định luôn nạp bản Retina 2x nét căng
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMatrixOpen, setIsMatrixOpen] = useState(false);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(2200); // 2.2s per step
   const [copiedShare, setCopiedShare] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState<boolean>(() => {
@@ -218,9 +221,14 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
                 <Layers className="w-3.5 h-3.5 text-[#F5D06C]" />
                 Chuỗi {totalMotions} Động Tác:
               </span>
-              <span className="font-mono text-[#F5D06C]">
-                #{activeMotionIndex + 1} / {totalMotions}
-              </span>
+              <button
+                onClick={() => setIsMatrixOpen(true)}
+                className="text-[11px] font-mono text-[#F5D06C] hover:text-white bg-[#2A0E0A] hover:bg-[#F5D06C]/20 px-2 py-0.5 rounded-lg border border-[#F5D06C]/30 flex items-center gap-1 transition cursor-pointer"
+                title="Mở toàn bộ ma trận động tác"
+              >
+                <Grid className="w-3 h-3" />
+                <span>Xem Tất Cả ({totalMotions})</span>
+              </button>
             </div>
 
             <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
@@ -397,6 +405,76 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
         </div>
 
       </div>
+
+      {/* MODAL MA TRẬN ĐỘNG TÁC (TẤT CẢ TRONG MỘT MÀN HÌNH - KHÔNG CẦN CUỘN NGANG) */}
+      {isMatrixOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md animate-fadeIn"
+          onClick={() => setIsMatrixOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-5xl max-h-[88vh] glass-panel rounded-3xl border border-[#F5D06C]/40 shadow-2xl flex flex-col overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between p-5 border-b border-[#F5D06C]/20 bg-[#20150F]">
+              <div className="flex items-center gap-2.5">
+                <Grid className="w-5 h-5 text-[#F5D06C]" />
+                <div>
+                  <h4 className="font-bold text-base text-white font-serif">
+                    Ma Trận {totalMotions} Động Tác • {lesson.title}
+                  </h4>
+                  <p className="text-xs text-amber-200/70">
+                    Bấm trực tiếp vào động tác bất kỳ để nhảy tới ngay tức thì
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsMatrixOpen(false)}
+                className="p-2 rounded-xl bg-[#2A0E0A] hover:bg-[#F5D06C] hover:text-[#2A0E0A] text-amber-200 transition border border-[#F5D06C]/30 cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-4 sm:p-6 overflow-y-auto flex-1 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2.5 scrollbar-thin">
+              {motions.map((m, idx) => {
+                const isActive = idx === activeMotionIndex;
+                return (
+                  <button
+                    key={m.id}
+                    onClick={() => {
+                      onSelectMotionIndex(idx);
+                      setIsMatrixOpen(false);
+                    }}
+                    className={`relative aspect-[3/4] rounded-xl bg-[#FBF9F5] p-1 transition-all flex flex-col items-center justify-between border cursor-pointer group ${
+                      isActive
+                        ? "border-[#F5D06C] ring-2 ring-[#F5D06C] shadow-lg scale-105"
+                        : "border-slate-300 hover:border-[#F5D06C] opacity-85 hover:opacity-100"
+                    }`}
+                  >
+                    <div className="relative w-full flex-1">
+                      <Image
+                        src={m.imgUrl}
+                        alt={m.desc}
+                        fill
+                        className="object-contain martial-filter"
+                        sizes="70px"
+                      />
+                    </div>
+                    <span className="text-[10px] font-mono font-bold text-slate-800 bg-white/90 px-1 rounded w-full text-center truncate">
+                      #{m.stepNo}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="p-3 bg-[#20150F] border-t border-[#F5D06C]/20 text-center text-xs text-amber-200/70">
+              Nhấp chọn 1 ô để tải ngay phân thế võ học trên Sàn tập
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );

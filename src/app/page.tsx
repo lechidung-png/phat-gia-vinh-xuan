@@ -12,7 +12,9 @@ import { LineageTree } from "@/components/LineageTree";
 import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { StanceCheckerModal } from "@/components/StanceCheckerModal";
+import { MegaMenuModal } from "@/components/MegaMenuModal";
 import { TECHNIQUES, Technique } from "@/data/techniques";
+import { resolveLessonId } from "@/lib/lessonResolver";
 
 export default function Home() {
   // Mặc định mở Trang Chủ Chào Mừng (Welcome Portal) hoành tráng & ấn tượng
@@ -20,11 +22,12 @@ export default function Home() {
   const [selectedFormId, setSelectedFormId] = useState<string>("bai-07");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
   const handleNavigateTab = (tab: NavTab, formId?: string) => {
     setActiveTab(tab);
     if (formId) {
-      setSelectedFormId(formId);
+      setSelectedFormId(resolveLessonId(formId));
     }
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -33,30 +36,44 @@ export default function Home() {
 
   const handleSelectTechnique = (tech: Technique) => {
     if (tech.formId) {
-      setSelectedFormId(tech.formId);
+      setSelectedFormId(resolveLessonId(tech.formId));
+    } else {
+      setSelectedFormId("bai-07");
     }
     setActiveTab("forms");
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 380, behavior: "smooth" });
+    }
   };
 
   const handleNavigateStage = (stageId: string) => {
     if (stageId === "fundamentals") {
       setActiveTab("fundamentals");
     } else if (stageId === "bai-to") {
-      setSelectedFormId("bai-06");
+      setSelectedFormId("bai-07");
       setActiveTab("forms");
     } else if (stageId === "dojo" || stageId === "forms") {
-      setSelectedFormId("bai-07");
+      setSelectedFormId("bai-12");
       setActiveTab("forms");
     } else if (stageId === "dummy") {
       setActiveTab("dummy");
     } else if (stageId === "scenarios") {
       setActiveTab("scenarios");
+    } else {
+      setSelectedFormId(resolveLessonId(stageId));
+      setActiveTab("forms");
+    }
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 380, behavior: "smooth" });
     }
   };
 
   const handleNavigateFromScenario = (formId: string) => {
-    setSelectedFormId(formId);
+    setSelectedFormId(resolveLessonId(formId));
     setActiveTab("forms");
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 380, behavior: "smooth" });
+    }
   };
 
   return (
@@ -67,6 +84,7 @@ export default function Home() {
         setActiveTab={setActiveTab}
         openSearch={() => setIsSearchOpen(true)}
         openStanceGuide={() => setIsStanceGuideOpen(true)}
+        openMegaMenu={() => setIsMegaMenuOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -123,12 +141,20 @@ export default function Home() {
         onClose={() => setIsSearchOpen(false)}
         techniques={TECHNIQUES}
         onSelectTechnique={handleSelectTechnique}
+        onSelectMonograph={() => handleNavigateTab("library")}
       />
 
       {/* Stance Checker Modal (Quy chuẩn Tấn Kiềm Dương) */}
       <StanceCheckerModal
         isOpen={isStanceGuideOpen}
         onClose={() => setIsStanceGuideOpen(false)}
+      />
+
+      {/* Mục Lục Toàn Cảnh (Mega Menu Modal) */}
+      <MegaMenuModal
+        isOpen={isMegaMenuOpen}
+        onClose={() => setIsMegaMenuOpen(false)}
+        onNavigateTab={handleNavigateTab}
       />
 
       {/* Modern Martial Footer */}

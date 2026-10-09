@@ -10,6 +10,7 @@ import {
   Search,
   X,
   Sparkles,
+  Swords,
 } from "lucide-react";
 import {
   CONTENT_GROUPS,
@@ -19,6 +20,7 @@ import {
   MotionStep,
 } from "@/data/canonicalCatalog";
 import { DojoPlayer3 } from "@/components/DojoPlayer3";
+import { HeritageReader } from "@/components/HeritageReader";
 
 interface CurriculumExplorerProps {
   initialLessonId?: string;
@@ -29,10 +31,25 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
 }) => {
   const [viewStyle, setViewStyle] = useState<"curriculum" | "book">("curriculum");
   const [selectedLessonId, setSelectedLessonId] = useState<string>(initialLessonId);
+  const [lessonTab, setLessonTab] = useState<"player" | "reader">("player");
   const [selectedGroupId, setSelectedGroupId] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeMotionIndex, setActiveMotionIndex] = useState(0);
   const [zoomedMotion, setZoomedMotion] = useState<MotionStep | null>(null);
+
+  // Đồng bộ khi prop initialLessonId thay đổi từ bên ngoài (theo React pattern)
+  const [prevInitialId, setPrevInitialId] = useState(initialLessonId);
+  if (initialLessonId !== prevInitialId) {
+    setPrevInitialId(initialLessonId);
+    setSelectedLessonId(initialLessonId);
+    setActiveMotionIndex(0);
+    const target = CANONICAL_LESSONS.find((l) => l.id === initialLessonId);
+    if (target && target.motions.length === 0) {
+      setLessonTab("reader");
+    } else {
+      setLessonTab("player");
+    }
+  }
 
   // Bài học hiện tại
   const currentLesson: CanonicalLesson = useMemo(() => {
@@ -60,6 +77,12 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   const handleSelectLesson = (lessonId: string) => {
     setSelectedLessonId(lessonId);
     setActiveMotionIndex(0);
+    const target = CANONICAL_LESSONS.find((l) => l.id === lessonId);
+    if (target && target.motions.length === 0) {
+      setLessonTab("reader");
+    } else {
+      setLessonTab("player");
+    }
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 380, behavior: "smooth" });
     }
@@ -111,64 +134,108 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
           </div>
         </div>
 
-        {/* 11 GROUPS HORIZONTAL CHIPS SELECTOR */}
+        {/* 11 GROUPS MATRIX GRID (KHÔNG CÒN CUỘN NGANG) */}
         <div className="mt-6 pt-5 border-t border-[#F5D06C]/20">
-          <div className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] mb-2.5 flex items-center gap-1.5">
-            <Layers className="w-3.5 h-3.5" /> Chọn phân hệ võ học để lọc nhanh:
+          <div className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] mb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <span className="flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5" /> Ma Trận 11 Phân Hệ Võ Học (Xem Toàn Cảnh 100%):
+            </span>
+            <span className="text-[11px] font-mono text-amber-200/70">
+              Đang hiển thị {filteredLessons.length} / 36 bài học
+            </span>
           </div>
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
             <button
               onClick={() => setSelectedGroupId("all")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold shrink-0 transition cursor-pointer ${
+              className={`p-2.5 rounded-xl text-xs font-semibold transition text-left flex flex-col justify-between cursor-pointer border ${
                 selectedGroupId === "all"
-                  ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-md"
-                  : "bg-[#20150F] text-amber-200/80 hover:text-white border border-[#F5D06C]/30 hover:border-[#F5D06C]"
+                  ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-md border-[#F5D06C] ring-2 ring-[#F5D06C]/40"
+                  : "bg-[#20150F] text-amber-200/80 hover:text-white border-[#F5D06C]/25 hover:border-[#F5D06C]"
               }`}
             >
-              Tất cả 36 Bài
+              <span className="font-bold">Tất Cả 36 Bài</span>
+              <span className="text-[10px] opacity-75 font-mono">Trọn Bộ 225 Trang</span>
             </button>
             {CONTENT_GROUPS.map((g) => (
               <button
                 key={g.id}
                 onClick={() => setSelectedGroupId(g.id)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium shrink-0 transition flex items-center gap-1.5 cursor-pointer ${
+                className={`p-2.5 rounded-xl text-xs transition text-left flex flex-col justify-between cursor-pointer border ${
                   selectedGroupId === g.id
-                    ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-md"
-                    : "bg-[#20150F] text-amber-200/80 hover:text-white border border-[#F5D06C]/30 hover:border-[#F5D06C]"
+                    ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-md border-[#F5D06C] ring-2 ring-[#F5D06C]/40"
+                    : "bg-[#20150F] text-amber-200/80 hover:text-white border-[#F5D06C]/25 hover:border-[#F5D06C]"
                 }`}
               >
-                <span>{g.name}</span>
-                <span className="text-[10px] opacity-75 font-mono">({g.pages.replace("Trang PDF ", "Trang ")})</span>
+                <span className="font-semibold line-clamp-1">{g.name}</span>
+                <span className="text-[10px] opacity-75 font-mono truncate">{g.pages.replace("Trang PDF ", "Trang ")}</span>
               </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 2. DOJO PLAYER 3.0: SÀN TẬP CÔNG THÁI HỌC VỚI BÀI HỌC ĐANG CHỌN */}
+      {/* 2. KHU VỰC KHÁM PHÁ BÀI HỌC: SÀN TẬP PHÂN THẾ HOẶC ĐÀI ĐỌC DI SẢN */}
       <section className="space-y-4 pt-2">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <span className="text-xs font-mono font-bold text-[#F5D06C] uppercase tracking-wider bg-[#F5D06C]/15 border border-[#F5D06C]/30 px-3 py-1 rounded-lg">
-              Sàn Tập Phân Thế Công Thái Học • {currentLesson.pageRange}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono font-bold text-[#F5D06C] uppercase tracking-wider bg-[#F5D06C]/15 border border-[#F5D06C]/30 px-3 py-1 rounded-lg">
+                {currentLesson.contentType === "reading" ? "Chuyên Khảo Học Thuật" : "Sàn Tập Phân Thế Công Thái Học"} • {currentLesson.pageRange}
+              </span>
+              {currentLesson.motions.length > 0 && (
+                <span className="text-xs font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 px-2.5 py-0.5 rounded-md">
+                  {currentLesson.motions.length} Động Tác HD
+                </span>
+              )}
+            </div>
             <h3 className="text-2xl sm:text-3xl font-bold font-serif text-white mt-1.5">{currentLesson.title}</h3>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-amber-200/70 font-mono">
-              Tổng số {currentLesson.motions.length} động tác phân thế
-            </span>
-          </div>
+          {/* Switcher: Sàn tập vs Toàn văn sách gốc (khi bài có động tác) */}
+          {currentLesson.motions.length > 0 && (
+            <div className="flex items-center gap-1.5 bg-[#20150F] p-1 rounded-xl border border-[#F5D06C]/30 shrink-0 self-start sm:self-auto">
+              <button
+                onClick={() => setLessonTab("player")}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                  lessonTab === "player"
+                    ? "bg-[#F5D06C] text-[#2A0E0A] shadow"
+                    : "text-amber-200/70 hover:text-white"
+                }`}
+              >
+                <Swords className="w-3.5 h-3.5" />
+                <span>Sàn Tập ({currentLesson.motions.length} Đòn)</span>
+              </button>
+              <button
+                onClick={() => setLessonTab("reader")}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                  lessonTab === "reader"
+                    ? "bg-[#F5D06C] text-[#2A0E0A] shadow"
+                    : "text-amber-200/70 hover:text-white"
+                }`}
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Toàn Văn Sách Gốc</span>
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* Dojo Player 3.0 Component */}
-        <DojoPlayer3
-          lesson={currentLesson}
-          activeMotionIndex={activeMotionIndex}
-          onSelectMotionIndex={setActiveMotionIndex}
-          onOpenLightbox={(motion) => setZoomedMotion(motion)}
-        />
+        {/* Nội dung: Hoặc Sàn tập, hoặc Đài đọc di sản */}
+        {currentLesson.motions.length > 0 && lessonTab === "player" ? (
+          <DojoPlayer3
+            lesson={currentLesson}
+            activeMotionIndex={activeMotionIndex}
+            onSelectMotionIndex={setActiveMotionIndex}
+            onOpenLightbox={(motion) => setZoomedMotion(motion)}
+          />
+        ) : (
+          <HeritageReader
+            lessonId={currentLesson.id}
+            lessonTitle={currentLesson.title}
+            pageRange={currentLesson.pageRange}
+          />
+        )}
       </section>
 
       {/* 3. CHẾ ĐỘ HIỂN THỊ: LỘ TRÌNH 7 CHẶNG HOẶC DANH MỤC 36 BÀI */}

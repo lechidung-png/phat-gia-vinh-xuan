@@ -481,7 +481,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               {dummyTechniques.slice(0, 9).map((tech) => (
                 <div
                   key={tech.id}
-                  onClick={() => onSelectTechnique(tech)}
+                  onClick={() => onSelectTechnique({ ...tech, formId: "bai-17" })}
                   className="p-3 rounded-xl bg-[#2A0E0A]/90 hover:bg-[#3A140E] border border-[#F5D06C]/20 hover:border-[#F5D06C]/60 cursor-pointer transition flex items-center justify-between group shadow-sm hover:shadow"
                 >
                   <div className="flex items-center gap-3 min-w-0">

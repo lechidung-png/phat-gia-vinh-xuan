@@ -15,6 +15,7 @@ import {
   ChevronRight,
   Award,
   Layers,
+  ShieldAlert,
 } from "lucide-react";
 import { NavTab } from "@/components/Header";
 
@@ -96,6 +97,17 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       color: "from-amber-900/20 to-stone-950/10",
       borderColor: "border-amber-700/40 hover:border-amber-500",
       tagColor: "bg-amber-800/20 text-amber-300",
+    },
+    {
+      id: "scenarios" as NavTab,
+      title: "200 Tình Huống Thực Chiến",
+      subtitle: "Khảo thí phản xạ & Hóa giải",
+      desc: "Ngân hàng 200 kịch bản cận chiến thực tế: Thượng bàn, Trung bàn, Hạ bàn, Cầm nã khóa siết và Tự vệ đường phố góc hẹp kèm bộ câu hỏi trắc nghiệm phản xạ.",
+      icon: ShieldAlert,
+      badge: "200 Thế • Trắc Nghiệm",
+      color: "from-rose-900/20 to-red-950/10",
+      borderColor: "border-rose-500/40 hover:border-rose-400",
+      tagColor: "bg-rose-500/20 text-rose-300",
     },
   ];
 
@@ -243,7 +255,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         </div>
       </section>
 
-      {/* 2. CỔNG KHÁM PHÁ 6 ĐẠI PHÂN HỆ (6 GATEWAY CARDS) */}
+      {/* 2. CỔNG KHÁM PHÁ 7 ĐẠI PHÂN HỆ (7 GATEWAY CARDS) */}
       <section className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-[#3D291F] pb-4">
           <div>
@@ -251,7 +263,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               <Layers className="w-3.5 h-3.5" /> Bản Đồ Võ Quán Số
             </div>
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
-              Cổng Khám Phá 6 Đại Phân Hệ Võ Học
+              Cổng Khám Phá 7 Đại Trụ Cột Võ Học
             </h2>
           </div>
           <p className="text-xs text-slate-400 max-w-md">
@@ -259,7 +271,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
           {portalGateways.map((item) => {
             const Icon = item.icon;
             return (

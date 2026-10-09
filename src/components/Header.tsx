@@ -14,6 +14,7 @@ import {
   ShieldAlert,
   Menu,
   X,
+  LayoutGrid,
 } from "lucide-react";
 
 export type NavTab = "welcome" | "forms" | "fundamentals" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
@@ -23,6 +24,7 @@ interface HeaderProps {
   setActiveTab: (tab: NavTab) => void;
   openSearch: () => void;
   openStanceGuide: () => void;
+  openMegaMenu?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -30,6 +32,7 @@ export const Header: React.FC<HeaderProps> = ({
   setActiveTab,
   openSearch,
   openStanceGuide,
+  openMegaMenu,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -93,8 +96,20 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Right Action Icons: Search + Stance Guide + Mobile Menu Toggle */}
+        {/* Right Action Icons: Mega Menu + Search + Stance Guide + Mobile Menu Toggle */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          {/* Mega Menu Trigger: Mục Lục Toàn Cảnh */}
+          {openMegaMenu && (
+            <button
+              onClick={openMegaMenu}
+              title="Mục Lục Toàn Cảnh (11 Phân Hệ & 36 Bài Học)"
+              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-[#20150F] border border-[#F5D06C]/40 hover:border-[#F5D06C] text-[#F5D06C] hover:text-white transition-all text-xs font-semibold cursor-pointer shadow"
+            >
+              <LayoutGrid className="w-3.5 h-3.5 text-[#F5D06C]" />
+              <span className="hidden sm:inline">Mục Lục</span>
+            </button>
+          )}
+
           {/* Compact Search Trigger */}
           <button
             onClick={openSearch}
