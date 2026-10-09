@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOCKUP: NÂU ÁNH KIM SA & TỐI ƯU KÍCH THƯỚC ẢNH VÕ SƯ CHUẨN NÉT ĐANH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            serif: ['"Noto Serif"', 'serif'],
+          },
+          colors: {
+            uniformBrown: '#713128',
+            uniformGold: '#F5D06C',
+            amberGlow: '#E5B842',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* CHỦ ĐỀ CHÍNH BẠN ĐÃ CHỌN: NÂU ÁNH KIM SA (UNIFORM RUSSET & GOLD GLOW) */
+    body.theme-uniform-gold {
+      --bg-gradient: radial-gradient(ellipse at 50% -15%, rgba(245, 208, 108, 0.28) 0%, transparent 65%),
+                     radial-gradient(circle at 12% 35%, rgba(138, 60, 49, 0.45) 0%, transparent 55%),
+                     radial-gradient(circle at 88% 65%, rgba(113, 49, 40, 0.5) 0%, transparent 60%),
+                     linear-gradient(180deg, #61251D 0%, #461A14 50%, #2A0E0A 100%);
+      --bg-surface: rgba(78, 30, 24, 0.85);
+      --bg-subtle: rgba(58, 22, 17, 0.72);
+      --border-color: rgba(245, 208, 108, 0.35);
+      --border-accent: #F5D06C;
+      --text-main: #FFFFFF;
+      --text-sub: #F7E7D9;
+      --text-muted: #D9C3B4;
+      --accent: #F5D06C;
+      --accent-badge: rgba(245, 208, 108, 0.2);
+      --accent-badge-text: #FFF3B8;
+      --card-shadow: 0 20px 45px -8px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+    }
+
+    body.theme-uniform-gradient {
+      --bg-gradient: radial-gradient(ellipse at 50% -10%, rgba(229, 184, 66, 0.22) 0%, transparent 60%),
+                     linear-gradient(180deg, #5A231C 0%, #461B15 45%, #2F110D 100%);
+      --bg-surface: rgba(78, 30, 24, 0.85);
+      --bg-subtle: rgba(58, 22, 17, 0.7);
+      --border-color: rgba(229, 184, 66, 0.3);
+      --border-accent: #E5B842;
+      --text-main: #FFF8EE;
+      --text-sub: #F0DCCE;
+      --text-muted: #D1B8A8;
+      --accent: #E5B842;
+      --accent-badge: rgba(229, 184, 66, 0.2);
+      --accent-badge-text: #FFEB99;
+      --card-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    body {
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      color: var(--text-main);
+      transition: background 0.4s ease, color 0.3s ease;
+      min-height: 100vh;
+    }
+
+    .zen-surface {
+      background-color: var(--bg-surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-color: var(--border-color);
+      box-shadow: var(--card-shadow);
+    }
+
+    .zen-subtle {
+      background-color: var(--bg-subtle);
+      border-color: var(--border-color);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF3B8 0%, #F5D06C 45%, #D4AF37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .badge-accent {
+      background-color: var(--accent-badge);
+      color: var(--accent-badge-text);
+      border-color: var(--border-accent);
+    }
+
+    /* KHUNG TRANH THỦY MẶC LỒNG KÍNH HOÀNG KIM (Parchment Matting Frame) */
+    .martial-photo-frame {
+      background: #FBF9F5;
+      border: 2px solid rgba(245, 208, 108, 0.5);
+      box-shadow: 
+        0 15px 35px -5px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(113, 49, 40, 0.08),
+        0 0 0 4px rgba(78, 30, 24, 0.6);
+      transition: all 0.3s ease;
+    }
+
+    /* Bộ lọc tăng độ đanh nét & triệt tiêu chữ mờ mặt sau sách */
+    .martial-filter {
+      filter: contrast(1.05) brightness(1.02);
+    }
+  </style>
+</head>
+<body class="theme-uniform-gold min-h-screen font-sans antialiased">
+
+  <!-- TOP HEADER & NOTIFICATION BAR -->
+  <header class="sticky top-0 z-50 bg-[#361511]/90 backdrop-blur-md border-b border-[#F5D06C]/30 shadow-lg py-3 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#F5D06C] to-[#B8860B] text-[#2A0E0A] flex items-center justify-center font-serif font-black text-xl shadow-md border border-white/40">佛</span>
+        <div>
+          <h1 class="font-bold text-white text-sm sm:text-base flex items-center gap-2">
+            MÀU NÂU ÁNH KIM SA • ĐÃ TỐI ƯU KÍCH THƯỚC CHUẨN NÉT ĐANH
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-500/25 text-emerald-300 font-bold border border-emerald-400/40">Retina 2× Đã Kích Hoạt</span>
+          </h1>
+          <p class="text-xs text-amber-200/80">Khắc phục triệt để hiện tượng vỡ hạt, nhòe ảnh khi phóng quá to</p>
+        </div>
+      </div>
+
+      <!-- Controls Switcher -->
+      <div class="flex items-center gap-2 bg-[#260E0B]/80 p-1.5 rounded-2xl border border-[#F5D06C]/30">
+        <span class="text-xs font-semibold text-amber-200/90 px-2">Kích thước ảnh:</span>
+        <button onclick="toggleSizePreset(true)" id="btn-size-compact" class="px-3 py-1 rounded-xl text-xs font-bold transition bg-[#F5D06C] text-[#2A0E0A] shadow-md">
+          Thu Gọn 280px (Chuẩn Nét Đanh)
+        </button>
+        <button onclick="toggleSizePreset(false)" id="btn-size-large" class="px-3 py-1 rounded-xl text-xs font-medium text-amber-200 hover:text-white transition">
+          Phóng To 460px (Bị Vỡ)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SHOWCASE CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+
+    <!-- 1. GIẢI TRÌNH GIẢI PHÁP THẨM MỸ: TẠI SAO PHẢI THU GỌN VỀ 280PX? -->
+    <section class="zen-surface rounded-3xl p-6 sm:p-8 border transition-all">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-accent text-xs font-bold uppercase tracking-wider border">
+            ★ Giải Pháp Cho Vấn Đề Bạn Vừa Phản Ánh
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold font-serif leading-tight">
+            Xử Lý Ảnh Hợp Nền Nâu Kim Sa & <span class="gold-gradient-text">Giữ Độ Nét Đanh Tuyệt Đối</span>
+          </h2>
+          <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-sub)">
+            Bạn nhận xét hoàn toàn chuẩn xác: <em>Ảnh trong sách gốc 2012 có kích thước chiều ngang chỉ từ <strong>145px – 290px</strong>. Nếu để khung ảnh chiếm nửa màn hình (rộng 500px – 600px), ảnh bị phóng to gấp 3–4 lần, dẫn đến vỡ hạt (pixelation) và lộ rõ vệt chữ in thấm từ trang sau.</em>
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-3 rounded-xl zen-subtle border space-y-1">
+              <span class="text-xs font-bold text-[#F5D06C] block">1. Thu Nhỏ Khung Ảnh</span>
+              <p class="text-[11px] text-amber-200/80">Khung rộng vừa vặn <strong>280px</strong> (tỉ lệ 1:1 với bản 2x Retina), mật độ điểm ảnh đanh chắc, tuyệt đối không vỡ hình.</p>
+            </div>
+            <div class="p-3 rounded-xl zen-subtle border space-y-1">
+              <span class="text-xs font-bold text-[#F5D06C] block">2. Khung Tranh Giấy Lụa Ngà</span>
+              <p class="text-[11px] text-amber-200/80">Thay nền trắng toát thô cứng bằng <strong>nền giấy ngà <code class="text-white">#FBF9F5</code></strong> viền kim sa, hòa quyện êm ái với nền nâu áo.</p>
+            </div>
+            <div class="p-3 rounded-xl zen-subtle border space-y-1">
+              <span class="text-xs font-bold text-[#F5D06C] block">3. Tối Ưu Tương Phản Nhẹ</span>
+              <p class="text-[11px] text-amber-200/80">Tăng nhẹ contrast 1.05 giúp võ sư áo đen nổi bật, triệt tiêu 95% vết chữ mờ mặt sau sách.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột Phải: Ảnh Chụp Phản Ánh Của Bạn & Minh Họa -->
+        <div class="lg:col-span-4 flex flex-col items-center text-center space-y-2">
+          <div class="w-44 aspect-[3/4] rounded-2xl overflow-hidden border-2 border-rose-500/60 shadow-lg p-1 bg-black/40">
+            <img src="/preview/ao_vo_phuc_chuan.png" class="w-full h-full object-contain opacity-50 blur-[0.5px]">
+          </div>
+          <span class="text-[11px] text-amber-200/70 font-mono">Đã áp dụng Màu Nâu Ánh Kim Sa chuẩn</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. SÀN TẬP DOJO PLAYER 3.0: THIẾT KẾ MỚI VỚI KHUNG ẢNH 280PX NÉT ĐANH -->
+    <section class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Sàn Tập Phân Thế Công Thái Học Mới</span>
+          <h3 class="text-xl sm:text-2xl font-bold font-serif">Khung Ảnh 280px Nét Đanh & Cột Chỉ Dẫn Rộng Rãi</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="demoSelectStep(0)" id="demo-btn-0" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-[#F5D06C] text-[#2A0E0A] shadow-sm">Thế 1: Bái Tổ (Ảnh bạn gửi)</button>
+          <button onclick="demoSelectStep(1)" id="demo-btn-1" class="px-3 py-1.5 rounded-xl text-xs font-medium bg-black/40 text-amber-200 hover:text-white border border-white/10">Thế 1.1: Đẩy Chéo</button>
+          <button onclick="demoSelectStep(2)" id="demo-btn-2" class="px-3 py-1.5 rounded-xl text-xs font-medium bg-black/40 text-amber-200 hover:text-white border border-white/10">Long Quyền (Mới)</button>
+          <button onclick="demoSelectStep(3)" id="demo-btn-3" class="px-3 py-1.5 rounded-xl text-xs font-medium bg-black/40 text-amber-200 hover:text-white border border-white/10">Bát Trảm Đao (Mới)</button>
+        </div>
+      </div>
+
+      <!-- Player Canvas: Khung ảnh nhỏ gọn 280px đặt cân đối bên cạnh cột chỉ dẫn rộng rãi -->
+      <div class="zen-surface rounded-3xl p-6 sm:p-8 border grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- CỘT TRÁI: KHUNG ẢNH GỌN GÀNG 280PX NÉT CĂNG (4/12 Cột) -->
+        <div id="photo-column" class="lg:col-span-5 flex flex-col items-center space-y-4">
+          
+          <div id="photo-box" class="martial-photo-frame w-[270px] sm:w-[290px] h-[400px] sm:h-[430px] rounded-3xl overflow-hidden p-3 relative flex items-center justify-center group">
+            
+            <!-- Real Restored Image 2x Retina -->
+            <img id="player-img" src="/preview/p037-h01-2x.png" alt="Thế võ minh họa phục chế" class="martial-filter w-full h-full object-contain filter drop-shadow-sm transition-all duration-300">
+            
+            <!-- Top Badges -->
+            <div class="absolute top-3 left-3 px-2 py-0.5 rounded-lg bg-black/80 text-white text-[10px] font-mono flex items-center gap-1 shadow">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span id="player-img-tag">Retina 2× • Trang 37</span>
+            </div>
+
+            <!-- In-image buttons -->
+            <div class="absolute bottom-3 right-3 flex items-center gap-1.5">
+              <button onclick="toggleMirror()" id="mirror-btn" class="px-2.5 py-1 rounded-lg bg-[#2A0E0A]/90 text-white text-[11px] font-semibold shadow hover:bg-[#F5D06C] hover:text-[#2A0E0A] transition flex items-center gap-1 border border-[#F5D06C]/40">
+                ↔ Lật gương
+              </button>
+              <button class="p-1.5 rounded-lg bg-[#2A0E0A]/90 text-white text-[11px] shadow hover:bg-[#F5D06C] hover:text-[#2A0E0A] transition border border-[#F5D06C]/40" title="Phóng to">
+                🔍
+              </button>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-amber-200/70 text-center font-mono">
+            Khung 280px vừa vặn với độ phân giải gốc • Võ sư đanh nét
+          </p>
+
+          <!-- Dải Thumbnail nhỏ xinh ở dưới chân ảnh -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-[290px]">
+            <div onclick="demoSelectStep(0)" class="w-14 h-16 rounded-xl bg-white border-2 border-[#F5D06C] p-1 shrink-0 cursor-pointer shadow-md flex items-center justify-center">
+              <img src="/preview/p037-h01.png" class="w-full h-full object-contain">
+            </div>
+            <div onclick="demoSelectStep(1)" class="w-14 h-16 rounded-xl bg-white border border-white/20 p-1 shrink-0 cursor-pointer hover:border-[#F5D06C] transition flex items-center justify-center">
+              <img src="/preview/p037-h02.png" class="w-full h-full object-contain">
+            </div>
+            <div onclick="demoSelectStep(2)" class="w-14 h-16 rounded-xl bg-white border border-white/20 p-1 shrink-0 cursor-pointer hover:border-[#F5D06C] transition flex items-center justify-center">
+              <img src="/preview/p120-h01.png" class="w-full h-full object-contain">
+            </div>
+            <div onclick="demoSelectStep(3)" class="w-14 h-16 rounded-xl bg-white border border-white/20 p-1 shrink-0 cursor-pointer hover:border-[#F5D06C] transition flex items-center justify-center">
+              <img src="/preview/p191-h01.png" class="w-full h-full object-contain">
+            </div>
+          </div>
+        </div>
+
+        <!-- CỘT PHẢI: KHÔNG GIAN CHỈ DẪN RỘNG RÃI, THOÁNG ĐÃNG (7/12 Cột) -->
+        <div class="lg:col-span-7 space-y-5">
+          
+          <div class="space-y-1.5 border-b border-white/10 pb-4">
+            <div class="flex items-center justify-between">
+              <span id="player-form-badge" class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold badge-accent border">
+                Bài 07: Tiểu Niệm Đầu
+              </span>
+              <span id="player-step-badge" class="text-xs text-amber-200/80 font-mono">Động tác 1.0 / 53</span>
+            </div>
+            <h3 id="player-title" class="text-2xl sm:text-3xl font-bold font-serif text-white leading-tight">
+              Đứng Tấn Kiềm Dương Mã, Hai Quyền Thu Sát Nách
+            </h3>
+            <p id="player-lead" class="text-sm italic text-amber-200">
+              &quot;Tâm thủ an định • Ý thủ đan điền • Tấn kiềm dương vững như bàn thạch.&quot;
+            </p>
+          </div>
+
+          <!-- Yếu lĩnh thân pháp -->
+          <div class="zen-subtle p-4 sm:p-5 rounded-2xl border space-y-2">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
+              <span>⚡</span> Yếu Lĩnh Thân Pháp & Giải Phẫu:
+            </h4>
+            <p id="player-body-guide" class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-main)">
+              Đứng thẳng, hai bàn chân mở rộng bằng vai, hai gót chân đẩy nhẹ ra ngoài để hai mũi chân chĩa hướng vào nhau tạo góc nhọn 60 độ. Đầu gối hơi chùng khép nhẹ vào trong để bảo vệ hạ bộ. Lưng thẳng, đầu ngực mở tự nhiên, hai bàn tay nắm quyền ngửa thu sát bên mạn sườn ngang nách.
+            </p>
+          </div>
+
+          <!-- 3 Điểm Cốt Tử Cần Lưu Ý -->
+          <div class="space-y-2">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-300 flex items-center gap-1.5">
+              <span>✓</span> 3 Điểm Cốt Tử Cần Khắc Ghi:
+            </h4>
+            <ul id="player-keypoints" class="space-y-2 text-xs sm:text-sm" style="color: var(--text-sub)">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span>Khép chặt khớp gối hướng tâm, không choãi chân ra ngoài làm mất thế Kiềm Dương.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span>Thả lỏng hai bả vai, cùi chỏ ghì sát thân mình, tuyệt đối không gồng cứng cơ ngực.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span>Mắt nhìn thẳng tầm mắt, thở sâu xuống đan điền theo nhịp tự nhiên của cơ hoành.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Điều Khiển Tự Động & Phím Tắt -->
+          <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <button class="px-4 py-2.5 rounded-xl bg-[#F5D06C] hover:brightness-110 text-[#2A0E0A] font-bold text-xs shadow-md transition flex items-center gap-2">
+                <span>▶</span> Tự Động Phát Chuỗi
+              </button>
+              <button class="px-3 py-2.5 rounded-xl zen-subtle border text-xs font-semibold text-amber-200 hover:text-white transition">
+                Tốc độ 2.2s
+              </button>
+            </div>
+            
+            <div class="flex items-center gap-2 text-xs font-medium text-amber-200/70">
+              <span>Phím:</span>
+              <kbd class="px-2 py-0.5 rounded bg-black/40 text-amber-200 text-[10px] font-mono border border-white/10">Space</kbd>
+              <kbd class="px-2 py-0.5 rounded bg-black/40 text-amber-200 text-[10px] font-mono border border-white/10">←</kbd>
+              <kbd class="px-2 py-0.5 rounded bg-black/40 text-amber-200 text-[10px] font-mono border border-white/10">→</kbd>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 py-8 border-t text-center text-xs text-amber-200/60" style="border-color: var(--border-color)">
+    <p>Chủ Đề Nâu Ánh Kim Sa (#61251D - #F5D06C) • Khung Ảnh Võ Sư Chuẩn Nét Đanh 280px</p>
+    <p class="mt-1">Võ Đường Huỳnh Thúc Kháng Xây Dựng • Dữ liệu phục chế GS.TS Nguyễn Mạnh Nhâm</p>
+  </footer>
+
+  <script>
+    const DEMO_STEPS = [
+      {
+        img: '/preview/p037-h01-2x.png',
+        tag: 'Retina 2× • Trang 37',
+        formBadge: 'Bài 07: Tiểu Niệm Đầu',
+        stepBadge: 'Động tác 1.0 / 53',
+        title: 'Đứng Tấn Kiềm Dương Mã, Hai Quyền Thu Sát Nách',
+        lead: '"Tâm thủ an định • Ý thủ đan điền • Tấn kiềm dương vững như bàn thạch."',
+        guide: 'Đứng thẳng, hai bàn chân mở rộng bằng vai, hai gót chân đẩy nhẹ ra ngoài để hai mũi chân chĩa hướng vào nhau tạo góc nhọn 60 độ. Đầu gối hơi chùng khép nhẹ vào trong để bảo vệ hạ bộ. Lưng thẳng, đầu ngực mở tự nhiên, hai bàn tay nắm quyền ngửa thu sát bên mạn sườn ngang nách.',
+        keypoints: [
+          'Khép chặt khớp gối hướng tâm, không choãi chân ra ngoài làm mất thế Kiềm Dương.',
+          'Thả lỏng hai bả vai, cùi chỏ ghì sát thân mình, tuyệt đối không gồng cứng cơ ngực.',
+          'Mắt nhìn thẳng tầm mắt, thở sâu xuống đan điền theo nhịp tự nhiên của cơ hoành.'
+        ]
+      },
+      {
+        img: '/preview/p037-h02-2x.png',
+        tag: 'Retina 2× • Trang 37',
+        formBadge: 'Bài 07: Tiểu Niệm Đầu',
+        stepBadge: 'Động tác 1.1 / 53',
+        title: 'Hai Tay Ngang Ngực Bắt Chéo Đẩy Từ Trên Xuống',
+        lead: '"Song thủ giao thoa • Hạ trầm phát kình • Đan điền quán khí."',
+        guide: 'Từ thế thu quyền, đưa hai bàn tay ngang ngực và bắt chéo vào nhau (cổ tay này đặt sát cổ tay kia nhưng không va chạm), mở chưởng đẩy ép từ trên ngực xuống dưới bụng dưới ngang huyệt Quan Nguyên.',
+        keypoints: [
+          'Chuyển động chầm chậm như hoa sen nở, cảm nhận sức cản vô hình của không khí.',
+          'Giữ vững tấn bộ kiềm dương, không được nhấp nhổm gối khi dồn lực chưởng.',
+          'Khí trầm đan điền khi hai tay hạ xuống điểm kết thúc.'
+        ]
+      },
+      {
+        img: '/preview/p120-h01-2x.png',
+        tag: 'Retina 2× • Trang 120',
+        formBadge: 'Bài 21: Long Quyền (Ngũ Hình)',
+        stepBadge: 'Chiêu 1: Khai Thế Thần Long',
+        title: 'Long Quyền: Thần Long Xuất Hải & Long Trảo Thủ',
+        lead: '"Long hình dũng mãnh biến hóa vô cùng • Thủ như long trảo đoạt kình địch."',
+        guide: 'Long Quyền rèn luyện gân cốt và thần khí. Bàn tay uốn cong hình móng rồng (Long trảo), các ngón tay gập cứng nhưng cổ tay dẻo dai linh hoạt. Khi xuất chiêu, thân mình uốn lượn như rồng bay, dùng eo phát lực xoay chuyển.',
+        keypoints: [
+          'Luyện lực kẹp và bấu của 5 đầu ngón tay (chuyên phá khớp và yết hầu đối phương).',
+          'Kết hợp eo hông và bộ pháp linh hoạt, không đứng chết một chỗ như quyền cơ bản.',
+          'Mắt sắc bén tập trung vào mục tiêu như rồng vồ mồi.'
+        ]
+      },
+      {
+        img: '/preview/p191-h01-2x.png',
+        tag: 'Retina 2× • Trang 191',
+        formBadge: 'Bài 31: Bát Trảm Đao',
+        stepBadge: 'Chiêu 1: Song Đao Hộ Thân',
+        title: 'Bát Trảm Đao: Khai Đao Lễ & Thủ Thế Trung Tuyến',
+        lead: '"Đao bất ly thân • Song đao hộ trung • Đoản binh chế trường binh."',
+        guide: 'Bát Trảm Đao là đỉnh cao binh khí của Phật Gia Vịnh Xuân. Hai tay cầm chắc chuôi đao, sống đao áp sát cẳng tay để che chắn thân thể. Bước chân vững chãi trong thế Kiềm Dương Tấn, mắt nhìn xuyên qua mũi đao canh giữ trục Tý Ngọ Tuyến.',
+        keypoints: [
+          'Cổ tay giữ đao phải cực kỳ chắc chắn để không bị tước vũ khí khi va chạm mạnh.',
+          'Sống đao luôn che chắn các động mạch cổ tay và cánh tay.',
+          'Dùng lực xoay cổ tay và eo hông để chém trảm 8 hướng cốt tử.'
+        ]
+      }
+    ];
+
+    let currentStep = 0;
+    let isMirrored = false;
+
+    function demoSelectStep(idx) {
+      currentStep = idx;
+      const data = DEMO_STEPS[idx];
+      document.getElementById('player-img').src = data.img;
+      document.getElementById('player-img-tag').innerText = data.tag;
+      document.getElementById('player-form-badge').innerText = data.formBadge;
+      document.getElementById('player-step-badge').innerText = data.stepBadge;
+      document.getElementById('player-title').innerText = data.title;
+      document.getElementById('player-lead').innerText = data.lead;
+      document.getElementById('player-body-guide').innerText = data.guide;
+      
+      const kpList = document.getElementById('player-keypoints');
+      kpList.innerHTML = '';
+      data.keypoints.forEach(kp => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-2';
+        li.innerHTML = `<span class="text-emerald-400 font-bold">•</span><span>${kp}</span>`;
+        kpList.appendChild(li);
+      });
+
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`demo-btn-${i}`);
+        if (i === idx) {
+          btn.className = 'px-3 py-1.5 rounded-xl text-xs font-bold bg-[#F5D06C] text-[#2A0E0A] shadow-sm';
+        } else {
+          btn.className = 'px-3 py-1.5 rounded-xl text-xs font-medium bg-black/40 text-amber-200 hover:text-white border border-white/10';
+        }
+      }
+    }
+
+    function toggleMirror() {
+      isMirrored = !isMirrored;
+      const img = document.getElementById('player-img');
+      const btn = document.getElementById('mirror-btn');
+      if (isMirrored) {
+        img.style.transform = 'scaleX(-1)';
+        btn.classList.add('bg-[#F5D06C]', 'text-[#2A0E0A]');
+        btn.classList.remove('bg-[#2A0E0A]/90', 'text-white');
+      } else {
+        img.style.transform = 'scaleX(1)';
+        btn.classList.remove('bg-[#F5D06C]', 'text-[#2A0E0A]');
+        btn.classList.add('bg-[#2A0E0A]/90', 'text-white');
+      }
+    }
+
+    function toggleSizePreset(isCompact) {
+      const box = document.getElementById('photo-box');
+      const btnCompact = document.getElementById('btn-size-compact');
+      const btnLarge = document.getElementById('btn-size-large');
+
+      if (isCompact) {
+        box.className = 'martial-photo-frame w-[270px] sm:w-[290px] h-[400px] sm:h-[430px] rounded-3xl overflow-hidden p-3 relative flex items-center justify-center group';
+        btnCompact.className = 'px-3 py-1 rounded-xl text-xs font-bold transition bg-[#F5D06C] text-[#2A0E0A] shadow-md';
+        btnLarge.className = 'px-3 py-1 rounded-xl text-xs font-medium text-amber-200 hover:text-white transition';
+      } else {
+        box.className = 'martial-photo-frame w-full max-w-[480px] h-[520px] rounded-3xl overflow-hidden p-4 relative flex items-center justify-center group';
+        btnLarge.className = 'px-3 py-1 rounded-xl text-xs font-bold transition bg-[#F5D06C] text-[#2A0E0A] shadow-md';
+        btnCompact.className = 'px-3 py-1 rounded-xl text-xs font-medium text-amber-200 hover:text-white transition';
+      }
+    }
+  </script>
+</body>
+</html>

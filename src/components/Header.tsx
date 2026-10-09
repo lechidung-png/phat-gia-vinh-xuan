@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const navItems: { id: NavTab; label: string; shortLabel: string; icon: React.ComponentType<{ className?: string }> }[] = [
     { id: "welcome", label: "Trang Chủ", shortLabel: "Trang Chủ", icon: Home },
-    { id: "forms", label: "7 Bài Quyền", shortLabel: "7 Bài Quyền", icon: Swords },
+    { id: "forms", label: "36 Bài Quyền", shortLabel: "36 Bài Quyền", icon: Swords },
     { id: "fundamentals", label: "Cơ Bản Công", shortLabel: "Cơ Bản", icon: Hand },
     { id: "dummy", label: "Cọc Mộc Nhân", shortLabel: "Mộc Nhân", icon: Sparkles },
     { id: "scenarios", label: "200 Tình Huống", shortLabel: "Tình Huống", icon: ShieldAlert },
@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 glass-panel border-b border-[#3D291F]">
+    <header className="sticky top-0 z-40 glass-panel border-b border-[#F5D06C]/30 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
         
         {/* Logo & Title */}
@@ -58,15 +58,15 @@ export const Header: React.FC<HeaderProps> = ({
           className="flex items-center gap-2.5 sm:gap-3 cursor-pointer select-none shrink-0"
           onClick={() => handleSelectNav("welcome")}
         >
-          <div className="w-10 h-10 rounded-xl bg-[#E2B743]/15 border border-[#E2B743]/40 flex items-center justify-center text-[#E2B743] font-serif font-black text-xl shadow-lg shadow-[#E2B743]/10">
+          <div className="w-10 h-10 rounded-xl bg-[#F5D06C]/15 border border-[#F5D06C]/40 flex items-center justify-center text-[#F5D06C] font-serif font-black text-xl shadow-lg shadow-[#F5D06C]/10">
             佛
           </div>
           <div>
             <h1 className="font-bold text-sm sm:text-base tracking-wide gold-gradient leading-tight uppercase font-serif">
               Phật Gia Vịnh Xuân
             </h1>
-            <p className="text-[10px] sm:text-xs text-amber-200/70 tracking-wider">
-              Di Sản Võ Học
+            <p className="text-[10px] sm:text-xs text-amber-200/80 tracking-wider">
+              Di Sản Võ Học • Võ Đường Huỳnh Thúc Kháng
             </p>
           </div>
         </div>

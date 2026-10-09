@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Header, NavTab } from "@/components/Header";
 import { WelcomePortal } from "@/components/WelcomePortal";
-import { FormsExplorer } from "@/components/FormsExplorer";
+import { CurriculumExplorer } from "@/components/CurriculumExplorer";
 import { FundamentalHandFootAtlas } from "@/components/FundamentalHandFootAtlas";
 import { KnowledgeHub } from "@/components/KnowledgeHub";
 import { WoodenDummyCanvas } from "@/components/WoodenDummyCanvas";
@@ -13,13 +13,11 @@ import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { StanceCheckerModal } from "@/components/StanceCheckerModal";
 import { TECHNIQUES, Technique } from "@/data/techniques";
-import { getTechniquesByForm, TIEU_NIEM_DAU_TECHNIQUES } from "@/data/all_7_forms";
 
 export default function Home() {
   // Mặc định mở Trang Chủ Chào Mừng (Welcome Portal) hoành tráng & ấn tượng
   const [activeTab, setActiveTab] = useState<NavTab>("welcome");
-  const [selectedFormId, setSelectedFormId] = useState<string>("01-tieu-niem-dau");
-  const [selectedTechnique, setSelectedTechnique] = useState<Technique>(TIEU_NIEM_DAU_TECHNIQUES[0]);
+  const [selectedFormId, setSelectedFormId] = useState<string>("bai-07");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
 
@@ -27,10 +25,6 @@ export default function Home() {
     setActiveTab(tab);
     if (formId) {
       setSelectedFormId(formId);
-      const matchTechs = getTechniquesByForm(formId, TECHNIQUES);
-      if (matchTechs.length > 0) {
-        setSelectedTechnique(matchTechs[0]);
-      }
     }
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -38,7 +32,6 @@ export default function Home() {
   };
 
   const handleSelectTechnique = (tech: Technique) => {
-    setSelectedTechnique(tech);
     if (tech.formId) {
       setSelectedFormId(tech.formId);
     }
@@ -49,10 +42,10 @@ export default function Home() {
     if (stageId === "fundamentals") {
       setActiveTab("fundamentals");
     } else if (stageId === "bai-to") {
-      setSelectedFormId("bai-to");
+      setSelectedFormId("bai-06");
       setActiveTab("forms");
     } else if (stageId === "dojo" || stageId === "forms") {
-      setSelectedFormId("01-tieu-niem-dau");
+      setSelectedFormId("bai-07");
       setActiveTab("forms");
     } else if (stageId === "dummy") {
       setActiveTab("dummy");
@@ -61,19 +54,13 @@ export default function Home() {
     }
   };
 
-  const handleNavigateFromScenario = (formId: string, techCode?: string) => {
+  const handleNavigateFromScenario = (formId: string) => {
     setSelectedFormId(formId);
-    if (techCode) {
-      const match = TECHNIQUES.find(t => t.id === techCode || t.code === techCode);
-      if (match) {
-        setSelectedTechnique(match);
-      }
-    }
     setActiveTab("forms");
   };
 
   return (
-    <div suppressHydrationWarning className="min-h-screen flex flex-col bg-[#140C08] text-[#FBF8F3]">
+    <div suppressHydrationWarning className="min-h-screen flex flex-col bg-[#2A0E0A] text-[#FBF9F5]">
       {/* Top Sticky Header */}
       <Header
         activeTab={activeTab}
@@ -92,15 +79,9 @@ export default function Home() {
             openStanceGuide={() => setIsStanceGuideOpen(true)}
           />
         )}
-        {/* Tab 1: 7 Bài Quyền Chính Tông (Bảng Tổng Thể Hàng Chục Động Tác & Sàn Tập) */}
+        {/* Tab 1: Bách Khoa 36 Bài Quyền & Vũ Khí (Bảng Tổng Thể 1.096 Ảnh Phục Chế & Sàn Tập 280px) */}
         {activeTab === "forms" && (
-          <FormsExplorer
-            allTechniques={TECHNIQUES}
-            selectedFormId={selectedFormId}
-            selectedTechnique={selectedTechnique}
-            onSelectForm={setSelectedFormId}
-            onSelectTechnique={setSelectedTechnique}
-          />
+          <CurriculumExplorer initialLessonId={selectedFormId || "bai-07"} />
         )}
 
         {/* Tab 2: Cơ Bản Công - Thủ Pháp & Cước Pháp Chuẩn Mực (Trang 28-35) */}

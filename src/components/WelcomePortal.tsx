@@ -32,15 +32,15 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   const portalGateways = [
     {
       id: "forms" as NavTab,
-      formId: "01-tieu-niem-dau",
-      title: "Bách Khoa 7 Bài Quyền",
-      subtitle: "Hệ thống quyền pháp cốt lõi",
-      desc: "Nghi thức Bái Tổ (9 bước) & toàn bộ 7 bài quyền: Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 thế tại chỗ & tiến lùi (đơn & đối luyện).",
+      formId: "bai-07",
+      title: "Bách Khoa 36 Bài Quyền & Vũ Khí",
+      subtitle: "11 Đại phân hệ quyền pháp & binh khí",
+      desc: "Nghi thức Bái Tổ, Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 thế (đơn & đối luyện), Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc), Bát Trảm Đao, Côn, Kiếm.",
       icon: Swords,
-      badge: "7 Bài Quyền • 435+ Ảnh HD",
-      color: "from-amber-500/20 to-amber-900/10",
-      borderColor: "border-[#E2B743]/40 hover:border-[#E2B743]",
-      tagColor: "bg-[#E2B743]/20 text-[#E2B743]",
+      badge: "36 Bài Học • 1.096 Ảnh HD",
+      color: "from-[#F5D06C]/20 to-[#461A14]/20",
+      borderColor: "border-[#F5D06C]/40 hover:border-[#F5D06C]",
+      tagColor: "bg-[#F5D06C]/20 text-[#F5D06C]",
     },
     {
       id: "dummy" as NavTab,
@@ -111,14 +111,14 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       name: "Bái Tổ & Tiểu Niệm Đầu",
       desc: "9 bước tôn sư trọng đạo, mở thông kinh mạch, định hình cấu trúc thân pháp.",
       tab: "forms" as NavTab,
-      formId: "01-tieu-niem-dau",
+      formId: "bai-07",
     },
     {
       step: 3,
       name: "Đại Pháp 108 Thế",
       desc: "108 thế tại chỗ & tiến lùi, kết hợp đối luyện song đấu 2 người thực chiến.",
       tab: "forms" as NavTab,
-      formId: "04-108-the-tai-cho",
+      formId: "bai-12",
     },
     {
       step: 4,
@@ -131,9 +131,9 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   return (
     <div className="space-y-10 sm:space-y-14 animate-fadeIn">
       {/* 1. GRAND MARTIAL HERO BANNER */}
-      <section className="relative rounded-3xl glass-panel p-6 sm:p-10 lg:p-12 border border-[#E2B743]/30 overflow-hidden shadow-2xl">
+      <section className="relative rounded-3xl glass-panel p-6 sm:p-10 lg:p-12 border border-[#F5D06C]/35 overflow-hidden shadow-2xl">
         {/* Background Watermarks */}
-        <div className="absolute -top-12 -right-12 select-none pointer-events-none opacity-5 text-[220px] font-serif font-black text-[#E2B743] leading-none">
+        <div className="absolute -top-12 -right-12 select-none pointer-events-none opacity-5 text-[220px] font-serif font-black text-[#F5D06C] leading-none">
           佛
         </div>
         <div className="absolute -bottom-16 -left-10 select-none pointer-events-none opacity-5 text-[180px] font-serif font-black text-[#C27D38] leading-none">
@@ -142,8 +142,8 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
 
         <div className="relative z-10 max-w-4xl space-y-5">
           {/* Top Heritage Badge */}
-          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#E2B743]/15 border border-[#E2B743]/40 text-[#E2B743] text-xs font-bold tracking-widest uppercase">
-            <span className="w-2 h-2 rounded-full bg-[#E2B743] animate-pulse" />
+          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/40 text-[#F5D06C] text-xs font-bold tracking-widest uppercase">
+            <span className="w-2 h-2 rounded-full bg-[#F5D06C] animate-pulse" />
             Di Sản Võ Học Cổ Truyền • Phật Gia Vịnh Xuân Quyền (1954 - 2012)
           </div>
 
@@ -165,27 +165,27 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           {/* CTA Action Buttons */}
           <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
             <button
-              onClick={() => onNavigateTab("forms", "01-tieu-niem-dau")}
-              className="px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-[#E2B743] to-[#C27D38] text-black font-bold text-xs sm:text-sm hover:brightness-110 transition shadow-lg shadow-[#E2B743]/20 flex items-center gap-2 group cursor-pointer"
+              onClick={() => onNavigateTab("forms", "bai-07")}
+              className="px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-[#F5D06C] to-[#C27D38] text-[#2A0E0A] font-bold text-xs sm:text-sm hover:brightness-110 transition shadow-lg shadow-[#F5D06C]/20 flex items-center gap-2 group cursor-pointer"
             >
-              <Swords className="w-4 h-4 text-black group-hover:rotate-12 transition-transform" />
-              <span>Khám Phá 7 Bài Quyền</span>
+              <Swords className="w-4 h-4 text-[#2A0E0A] group-hover:rotate-12 transition-transform" />
+              <span>Khám Phá 36 Bài Quyền</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
             <button
               onClick={() => onNavigateTab("dummy")}
-              className="px-5 sm:px-6 py-3 rounded-2xl bg-[#20150F] border border-[#E2B743]/40 text-amber-200 hover:text-white hover:bg-[#2D1D16] hover:border-[#E2B743] font-semibold text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
+              className="px-5 sm:px-6 py-3 rounded-2xl bg-[#20150F] border border-[#F5D06C]/40 text-amber-200 hover:text-white hover:bg-[#2D1D16] hover:border-[#F5D06C] font-semibold text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-[#E2B743]" />
+              <Sparkles className="w-4 h-4 text-[#F5D06C]" />
               <span>Cọc Gỗ Mộc Nhân (1954)</span>
             </button>
 
             <button
               onClick={openSearch}
-              className="px-4 py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#E2B743] hover:border-[#E2B743]/50 font-medium text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
+              className="px-4 py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
             >
-              <Search className="w-4 h-4 text-[#E2B743]" />
+              <Search className="w-4 h-4 text-[#F5D06C]" />
               <span>Tra Cứu Chiêu Thức</span>
               <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-[#2A1C14] rounded border border-[#3D291F] text-amber-200/80 font-mono">
                 Ctrl+K
@@ -195,26 +195,26 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         </div>
 
         {/* 4 Heritage Stats Pillars */}
-        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#3D291F]">
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#3D291F]">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#E2B743]">225</div>
+        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#F5D06C]/20">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
+            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">225</div>
             <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Trang Sách Gốc 2012</div>
-            <div className="text-[10px] text-slate-400 mt-1">Phục chế toàn văn 7 chuyên đề</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Phục chế toàn văn 100%</div>
           </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#3D291F]">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#E2B743]">7 + 1</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Bài Quyền Chính Tông</div>
-            <div className="text-[10px] text-slate-400 mt-1">9 bước Bái Tổ & hàng trăm chiêu thức</div>
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
+            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">11 • 36</div>
+            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Phân Hệ • Bài Học</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Đầy đủ Quyền & Binh Khí</div>
           </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#3D291F]">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#E2B743]">435+</div>
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
+            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">1.096</div>
             <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Ảnh Phục Chế HD</div>
-            <div className="text-[10px] text-slate-400 mt-1">Chuẩn giải phẫu, zero-amputation</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Bản 2× Retina nét đanh 280px</div>
           </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#3D291F]">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
             <div className="text-xl sm:text-3xl font-serif font-black text-[#10B981]">4</div>
             <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Thế Hệ Di Sản</div>
-            <div className="text-[10px] text-slate-400 mt-1">Từ Sư Tổ đến VS Lê Đắc Kiên</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Từ Sư Tổ đến VS Lê Đắc Kiên</div>
           </div>
         </div>
       </section>
