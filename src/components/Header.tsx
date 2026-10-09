@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
               Phật Gia Vịnh Xuân
             </h1>
             <p className="text-[10px] sm:text-xs text-amber-200/80 tracking-wider">
-              Di Sản Võ Học • Võ Đường Huỳnh Thúc Kháng
+              Di Sản Võ Học Cổ Truyền
             </p>
           </div>
         </div>

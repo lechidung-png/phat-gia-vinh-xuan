@@ -161,7 +161,7 @@ export default function Home() {
       <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-amber-200/60">
           <p className="text-center sm:text-left font-medium">
-            Võ đường Huỳnh Thúc Kháng xây dựng • Phật Gia Vịnh Xuân Quyền
+            Đơn vị đóng góp xây dựng: Võ đường Huỳnh Thúc Kháng • Phật Gia Vịnh Xuân Quyền
           </p>
           <div className="flex items-center gap-4 text-[11px]">
             <span className="text-[#E2B743]">Di Sản Võ Học 1954 - 2012</span>
