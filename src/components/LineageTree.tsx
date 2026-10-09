@@ -148,19 +148,21 @@ export const LineageTree: React.FC = () => {
         {/* Node 2: Cố Võ Sư Trần Thúc Tiển */}
         <div className="sm:ml-8 glass-panel p-6 rounded-2xl border border-[#3D291F] relative group hover:border-[#E2B743]/50 transition-all shadow-xl">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div className="relative w-20 h-24 rounded-2xl overflow-hidden border-2 border-[#3D291F] shadow-xl shrink-0 bg-[#140C08]">
+            <div className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743]/60 shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300">
               <Image
                 src="/assets/images/historical/tran_thuc_tien.png"
-                alt="Võ sư Trần Thúc Tiển"
+                alt="Cố Võ sư Trần Thúc Tiển (1912 - 1980)"
                 fill
-                sizes="80px"
-                className="object-cover"
+                sizes="(max-width: 640px) 128px, 160px"
+                className="object-cover object-top"
+                priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
             <div className="space-y-2 text-center sm:text-left flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h4 className="text-lg font-bold font-serif text-white">Cố Võ Sư Trần Thúc Tiển</h4>
-                <span className="text-xs px-2.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 font-mono border border-[#3D291F]">1911 – 1980</span>
+                <h4 className="text-xl font-bold font-serif text-white">Cố Võ Sư Trần Thúc Tiển</h4>
+                <span className="text-xs px-2.5 py-0.5 rounded bg-[#20150F] text-[#E2B743] font-mono border border-[#E2B743]/40 font-bold">1912 – 1980</span>
               </div>
               <p className="text-xs text-[#E2B743] font-semibold uppercase tracking-wider">
                 Đại Đệ Tử Xuất Sắc Của Sư Tổ Nguyễn Tế Công Tại Hà Nội

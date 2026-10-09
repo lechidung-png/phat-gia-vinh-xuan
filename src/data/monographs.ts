@@ -19,7 +19,7 @@ export const MONOGRAPHS: MonographSection[] = [
     excerpt: "Nguồn gốc từ Nam Thiếu Lâm, phong trào Phản Thanh Phục Minh, hành trình nhập Việt năm 1939 của Sư Tổ Nguyễn Tế Công và Cố Đại Võ Sư Trần Thúc Tiển.",
     content: [
       "Vịnh Xuân Quyền bắt nguồn từ phong trào 'Phản Thanh Phục Minh' tại miền Nam Trung Hoa sau khi chùa Nam Thiếu Lâm bị đốt phá. Để đào tạo nhanh chóng những nghĩa sĩ có khả năng cận chiến sát thương cao trong không gian chật hẹp, các bậc cao đồ đã chắt lọc những tinh hoa giản dị, thực chiến nhất để sáng tạo nên môn phái.",
-      "Năm 1939, Sư Tổ Nguyễn Tế Công (1877 - 1959) từ Phật Sơn sang Việt Nam, đặt chân tới Hà Nội rồi sau này vào Chợ Lớn. Tại Hà Nội, Cụ đã truyền thụ võ công cho Đại đệ tử Trần Thúc Tiển (1911 - 1980).",
+      "Năm 1939, Sư Tổ Nguyễn Tế Công (1877 - 1959) từ Phật Sơn sang Việt Nam, đặt chân tới Hà Nội rồi sau này vào Chợ Lớn. Tại Hà Nội, Cụ đã truyền thụ võ công cho Đại đệ tử Trần Thúc Tiển (1912 - 1980).",
       "Võ sư Trần Thúc Tiển là tấm gương võ học mẫu mực, người đã truyền thụ toàn bộ tuyệt kỹ Vịnh Xuân và Nội công cho GS.TS Y khoa Nguyễn Mạnh Nhâm, tạo nên nền móng vững chắc cho Võ đường Phật Gia Vịnh Xuân ngày nay."
     ],
     keypoints: [
