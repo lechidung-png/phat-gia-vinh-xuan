@@ -106,7 +106,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               }`}
             >
               <BookOpen className="w-4 h-4" />
-              <span>Theo 225 Trang Sách</span>
+              <span>Theo Thứ Tự Bài Học</span>
             </button>
           </div>
         </div>
@@ -247,7 +247,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <h3 className="text-xl sm:text-2xl font-bold font-serif text-white flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-[#F5D06C]" />
-              Danh Mục Toàn Văn 36 Bài Theo 225 Trang Sách Gốc
+              Danh Mục Toàn Văn 36 Bài Giáo Trình Di Sản
             </h3>
             
             {/* Search input in book mode */}
@@ -281,7 +281,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                       <span className="px-2 py-0.5 rounded bg-[#2A0E0A] text-[#F5D06C] border border-[#F5D06C]/30 font-bold">
                         Bài {lesson.bookOrder.toString().padStart(2, "0")}
                       </span>
-                      <span className="text-[#F5D06C] font-bold">{lesson.pageRange}</span>
+                      <span className="text-[#F5D06C] font-semibold">{lesson.contentType}</span>
                     </div>
                     <h5 className="font-bold text-sm text-white leading-snug">{lesson.title}</h5>
                   </div>
@@ -310,7 +310,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
             <div className="flex items-center justify-between border-b border-[#F5D06C]/20 pb-3">
               <div>
                 <span className="text-xs font-mono font-bold text-[#2A0E0A] bg-[#F5D06C] px-2.5 py-0.5 rounded">
-                  Trang Sách Gốc {zoomedMotion.pdfPage} • Mã {zoomedMotion.displayId}
+                  Động Tác Số {zoomedMotion.stepNo} • Mã {zoomedMotion.displayId}
                 </span>
                 <h4 className="font-bold text-base text-white mt-1">
                   {currentLesson.title} — Động tác {zoomedMotion.stepNo}
@@ -337,7 +337,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
 
             <div className="flex items-center justify-between text-xs text-amber-200/80 font-mono">
               <span>Độ phân giải: {zoomedMotion.width} × {zoomedMotion.height} px (Retina 2×)</span>
-              <span className="text-[#10B981] font-bold">100% Nguyên Tác Sách Gốc Phục Chế Chuẩn</span>
+              <span className="text-[#10B981] font-bold">100% Ảnh Phục Chế HD Chuẩn Xác</span>
             </div>
           </div>
         </div>

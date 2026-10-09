@@ -335,8 +335,8 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     nameHán: "二字鉗羊馬",
     imgUrl: "/assets/images/fundamentals/tan_kiem_duong_authentic.png",
     category: "Tấn Pháp",
-    shortDesc: "Cốt lõi hạ bàn Vịnh Xuân (Trang 31 sách in): Cự ly hai chân hẹp (khoảng một bề ngang bàn chân), đầu gối hơi khuỵu khép che kín hạ môn, hai tay thu quyền sát nách.",
-    techniqueDetail: "Nguyên tác sách in Trang 31 của GS.TS Nguyễn Mạnh Nhâm: 'Đứng: theo Nhị tự Kiềm dương Mã, chỉ hơi khuỵu khớp gối một chút. Bàn chân hình chữ bát, nhưng khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Hai đầu gối khép nhẹ che kín 100% vùng hạ bộ, xương cụt thu, đỉnh đầu treo như dây dọi.",
+    shortDesc: "Cốt lõi hạ bàn Vịnh Xuân: Cự ly hai chân hẹp (khoảng một bề ngang bàn chân), đầu gối hơi khuỵu khép che kín hạ môn, hai tay thu quyền sát nách.",
+    techniqueDetail: "Nguyên tắc khẩu quyết chuẩn mực: 'Đứng: theo Nhị tự Kiềm dương Mã, chỉ hơi khuỵu khớp gối một chút. Bàn chân hình chữ bát, nhưng khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Hai đầu gối khép nhẹ che kín 100% vùng hạ bộ, xương cụt thu, đỉnh đầu treo như dây dọi.",
     keyPoints: [
       "Khoảng cách hai bàn chân hẹp (khoảng một bề ngang bàn chân)",
       "Hai đầu gối hơi khuỵu khép vào trong che kín hạ bộ",
@@ -352,8 +352,8 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     nameHán: "轉身 / 偏身",
     imgUrl: "/assets/images/fundamentals/xoay_nguoi_bien_than_authentic.png",
     category: "Bộ Pháp",
-    shortDesc: "Xoay người biên thân trên trục Tý Ngọ Tuyến (Trang 31 sách in): Vai và thân nghiêng hướng về phía trước, hai bàn chân song song cách nhau một bề ngang bàn chân.",
-    techniqueDetail: "Theo sách in Trang 31 & 32: 'Quay người hay hoành thoái thành tư thế nghiêng, vai hướng về phía trước (biên thân). Khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Kỹ thuật này giúp triệt tiêu đòn đánh trực diện của đối phương, đưa đối thủ vào góc chết trong khi ta vẫn giữ nguyên cự ly phản kích.",
+    shortDesc: "Xoay người biên thân trên trục Tý Ngọ Tuyến: Vai và thân nghiêng hướng về phía trước, hai bàn chân song song cách nhau một bề ngang bàn chân.",
+    techniqueDetail: "Yếu lĩnh khẩu quyết: 'Quay người hay hoành thoái thành tư thế nghiêng, vai hướng về phía trước (biên thân). Khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Kỹ thuật này giúp triệt tiêu đòn đánh trực diện của đối phương, đưa đối thủ vào góc chết trong khi ta vẫn giữ nguyên cự ly phản kích.",
     keyPoints: [
       "Hai bàn chân xoay song song cùng hướng",
       "Thân người nghiêng góc 45 độ né trục xung kích trực diện",
@@ -369,8 +369,8 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     nameHán: "走馬 / 步法",
     imgUrl: "/assets/images/fundamentals/di_chuyen_ma_bo_authentic.png",
     category: "Bộ Pháp",
-    shortDesc: "Bộ pháp tiến thoái luồn lách (Trang 31 & 32 sách in): Tiến lướt chân trước theo chân sau như người leo núi, sức nặng chủ yếu ở chân sau.",
-    techniqueDetail: "Theo sách in Trang 32: 'Khi tiến hay lùi đều nghiêng người, một chân trước một chân sau, như người leo núi (xước mã, truy mã). Trong các bài võ thường tiến 3 bước, lùi 3 bước (đạp cung trung). Hai bàn chân không ở cùng một mức nhưng vẫn phải song song nhau, sức nặng chủ yếu ở chân sau.'",
+    shortDesc: "Bộ pháp tiến thoái luồn lách: Tiến lướt chân trước theo chân sau như người leo núi, sức nặng chủ yếu ở chân sau.",
+    techniqueDetail: "Yếu lĩnh khẩu quyết: 'Khi tiến hay lùi đều nghiêng người, một chân trước một chân sau, như người leo núi (xước mã, truy mã). Trong các bài võ thường tiến 3 bước, lùi 3 bước (đạp cung trung). Hai bàn chân không ở cùng một mức nhưng vẫn phải song song nhau, sức nặng chủ yếu ở chân sau.'",
     keyPoints: [
       "Chân sau chịu 70% trọng lượng, chân trước 30%",
       "Di chuyển lướt nhẹ trên mặt sàn, không nhảy chồm",
@@ -386,7 +386,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     nameHán: "出腳式 / 低腿",
     imgUrl: "/assets/images/fundamentals/hlv_xuat_cuoc_full.png",
     category: "Cước Pháp",
-    shortDesc: "Chân trụ bám đất vững chắc, chân đá co gối dâng cao vuông góc bảo vệ hạ môn (Trang 30 sách in), cước phạt tầm thấp không quá thắt lưng.",
+    shortDesc: "Chân trụ bám đất vững chắc, chân đá co gối dâng cao vuông góc bảo vệ hạ môn, cước phạt tầm thấp không quá thắt lưng.",
     techniqueDetail: "Nguyên lý bất di bất dịch của Vịnh Xuân: 'Vô ảnh cước - Cước bất xuất tầm cao' (Đá không cao quá rốn). Khi xuất cước, đầu gối dâng cao vuông góc bảo vệ hạ bộ của mình trước khi phóng cước. Mũi chân chúc nhẹ hướng vào khớp gối, ống quyển hoặc mắt cá chân đối thủ. Chân trụ đứng vững, hai tay thủ ngực bảo vệ trung tuyến.",
     keyPoints: [
       "Đầu gối chân đá dâng cao che kín hạ bộ trước khi duỗi cước",

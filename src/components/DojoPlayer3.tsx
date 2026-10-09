@@ -290,10 +290,10 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
             </div>
 
             <h3 className="text-xl sm:text-2xl font-bold font-serif text-white pt-1">
-              Động Tác Thứ {currentMotion.stepNo}: {currentMotion.desc || `Phân thế trang ${currentMotion.pdfPage}`}
+              Động Tác Thứ {currentMotion.stepNo}: {currentMotion.desc || `Phân thế động tác ${currentMotion.stepNo}`}
             </h3>
             <p className="text-xs text-amber-200/80 font-mono">
-              Trang Sách Gốc {currentMotion.pdfPage} • Mã tư liệu phục chế {currentMotion.displayId}
+              Động tác {currentMotion.stepNo} / {totalMotions} • Mã {currentMotion.displayId}
             </p>
           </div>
 

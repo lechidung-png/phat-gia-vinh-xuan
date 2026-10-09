@@ -87,7 +87,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
       "Chân hẹp mà gốc sâu, gối khép mà tâm mở. Tấn Kiềm Dương giúp người luyện ghim rễ vào lòng đất, bảo vệ hạ môn, thu liễm chân khí để nội lực tự động sinh khởi, tâm thế an nhiên vững như bàn thạch.",
     explanation:
       "Khác với các môn phái ngoại gia mở rộng chân, Kiềm Dương Tấn chân hẹp giúp bảo vệ 100% vùng hạ bộ nhạy cảm và tạo độ đàn hồi cao độ ở khớp gối. Người đứng vững hạ bàn thì thân trên mới nhẹ nhàng, linh hoạt luồn lách qua các khe hở của trận địa.",
-    source: "Yếu lĩnh hạ bàn • Sách gốc Trang 31 (GS.TS Nguyễn Mạnh Nhâm)",
+    source: "Yếu lĩnh hạ bàn Kiềm Dương Tấn",
     icon: <ShieldCheck className="w-5 h-5 text-amber-500" />
   }
 ];

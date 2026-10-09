@@ -37,7 +37,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-1954-dummy",
     imgUrl: "/assets/hinh-2x/p093-h01.png",
-    pageBadge: "Di Sản Lịch Sử • Năm 1954",
+    pageBadge: "Di Sản Lịch Sử (1954)",
     title: "Cây Mộc Nhân 38 Phố Gia Ngư",
     subtitle: "Nguyên bản thiết kế của Sư Tổ Nguyễn Tế Công",
     desc: "Cây mộc nhân 5 tầng cọc nguyên bản do đích thân Sư Tổ Nguyễn Tế Công làm tại nhà Cụ Trần Thúc Tiển những năm 1954–1958 để truyền dạy môn sinh tại Hà Nội.",
@@ -46,7 +46,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-p095-h01",
     imgUrl: "/assets/hinh-2x/p095-h01.png",
-    pageBadge: "Trang 95 Sách Gốc • Thế 0 (Bái Tổ)",
+    pageBadge: "Thế Khởi Đầu • Bái Tổ",
     title: "Khởi Thế Bái Tổ Mộc Nhân",
     subtitle: "HLV Nguyễn Quốc Minh thị phạm",
     desc: "Đứng thế Nhị Tự Kiềm Dương Tấn trước cọc mộc nhân ở cự ly chuẩn 2 bàn chân. Hai tay chắp thủ trước ngực, trầm thân hạ khí đan điền, định tâm chuẩn bị khai triển quyền pháp.",
@@ -55,7 +55,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-p095-h02",
     imgUrl: "/assets/hinh-2x/p095-h02.png",
-    pageBadge: "Trang 95 Sách Gốc • Chiêu 1",
+    pageBadge: "Chiêu Thức 1 • Tam Giác Thủ",
     title: "Chiêu 1: Tam Giác Thủ Phá Hai Cọc Ngực",
     subtitle: "Đòn nêm mở đường phá trung lộ",
     desc: "Hai tay chắp đánh thẳng về phía cọc sao cho hai cẳng tay tạo thế hình tam giác cân, chẻ góc đón đỡ và chặn đứng đồng thời cả hai tay ngực của Mộc Nhân.",
@@ -64,7 +64,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-p095-h03",
     imgUrl: "/assets/hinh-2x/p095-h03.png",
-    pageBadge: "Trang 95 Sách Gốc • Chiêu 2",
+    pageBadge: "Chiêu Thức 2 • Song Thủ Hạ Chưởng",
     title: "Chiêu 2: Song Thủ Đánh Xuống Cọc Bụng",
     subtitle: "Kiểm soát hạ lộ & chấn thủy",
     desc: "Hai bàn tay đặt song song nhau đánh thẳng hạ kình xuống phần tay bụng (trung thung) của Mộc Nhân, ghìm đòn đánh xốc của đối phương và áp chế không gian.",
@@ -73,7 +73,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-p095-h04",
     imgUrl: "/assets/hinh-2x/p095-h04.png",
-    pageBadge: "Trang 95 Sách Gốc • Chiêu 4.1",
+    pageBadge: "Chiêu Thức 4.1 • Biên Thân Trử Thủ",
     title: "Chiêu 4.1: Xoay Biên Thân Chặn Cọc Ngực",
     subtitle: "Biên thân thoát trục Tý Ngọ",
     desc: "Xoay người sang phải, tay phải chặn đầu tay ngực phải của Mộc Nhân, cẳng tay và bàn tay trái dựng thẳng đứng đánh chặn mặt trong tay ngực, mở đường nhập nội áp sát.",
@@ -82,7 +82,7 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
   {
     id: "card-p095-h08",
     imgUrl: "/assets/hinh-2x/p095-h08.png",
-    pageBadge: "Trang 95 Sách Gốc • Chiêu 8.1",
+    pageBadge: "Chiêu Thức 8.1 • Bàng Thủ Cọc Bụng",
     title: "Chiêu 8.1: Song Thủ Phối Hợp Bàng Thủ Cọc Bụng",
     subtitle: "Liên hoàn thủ pháp công thủ toàn diện",
     desc: "Xoay người sang phải, hai tay xuất chiêu đồng thời: bàn tay phải đánh chặn đầu tay bụng, tay trái thi triển Bàng Thủ đánh chặn vào phần thân tay bụng của Mộc Nhân.",
@@ -112,13 +112,13 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
       <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/30 relative overflow-hidden">
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 text-[#F5D06C] border border-[#F5D06C]/30 text-xs font-bold uppercase tracking-widest">
-            <Ruler className="w-3.5 h-3.5" /> Hồ Sơ Bản Vẽ Kiến Trúc & Tư Liệu Gốc Trang 93 - 95
+            <Ruler className="w-3.5 h-3.5" /> Hồ Sơ Bản Vẽ Kiến Trúc & Tư Liệu Mộc Nhân Thao Pháp
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold font-serif gold-gradient">
             Khảo Cứu Cọc Gỗ Mộc Nhân Phật Gia Vịnh Xuân
           </h2>
           <p className="text-[#F7E7D9] text-xs sm:text-sm leading-relaxed">
-            Hồ sơ phục chế kỹ thuật kiến trúc, kết cấu cơ khí và nhân trắc học cọc gỗ Mộc Nhân dựa trên tài liệu gốc của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)</strong>. Khảo sát đa chiều từ bản vẽ mặt bằng nhìn từ trên cao (Trang 94), ảnh chụp ngang khung treo (Trang 93 & 94) đến bộ ảnh phục chế HD từng chiêu thức Mộc Nhân Thao Pháp (Trang 95).
+            Hồ sơ phục chế kỹ thuật kiến trúc, kết cấu cơ khí và nhân trắc học cọc gỗ Mộc Nhân dựa trên tài liệu giáo trình chuẩn của môn phái. Khảo sát đa chiều từ bản vẽ mặt bằng nhìn từ trên cao, ảnh chụp ngang khung treo đến bộ ảnh phục chế HD từng chiêu thức Mộc Nhân Thao Pháp.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             }`}
           >
             <Compass className="w-4 h-4" />
-            <span>1. Mặt Bằng Từ Trên Cao (Top-down Plan - Trang 94)</span>
+            <span>1. Mặt Bằng Từ Trên Cao (Top-down Plan)</span>
           </button>
 
           <button
@@ -145,7 +145,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             }`}
           >
             <Ruler className="w-4 h-4" />
-            <span>2. Mặt Đứng & Chụp Ngang (Elevation & Side - Trang 93 & 94)</span>
+            <span>2. Mặt Đứng & Chụp Ngang (Elevation & Side)</span>
           </button>
 
           <button
@@ -157,13 +157,13 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             }`}
           >
             <History className="w-4 h-4" />
-            <span>3. Tư Liệu Gốc 38 Gia Ngư & Chiêu Thức Mộc Nhân (Trang 93 - 95)</span>
+            <span>3. Tư Liệu 38 Gia Ngư & Chiêu Thức Mộc Nhân</span>
           </button>
         </div>
       </div>
 
       {/* ========================================================================= */}
-      {/* TAB 1: MẶT BẰNG TỪ TRÊN CAO (TOP-DOWN PLAN VIEW) - CHUẨN TRANG 94        */}
+      {/* TAB 1: MẶT BẰNG TỪ TRÊN CAO (TOP-DOWN PLAN VIEW)                          */}
       {/* ========================================================================= */}
       {viewMode === "top_down" && (
         <div className="space-y-6">
@@ -173,14 +173,14 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               <div className="w-full flex items-center justify-between mb-3 text-xs">
                 <span className="font-semibold text-[#F5D06C] flex items-center gap-1.5">
                   <Compass className="w-4 h-4" />
-                  Bản Vẽ Kỹ Thuật Nguyên Bản Phục Chế HD (Trang 94)
+                  Bản Vẽ Kỹ Thuật Nguyên Bản Phục Chế HD
                 </span>
                 <span className="text-[11px] font-mono text-amber-300 font-semibold bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
-                  Mã p094-h01 • Retina 2×
+                  Bản Vẽ Mặt Bằng • Retina 2×
                 </span>
               </div>
 
-              {/* ẢNH BẢN VẼ GỐC TỪ SÁCH TRANG 94 */}
+              {/* ẢNH BẢN VẼ GỐC */}
               <div className="w-full space-y-3">
                 <div
                   onClick={() => setZoomedImage("/assets/hinh-2x/p094-h01.png")}
@@ -188,7 +188,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 >
                   <Image
                     src="/assets/hinh-2x/p094-h01.png"
-                    alt="Bản vẽ mặt bằng từ trên cao vị trí khi tập với Mộc Nhân - Sách 2012 trang 94"
+                    alt="Bản vẽ mặt bằng từ trên cao vị trí khi tập với Mộc Nhân"
                     fill
                     className="object-contain martial-filter"
                     priority
@@ -199,7 +199,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   </div>
                 </div>
                 <div className="text-center text-xs text-[#F7E7D9] italic">
-                  Bản vẽ nguyên bản từ trang 94 sách in: <strong>Hình bên trái</strong> thể hiện vị trí tấn Kiềm Dương đứng thẳng (cự ly 2 bàn chân); <strong>Hình bên phải</strong> thể hiện vị trí xoay chân biên thân né trục Tý Ngọ Tuyến đâm thẳng ra trước.
+                  Bản vẽ nguyên bản: <strong>Hình bên trái</strong> thể hiện vị trí tấn Kiềm Dương đứng thẳng (cự ly 2 bàn chân); <strong>Hình bên phải</strong> thể hiện vị trí xoay chân biên thân né trục Tý Ngọ Tuyến đâm thẳng ra trước.
                 </div>
               </div>
             </div>
@@ -249,19 +249,19 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
       )}
 
       {/* ========================================================================= */}
-      {/* TAB 2: MẶT ĐỨNG & ẢNH CHỤP NGANG (ELEVATION & SIDE VIEW) - CHUẨN 93 & 94   */}
+      {/* TAB 2: MẶT ĐỨNG & ẢNH CHỤP NGANG (ELEVATION & SIDE VIEW)                  */}
       {/* ========================================================================= */}
       {viewMode === "side_elevation" && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-            {/* Left 6 Cols: Ảnh Chụp Ngang Thực Tế Trang 93-94 */}
+            {/* Left 6 Cols: Ảnh Chụp Ngang Thực Tế */}
             <div className="lg:col-span-6 glass-panel rounded-2xl p-5 sm:p-6 border border-[#F5D06C]/25 flex flex-col items-center shadow-xl space-y-3">
               <div className="w-full flex items-center justify-between text-xs">
                 <span className="font-bold text-[#F5D06C] flex items-center gap-1.5">
-                  <Eye className="w-4 h-4" /> 1. Cọc Mộc Nhân Treo Trên Khung Giá Đỡ (Trang 93)
+                  <Eye className="w-4 h-4" /> 1. Cọc Mộc Nhân Treo Trên Khung Giá Đỡ
                 </span>
                 <span className="text-[10px] font-mono text-amber-300 bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
-                  Mã p093-h02 • Retina 2×
+                  Khung Treo Độc Bản • Retina 2×
                 </span>
               </div>
 
@@ -271,7 +271,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               >
                 <Image
                   src="/assets/hinh-2x/p093-h02.png"
-                  alt="Ảnh chụp ngang mộc nhân trên khung giá đỡ 2 trụ - Sách 2012 trang 93"
+                  alt="Ảnh chụp ngang mộc nhân trên khung giá đỡ 2 trụ"
                   fill
                   className="object-contain martial-filter"
                   priority
@@ -283,21 +283,21 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               </div>
 
               <div className="text-xs text-[#F7E7D9] leading-relaxed">
-                <strong className="text-amber-300 block mb-1">Đặc Điểm Kết Cấu Khung Giá Treo (Trang 93 & 94):</strong>
+                <strong className="text-amber-300 block mb-1">Đặc Điểm Kết Cấu Khung Giá Treo:</strong>
                 • Thân mộc nhân được treo trên <strong>khung giá đỡ gồm 2 cột trụ đứng</strong> hai bên có chân đế bản mã bắt vít xuống sàn nhà.
                 <br />• <strong>2 thanh xà ngang giằng</strong> xuyên qua giữ thân cọc chắc chắn nhưng vẫn cho phép thân cọc có độ đàn hồi tự nhiên khi chịu đòn thung kình.
-                <br />• Chú thích nguyên văn sách gốc: <em>&quot;• Một kiểu mộc nhân khác, thay vì 2 tay thẳng của đầu gối và bàn chân, chỉ dùng một tay cong xuống dưới.&quot;</em>
+                <br />• Chú thích nguyên văn: <em>&quot;• Một kiểu mộc nhân khác, thay vì 2 tay thẳng của đầu gối và bàn chân, chỉ dùng một tay cong xuống dưới.&quot;</em>
               </div>
             </div>
 
-            {/* Right 6 Cols: Cây Mộc Nhân 5 Tầng Cọc Sư Tổ Tế Công 1954 (Trang 93) */}
+            {/* Right 6 Cols: Cây Mộc Nhân 5 Tầng Cọc Sư Tổ Tế Công 1954 */}
             <div className="lg:col-span-6 glass-panel rounded-2xl p-5 sm:p-6 border border-[#F5D06C]/25 flex flex-col items-center shadow-xl space-y-3">
               <div className="w-full flex items-center justify-between text-xs">
                 <span className="font-bold text-[#10B981] flex items-center gap-1.5">
-                  <Shield className="w-4 h-4" /> 2. Cây Mộc Nhân 5 Tầng Cọc Sư Tổ Tế Công 1954 (Trang 93)
+                  <Shield className="w-4 h-4" /> 2. Cây Mộc Nhân 5 Tầng Cọc Sư Tổ Tế Công 1954
                 </span>
                 <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-800/40">
-                  Mã p093-h01 • Chuẩn Bản 38 Gia Ngư
+                  Chuẩn Bản 38 Gia Ngư (1954)
                 </span>
               </div>
 
@@ -307,7 +307,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               >
                 <Image
                   src="/assets/hinh-2x/p093-h01.png"
-                  alt="Cây Mộc Nhân 5 tầng cọc Sư Tổ Tế Công 1954 tại 38 phố Gia Ngư - Sách 2012 trang 93"
+                  alt="Cây Mộc Nhân 5 tầng cọc Sư Tổ Tế Công 1954 tại 38 phố Gia Ngư"
                   fill
                   className="object-contain martial-filter"
                   priority
@@ -319,7 +319,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               </div>
 
               <div className="text-xs text-[#F7E7D9] leading-relaxed">
-                <strong className="text-emerald-300 block mb-1">Cấu Tạo 5 Tầng Cọc Độc Bản Của Sư Tổ Tế Công (Trang 93):</strong>
+                <strong className="text-emerald-300 block mb-1">Cấu Tạo 5 Tầng Cọc Độc Bản Của Sư Tổ Tế Công:</strong>
                 • <strong>Tầng 1 (Đỉnh cao +1,70m):</strong> Có <strong>xà ngang trên cao</strong> và cọc đứng phía trước dùng luyện Lục Điểm Bán Côn, Bát Trảm Đao và Liễu Diệp Kiếm.
                 <br />• <strong>Tầng 2 (Ngực +1,30m):</strong> 2 tay ngực tạo đáy tam giác cân (ngang 2 núm vú).
                 <br />• <strong>Tầng 3 (Rốn +1,05m):</strong> 1 tay bụng đỉnh tam giác cân dưới.
@@ -328,11 +328,11 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             </div>
           </div>
 
-          {/* Bảng Đo Cao Độ Nhân Trắc Học Chuẩn Kiến Trúc Sư */}
+          {/* Bảng Đo Cao Độ Nhân Trắc Học Chuẩn */}
           <div className="glass-panel p-6 rounded-2xl border border-[#F5D06C]/25 space-y-4">
             <h3 className="text-sm sm:text-base font-bold text-[#F5D06C] flex items-center gap-2">
               <Ruler className="w-4 h-4" />
-              Bảng Cao Độ Nhân Trắc Học Mộc Nhân (Theo GS.TS Y Khoa Nguyễn Mạnh Nhâm)
+              Bảng Cao Độ Nhân Trắc Học Mộc Nhân Chuẩn Mực
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs border-collapse">
@@ -396,7 +396,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
       )}
 
       {/* ========================================================================= */}
-      {/* TAB 3: TƯ LIỆU GỐC 38 GIA NGƯ & CHIÊU THỨC MỘC NHÂN (TRANG 93 - 95)       */}
+      {/* TAB 3: TƯ LIỆU 38 GIA NGƯ & CHIÊU THỨC MỘC NHÂN                            */}
       {/* ========================================================================= */}
       {viewMode === "historical_archives" && (
         <div className="space-y-6">
@@ -406,10 +406,10 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 <Sparkles className="w-3.5 h-3.5" /> Bộ Ảnh Phục Chế HD Siêu Nét • Bản 2× Retina
               </div>
               <h3 className="text-lg sm:text-xl font-bold font-serif text-white mt-1">
-                Tư Liệu Gốc 38 Gia Ngư & Bộ Chiêu Thức Mộc Nhân Thao Pháp (Trang 93 – 95)
+                Tư Liệu 38 Gia Ngư & Bộ Chiêu Thức Mộc Nhân Thao Pháp
               </h3>
               <p className="text-xs text-[#D9C3B4] mt-1 max-w-3xl">
-                Toàn bộ ảnh tư liệu scan cũ đã được thay thế 100% bằng bản phục chế HD đơn chiếc sạch sẽ, loại bỏ hoàn toàn vết chữ mờ mặt sau sách, đặt trên nền giấy lụa ngà viền kim sa chuẩn mực.
+                Hình ảnh phục chế HD đơn chiếc sắc nét, bảo toàn 100% chi tiết giải phẫu võ học, đặt trên khung tranh giấy lụa ngà viền kim sa chuẩn mực.
               </p>
             </div>
             <div className="shrink-0 flex items-center gap-2">
@@ -419,7 +419,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             </div>
           </div>
 
-          {/* Lưới 6 Thẻ Phục Chế HD Trang 93 - 95 */}
+          {/* Lưới 6 Thẻ Phục Chế HD */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ARCHIVE_CARDS.map((card) => (
               <div
@@ -545,7 +545,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               />
             </div>
             <div className="mt-3 text-center text-xs text-[#461A14] font-medium font-mono">
-              Tư liệu võ học phục chế HD: GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức (2012)
+              Tư liệu võ học phục chế HD chuẩn xác
             </div>
           </div>
         </div>

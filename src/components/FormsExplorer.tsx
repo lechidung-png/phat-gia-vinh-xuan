@@ -489,7 +489,7 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
 
                 <div className="p-4 rounded-xl bg-[#20150F] border border-[#3D291F] space-y-2">
                   <strong className="text-[#E2B743] text-xs uppercase tracking-wider block">
-                    Lời Chỉ Dẫn Động Tác (Sách In 2012):
+                    Lời Chỉ Dẫn Động Tác:
                   </strong>
                   <p className="text-sm text-slate-200 leading-relaxed">
                     {zoomedStep.desc}

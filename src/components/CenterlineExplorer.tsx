@@ -462,7 +462,7 @@ export const CenterlineExplorer: React.FC = () => {
                   />
                   {/* Subtle Badge */}
                   <div className="absolute top-3 left-3 px-2 py-0.5 rounded-md bg-[#140C08]/90 text-[#E2B743] border border-[#E2B743]/30 text-[10px] font-semibold">
-                    100% Ảnh Thực Chiến Sách Gốc
+                    100% Ảnh Đối Kháng Thực Chiến
                   </div>
                 </div>
 

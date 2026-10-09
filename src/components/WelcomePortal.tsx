@@ -45,7 +45,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
     {
       id: "dummy" as NavTab,
       title: "Cọc Gỗ Mộc Nhân",
-      subtitle: "Bản vẽ 1954 & Trang 94 Sách In",
+      subtitle: "Bản vẽ kỹ thuật & Cây mộc nhân 1954",
       desc: "Bản vẽ kỹ thuật mặt bằng nhìn từ trên cao, 2 thế bộ pháp Kiềm Dương vs Biên Thân 45°, hồ sơ 5 tầng cọc Sư Tổ Tế Công tại 38 Gia Ngư.",
       icon: Sparkles,
       badge: "Bản Vẽ Chuẩn CAD & 1954",
@@ -57,9 +57,9 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       id: "fundamentals" as NavTab,
       title: "Cơ Bản Công & Tấn Pháp",
       subtitle: "Nền tảng khởi nguyên võ học",
-      desc: "2 trang scan gốc (28-29), Tam Thủ cốt lõi (Than, Bàng, Phục), Nhị Tự Kiềm Dương Tấn chân hẹp chuẩn Trang 31 sách gốc.",
+      desc: "Đồ hình giải phẫu gốc, Tam Thủ cốt lõi (Than, Bàng, Phục), Nhị Tự Kiềm Dương Tấn chân hẹp chuẩn mực.",
       icon: Hand,
-      badge: "Trang 28–35 • Khẩu Quyết",
+      badge: "Thủ Pháp & Cước Bộ",
       color: "from-emerald-900/20 to-emerald-950/10",
       borderColor: "border-[#10B981]/40 hover:border-[#10B981]",
       tagColor: "bg-[#10B981]/20 text-[#10B981]",
@@ -92,7 +92,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       subtitle: "Toàn văn chuyên khảo học thuật",
       desc: "Lưu trữ toàn văn 7 chuyên đề lý thuyết kinh điển của GS.TS Y Khoa Nguyễn Mạnh Nhâm và ma trận phân loại 109 thế võ.",
       icon: BookOpen,
-      badge: "Sách Gốc 2012 Toàn Văn",
+      badge: "Toàn Văn Chuyên Khảo",
       color: "from-amber-900/20 to-stone-950/10",
       borderColor: "border-amber-700/40 hover:border-amber-500",
       tagColor: "bg-amber-800/20 text-amber-300",
@@ -198,7 +198,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#F5D06C]/20">
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
             <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">225</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Trang Sách Gốc 2012</div>
+            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Trang Giáo Trình Di Sản</div>
             <div className="text-[10px] text-amber-200/70 mt-1">Phục chế toàn văn 100%</div>
           </div>
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
@@ -215,6 +215,30 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             <div className="text-xl sm:text-3xl font-serif font-black text-[#10B981]">4</div>
             <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Thế Hệ Di Sản</div>
             <div className="text-[10px] text-amber-200/70 mt-1">Từ Sư Tổ đến VS Lê Đắc Kiên</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. LỜI GIỚI THIỆU & NGUỒN GỐC GIÁO TRÌNH DI SẢN (NÓI 1 LẦN DUY NHẤT) */}
+      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/35 relative overflow-hidden shadow-xl">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div className="w-14 h-14 rounded-2xl bg-[#2A0E0A] border-2 border-[#F5D06C]/50 flex items-center justify-center shrink-0 text-[#F5D06C] shadow-lg shadow-[#F5D06C]/10">
+            <BookOpen className="w-7 h-7" />
+          </div>
+          <div className="space-y-2 flex-1">
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#F5D06C] uppercase tracking-wider">
+              <span>Lời Giới Thiệu • Nguồn Gốc Tư Liệu Võ Học</span>
+            </div>
+            <h3 className="text-lg sm:text-2xl font-bold font-serif text-white leading-snug">
+              Giáo Trình Chính Thống Phật Gia Vịnh Xuân Quyền
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình giải phẫu và khẩu quyết trên nền tảng Võ Đường Số được phục chế và số hóa 100% nguyên bản từ bộ tài liệu giáo trình chính thống của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
+            </p>
+            <div className="pt-1 flex items-center gap-2 text-xs text-amber-200/80 italic">
+              <span className="text-[#F5D06C] font-bold">Quy ước hiển thị:</span>
+              <span>Trong toàn bộ các phân hệ chiêu thức, hệ thống lược bỏ các chú thích số trang để người tập tập trung hoàn toàn vào yếu lĩnh thân pháp, tâm pháp và độ chuẩn xác của từng đòn thế.</span>
+            </div>
           </div>
         </div>
       </section>
