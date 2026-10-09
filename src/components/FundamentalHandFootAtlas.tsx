@@ -472,114 +472,29 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
       {/* ========================================================================= */}
       {activeTab === "hands" && (
         <div className="space-y-6">
-          {/* Top: 2 Bản Đồ Hình Gốc */}
-          <div className="glass-panel p-5 sm:p-6 rounded-2xl border border-[#3D291F] space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#3D291F] pb-3">
-              <div>
-                <span className="text-xs font-bold text-[#E2B743] uppercase tracking-wider flex items-center gap-1.5">
-                  <BookOpen className="w-4 h-4" /> Bản Đồ Hình Giải Phẫu Chuẩn Mực Nguyên Bản
-                </span>
-                <p className="text-xs text-slate-300 mt-0.5">
-                  Đồ hình thể hiện giải phẫu chi trên, các thế tay và mũi tên chú giải.
-                </p>
-              </div>
-              <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-800/40 self-start sm:self-auto">
-                Bảo Tồn 100% Nguyên Tác Võ Học
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-              {/* Đồ hình 1 */}
-              <div
-                onClick={() =>
-                  setZoomImg({
-                    src: "/assets/images/fundamentals/page_028_authentic.png",
-                    title: "Đồ Hình 1: Kỹ Thuật Cơ Bản - Chi Trên & Các Thế Tay",
-                  })
-                }
-                className="bg-white rounded-xl p-3 border-2 border-slate-300 cursor-zoom-in group shadow-md flex flex-col items-center"
-              >
-                <div className="relative w-full h-[280px]">
-                  <Image
-                    src="/assets/images/fundamentals/page_028_authentic.png"
-                    alt="Đồ Hình Giải Phẫu 1"
-                    fill
-                    className="object-contain"
-                  />
-                  <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-mono flex items-center gap-1 opacity-80 group-hover:opacity-100 transition shadow">
-                    <Maximize2 className="w-3 h-3 text-[#E2B743]" /> Đồ Hình 1 (Phóng to)
-                  </div>
-                </div>
-                <span className="text-[11px] text-slate-700 mt-2 font-mono font-semibold text-center">
-                  Đồ Hình 1: Giải Phẫu Chi Trên & Các Thế Tay
-                </span>
-              </div>
-
-              {/* Đồ hình 2 */}
-              <div
-                onClick={() =>
-                  setZoomImg({
-                    src: "/assets/images/fundamentals/page_029_authentic.png",
-                    title: "Đồ Hình 2: Kỹ Thuật Cơ Bản - 3 Mức Để Tay & Cước Pháp",
-                  })
-                }
-                className="bg-white rounded-xl p-3 border-2 border-slate-300 cursor-zoom-in group shadow-md flex flex-col items-center"
-              >
-                <div className="relative w-full h-[280px]">
-                  <Image
-                    src="/assets/images/fundamentals/page_029_authentic.png"
-                    alt="Đồ Hình Giải Phẫu 2"
-                    fill
-                    className="object-contain"
-                  />
-                  <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-mono flex items-center gap-1 opacity-80 group-hover:opacity-100 transition shadow">
-                    <Maximize2 className="w-3 h-3 text-[#E2B743]" /> Đồ Hình 2 (Phóng to)
-                  </div>
-                </div>
-                <span className="text-[11px] text-slate-700 mt-2 font-mono font-semibold text-center">
-                  Đồ Hình 2: 3 Mức Để Tay & Cước Pháp
-                </span>
-              </div>
-
-              {/* Đồ hình Tên gọi các phần của tay */}
-              <div
-                onClick={() =>
-                  setZoomImg({
-                    src: "/assets/images/fundamentals/anatomy_hand.png",
-                    title: "Đồ Hình Gốc: Tên Gọi Các Phần Của Tay - GS.TS Nguyễn Mạnh Nhâm",
-                  })
-                }
-                className="bg-white rounded-xl p-3 border-2 border-slate-300 cursor-zoom-in group shadow-md flex flex-col items-center"
-              >
-                <div className="relative w-full h-[280px]">
-                  <Image
-                    src="/assets/images/fundamentals/anatomy_hand.png"
-                    alt="Tên Gọi Các Phần Của Tay"
-                    fill
-                    className="object-contain"
-                  />
-                  <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/75 text-white text-[10px] font-mono flex items-center gap-1 opacity-80 group-hover:opacity-100 transition shadow">
-                    <Maximize2 className="w-3 h-3 text-[#E2B743]" /> Đồ Hình (Phóng to)
-                  </div>
-                </div>
-                <span className="text-[11px] text-slate-700 mt-2 font-mono font-semibold text-center">
-                  Đồ Hình: Tên Gọi Các Phần Của Tay
-                </span>
-              </div>
-            </div>
-          </div>
-
           {/* Tam Thủ Cốt Lõi & Thế Võ Toàn Thân Chuẩn Mực */}
           <div className="glass-panel p-5 sm:p-6 rounded-2xl border border-[#3D291F] space-y-4">
-            <div className="flex items-center justify-between border-b border-[#3D291F] pb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#3D291F] pb-3">
               <div>
                 <h3 className="text-base sm:text-lg font-bold font-serif gold-gradient">
-                  Thủ Pháp Chuẩn Mực & Tư Thế Thị Phạm Hoàn Chỉnh
+                  Thủ Pháp Chuẩn Mực &amp; Tư Thế Thị Phạm Hoàn Chỉnh
                 </h3>
                 <p className="text-xs text-amber-200/70">
                   Thị phạm trực tiếp chuẩn xác theo từng đồ hình giải phẫu chi trên và chi dưới
                 </p>
               </div>
+              <button
+                onClick={() =>
+                  setZoomImg({
+                    src: "/assets/images/fundamentals/anatomy_hand.png",
+                    title: "Đồ Hình Giải Phẫu: Tên Gọi Các Phần Của Tay",
+                  })
+                }
+                className="self-start sm:self-auto text-xs px-3 py-1.5 rounded-xl bg-[#2A0E0A] border border-[#F5D06C]/30 text-[#F5D06C] hover:border-[#F5D06C] flex items-center gap-1.5 transition cursor-pointer"
+              >
+                <Maximize2 className="w-3.5 h-3.5" />
+                <span>Xem Sơ Đồ Tên Gọi Các Phần Của Tay</span>
+              </button>
             </div>
 
             {/* Selector Buttons for Core Postures (14 thế) */}
