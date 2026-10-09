@@ -152,7 +152,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
             }`}
           >
             <BookOpen className="w-4 h-4" />
-            Tàng Kinh Các (225 Trang)
+            Tàng Kinh Các Kinh Điển
           </button>
         </div>
 

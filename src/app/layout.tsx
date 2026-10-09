@@ -27,9 +27,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://phat-gia-vinh-xuan.pages.dev"),
-  title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+  title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học Kinh Điển",
   description:
-    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 13 chuyên đề kinh điển từ công trình 225 trang của GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
+    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và các chuyên đề kinh điển từ giáo trình chính thống của GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
   keywords: [
     "Phật Gia Vịnh Xuân",
     "Vịnh Xuân Quyền",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học Kinh Điển",
     description:
       "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
     url: "https://phat-gia-vinh-xuan.pages.dev",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+        alt: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học Kinh Điển",
       },
     ],
     type: "website",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học 225 Trang",
+    title: "Phật Gia Vịnh Xuân — Võ Đường Số & Di Sản Võ Học Kinh Điển",
     description:
       "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
     images: ["/og-image.png"],

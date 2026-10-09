@@ -155,7 +155,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               }`}
             >
               <span className="font-bold">Tất Cả 36 Bài</span>
-              <span className="text-[10px] opacity-75 font-mono">Trọn Bộ 225 Trang</span>
+              <span className="text-[10px] opacity-75 font-mono">Toàn Bộ 11 Phân Hệ</span>
             </button>
             {CONTENT_GROUPS.map((g) => (
               <button

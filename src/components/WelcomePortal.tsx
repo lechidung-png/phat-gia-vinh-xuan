@@ -89,7 +89,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
     },
     {
       id: "library" as NavTab,
-      title: "Tàng Kinh Các (225 Trang)",
+      title: "Tàng Kinh Các Kinh Điển",
       subtitle: "Toàn văn chuyên khảo học thuật",
       desc: "Lưu trữ toàn văn 7 chuyên đề lý thuyết kinh điển của GS.TS Y Khoa Nguyễn Mạnh Nhâm và ma trận phân loại 109 thế võ.",
       icon: BookOpen,
@@ -165,7 +165,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Võ Đường Số Phật Gia Vịnh Xuân
             </h1>
             <p className="text-base sm:text-xl text-amber-200/90 font-serif font-medium tracking-wide">
-              Không Gian Số Hóa & Khảo Cứu Toàn Thư 225 Trang Di Sản Võ Học Kinh Điển
+              Không Gian Số Hóa & Khảo Cứu Toàn Thư Di Sản Võ Học Kinh Điển
             </p>
           </div>
 
@@ -206,22 +206,22 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </div>
         </div>
 
-        {/* 4 Heritage Stats Pillars */}
+        {/* 4 Heritage Martial Stats Pillars */}
         <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#F5D06C]/20">
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">225</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Trang Giáo Trình Di Sản</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Phục chế toàn văn 100%</div>
-          </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
             <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">11 • 36</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Phân Hệ • Bài Học</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Đầy đủ Quyền & Binh Khí</div>
+            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Phân Hệ • Bài Quyền</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Quyền pháp, mộc nhân & binh khí</div>
           </div>
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
             <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">1.096</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Ảnh Phục Chế HD</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Bản 2× Retina nét đanh 280px</div>
+            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Động Tác Thị Phạm</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Phân thế chi tiết từng bước</div>
+          </div>
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
+            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">108</div>
+            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Chiêu Thức Liên Hoàn</div>
+            <div className="text-[10px] text-amber-200/70 mt-1">Đơn luyện & đối kháng chân truyền</div>
           </div>
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
             <div className="text-xl sm:text-3xl font-serif font-black text-[#10B981]">4</div>

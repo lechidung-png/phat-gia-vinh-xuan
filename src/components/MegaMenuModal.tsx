@@ -39,7 +39,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
     { id: "fundamentals" as NavTab, label: "Cơ Bản Công & Tấn Pháp", icon: Hand, desc: "Tam Thủ & Kiềm Dương Tấn", count: "14 Thủ pháp" },
     { id: "centerline" as NavTab, label: "Trục Tý Ngọ Tuyến", icon: Compass, desc: "Đạo trung lộ & 7 đại huyệt", count: "7 Huyệt đạo" },
     { id: "lineage" as NavTab, label: "Truyền Thừa & Triết Lý", icon: GitBranch, desc: "4 Thế hệ & Võ Sư Lê Đắc Kiên", count: "4 Thế hệ" },
-    { id: "library" as NavTab, label: "Tàng Kinh Các (225 Trang)", icon: BookOpen, desc: "Toàn văn 7 chuyên đề kinh điển", count: "225 Trang" },
+    { id: "library" as NavTab, label: "Tàng Kinh Các Kinh Điển", icon: BookOpen, desc: "Toàn văn 7 chuyên đề kinh điển", count: "Toàn Thư" },
   ];
 
   return (
@@ -116,7 +116,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
         <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-6 scrollbar-thin">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
-              <BookOpen className="w-3.5 h-3.5" /> Trọn Bộ 11 Đại Phân Hệ Giáo Trình (36 Bài Học • 225 Trang):
+              <BookOpen className="w-3.5 h-3.5" /> Trọn Bộ 11 Đại Phân Hệ Giáo Trình (36 Bài Học Toàn Thư):
             </div>
             <div className="relative w-full sm:w-64">
               <Search className="w-3.5 h-3.5 text-amber-200/60 absolute left-3 top-1/2 -translate-y-1/2" />
