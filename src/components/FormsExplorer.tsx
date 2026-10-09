@@ -130,62 +130,78 @@ export const FormsExplorer: React.FC<FormsExplorerProps> = ({
 
   return (
     <div className="space-y-6 sm:space-y-8 animate-fadeIn">
-      {/* 1. Header Banner & Form Selector */}
-      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#3D291F] relative overflow-hidden">
-        <div className="max-w-4xl space-y-3">
+      {/* 1. IMPRESSIVE MARTIAL HERO BANNER & 8 FORMS MATRIX SELECTOR (ZERO SCROLL) */}
+      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#E2B743]/30 relative overflow-hidden shadow-2xl">
+        {/* Background Subtle Watermark */}
+        <div className="absolute -top-8 -right-8 select-none pointer-events-none opacity-5 text-[180px] font-serif font-black text-[#E2B743] leading-none">
+          拳
+        </div>
+
+        <div className="relative z-10 max-w-4xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 text-xs font-bold uppercase tracking-widest">
-            <Swords className="w-3.5 h-3.5" /> Bách Khoa 7 Bài Quyền Chính Tông
+            <Swords className="w-3.5 h-3.5" /> Bách Khoa 7 Bài Quyền Chính Tông (1954 - 2012)
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold font-serif gold-gradient">
-            Tổng Thể 7 Bài Quyền Phật Gia Vịnh Xuân
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold font-serif gold-gradient leading-tight">
+            Hệ Thống 7 Bài Quyền Phật Gia Vịnh Xuân
           </h2>
-          <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-            Hệ thống quyền pháp hoàn chỉnh được phục chế toàn văn và đối soát 100% hình ảnh từ tác phẩm của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)</strong>. Thể hiện đầy đủ hàng chục động tác minh họa liên hoàn của từng bài quyền, kèm lời chỉ dẫn khẩu quyết và phân thế thực chiến.
+          <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed">
+            Hệ thống quyền pháp hoàn chỉnh được phục chế toàn văn và đối soát 100% hình ảnh từ công trình của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)</strong>. Thể hiện đầy đủ từng bước động tác liên hoàn, yếu lĩnh thân pháp, nhịp thở đan điền và phân thế thực chiến.
           </p>
         </div>
 
-        {/* Form Selector Horizontal Scroll Tabs */}
-        <div className="flex gap-2 sm:gap-3 mt-6 pt-5 border-t border-[#3D291F] overflow-x-auto pb-2 scrollbar-thin">
-          {fullFormsCatalog.map((form, idx) => {
-            const isSelected = form.id === currentFormId;
-            return (
-              <button
-                key={form.id}
-                onClick={() => handleSelectForm(form.id)}
-                className={`px-3.5 sm:px-4 py-3 rounded-2xl border text-left transition-all shrink-0 flex flex-col justify-between min-w-[200px] sm:min-w-[230px] group ${
-                  isSelected
-                    ? "bg-[#E2B743] text-black border-[#E2B743] shadow-xl shadow-[#E2B743]/20 font-bold"
-                    : "bg-[#20150F] text-slate-300 border-[#3D291F] hover:border-[#E2B743]/50 hover:bg-[#2A1C14]"
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider mb-1">
-                    <span className={isSelected ? "text-amber-950 font-bold" : "text-[#E2B743]"}>
-                      {idx === 0 ? "Khởi Thức" : `Bài Quyền ${idx}`}
+        {/* 8 FORMS MATRIX SELECTOR (2x4 Grid View: 100% Visible, No Horizontal Scroll) */}
+        <div className="relative z-10 mt-6 pt-5 border-t border-[#3D291F]">
+          <div className="flex items-center justify-between mb-3 text-xs text-amber-200/80">
+            <span className="font-bold uppercase tracking-wider text-[11px] text-[#E2B743] flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5" /> Bảng Danh Mục 8 Bài Quyền (Nhấp Để Chuyển Bài):
+            </span>
+            <span className="text-[11px] text-slate-400 font-mono">
+              Đang chọn: <strong className="text-[#E2B743]">{currentForm.name}</strong>
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
+            {fullFormsCatalog.map((form, idx) => {
+              const isSelected = form.id === currentFormId;
+              return (
+                <button
+                  key={form.id}
+                  onClick={() => handleSelectForm(form.id)}
+                  className={`p-3 sm:p-3.5 rounded-2xl border text-left transition-all flex flex-col justify-between group cursor-pointer relative overflow-hidden ${
+                    isSelected
+                      ? "bg-[#E2B743] text-black border-[#E2B743] shadow-xl shadow-[#E2B743]/25 font-bold ring-2 ring-[#E2B743]/60 scale-[1.02]"
+                      : "bg-[#180E09] text-slate-300 border-[#3D291F] hover:border-[#E2B743]/60 hover:bg-[#20150F]"
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider mb-1">
+                      <span className={isSelected ? "text-amber-950 font-extrabold" : "text-[#E2B743]"}>
+                        {idx === 0 ? "Khởi Thức" : `Bài Quyền 0${idx}`}
+                      </span>
+                      <span
+                        className={`px-1.5 py-0.5 rounded text-[9px] ${
+                          isSelected ? "bg-black/20 text-black font-bold" : "bg-black/40 text-slate-400"
+                        }`}
+                      >
+                        {form.scanPages}
+                      </span>
+                    </div>
+                    <h4 className={`text-xs sm:text-sm font-bold line-clamp-1 ${isSelected ? "text-black" : "text-white"}`}>
+                      {form.name}
+                    </h4>
+                  </div>
+                  <div className={`mt-2 pt-2 border-t flex items-center justify-between text-[11px] ${isSelected ? "border-black/15" : "border-[#3D291F]"}`}>
+                    <span className={`line-clamp-1 ${isSelected ? "text-amber-950 font-semibold" : "text-slate-400"}`}>
+                      {form.demonstrators.split("(")[0]?.trim()}
                     </span>
-                    <span
-                      className={`px-1.5 py-0.5 rounded text-[9px] ${
-                        isSelected ? "bg-black/20 text-black font-bold" : "bg-black/40 text-slate-400"
-                      }`}
-                    >
-                      {form.scanPages}
+                    <span className="font-mono font-bold text-[10px] shrink-0 ml-1">
+                      {form.id === "bai-to" ? "9 Bước" : `${form.techniqueCount} Thế`}
                     </span>
                   </div>
-                  <h4 className={`text-xs sm:text-sm font-bold line-clamp-1 ${isSelected ? "text-black" : "text-white"}`}>
-                    {form.name}
-                  </h4>
-                </div>
-                <div className="mt-2 pt-2 border-t border-black/10 flex items-center justify-between text-[11px]">
-                  <span className={isSelected ? "text-amber-950 font-medium" : "text-slate-400"}>
-                    {form.demonstrators.split("(")[0]?.trim()}
-                  </span>
-                  <span className="font-mono font-bold text-[10px]">
-                    {form.id === "bai-to" ? "9 Bước" : `${form.techniqueCount} Thế`}
-                  </span>
-                </div>
-              </button>
-            );
-          })}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </section>
 

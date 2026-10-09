@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Header, NavTab } from "@/components/Header";
+import { WelcomePortal } from "@/components/WelcomePortal";
 import { FormsExplorer } from "@/components/FormsExplorer";
 import { FundamentalHandFootAtlas } from "@/components/FundamentalHandFootAtlas";
 import { KnowledgeHub } from "@/components/KnowledgeHub";
@@ -15,12 +16,26 @@ import { TECHNIQUES, Technique } from "@/data/techniques";
 import { FORMS_CATALOG, getTechniquesByForm, TIEU_NIEM_DAU_TECHNIQUES } from "@/data/all_7_forms";
 
 export default function Home() {
-  // Mặc định mở 7 Bài Quyền Chính Tông để người xem thấy ngay bức tranh tổng thể hào hùng của môn phái
-  const [activeTab, setActiveTab] = useState<NavTab>("forms");
+  // Mặc định mở Trang Chủ Chào Mừng (Welcome Portal) hoành tráng & ấn tượng
+  const [activeTab, setActiveTab] = useState<NavTab>("welcome");
   const [selectedFormId, setSelectedFormId] = useState<string>("01-tieu-niem-dau");
   const [selectedTechnique, setSelectedTechnique] = useState<Technique>(TIEU_NIEM_DAU_TECHNIQUES[0]);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
+
+  const handleNavigateTab = (tab: NavTab, formId?: string) => {
+    setActiveTab(tab);
+    if (formId) {
+      setSelectedFormId(formId);
+      const matchTechs = getTechniquesByForm(formId, TECHNIQUES);
+      if (matchTechs.length > 0) {
+        setSelectedTechnique(matchTechs[0]);
+      }
+    }
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const handleSelectTechnique = (tech: Technique) => {
     setSelectedTechnique(tech);
@@ -69,6 +84,14 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main suppressHydrationWarning className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        {/* Tab 0: Trang Chủ Chào Mừng (Welcome Portal & Di Sản Võ Học) */}
+        {activeTab === "welcome" && (
+          <WelcomePortal
+            onNavigateTab={handleNavigateTab}
+            openSearch={() => setIsSearchOpen(true)}
+            openStanceGuide={() => setIsStanceGuideOpen(true)}
+          />
+        )}
         {/* Tab 1: 7 Bài Quyền Chính Tông (Bảng Tổng Thể Hàng Chục Động Tác & Sàn Tập) */}
         {activeTab === "forms" && (
           <FormsExplorer
