@@ -121,16 +121,29 @@ export const LineageTree: React.FC = () => {
           </h3>
         </div>
 
-        {/* Node 1: Sư Tổ Nguyễn Tế Công */}
-        <div className="glass-panel p-6 rounded-2xl border border-[#E2B743]/40 relative group hover:border-[#E2B743] transition-all shadow-xl">
+        {/* Node 1: Sư Tổ Nguyễn Tế Công (Yuen Chai Wan) */}
+        <div className="glass-panel p-6 rounded-2xl border-2 border-[#E2B743]/60 relative group hover:border-[#E2B743] transition-all shadow-xl bg-gradient-to-br from-[#1C120B] to-[#140C08]">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#E2B743]/20 to-[#A67C1E]/40 border-2 border-[#E2B743] flex items-center justify-center text-[#E2B743] font-serif font-black text-3xl shadow-xl shrink-0">
-              祖
+            <div className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/assets/images/historical/nguyen_te_cong.png"
+                alt="Sư Tổ Nguyễn Tế Công (Yuen Chai Wan) (1877 - 1959)"
+                fill
+                sizes="(max-width: 640px) 128px, 160px"
+                className="object-cover object-top"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-1.5 inset-x-1 text-center">
+                <span className="text-[10px] font-mono font-bold text-[#E2B743] bg-black/85 px-2 py-0.5 rounded-full border border-[#E2B743]/40 shadow">
+                  Sư Tổ Khai Sơn
+                </span>
+              </div>
             </div>
             <div className="space-y-2 text-center sm:text-left flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h4 className="text-xl font-bold font-serif text-white">Sư Tổ Nguyễn Tế Công</h4>
-                <span className="text-xs px-2.5 py-0.5 rounded bg-[#E2B743]/20 text-[#E2B743] font-mono">1877 – 1959</span>
+                <h4 className="text-xl sm:text-2xl font-bold font-serif text-white">Sư Tổ Nguyễn Tế Công (Yuen Chai Wan)</h4>
+                <span className="text-xs px-2.5 py-0.5 rounded bg-[#20150F] text-[#E2B743] font-mono border border-[#E2B743]/40 font-bold">1877 – 1959</span>
               </div>
               <p className="text-xs text-[#E2B743] font-semibold uppercase tracking-wider">
                 Sư Tổ Vịnh Xuân Việt Nam (Nguyên quán: Phật Sơn, Quảng Đông)
