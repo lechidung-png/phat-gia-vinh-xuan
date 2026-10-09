@@ -287,7 +287,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           <div className="relative shrink-0">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-3xl overflow-hidden border-2 border-[#E2B743]/60 shadow-xl shadow-amber-950/50 relative bg-[#140C08]">
               <Image
-                src="/assets/images/lineage/vo_su_le_dac_kien.jpg"
+                src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
                 alt="Võ sư Lê Đắc Kiên"
                 fill
                 sizes="(max-width: 640px) 128px, 160px"
