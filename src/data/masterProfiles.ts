@@ -269,69 +269,55 @@ export const MASTER_PROFILES: MasterProfile[] = [
   },
 
   // ============================================================================
-  // ĐỜI THỨ TƯ: VÕ SƯ LÊ ĐẮC KIÊN (SINH 03/11/1968)
+  // ĐỜI THỨ TƯ: VÕ SƯ LÊ ĐẮC KIÊN (1968)
   // ============================================================================
   {
     id: "le-dac-kien",
     generation: 4,
-    generationLabel: "Thế Hệ Nòng Cốt Kế Thừa (Thế Hệ Thứ Tư)",
+    generationLabel: "Thế Hệ Kế Thừa",
     name: "Lê Đắc Kiên",
-    period: "Sinh 03/11/1968",
+    period: "1968",
     birthYear: 1968,
-    roleTitle: "Doanh nhân & Nhà quản lý cấp cao VNPT • Võ Sư Nòng Cốt Phật Gia Vịnh Xuân",
+    roleTitle: "Cán bộ quản lý tại VNPT • Người phụ trách Võ đường Huỳnh Thúc Kháng",
     hometown: "Hà Nội, Việt Nam",
     portrait: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
     greetingPhoto: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    coreQuote: "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
-    quoteContext: "Tâm pháp truyền thừa của Võ sư Lê Đắc Kiên gửi tới môn sinh tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
+    coreQuote: "",
+    quoteContext: "",
     historicalLocations: [
       "Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT)",
-      "Võ Đường Huỳnh Thúc Kháng (Hà Nội)",
-      "Sàn tập Phật Gia Vịnh Xuân Hà Nội"
+      "Võ Đường Huỳnh Thúc Kháng (Hà Nội)"
     ],
     lineagePredecessor: "GS.TS Y Khoa Nguyễn Mạnh Nhâm",
     lineageSuccessors: [
-      "Các môn sinh và người tập tại Võ đường Huỳnh Thúc Kháng"
+      "Người tập tại Võ đường Huỳnh Thúc Kháng"
     ],
     summary:
-      "Ông Lê Đắc Kiên (sinh ngày 03/11/1968) là doanh nhân, nhà quản lý cấp cao tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), đồng thời là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (2012). Tại Võ đường Huỳnh Thúc Kháng, ông kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, chia sẻ tâm pháp và khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia.",
+      "Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của GS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
     sections: [
       {
-        title: "1. Sự Nghiệp Quản Trị Doanh Nghiệp & Lãnh Đạo Viễn Thông",
-        subtitle: "Nhà quản trị cấp cao tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT)",
+        title: "1. Quá Trình Công Tác & Quản Lý Doanh Nghiệp",
+        subtitle: "Cán bộ quản lý tại Tập đoàn VNPT",
         content: [
-          "Ông Lê Đắc Kiên sinh ngày 03/11/1968, là một doanh nhân và nhà quản lý cấp cao gắn bó sâu sắc với sự phát triển của Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT).",
-          "Hiện nay, ông đảm nhiệm trọng trách Thành viên Hội đồng Thành viên Tập đoàn VNPT, đồng thời là Chủ tịch Công ty TNHH MTV Cáp quang Focal và từng giữ chức Phó Tổng Giám đốc Tổng công ty VNPT VinaPhone.",
-          "Trước đó, ông đã trải qua các vị trí lãnh đạo quan trọng: Phó Tổng Giám đốc Tổng công ty Hạ tầng mạng (VNPT - Net) và Trưởng ban Đầu tư Tập đoàn VNPT. Tư duy quản trị chiến lược hiện đại, sự nghiêm cẩn và kỷ luật doanh nghiệp quy mô lớn chính là nền tảng giúp ông tiếp cận võ học một cách khoa học, chuẩn mực và thực chất."
+          "Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT).",
+          "Trong quá trình công tác, ông từng đảm nhiệm các chức vụ: Thành viên Hội đồng Thành viên Tập đoàn VNPT, Chủ tịch Công ty TNHH MTV Cáp quang Focal, Phó Tổng Giám đốc Tổng công ty VNPT VinaPhone, Phó Tổng Giám đốc Tổng công ty Hạ tầng mạng (VNPT - Net), Trưởng ban Đầu tư Tập đoàn VNPT."
         ],
-        keyHighlight: "Sự kết hợp hài hòa giữa tư duy quản trị chiến lược của nhà lãnh đạo viễn thông và chiều sâu tâm pháp Thiền võ giúp định hình phương pháp rèn luyện khoa học, đĩnh đạc và chuẩn xác."
+        keyHighlight: "Tác phong nghiêm túc, chuẩn mực của một cán bộ quản lý doanh nghiệp."
       },
       {
-        title: "2. Cơ Duyên Võ Học & Gần Ba Thập Kỷ Kề Cận GS.TS Nguyễn Mạnh Nhâm",
-        subtitle: "Một trong 11 Võ sư nòng cốt được ghi danh trong tác phẩm kinh điển 2012",
+        title: "2. Quá Trình Tập Luyện & Hướng Dẫn Võ Thuật",
+        subtitle: "Người phụ trách tập luyện tại Võ đường Huỳnh Thúc Kháng",
         content: [
-          "Song hành cùng sự nghiệp doanh nghiệp, Võ sư Lê Đắc Kiên bén duyên sâu sắc với Phật Gia Vịnh Xuân từ thuở thanh xuân, may mắn được trực tiếp thọ giáo và kề cận bên cạnh GS.TS Y khoa Nguyễn Mạnh Nhâm trong suốt gần ba mươi năm.",
-          "Với tư duy logic và sự bền bỉ, ông lĩnh hội trọn vẹn từng chi tiết vi giải phẫu: từ góc mở của mũi chân Kiềm Dương Tấn, cách khép chỏ bảo vệ mạng sườn đến cảm nhận thính kình đan điền trong từng nhịp thở.",
-          "Ông là một trong 11 Võ sư nòng cốt kỳ cựu được GS.TS Nguyễn Mạnh Nhâm tin tưởng ghi danh chính thức trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (2012) — ghi nhận công sức đóng góp thị phạm chuẩn xác cho hệ thống tư liệu ảnh của giáo trình."
+          "Ông theo học GS.TS Y khoa Nguyễn Mạnh Nhâm trong nhiều năm và là một trong các võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' do Nhà xuất bản Văn Hóa Thông Tin phát hành năm 2012.",
+          "Hiện nay, ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội), kiên trì gìn giữ các bài tập cơ bản và phương pháp rèn luyện do thầy truyền dạy."
         ],
-        keyHighlight: "Hơn 20 năm gắn bó võ học, Võ sư Lê Đắc Kiên luôn kiên trì giữ đúng từng khuôn đòn chuẩn mực của sách gốc, tuyệt đối không lai tạp hay biến tướng."
-      },
-      {
-        title: "3. Tinh Thần Võ Đường Huỳnh Thúc Kháng & Triết Lý Thực Chứng",
-        subtitle: "Chia sẻ có chọn lọc — Khai mở linh giác, rèn giũa thân tâm",
-        content: [
-          "Là một nhà quản trị doanh nghiệp bận rộn, việc chia sẻ võ học của Võ sư Lê Đắc Kiên tại Võ đường Huỳnh Thúc Kháng mang tính chất truyền lửa có chọn lọc cho số ít người tập có duyên và thực sự cầu thị, rèn luyện theo đúng tinh thần Thiền Võ Phật Gia.",
-          "Mỗi buổi tập đều bắt đầu bằng nghi thức Bão Quyền Lễ: 'Chân chưa vững thì chưa học đấm, tâm chưa tĩnh thì chưa học phản đòn.' Ông chú trọng rèn luyện Tấn Kiềm Dương và bài tập Xoay Cổ Tay để người tập phục hồi sức khỏe, cân bằng tâm lý và bồi đắp bản lĩnh điềm đạm.",
-          "Đặc biệt, ông luôn dặn dò khẩu quyết thức tỉnh: 'Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.' Với ông, tư liệu hay giáo trình số hóa chỉ là tấm bản đồ chỉ đường; chỉ khi người học trực tiếp bước lên sàn tập, đổ mồ hôi và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành công phu thực chứng."
-        ],
-        keyHighlight: "Khẩu quyết 'Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày' của Võ sư Kiên là kim chỉ nam nhắc nhở người học về giá trị khổ luyện thực tế."
+        keyHighlight: "Tập trung gìn giữ kỹ thuật cơ bản và rèn luyện sức khỏe thực chất, giản dị."
       }
     ],
     keyContributions: [
-      "Thành viên Hội đồng Thành viên Tập đoàn VNPT, Chủ tịch Công ty Cáp quang Focal.",
-      "Một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (2012).",
-      "Người phụ trách và truyền dạy tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
-      "Gìn giữ phương pháp sư phạm y võ chuẩn xác, khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia."
+      "Cán bộ quản lý cấp cao tại Tập đoàn VNPT.",
+      "Được ghi nhận trong tác phẩm 'Phật Gia Vịnh Xuân Quyền' (2012).",
+      "Phụ trách hướng dẫn tập luyện tại Võ đường Huỳnh Thúc Kháng."
     ]
   }
 ];

@@ -339,7 +339,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             <div className="w-48 h-60 sm:w-60 sm:h-76 md:w-72 md:h-92 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shadow-amber-950/80 relative bg-[#140C08] group">
               <Image
                 src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                alt="Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
+                alt="Võ sư Lê Đắc Kiên - Phụ trách Võ đường Huỳnh Thúc Kháng"
                 fill
                 sizes="(max-width: 640px) 192px, (max-width: 768px) 240px, 288px"
                 className="object-cover object-top group-hover:scale-105 transition-all duration-500"
@@ -347,9 +347,9 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               />
             </div>
 
-            <div className="px-3.5 py-1.5 rounded-xl bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
-              <Award className="w-3.5 h-3.5" />
-              20 Năm Võ Nghiệp
+            <div className="px-3.5 py-1.5 rounded-xl bg-[#20150F] text-amber-200 border border-[#E2B743]/50 text-xs font-semibold shadow-md font-mono flex items-center gap-1.5">
+              <Award className="w-3.5 h-3.5 text-[#E2B743]" />
+              Võ Đường Huỳnh Thúc Kháng
             </div>
           </div>
 
@@ -357,17 +357,20 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           <div className="space-y-3 text-center lg:text-left flex-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-900/30 border border-amber-500/30 text-amber-300 text-xs font-semibold">
               <Award className="w-3.5 h-3.5 text-[#E2B743]" />
-              Võ Sư Lê Đắc Kiên • Chủ Nhiệm Võ Đường Huỳnh Thúc Kháng
+              Võ Sư Lê Đắc Kiên • Phụ trách Võ Đường Huỳnh Thúc Kháng
             </div>
 
             <blockquote className="font-serif italic text-base sm:text-lg lg:text-xl text-amber-100 font-semibold leading-relaxed">
               &ldquo;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&rdquo;
             </blockquote>
+            <p className="text-[11px] text-amber-200/70 font-mono italic">
+              — Khẩu quyết quyền lý truyền thừa • Phật Gia Vịnh Xuân
+            </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs text-amber-200/70">
-              <span>Học Trò Đời Thứ Tư</span>
+              <span>Sinh năm 1968</span>
               <span>•</span>
-              <span>Kế Thừa Tinh Hoa Phật Gia Vịnh Xuân</span>
+              <span>Học trò GS.TS Nguyễn Mạnh Nhâm</span>
               <span>•</span>
               <button
                 onClick={() => onNavigateTab("lineage")}

@@ -736,52 +736,52 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q20",
     quote: "Trong cái động tột cùng có cái tĩnh sâu xa; trong cái mềm mại như nước ẩn chứa kình lực xuyên thấu như sấm sét.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Võ Đường Huỳnh Thúc Kháng • Đúc kết tâm pháp",
+    author: "Phật Gia Vịnh Xuân",
+    roleOrSource: "Tông chỉ môn phái • Thiền võ nhất như",
     category: "philosophy",
-    context: "Thiền võ nhất như: Giữ tâm tĩnh lặng giữa muôn trùng bão táp đối kháng.",
+    context: "Giữ tâm tĩnh lặng và tập trung trong từng động tác.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q21",
     quote: "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Tâm đắc truyền thừa • Võ đường Huỳnh Thúc Kháng",
+    author: "Khẩu Quyết Quyền Lý",
+    roleOrSource: "Phật Gia Vịnh Xuân • Nguyên lý Lai Lưu Khứ Tống",
     category: "philosophy",
-    context: "Lai lưu khứ tống, suất thủ trực xung: Hóa giải xung đột bằng tâm thế mềm mại, nhu hòa mà kiên định.",
+    context: "Lai lưu khứ tống: Hóa giải xung đột bằng tâm thế mềm mại, nhu hòa mà kiên định.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q22",
     quote: "Võ đạo khởi đầu từ cái chào cung kính và kết thúc cũng bằng sự tôn kính. Bão quyền lễ không chỉ là nghi thức, mà là tâm thế khiêm nhường, lấy tĩnh chế động trước mọi nghịch cảnh.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Khẩu truyền bái tổ • Võ đường Huỳnh Thúc Kháng",
+    author: "Lễ Nghi Võ Đạo",
+    roleOrSource: "Phật Gia Vịnh Xuân • Nghi thức Bão Quyền Lễ",
     category: "mindset",
     context: "Nghi lễ bão quyền biểu thị tay trái dựng chưởng là đức nhân từ, tay phải nắm quyền là ý chí dũng mãnh, lấy nhân chế cương.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q23",
-    quote: "Học Vịnh Xuân là học cách lắng nghe. Lắng nghe hơi thở, lắng nghe kình lực của đối phương qua từng centimet xúc giác, và trên hết là lắng nghe chính tâm mình.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Đúc kết thính kình • Võ đường Huỳnh Thúc Kháng",
+    quote: "Học Vịnh Xuân là học cách lắng nghe. Lắng nghe hơi thở, lắng nghe kình lực của đối phương qua từng điểm tiếp xúc xúc giác, và trên hết là lắng nghe chính tâm mình.",
+    author: "Yếu Lĩnh Thính Kình",
+    roleOrSource: "Phật Gia Vịnh Xuân • Phương pháp Niêm Thủ",
     category: "strategy",
-    context: "Thính kình và linh giác: Khi tâm an tịnh, xúc giác sẽ trở thành đôi mắt thứ hai nhạy bén không độ trễ.",
+    context: "Thính kình và linh giác: Cảm nhận lực và phương hướng bằng điểm tiếp xúc.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q24",
-    quote: "Đứng tấn Kiềm Dương không phải là đứng yên thụ động, mà là thế đứng đàn hồi như lò xo thép nén chặt, sẵn sàng chuyển hóa mọi xung lực thành bộ pháp linh hoạt.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Yếu lĩnh tấn pháp • Võ đường Huỳnh Thúc Kháng",
+    quote: "Đứng tấn Kiềm Dương không phải là đứng yên thụ động, mà là thế đứng đàn hồi như lò xo nén, sẵn sàng chuyển hóa xung lực thành bộ pháp linh hoạt.",
+    author: "Yếu Lĩnh Tấn Pháp",
+    roleOrSource: "Phật Gia Vịnh Xuân • Nhị Tự Kiềm Dương Tấn",
     category: "strategy",
-    context: "Định hình trục Tý Ngọ và kết cấu vòm nêm kiềm dương bảo toàn tuyệt đối vùng hạ bàn.",
+    context: "Định hình trục Tý Ngọ và kết cấu bảo toàn vùng hạ bàn.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q25",
@@ -796,12 +796,12 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q26",
     quote: "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
-    author: "Võ sư Lê Đắc Kiên",
-    roleOrSource: "Võ Đường Huỳnh Thúc Kháng • Đúc kết tâm pháp",
+    author: "Võ Đường Huỳnh Thúc Kháng",
+    roleOrSource: "Nhắc nhở người tập • Phật Gia Vịnh Xuân",
     category: "mindset",
-    context: "Số hóa tri thức là ngọn đèn lưu giữ di sản, nhưng công phu võ học bắt buộc phải rèn giũa bằng mồ hôi và khổ luyện thực chứng hằng ngày.",
+    context: "Kiến thức có thể tra cứu trên hệ thống số hóa, nhưng sự thuần thục bắt buộc phải qua tập luyện thực tế mỗi ngày.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Võ đường Huỳnh Thúc Kháng"
   }
 ];
 

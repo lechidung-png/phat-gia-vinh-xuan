@@ -188,24 +188,32 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                 <span className="inline-flex items-center gap-1 text-amber-200 font-medium">
                   <MapPin className="w-3.5 h-3.5 text-[#F5D06C]" /> {master.hometown}
                 </span>
-                <span>•</span>
-                <span className="inline-flex items-center gap-1 text-slate-300">
-                  <Calendar className="w-3.5 h-3.5 text-emerald-400" /> Sinh năm {master.birthYear}
-                </span>
+                {master.generation !== 4 && (
+                  <>
+                    <span>•</span>
+                    <span className="inline-flex items-center gap-1 text-slate-300">
+                      <Calendar className="w-3.5 h-3.5 text-emerald-400" /> Sinh năm {master.birthYear}
+                    </span>
+                  </>
+                )}
               </div>
 
               {/* Core Quote Box */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-[#140C08]/90 border border-[#F5D06C]/40 space-y-2">
-                <div className="flex items-start gap-3">
-                  <Quote className="w-5 h-5 text-[#F5D06C] shrink-0 mt-1 rotate-180" />
-                  <blockquote className="text-base sm:text-lg font-serif font-bold text-white italic leading-relaxed">
-                    &ldquo;{master.coreQuote}&rdquo;
-                  </blockquote>
+              {master.coreQuote && master.coreQuote.trim().length > 0 && (
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#140C08]/90 border border-[#F5D06C]/40 space-y-2">
+                  <div className="flex items-start gap-3">
+                    <Quote className="w-5 h-5 text-[#F5D06C] shrink-0 mt-1 rotate-180" />
+                    <blockquote className="text-base sm:text-lg font-serif font-bold text-white italic leading-relaxed">
+                      &ldquo;{master.coreQuote}&rdquo;
+                    </blockquote>
+                  </div>
+                  {master.quoteContext && (
+                    <p className="text-[11px] text-amber-200/70 font-mono pl-8 italic">
+                      — {master.quoteContext}
+                    </p>
+                  )}
                 </div>
-                <p className="text-[11px] text-amber-200/70 font-mono pl-8 italic">
-                  — {master.quoteContext}
-                </p>
-              </div>
+              )}
 
               {/* Historical Locations Pills */}
               <div className="space-y-1.5 pt-1">

@@ -47,10 +47,10 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
       "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
     explanation:
       "Khẩu quyết 'Lai lưu khứ tống, suất thủ trực xung' dạy người học võ không dùng sức chống sức. Khi địch xông tới thì mượn đà dẫn dắt, khi địch rút lui thì đưa tiễn phóng kình. Trong đối nhân xử thế, đó là nghệ thuật hóa giải xung đột bằng tâm thế mềm mại, nhu hòa mà kiên định.",
-    source: "Tâm đắc truyền thừa • Võ sư Lê Đắc Kiên (Võ đường Huỳnh Thúc Kháng)",
+    source: "Khẩu quyết quyền lý • Phật Gia Vịnh Xuân",
     icon: <Feather className="w-5 h-5 text-amber-400" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "ty-ngo-tuyen",
@@ -92,7 +92,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Phật Gia Vịnh Xuân Quyền • Tông chỉ môn phái",
     icon: <Sparkles className="w-5 h-5 text-amber-300" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "tan-kiem-duong-tam-phap",
@@ -106,7 +106,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Yếu lĩnh hạ bàn Kiềm Dương Tấn",
     icon: <ShieldCheck className="w-5 h-5 text-amber-500" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Thế chào Bão Quyền Lễ • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "so-hoa-thuc-chung",
@@ -116,8 +116,8 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     quote:
       "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
     explanation:
-      "Tàng thư di sản võ học lưu trữ trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
-    source: "Đúc kết tâm pháp • Võ sư Lê Đắc Kiên",
+      "Tàng thư di sản võ học lưu trữ trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; người tập phải trực tiếp bước lên sàn tập, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
+    source: "Ghi nhận từ người tập • Võ đường Huỳnh Thúc Kháng",
     icon: <Layers className="w-5 h-5 text-[#E2B743]" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
     imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
@@ -396,31 +396,24 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-[#10B981]" /> Sinh 03/11/1968
+                  <Clock className="w-3.5 h-3.5 text-[#10B981]" /> Sinh năm 1968
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Users className="w-3.5 h-3.5 text-sky-400" /> Quản lý cấp cao VNPT • Học trò GS.TS Nguyễn Mạnh Nhâm
+                  <Users className="w-3.5 h-3.5 text-sky-400" /> Cán bộ quản lý tại VNPT • Học trò GS.TS Nguyễn Mạnh Nhâm
                 </span>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Là doanh nhân, nhà quản lý cấp cao tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), đồng thời là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia.
+                Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của GS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong tác phẩm <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).
               </p>
-
-              <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">
-                <Quote className="w-4 h-4 text-[#E2B743] shrink-0 mt-0.5 rotate-180" />
-                <span>
-                  &ldquo;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&rdquo;
-                </span>
-              </div>
 
               <div className="pt-2">
                 <button
                   onClick={() => setSelectedMasterId("le-dac-kien")}
                   className="px-4 py-2 rounded-xl bg-[#20150F] hover:bg-[#2F1D14] border border-[#E2B743]/50 hover:border-[#E2B743] text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
                 >
-                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <span>Xem thông tin chi tiết</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#E2B743] group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -430,7 +423,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
 
       </div>
 
-      {/* 3. Phân Hệ: Triết Lý Sâu Xa Của Vịnh Xuân & Tâm Đạo Võ Sư Lê Đắc Kiên */}
+      {/* 3. Phân Hệ: Triết Lý Sâu Xa Của Vịnh Xuân */}
       <section className="glass-panel p-6 sm:p-10 rounded-3xl border border-[#3D291F] space-y-8 bg-gradient-to-b from-[#180E09] to-[#0F0805] shadow-2xl">
         <div className="text-center space-y-2 max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 text-xs font-bold uppercase tracking-wider">
@@ -440,7 +433,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
             Triết Lý Sâu Xa Của Phật Gia Vịnh Xuân
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Những đúc kết tâm huyết về đạo học, giải phẫu, chuyển hóa nội kình và nhân sinh quan từ Võ sư Lê Đắc Kiên và các bậc danh sư tiền bối.
+            Những đúc kết tâm huyết về đạo học, giải phẫu, chuyển hóa nội kình và nhân sinh quan từ các bậc danh sư tiền bối của môn phái.
           </p>
         </div>
 
@@ -489,7 +482,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <div className="relative w-28 h-36 sm:w-32 sm:h-40 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-xl mx-auto lg:mx-0 bg-[#0F0805]">
                 <Image
                   src={activeQuote.image || "/assets/images/instructors/vo_su_le_dac_kien.jpg"}
-                  alt={activeQuote.imageCaption || "Võ sư Lê Đắc Kiên"}
+                  alt={activeQuote.imageCaption || "Minh triết Phật Gia Vịnh Xuân"}
                   fill
                   sizes="130px"
                   className="object-cover object-top transition-all duration-300"
@@ -497,13 +490,13 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               </div>
               <div className="space-y-0.5">
                 <h5 className="font-bold text-white text-sm font-serif">
-                  Võ Sư Lê Đắc Kiên
+                  Phật Gia Vịnh Xuân
                 </h5>
                 <p className="text-[11px] text-[#E2B743] font-mono">
                   Võ Đường Huỳnh Thúc Kháng
                 </p>
                 <span className="text-[10px] text-amber-200/70 block font-mono">
-                  Phật Gia Vịnh Xuân
+                  Gìn Giữ &amp; Trao Truyền
                 </span>
               </div>
             </div>
