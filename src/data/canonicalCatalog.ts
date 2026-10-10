@@ -61,7 +61,7 @@ export const CONTENT_GROUPS: ContentGroup[] = [
     "id": "thong-tin-sach",
     "order": 1,
     "name": "Thông Tin & Khai Môn",
-    "desc": "Xuất bản, tác giả, lời giới thiệu, mục lục và thay lời tựa của sách.",
+    "desc": "Xuất bản, tác giả, lời giới thiệu và thay lời tựa của sách.",
     "pages": "Trang 1 – 9",
     "icon": "BookOpen"
   },

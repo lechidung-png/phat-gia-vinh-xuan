@@ -20,7 +20,6 @@ interface HeaderProps {
   setActiveTab: (tab: NavTab) => void;
   openSearch: () => void;
   openStanceGuide: () => void;
-  openMegaMenu?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -28,7 +27,6 @@ export const Header: React.FC<HeaderProps> = ({
   setActiveTab,
   openSearch,
   openStanceGuide,
-  openMegaMenu,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -92,19 +90,6 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Right Action Icons: Search + Stance Guide + Mobile Menu Toggle */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
 
-          {/* Mega Menu Trigger (Chỉ hiển thị từ tablet md trở lên) */}
-          {openMegaMenu && (
-            <button
-              onClick={openMegaMenu}
-              title="Mục lục toàn thư môn phái"
-              aria-label="Mục lục toàn thư môn phái"
-              className="hidden md:flex items-center gap-1.5 min-h-[40px] px-3 py-2 rounded-xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 text-slate-300 hover:text-white transition-all text-xs cursor-pointer shadow-inner"
-            >
-              <Menu className="w-4 h-4 text-[#E2B743]" />
-              <span className="text-xs text-slate-300 font-medium">Mục Lục</span>
-            </button>
-          )}
-
           {/* Quick Stance Guide Button (Chỉ hiển thị từ tablet md trở lên) */}
           <button
             onClick={openStanceGuide}
@@ -144,40 +129,21 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile / Tablet Dropdown Menu Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#180E09] border-b border-[#3D291F] px-4 py-3.5 space-y-3 shadow-2xl animate-fadeIn">
-          {/* 2 Tiện ích Quick-Access trên Mobile (Mục Lục & Quy Chuẩn Tấn) */}
-          <div className="grid grid-cols-2 gap-2">
-            {openMegaMenu && (
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  openMegaMenu();
-                }}
-                className="p-2.5 rounded-xl bg-[#F5D06C]/10 border border-[#F5D06C]/30 text-amber-200 hover:text-white flex items-center gap-2 transition cursor-pointer text-left"
-                aria-label="Mở mục lục toàn cảnh"
-              >
-                <Menu className="w-4 h-4 text-[#F5D06C] shrink-0" />
-                <div className="min-w-0">
-                  <div className="text-xs font-bold text-[#F5D06C] truncate">Mục Lục Toàn Thư</div>
-                  <div className="text-[10px] text-amber-200/60 truncate">7 Trụ Cột &amp; 11 Phân Hệ</div>
-                </div>
-              </button>
-            )}
-
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                openStanceGuide();
-              }}
-              className="p-2.5 rounded-xl bg-[#10B981]/10 border border-[#10B981]/30 text-emerald-200 hover:text-white flex items-center gap-2 transition cursor-pointer text-left"
-              aria-label="Mở quy chuẩn Tấn Kiềm Dương"
-            >
-              <ShieldCheck className="w-4 h-4 text-[#10B981] shrink-0" />
-              <div className="min-w-0">
-                <div className="text-xs font-bold text-emerald-400 truncate">Quy Chuẩn Tấn</div>
-                <div className="text-[10px] text-emerald-200/60 truncate">Kiềm Dương Chân Hẹp</div>
-              </div>
-            </button>
-          </div>
+          {/* Tiện ích Quick-Access trên Mobile (Quy Chuẩn Tấn) */}
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              openStanceGuide();
+            }}
+            className="w-full p-2.5 rounded-xl bg-[#10B981]/10 border border-[#10B981]/30 text-emerald-200 hover:text-white flex items-center gap-2.5 transition cursor-pointer text-left"
+            aria-label="Mở quy chuẩn Tấn Kiềm Dương"
+          >
+            <ShieldCheck className="w-4 h-4 text-[#10B981] shrink-0" />
+            <div className="min-w-0">
+              <div className="text-xs font-bold text-emerald-400 truncate">Quy Chuẩn Tấn Kiềm Dương</div>
+              <div className="text-[10px] text-emerald-200/60 truncate">Định hình trục thân &amp; chân hẹp chuẩn mực</div>
+            </div>
+          </button>
 
           <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
             Danh Mục 5 Phân Hệ Võ Học

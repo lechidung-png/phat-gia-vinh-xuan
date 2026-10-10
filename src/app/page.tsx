@@ -12,7 +12,6 @@ import { LineageTree } from "@/components/LineageTree";
 import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { StanceCheckerModal } from "@/components/StanceCheckerModal";
-import { MegaMenuModal } from "@/components/MegaMenuModal";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { TECHNIQUES, Technique } from "@/data/techniques";
 import { resolveLessonId } from "@/lib/lessonResolver";
@@ -29,7 +28,6 @@ export default function Home() {
   const [initialMotionIndex, setInitialMotionIndex] = useState<number | undefined>(undefined);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
-  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
   // Đọc query parameters từ URL khi mở trang (hỗ trợ liên kết chia sẻ)
   useEffect(() => {
@@ -213,7 +211,6 @@ export default function Home() {
         setActiveTab={setActiveTab}
         openSearch={() => setIsSearchOpen(true)}
         openStanceGuide={() => setIsStanceGuideOpen(true)}
-        openMegaMenu={() => setIsMegaMenuOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -288,12 +285,6 @@ export default function Home() {
         onClose={() => setIsStanceGuideOpen(false)}
       />
 
-      {/* Mục Lục Toàn Cảnh (Mega Menu Modal) */}
-      <MegaMenuModal
-        isOpen={isMegaMenuOpen}
-        onClose={() => setIsMegaMenuOpen(false)}
-        onNavigateTab={handleNavigateTab}
-      />
 
 
       {/* Modern Martial Footer */}
