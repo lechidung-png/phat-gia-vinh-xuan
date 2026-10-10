@@ -29,28 +29,40 @@ web/src/
 │   └── globals.css                  # Toàn bộ CSS biến số, bảng màu và animation
 │
 ├── components/                      # Các thành phần giao diện chuyên biệt
-│   ├── DojoPlayer3.tsx              # Trình phát động tác phân thế, lật gương, zoom 2x Retina & Zen Audio
-│   ├── CurriculumExplorer.tsx       # Bách khoa 18 bài quyền, 3 chế độ xem (Từng đòn, Ma trận, Triết lý)
-│   ├── FundamentalHandFootAtlas.tsx # Cơ Bản Công: Thủ pháp, Cước pháp 8 thế, Bái Tổ 9 bước, 4 bài luyện
-│   ├── CenterlineStanceGuide.tsx    # Hướng dẫn Trục Tý Ngọ Tuyến căn chỉnh laser giải phẫu & 2 người đối kháng
-│   ├── WoodenDummyVisualizer.tsx    # Cọc Gỗ Mộc Nhân SVG tương tác 5 tầng cọc & thư viện ảnh thao pháp
+│   ├── CenterlineExplorer.tsx       # Trục Tý Ngọ Tuyến laser giải phẫu & 2 người đối kháng thực chiến
 │   ├── CombatScenariosExplorer.tsx  # 200 Tình huống thực chiến & Trắc nghiệm phản xạ ngẫu nhiên
-│   ├── LineageTree.tsx              # Sơ đồ truyền thừa 4 thế hệ từ Sư Tổ Nguyễn Tế Công
-│   ├── PhilosophyHub.tsx            # Triết lý & Yếu quyết: 7 khẩu quyết, 42 lời khuyên, tinh hoa thế giới
-│   ├── DailyQuoteWidget.tsx         # Widget châm ngôn võ đạo hôm nay với khả năng đổi câu & sao chép
-│   ├── CommandPalette.tsx           # Hộp tìm kiếm toàn thư nhanh chóng (Ctrl + K)
-│   ├── StanceCheckerModal.tsx       # Modal quy chuẩn Tấn Kiềm Dương và Trục Sinh Tử
+│   ├── CommandPalette.tsx           # Hộp tìm kiếm toàn thư in-memory nhanh chóng (Ctrl + K)
+│   ├── CurriculumExplorer.tsx       # 18 bài quyền & binh khí, 3 chế độ xem (Chi tiết, Ma trận, Triết lý)
+│   ├── DojoPlayer3.tsx              # Trình phát động tác phân thế, lật gương, zoom 2x Retina & Zen Audio
+│   ├── FundamentalHandFootAtlas.tsx # Cơ Bản Công: Thủ pháp, Cước pháp (8), Bái Tổ (9 bước), 4 Bài luyện
+│   ├── Header.tsx                   # Thanh điều hướng đầu trang với Logo, Search, Menu & Stance Check
+│   ├── HeritageReader.tsx           # Tàng Kinh Các: Đọc toàn văn 18 chuyên đề lịch sử, lý luận & nội công
+│   ├── KnowledgeHub.tsx             # Trung tâm tri thức & quản trị dữ liệu võ học
+│   ├── LandingSplash.tsx            # Cổng chào mừng Welcome Portal và Stepper 5 chặng
+│   ├── LineageTree.tsx              # Sơ đồ truyền thừa 4 thế hệ, trích dẫn triết lý & thế chào Bão Quyền Lễ
+│   ├── MartialEmblem.tsx            # Biểu tượng linh thú Ngũ Hình Quyền (Rồng, Rắn, Hổ, Báo, Hạc) & Binh Khí
 │   ├── MegaMenuModal.tsx            # Modal mục lục toàn thư 5 phân hệ
-│   └── LandingSplash.tsx            # Cổng chào mừng Welcome Portal và Stepper 5 chặng
+│   ├── MobileBottomBar.tsx          # Thanh điều hướng đáy cố định (Mobile Bottom Dock) chuẩn công thái học
+│   ├── PhilosophyHub.tsx            # Triết lý & Yếu quyết: 7 khẩu quyết, 42 lời khuyên, tinh hoa thế giới
+│   ├── StanceCheckerModal.tsx       # Modal quy chuẩn Tấn Kiềm Dương và Trục Sinh Tử
+│   ├── WelcomePortal.tsx            # Cổng chào mừng, Lộ trình 5 chặng & Widget Châm Ngôn Hôm Nay
+│   └── WoodenDummyCanvas.tsx        # Cọc Gỗ Mộc Nhân SVG tương tác 5 tầng cọc & thư viện ảnh thao pháp
+│
+├── data/                            # Cơ sở dữ liệu võ học chính xác
+│   ├── canonicalCatalog.ts          # CSDL chuẩn 18 bài quyền, 1.096 động tác và danh mục phân hệ
+│   ├── fundamentals.ts              # Dữ liệu 14 thủ pháp căn bản, 8 thế cước pháp & 4 bài luyện
+│   ├── bai_to_data.json             # Dữ liệu 9 bước nghi thức Bái Tổ Sư Môn do Võ sư Lê Văn Tùng thị phạm
+│   ├── combatScenarios.ts           # CSDL 200 tình huống đối kháng phân theo 5 vùng giải phẫu
+│   ├── martialPhilosophy.ts         # CSDL 7 khẩu quyết cốt lõi, 42 lời khuyên sư phụ, châm ngôn & 5 tông sư
+│   ├── formsIntro.ts                # Giới thiệu xuất xứ, yếu lĩnh và khẩu quyết cho từng bài quyền
+│   ├── martialKinematics.ts         # Cơ sinh học vận động, quỹ đạo lực và động học quyền pháp
+│   └── monographs.ts                # Toàn văn các chuyên luận lý thuyết, lịch sử truyền thừa & y võ
 │
 └── lib/                             # Thư viện logic dữ liệu & thuật toán
-    ├── canonicalCatalog.ts          # CSDL 18 bài quyền, 1.096 động tác và danh mục phân hệ
-    ├── fundamentalsData.ts          # Dữ liệu thủ pháp, cước pháp, nghi thức bái tổ 9 bước và 4 bài luyện
-    ├── combatScenariosData.ts       # CSDL 200 tình huống đối kháng phân theo 5 vùng giải phẫu
-    ├── philosophyQuotesData.ts      # CSDL 7 khẩu quyết, 42 lời khuyên sư phụ và 5 tông sư thế giới
-    ├── searchEngine.ts              # Engine tìm kiếm in-memory tốc độ < 2ms với mảng tiền xử lý
     ├── formatters.ts                # Chuẩn hóa tên động tác (loại bỏ lặp CHIÊU X: / Động tác X:)
-    └── zenAudio.ts                  # Web Audio API Synthesizer chuông thiền định tâm
+    ├── lessonResolver.ts            # Bộ phân giải liên kết điều hướng bài học và chuyên mục
+    ├── searchEngine.ts              # Engine tìm kiếm in-memory tốc độ < 2ms với mảng tiền xử lý
+    └── zenAudio.ts                  # Web Audio API Synthesizer chuông thiền và mõ gỗ Đan Điền
 ```
 
 ---
@@ -72,19 +84,38 @@ npx tsc --noEmit
 
 # 2. ESLint Flat Config
 npm run lint
+
+# 3. Kiểm định chân xác võ học
+python ../scripts/audit_martial_integrity.py
 ```
-Yêu cầu: Cả 2 lệnh phải đạt `0 error` và `0 warning`.
+Yêu cầu: Cả 3 lệnh kiểm định phải đạt `PASS 100%`, `0 error` và `0 warning`.
 
 ### 3. Xuất bản tĩnh (SSG Production Build)
 ```powershell
 npm run build
 ```
-Thư mục `web/out/` sẽ được tạo ra với toàn bộ HTML/JS/CSS tĩnh, sẵn sàng triển khai trên Cloudflare Pages, Vercel hoặc GitHub Pages.
+Thư mục `web/out/` sẽ được tạo ra với toàn bộ HTML/JS/CSS tĩnh và 1.096 ảnh phục chế HD $2\times$ Retina, sẵn sàng triển khai trên Cloudflare Pages, Vercel hoặc GitHub Pages.
 
 ---
 
-## 🛡️ CHUẨN THIẾT KẾ & ACCESSIBILITY (V-AOF)
+## 🚀 KHO LƯU TRỮ GIT & TRIỂN KHAI PRODUCTION
+- **Kho lưu trữ Git Remote:**
+  - `origin/main`: [https://github.com/lechidung-png/phat-gia-vinh-xuan.git](https://github.com/lechidung-png/phat-gia-vinh-xuan.git)
+  - `dunglechi/main`: [https://github.com/dunglechi/phat-gia-vinh-xuan.git](https://github.com/dunglechi/phat-gia-vinh-xuan.git)
+- **Hướng dẫn chi tiết:** Xem tại [DEPLOYMENT_GUIDE.md](file:///c:/Cowork/Phat%20gia%20Vinh%20Xuan/web/DEPLOYMENT_GUIDE.md).
+
+---
+
+## 🛡️ CHUẨN THIẾT KẾ & CÔNG THÁI HỌC (V-AOF ERGONOMICS)
 - **Glassmorphism:** Sử dụng `bg-martial-card/90 backdrop-blur-md` kết hợp border hổ phách `border-martial-amber/30`.
-- **Contrast & Hierarchy:** Văn bản chính dùng font chữ rõ ràng, độ tương phản $\ge 4.5:1$ theo WCAG 2.1 AA.
-- **Accessible Elements:** Mọi nút icon đơn lẻ bắt buộc phải có thuộc tính `aria-label` mô tả hành động (ví dụ: `aria-label="Thu nhỏ ảnh"`, `aria-label="Mở hộp tìm kiếm"`).
-- **Escape Key & Keyboard Navigation:** Mọi dialog/modal đều phải lắng nghe phím `Escape` để đóng và cho phép người dùng dùng phím `Tab` duyệt qua các nút bấm.
+- **Contrast & Hierarchy:** Văn bản chính dùng font chữ `Be Vietnam Pro` và `Noto Serif`, độ tương phản $\ge 4.5:1$ theo WCAG 2.1 AA.
+- **Responsive Adaptive Wording:** Nút bấm tự động tinh giản từ ngữ trên màn hình di động ($\le 390\text{px}$) bằng cặp class `hidden sm:inline` và `sm:hidden`, không bẻ gãy dòng, không tràn ngang ($0\text{px}$ overflow).
+- **Touch Target:** 100% nút bấm, icon thao tác và nút đóng modal đều bảo đảm kích thước chạm tối thiểu $\ge 44 \times 44\text{ px}$.
+- **Accessible Elements:** Mọi nút icon đơn lẻ bắt buộc phải có thuộc tính `aria-label` mô tả hành động.
+- **Phím tắt & Cử chỉ:**
+  - `Ctrl + K`: Mở hộp tìm kiếm toàn thư.
+  - `Escape`: Đóng Modal, Lightbox, Mega Menu.
+  - `Space`: Tự động phát / Tạm dừng chuỗi động tác.
+  - `←` / `→`: Lùi lại / Tiến tới động tác tiếp theo.
+  - Vuốt cảm ứng trái/phải trên màn hình điện thoại để chuyển thế võ kèm phản hồi rung haptic.
+
