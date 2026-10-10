@@ -3,7 +3,7 @@
 // Hỗ trợ Google Analytics 4 (GA4) & Cloudflare Web Analytics
 // ==============================================================================
 
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "G-JGX47YXHD7";
 export const CF_ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN || "";
 
 // Khai báo kiểu TypeScript toàn cục cho window.gtag
