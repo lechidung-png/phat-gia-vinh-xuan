@@ -34,7 +34,7 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "bach_hoi",
     name: "Bách Hội (Đỉnh Đầu)",
     hanTu: "百會",
-    topPercent: 8,
+    topPercent: 7.6,
     role: "Điểm cực Tý trên trục trung tâm. Đỉnh đầu vươn thẳng hướng thiên, hàm thu nhẹ, mắt nhìn ngang chân trời.",
     protection: "Giữ cột sống luôn thẳng đứng làm trục quay thăng bằng, giúp cơ thể không bị chao đảo khi dính đòn va chạm mạnh.",
     wingChunTechnique: "Hư Linh Đỉnh Kình (Đầu đội trời, khí trầm đan điền)",
@@ -43,8 +43,8 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "an_duong",
     name: "Ấn Đường & Sống Mũi",
     hanTu: "印堂",
-    topPercent: 14,
-    role: "Huyệt đạo thần kinh và thị giác trung tâm khuôn mặt. Mục tiêu ưa thích nhất của các đòn đấm thẳng.",
+    topPercent: 15.2,
+    role: "Huyệt đạo thần kinh và thị giác trung tâm khuôn mặt. Trục Tý Ngọ đi dọc sống mũi phân chia hai nửa gương mặt đối xứng.",
     protection: "Thu cằm, dùng hai cẳng tay tạo vòm nêm Than Thủ / Vấn Thủ che chắn từ chóp mũi lên trán.",
     wingChunTechnique: "Vấn Thủ (Man Sao) & Than Thủ (Tan Sao) bảo vệ đầu mặt",
   },
@@ -52,7 +52,7 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "dan_trung",
     name: "Đản Trung (Chấn Thủy / Mỏ Ác)",
     hanTu: "膻中",
-    topPercent: 32,
+    topPercent: 33.8,
     role: "Trung tâm lồng ngực, nơi giao hội của khí huyết, vị trí hiểm tử khi bị chấn động vào tim và phổi.",
     protection: "Hai cùi chỏ luôn khép sát bảo vệ (cách mạng sườn đúng 1 nắm tay), hai bàn tay khép tạo thế kiềm tỏa.",
     wingChunTechnique: "Bàng Thủ (Bong Sao) & Phục Thủ (Fook Sao) chốt chặt trung môn",
@@ -61,7 +61,7 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "than_khuyet",
     name: "Thần Khuyết (Rốn)",
     hanTu: "神闕",
-    topPercent: 46,
+    topPercent: 49.0,
     role: "Trục hoành trung tâm thân mình, giao điểm phân chia phần trên (thượng bàn) và phần dưới (hạ bàn).",
     protection: "Khớp xoay của eo (eo xoay 45° mượn lực và làm trượt đòn tấn công của đối thủ).",
     wingChunTechnique: "Chuyển Mã Thao Pháp (Xoay eo chuyển đòn lệch trục)",
@@ -70,8 +70,8 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "khi_hai",
     name: "Khí Hải / Đan Điền (Hạ Bộ)",
     hanTu: "氣海",
-    topPercent: 54,
-    role: "Điểm cực Ngọ trên trục trung tâm. Trọng tâm sinh học của toàn bộ cơ thể, cội nguồn phát kình lực.",
+    topPercent: 63.8,
+    role: "Điểm cực Ngọ trên thân mình. Trọng tâm sinh học của toàn bộ cơ thể, cội nguồn phát kình lực.",
     protection: "Trầm khí đan điền, hạ thấp trọng tâm, không ưỡn bụng làm hở rốn và ngực.",
     wingChunTechnique: "Trầm Khí Đan Điền & Chưởng Đan Điền phản kích",
   },
@@ -79,17 +79,17 @@ const ACUPOINTS: AcupointInfo[] = [
     id: "kiem_duong_goi",
     name: "Khớp Gối Kiềm Dương",
     hanTu: "鉗陽膝",
-    topPercent: 71,
+    topPercent: 76.5,
     role: "Hai đầu gối hơi chùng và ép hướng tâm (khoảng cách giữa 2 đầu gối chỉ vừa đúng 1 nắm tay đấm).",
     protection: "Khóa kín tuyệt đối 100% vùng hạ bộ, vô hiệu hóa hoàn toàn mọi đòn đá thẳng hoặc đá móc vào háng.",
     wingChunTechnique: "Nhị Tự Kiềm Dương Tấn (Tấn chân hẹp khóa hạ bàn)",
   },
   {
     id: "ban_chan_v",
-    name: "Hạ Bàn Mũi Chân Chữ V",
+    name: "Hạ Bàn & Giữa Hai Chân (Cực Ngọ)",
     hanTu: "八字步",
-    topPercent: 92,
-    role: "Hai bàn chân hướng vào trong tạo góc chữ V ngược (mũi chân hướng vào, gót chân mở rộng).",
+    topPercent: 94.5,
+    role: "Khoảng không chính giữa hai bàn chân trên trục Tý Ngọ Tuyến. Trọng tâm rơi thẳng vào giữa hai chân.",
     protection: "Bám rễ sâu xuống mặt đất như móng cọc, gót chân linh hoạt nhấc 5cm triệt phá cước đối thủ.",
     wingChunTechnique: "Triệt Cước (Đạp chặn ống đồng đối thủ ngay khi vừa phát động)",
   },
@@ -124,8 +124,8 @@ export const CenterlineExplorer: React.FC = () => {
       corePrinciple: "Nguyên lý Mũi Nêm (Wedge Principle): Đường thẳng giữa hai điểm là đường ngắn nhất. Ai làm chủ trục trung tâm, người đó làm chủ sinh tử.",
       hands: "Bàng Thủ / Than Thủ + Nhật Tự Quyền",
       footwork: "Kiềm Dương Tấn chùng gối khép háng, xoay eo 45° mượn lực",
-      combatImg: "/assets/images/forms/05_108_doi_luyen/dl_1.png",
-      combatCaption: "Thế đối luyện chiêu 1: Đối phương đấm thẳng trung tuyến, võ sư Vịnh Xuân xuất đòn lệch trục hóa giải và thấu kình.",
+      combatImg: "/assets/hinh-2x/p065-h03.png",
+      combatCaption: "Thế đối luyện chiêu 6: A đấm thẳng tay trái vào ngực B. B xuất Than Thủ hóa giải chệch trục và chiếm lĩnh trung môn.",
       practitioners: "HLV Nguyễn Việt Dũng & HLV Nguyễn Trường Thanh",
       tacticalBreakdown: "Đòn đấm của địch đi thẳng nhưng bị gạt chệch 5cm. Tay phản kích của Vịnh Xuân phóng thẳng vào mỏ ác đối thủ mà không cần thu tay về lấy đà.",
     },
@@ -136,8 +136,8 @@ export const CenterlineExplorer: React.FC = () => {
       corePrinciple: "Lai Lưu Khứ Tống (Đến thì đón, đi thì tiễn): Đón lực vòng bằng độ dốc của cẳng tay, không dùng lực đối lực thô bạo.",
       hands: "Cao Bàng Thủ + Phục Thủ chẹn khớp",
       footwork: "Đinh Tấn xoay góc triệt bộ, hạ thấp trọng tâm",
-      combatImg: "/assets/images/forms/05_108_doi_luyen/dl_7_1.png",
-      combatCaption: "Thế đối luyện chiêu 7: Dùng Cao Bàng Thủ hóa giải đòn vòng chém mang tai, đồng thời chiếm lĩnh trục trung lộ.",
+      combatImg: "/assets/hinh-2x/p067-h04.png",
+      combatCaption: "Thế đối luyện chiêu 27: A đấm móc từ ngoài vào mặt B. B xoay người dựng Cao Bàng Thủ / Vấn Thủ đỡ đòn và chiếm trung lộ.",
       practitioners: "HLV Nguyễn Việt Dũng & HLV Nguyễn Trường Thanh",
       tacticalBreakdown: "Đường vòng của địch mất 0.4s, đường thẳng của Vịnh Xuân chỉ mất 0.15s. Đòn phản luôn chạm đích trước khi đòn vòng của địch tới nơi.",
     },
@@ -148,8 +148,8 @@ export const CenterlineExplorer: React.FC = () => {
       corePrinciple: "Bạt Thủ Triệt Tiêu: Đánh lệch hướng tấn công chỉ 5cm là đủ để toàn bộ lực đánh của đối thủ rơi vào hư không.",
       hands: "Hạ Bàng Thủ + Chấn Thủy Chưởng",
       footwork: "Hoành Thoái biến bộ lách sườn",
-      combatImg: "/assets/images/forms/05_108_doi_luyen/dl_42_1.png",
-      combatCaption: "Thế đối luyện chiêu 42: Hạ Bàng Thủ đè ép lực đấm sườn, mở toang trung môn đối phương để phát lực chưởng.",
+      combatImg: "/assets/hinh-2x/p065-h08.png",
+      combatCaption: "Thế đối luyện chiêu 6 (phần 2): A đấm xuống sườn B. B dùng Hạ Bàng Thủ / Thác Thủ đè chặn, tay kia xuất chưởng phản công.",
       practitioners: "HLV Nguyễn Việt Dũng & HLV Nguyễn Trường Thanh",
       tacticalBreakdown: "Tay dưới đè chẹn đòn móc, tay trên xuất chưởng thẳng vào mỏ ác. Một nhịp tay vừa thủ vừa công hoàn hảo.",
     },
@@ -160,9 +160,9 @@ export const CenterlineExplorer: React.FC = () => {
       corePrinciple: "Quy chuẩn Chân Hẹp Bảo Vệ Hạ Bộ: Khoảng cách giữa 2 đầu gối chỉ bằng 1 nắm tay, đòn đá vào háng hoàn toàn vô hiệu.",
       hands: "Song Thủ hộ tâm thủ thế Tý Ngọ",
       footwork: "Nhị Tự Kiềm Dương Tấn triệt cước",
-      combatImg: "/assets/images/forms/05_108_doi_luyen/dl_11.png",
-      combatCaption: "Thế đối luyện chiêu 11: Khép gối kiềm dương khóa hạ bàn, đồng thời xuất cước chặn đứng đòn đá của đối phương.",
-      practitioners: "HLV Nguyễn Việt Dũng & HLV Nguyễn Trường Thanh",
+      combatImg: "/assets/hinh-2x/p091-h03.png",
+      combatCaption: "Thế đối luyện chiêu 52: Đối phương xuất cước tấn công hạ bàn. Võ sư Vịnh Xuân trụ chân khép gối, dùng triệt cước hóa giải.",
+      practitioners: "HLV Đỗ Quốc Khánh & HLV Đỗ Chiến Thắng",
       tacticalBreakdown: "Đòn đá tầm xa của đối thủ bị chặn đứng ngay từ lúc vừa nhấc chân. Cổ chân Vịnh Xuân bẻ gập hướng gót triệt tiêu lực phát động.",
     },
   };
@@ -176,7 +176,7 @@ export const CenterlineExplorer: React.FC = () => {
       <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#3D291F] relative overflow-hidden">
         <div className="max-w-4xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 text-xs font-bold uppercase tracking-widest">
-            <Compass className="w-3.5 h-3.5" /> Tuyệt Đỉnh Lý Luận Vịnh Xuân Quyền
+            <Compass className="w-3.5 h-3.5" /> Lý Luận & Nguyên Lý Vịnh Xuân Quyền
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold font-serif gold-gradient">
             Trục Tý Ngọ Tuyến & Khảo Cứu Thực Chiến
@@ -193,33 +193,39 @@ export const CenterlineExplorer: React.FC = () => {
           </span>
           <button
             onClick={() => setViewMode("person_centerline")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-2 ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 ${
               viewMode === "person_centerline"
                 ? "bg-[#E2B743] text-[#140C08] font-bold shadow-lg shadow-[#E2B743]/20"
                 : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
             }`}
           >
-            <UserCheck className="w-4 h-4" /> Đồ Hình Người Thật (Võ Sư Trục Tuyến)
+            <UserCheck className="w-4 h-4" />
+            <span className="hidden sm:inline">Đồ Hình Người Thật (Võ Sư Trục Tuyến)</span>
+            <span className="sm:hidden">Võ Sư Thị Phạm</span>
           </button>
           <button
             onClick={() => setViewMode("real_combat")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-2 ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 ${
               viewMode === "real_combat"
                 ? "bg-[#E2B743] text-[#140C08] font-bold shadow-lg shadow-[#E2B743]/20"
                 : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
             }`}
           >
-            <Swords className="w-4 h-4" /> Ảnh Thực Chiến Đối Kháng (2 Võ Sư)
+            <Swords className="w-4 h-4" />
+            <span className="hidden sm:inline">Ảnh Thực Chiến Đối Kháng (2 Võ Sư)</span>
+            <span className="sm:hidden">Đối Kháng 2 Người</span>
           </button>
           <button
             onClick={() => setViewMode("text_only")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-2 ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 ${
               viewMode === "text_only"
                 ? "bg-[#E2B743] text-[#140C08] font-bold shadow-lg shadow-[#E2B743]/20"
                 : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
             }`}
           >
-            <EyeOff className="w-4 h-4" /> Ẩn Đồ Hình (Chỉ Xem Phân Thế)
+            <EyeOff className="w-4 h-4" />
+            <span className="hidden sm:inline">Ẩn Đồ Hình (Chỉ Xem Phân Thế)</span>
+            <span className="sm:hidden">Chỉ Xem Chữ</span>
           </button>
         </div>
       </div>
@@ -263,7 +269,8 @@ export const CenterlineExplorer: React.FC = () => {
                         : "bg-[#140C08] border-[#3D291F] text-slate-400"
                     }`}
                   >
-                    1. Khởi Thế Kiềm Dương (Bái Tổ)
+                    <span className="hidden sm:inline">1. Khởi Thế Kiềm Dương (Bái Tổ)</span>
+                    <span className="sm:hidden">1. Khởi Thế Bái Tổ</span>
                   </button>
                   <button
                     onClick={() => setStancePosture("strike")}
@@ -273,89 +280,91 @@ export const CenterlineExplorer: React.FC = () => {
                         : "bg-[#140C08] border-[#3D291F] text-slate-400"
                     }`}
                   >
-                    2. Xỉa Song Thủ Trục Tuyến
+                    <span className="hidden sm:inline">2. Xỉa Song Thủ Trục Tuyến</span>
+                    <span className="sm:hidden">2. Xỉa Song Thủ</span>
                   </button>
                 </div>
 
                 {/* Martial Artist Photo Container with Centerline & Acupoints */}
-                <div className="relative w-full max-w-[280px] sm:max-w-[300px] aspect-[168/390] bg-[#140C08] rounded-2xl border border-[#3D291F] overflow-hidden flex items-center justify-center shadow-2xl p-2 select-none group">
-                  
-                  {/* Photo of real martial artist */}
-                  <Image
-                    src={
-                      stancePosture === "bai_to"
-                        ? "/assets/hinh-2x/p037-h01.png"
-                        : "/assets/hinh-2x/p037-h02.png"
-                    }
-                    alt="Võ sư thị phạm trục Tý Ngọ Tuyến"
-                    fill
-                    className="object-contain p-2 filter martial-filter"
-                    sizes="300px"
-                    priority
-                  />
+                <div className="relative w-full max-w-[280px] sm:max-w-[300px] aspect-[151/343] bg-[#FBF9F5] rounded-2xl border-2 border-[#F5D06C]/60 overflow-hidden shadow-2xl p-2 select-none group">
+                  <div className="relative w-full h-full">
+                    {/* Photo of real martial artist */}
+                    <Image
+                      src={
+                        stancePosture === "bai_to"
+                          ? "/assets/hinh-2x/p037-h01.png"
+                          : "/assets/hinh-2x/p037-h02.png"
+                      }
+                      alt="Võ sư thị phạm trục Tý Ngọ Tuyến"
+                      fill
+                      className="object-contain filter martial-filter"
+                      sizes="300px"
+                      priority
+                    />
 
-                  {/* Vertical Centerline (Laser Gold) running right through center of body */}
-                  <div
-                    className="absolute top-2 bottom-3 left-1/2 -translate-x-1/2 w-0.5 bg-gradient-to-b from-red-500 via-[#E2B743] to-red-600 shadow-[0_0_8px_#E2B743] pointer-events-none"
-                    style={{ zIndex: 10 }}
-                  >
-                    {/* Top Tý Label */}
-                    <div className="absolute -top-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
-                      TÝ
-                    </div>
-                    {/* Bottom Ngọ Label */}
-                    <div className="absolute -bottom-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
-                      NGỌ
-                    </div>
-                  </div>
-
-                  {/* Wedge Triangle Overlay (Optional toggled) */}
-                  {showWedgeTriangle && (
-                    <svg
-                      viewBox="0 0 168 390"
-                      className="absolute inset-0 w-full h-full pointer-events-none z-10"
+                    {/* Vertical Centerline (Laser Gold) running right through center of body */}
+                    <div
+                      className="absolute top-1 bottom-1 left-1/2 -translate-x-1/2 w-0.5 bg-gradient-to-b from-red-500 via-[#E2B743] to-red-600 shadow-[0_0_8px_#E2B743] pointer-events-none"
+                      style={{ zIndex: 10 }}
                     >
-                      {/* Triangle connecting nose/chest to shoulders/elbows */}
-                      <polygon
-                        points="84,120 40,165 128,165"
-                        fill="rgba(226, 183, 67, 0.15)"
-                        stroke="#E2B743"
-                        strokeWidth="1.2"
-                        strokeDasharray="3 3"
-                      />
-                      {/* Triangle for knees/feet */}
-                      <polygon
-                        points="84,210 52,360 116,360"
-                        fill="rgba(16, 185, 129, 0.08)"
-                        stroke="#10B981"
-                        strokeWidth="1"
-                        strokeDasharray="2 2"
-                      />
-                    </svg>
-                  )}
+                      {/* Top Tý Label */}
+                      <div className="absolute -top-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
+                        TÝ
+                      </div>
+                      {/* Bottom Ngọ Label */}
+                      <div className="absolute -bottom-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
+                        NGỌ
+                      </div>
+                    </div>
 
-                  {/* Interactive Acupoint Hotspots */}
-                  {ACUPOINTS.map((acu) => {
-                    const isSelected = selectedAcupoint === acu.id;
-                    return (
-                      <button
-                        key={acu.id}
-                        onClick={() => setSelectedAcupoint(acu.id)}
-                        className={`absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full transition-transform z-20 flex items-center justify-center ${
-                          isSelected
-                            ? "w-6 h-6 bg-[#E2B743] text-[#140C08] ring-4 ring-[#E2B743]/40 scale-110 shadow-lg"
-                            : "w-4 h-4 bg-red-500 text-white hover:bg-amber-400 hover:scale-125 shadow"
-                        }`}
-                        style={{ top: `${acu.topPercent}%` }}
-                        title={`${acu.name} - Bấm để xem phân tích`}
-                        aria-label={acu.name}
+                    {/* Wedge Triangle Overlay (Optional toggled) */}
+                    {showWedgeTriangle && (
+                      <svg
+                        viewBox="0 0 302 686"
+                        className="absolute inset-0 w-full h-full pointer-events-none z-10"
                       >
-                        <span className="text-[8px] font-bold">
-                          {isSelected ? "●" : ""}
-                        </span>
-                      </button>
-                    );
-                  })}
+                        {/* Triangle connecting nose/chest to shoulders/elbows */}
+                        <polygon
+                          points="151,104 65,232 237,232"
+                          fill="rgba(226, 183, 67, 0.15)"
+                          stroke="#E2B743"
+                          strokeWidth="1.5"
+                          strokeDasharray="4 4"
+                        />
+                        {/* Triangle for knees/feet */}
+                        <polygon
+                          points="151,438 85,648 217,648"
+                          fill="rgba(16, 185, 129, 0.08)"
+                          stroke="#10B981"
+                          strokeWidth="1.2"
+                          strokeDasharray="3 3"
+                        />
+                      </svg>
+                    )}
+
+                    {/* Interactive Acupoint Hotspots */}
+                    {ACUPOINTS.map((acu) => {
+                      const isSelected = selectedAcupoint === acu.id;
+                      return (
+                        <button
+                          key={acu.id}
+                          onClick={() => setSelectedAcupoint(acu.id)}
+                          className={`absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full transition-transform z-20 flex items-center justify-center ${
+                            isSelected
+                              ? "w-6 h-6 bg-[#E2B743] text-[#140C08] ring-4 ring-[#E2B743]/40 scale-110 shadow-lg"
+                              : "w-4 h-4 bg-red-500 text-white hover:bg-amber-400 hover:scale-125 shadow"
+                          }`}
+                          style={{ top: `${acu.topPercent}%` }}
+                          title={`${acu.name} - Bấm để xem phân tích`}
+                          aria-label={acu.name}
+                        >
+                          <span className="text-[8px] font-bold">
+                            {isSelected ? "●" : ""}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
 
                 {/* Controls below person photo */}
@@ -452,16 +461,16 @@ export const CenterlineExplorer: React.FC = () => {
                 </div>
 
                 {/* Authentic Combat Photo */}
-                <div className="relative w-full aspect-[4/3] max-w-[380px] bg-[#140C08] rounded-2xl border border-[#3D291F] overflow-hidden shadow-2xl p-2 group">
+                <div className="relative w-full aspect-[4/3] max-w-[380px] bg-[#FBF9F5] rounded-2xl border-2 border-[#F5D06C]/60 overflow-hidden shadow-2xl p-2 group">
                   <Image
                     src={current.combatImg}
                     alt={current.title}
                     fill
-                    className="object-contain p-2"
+                    className="object-contain p-2 filter martial-filter"
                     sizes="400px"
                   />
                   {/* Subtle Badge */}
-                  <div className="absolute top-3 left-3 px-2 py-0.5 rounded-md bg-[#140C08]/90 text-[#E2B743] border border-[#E2B743]/30 text-[10px] font-semibold">
+                  <div className="absolute top-3 left-3 px-2 py-0.5 rounded-md bg-[#20150F]/90 text-[#F5D06C] border border-[#F5D06C]/40 text-[10px] font-semibold">
                     100% Ảnh Đối Kháng Thực Chiến
                   </div>
                 </div>
@@ -603,10 +612,10 @@ export const CenterlineExplorer: React.FC = () => {
             </div>
           </div>
 
-          {/* Secret Poem from Tang Kinh Cac */}
+          {/* Khẩu quyết từ Tài Liệu Khảo Cứu */}
           <div className="p-4 rounded-xl bg-[#20150F] border border-[#E2B743]/20 text-xs space-y-2">
             <span className="text-[10px] font-mono text-[#E2B743] uppercase tracking-wider block">
-              Khẩu Quyết Bí Truyền Môn Phái (Tàng Kinh Các)
+              Khẩu Quyết Môn Phái (Tài Liệu Khảo Cứu)
             </span>
             <p className="text-slate-300 italic text-[11px] leading-relaxed">
               &quot;Trục thẳng nối liền tâm ngực của ta và đối thủ. Ai khống chế được trục này, người đó kiểm soát trận đấu.<br />

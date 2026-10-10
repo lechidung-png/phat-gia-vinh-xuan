@@ -15,9 +15,11 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Technique } from "@/data/techniques";
+import { CANONICAL_LESSONS } from "@/data/canonicalCatalog";
+import { cleanMotionTitle, extractMotionChieu } from "@/lib/formatters";
 
 interface WoodenDummyCanvasProps {
-  techniques: Technique[];
+  techniques?: Technique[];
   onSelectTechnique: (tech: Technique) => void;
 }
 
@@ -39,8 +41,8 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
     imgUrl: "/assets/hinh-2x/p093-h01.png",
     pageBadge: "Di Sản Lịch Sử (1954)",
     title: "Cây Mộc Nhân 38 Phố Gia Ngư",
-    subtitle: "Nguyên bản thiết kế của Sư Tổ Nguyễn Tế Công",
-    desc: "Cây mộc nhân 5 tầng cọc nguyên bản do đích thân Sư Tổ Nguyễn Tế Công làm tại nhà Cụ Trần Thúc Tiển những năm 1954–1958 để truyền dạy môn sinh tại Hà Nội.",
+    subtitle: "Thiết kế của Sư Tổ Nguyễn Tế Công (1954)",
+    desc: "Cây mộc nhân 5 tầng cọc do đích thân Sư Tổ Nguyễn Tế Công làm tại nhà Cụ Trần Thúc Tiển những năm 1954–1958 tại Hà Nội.",
     focusPoint: "5 tầng cọc đặc thù: xà ngang đỉnh đầu, 2 tay ngực, 1 tay rốn, 2 cọc chân hạ bàn.",
   },
   {
@@ -91,20 +93,19 @@ const ARCHIVE_CARDS: DummyArchiveCard[] = [
 ];
 
 export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
-  techniques,
   onSelectTechnique,
 }) => {
   const [viewMode, setViewMode] = useState<DummyViewMode>("top_down");
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
-  // Lọc các chiêu thức thuộc phần Mộc Nhân hoặc tương ứng
-  const dummyTechniques = techniques.filter(
-    (t) =>
-      t.sectionId === "108-moc-nhan" ||
-      t.order >= 85 ||
-      t.summary.toLowerCase().includes("mộc nhân") ||
-      t.name.toLowerCase().includes("mộc nhân")
-  );
+  // Lấy dữ liệu chiêu thức Mộc Nhân chuẩn xác từ Bài 17 (Trang scan 95 - 105)
+  const mocNhanLesson = React.useMemo(() => {
+    return CANONICAL_LESSONS.find((l) => l.id === "bai-17");
+  }, []);
+
+  const dummyMotions = React.useMemo(() => {
+    return mocNhanLesson?.motions?.slice(0, 9) || [];
+  }, [mocNhanLesson]);
 
   return (
     <div className="space-y-6">
@@ -112,52 +113,55 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
       <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/30 relative overflow-hidden">
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 text-[#F5D06C] border border-[#F5D06C]/30 text-xs font-bold uppercase tracking-widest">
-            <Ruler className="w-3.5 h-3.5" /> Hồ Sơ Bản Vẽ Kiến Trúc & Tư Liệu Mộc Nhân Thao Pháp
+            <Ruler className="w-3.5 h-3.5" /> Bản Vẽ & Thao Pháp Mộc Nhân
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold font-serif gold-gradient">
-            Khảo Cứu Cọc Gỗ Mộc Nhân Phật Gia Vịnh Xuân
+            Khảo Cứu Mộc Nhân Phật Gia Vịnh Xuân
           </h2>
           <p className="text-[#F7E7D9] text-xs sm:text-sm leading-relaxed">
-            Hồ sơ phục chế kỹ thuật kiến trúc, kết cấu cơ khí và nhân trắc học cọc gỗ Mộc Nhân dựa trên tài liệu giáo trình chuẩn của môn phái. Khảo sát đa chiều từ bản vẽ mặt bằng nhìn từ trên cao, ảnh chụp ngang khung treo đến bộ ảnh phục chế HD từng chiêu thức Mộc Nhân Thao Pháp.
+            Cấu trúc, kích thước chuẩn và thao pháp Mộc Nhân môn phái Phật Gia Vịnh Xuân. Bao gồm bản vẽ mặt bằng, sơ đồ kết cấu khung treo và hình ảnh các thế võ thực hành.
           </p>
         </div>
 
         {/* 3 Tab Navigation - Chuẩn Mực Kiến Trúc */}
-        <div className="flex flex-wrap gap-2.5 mt-6 pt-5 border-t border-[#F5D06C]/20">
+        <div className="flex flex-wrap gap-2 sm:gap-2.5 mt-6 pt-5 border-t border-[#F5D06C]/20">
           <button
             onClick={() => setViewMode("top_down")}
-            className={`px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition ${
+            className={`px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 sm:gap-2 transition ${
               viewMode === "top_down"
                 ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-lg shadow-[#F5D06C]/25"
                 : "bg-[#2A0E0A]/80 text-[#D9C3B4] hover:text-white border border-[#F5D06C]/20"
             }`}
           >
             <Compass className="w-4 h-4" />
-            <span>1. Mặt Bằng Từ Trên Cao (Top-down Plan)</span>
+            <span className="hidden sm:inline">1. Mặt Bằng Từ Trên Cao (Top-down Plan)</span>
+            <span className="sm:hidden">1. Mặt Bằng</span>
           </button>
 
           <button
             onClick={() => setViewMode("side_elevation")}
-            className={`px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition ${
+            className={`px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 sm:gap-2 transition ${
               viewMode === "side_elevation"
                 ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-lg shadow-[#F5D06C]/25"
                 : "bg-[#2A0E0A]/80 text-[#D9C3B4] hover:text-white border border-[#F5D06C]/20"
             }`}
           >
             <Ruler className="w-4 h-4" />
-            <span>2. Mặt Đứng & Chụp Ngang (Elevation & Side)</span>
+            <span className="hidden sm:inline">2. Mặt Đứng &amp; Chụp Ngang (Elevation &amp; Side)</span>
+            <span className="sm:hidden">2. Mặt Đứng</span>
           </button>
 
           <button
             onClick={() => setViewMode("historical_archives")}
-            className={`px-4 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition ${
+            className={`px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 sm:gap-2 transition ${
               viewMode === "historical_archives"
                 ? "bg-[#F5D06C] text-[#2A0E0A] font-bold shadow-lg shadow-[#F5D06C]/25"
                 : "bg-[#2A0E0A]/80 text-[#D9C3B4] hover:text-white border border-[#F5D06C]/20"
             }`}
           >
             <History className="w-4 h-4" />
-            <span>3. Tư Liệu 38 Gia Ngư & Chiêu Thức Mộc Nhân</span>
+            <span className="hidden sm:inline">3. Tư Liệu 38 Gia Ngư &amp; Chiêu Thức Mộc Nhân</span>
+            <span className="sm:hidden">3. Thao Pháp Mộc Nhân</span>
           </button>
         </div>
       </div>
@@ -173,10 +177,10 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               <div className="w-full flex items-center justify-between mb-3 text-xs">
                 <span className="font-semibold text-[#F5D06C] flex items-center gap-1.5">
                   <Compass className="w-4 h-4" />
-                  Bản Vẽ Kỹ Thuật Nguyên Bản Phục Chế HD
+                  Bản Vẽ Mặt Bằng Mộc Nhân
                 </span>
                 <span className="text-[11px] font-mono text-amber-300 font-semibold bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
-                  Bản Vẽ Mặt Bằng • Retina 2×
+                  Nhìn Từ Trên Cao
                 </span>
               </div>
 
@@ -195,11 +199,11 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   />
                   <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-[11px] font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
                     <ZoomIn className="w-3.5 h-3.5 text-[#F5D06C]" />
-                    Phóng to chi tiết
+                    Phóng to
                   </div>
                 </div>
                 <div className="text-center text-xs text-[#F7E7D9] italic">
-                  Bản vẽ nguyên bản: <strong>Hình bên trái</strong> thể hiện vị trí tấn Kiềm Dương đứng thẳng (cự ly 2 bàn chân); <strong>Hình bên phải</strong> thể hiện vị trí xoay chân biên thân né trục Tý Ngọ Tuyến đâm thẳng ra trước.
+                  Sơ đồ vị trí: <strong>Hình bên trái</strong> thể hiện vị trí tấn Kiềm Dương đứng thẳng; <strong>Hình bên phải</strong> thể hiện vị trí xoay thân né trục Tý Ngọ Tuyến.
                 </div>
               </div>
             </div>
@@ -213,13 +217,13 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 </div>
                 <div className="space-y-2 text-[#F7E7D9] leading-relaxed text-xs">
                   <p>
-                    • <strong>Thân mộc nhân tròn:</strong> Đường kính chuẩn <strong>Ø30cm</strong>. Đủ nặng để không bị xô lệch, nhưng không quá to làm choãi tay môn sinh.
+                    • <strong>Thân mộc nhân tròn:</strong> Đường kính chuẩn <strong>Ø30cm</strong>. Đủ nặng để không bị xô lệch, nhưng không quá to làm choãi tay người tập.
                   </p>
                   <p>
                     • <strong>Hai tay ngực (Tả/Hữu thượng thung):</strong> Mở góc chữ V hướng tâm, đón lực nêm 45°. Khoảng cách giữa 2 đầu ngón tay ngực bằng chiều rộng lồng ngực người tập (~20-22cm).
                   </p>
                   <p>
-                    • <strong>Tay giữa (Trung thung / rốn):</strong> Đặt ngay trên trục Tý Ngọ Tuyến, vươn ra ngắn hơn hai tay trên 5-7cm để môn sinh luồn cùi chỏ vào trong.
+                    • <strong>Tay giữa (Trung thung / rốn):</strong> Đặt ngay trên trục Tý Ngọ Tuyến, vươn ra ngắn hơn hai tay trên 5-7cm để người tập luồn cùi chỏ vào trong.
                   </p>
                   <p>
                     • <strong>Cơ cấu mộng phía sau:</strong> 3 đuôi tay xuyên thẳng qua thân cọc, có đục lỗ then cài chốt ngang để tạo <em>&quot;độ giơ&quot; (độ rơ cơ học)</em> rung lắc hấp thụ kình lực.
@@ -239,7 +243,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   </div>
                   <div className="p-2.5 rounded-xl bg-[#2A0E0A]/90 border border-[#F5D06C]/20">
                     <strong className="text-emerald-300 block mb-0.5">2. Thế Xoay Chân (Biên Thân Tam Giác Bộ):</strong>
-                    Xoay trục hông và 2 bàn chân 45° sang bên. Trọng tâm dồn 70% vào chân sau. Mũi tên trục Tý Ngọ của Mộc Nhân đâm thẳng ra khoảng không, trong khi môn sinh đã lách vào nách cọc để tung đòn trảm sườn hoặc bẻ khớp.
+                    Xoay trục hông và 2 bàn chân 45° sang bên. Trọng tâm dồn 70% vào chân sau. Mũi tên trục Tý Ngọ của Mộc Nhân đâm thẳng ra khoảng không, trong khi người tập đã lách vào nách cọc để tung đòn trảm sườn hoặc bẻ khớp.
                   </div>
                 </div>
               </div>
@@ -258,10 +262,10 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             <div className="lg:col-span-6 glass-panel rounded-2xl p-5 sm:p-6 border border-[#F5D06C]/25 flex flex-col items-center shadow-xl space-y-3">
               <div className="w-full flex items-center justify-between text-xs">
                 <span className="font-bold text-[#F5D06C] flex items-center gap-1.5">
-                  <Eye className="w-4 h-4" /> 1. Cọc Mộc Nhân Treo Trên Khung Giá Đỡ
+                  <Eye className="w-4 h-4" /> 1. Mộc Nhân Treo Trên Khung Giá Đỡ
                 </span>
                 <span className="text-[10px] font-mono text-amber-300 bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
-                  Khung Treo Độc Bản • Retina 2×
+                  Khung Treo Độc Bản
                 </span>
               </div>
 
@@ -320,7 +324,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
 
               <div className="text-xs text-[#F7E7D9] leading-relaxed">
                 <strong className="text-emerald-300 block mb-1">Cấu Tạo 5 Tầng Cọc Độc Bản Của Sư Tổ Tế Công:</strong>
-                • <strong>Tầng 1 (Đỉnh cao +1,70m):</strong> Có <strong>xà ngang trên cao</strong> và cọc đứng phía trước dùng luyện Lục Điểm Bán Côn, Bát Trảm Đao và Liễu Diệp Kiếm.
+                • <strong>Tầng 1 (Độ cao +1,70m):</strong> Có <strong>xà ngang trên cao</strong> và cọc đứng phía trước dùng luyện Lục Điểm Bán Côn, Bát Trảm Đao và Liễu Diệp Kiếm.
                 <br />• <strong>Tầng 2 (Ngực +1,30m):</strong> 2 tay ngực tạo đáy tam giác cân (ngang 2 núm vú).
                 <br />• <strong>Tầng 3 (Rốn +1,05m):</strong> 1 tay bụng đỉnh tam giác cân dưới.
                 <br />• <strong>Tầng 4 & 5 (Hạ bàn):</strong> Gồm <strong>2 cọc chân thẳng</strong> (1 cọc ngang đầu gối + 1 cọc sát đất 5cm ngang mắt cá chân) để luyện triệt cước và đạp cổ chân.
@@ -385,7 +389,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                     <td className="py-2.5 px-3 font-bold text-slate-400">6. Bệ Đế Ổ Bi Chôn Đất</td>
                     <td className="py-2.5 px-3 font-mono text-slate-400 font-bold">&plusmn;0.00 đến -600</td>
                     <td className="py-2.5 px-3 font-mono">Bao bê tông + ổ bi thép</td>
-                    <td className="py-2.5 px-3">Mặt đất sàn tập</td>
+                    <td className="py-2.5 px-3">Mặt đất</td>
                     <td className="py-2.5 px-3">Tạo độ xoay quanh trục, rung giật thốn kình chân thực</td>
                   </tr>
                 </tbody>
@@ -403,23 +407,23 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
           <div className="glass-panel p-5 sm:p-6 rounded-2xl border border-[#F5D06C]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#F5D06C] uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" /> Bộ Ảnh Phục Chế HD Siêu Nét • Bản 2× Retina
+                <Sparkles className="w-3.5 h-3.5" /> Chiêu Thức Mộc Nhân Thao Pháp
               </div>
               <h3 className="text-lg sm:text-xl font-bold font-serif text-white mt-1">
-                Tư Liệu 38 Gia Ngư & Bộ Chiêu Thức Mộc Nhân Thao Pháp
+                Tư Liệu 38 Gia Ngư & Bộ Chiêu Thức Mộc Nhân
               </h3>
               <p className="text-xs text-[#D9C3B4] mt-1 max-w-3xl">
-                Hình ảnh phục chế HD đơn chiếc sắc nét, bảo toàn 100% chi tiết giải phẫu võ học, đặt trên khung tranh giấy lụa ngà viền kim sa chuẩn mực.
+                Hình ảnh các thế võ Mộc Nhân truyền thống do võ sư thị phạm.
               </p>
             </div>
             <div className="shrink-0 flex items-center gap-2">
               <span className="text-xs font-mono px-3 py-1.5 rounded-xl bg-[#2A0E0A] border border-[#F5D06C]/30 text-[#F5D06C] font-semibold">
-                6 Tư Liệu Chuẩn Xác
+                6 Thế Võ Thị Phạm
               </span>
             </div>
           </div>
 
-          {/* Lưới 6 Thẻ Phục Chế HD */}
+          {/* Lưới 6 Thẻ Tư Liệu */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ARCHIVE_CARDS.map((card) => (
               <div
@@ -472,47 +476,77 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-bold uppercase tracking-wider text-[#F7E7D9] flex items-center gap-2">
                 <Swords className="w-4 h-4 text-[#F5D06C]" />
-                Chiêu Thức Mộc Nhân Thao Pháp Khác ({dummyTechniques.length} thế)
+                Chiêu Thức Mộc Nhân Thao Pháp Tiêu Biểu ({dummyMotions.length} thế)
               </h4>
-              <span className="text-xs text-[#D9C3B4] font-mono">Bấm vào chiêu để xem trên Sàn Tập Võ Đường Số</span>
+              <span className="text-xs text-[#D9C3B4] font-mono">Bấm vào chiêu để xem trên Sàn Tập</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {dummyTechniques.slice(0, 9).map((tech) => (
-                <div
-                  key={tech.id}
-                  onClick={() => onSelectTechnique({ ...tech, formId: "bai-17" })}
-                  className="p-3 rounded-xl bg-[#2A0E0A]/90 hover:bg-[#3A140E] border border-[#F5D06C]/20 hover:border-[#F5D06C]/60 cursor-pointer transition flex items-center justify-between group shadow-sm hover:shadow"
-                >
-                  <div className="flex items-center gap-3 min-w-0">
-                    {tech.steps?.[0]?.imgUrl ? (
+              {dummyMotions.map((motion) => {
+                const motionImg = motion.img2xUrl || motion.imgUrl;
+                return (
+                  <div
+                    key={motion.id}
+                    onClick={() => {
+                      const cleaned = cleanMotionTitle(motion.desc);
+                      onSelectTechnique({
+                        id: motion.id,
+                        code: `MN_${motion.stepNo}`,
+                        name: cleaned ? `Thế ${motion.stepNo}: ${cleaned.slice(0, 35)}...` : `Thế ${motion.stepNo} Mộc Nhân`,
+                        formId: "bai-17",
+                        formName: "Bài mộc nhân số 1",
+                        order: parseInt(motion.stepNo, 10) || 1,
+                        summary: cleaned || motion.desc,
+                        stances: [],
+                        hands: [],
+                        targetZones: [],
+                        difficulty: "Cơ bản",
+                        steps: [
+                          {
+                            stepNo: motion.stepNo,
+                            desc: cleaned || motion.desc,
+                            imgUrl: motionImg,
+                            keypoints: [],
+                          },
+                        ],
+                      });
+                    }}
+                    className="p-3 rounded-xl bg-[#2A0E0A]/90 hover:bg-[#3A140E] border border-[#F5D06C]/20 hover:border-[#F5D06C]/60 cursor-pointer transition flex items-center justify-between group shadow-sm hover:shadow"
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="relative w-11 h-11 rounded-lg overflow-hidden bg-[#FBF9F5] shrink-0 border border-[#F5D06C]/40">
                         <Image
-                          src={tech.steps[0].imgUrl}
-                          alt={tech.name}
+                          src={motionImg}
+                          alt={cleanMotionTitle(motion.desc) || `Thế Mộc Nhân ${motion.stepNo}`}
                           fill
                           sizes="44px"
                           className="object-contain p-0.5 martial-filter"
                         />
                       </div>
-                    ) : null}
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <span className="text-[10px] font-mono text-[#F5D06C] font-bold">
-                          {tech.code}
-                        </span>
-                        <h5 className="text-xs font-bold text-white truncate group-hover:text-[#F5D06C] transition">
-                          {tech.name.split(":")[1]?.trim() || tech.name}
-                        </h5>
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <span className="text-[10px] font-mono text-[#F5D06C] font-bold">
+                            #{motion.stepNo}
+                          </span>
+                          <h5 className="text-xs font-bold text-white truncate group-hover:text-[#F5D06C] transition">
+                            Thế {motion.stepNo}
+                          </h5>
+                          {extractMotionChieu(motion.desc) && (
+                            <span className="text-[9px] text-[#F5D06C] bg-[#F5D06C]/10 border border-[#F5D06C]/25 px-1 py-0.2 rounded font-sans">
+                              {extractMotionChieu(motion.desc)}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-[11px] text-[#D9C3B4] line-clamp-1 mt-0.5">
+                          {cleanMotionTitle(motion.desc)}
+                        </p>
                       </div>
-                      <p className="text-[11px] text-[#D9C3B4] line-clamp-1 mt-0.5">
-                        {tech.summary}
-                      </p>
                     </div>
+                    <ChevronRight className="w-4 h-4 text-[#D9C3B4]/60 group-hover:text-[#F5D06C] transition shrink-0" />
                   </div>
-                  <ChevronRight className="w-4 h-4 text-[#D9C3B4]/60 group-hover:text-[#F5D06C] transition shrink-0" />
-                </div>
-              ))}
+
+                );
+              })}
             </div>
           </div>
         </div>
@@ -545,7 +579,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
               />
             </div>
             <div className="mt-3 text-center text-xs text-[#461A14] font-medium font-mono">
-              Tư liệu võ học phục chế HD chuẩn xác
+              Tư liệu võ học Phật Gia Vịnh Xuân
             </div>
           </div>
         </div>

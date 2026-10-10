@@ -111,15 +111,17 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               }}
               className="p-1 rounded-lg text-slate-400 hover:text-white mr-2 text-xs"
               title="Xóa tìm kiếm"
+              aria-label="Xóa nội dung tìm kiếm"
             >
               Xóa
             </button>
           )}
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition"
+            aria-label="Đóng hộp tra cứu võ học"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition cursor-pointer"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 
@@ -142,7 +144,15 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               return (
                 <div
                   key={`${item.type}-${item.id}`}
+                  role="button"
+                  tabIndex={0}
                   onClick={() => handleSelectItem(item)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleSelectItem(item);
+                    }
+                  }}
                   onMouseEnter={() => setSelectedIndex(idx)}
                   className={`p-3 rounded-xl border cursor-pointer transition-all flex items-center justify-between gap-3 ${
                     isSelected
@@ -152,10 +162,10 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                 >
                   <div className="flex items-center gap-3 min-w-0">
                     {/* Thumbnail if technique */}
-                    {isTech && item.rawTechnique?.steps?.[0]?.imgUrl ? (
+                    {isTech && (item.imgUrl || item.rawTechnique?.steps?.[0]?.imgUrl) ? (
                       <div className="relative w-11 h-11 rounded-lg overflow-hidden bg-white/95 shrink-0 border border-slate-700">
                         <Image
-                          src={item.rawTechnique.steps[0].imgUrl}
+                          src={item.imgUrl || item.rawTechnique?.steps?.[0]?.imgUrl || ""}
                           alt={item.title}
                           fill
                           sizes="44px"
@@ -208,7 +218,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
 
         {/* Footer shortcuts */}
         <div className="px-4 py-2.5 bg-[#080B10] border-t border-[#1E293B] flex items-center justify-between text-[11px] text-slate-500">
-          <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3">
             <span>
               <kbd className="px-1.5 py-0.5 bg-slate-800 rounded text-slate-300">↑↓</kbd> Di chuyển
             </span>
@@ -219,9 +229,12 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               <kbd className="px-1.5 py-0.5 bg-slate-800 rounded text-slate-300">ESC</kbd> Đóng
             </span>
           </div>
+          <span className="sm:hidden text-amber-200/70 font-serif">
+            Chạm vào kết quả để xem ngay
+          </span>
           <div className="flex items-center gap-1.5 text-[#D4AF37]">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>In-Memory Fuzzy Search &lt;2ms</span>
+            <span>Fuzzy Search &lt;2ms</span>
           </div>
         </div>
       </div>

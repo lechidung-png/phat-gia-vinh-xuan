@@ -55,7 +55,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
 
   // 3. TIÊU CHỈ
   "03-tieu-chi": {
-    kieu: "Tuyệt Kỹ Cứu Nguy",
+    kieu: "Kỹ Pháp Cứu Nguy",
     khauQuyet: "Tiêu Chỉ bất xuất môn • Phóng tiêu như đạn, thoát hiểm nan sinh • Khử khẩn quy viên.",
     yeuLinh: "Phóng đầu ngón tay xuyên phá hiểm hóc (mắt, yết hầu, nách). Động tác vung chém xoay tròn thoát khỏi gọng kìm khống chế, lật ngược thế cờ trong gang tấc.",
     cotTu: [
@@ -65,7 +65,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
     ]
   },
   "bai-09-m-1": {
-    kieu: "Tuyệt Kỹ Cứu Nguy",
+    kieu: "Kỹ Pháp Cứu Nguy",
     khauQuyet: "Tiêu Chỉ hộ mệnh • Xuyên thấu hiểm huyệt, cứu nguy phá vây.",
     yeuLinh: "Tập trung lực ở đầu 4 ngón tay duỗi thẳng, cùi chỏ đóng vai trò đòn bẩy. Vừa né tránh vừa phản công vào các tử huyệt thượng bàn.",
     cotTu: [
@@ -206,7 +206,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
   "bai-23-m-1": {
     kieu: "Ngũ Linh Võ Học • Báo Quyền",
-    khauQuyet: "Kim báo phi thân • Tốc độ vô song • Ra đòn chớp giật, dồn dập liên miên.",
+    khauQuyet: "Kim báo phi thân • Thân thủ mau lẹ • Ra đòn chuẩn xác, dồn dập liên miên.",
     yeuLinh: "Gập các đốt ngón tay tạo thành nắm đấm báo (Báo quyền). Đánh liên hoàn cự ly ngắn với tốc độ cực nhanh, nhắm vào thái dương, chấn thủy và hạ sườn.",
     cotTu: [
       "Tần số ra đòn cao, đòn tay này vừa rút thì đòn tay kia đã chạm đích.",

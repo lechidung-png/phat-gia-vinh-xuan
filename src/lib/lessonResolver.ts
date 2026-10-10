@@ -8,26 +8,37 @@ export interface ResolvedNavigation {
 }
 
 const LEGACY_ID_MAP: Record<string, string> = {
-  // Quyền tay không
+  // Quyền tay không & Đối luyện chuẩn từ 200 tình huống
+  "01-tieu-niem-dau": "bai-07",
   "tieu-niem-dau": "bai-07",
+  "02-tam-kieu": "bai-09",
   "tam-kieu": "bai-09",
+  "03-tieu-chi": "bai-10",
   "tieu-chi": "bai-10",
+  "04-108-tai-cho": "bai-12",
   "108-the": "bai-12",
+  "05-108-tai-cho-doi": "bai-13",
   "05-108-doi-luyen": "bai-13",
   "108-doi-luyen": "bai-13",
+  "06-108-tien-lui": "bai-14",
   "108-tien-lui": "bai-14",
+  "07-108-tien-lui-doi": "bai-15",
+  "07-108-tien-lui-doi-luyen": "bai-15",
   "108-tien-lui-doi-luyen": "bai-15",
   "bai-to": "bai-07",
   "khai-the-bai-to": "bai-07",
 
   // Mộc nhân
+  "08-moc-nhan": "bai-17",
   "108-moc-nhan": "bai-17",
   "moc-nhan": "bai-17",
   "dummy": "bai-17",
   "moc-nhan-1": "bai-17",
+  "09-moc-nhan-doi": "bai-18",
   "moc-nhan-tien-lui": "bai-18",
 
   // Ngũ hình
+  "10-ngu-hinh": "gioi-thieu-ngu-hinh",
   "bai-luyen-tong-hop": "bai-luyen-tong-hop",
   "gioi-thieu-ngu-hinh": "gioi-thieu-ngu-hinh",
   "long-quyen": "bai-21",
@@ -79,7 +90,8 @@ export function resolveLessonId(rawId: string | undefined | null): string {
   }
 
   // Khớp mờ (fuzzy match)
-  if (clean.includes("doi-luyen") || clean.includes("doi_luyen")) return "bai-13";
+  if ((clean.includes("tien-lui") || clean.includes("tien_lui")) && (clean.includes("doi") || clean.includes("doi-luyen"))) return "bai-15";
+  if (clean.includes("doi-luyen") || clean.includes("doi_luyen") || clean.includes("doi")) return "bai-13";
   if (clean.includes("tien-lui") || clean.includes("tien_lui")) return "bai-14";
   if (clean.includes("108")) return "bai-12";
   if (clean.includes("moc-nhan") || clean.includes("moc_nhan")) return "bai-17";

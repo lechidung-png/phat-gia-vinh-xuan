@@ -30,16 +30,18 @@ export interface BasicDrill {
   id: string;
   number: number;
   title: string;
+  nameHán?: string;
   purpose: string;
   instructions: string[];
   repetition: string;
   martialPrinciple: string;
+  images?: Record<string, string>;
 }
 
 export const HAND_ANATOMY = {
   diagramUrl: "/assets/images/fundamentals/anatomy_hand.png",
   title: "Sơ Đồ Giải Phẫu Các Phần Của Tay",
-  source: "Sách Phật Gia Vịnh Xuân Quyền (2012) - Trang scan 28",
+  source: "Giáo trình Phật Gia Vịnh Xuân Quyền",
   parts: [
     { name: "Cánh tay", desc: "Từ khớp vai đến khớp khuỷu (cùi chỏ). Là bệ đỡ lực cho toàn bộ cánh tay." },
     { name: "Cùi chỏ (Khuỷu tay / Trửu)", desc: "Trọng tâm bảo vệ trung lộ, giữ góc tù hoặc góc vuông mềm mại, không bao giờ mở nách." },
@@ -106,7 +108,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
       "Không chống gượng lực đối kháng mà mượn lực trượt qua cánh cung"
     ],
     combatApplication: "Hóa giải các đòn đấm vòng, móc ngang hoặc đòn đấm mạnh xộc thẳng. Sau khi trượt lực lập tức biến thành Phục thủ hoặc phóng Nhật tự quyền phản công chớp nhoáng.",
-    rhyme: "Bàng thủ cánh cung tiêu kình địch • Thân xoay né đòn hóa sát chiêu."
+    rhyme: "Bàng thủ cánh cung tiêu kình địch • Thân xoay né đòn hóa thế nguy."
   },
   {
     id: "phuc-thu",
@@ -117,7 +119,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     imgUrl: "/assets/images/fundamentals/phuc_thu.png",
     level: "Trung (Chấn Thủy/Mỏ Ác)",
     shortDesc: "Cổ tay mềm mại hơi cong rủ, khuỷu tay ở trung lộ, lòng bàn tay úp đè kiểm soát tay địch.",
-    techniqueDetail: "Phục thủ là thế tay kiểm soát trung môn siêu đẳng. Cổ tay cong mềm mại như chiếc móc câu, các ngón tay rủ nhẹ thả lỏng áp trên cẳng tay đối thủ. Khuỷu tay luôn hướng về rốn và trung lộ để truyền tải trọng lượng thân trên đè nén địch.",
+    techniqueDetail: "Phục thủ là thế tay kiểm soát trung môn hiệu quả. Cổ tay cong mềm mại như chiếc móc câu, các ngón tay rủ nhẹ thả lỏng áp trên cẳng tay đối thủ. Khuỷu tay luôn hướng về rốn và trung lộ để truyền tải trọng lượng thân trên đè nén địch.",
     keyPoints: [
       "Cổ tay cong rủ tự nhiên, không gồng ngón tay",
       "Cùi chỏ ghim chặt vào trung tâm cơ thể",
@@ -396,65 +398,163 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     ],
     combatApplication: "Đá triệt gối (Triệt cước), dẫm mắt cá chân, đá móc hất gót hạ bộ đối thủ trong lúc tay đang giằng co cận chiến.",
     rhyme: "Cước xuất tầm thấp giấu bóng hình • Triệt gối gãy chân địch ngã lăn."
+  },
+  {
+    id: "quy-ma-tan",
+    nameVn: "Quy Mã Tấn (Tấn Hạ Thấp Trọng Tâm Sát Đất)",
+    nameHán: "龜馬步 / 跪馬",
+    imgUrl: "/assets/hinh-2x/p031-h01.png",
+    category: "Tấn Pháp",
+    shortDesc: "Khi địch hạ thấp người đánh hạ bàn, không được cúi gập lưng mà phải hạ thấp theo thế Quy Mã Tấn: quỳ một gối, chân kia giẫm sàn, người vuông góc đùi.",
+    techniqueDetail: "Yếu lĩnh sách gốc (Trang 31-34): Khi địch hạ người xuống thấp, tuyệt đối không được cúi người xuống mà 'hạ thấp' người theo thế Quy Mã Tấn. Trong tấn này, một bàn chân giẫm xuống đất, chân kia quỳ gối, người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất. Giữ lưng thẳng, che kín hạ bộ và sẵn sàng tung đòn đánh tầm thấp hoặc luồn lách né đòn.",
+    keyPoints: [
+      "Một chân giẫm vững trên sàn, một đầu gối quỳ sát đất",
+      "Thân người giữ vuông góc với đùi của chân giẫm sàn, không cúi gập lưng",
+      "Hai tay thủ kín chấn thủy và hạ bộ trên trục Tý Ngọ",
+      "Dùng khi giáp chiến tầm cực thấp hoặc chống đòn quét hạ bàn của địch"
+    ],
+    combatApplication: "Đón đỡ các đòn đá quét chân, đòn đấm móc bụng hoặc các đòn quật ngã tầm thấp của đối phương mà không bị mất thăng bằng.",
+    rhyme: "Quy mã hạ thấp định càn khôn • Thân thẳng hạ bàn vững tựa non."
+  },
+  {
+    id: "ma-cheo-xa-quyen",
+    nameVn: "Mã Chéo Xà Quyền (Bộ Pháp Đan Chéo Thần Tốc)",
+    nameHán: "蛇拳叉馬",
+    imgUrl: "/assets/hinh-2x/p031-h02.png",
+    category: "Bộ Pháp",
+    shortDesc: "Mã bộ phức tạp di chuyển bằng cách xoay 2 chân sát nhau đan chéo, lướt 2 chân cùng lúc, bộ pháp luồn lách đặc thù của Xà quyền.",
+    techniqueDetail: "Yếu lĩnh sách gốc (Trang 31): 'Có một số mã bộ phức tạp như mã chéo, mã di chuyển bằng quay 2 chân sát nhau (như trong bài Xà Quyền), lướt 2 chân cùng một lúc... chỉ khi học cao mới được tập.' Đôi chân di chuyển mềm mại, vặn xoắn như thân rắn trườn bò, tạo ra những góc tiếp cận bất ngờ mà đối phương không thể lường trước.",
+    keyPoints: [
+      "Hai bàn chân đặt sát nhau đan chéo linh hoạt",
+      "Lướt hai chân cùng một lúc ma sát sàn",
+      "Thân người uốn lượn theo nhịp chuyển của hông và cột sống",
+      "Kết hợp đòn xỉa ngón tay (Chỉ pháp) của Xà quyền"
+    ],
+    combatApplication: "Luồn lách vào mạn sườn hoặc sau lưng đối thủ trong góc hẹp, đánh lừa tầm nhìn và phản xạ của đối phương.",
+    rhyme: "Mã chéo xà hành thân biến ảo • Luồn lách khôn lường nhập tử môn."
+  },
+  {
+    id: "bo-phap-ty-ngo",
+    nameVn: "Sơ Đồ Bộ Pháp Trục Tý Ngọ (Tiến, Lùi, Xước Mã)",
+    nameHán: "子午步法圖",
+    imgUrl: "/assets/hinh-2x/p034-h01.png",
+    category: "Bộ Pháp",
+    shortDesc: "Sơ đồ các bước chân di chuyển tiến, lùi trên trục Tý Ngọ Tuyến A-B: chân trước tiến kéo chân sau theo, đạp cung trung, túc bất ly địa.",
+    techniqueDetail: "Yếu lĩnh sách gốc (Trang 34 - Đồ hình A-B): Bộ pháp di chuyển thẳng trên trục Tý Ngọ Tuyến. Tiến bước: Chân trước nhích lên một bước ngắn theo trục thẳng, chân sau lập tức lướt theo giữ nguyên cự ly hẹp. Lùi bước: Chân sau lùi trước, chân trước rút theo. Đạp cung trung: Thường tiến 3 bước, lùi 3 bước nhịp nhàng. Túc bất ly địa: Bàn chân luôn ma sát trượt sát mặt sàn.",
+    keyPoints: [
+      "Trục thẳng A-B định hướng đường tiến thoái trung tâm",
+      "Chân trước bước trước - chân sau theo sau; Lùi chân sau bước trước - chân trước theo sau",
+      "Hai mép ngoài bàn chân luôn giữ khoảng cách hẹp cố định",
+      "Trọng tâm 70% ở chân sau, 30% chân trước"
+    ],
+    combatApplication: "Áp sát chiếm lĩnh trục trung lộ của đối thủ hoặc rút lui chiến thuật giữ vững cự ly phòng thủ.",
+    rhyme: "Tý Ngọ trục tuyến bước tiến thoái • Đạp cung trung định thế ngàn cân."
+  },
+  {
+    id: "hoanh-thoai-bien-than",
+    nameVn: "Hoành Thoái Biên Thân (Quay 90° & 270°)",
+    nameHán: "橫退邊身",
+    imgUrl: "/assets/hinh-2x/p034-h02.png",
+    category: "Bộ Pháp",
+    shortDesc: "Kỹ thuật quay chuyển thân người 90° (sang trái) và 270° (sang phải) đưa vai ra trước thành thế biên thân né đòn trong chớp mắt.",
+    techniqueDetail: "Yếu lĩnh sách gốc (Trang 34): Hoành thoái là quay chuyển thân người sang phải hay trái và kết quả là đưa vai trái hay phải ra trước với tư thế biên thân. Quay sang Trái (90°): Bàn chân trái quay ra sau 90°, bàn chân phải đặt trước song song chân trái. Quay sang Phải (270°): Bàn chân phải quay ra sau 270° theo chiều kim đồng hồ, thân quay 90° sang phải, vai trái và chân trái ra trước.",
+    keyPoints: [
+      "Quay người kết hợp di chuyển vòng của bàn chân",
+      "Đưa thân về thế biên thân, thu hẹp diện tích tiếp xúc với đòn địch",
+      "Điểm cố định xoay ở giữa bàn chân, không nhấc gót nhấc mũi",
+      "Lực xuất phát từ lòng đất qua chân sau (Lực do địa khởi)"
+    ],
+    combatApplication: "Hóa giải các cú đấm thẳng sấm sét của địch mà không cần lùi bước, biến góc đánh của địch thành góc hở của ta.",
+    rhyme: "Hoành thoái xoay thân tiêu kình lực • Biên thân nhập nội chế địch quân."
   }
 ];
 
-export const BASIC_DRILLS: BasicDrill[] = [
+export const BASIC_DRILLS = [
   {
     id: "drill-quay-tay",
     number: 1,
     title: "Bài Tập Quay Tay (Xoay Khớp Cổ Tay & Cùi Chỏ)",
+    nameHán: "旋手練習",
     purpose: "Khai mở toàn bộ 8 khớp xương vùng cổ tay và khớp khuỷu, rèn luyện độ mềm dẻo nhưng chứa nội kình thâm hậu.",
     instructions: [
-      "Đứng thế Tấn Kiềm Dương chuẩn mực, giữ lưng thẳng, ngực hàm.",
-      "Hai tay đưa ra phía trước ngang mức chấn thủy (mức trung bình).",
-      "Thực hiện xoay tròn hai cổ tay theo chiều kim đồng hồ và ngược chiều kim đồng hồ.",
-      "Cổ tay xoay tròn trịa mềm mại như vòng bi có mỡ bôi trơn, cánh tay và cùi chỏ giữ tĩnh tại trung lộ, không gồng cơ bắp."
+      "Đứng thế Tấn Kiềm Dương chuẩn mực, giữ lưng thẳng, ngực hàm, ý thủ đan điền.",
+      "Tay trái thu quyền sát nách; tay phải đưa ra trước ngực, khuỷu tay cách chéo áo 5-7cm ngang trên rốn.",
+      "Chu kỳ 1 (Ngửa tay Than thủ): Đầu ngón tay giữa ở tâm O, đưa ra điểm B, xoay ngược kim đồng hồ B-M-A-N-B một vòng tròn. Lật úp bàn tay, đánh cổ tay sang trái từ B đến A.",
+      "Chu kỳ 2 (Úp tay Phục thủ): Từ điểm A, quay cổ tay xuôi kim đồng hồ A-M-B-N-A một vòng tròn. Tại A lật ngửa bàn tay và đánh cổ tay từ A sang B trở về điểm xuất phát.",
+      "Đổi sang tay trái tập tương tự theo chiều đối xứng. Mục tiêu là cổ tay xoay tròn trịa mềm như ổ bi có dầu bôi trơn, cánh tay và cùi chỏ giữ tĩnh tại trung lộ."
     ],
-    repetition: "100 lần xoay thuận + 100 lần xoay nghịch mỗi ngày",
-    martialPrinciple: "Cổ tay mềm thì kình lực mới lưu thông; tay cứng đờ thì không thể hóa giải đòn đấm đối phương."
+    repetition: "100 lần xoay thuận + 100 lần xoay nghịch mỗi ngày (khoảng 15-20 phút)",
+    martialPrinciple: "Cổ tay mềm thì kình lực mới lưu thông; tay cứng đờ thì không thể hóa giải đòn đấm đối phương.",
+    images: {
+      masterPosture: "/assets/hinh-2x/p032-h01.png",
+      cycle1Diagram: "/assets/hinh-2x/p032-h02.png",
+      cycle2Diagram: "/assets/hinh-2x/p032-h03.png",
+      fullStepsGuide: "/assets/hinh-2x/p033-h01.png"
+    }
   },
   {
     id: "drill-quay-nguoi",
     number: 2,
-    title: "Bài Tập Quay Người (Biên Thân Xoay Trục Né Đòn)",
+    title: "Bài Tập Quay Người & Hoành Thoái (Biên Thân Né Đòn)",
+    nameHán: "轉身橫退",
     purpose: "Rèn luyện khả năng né đòn trong gang tấc trên trục Tý Ngọ Tuyến mà hai bàn chân không cần rời khỏi vị trí ban đầu.",
     instructions: [
-      "Đứng Tấn Kiềm Dương, hai gót chân giữ nguyên vị trí bám chặt mặt sàn.",
-      "Xoay trục hông và toàn bộ thân trên 90 độ sang trái, mắt nhìn hẳn sang trái, trọng tâm dồn 70% vào chân sau.",
-      "Sau đó xoay ngược lại 90 độ sang phải, đổi trọng tâm tương tự.",
+      "Đứng Tấn Kiềm Dương, hai tay thủ quyền dưới nách.",
+      "Quay người tại chỗ: Hai bàn chân quay 30-45 độ, thân người quay 90 độ sang trái. Hai bàn chân song song cách nhau một bề ngang bàn chân, vai phải hướng ra trước (biên thân).",
+      "Quay người kết hợp quay tay: Vừa xoay thân vừa xuất Than thủ hoặc Phục thủ, trọng tâm dồn 70% vào chân sau, cảm nhận lực từ lòng đất đi lên cơ thể (Lực do địa khởi).",
+      "Hoành thoái 90° (sang trái) và Hoành thoái 270° (sang phải): Di chuyển vòng bàn chân ra sau đồng thời với quay người để chuyển hướng đánh vuông góc mà vẫn bám sát đối phương.",
       "Cột sống giữ thẳng đứng như chiếc cột xoay quanh tim trục, không nghiêng ngả người."
     ],
     repetition: "50 lần sang trái + 50 lần sang phải nhịp nhàng",
-    martialPrinciple: "Thân bất ly trục, dĩ dật đãi lao - Lấy sự xoay chuyển nhẹ nhàng của thân thể để triệt tiêu lực ngàn cân của địch."
+    martialPrinciple: "Thân bất ly trục, dĩ dật đãi lao - Lấy sự xoay chuyển nhẹ nhàng của thân thể để triệt tiêu lực ngàn cân của địch.",
+    images: {
+      turnLeftMaster: "/assets/hinh-2x/p033-h02.png",
+      turnRightMaster: "/assets/hinh-2x/p033-h03.png",
+      hoanhThoaiDiagram: "/assets/hinh-2x/p034-h02.png",
+      hoanhThoai270Diagram: "/assets/hinh-2x/p034-h03.png"
+    }
   },
   {
     id: "drill-di-chuyen",
     number: 3,
-    title: "Bài Tập Di Chuyển (Bộ Pháp Lướt Chân Giữ Cự Ly Hẹp)",
+    title: "Bài Tập Di Chuyển Bước Chân (Mã Bộ & Bộ Pháp Tý Ngọ)",
+    nameHán: "步法移動",
     purpose: "Rèn luyện sự linh hoạt của hạ bàn, tiến thoái nhịp nhàng mà hạ môn luôn được che kín.",
     instructions: [
-      "Tiến bước: Chân trước nhích lên một bước ngắn (khoảng nửa bàn chân), chân sau lập tức lướt theo giữ nguyên cự ly hẹp.",
-      "Lùi bước: Chân sau lùi trước một bước ngắn, chân trước lập tức rút theo.",
-      "Khoa chân tròn: Chân vẽ một vòng tròn ngắn từ trong ra ngoài mượn quán tính xoay hông né đòn.",
-      "Hai bàn chân luôn ma sát trượt trên sàn, không nhảy chồm chổm làm mất gốc thăng bằng."
+      "Tiến bước (Xước mã leo núi / Truy mã): Chân trước nhích lên một bước ngắn theo trục thẳng A-B, chân sau lập tức lướt theo giữ nguyên cự ly hẹp.",
+      "Lùi bước: Chân sau lùi trước một bước ngắn, chân trước lập tức rút theo giữ nguyên cấu trúc.",
+      "Đạp cung trung: Tiến 3 bước, lùi 3 bước nhịp nhàng theo hơi thở Đan Điền.",
+      "Túc bất ly địa: Hai bàn chân luôn ma sát trượt sát mặt sàn, không nhảy chồm chồm làm mất gốc thăng bằng.",
+      "Khoảng cách giữa hai mép bàn chân luôn giữ cố định bằng một bề ngang bàn chân."
     ],
     repetition: "Lướt tiến lùi 10 vòng võ đường mỗi buổi tập",
-    martialPrinciple: "Chân đi như thuyền lướt trên nước, hạ bàn vững như bàn thạch."
+    martialPrinciple: "Chân đi như thuyền lướt trên nước, hạ bàn vững như bàn thạch.",
+    images: {
+      centerlineStepsDiagram: "/assets/hinh-2x/p034-h01.png",
+      advanceRetreatDiagram: "/assets/hinh-2x/p035-h01.png",
+      footworkCurveDiagram: "/assets/hinh-2x/p035-h02.png"
+    }
   },
   {
     id: "drill-linh-giac",
     number: 4,
-    title: "Bài Tập Khởi Điểm Linh Giác (Cảm Ứng Tiếp Xúc Kình Lực)",
+    title: "Bài Tập Khởi Điểm Linh Giác & Tán Thủ (Cảm Ứng Kình Lực)",
+    nameHán: "靈覺散手",
     purpose: "Đánh thức giác quan xúc giác của da thịt, rèn phản xạ tự động hóa giải đòn mà không cần thông qua mắt nhìn và não bộ tính toán.",
     instructions: [
       "Hai người tập đứng đối diện nhau thế Tấn Kiềm Dương.",
-      "Áp hai cẳng tay vào nhau (một người Than thủ, một người Phục thủ).",
-      "Nhắm mắt lại hoặc nhìn thẳng vào ngực đối phương, chỉ dùng xúc giác tiếp xúc cẳng tay để cảm nhận hướng lực đẩy hoặc kéo.",
-      "Khi đối thủ phát lực đẩy tới thì lập tức xoay thân hóa giải; khi đối thủ rút tay thì lập tức thọc quyền theo vào chỗ trống."
+      "Áp hai cẳng tay vào nhau (một người Than thủ, một người Phục thủ) trên trục Tý Ngọ Tuyến.",
+      "Nhắm mắt lại hoặc nhìn thẳng vào ngực đối phương, chỉ dùng xúc giác tiếp xúc cẳng tay để cảm nhận hướng lực đẩy hoặc kéo (Thính kình).",
+      "Khi đối thủ phát lực đẩy tới thì lập tức xoay thân biên thân hóa giải; khi đối thủ rút tay thì lập tức thọc quyền theo vào chỗ trống (Lai lưu khứ tống, suất thủ trực xung).",
+      "Tán thủ phối hợp: Tách riêng từng chiêu thức cơ bản để phân tích điểm mạnh, điểm yếu và kỹ thuật hóa giải tương ứng."
     ],
     repetition: "15 - 20 phút mỗi buổi tập đôi",
-    martialPrinciple: "Đến thì đón, đi thì tiễn, buông tay thì phóng quyền (Lai lưu khứ tống, suất thủ trực xung)."
+    martialPrinciple: "Đến thì đón, đi thì tiễn, buông tay thì phóng quyền (Lai lưu khứ tống, suất thủ trực xung).",
+    images: {
+      niemThuMasterImg: "/assets/hinh-2x/p146-h01.png",
+      reflexDiagram: "/assets/hinh-2x/p147-h01.png",
+      niemThuMasterPartner: "/assets/hinh-2x/p148-h01.png"
+    }
   }
 ];
 
@@ -462,33 +562,41 @@ export const LEARNING_STAGES = [
   {
     stage: 1,
     id: "fundamentals",
-    title: "Giai Đoạn 1: Cơ Bản Công",
-    subtitle: "Thủ Pháp, Cước Pháp & 4 Bài Luyện Căn Bản",
+    title: "Chặng 1: Cơ Bản & Bái Tổ",
+    subtitle: "Tấn Pháp, Tam Thủ, Xoay Tay & Bộ Pháp",
     icon: "Shield",
-    desc: "Nắm vững Tam Thủ (Than-Bàng-Phục), Tấn Kiềm Dương chân hẹp, Trục Tý Ngọ Tuyến và xoay khớp cổ tay."
+    desc: "Nắm vững Nhị Tự Kiềm Dương Tấn, Tam Thủ (Than-Bàng-Phục), bài tập Xoay tay, Bộ pháp di chuyển và 9 bước Bái Tổ Sư Môn."
   },
   {
     stage: 2,
-    id: "bai-to",
-    title: "Giai Đoạn 2: Bái Tổ & Nhập Môn",
-    subtitle: "Nghi Thức 9 Bước & Khởi Quyền",
-    icon: "Flower2",
-    desc: "Kính nhớ công đức Sư Tổ Tế Công, Hưng hóa võ đạo, mở huyệt đạo và khai thông kinh mạch."
+    id: "forms-core",
+    title: "Chặng 2: Tam Đại Quyền Pháp",
+    subtitle: "Tiểu Niệm Đầu ➔ Tầm Kiều ➔ Tiêu Chỉ",
+    icon: "Flame",
+    desc: "Bài võ cơ bản đầu tiên 'Niệm đầu bất chính chung thân bất chính', kế tiếp Tầm Kiều bắc nhịp và Tiêu Chỉ ngón tay phóng kình."
   },
   {
     stage: 3,
-    id: "dojo",
-    title: "Giai Đoạn 3: Đại Pháp 108 Thế",
-    subtitle: "108 Chiêu Liên Hoàn Đơn & Đối Luyện",
+    id: "108-the",
+    title: "Chặng 3: Hệ Thống 108 Thế",
+    subtitle: "Tại Chỗ & Tiến Lùi (Đơn & Đối Luyện)",
     icon: "Swords",
-    desc: "Học trọn vẹn 108 chiêu thức liên hoàn tại chỗ và tiến lùi, cầm nã thực chiến và phản xạ tự nhiên."
+    desc: "108 thế kinh điển hoàn chỉnh: đơn luyện định khuôn và đối luyện song đấu 2 người phá vỡ phòng tuyến đối phương."
   },
   {
     stage: 4,
     id: "dummy",
-    title: "Giai Đoạn 4: Cọc Gỗ Mộc Nhân",
-    subtitle: "Mộc Nhân Trang Sư Tổ Tế Công 1954",
+    title: "Chặng 4: Mộc Nhân",
+    subtitle: "Mộc Nhân Trang 1954 Sư Tổ Tế Công",
     icon: "Sparkles",
-    desc: "Rèn luyện thể lực thép, đo khoảng cách gang tấc, triệt hạ cước và thao pháp luồn lách quanh 5 tầng cọc."
+    desc: "Rèn luyện thể lực thép, đo khoảng cách gang tấc, triệt hạ cước và thao pháp luồn lách quanh thân mộc nhân."
+  },
+  {
+    stage: 5,
+    id: "weapons",
+    title: "Chặng 5: Ngũ Hình & Binh Khí",
+    subtitle: "Long, Xà, Hổ, Báo, Hạc & Song Đao, Côn, Kiếm",
+    icon: "Award",
+    desc: "Ngũ hình quyền biến hóa cùng hệ thống binh khí cổ truyền: Bát Trảm Đao, Lục Điểm Bán Côn, Liễu Diệp Kiếm."
   }
 ];

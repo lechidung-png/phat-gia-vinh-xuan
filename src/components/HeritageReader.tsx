@@ -51,11 +51,8 @@ export const HeritageReader: React.FC<HeritageReaderProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/40 text-[#F5D06C] text-xs font-bold font-mono uppercase tracking-wider">
             <BookOpen className="w-3.5 h-3.5" />
-            Toàn Văn Giáo Trình Di Sản
+            Toàn Văn Giáo Trình
           </div>
-          <span className="text-xs text-emerald-400 font-mono font-semibold bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800/40">
-            Bảo Tồn 100% Nguyên Bản Môn Phái
-          </span>
         </div>
 
         <h2 className="text-2xl sm:text-4xl font-extrabold font-serif text-white leading-tight">

@@ -2,19 +2,15 @@
 
 import React, { useState } from "react";
 import {
-  Home,
   Search,
   Swords,
-  BookOpen,
   GitBranch,
   ShieldCheck,
-  Compass,
   Sparkles,
   Hand,
   ShieldAlert,
   Menu,
   X,
-  LayoutGrid,
 } from "lucide-react";
 
 export type NavTab = "welcome" | "forms" | "fundamentals" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
@@ -37,14 +33,11 @@ export const Header: React.FC<HeaderProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems: { id: NavTab; label: string; shortLabel: string; icon: React.ComponentType<{ className?: string }> }[] = [
-    { id: "welcome", label: "Trang Chủ", shortLabel: "Trang Chủ", icon: Home },
-    { id: "forms", label: "36 Bài Quyền", shortLabel: "36 Bài Quyền", icon: Swords },
-    { id: "fundamentals", label: "Cơ Bản Công", shortLabel: "Cơ Bản", icon: Hand },
-    { id: "dummy", label: "Cọc Mộc Nhân", shortLabel: "Mộc Nhân", icon: Sparkles },
-    { id: "scenarios", label: "200 Tình Huống", shortLabel: "Tình Huống", icon: ShieldAlert },
-    { id: "centerline", label: "Tý Ngọ Tuyến", shortLabel: "Tý Ngọ", icon: Compass },
-    { id: "library", label: "Tàng Kinh Các", shortLabel: "Kinh Các", icon: BookOpen },
     { id: "lineage", label: "Truyền Thừa", shortLabel: "Truyền Thừa", icon: GitBranch },
+    { id: "fundamentals", label: "Cơ Bản", shortLabel: "Cơ Bản", icon: Hand },
+    { id: "forms", label: "18 Bài Quyền", shortLabel: "18 Bài Quyền", icon: Swords },
+    { id: "dummy", label: "Mộc Nhân", shortLabel: "Mộc Nhân", icon: Sparkles },
+    { id: "scenarios", label: "Tình Huống", shortLabel: "Tình Huống", icon: ShieldAlert },
   ];
 
   const handleSelectNav = (tab: NavTab) => {
@@ -75,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Desktop Navigation Menu (Visible on lg & up, No Scrollbar, Perfectly Spaced) */}
-        <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -83,60 +76,64 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={item.id}
                 onClick={() => handleSelectNav(item.id)}
-                className={`px-2.5 xl:px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
+                className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
                   isActive
                     ? "bg-[#E2B743] text-black font-bold shadow-md shadow-[#E2B743]/20"
                     : "text-slate-300 hover:text-white hover:bg-[#20150F]"
                 }`}
               >
-                <Icon className="w-3.5 h-3.5" />
+                <Icon className="w-4 h-4" />
                 <span>{item.label}</span>
               </button>
             );
           })}
         </nav>
 
-        {/* Right Action Icons: Mega Menu + Search + Stance Guide + Mobile Menu Toggle */}
+        {/* Right Action Icons: Search + Stance Guide + Mobile Menu Toggle */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-          {/* Mega Menu Trigger: Mục Lục Toàn Cảnh */}
+
+          {/* Mega Menu Trigger (Chỉ hiển thị từ tablet md trở lên) */}
           {openMegaMenu && (
             <button
               onClick={openMegaMenu}
-              title="Mục Lục Toàn Cảnh (11 Phân Hệ & 36 Bài Học)"
-              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-[#20150F] border border-[#F5D06C]/40 hover:border-[#F5D06C] text-[#F5D06C] hover:text-white transition-all text-xs font-semibold cursor-pointer shadow"
+              title="Mục lục toàn thư môn phái"
+              aria-label="Mục lục toàn thư môn phái"
+              className="hidden md:flex items-center gap-1.5 min-h-[40px] px-3 py-2 rounded-xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 text-slate-300 hover:text-white transition-all text-xs cursor-pointer shadow-inner"
             >
-              <LayoutGrid className="w-3.5 h-3.5 text-[#F5D06C]" />
-              <span className="hidden sm:inline">Mục Lục</span>
+              <Menu className="w-4 h-4 text-[#E2B743]" />
+              <span className="text-xs text-slate-300 font-medium">Mục Lục</span>
             </button>
           )}
 
-          {/* Compact Search Trigger */}
+          {/* Quick Stance Guide Button (Chỉ hiển thị từ tablet md trở lên) */}
+          <button
+            onClick={openStanceGuide}
+            title="Quy chuẩn Tấn Kiềm Dương (Chân Hẹp)"
+            aria-label="Quy chuẩn Tấn Kiềm Dương (Chân Hẹp)"
+            className="hidden md:flex min-w-[40px] min-h-[40px] items-center justify-center p-2 rounded-xl text-[#10B981] bg-[#10B981]/15 border border-[#10B981]/30 hover:bg-[#10B981]/25 transition-all cursor-pointer"
+          >
+            <ShieldCheck className="w-4 h-4" />
+          </button>
+
+          {/* Search Trigger (Chuẩn Touch Target >= 44px trên Mobile) */}
           <button
             onClick={openSearch}
             title="Tra cứu nhanh võ học (Ctrl+K)"
-            className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 text-slate-300 hover:text-white transition-all text-xs cursor-pointer shadow-inner"
+            aria-label="Tra cứu nhanh võ học (Ctrl+K)"
+            className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 py-2 rounded-xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 text-slate-300 hover:text-white transition-all text-xs cursor-pointer shadow-inner"
           >
             <Search className="w-4 h-4 text-[#E2B743]" />
-            <span className="hidden md:inline text-xs text-slate-300">Tra cứu</span>
+            <span className="hidden sm:inline text-xs text-slate-300 font-medium">Tra cứu</span>
             <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] bg-[#2A1C14] rounded border border-[#3D291F] text-amber-200/80 font-mono">
               Ctrl+K
             </kbd>
           </button>
 
-          {/* Quick Stance Guide Button */}
-          <button
-            onClick={openStanceGuide}
-            title="Quy chuẩn Tấn Kiềm Dương (Chân Hẹp)"
-            className="p-2 rounded-xl text-[#10B981] bg-[#10B981]/15 border border-[#10B981]/30 hover:bg-[#10B981]/25 transition-all cursor-pointer"
-          >
-            <ShieldCheck className="w-4 h-4" />
-          </button>
-
-          {/* Mobile Menu Hamburger Button (< lg) */}
+          {/* Mobile Menu Hamburger Button (< lg, Chuẩn Touch Target >= 44px) */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl bg-[#20150F] border border-[#3D291F] text-slate-300 hover:text-white hover:border-[#E2B743]/50 transition-all cursor-pointer"
-            aria-label="Toggle navigation menu"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-xl bg-[#20150F] border border-[#3D291F] text-slate-300 hover:text-white hover:border-[#E2B743]/50 transition-all cursor-pointer"
+            aria-label="Bật tắt menu điều hướng di động"
           >
             {mobileMenuOpen ? <X className="w-5 h-5 text-[#E2B743]" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -146,11 +143,47 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile / Tablet Dropdown Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#180E09] border-b border-[#3D291F] px-4 py-3 space-y-1 shadow-2xl animate-fadeIn">
-          <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-2 py-1">
-            Danh Mục Võ Đường Số
+        <div className="lg:hidden bg-[#180E09] border-b border-[#3D291F] px-4 py-3.5 space-y-3 shadow-2xl animate-fadeIn">
+          {/* 2 Tiện ích Quick-Access trên Mobile (Mục Lục & Quy Chuẩn Tấn) */}
+          <div className="grid grid-cols-2 gap-2">
+            {openMegaMenu && (
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openMegaMenu();
+                }}
+                className="p-2.5 rounded-xl bg-[#F5D06C]/10 border border-[#F5D06C]/30 text-amber-200 hover:text-white flex items-center gap-2 transition cursor-pointer text-left"
+                aria-label="Mở mục lục toàn cảnh"
+              >
+                <Menu className="w-4 h-4 text-[#F5D06C] shrink-0" />
+                <div className="min-w-0">
+                  <div className="text-xs font-bold text-[#F5D06C] truncate">Mục Lục Toàn Thư</div>
+                  <div className="text-[10px] text-amber-200/60 truncate">7 Trụ Cột &amp; 11 Phân Hệ</div>
+                </div>
+              </button>
+            )}
+
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openStanceGuide();
+              }}
+              className="p-2.5 rounded-xl bg-[#10B981]/10 border border-[#10B981]/30 text-emerald-200 hover:text-white flex items-center gap-2 transition cursor-pointer text-left"
+              aria-label="Mở quy chuẩn Tấn Kiềm Dương"
+            >
+              <ShieldCheck className="w-4 h-4 text-[#10B981] shrink-0" />
+              <div className="min-w-0">
+                <div className="text-xs font-bold text-emerald-400 truncate">Quy Chuẩn Tấn</div>
+                <div className="text-[10px] text-emerald-200/60 truncate">Kiềm Dương Chân Hẹp</div>
+              </div>
+            </button>
           </div>
-          <div className="grid grid-cols-2 gap-1.5 pt-1">
+
+          <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
+            Danh Mục 5 Phân Hệ Võ Học
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 pt-0.5">
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
@@ -158,7 +191,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <button
                   key={item.id}
                   onClick={() => handleSelectNav(item.id)}
-                  className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
+                  className={`px-3 py-3 rounded-xl text-xs font-semibold flex items-center gap-2.5 transition-all cursor-pointer ${
                     isActive
                       ? "bg-[#E2B743] text-black font-bold shadow-md shadow-[#E2B743]/20"
                       : "text-slate-300 hover:text-white hover:bg-[#20150F] bg-[#140C08] border border-[#3D291F]"

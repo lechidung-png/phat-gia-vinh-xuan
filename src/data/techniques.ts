@@ -35,7 +35,7 @@ export interface Technique {
   stances: string[];
   hands: string[];
   targetZones: string[];
-  difficulty: "Cơ bản" | "Trung cấp" | "Nâng cao" | "Thượng thừa";
+  difficulty: "Cơ bản" | "Trung cấp" | "Nâng cao" | "Chuyên sâu";
   isNarrowStance?: boolean;
   stanceRule?: string;
   isSymmetricLeft?: boolean;
@@ -76,7 +76,7 @@ export const SECTIONS_CATALOG: SectionCatalogItem[] = [
   },
   {
     "id": "doan-5",
-    "name": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "name": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "count": 28
   }
 ];
@@ -248,7 +248,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "1.1",
         "desc": "Đứng Tấn Kiềm Dương chân hẹp, hai tay chắp lại để ngang ngực, mũi tay hướng ra ngoài.",
-        "imgUrl": "/assets/images/techniques/series/fig_1_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai gót và mũi chân hướng khép sát",
@@ -259,7 +259,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "1.2",
         "desc": "Xỉa thẳng hai tay ra trước dọc theo trục trung tuyến.",
-        "imgUrl": "/assets/images/techniques/series/fig_1_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cùi chỏ ép chặt mạn sườn",
@@ -303,7 +303,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "2",
         "desc": "Hai bàn tay để song song, phát lực chưởng thẳng xuống dưới.",
-        "imgUrl": "/assets/images/techniques/series/fig_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cùi chỏ khép chặt sườn",
@@ -350,7 +350,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "3.1",
         "desc": "Quay người 90 độ sang trái, tay gạt ngang biên thân, tay trái thủ trước ngực.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Xoay trục thân nhanh nhẹn",
@@ -361,7 +361,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "3.2",
         "desc": "Giật cổ tay phải theo hướng thẳng đứng từ trên xuống dưới.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Thốn kình rung giật cổ tay",
@@ -371,7 +371,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "3.3",
         "desc": "Tay phải đánh chưởng thẳng ra trước, tay trái giữ thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_3.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Chưởng phát lực chấn thủy",
@@ -418,7 +418,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "4.1",
         "desc": "[Thế đối xứng trái] Quay người 90 độ sang phải, tay gạt ngang biên thân, tay phải thủ trước ngực.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 3",
@@ -430,7 +430,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "4.2",
         "desc": "[Thế đối xứng trái] Giật cổ tay trái theo hướng thẳng đứng từ trên xuống dưới.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 3",
@@ -441,7 +441,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "4.3",
         "desc": "[Thế đối xứng trái] Tay trái đánh chưởng thẳng ra trước, tay phải giữ thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_3_3.png",
+        "imgUrl": "/assets/hinh-2x/p055-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 3",
@@ -486,7 +486,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "5",
         "desc": "Tay trái đỡ, tay phải đánh chưởng ngang ra phía trước (Biên thân).",
-        "imgUrl": "/assets/images/techniques/series/fig_5.png",
+        "imgUrl": "/assets/hinh-2x/p055-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái dựng cản đòn",
@@ -530,7 +530,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "6.1",
         "desc": "[Thế đối xứng trái] Tay phải đỡ, tay trái đánh chưởng ngang ra phía trước (Biên thân).",
-        "imgUrl": "/assets/images/techniques/series/fig_5.png",
+        "imgUrl": "/assets/hinh-2x/p055-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 5",
@@ -578,7 +578,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "7.1",
         "desc": "Xoay người sang trái. Tay trái than thủ, tay phải bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Than thủ ngửa lòng bàn tay",
@@ -588,7 +588,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "7.2",
         "desc": "Xoay người sang phải, chuyển thế tay phải than thủ, tay trái bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Chuyển trọng tâm mượt mà",
@@ -598,7 +598,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "7.3",
         "desc": "Chuyển thế tay trái than thủ, tay phải đánh chưởng ra trước. Xoay người.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_3.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái than thủ nâng lực",
@@ -644,7 +644,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "8.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay phải than thủ, tay trái bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 7",
@@ -655,7 +655,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "8.2",
         "desc": "[Thế đối xứng trái] Xoay người sang trái, chuyển thế tay trái than thủ, tay phải bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 7",
@@ -666,7 +666,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "8.3",
         "desc": "[Thế đối xứng trái] Chuyển thế tay phải than thủ, tay trái đánh chưởng ra trước. Xoay người.",
-        "imgUrl": "/assets/images/techniques/series/fig_7_3.png",
+        "imgUrl": "/assets/hinh-2x/p055-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 7",
@@ -711,7 +711,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "9.1",
         "desc": "Hai tay nắm, giơ cao quá đầu. Xoay người sang trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_9_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Mở rộng biên độ lồng ngực",
@@ -721,7 +721,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "9.2",
         "desc": "Đánh theo chiều thẳng đứng từ phía trên xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_9_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Dồn toàn lực trọng trường",
@@ -765,7 +765,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "10.1",
         "desc": "[Thế đối xứng trái] Hai tay nắm, giơ cao quá đầu. Xoay người sang phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_9_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 9",
@@ -776,7 +776,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "10.2",
         "desc": "[Thế đối xứng trái] Đánh theo chiều thẳng đứng từ phía trên xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_9_2.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 9",
@@ -821,7 +821,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "11.1",
         "desc": "Hai bàn tay xà úp sát lườn chuẩn bị phát lực.",
-        "imgUrl": "/assets/images/techniques/series/fig_11_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Ngón tay khum đàn hồi hình đầu rắn",
@@ -831,7 +831,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "11.2",
         "desc": "Hai tay xỉa theo chiều từ sau ra trước. Biên thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_11_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Luồn lách xuyên qua tay thủ địch",
@@ -875,7 +875,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "12.1",
         "desc": "[Thế đối xứng trái] Hai bàn tay xà úp sát lườn chuẩn bị phát lực.",
-        "imgUrl": "/assets/images/techniques/series/fig_11_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 11",
@@ -886,7 +886,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "12.2",
         "desc": "[Thế đối xứng trái] Hai tay xỉa theo chiều từ sau ra trước. Biên thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_11_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 11",
@@ -931,7 +931,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "13",
         "desc": "Hai tay hất mạnh theo chiều từ dưới lên trên hóa giải đòn đè.",
-        "imgUrl": "/assets/images/techniques/series/fig_13_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Giật thốn kình từ cùi chỏ",
@@ -973,7 +973,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "14.1",
         "desc": "[Thế đối xứng trái] Hai tay hất mạnh theo chiều từ dưới lên trên hóa giải đòn đè.",
-        "imgUrl": "/assets/images/techniques/series/fig_13_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 13",
@@ -1017,7 +1017,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "15",
         "desc": "Quay người sang phải, hai cẳng tay đẩy ngược chiều nhau tạo lực xoắn vặn.",
-        "imgUrl": "/assets/images/techniques/series/fig_15.png",
+        "imgUrl": "/assets/hinh-2x/p056-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Khớp khuỷu vuông góc 90 độ",
@@ -1059,7 +1059,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "16.1",
         "desc": "[Thế đối xứng trái] Quay người sang trái, hai cẳng tay đẩy ngược chiều nhau tạo lực xoắn vặn.",
-        "imgUrl": "/assets/images/techniques/series/fig_15.png",
+        "imgUrl": "/assets/hinh-2x/p056-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 15",
@@ -1103,7 +1103,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "17",
         "desc": "Bụng hơi thót, thu hai tay vào sát người rồi đẩy thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_17.png",
+        "imgUrl": "/assets/hinh-2x/p056-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Thót bụng nén khí đan điền",
@@ -1145,7 +1145,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "18.1",
         "desc": "[Thế đối xứng trái] Bụng hơi thót, thu hai tay vào sát người rồi đẩy thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_17.png",
+        "imgUrl": "/assets/hinh-2x/p056-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 17",
@@ -1190,7 +1190,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "19.1",
         "desc": "Tay phải và tay trái nắm bắt. Biên thân. Kéo giật xuống rồi đẩy ngược.",
-        "imgUrl": "/assets/images/techniques/series/fig_19_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Nắm chặt cổ tay và cùi chỏ địch",
@@ -1233,7 +1233,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "20.1",
         "desc": "[Thế đối xứng trái] Tay trái và tay phải nắm bắt. Biên thân. Kéo giật xuống rồi đẩy ngược.",
-        "imgUrl": "/assets/images/techniques/series/fig_19_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 19",
@@ -1278,7 +1278,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "21.1",
         "desc": "Tay phải vít, tay trái nắm bắt. Biên thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_21_1.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Vít mạnh gáy hoặc cổ tay đối phương",
@@ -1288,7 +1288,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "21.2",
         "desc": "Kéo thẳng chiều hướng xuống đất và sang trái, sau đó đẩy ngược tay theo chiều đã kéo.",
-        "imgUrl": "/assets/images/techniques/series/fig_21_2.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Dồn trọng lượng thân người kéo giật",
@@ -1331,7 +1331,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "22.1",
         "desc": "[Thế đối xứng trái] Tay trái vít, tay phải nắm bắt. Biên thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_21_1.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 21",
@@ -1342,7 +1342,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "22.2",
         "desc": "[Thế đối xứng trái] Kéo thẳng chiều hướng xuống đất và sang phải, sau đó đẩy ngược tay theo chiều đã kéo.",
-        "imgUrl": "/assets/images/techniques/series/fig_21_2.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 21",
@@ -1386,7 +1386,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "23",
         "desc": "Hai bàn tay cùng bắt và kéo ngược chiều.",
-        "imgUrl": "/assets/images/techniques/series/fig_23.png",
+        "imgUrl": "/assets/hinh-2x/p057-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trên đẩy tay dưới kéo",
@@ -1428,7 +1428,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "24.1",
         "desc": "[Thế đối xứng trái] Hai bàn tay cùng bắt và kéo ngược chiều.",
-        "imgUrl": "/assets/images/techniques/series/fig_23.png",
+        "imgUrl": "/assets/hinh-2x/p057-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 23",
@@ -1472,7 +1472,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "25",
         "desc": "Cẳng tay phải để sát người, cẳng tay trái dựng thẳng. Xoay người sang bên trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_25.png",
+        "imgUrl": "/assets/hinh-2x/p057-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cẳng tay phải che kín sườn non",
@@ -1514,7 +1514,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "26.1",
         "desc": "[Thế đối xứng trái] Cẳng tay trái để sát người, cẳng tay phải dựng thẳng. Xoay người sang bên phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_25.png",
+        "imgUrl": "/assets/hinh-2x/p057-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 25",
@@ -1557,7 +1557,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "27",
         "desc": "Xoay người sang trái, đánh hất ra ngoài bằng hai cạnh cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_27.png",
+        "imgUrl": "/assets/hinh-2x/p057-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Phát kình cạnh ngoài cổ tay",
@@ -1599,7 +1599,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "28.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, đánh hất ra ngoài bằng hai cạnh cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_27.png",
+        "imgUrl": "/assets/hinh-2x/p057-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 27",
@@ -1643,7 +1643,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "29",
         "desc": "Tay phải đưa lên ngực song song mặt đất, tay trái dựng đứng vuông góc. Xoay người sang trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_29.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tạo góc vuông chữ Thập bảo vệ toàn diện",
@@ -1685,7 +1685,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "30.1",
         "desc": "[Thế đối xứng trái] Tay trái đưa lên ngực song song mặt đất, tay phải dựng đứng vuông góc. Xoay người sang phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_29.png",
+        "imgUrl": "/assets/hinh-2x/p057-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 29",
@@ -1731,7 +1731,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "31.1",
         "desc": "Hai bàn tay song song, kéo vuốt từ trước ra sau. Tấn kiềm dương.",
-        "imgUrl": "/assets/images/techniques/series/fig_31_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Kéo vuốt triệt kình đòn địch",
@@ -1741,7 +1741,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "31.2",
         "desc": "Xoay người sang trái. Tay trái thủ trước ngực, cạnh tay phải chém chếch ra trước và lên trên.",
-        "imgUrl": "/assets/images/techniques/series/fig_31_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Chém cạnh bàn tay sắc bén",
@@ -1751,7 +1751,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "31.3",
         "desc": "Xoay người sang phải, chém tay trái ngược với hình 31.2.",
-        "imgUrl": "/assets/images/techniques/series/fig_31_3.png",
+        "imgUrl": "/assets/hinh-2x/p058-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đảo thân tốc độ cao",
@@ -1795,7 +1795,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "32.1",
         "desc": "Xoay người sang trái. Vỗ xuống bằng lực phát hai cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đè bẹp đòn công tầm thấp của địch",
@@ -1805,7 +1805,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "32.2",
         "desc": "Tay trái thủ trước ngực, tay phải đánh chưởng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_32_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Phóng chưởng xuyên tâm dứt khoát",
@@ -1848,7 +1848,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "33.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Vỗ xuống bằng lực phát hai cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 32",
@@ -1859,7 +1859,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "33.2",
         "desc": "[Thế đối xứng trái] Tay phải thủ trước ngực, tay trái đánh chưởng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_32_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 32",
@@ -1903,7 +1903,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "34.1",
         "desc": "Quay người sang trái, đỡ ngang bằng cạnh ngoài bàn tay phải và cạnh trong bàn tay trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_34_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai cạnh tay tạo thế kẹp cản đòn",
@@ -1913,7 +1913,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "34.2",
         "desc": "Tay trái đánh chưởng ngang, tay phải đánh bằng cạnh ngoài cẳng tay và bàn tay ra phía trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_34_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đồng thời công thủ liên hoàn",
@@ -1956,7 +1956,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "35.1",
         "desc": "[Thế đối xứng trái] Quay người sang phải, đỡ ngang bằng cạnh ngoài bàn tay trái và cạnh trong bàn tay phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_34_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 34",
@@ -1967,7 +1967,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "35.2",
         "desc": "[Thế đối xứng trái] Tay phải đánh chưởng ngang, tay trái đánh bằng cạnh ngoài cẳng tay và bàn tay ra phía trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_34_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 34",
@@ -2010,7 +2010,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "36",
         "desc": "Hai cánh tay để song song trước ngực. Xoay người sang trái, đánh hất ra ngoài bằng hai cườm cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_36.png",
+        "imgUrl": "/assets/hinh-2x/p058-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Phát lực giật từ hai cườm tay",
@@ -2052,7 +2052,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "37.1",
         "desc": "[Thế đối xứng trái] Hai cánh tay để song song trước ngực. Xoay người sang phải, đánh hất ra ngoài bằng hai cườm cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_36.png",
+        "imgUrl": "/assets/hinh-2x/p058-h04.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 36",
@@ -2097,7 +2097,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "38.1",
         "desc": "Chân tấn kiềm dương. Cẳng tay phải dựng thẳng đứng, gập cổ tay kéo thẳng xuống, cùng lúc đánh tay trái lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_38_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai tay vận động ngược chiều",
@@ -2107,7 +2107,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "38.2",
         "desc": "Xoay sang phải. Tay trái vuốt về thủ trước ngực. Tay phải chém ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_38_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Vuốt dẫn lực địch sang bên",
@@ -2151,7 +2151,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "39.1",
         "desc": "[Thế đối xứng trái] Chân tấn kiềm dương. Cẳng tay trái dựng thẳng đứng, gập cổ tay kéo thẳng xuống, cùng lúc đánh tay phải lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_38_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 38",
@@ -2162,7 +2162,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "39.2",
         "desc": "[Thế đối xứng trái] Xoay sang trái. Tay phải vuốt về thủ trước ngực. Tay trái chém ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_38_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 38",
@@ -2206,7 +2206,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "40.1",
         "desc": "Xoay người sang trái. Tay trái ngửa, bàn tay phải úp gạt ra sau.",
-        "imgUrl": "/assets/images/techniques/series/fig_40_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Gạt quét đòn móc sau lưng",
@@ -2216,7 +2216,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "40.2",
         "desc": "Giữ nguyên thế chân, tay phải chém ngược cạnh bàn tay ra trước. Tay trái úp thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_40_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cạnh bàn tay phát lực hướng lên yết hầu",
@@ -2259,7 +2259,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "41.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay phải ngửa, bàn tay trái úp gạt ra sau.",
-        "imgUrl": "/assets/images/techniques/series/fig_40_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 40",
@@ -2270,7 +2270,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "41.2",
         "desc": "[Thế đối xứng trái] Giữ nguyên thế chân, tay trái chém ngược cạnh bàn tay ra trước. Tay phải úp thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_40_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 40",
@@ -2318,7 +2318,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "42.1",
         "desc": "Đỡ ngang bằng cạnh ngoài bàn tay phải và cạnh trong bàn tay trái (Như hình 34.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_34_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Quay người sang trái, hai cạnh tay tạo thế kẹp cản đòn",
@@ -2328,7 +2328,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "42.2",
         "desc": "Xoay người sang phải, tay phải đỡ bằng mặt sau cổ tay, tay trái đỡ bằng bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_42_2.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Mặt sau cổ tay hất lực đấm",
@@ -2338,7 +2338,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "42.3",
         "desc": "Vỗ xuống bằng lực phát hai cổ tay (Như hình 32.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Xoay người sang trái, vỗ xuống đè bẹp đòn công tầm thấp",
@@ -2348,7 +2348,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "42.4",
         "desc": "Tay trái thủ trước ngực, tay phải đánh chưởng ra trước (Như hình 32.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Phóng chưởng xuyên tâm dứt khoát",
@@ -2395,7 +2395,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "43.1",
         "desc": "[Thế đối xứng trái] Đỡ ngang bằng cạnh ngoài bàn tay trái và cạnh trong bàn tay phải (Như hình 34.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_34_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 42",
@@ -2406,7 +2406,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "43.2",
         "desc": "[Thế đối xứng trái] Xoay người sang trái, tay trái đỡ bằng mặt sau cổ tay, tay phải đỡ bằng bàng thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_42_2.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 42",
@@ -2417,7 +2417,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "43.3",
         "desc": "[Thế đối xứng trái] Vỗ xuống bằng lực phát hai cổ tay (Như hình 32.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 42",
@@ -2428,7 +2428,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "43.4",
         "desc": "[Thế đối xứng trái] Tay phải thủ trước ngực, tay trái đánh chưởng ra trước (Như hình 32.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 42",
@@ -2472,7 +2472,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "44",
         "desc": "Hai tay nắm đấm, đưa chéo lên, tay phải trước, tay trái sau, hai mặt nắm đấm hướng vào nhau.",
-        "imgUrl": "/assets/images/techniques/series/fig_44.png",
+        "imgUrl": "/assets/hinh-2x/p059-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Khóa chéo hai cổ tay đỡ đòn bổ",
@@ -2514,7 +2514,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "45.1",
         "desc": "[Thế đối xứng trái] Hai tay nắm đấm, đưa chéo lên, tay trái trước, tay phải sau, hai mặt nắm đấm hướng vào nhau.",
-        "imgUrl": "/assets/images/techniques/series/fig_44.png",
+        "imgUrl": "/assets/hinh-2x/p059-h04.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 44",
@@ -2559,7 +2559,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "46",
         "desc": "Xoay người sang trái, tay phải đánh thốc từ dưới lên. Tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_46.png",
+        "imgUrl": "/assets/hinh-2x/p059-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đánh thốc cằm đối thủ cận chiến",
@@ -2601,7 +2601,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "47.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, tay trái đánh thốc từ dưới lên. Tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_46.png",
+        "imgUrl": "/assets/hinh-2x/p059-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 46",
@@ -2645,7 +2645,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "48",
         "desc": "Xoay người sang trái. Tay trái vuốt về, tay phải đấm thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái kéo lệch tay thủ đối phương",
@@ -2688,7 +2688,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "49.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay phải vuốt về, tay trái đấm thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 48",
@@ -2735,7 +2735,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "50.1",
         "desc": "Chân tấn kiềm dương. Hai cẳng tay song song. Đẩy hai bàn tay theo hướng từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_50_1.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Nâng hất hai tay đối phương",
@@ -2745,7 +2745,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "50.2",
         "desc": "Giữ nguyên thân và tấn. Hai bàn tay úp, đè xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_50_2.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Trầm kình đè nén toàn diện",
@@ -2755,7 +2755,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "50.3",
         "desc": "Đấm thẳng tay phải, tay trái thủ (Như hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái vuốt về ngực",
@@ -2765,7 +2765,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "50.4",
         "desc": "Tập tương tự với đấm tay trái (Như hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay phải vuốt về ngực",
@@ -2809,7 +2809,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "51",
         "desc": "Xoay người sang trái. Tay phải để tay xà, đánh thốc từ dưới lên. Tay trái thủ trước ngực.",
-        "imgUrl": "/assets/images/techniques/series/fig_51.png",
+        "imgUrl": "/assets/hinh-2x/p060-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Ngón tay xà uốn lượn thọc cằm",
@@ -2851,7 +2851,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "52.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay trái để tay xà, đánh thốc từ dưới lên. Tay phải thủ trước ngực.",
-        "imgUrl": "/assets/images/techniques/series/fig_51.png",
+        "imgUrl": "/assets/hinh-2x/p060-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 51",
@@ -2896,7 +2896,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "53",
         "desc": "Xoay người sang trái. Tay phải hình báo, đánh vòng từ bên trái sang phải. Tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_53.png",
+        "imgUrl": "/assets/hinh-2x/p060-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đốt ngón tay gập cứng như vuốt báo",
@@ -2938,7 +2938,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "54.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay trái hình báo, đánh vòng từ bên phải sang trái. Tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_53.png",
+        "imgUrl": "/assets/hinh-2x/p060-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 53",
@@ -2982,7 +2982,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "55",
         "desc": "Xoay người sang trái. Chưởng phải đẩy ngang ép vào cẳng tay trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_55.png",
+        "imgUrl": "/assets/hinh-2x/p060-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cẳng tay trái làm điểm tựa",
@@ -3024,7 +3024,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "56.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Chưởng trái đẩy ngang ép vào cẳng tay phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_55.png",
+        "imgUrl": "/assets/hinh-2x/p060-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 55",
@@ -3068,7 +3068,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "57",
         "desc": "Xoay người sang trái. Hai bàn tay duỗi thẳng để song song với nhau đẩy từ sau ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_57.png",
+        "imgUrl": "/assets/hinh-2x/p060-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai lòng bàn tay hướng thẳng",
@@ -3110,7 +3110,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "58.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Hai bàn tay duỗi thẳng để song song với nhau đẩy từ sau ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_57.png",
+        "imgUrl": "/assets/hinh-2x/p060-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 57",
@@ -3154,7 +3154,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "59",
         "desc": "Xoay người sang trái, đỡ sang trái bằng cẳng tay phải và bàn tay trái.",
-        "imgUrl": "/assets/images/techniques/series/fig_59.png",
+        "imgUrl": "/assets/hinh-2x/p060-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Cẳng tay phải gạt đòn",
@@ -3196,7 +3196,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "60.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, đỡ sang phải bằng cẳng tay trái và bàn tay phải.",
-        "imgUrl": "/assets/images/techniques/series/fig_59.png",
+        "imgUrl": "/assets/hinh-2x/p060-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 59",
@@ -3241,7 +3241,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "61.1",
         "desc": "Chân tấn kiềm dương. Dựng thẳng hai cẳng tay, lòng bàn tay hướng vào mặt.",
-        "imgUrl": "/assets/images/techniques/series/fig_61_1.png",
+        "imgUrl": "/assets/hinh-2x/p061-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Bảo vệ kín toàn bộ mặt và đầu",
@@ -3251,7 +3251,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "61.2",
         "desc": "Xoay đồng thời 2 tay vào trong, sau đó xoay theo chiều ngược lại đẩy ra.",
-        "imgUrl": "/assets/images/techniques/series/fig_61_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hóa giải các đòn ôm khóa cổ",
@@ -3295,7 +3295,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "62",
         "desc": "Tay phải đấm móc lên, tay trái đấm móc xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_62.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Đấm móc cằm và chấn thương bụng dưới cùng lúc",
@@ -3337,7 +3337,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "63.1",
         "desc": "[Thế đối xứng trái] Tay trái đấm móc lên, tay phải đấm móc xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_62.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 62",
@@ -3382,7 +3382,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "64.1",
         "desc": "Xoay người sang trái. Bàn tay phải để tay xà, kéo lên gần má phải. Bàn tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_64_1.png",
+        "imgUrl": "/assets/hinh-2x/p061-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Kéo dẫn dụ lực tấn công của địch",
@@ -3392,7 +3392,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "64.2",
         "desc": "Tay phải đánh chưởng thẳng ra trước, tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_64_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Phóng chưởng sấm sét vào mặt đối thủ",
@@ -3435,7 +3435,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "65.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Bàn tay trái để tay xà, kéo lên gần má phải. Bàn tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_64_1.png",
+        "imgUrl": "/assets/hinh-2x/p061-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 64",
@@ -3446,7 +3446,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "65.2",
         "desc": "[Thế đối xứng trái] Tay trái đánh chưởng thẳng ra trước, tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_64_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 64",
@@ -3490,7 +3490,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "66",
         "desc": "Xoay người sang trái, đánh hất ra ngoài bằng hai cạnh cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_66.png",
+        "imgUrl": "/assets/hinh-2x/p061-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hất bung hai tay đấm của địch",
@@ -3532,7 +3532,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "67.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, đánh hất ra ngoài bằng hai cạnh cổ tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_66.png",
+        "imgUrl": "/assets/hinh-2x/p061-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 66",
@@ -3576,7 +3576,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "68",
         "desc": "Xoay người sang trái. Tay trái than thủ, tay phải đấm thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_68.png",
+        "imgUrl": "/assets/hinh-2x/p061-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái than thủ nâng triệt đòn",
@@ -3619,7 +3619,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "69.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay phải than thủ, tay trái đấm thẳng ra trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_68.png",
+        "imgUrl": "/assets/hinh-2x/p061-h04.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 68",
@@ -3664,7 +3664,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "70.1",
         "desc": "Đánh cùi chỏ tay phải theo chiều thẳng từ trên xuống, tay trái thủ. Giữ nguyên chân và thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_70_1.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Thúc cùi chỏ đập gãy xương đòn",
@@ -3674,7 +3674,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "70.2",
         "desc": "Tay trái vẫn thủ trước ngực, tay phải đánh mặt sau của nắm đấm ra phía trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_70_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Quất mu nắm đấm chớp giật vào sống mũi",
@@ -3717,7 +3717,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "71.1",
         "desc": "[Thế đối xứng trái] Đánh cùi chỏ tay trái theo chiều thẳng từ trên xuống, tay phải thủ. Giữ nguyên chân và thân.",
-        "imgUrl": "/assets/images/techniques/series/fig_70_1.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 70",
@@ -3728,7 +3728,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "71.2",
         "desc": "[Thế đối xứng trái] Tay phải vẫn thủ trước ngực, tay trái đánh mặt sau của nắm đấm ra phía trước.",
-        "imgUrl": "/assets/images/techniques/series/fig_70_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 70",
@@ -3773,7 +3773,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "72.1",
         "desc": "Xoay người sang trái. Đánh khuỷu tay phải sang phía trái. Tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_72_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Thúc ngang khuỷu tay bẻ gãy quai hàm",
@@ -3783,7 +3783,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "72.2",
         "desc": "Tay trái vẫn thủ trước ngực, tay phải đánh mặt sau của nắm đấm ra phía trước (Như hình 70.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_70_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Quất mu nắm đấm chớp giật vào sống mũi",
@@ -3827,7 +3827,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "73.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Đánh khuỷu tay trái sang phía phải. Tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_72_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 72",
@@ -3838,7 +3838,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "73.2",
         "desc": "[Thế đối xứng trái] Tay phải vẫn thủ trước ngực, tay trái đánh mặt sau của nắm đấm ra phía trước (Như hình 70.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_70_2.png",
+        "imgUrl": "/assets/hinh-2x/p061-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 72",
@@ -3883,7 +3883,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "74.1",
         "desc": "Xoay người sang trái. Đánh giật khuỷu tay phải theo chiều từ trước ra sau.",
-        "imgUrl": "/assets/images/techniques/series/fig_74_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Giật cùi chỏ chấn thương đối phương ôm sau lưng",
@@ -3893,7 +3893,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "74.2",
         "desc": "Tay trái thủ, tay phải đánh mặt sau nắm đấm hất từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_74_2.png",
+        "imgUrl": "/assets/hinh-2x/p062-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hất mu quyền vào hạ bộ hoặc cằm địch",
@@ -3936,7 +3936,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "75.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Đánh giật khuỷu tay trái theo chiều từ trước ra sau.",
-        "imgUrl": "/assets/images/techniques/series/fig_74_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 74",
@@ -3947,7 +3947,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "75.2",
         "desc": "[Thế đối xứng trái] Tay phải thủ, tay trái đánh mặt sau nắm đấm hất từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_74_2.png",
+        "imgUrl": "/assets/hinh-2x/p062-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 74",
@@ -3991,7 +3991,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "76.1",
         "desc": "Xoay người sang trái. Đánh khuỷu tay phải hất lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_76_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hất ngược mũi nhọn khuỷu tay vào ức địch",
@@ -4001,7 +4001,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "76.2",
         "desc": "Tay trái thủ, tay phải đánh mặt sau nắm đấm hất từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_76_2.png",
+        "imgUrl": "/assets/hinh-2x/p062-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tiếp nối bồi đòn mu quyền vào yết hầu",
@@ -4043,7 +4043,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "77.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Đánh khuỷu tay trái hất lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_76_1.png",
+        "imgUrl": "/assets/hinh-2x/p062-h04.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 76",
@@ -4054,7 +4054,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "77.2",
         "desc": "[Thế đối xứng trái] Tay phải thủ, tay trái đánh mặt sau nắm đấm hất từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_76_2.png",
+        "imgUrl": "/assets/hinh-2x/p062-h04.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 76",
@@ -4098,7 +4098,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "78",
         "desc": "Xoay người sang trái. Tay phải bàng thủ, đánh cẳng tay sang trái. Tay trái thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_78.png",
+        "imgUrl": "/assets/hinh-2x/p062-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Bàng thủ cánh cung hất văng cú đấm",
@@ -4140,7 +4140,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "79.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Tay trái bàng thủ, đánh cẳng tay sang phải. Tay phải thủ.",
-        "imgUrl": "/assets/images/techniques/series/fig_78.png",
+        "imgUrl": "/assets/hinh-2x/p062-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 78",
@@ -4185,7 +4185,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "80",
         "desc": "Tay trái nắm bắt, tay phải đánh cẳng tay xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_80.png",
+        "imgUrl": "/assets/hinh-2x/p062-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái giữ chặt cổ tay địch",
@@ -4205,7 +4205,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 81,
     "summary": "Tương tự chiêu 80, tập với bên trái.",
     "stances": [
@@ -4228,7 +4228,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "81.1",
         "desc": "[Thế đối xứng trái] Tay phải nắm bắt, tay trái đánh cẳng tay xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_80.png",
+        "imgUrl": "/assets/hinh-2x/p062-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 80",
@@ -4249,7 +4249,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 82,
     "summary": "Xoay người sang trái. Hai tay nắm kéo như chiêu 19 kèm gật đầu đánh trán ra trước thiết đầu công.",
     "stances": [
@@ -4274,7 +4274,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "82.1",
         "desc": "Xoay người sang trái, hai tay nắm bắt và kéo giật dằn xuống (Như chiêu 19).",
-        "imgUrl": "/assets/images/techniques/series/fig_19_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai tay ghì chặt đầu và cổ tay đối thủ xuống",
@@ -4284,7 +4284,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "82.2",
         "desc": "Gật đầu đánh trán ra trước thiết đầu công.",
-        "imgUrl": "/assets/images/techniques/series/fig_82.png",
+        "imgUrl": "/assets/hinh-2x/p063-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Dập xương trán cứng vào sống mũi địch",
@@ -4304,7 +4304,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 83,
     "summary": "Tương tự chiêu 82, tập với bên trái.",
     "stances": [
@@ -4329,7 +4329,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "83.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, hai tay nắm bắt và kéo giật dằn xuống (Như chiêu 19).",
-        "imgUrl": "/assets/images/techniques/series/fig_19_1.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 82",
@@ -4340,7 +4340,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "83.2",
         "desc": "[Thế đối xứng trái] Gật đầu đánh trán ra trước thiết đầu công.",
-        "imgUrl": "/assets/images/techniques/series/fig_82.png",
+        "imgUrl": "/assets/hinh-2x/p063-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 82",
@@ -4361,7 +4361,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 84,
     "summary": "Chân tấn kiềm dương, hai bàn tay đánh móc từ trong trục trung tâm sang hai bên mở toang thế thủ.",
     "stances": [
@@ -4384,7 +4384,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "84",
         "desc": "Chân tấn kiềm dương, hai bàn tay đánh móc từ trong trục trung tâm sang hai bên.",
-        "imgUrl": "/assets/images/techniques/series/fig_84.png",
+        "imgUrl": "/assets/hinh-2x/p063-h04.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai cườm tay gạt móc đối xứng",
@@ -4404,7 +4404,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 85,
     "summary": "Xoay người sang trái, hạ thấp xuống. Tay phải dùng chảo đánh ra trước, bóp rồi giật về. Tay trái thủ hạ bộ.",
     "stances": [
@@ -4428,7 +4428,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "85",
         "desc": "Tay phải dùng chảo đánh ra trước, bóp rồi giật về. Tay trái thủ hạ bộ.",
-        "imgUrl": "/assets/images/techniques/series/fig_85.png",
+        "imgUrl": "/assets/hinh-2x/p063-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hạ trọng tâm né đòn cao",
@@ -4448,7 +4448,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 86,
     "summary": "Tương tự chiêu 85, tập với bên trái.",
     "stances": [
@@ -4471,7 +4471,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "86.1",
         "desc": "[Thế đối xứng trái] Tay trái dùng chảo đánh ra trước, bóp rồi giật về. Tay phải thủ hạ bộ.",
-        "imgUrl": "/assets/images/techniques/series/fig_85.png",
+        "imgUrl": "/assets/hinh-2x/p063-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 85",
@@ -4492,7 +4492,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 87,
     "summary": "Xoay người sang trái. Hai tay đặt chéo đưa từ dưới lên. Sau đó tay trái nắm kéo về, tay phải chém ra trước như chiêu 31.",
     "stances": [
@@ -4515,7 +4515,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "87.1",
         "desc": "Xoay người sang trái. Hai tay đặt chéo, đưa từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_87_1.png",
+        "imgUrl": "/assets/hinh-2x/p063-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Chữ Thập giao thủ nâng hất đòn địch",
@@ -4525,7 +4525,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "87.2",
         "desc": "Tay trái nắm kéo về, tay phải chém ra trước như chiêu 31.",
-        "imgUrl": "/assets/images/techniques/series/fig_87_2.png",
+        "imgUrl": "/assets/hinh-2x/p063-h07.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Kéo lệch thế thủ",
@@ -4545,7 +4545,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 88,
     "summary": "Tương tự chiêu 87, tập với bên trái.",
     "stances": [
@@ -4568,7 +4568,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "88.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Hai tay đặt chéo, đưa từ dưới lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_87_1.png",
+        "imgUrl": "/assets/hinh-2x/p063-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 87",
@@ -4579,7 +4579,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "88.2",
         "desc": "[Thế đối xứng trái] Tay phải nắm kéo về, tay trái chém ra trước như chiêu 31.",
-        "imgUrl": "/assets/images/techniques/series/fig_87_2.png",
+        "imgUrl": "/assets/hinh-2x/p063-h07.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 87",
@@ -4600,7 +4600,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 89,
     "summary": "Xoay người sang trái, tay phải và tay trái nắm bắt, kéo giật. Chân phải lên gối thẳng dập vỡ nội tạng địch.",
     "stances": [
@@ -4624,7 +4624,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "89",
         "desc": "Xoay người sang trái, tay phải và tay trái nắm bắt, kéo giật. Chân phải lên gối.",
-        "imgUrl": "/assets/images/techniques/series/fig_89.png",
+        "imgUrl": "/assets/hinh-2x/p063-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai tay ghì chặt vai đối thủ xuống",
@@ -4644,7 +4644,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 90,
     "summary": "Tương tự chiêu 89, tập với bên trái.",
     "stances": [
@@ -4666,7 +4666,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "90.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, tay trái và tay phải nắm bắt, kéo giật. Chân trái lên gối.",
-        "imgUrl": "/assets/images/techniques/series/fig_89.png",
+        "imgUrl": "/assets/hinh-2x/p063-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 89",
@@ -4687,7 +4687,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 91,
     "summary": "Xoay người sang trái, tay phải và tay trái nắm bắt, kéo giật. Chân phải nhấc cao đánh gối ngang mạng sườn.",
     "stances": [
@@ -4710,7 +4710,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "91",
         "desc": "Tay phải và tay trái nắm bắt, kéo giật. Chân phải nhấc cao đánh gối ngang mạng sườn.",
-        "imgUrl": "/assets/images/techniques/series/fig_91.png",
+        "imgUrl": "/assets/hinh-2x/p064-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Khóa giữ đối thủ tại chỗ",
@@ -4730,7 +4730,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 92,
     "summary": "Tương tự chiêu 91, tập với bên trái.",
     "stances": [
@@ -4752,7 +4752,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "92.1",
         "desc": "[Thế đối xứng trái] Tay trái và tay phải nắm bắt, kéo giật. Chân trái nhấc cao đánh gối ngang mạng sườn.",
-        "imgUrl": "/assets/images/techniques/series/fig_91.png",
+        "imgUrl": "/assets/hinh-2x/p064-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 91",
@@ -4773,7 +4773,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 93,
     "summary": "Xoay người sang trái, tay phải và tay trái nắm kéo giật sang bên trái. Đánh miết đầu gối từ trên xuống.",
     "stances": [
@@ -4796,7 +4796,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "93",
         "desc": "Tay phải và tay trái nắm kéo giật sang bên trái. Đánh miết đầu gối từ trên xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_93.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Kéo ghì đối thủ quỵ ngã",
@@ -4816,7 +4816,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 94,
     "summary": "Tương tự chiêu 93, tập với bên trái.",
     "stances": [
@@ -4838,7 +4838,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "94.1",
         "desc": "[Thế đối xứng trái] Tay trái và tay phải nắm kéo giật sang bên phải. Đánh miết đầu gối từ trên xuống.",
-        "imgUrl": "/assets/images/techniques/series/fig_93.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 93",
@@ -4859,7 +4859,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 95,
     "summary": "Xoay người sang trái, tay phải và tay trái nắm vặn và kéo. Chân phải nhấc thẳng đầu gối theo chiều từ dưới lên, hạ hai tay xuống dưới.",
     "stances": [
@@ -4883,7 +4883,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "95",
         "desc": "Tay phải và tay trái nắm vặn và kéo. Chân phải nhấc thẳng đầu gối theo chiều từ dưới lên, hạ hai tay xuống dưới.",
-        "imgUrl": "/assets/images/techniques/series/fig_95.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai tay hạ dằn đè tay địch",
@@ -4903,7 +4903,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 96,
     "summary": "Tương tự chiêu 95, tập với bên trái.",
     "stances": [
@@ -4925,7 +4925,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "96.1",
         "desc": "[Thế đối xứng trái] Tay trái và tay phải nắm vặn và kéo. Chân trái nhấc thẳng đầu gối theo chiều từ dưới lên, hạ hai tay xuống dưới.",
-        "imgUrl": "/assets/images/techniques/series/fig_95.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 95",
@@ -4946,7 +4946,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 97,
     "summary": "Xoay người sang trái, hai tay úp vỗ như chiêu số 32. Trụ chân trái, dâng cao gối phải, vòng mũi bàn chân đá móc lên.",
     "stances": [
@@ -4971,7 +4971,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "97.1",
         "desc": "Xoay người sang trái. Hai tay úp vỗ xuống bằng lực phát hai cổ tay (Như chiêu 32.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Vỗ hai tay triệt tiêu đòn đánh tầm thấp của địch",
@@ -4981,7 +4981,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "97.2",
         "desc": "Trụ chân trái, dâng cao gối phải, vòng mũi bàn chân đá móc lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_97.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Trụ vững đơn cước",
@@ -5001,7 +5001,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 98,
     "summary": "Tương tự chiêu 97, tập với bên trái.",
     "stances": [
@@ -5026,7 +5026,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "98.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải. Hai tay úp vỗ xuống bằng lực phát hai cổ tay (Như chiêu 32.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_32_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 97",
@@ -5037,7 +5037,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "98.2",
         "desc": "[Thế đối xứng trái] Trụ chân phải, dâng cao gối trái, vòng mũi bàn chân đá móc lên.",
-        "imgUrl": "/assets/images/techniques/series/fig_97.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 97",
@@ -5058,7 +5058,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 99,
     "summary": "Xoay người sang trái, hai tay xỉa như chiêu 11. Chân đá vòng móc (như chiêu 97).",
     "stances": [
@@ -5084,7 +5084,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "99.1",
         "desc": "Xoay người sang trái, hai tay xà xỉa thẳng từ sau ra trước (Như chiêu 11.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_11_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Luồn lách xuyên qua tay thủ địch",
@@ -5094,7 +5094,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "99.2",
         "desc": "Chân đá vòng mũi bàn chân móc lên kết hợp xỉa tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_99.png",
+        "imgUrl": "/assets/hinh-2x/p064-h03.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Thủ cước tề phát: tay xỉa mắt, chân móc hạ bộ",
@@ -5114,7 +5114,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 100,
     "summary": "Tương tự chiêu 99, tập với bên trái.",
     "stances": [
@@ -5140,7 +5140,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "100.1",
         "desc": "[Thế đối xứng trái] Xoay người sang phải, hai tay xà xỉa thẳng từ sau ra trước (Như chiêu 11.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_11_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 99",
@@ -5151,7 +5151,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "100.2",
         "desc": "[Thế đối xứng trái] Chân đá vòng mũi bàn chân móc lên kết hợp xỉa tay.",
-        "imgUrl": "/assets/images/techniques/series/fig_99.png",
+        "imgUrl": "/assets/hinh-2x/p064-h03.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 99",
@@ -5172,7 +5172,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 101,
     "summary": "Xoay người sang trái, hai tay đánh hất từ dưới lên (giống chiêu 13). Chân đá vòng móc (như chiêu số 97).",
     "stances": [
@@ -5197,7 +5197,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "101.1",
         "desc": "Hai tay đánh hất mạnh từ dưới lên trên mở toang trung lộ địch (Như chiêu 13).",
-        "imgUrl": "/assets/images/techniques/series/fig_13_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h05.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Giật thốn kình từ cùi chỏ",
@@ -5207,7 +5207,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "101.2",
         "desc": "Chân đá vòng mũi bàn chân móc lên kết hợp tay hất.",
-        "imgUrl": "/assets/images/techniques/series/fig_101.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hất bung thế thủ tầm trung",
@@ -5227,7 +5227,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 102,
     "summary": "Tương tự chiêu 101, tập với bên trái.",
     "stances": [
@@ -5252,7 +5252,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "102.1",
         "desc": "[Thế đối xứng trái] Hai tay đánh hất mạnh từ dưới lên trên mở toang trung lộ địch (Như chiêu 13).",
-        "imgUrl": "/assets/images/techniques/series/fig_13_2.png",
+        "imgUrl": "/assets/hinh-2x/p056-h05.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 101",
@@ -5263,7 +5263,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "102.2",
         "desc": "[Thế đối xứng trái] Chân đá vòng mũi bàn chân móc lên kết hợp tay hất.",
-        "imgUrl": "/assets/images/techniques/series/fig_101.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 101",
@@ -5284,7 +5284,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 103,
     "summary": "Xoay người sang trái, tay đánh như động tác 38.1. Chân đá vòng móc (như chiêu 97).",
     "stances": [
@@ -5310,7 +5310,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "103.1",
         "desc": "Cẳng tay dựng thẳng đứng, gập cổ tay kéo thẳng xuống cùng lúc đánh tay ngược lại (Như động tác 38.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_38_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Bẻ gãy cánh tay địch khi bị bắt giữ",
@@ -5320,7 +5320,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "103.2",
         "desc": "Chân đá vòng mũi bàn chân móc lên kết hợp tay chém.",
-        "imgUrl": "/assets/images/techniques/series/fig_103.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Trụ vững một chân",
@@ -5340,7 +5340,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 104,
     "summary": "Tương tự chiêu 103, tập với bên trái.",
     "stances": [
@@ -5366,7 +5366,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "104.1",
         "desc": "[Thế đối xứng trái] Cẳng tay dựng thẳng đứng, gập cổ tay kéo thẳng xuống cùng lúc đánh tay ngược lại (Như động tác 38.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_38_1.png",
+        "imgUrl": "/assets/hinh-2x/p058-h06.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 103",
@@ -5377,7 +5377,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "104.2",
         "desc": "[Thế đối xứng trái] Chân đá vòng mũi bàn chân móc lên kết hợp tay chém.",
-        "imgUrl": "/assets/images/techniques/series/fig_103.png",
+        "imgUrl": "/assets/hinh-2x/p064-h01.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 103",
@@ -5398,7 +5398,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 105,
     "summary": "Giống chiêu 50 (gồm 4 bước: đẩy thượng, đè hạ, đấm phải, đấm trái). Thu công quy đan điền và BÁI TỔ - Kết thúc toàn bộ Bài 108 Thế.",
     "stances": [
@@ -5415,7 +5415,7 @@ export const TECHNIQUES: Technique[] = [
       "Trung Ban",
       "Thuong Ban"
     ],
-    "difficulty": "Thượng thừa",
+    "difficulty": "Chuyên sâu",
     "isNarrowStance": true,
     "stanceRule": "Kết thúc đòn bắt buộc thu chân về thế Kiềm Dương Tấn: 2 chân đặt sát nhau, 2 đầu gối khép che hạ bộ, ngực hàm lưng thẳng.",
     "isSymmetricLeft": false,
@@ -5425,7 +5425,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "105.1",
         "desc": "Chân tấn kiềm dương. Hai cẳng tay song song đẩy hai bàn tay theo hướng từ dưới lên (Như chiêu 50.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_50_1.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Nâng hất hai tay đối phương",
@@ -5435,7 +5435,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "105.2",
         "desc": "Giữ nguyên thân và tấn. Hai bàn tay úp, đè xuống (Như chiêu 50.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_50_2.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Trầm kình đè nén toàn diện",
@@ -5445,7 +5445,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "105.3",
         "desc": "Đấm thẳng tay phải, tay trái thủ (Như chiêu 50.3 / hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay trái vuốt về ngực",
@@ -5455,7 +5455,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "105.4",
         "desc": "Tập tương tự với đấm tay trái (Như chiêu 50.4 / hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Tay phải vuốt về ngực",
@@ -5482,11 +5482,11 @@ export const TECHNIQUES: Technique[] = [
   {
     "id": "PGVX-TECH-108-106",
     "code": "CHIEU_106",
-    "name": "Chiêu 106: Thế Thu Công & Điều Khí Thượng Thừa",
+    "name": "Chiêu 106: Thế Thu Công & Điều Khí Dưỡng Sinh",
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 106,
     "summary": "Điều hòa khí huyết, hai tay hạ dẫn khí về Khí Hải đan điền, giữ vững Tấn Kiềm Dương chuẩn mực.",
     "stances": [
@@ -5499,7 +5499,7 @@ export const TECHNIQUES: Technique[] = [
     "targetZones": [
       "Trung Ban"
     ],
-    "difficulty": "Thượng thừa",
+    "difficulty": "Chuyên sâu",
     "isNarrowStance": true,
     "stanceRule": "Kết thúc đòn bắt buộc thu chân về thế Kiềm Dương Tấn: 2 chân đặt sát nhau, 2 đầu gối khép che hạ bộ, ngực hàm lưng thẳng.",
     "isSymmetricLeft": true,
@@ -5509,7 +5509,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "106.1",
         "desc": "[Thế đối xứng trái] Chân tấn kiềm dương. Hai cẳng tay song song đẩy hai bàn tay theo hướng từ dưới lên (Như chiêu 50.1).",
-        "imgUrl": "/assets/images/techniques/series/fig_50_1.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 105",
@@ -5520,7 +5520,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "106.2",
         "desc": "[Thế đối xứng trái] Giữ nguyên thân và tấn. Hai bàn tay úp, đè xuống (Như chiêu 50.2).",
-        "imgUrl": "/assets/images/techniques/series/fig_50_2.png",
+        "imgUrl": "/assets/hinh-2x/p059-h02.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 105",
@@ -5531,7 +5531,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "106.3",
         "desc": "[Thế đối xứng trái] Đấm thẳng tay trái, tay phải thủ (Như chiêu 50.3 / hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 105",
@@ -5542,7 +5542,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "106.4",
         "desc": "[Thế đối xứng trái] Tập tương tự với đấm tay phải (Như chiêu 50.4 / hình 48).",
-        "imgUrl": "/assets/images/techniques/series/fig_48.png",
+        "imgUrl": "/assets/hinh-2x/p059-h08.png",
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 105",
@@ -5575,7 +5575,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 107,
     "summary": "Vận dụng bộ pháp bước ngắn di chuyển sang hai bên phải trái, hóa giải lực và cảm nhận kình lực đối phương.",
     "stances": [
@@ -5589,7 +5589,7 @@ export const TECHNIQUES: Technique[] = [
     "targetZones": [
       "Trung Ban"
     ],
-    "difficulty": "Thượng thừa",
+    "difficulty": "Chuyên sâu",
     "isNarrowStance": true,
     "stanceRule": "Kết thúc đòn bắt buộc thu chân về thế Kiềm Dương Tấn: 2 chân đặt sát nhau, 2 đầu gối khép che hạ bộ, ngực hàm lưng thẳng.",
     "isSymmetricLeft": false,
@@ -5599,7 +5599,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "107",
         "desc": "Di chuyển linh hoạt hai bên phải trái, cảm nhận lực đẩy và triệt tiêu kình lực.",
-        "imgUrl": "/assets/images/techniques/series/fig_34_2.png",
+        "imgUrl": "/assets/hinh-2x/p058-h02.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Bước ngắn không nhấc gót",
@@ -5619,7 +5619,7 @@ export const TECHNIQUES: Technique[] = [
     "formId": "108-the",
     "formName": "Bài Võ 108 Thế",
     "sectionId": "doan-5",
-    "sectionName": "Phân đoạn 5: Thượng Thừa Liên Hoàn & Bái Tổ",
+    "sectionName": "Phân đoạn 5: Chuyên Sâu Liên Hoàn & Bái Tổ",
     "order": 108,
     "summary": "Đứng thế Nhị Tự Kiềm Dương Tấn chuẩn mực chân hẹp, hai tay chắp ngang ngực bái tổ thu công đại viên mãn.",
     "stances": [
@@ -5633,7 +5633,7 @@ export const TECHNIQUES: Technique[] = [
       "Trung Ban",
       "Ha Ban"
     ],
-    "difficulty": "Thượng thừa",
+    "difficulty": "Chuyên sâu",
     "isNarrowStance": true,
     "stanceRule": "Kết thúc đòn bắt buộc thu chân về thế Kiềm Dương Tấn: 2 chân đặt sát nhau, 2 đầu gối khép che hạ bộ, ngực hàm lưng thẳng.",
     "isSymmetricLeft": false,
@@ -5643,7 +5643,7 @@ export const TECHNIQUES: Technique[] = [
       {
         "stepNo": "108",
         "desc": "Đứng Tấn Kiềm Dương chân hẹp, hai tay chắp ngang ngực, Bái Tổ hoàn tất đại đăng khoa.",
-        "imgUrl": "/assets/images/techniques/series/fig_1_1.png",
+        "imgUrl": "/assets/hinh-2x/p055-h01.png",
         "isSymmetricLeft": false,
         "keypoints": [
           "Hai gót và mũi chân khép sát",

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   Award,
@@ -15,8 +15,10 @@ import {
   CheckCircle2,
   MapPin,
   Clock,
-  Users
+  Users,
+  GitBranch
 } from "lucide-react";
+import { PhilosophyHub } from "@/components/PhilosophyHub";
 
 interface PhilosophyQuote {
   id: string;
@@ -27,6 +29,8 @@ interface PhilosophyQuote {
   explanation: string;
   source: string;
   icon: React.ReactNode;
+  image: string;
+  imageCaption: string;
 }
 
 const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
@@ -36,11 +40,13 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     hanNom: "不爭以柔克剛",
     title: "Lai Lưu Khứ Tống — Buông Xả Bản Ngã Để Thắng Cường Địch",
     quote:
-      "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Đỉnh cao của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
+      "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
     explanation:
       "Khẩu quyết 'Lai lưu khứ tống, suất thủ trực xung' dạy người học võ không dùng sức chống sức. Khi địch xông tới thì mượn đà dẫn dắt, khi địch rút lui thì đưa tiễn phóng kình. Trong đối nhân xử thế, đó là nghệ thuật hóa giải xung đột bằng tâm thế mềm mại, nhu hòa mà kiên định.",
     source: "Tâm đắc truyền thừa • Võ sư Lê Đắc Kiên (Võ đường Huỳnh Thúc Kháng)",
-    icon: <Feather className="w-5 h-5 text-amber-400" />
+    icon: <Feather className="w-5 h-5 text-amber-400" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
+    imageCaption: "Thế chào Bão Quyền Lễ • Tâm Pháp Bất Tranh"
   },
   {
     id: "ty-ngo-tuyen",
@@ -52,7 +58,9 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     explanation:
       "Khoảng cách ngắn nhất giữa hai điểm là đường thẳng. Giữ chặt trung tâm của mình, chiếm lĩnh trung tâm của đối phương. Khi cột sống giữ thẳng đứng như dây dọi, khí huyết tự khắc lưu thông, tinh thần minh mẫn, không thiên lệch trước cám dỗ hay nghịch cảnh.",
     source: "Triết lý hình học võ học • Phật Gia Vịnh Xuân",
-    icon: <Compass className="w-5 h-5 text-emerald-400" />
+    icon: <Compass className="w-5 h-5 text-emerald-400" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
+    imageCaption: "Chân dung Võ sư Lê Đắc Kiên • Trục Tý Ngọ"
   },
   {
     id: "thinh-kinh-linh-giac",
@@ -64,7 +72,9 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     explanation:
       "Thính kình là khả năng 'nghe' thấy lực và phương hướng của đối thủ bằng xúc giác điểm tiếp xúc. Khi hai cánh tay dính sát vào nhau, mọi biến chuyển dù nhỏ nhất của cơ bắp địch đều được truyền về hệ thần kinh tức thì, giúp ta phản xạ tự nhiên mà không cần suy nghĩ.",
     source: "Công phu Niêm Thủ • Khẩu quyết truyền thừa",
-    icon: <Eye className="w-5 h-5 text-sky-400" />
+    icon: <Eye className="w-5 h-5 text-sky-400" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
+    imageCaption: "Chân dung Võ sư Lê Đắc Kiên • Thính Kình & Linh Giác"
   },
   {
     id: "thien-vo-nhat-nhu",
@@ -76,7 +86,9 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     explanation:
       "Khởi nguồn từ Thiền tông Nam Thiếu Lâm, Phật Gia Vịnh Xuân coi võ thuật là phương tiện tu dưỡng đạo đức và sức khỏe. Thả lỏng không phải là yếu đuối, mà là trạng thái cơ bắp không bị co thắt cục bộ, giúp kình lực toàn thân phát xuất từ gốc chân, xoay qua hông và bộc phát ở đầu ngón tay.",
     source: "Phật Gia Vịnh Xuân Quyền • Tông chỉ môn phái",
-    icon: <Sparkles className="w-5 h-5 text-amber-300" />
+    icon: <Sparkles className="w-5 h-5 text-amber-300" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
+    imageCaption: "Thế chào Bão Quyền Lễ • Thiền Võ Nhất Như"
   },
   {
     id: "tan-kiem-duong-tam-phap",
@@ -88,28 +100,88 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     explanation:
       "Khác với các môn phái ngoại gia mở rộng chân, Kiềm Dương Tấn chân hẹp giúp bảo vệ 100% vùng hạ bộ nhạy cảm và tạo độ đàn hồi cao độ ở khớp gối. Người đứng vững hạ bàn thì thân trên mới nhẹ nhàng, linh hoạt luồn lách qua các khe hở của trận địa.",
     source: "Yếu lĩnh hạ bàn Kiềm Dương Tấn",
-    icon: <ShieldCheck className="w-5 h-5 text-amber-500" />
+    icon: <ShieldCheck className="w-5 h-5 text-amber-500" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
+    imageCaption: "Thế chào Bão Quyền Lễ • Hạ Bàn Tấn Pháp"
   }
 ];
 
-export const LineageTree: React.FC = () => {
+export interface LineageTreeProps {
+  initialSubTab?: "tree" | "philosophy";
+  onSelectSubTab?: (tab: "tree" | "philosophy") => void;
+}
+
+export const LineageTree: React.FC<LineageTreeProps> = ({
+  initialSubTab = "tree",
+  onSelectSubTab,
+}) => {
+  const [subTab, setSubTab] = useState<"tree" | "philosophy">(initialSubTab);
   const [activeQuoteId, setActiveQuoteId] = useState<string>("bat-tranh");
+  const [kienNodePhoto, setKienNodePhoto] = useState<"portrait" | "greeting">("portrait");
   const activeQuote = PHILOSOPHY_QUOTES.find((q) => q.id === activeQuoteId) || PHILOSOPHY_QUOTES[0];
 
+  useEffect(() => {
+    if (initialSubTab) {
+      setSubTab(initialSubTab);
+    }
+  }, [initialSubTab]);
+
+  const handleSwitchTab = (tab: "tree" | "philosophy") => {
+    setSubTab(tab);
+    if (onSelectSubTab) onSelectSubTab(tab);
+  };
+
   return (
-    <div className="max-w-5xl mx-auto space-y-12 py-4">
+    <div className="max-w-5xl mx-auto space-y-8 py-4">
       {/* 1. Header Banner */}
       <div className="glass-panel p-6 sm:p-10 rounded-3xl border border-[#3D291F] text-center space-y-4 relative overflow-hidden shadow-2xl">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 text-xs font-bold uppercase tracking-widest">
           <Award className="w-4 h-4" /> Dòng Chảy Võ Học Chân Truyền
         </div>
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-serif gold-gradient">
-          Sơ Đồ Truyền Thừa & Triết Lý Võ Học
+          Sơ Đồ Truyền Thừa &amp; Triết Lý Võ Học
         </h2>
         <p className="text-slate-300 text-xs sm:text-base max-w-3xl mx-auto leading-relaxed">
           Ghi nhận cội nguồn và công lao truyền bá gìn giữ tinh hoa Phật Gia Vịnh Xuân qua các thế hệ tiền bối, từ Sư Tổ Nguyễn Tế Công đến Cố Võ Sư Trần Thúc Tiển, công trình học thuật của GS.TS Y Khoa Nguyễn Mạnh Nhâm và thế hệ Võ sư nòng cốt tiếp nối.
         </p>
+
+        {/* 2 Chế Độ Xem: Sơ Đồ Cây Truyền Thừa vs Triết Lý & Yếu Quyết */}
+        <div className="pt-4 flex items-center justify-center gap-2.5 sm:gap-3">
+          <button
+            onClick={() => handleSwitchTab("tree")}
+            className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition flex items-center gap-1.5 sm:gap-2 cursor-pointer border ${
+              subTab === "tree"
+                ? "bg-[#E2B743] text-[#2A0E0A] border-[#E2B743] shadow-lg shadow-[#E2B743]/20"
+                : "bg-[#1C120B] text-amber-200/80 border-[#3D291F] hover:border-[#E2B743]/50 hover:text-white"
+            }`}
+          >
+            <GitBranch className="w-4 h-4" />
+            <span className="hidden sm:inline">Sơ Đồ Truyền Thừa (4 Thế Hệ)</span>
+            <span className="sm:hidden">Sơ Đồ 4 Đời</span>
+          </button>
+          <button
+            onClick={() => handleSwitchTab("philosophy")}
+            className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition flex items-center gap-1.5 sm:gap-2 cursor-pointer border ${
+              subTab === "philosophy"
+                ? "bg-[#E2B743] text-[#2A0E0A] border-[#E2B743] shadow-lg shadow-[#E2B743]/20"
+                : "bg-[#1C120B] text-amber-200/80 border-[#3D291F] hover:border-[#E2B743]/50 hover:text-white"
+            }`}
+          >
+            <Compass className="w-4 h-4" />
+            <span className="hidden sm:inline">Triết Lý &amp; Yếu Quyết</span>
+            <span className="sm:hidden">Triết Lý</span>
+            <span className="px-1.5 py-0.5 rounded-md bg-emerald-950 text-emerald-300 text-[10px] font-mono border border-emerald-700/60 font-bold">
+              Mới
+            </span>
+          </button>
+        </div>
       </div>
+
+      {/* Hiển Thị Phân Hệ Theo Sub-Tab */}
+      {subTab === "philosophy" ? (
+        <PhilosophyHub />
+      ) : (
+        <div className="space-y-12">
 
       {/* 2. Sơ Đồ Cây Truyền Thừa 4 Thế Hệ */}
       <div className="space-y-6">
@@ -225,21 +297,59 @@ export const LineageTree: React.FC = () => {
         {/* Node 4: Võ Sư Lê Đắc Kiên - Võ Đường Huỳnh Thúc Kháng */}
         <div className="sm:ml-20 glass-panel p-6 sm:p-7 rounded-2xl border-2 border-[#E2B743]/60 relative group hover:border-[#E2B743] transition-all bg-gradient-to-br from-[#1C120B] to-[#120B07] shadow-2xl">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-            {/* Ảnh chân dung Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
-            <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
-              <Image
-                src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                alt="Võ sư Lê Đắc Kiên - Phụ trách Võ đường Huỳnh Thúc Kháng"
-                fill
-                sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 224px"
-                className="object-cover object-top"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
-              <div className="absolute bottom-2 inset-x-2 text-center">
-                <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow">
-                  Võ Sư Nòng Cốt
-                </span>
+            {/* Ảnh chân dung / thế chào Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
+            <div className="flex flex-col items-center shrink-0 space-y-2.5">
+              <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
+                <Image
+                  src={
+                    kienNodePhoto === "portrait"
+                      ? "/assets/images/instructors/vo_su_le_dac_kien.jpg"
+                      : "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg"
+                  }
+                  alt={
+                    kienNodePhoto === "portrait"
+                      ? "Võ sư Lê Đắc Kiên - Chân dung phụ trách Võ đường Huỳnh Thúc Kháng"
+                      : "Võ sư Lê Đắc Kiên - Thế chào Bão Quyền Lễ truyền thống"
+                  }
+                  fill
+                  sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 224px"
+                  className="object-cover object-top transition-opacity duration-300"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-2 inset-x-2 text-center">
+                  <span className="text-[11px] font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow">
+                    {kienNodePhoto === "portrait" ? "Chân Dung Võ Sư" : "Thế Chào Bão Quyền Lễ"}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bộ nút chuyển đổi 2 ảnh cho Võ sư Lê Đắc Kiên */}
+              <div className="flex items-center gap-1.5 p-1 rounded-xl bg-black/60 border border-[#3D291F] text-[11px]">
+                <button
+                  type="button"
+                  onClick={() => setKienNodePhoto("portrait")}
+                  className={`px-2.5 py-1 rounded-lg font-medium transition cursor-pointer ${
+                    kienNodePhoto === "portrait"
+                      ? "bg-[#E2B743] text-black font-bold shadow"
+                      : "text-slate-400 hover:text-white"
+                  }`}
+                  title="Xem ảnh chân dung đĩnh đạc"
+                >
+                  Chân Dung
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setKienNodePhoto("greeting")}
+                  className={`px-2.5 py-1 rounded-lg font-medium transition cursor-pointer ${
+                    kienNodePhoto === "greeting"
+                      ? "bg-[#E2B743] text-black font-bold shadow"
+                      : "text-slate-400 hover:text-white"
+                  }`}
+                  title="Xem ảnh thế chào Bão Quyền Lễ tôn sư trọng đạo"
+                >
+                  Thế Chào
+                </button>
               </div>
             </div>
 
@@ -268,7 +378,7 @@ export const LineageTree: React.FC = () => {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho hàng trăm môn sinh theo đúng tinh thần Thiền Võ Phật Gia.
+                Là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho hàng trăm người tập theo đúng tinh thần Thiền Võ Phật Gia.
               </p>
 
               <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">
@@ -337,15 +447,15 @@ export const LineageTree: React.FC = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 relative z-10">
-            {/* Ảnh chân dung nhỏ kèm info */}
+            {/* Ảnh minh họa linh hoạt (Chân Dung hoặc Thế Chào Bão Quyền) kèm info */}
             <div className="text-center lg:text-left shrink-0 space-y-3">
-              <div className="relative w-28 h-36 sm:w-32 sm:h-40 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-xl mx-auto lg:mx-0">
+              <div className="relative w-28 h-36 sm:w-32 sm:h-40 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-xl mx-auto lg:mx-0 bg-[#0F0805]">
                 <Image
-                  src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                  alt="Võ sư Lê Đắc Kiên"
+                  src={activeQuote.image || "/assets/images/instructors/vo_su_le_dac_kien.jpg"}
+                  alt={activeQuote.imageCaption || "Võ sư Lê Đắc Kiên"}
                   fill
                   sizes="130px"
-                  className="object-cover object-top"
+                  className="object-cover object-top transition-all duration-300"
                 />
               </div>
               <div className="space-y-0.5">
@@ -355,8 +465,8 @@ export const LineageTree: React.FC = () => {
                 <p className="text-[11px] text-[#E2B743] font-mono">
                   Võ Đường Huỳnh Thúc Kháng
                 </p>
-                <span className="text-[10px] text-slate-400 block">
-                  Phật Gia Vịnh Xuân
+                <span className="text-[10px] text-amber-200/70 block font-mono">
+                  {activeQuote.imageCaption || "Phật Gia Vịnh Xuân"}
                 </span>
               </div>
             </div>
@@ -419,12 +529,14 @@ export const LineageTree: React.FC = () => {
               <h5 className="font-bold text-sm font-serif">3. Hòa Hợp & Dưỡng Sinh</h5>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Mục tiêu tối thượng của võ học là khai thông kinh mạch, tôi luyện ý chí kiên định và giữ tâm hồn an nhiên giữa cuộc sống hiện đại.
+              Mục tiêu cốt lõi của võ học là khai thông kinh mạch, tôi luyện ý chí kiên định và giữ tâm hồn an nhiên giữa cuộc sống hiện đại.
             </p>
           </div>
         </div>
 
       </section>
+      </div>
+      )}
     </div>
   );
 };

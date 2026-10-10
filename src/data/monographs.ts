@@ -20,7 +20,7 @@ export const MONOGRAPHS: MonographSection[] = [
     content: [
       "Vịnh Xuân Quyền bắt nguồn từ phong trào 'Phản Thanh Phục Minh' tại miền Nam Trung Hoa sau khi chùa Nam Thiếu Lâm bị đốt phá. Để đào tạo nhanh chóng những nghĩa sĩ có khả năng cận chiến sát thương cao trong không gian chật hẹp, các bậc cao đồ đã chắt lọc những tinh hoa giản dị, thực chiến nhất để sáng tạo nên môn phái.",
       "Năm 1939, Sư Tổ Nguyễn Tế Công (1877 - 1959) từ Phật Sơn sang Việt Nam, đặt chân tới Hà Nội rồi sau này vào Chợ Lớn. Tại Hà Nội, Cụ đã truyền thụ võ công cho Đại đệ tử Trần Thúc Tiển (1912 - 1980).",
-      "Võ sư Trần Thúc Tiển là tấm gương võ học mẫu mực, người đã truyền thụ toàn bộ tuyệt kỹ Vịnh Xuân và Nội công cho GS.TS Y khoa Nguyễn Mạnh Nhâm, tạo nên nền móng vững chắc cho Võ đường Phật Gia Vịnh Xuân ngày nay."
+      "Võ sư Trần Thúc Tiển là tấm gương võ học mẫu mực, người đã truyền thụ toàn bộ hệ thống quyền pháp Vịnh Xuân và Nội công cho GS.TS Y khoa Nguyễn Mạnh Nhâm, tạo nên nền móng vững chắc cho Võ đường Phật Gia Vịnh Xuân ngày nay."
     ],
     keypoints: [
       "Sư Tổ Nguyễn Tế Công là người khai sơn phá thạch Vịnh Xuân Quyền Việt Nam.",
@@ -52,11 +52,11 @@ export const MONOGRAPHS: MonographSection[] = [
     chapter: "Phần 2: Chương 2",
     badge: "Công Phu",
     readTime: "7 phút",
-    excerpt: "Phương pháp phát triển độ linh của xúc giác qua Niêm Thủ (Chi Sao), Động Thiền và đỉnh cao song đấu bịt mắt.",
+    excerpt: "Phương pháp phát triển độ linh của xúc giác qua Niêm Thủ (Chi Sao), Động Thiền và bài tập song đấu bịt mắt.",
     content: [
-      "Khi đối kháng tốc độ cao, mắt người không thể bắt kịp những đòn biến ảo cận chiến; thông tin truyền từ mắt lên não rồi mới phát tín hiệu co cơ sẽ bị trễ. Linh Giác chính là giải pháp tối thượng.",
+      "Khi đối kháng tốc độ cao, mắt người không thể bắt kịp những đòn biến ảo cận chiến; thông tin truyền từ mắt lên não rồi mới phát tín hiệu co cơ sẽ bị trễ. Linh Giác chính là chìa khóa then chốt.",
       "Nhờ tiếp xúc xúc giác trên da thịt, môn sinh cảm nhận ngay hướng lực, độ mạnh yếu và ý đồ của đối phương để hóa giải trong tích tắc mà không cần qua chỉ đạo não bộ.",
-      "Đỉnh cao của luyện tập là song đấu bịt mắt: Môn sinh dùng dải vải che kín 2 mắt, hoàn toàn phó thác định vị cho cảm nhận xúc giác, biến võ thuật thành một hình thức Động Thiền thăng hoa."
+      "Cấp độ chuyên sâu của luyện tập là song đấu bịt mắt: Môn sinh dùng dải vải che kín 2 mắt, hoàn toàn dựa vào cảm nhận xúc giác, biến võ thuật thành một hình thức Động Thiền tĩnh tại."
     ],
     keypoints: [
       "Xúc giác phản xạ nhanh hơn thị giác gấp nhiều lần trong cận chiến.",
@@ -107,7 +107,7 @@ export const MONOGRAPHS: MonographSection[] = [
     chapter: "Phần 2: Chương 5",
     badge: "Binh Khí",
     readTime: "8 phút",
-    excerpt: "Bát Trảm Đao cận chiến, Lục Điểm Bán Côn tầm xa, Liễu Diệp Kiếm biến hóa cùng tuyệt kỹ Chuỳ Dây và Phi Tiêu Cụ Tế Công.",
+    excerpt: "Bát Trảm Đao cận chiến, Lục Điểm Bán Côn tầm xa, Liễu Diệp Kiếm biến hóa cùng kỹ pháp Chuỳ Dây và Phi Tiêu Cụ Tế Công.",
     content: [
       "Nguyên lý cốt lõi: 'Binh khí là cánh tay nối dài'. Mọi góc độ của binh khí đều vận hành dựa trên các thủ pháp quyền cước cơ bản (Than đao, Bàng đao, Khuyên đao...).",
       "Bát Trảm Đao: Cặp song đao ngắn có quai chắn bảo vệ mu bàn tay, chuyên dụng cận chiến trên ghe thuyền với 8 hướng phạt sắc bén.",
@@ -116,8 +116,8 @@ export const MONOGRAPHS: MonographSection[] = [
     ],
     keypoints: [
       "Vũ khí là tay nối dài, bộ pháp linh hoạt theo Tấn Kiềm Dương.",
-      "Bát Trảm Đao và Lục Điểm Bán Côn là 2 bảo bối trấn phái kinh điển.",
-      "Tuyệt kỹ chuỳ dây và phi tiêu thể hiện trình độ phát lực thượng thừa."
+      "Bát Trảm Đao và Lục Điểm Bán Côn là 2 bài binh khí cổ truyền tiêu biểu.",
+      "Kỹ pháp chuỳ dây và phi tiêu thể hiện trình độ phát lực tinh tế."
     ]
   },
   {

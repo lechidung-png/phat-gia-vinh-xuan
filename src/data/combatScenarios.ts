@@ -1197,7 +1197,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
     "hands": [
       "Nhật Tự Quyền"
     ],
-    "coreKinh": "Không gian hẹp đòn thẳng vô địch",
+    "coreKinh": "Không gian hẹp đòn thẳng chiếm ưu thế",
     "biomechanics": "Kiểm soát đường trung tuyến, tối ưu hóa thời gian phản xạ dưới 0.2 giây nhờ cấu trúc nêm bảo vệ.",
     "quiz": {
       "question": "Khi gặp tình huống 'đấm móc hàm trong góc cầu thang hẹp', nguyên lý Vịnh Xuân cốt lõi nào cần ưu tiên?",
@@ -1208,7 +1208,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Nhắm mắt cúi gập người"
       ],
       "correctIndex": 0,
-      "explanation": "Áp dụng Ép Sườn Xoay Trục Đấm Thẳng Ống Kính giúp chuyển hóa lực tấn công của đối thủ theo nguyên lý Không gian hẹp đòn thẳng vô địch mà không tốn sức đối kháng trực diện."
+      "explanation": "Áp dụng Ép Sườn Xoay Trục Đấm Thẳng Ống Kính giúp chuyển hóa lực tấn công của đối thủ theo nguyên lý Không gian hẹp đòn thẳng chiếm ưu thế mà không tốn sức đối kháng trực diện."
     }
   },
   {
@@ -5241,7 +5241,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5273,7 +5273,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5306,7 +5306,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5339,7 +5339,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5372,7 +5372,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5404,7 +5404,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5437,7 +5437,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5469,7 +5469,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5502,7 +5502,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5534,7 +5534,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5567,7 +5567,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5599,7 +5599,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5632,7 +5632,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5665,7 +5665,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5698,7 +5698,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5730,7 +5730,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5763,7 +5763,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5795,7 +5795,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5828,7 +5828,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5860,7 +5860,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5893,7 +5893,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5925,7 +5925,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5958,7 +5958,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -5991,7 +5991,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6024,7 +6024,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6056,7 +6056,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6089,7 +6089,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6121,7 +6121,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6154,7 +6154,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6186,7 +6186,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6219,7 +6219,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6251,7 +6251,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6284,7 +6284,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6317,7 +6317,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6350,7 +6350,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6382,7 +6382,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6415,7 +6415,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6447,7 +6447,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6480,7 +6480,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   },
   {
@@ -6512,7 +6512,7 @@ export const COMBAT_SCENARIOS: CombatScenario[] = [
         "Vì chỉ cần đứng yên đối phương tự ngã"
       ],
       "correctIndex": 0,
-      "explanation": "Trong không gian hẹp, các đòn vung rộng (boxing, muay) bị kẹt tường vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly 1 tấc của Vịnh Xuân phát huy uy lực hủy diệt tuyệt đối."
+      "explanation": "Trong không gian hẹp, các đòn vung rộng bị hạn chế do vướng víu. Cú đấm thẳng trục giữa và thốn kình cự ly gần của Vịnh Xuân phát huy hiệu quả thực chiến rõ rệt."
     }
   }
 ];

@@ -33,13 +33,13 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
   if (!isOpen) return null;
 
   const quickNavPillars = [
-    { id: "forms" as NavTab, label: "36 Bài Quyền & Vũ Khí", icon: Swords, desc: "11 Phân hệ võ học toàn vẹn", count: "36 Bài" },
-    { id: "scenarios" as NavTab, label: "200 Tình Huống Thực Chiến", icon: ShieldAlert, desc: "Khảo thí phản xạ & thực chiến", count: "200 Thế" },
-    { id: "dummy" as NavTab, label: "Cọc Gỗ Mộc Nhân", icon: Sparkles, desc: "Bản vẽ 1954 & Thao pháp", count: "3 Phân hệ" },
-    { id: "fundamentals" as NavTab, label: "Cơ Bản Công & Tấn Pháp", icon: Hand, desc: "Tam Thủ & Kiềm Dương Tấn", count: "14 Thủ pháp" },
+    { id: "forms" as NavTab, label: "18 Bài Quyền & Binh Khí", icon: Swords, desc: "Toàn bộ bài tập quyền & binh khí chân truyền", count: "18 Bài" },
+    { id: "scenarios" as NavTab, label: "Tình Huống Thực Chiến", icon: ShieldAlert, desc: "200 thế công thủ phản xạ", count: "200 Thế" },
+    { id: "dummy" as NavTab, label: "Mộc Nhân", icon: Sparkles, desc: "Bản vẽ 1954 & Thao pháp", count: "3 Phân hệ" },
+    { id: "fundamentals" as NavTab, label: "Cơ Bản & Tấn Pháp", icon: Hand, desc: "Tam Thủ & Kiềm Dương Tấn", count: "14 Thủ pháp" },
     { id: "centerline" as NavTab, label: "Trục Tý Ngọ Tuyến", icon: Compass, desc: "Đạo trung lộ & 7 đại huyệt", count: "7 Huyệt đạo" },
     { id: "lineage" as NavTab, label: "Truyền Thừa & Triết Lý", icon: GitBranch, desc: "4 Thế hệ & Võ Sư Lê Đắc Kiên", count: "4 Thế hệ" },
-    { id: "library" as NavTab, label: "Tàng Kinh Các Kinh Điển", icon: BookOpen, desc: "Toàn văn 7 chuyên đề kinh điển", count: "Toàn Thư" },
+    { id: "library" as NavTab, label: "Tài Liệu Khảo Cứu & Chuyên Đề", icon: BookOpen, desc: "Toàn văn các chuyên đề giáo trình", count: "Toàn Thư" },
   ];
 
   return (
@@ -62,13 +62,14 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
                 Mục Lục Toàn Cảnh • Võ Đường Số Phật Gia Vịnh Xuân
               </h3>
               <p className="text-xs text-amber-200/80">
-                Toàn bộ 11 Đại Phân Hệ, 36 Bài Giáo Trình và 7 Trụ Cột Võ Học Kinh Điển
+                Toàn bộ 11 Đại Phân Hệ, 18 Bài Quyền Pháp & Binh Khí và 7 Trụ Cột Võ Học Kinh Điển
               </p>
             </div>
           </div>
 
           <button
             onClick={onClose}
+            aria-label="Đóng mục lục toàn cảnh"
             className="p-2 rounded-xl bg-[#2A0E0A] hover:bg-[#F5D06C] hover:text-[#2A0E0A] text-amber-200 transition border border-[#F5D06C]/30 cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -116,7 +117,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
         <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-6 scrollbar-thin">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
-              <BookOpen className="w-3.5 h-3.5" /> Trọn Bộ 11 Đại Phân Hệ Giáo Trình (36 Bài Học Toàn Thư):
+              <BookOpen className="w-3.5 h-3.5" /> Trọn Bộ 11 Đại Phân Hệ Giáo Trình (18 Bài Quyền & Các Chuyên Đề Khảo Cứu):
             </div>
             <div className="relative w-full sm:w-64">
               <Search className="w-3.5 h-3.5 text-amber-200/60 absolute left-3 top-1/2 -translate-y-1/2" />
@@ -190,7 +191,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
 
         {/* Footer */}
         <div className="p-4 bg-[#20150F] border-t border-[#F5D06C]/20 flex items-center justify-between text-xs text-amber-200/70">
-          <span>Nhấp vào bất kỳ bài học nào để mở ngay Sàn tập hoặc Đài đọc di sản</span>
+          <span>Nhấp vào bài học để xem chi tiết</span>
           <span className="font-mono text-[#F5D06C]">Đầy đủ 100% tài liệu không bỏ sót</span>
         </div>
       </div>

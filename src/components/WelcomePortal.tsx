@@ -1,28 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import {
   Swords,
   Hand,
   Sparkles,
-  Compass,
   BookOpen,
-  GitBranch,
   Search,
   ArrowRight,
   ShieldCheck,
   ChevronRight,
   Award,
   Layers,
-  ShieldAlert,
+  Quote,
+  RefreshCw,
 } from "lucide-react";
 import { NavTab } from "@/components/Header";
+import { getDailyMartialQuote, getRandomMartialQuote, MartialWisdomQuote } from "@/data/martialPhilosophy";
 
 interface WelcomePortalProps {
-  onNavigateTab: (tab: NavTab, formId?: string) => void;
+  onNavigateTab: (tab: NavTab, formId?: string, subTab?: string) => void;
   openSearch: () => void;
   openStanceGuide: () => void;
+}
+
+interface LearningStep {
+  step: number;
+  name: string;
+  desc: string;
+  tab: NavTab;
+  formId?: string;
+  subTab?: string;
 }
 
 export const WelcomePortal: React.FC<WelcomePortalProps> = ({
@@ -30,113 +39,83 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   openSearch,
   openStanceGuide,
 }) => {
+  const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getDailyMartialQuote());
+  const [kienHomePhoto, setKienHomePhoto] = useState<"portrait" | "greeting">("portrait");
+
+  const handleNextDailyQuote = () => {
+    setDailyQuote(getRandomMartialQuote());
+  };
   const portalGateways = [
     {
-      id: "forms" as NavTab,
-      formId: "bai-07",
-      title: "Bách Khoa 36 Bài Quyền & Vũ Khí",
-      subtitle: "11 Đại phân hệ quyền pháp & binh khí",
-      desc: "Nghi thức Bái Tổ, Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 thế (đơn & đối luyện), Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc), Bát Trảm Đao, Côn, Kiếm.",
-      icon: Swords,
-      badge: "36 Bài Học • 1.096 Ảnh HD",
-      color: "from-[#F5D06C]/20 to-[#461A14]/20",
-      borderColor: "border-[#F5D06C]/40 hover:border-[#F5D06C]",
-      tagColor: "bg-[#F5D06C]/20 text-[#F5D06C]",
-    },
-    {
-      id: "dummy" as NavTab,
-      title: "Cọc Gỗ Mộc Nhân",
-      subtitle: "Bản vẽ kỹ thuật & Cây mộc nhân 1954",
-      desc: "Bản vẽ kỹ thuật mặt bằng nhìn từ trên cao, 2 thế bộ pháp Kiềm Dương vs Biên Thân 45°, hồ sơ 5 tầng cọc Sư Tổ Tế Công tại 38 Gia Ngư.",
-      icon: Sparkles,
-      badge: "Bản Vẽ Chuẩn CAD & 1954",
-      color: "from-amber-700/20 to-amber-950/10",
-      borderColor: "border-amber-600/40 hover:border-amber-400",
-      tagColor: "bg-amber-600/20 text-amber-300",
+      id: "library" as NavTab,
+      title: "1. Lý thuyết & Lịch sử",
+      subtitle: "Thư viện chuyên khảo & Tư liệu gốc",
+      desc: "Lịch sử truyền thừa, lời tựa, triết lý võ đạo, phương pháp luyện khí đan điền và các chuyên khảo giáo trình.",
+      icon: BookOpen,
+      badge: "Lý thuyết",
+      color: "from-amber-900/30 to-stone-950/20",
+      borderColor: "border-amber-700/50 hover:border-amber-400",
+      tagColor: "bg-amber-800/30 text-amber-200",
     },
     {
       id: "fundamentals" as NavTab,
-      title: "Cơ Bản Công & Tấn Pháp",
-      subtitle: "Nền tảng khởi nguyên võ học",
-      desc: "Đồ hình giải phẫu gốc, Tam Thủ cốt lõi (Than, Bàng, Phục), Nhị Tự Kiềm Dương Tấn chân hẹp chuẩn mực.",
+      title: "2. Cơ bản",
+      subtitle: "Nền tảng quyền thuật & Tấn pháp",
+      desc: "Nhị Tự Kiềm Dương Tấn, Tam Thủ cốt lõi (Than, Bàng, Phục), Trục Tý Ngọ và bài luyện căn bản.",
       icon: Hand,
-      badge: "Thủ Pháp & Cước Bộ",
-      color: "from-emerald-900/20 to-emerald-950/10",
-      borderColor: "border-[#10B981]/40 hover:border-[#10B981]",
-      tagColor: "bg-[#10B981]/20 text-[#10B981]",
+      badge: "Nền tảng",
+      color: "from-emerald-900/30 to-emerald-950/20",
+      borderColor: "border-[#10B981]/50 hover:border-[#10B981]",
+      tagColor: "bg-[#10B981]/30 text-[#10B981]",
     },
     {
-      id: "lineage" as NavTab,
-      title: "Truyền Thừa & Triết Lý",
-      subtitle: "Bốn thế hệ & Võ Sư Lê Đắc Kiên",
-      desc: "Phả hệ truyền thừa từ Sư Tổ Nguyễn Tế Công đến Võ Sư Lê Đắc Kiên (Võ đường Huỳnh Thúc Kháng) cùng 5 chuyên đề triết lý võ đạo sâu xa.",
-      icon: GitBranch,
-      badge: "Huỳnh Thúc Kháng Dojo",
-      color: "from-amber-600/20 to-orange-950/10",
-      borderColor: "border-[#C27D38]/40 hover:border-[#C27D38]",
-      tagColor: "bg-[#C27D38]/20 text-amber-200",
-    },
-    {
-      id: "centerline" as NavTab,
-      title: "Trục Tý Ngọ Tuyến",
-      subtitle: "Đạo trung lộ & Tam giác sinh lực",
-      desc: "Nguyên lý trung tâm bất biến của Vịnh Xuân, khảo sát 7 đại huyệt đạo trên trục Tý Ngọ và mô phỏng phản xạ công thủ 4 hướng.",
-      icon: Compass,
-      badge: "7 Huyệt Đạo • Tương Tác",
-      color: "from-blue-900/20 to-indigo-950/10",
-      borderColor: "border-blue-500/40 hover:border-blue-400",
-      tagColor: "bg-blue-500/20 text-blue-300",
-    },
-    {
-      id: "library" as NavTab,
-      title: "Tàng Kinh Các Kinh Điển",
-      subtitle: "Toàn văn chuyên khảo học thuật",
-      desc: "Lưu trữ toàn văn 7 chuyên đề lý thuyết kinh điển của GS.TS Y Khoa Nguyễn Mạnh Nhâm và ma trận phân loại 109 thế võ.",
-      icon: BookOpen,
-      badge: "Toàn Văn Chuyên Khảo",
-      color: "from-amber-900/20 to-stone-950/10",
-      borderColor: "border-amber-700/40 hover:border-amber-500",
-      tagColor: "bg-amber-800/20 text-amber-300",
-    },
-    {
-      id: "scenarios" as NavTab,
-      title: "200 Tình Huống Thực Chiến",
-      subtitle: "Khảo thí phản xạ & Hóa giải",
-      desc: "Ngân hàng 200 kịch bản cận chiến thực tế: Thượng bàn, Trung bàn, Hạ bàn, Cầm nã khóa siết và Tự vệ đường phố góc hẹp kèm bộ câu hỏi trắc nghiệm phản xạ.",
-      icon: ShieldAlert,
-      badge: "200 Thế • Trắc Nghiệm",
-      color: "from-rose-900/20 to-red-950/10",
-      borderColor: "border-rose-500/40 hover:border-rose-400",
-      tagColor: "bg-rose-500/20 text-rose-300",
-    },
+      id: "forms" as NavTab,
+      formId: "bai-07",
+      title: "3. Quyền pháp & Binh khí",
+      subtitle: "Phân thế chi tiết",
+      desc: "Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 Thế, Mộc Nhân, Ngũ Hình và Binh Khí cổ truyền.",
+      icon: Swords,
+      badge: "Phân thế",
+      color: "from-[#F5D06C]/30 to-[#461A14]/20",
+      borderColor: "border-[#F5D06C]/50 hover:border-[#F5D06C]",
+      tagColor: "bg-[#F5D06C]/30 text-[#F5D06C]",
+    }
   ];
 
-  const learningSteps = [
+  const learningSteps: LearningStep[] = [
     {
       step: 1,
-      name: "Cơ Bản Công & Tấn Pháp",
-      desc: "Nhị Tự Kiềm Dương Tấn (chân hẹp), Tam Thủ cốt lõi (Than, Bàng, Phục thủ).",
+      name: "Cơ Bản & Bái Tổ",
+      desc: "Tấn Kiềm Dương, Tam Thủ (Than, Bàng, Phục), bài tập Xoay tay, Bộ pháp & 9 bước Bái Tổ.",
       tab: "fundamentals" as NavTab,
+      subTab: "hands",
     },
     {
       step: 2,
-      name: "Bái Tổ & Tiểu Niệm Đầu",
-      desc: "9 bước tôn sư trọng đạo, mở thông kinh mạch, định hình cấu trúc thân pháp.",
+      name: "Tam Đại Quyền Pháp",
+      desc: "Tiểu Niệm Đầu (định tâm), Tầm Kiều (tìm cầu bắc nhịp) & Tiêu Chỉ (ngón tay phóng kình).",
       tab: "forms" as NavTab,
       formId: "bai-07",
     },
     {
       step: 3,
-      name: "Đại Pháp 108 Thế",
-      desc: "108 thế tại chỗ & tiến lùi, kết hợp đối luyện song đấu 2 người thực chiến.",
+      name: "Hệ Thống 108 Thế",
+      desc: "108 thế liên hoàn tại chỗ & tiến lùi, đơn luyện định khuôn và đối luyện song đấu 2 người.",
       tab: "forms" as NavTab,
       formId: "bai-12",
     },
     {
       step: 4,
-      name: "Cọc Gỗ Mộc Nhân",
-      desc: "Đỉnh cao thính kình, bộ pháp Tý Ngọ Tuyến và 108 thế mộc nhân thao pháp.",
+      name: "Mộc Nhân",
+      desc: "Luyện thính kình, bộ pháp Tý Ngọ Tuyến và 108 thế mộc nhân thao pháp chân truyền.",
       tab: "dummy" as NavTab,
+    },
+    {
+      step: 5,
+      name: "Ngũ Hình & Binh Khí",
+      desc: "Ngũ hình quyền (Long, Xà, Hổ, Báo, Hạc) và kho vũ khí (Bát Trảm Đao, Lục Điểm Côn, Kiếm).",
+      tab: "forms" as NavTab,
+      formId: "bai-31",
     },
   ];
 
@@ -165,7 +144,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Võ Đường Số Phật Gia Vịnh Xuân
             </h1>
             <p className="text-base sm:text-xl text-amber-200/90 font-serif font-medium tracking-wide">
-              Không Gian Số Hóa & Khảo Cứu Toàn Thư Di Sản Võ Học Kinh Điển
+              Không gian lưu trữ di sản võ học
             </p>
           </div>
 
@@ -175,30 +154,33 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </p>
 
           {/* CTA Action Buttons */}
-          <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+          <div className="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-4">
             <button
               onClick={() => onNavigateTab("forms", "bai-07")}
-              className="px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-[#F5D06C] to-[#C27D38] text-[#2A0E0A] font-bold text-xs sm:text-sm hover:brightness-110 transition shadow-lg shadow-[#F5D06C]/20 flex items-center gap-2 group cursor-pointer"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-gradient-to-r from-[#F5D06C] to-[#C27D38] text-[#2A0E0A] font-bold text-xs sm:text-sm hover:brightness-110 transition shadow-lg shadow-[#F5D06C]/20 flex items-center gap-1.5 sm:gap-2 group cursor-pointer"
             >
               <Swords className="w-4 h-4 text-[#2A0E0A] group-hover:rotate-12 transition-transform" />
-              <span>Khám Phá 36 Bài Quyền</span>
+              <span className="hidden sm:inline">Khám Phá 18 Bài Quyền</span>
+              <span className="sm:hidden">18 Bài Quyền</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
             <button
               onClick={() => onNavigateTab("dummy")}
-              className="px-5 sm:px-6 py-3 rounded-2xl bg-[#20150F] border border-[#F5D06C]/40 text-amber-200 hover:text-white hover:bg-[#2D1D16] hover:border-[#F5D06C] font-semibold text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-[#20150F] border border-[#F5D06C]/40 text-amber-200 hover:text-white hover:bg-[#2D1D16] hover:border-[#F5D06C] font-semibold text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-[#F5D06C]" />
-              <span>Cọc Gỗ Mộc Nhân (1954)</span>
+              <span className="hidden sm:inline">Mộc Nhân (1954)</span>
+              <span className="sm:hidden">Mộc Nhân</span>
             </button>
 
             <button
               onClick={openSearch}
-              className="px-4 py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-2 cursor-pointer"
+              className="px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
             >
               <Search className="w-4 h-4 text-[#F5D06C]" />
-              <span>Tra Cứu Chiêu Thức</span>
+              <span className="hidden sm:inline">Tra Cứu Chiêu Thức</span>
+              <span className="sm:hidden">Tra Cứu</span>
               <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-[#2A1C14] rounded border border-[#3D291F] text-amber-200/80 font-mono">
                 Ctrl+K
               </kbd>
@@ -209,7 +191,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         {/* 4 Heritage Martial Stats Pillars */}
         <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#F5D06C]/20">
           <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">11 • 36</div>
+            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">11 • 18</div>
             <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Phân Hệ • Bài Quyền</div>
             <div className="text-[10px] text-amber-200/70 mt-1">Quyền pháp, mộc nhân & binh khí</div>
           </div>
@@ -245,25 +227,94 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Giáo Trình Chính Thống Phật Gia Vịnh Xuân Quyền
             </h3>
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình giải phẫu và khẩu quyết trên nền tảng Võ Đường Số được phục chế và số hóa 100% nguyên bản từ bộ tài liệu giáo trình chính thống của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
+              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình và khẩu quyết được số hóa từ giáo trình chính thống của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
             </p>
             <div className="pt-1 flex items-center gap-2 text-xs text-amber-200/80 italic">
               <span className="text-[#F5D06C] font-bold">Quy ước hiển thị:</span>
-              <span>Trong toàn bộ các phân hệ chiêu thức, hệ thống lược bỏ các chú thích số trang để người tập tập trung hoàn toàn vào yếu lĩnh thân pháp, tâm pháp và độ chuẩn xác của từng đòn thế.</span>
+              <span>Hệ thống lược bỏ chú thích số trang trong từng chiêu thức để người tập tập trung vào yếu lĩnh thân pháp và tâm pháp võ học.</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. CỔNG KHÁM PHÁ 7 ĐẠI PHÂN HỆ (7 GATEWAY CARDS) */}
+      {/* 3. CHÂM NGÔN VÕ ĐẠO MỖI NGÀY (DAILY MARTIAL WISDOM) */}
+      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/35 bg-gradient-to-br from-[#2D160E] to-[#140C08] relative overflow-hidden shadow-xl animate-fadeIn">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-5 flex-1 text-center sm:text-left">
+            {dailyQuote.authorImage && (
+              <div className="relative w-20 h-26 sm:w-22 sm:h-28 rounded-2xl overflow-hidden border-2 border-[#F5D06C]/70 shadow-xl shrink-0 bg-[#0F0805]">
+                <Image
+                  src={dailyQuote.authorImage}
+                  alt={dailyQuote.author}
+                  fill
+                  sizes="100px"
+                  className="object-cover object-top"
+                />
+                {dailyQuote.imageCaption && (
+                  <div className="absolute bottom-0 inset-x-0 bg-black/85 text-[9px] font-mono text-[#F5D06C] text-center py-0.5 truncate px-1">
+                    {dailyQuote.imageCaption}
+                  </div>
+                )}
+              </div>
+            )}
+
+            <div className="space-y-2 flex-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/30 text-[#F5D06C] text-xs font-mono font-bold uppercase tracking-wider">
+                <Quote className="w-3.5 h-3.5" />
+                Châm Ngôn Võ Đạo Hôm Nay
+              </div>
+
+              {dailyQuote.hanNom && (
+                <p className="text-xs font-serif text-[#F5D06C] tracking-widest font-mono">
+                  {dailyQuote.hanNom}
+                </p>
+              )}
+
+              <blockquote className="text-base sm:text-xl lg:text-2xl font-serif font-bold text-white leading-relaxed gold-gradient">
+                &ldquo;{dailyQuote.quote}&rdquo;
+              </blockquote>
+
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
+                <span className="text-amber-200 font-bold font-serif">{dailyQuote.author}</span>
+                <span className="text-slate-400">•</span>
+                <span className="text-amber-200/70 font-mono text-[11px]">{dailyQuote.roleOrSource}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Nút thao tác chuyển nhanh */}
+          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+            <button
+              onClick={handleNextDailyQuote}
+              className="w-full sm:w-auto px-4 py-2.5 rounded-2xl bg-[#20150F] hover:bg-[#2F1C14] text-amber-200 border border-[#F5D06C]/30 text-xs font-semibold flex items-center justify-center gap-2 transition cursor-pointer"
+              title="Đổi châm ngôn ngẫu nhiên"
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Đổi Câu Khác</span>
+              <span className="sm:hidden">Đổi Câu</span>
+            </button>
+
+            <button
+              onClick={() => onNavigateTab("lineage", undefined, "philosophy")}
+              className="w-full sm:w-auto px-5 py-2.5 rounded-2xl bg-[#F5D06C] hover:bg-[#E2B743] text-[#2A0E0A] font-bold text-xs flex items-center justify-center gap-2 transition cursor-pointer shadow-lg shadow-[#F5D06C]/20"
+            >
+              <span className="hidden sm:inline">Triết Lý &amp; Yếu Quyết</span>
+              <span className="sm:hidden">Triết Lý</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. CỔNG KHÁM PHÁ 3 KHÔNG GIAN (3 SPACES) */}
       <section className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-[#3D291F] pb-4">
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#E2B743]">
-              <Layers className="w-3.5 h-3.5" /> Bản Đồ Võ Quán Số
+              <Layers className="w-3.5 h-3.5" /> Kiến trúc hệ thống
             </div>
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
-              Cổng Khám Phá 7 Đại Trụ Cột Võ Học
+              Nội dung hệ thống
             </h2>
           </div>
           <p className="text-xs text-slate-400 max-w-md">
@@ -271,13 +322,21 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-5">
           {portalGateways.map((item) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.title}
+                role="button"
+                tabIndex={0}
                 onClick={() => onNavigateTab(item.id, item.formId)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onNavigateTab(item.id, item.formId);
+                  }
+                }}
                 className={`group p-5 sm:p-6 rounded-3xl bg-gradient-to-br ${item.color} bg-[#1C120D] border ${item.borderColor} transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl hover:shadow-[#E2B743]/10 cursor-pointer flex flex-col justify-between`}
               >
                 <div className="space-y-3">
@@ -317,27 +376,63 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       {/* 3. FEATURED WISDOM: VÕ SƯ LÊ ĐẮC KIÊN & TRIẾT LÝ VÕ ĐẠO */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#C27D38]/40 relative overflow-hidden shadow-xl">
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
-          {/* Portrait of Master Le Dac Kien - To rõ & Trang trọng */}
-          <div className="relative shrink-0 flex flex-col items-center">
+          {/* Ảnh chân dung / thế chào Võ sư Lê Đắc Kiên - To rõ & Trang trọng */}
+          <div className="relative shrink-0 flex flex-col items-center space-y-2.5">
             <div className="w-48 h-60 sm:w-60 sm:h-76 md:w-72 md:h-92 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shadow-amber-950/80 relative bg-[#140C08] group">
               <Image
-                src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                alt="Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
+                src={
+                  kienHomePhoto === "portrait"
+                    ? "/assets/images/instructors/vo_su_le_dac_kien.jpg"
+                    : "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg"
+                }
+                alt={
+                  kienHomePhoto === "portrait"
+                    ? "Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
+                    : "Võ sư Lê Đắc Kiên - Thế chào Bão Quyền Lễ tôn sư trọng đạo"
+                }
                 fill
                 sizes="(max-width: 640px) 192px, (max-width: 768px) 240px, 288px"
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-top group-hover:scale-105 transition-all duration-500"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-3 inset-x-2 text-center">
                 <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow-lg">
-                  Võ Sư Lê Đắc Kiên
+                  {kienHomePhoto === "portrait" ? "Chân Dung Võ Sư" : "Thế Chào Bão Quyền Lễ"}
                 </span>
               </div>
             </div>
-            <div className="mt-2.5 px-3 py-1 rounded-full bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
-              <Award className="w-3.5 h-3.5" />
-              20 Năm Võ Nghiệp
+
+            {/* Switcher 2 ảnh & huy hiệu */}
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 p-1 rounded-xl bg-black/60 border border-[#3D291F] text-xs">
+                <button
+                  type="button"
+                  onClick={() => setKienHomePhoto("portrait")}
+                  className={`px-3 py-1 rounded-lg font-medium transition cursor-pointer ${
+                    kienHomePhoto === "portrait"
+                      ? "bg-[#E2B743] text-black font-bold shadow"
+                      : "text-slate-400 hover:text-white"
+                  }`}
+                >
+                  Chân Dung
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setKienHomePhoto("greeting")}
+                  className={`px-3 py-1 rounded-lg font-medium transition cursor-pointer ${
+                    kienHomePhoto === "greeting"
+                      ? "bg-[#E2B743] text-black font-bold shadow"
+                      : "text-slate-400 hover:text-white"
+                  }`}
+                >
+                  Thế Chào
+                </button>
+              </div>
+              <div className="px-3 py-1 rounded-xl bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
+                <Award className="w-3.5 h-3.5" />
+                20 Năm Võ Nghiệp
+              </div>
             </div>
           </div>
 
@@ -349,11 +444,11 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             </div>
 
             <blockquote className="font-serif italic text-base sm:text-lg lg:text-xl text-amber-100 font-semibold leading-relaxed">
-              &quot;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Đỉnh cao của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&quot;
+              &quot;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&quot;
             </blockquote>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs text-amber-200/70">
-              <span>Môn Sinh Đời Thứ Tư</span>
+              <span>Học Trò Đời Thứ Tư</span>
               <span>•</span>
               <span>Kế Thừa Tinh Hoa Phật Gia Vịnh Xuân</span>
               <span>•</span>
@@ -368,15 +463,15 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         </div>
       </section>
 
-      {/* 4. LỘ TRÌNH SƯ PHẠM 4 BƯỚC (LEARNING ROADMAP) */}
+      {/* 4. LỘ TRÌNH SƯ PHẠM 5 CHẶNG (LEARNING ROADMAP) */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#3D291F] space-y-5">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#3D291F] pb-3">
           <div>
             <span className="text-[11px] font-bold text-[#E2B743] uppercase tracking-wider">
-              Khuyến Nghị Huấn Luyện
+              Khuyến Nghị Huấn Luyện Chuẩn Sách Gốc
             </span>
             <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
-              Lộ Trình Tầm Đạo 4 Giai Đoạn Chuẩn Sư Phạm
+              Lộ Trình Tầm Đạo 5 Chặng Chuẩn Sư Phạm Theo Sách Gốc
             </h3>
           </div>
           <button
@@ -388,17 +483,25 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
           {learningSteps.map((s) => (
             <div
               key={s.step}
-              onClick={() => onNavigateTab(s.tab, s.formId)}
+              role="button"
+              tabIndex={0}
+              onClick={() => onNavigateTab(s.tab, s.formId, s.subTab)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onNavigateTab(s.tab, s.formId, s.subTab);
+                }
+              }}
               className="p-4 rounded-2xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 hover:bg-[#20150F] transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#2A1C14] text-[#E2B743] font-mono">
-                    Giai Đoạn 0{s.step}
+                    Chặng 0{s.step}
                   </span>
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#E2B743] group-hover:translate-x-1 transition-all" />
                 </div>

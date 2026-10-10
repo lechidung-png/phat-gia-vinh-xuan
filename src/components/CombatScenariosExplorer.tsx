@@ -23,7 +23,9 @@ import {
   Swords,
   ChevronRight,
   BookOpen,
-  ArrowRight
+  ArrowRight,
+  LayoutList,
+  LayoutGrid
 } from "lucide-react";
 
 interface CombatScenariosExplorerProps {
@@ -31,13 +33,40 @@ interface CombatScenariosExplorerProps {
 }
 
 const CATEGORIES: { id: "all" | ScenarioCategory; label: string; count: number }[] = [
-  { id: "all", label: "Tất Cả 200 Tình Huống", count: 200 },
-  { id: "Thượng Bàn (Đầu/Mặt)", label: "Thượng Bàn (Đầu/Mặt)", count: 40 },
-  { id: "Trung Bàn (Ngực/Sườn)", label: "Trung Bàn (Ngực/Sườn)", count: 40 },
-  { id: "Hạ Bàn (Chân/Háng)", label: "Hạ Bàn (Chân/Háng)", count: 40 },
-  { id: "Cầm Nã & Khóa Siết", label: "Cầm Nã & Khóa Siết", count: 40 },
-  { id: "Tự Vệ Đường Phố & Góc Hẹp", label: "Tự Vệ Đường Phố", count: 40 },
+  { id: "all", label: "Tất Cả", count: 200 },
+  { id: "Thượng Bàn (Đầu/Mặt)", label: "Thượng Bàn", count: 40 },
+  { id: "Trung Bàn (Ngực/Sườn)", label: "Trung Bàn", count: 40 },
+  { id: "Hạ Bàn (Chân/Háng)", label: "Hạ Bàn", count: 40 },
+  { id: "Cầm Nã & Khóa Siết", label: "Cầm Nã & Khóa", count: 40 },
+  { id: "Tự Vệ Đường Phố & Góc Hẹp", label: "Tự Vệ Phố", count: 40 },
 ];
+
+// Loại bỏ tiền tố dài dòng "Tình huống X:" để hiển thị tên thế võ gọn gàng, chuẩn mực
+export const getCleanScenarioTitle = (title: string): string => {
+  return title.replace(/^Tình huống\s*\d+:\s*/i, "").trim();
+};
+
+export const getScenarioNumber = (id: string, title?: string): number => {
+  const matchId = id.match(/SCEN-(\d+)/i);
+  if (matchId) return parseInt(matchId[1], 10);
+  if (title) {
+    const matchTitle = title.match(/Tình huống\s*(\d+)/i);
+    if (matchTitle) return parseInt(matchTitle[1], 10);
+  }
+  return 0;
+};
+
+// Thuật toán xáo trộn ngẫu nhiên Fisher-Yates (Knuth shuffle) O(N) bảo đảm phân phối đều tuyệt đối
+function fisherYatesShuffle<T>(array: T[]): T[] {
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = result[i];
+    result[i] = result[j];
+    result[j] = temp;
+  }
+  return result;
+}
 
 export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = ({
   onNavigateForm,
@@ -47,6 +76,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
   const [selectedDanger, setSelectedDanger] = useState<"all" | ScenarioDangerLevel>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedScenarioForModal, setSelectedScenarioForModal] = useState<CombatScenario | null>(null);
+  const [viewLayout, setViewLayout] = useState<"compact" | "cards">("compact");
 
   // Quiz State
   const [quizQuestionCount, setQuizQuestionCount] = useState<number>(10);
@@ -55,18 +85,29 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
   const [userAnswers, setUserAnswers] = useState<Record<number, number>>({});
   const [isQuizSubmitted, setIsQuizSubmitted] = useState<boolean>(false);
 
-  // Initialize or start Quiz
+  // Initialize or start Quiz with randomized questions and shuffled options
   const startQuiz = (count: number, cat: "all" | ScenarioCategory = selectedCategory) => {
     let pool = COMBAT_SCENARIOS;
     if (cat !== "all") {
       pool = pool.filter((s) => s.category === cat);
     }
-    // Lấy đều các câu hỏi ngẫu nhiên bằng cách bước nhảy cố định hoặc xáo trộn
-    const step = Math.max(1, Math.floor(pool.length / count));
-    const selected: CombatScenario[] = [];
-    for (let i = 0; i < count && i * step < pool.length; i++) {
-      selected.push(pool[(i * step + 3) % pool.length]);
-    }
+    // Xáo trộn ngẫu nhiên ngân hàng câu hỏi bằng thuật toán Fisher-Yates
+    const shuffledPool = fisherYatesShuffle(pool);
+    const selected = shuffledPool.slice(0, Math.min(count, shuffledPool.length)).map((sc) => {
+      // Xáo trộn 4 phương án lựa chọn (A, B, C, D) và ánh xạ lại vị trí đáp án đúng (không cố định vị trí A)
+      const originalCorrectOption = sc.quiz.options[sc.quiz.correctIndex];
+      const shuffledOptions = fisherYatesShuffle(sc.quiz.options);
+      const newCorrectIndex = shuffledOptions.indexOf(originalCorrectOption);
+      return {
+        ...sc,
+        quiz: {
+          ...sc.quiz,
+          options: shuffledOptions,
+          correctIndex: newCorrectIndex >= 0 ? newCorrectIndex : 0,
+        },
+      };
+    });
+
     setQuizQuestionCount(selected.length);
     setQuizScenarios(selected);
     setCurrentQuizIndex(0);
@@ -131,16 +172,15 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
         <div className="absolute -right-8 -top-8 w-64 h-64 bg-[#E2B743]/5 rounded-full blur-3xl pointer-events-none" />
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 border border-[#E2B743]/40 text-[#E2B743] text-xs font-semibold uppercase tracking-wider mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2B743]/15 border border-[#E2B743]/40 text-[#E2B743] text-xs font-semibold uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              Kho Tri Thức Thực Chiến 200 Tình Huống
+              Thực Chiến &amp; Phản Xạ • 200 Thế
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold font-serif gold-gradient">
-              200 Bài Test Tình Huống & Phản Xạ Võ Học
+              200 Tình Huống Đối Kháng Thực Chiến
             </h2>
-            <p className="mt-2 text-sm sm:text-base text-amber-100/70 max-w-3xl leading-relaxed">
-              Hệ thống hóa toàn bộ 200 kịch bản công thủ đối kháng từ cận chiến đường phố, góc hẹp, 
-              khóa siết đến đoạt vũ khí. Mỗi tình huống đều gắn liền với 108 đại pháp và 7 bài quyền chính tông.
+            <p className="mt-1.5 text-xs sm:text-sm text-amber-100/70 max-w-3xl leading-relaxed">
+              Hệ thống 200 kịch bản công thủ đối kháng từ cận chiến, góc hẹp, khóa siết đến đoạt vũ khí gắn liền với 108 đại pháp và 18 bài quyền chính tông.
             </p>
           </div>
 
@@ -148,14 +188,14 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
           <div className="flex items-center gap-2 bg-[#1A100B] p-1.5 rounded-xl border border-[#3D291F] shrink-0">
             <button
               onClick={() => setActiveMode("library")}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeMode === "library"
-                  ? "bg-[#E2B743] text-[#140C08] shadow-lg shadow-[#E2B743]/20"
+                  ? "bg-[#E2B743] text-[#140C08] shadow-lg shadow-[#E2B743]/20 font-bold"
                   : "text-amber-200/70 hover:text-[#FBF8F3]"
               }`}
             >
               <BookOpen className="w-4 h-4" />
-              Thư Viện Tình Huống (200)
+              <span>Thư Viện (200)</span>
             </button>
             <button
               onClick={() => {
@@ -165,14 +205,14 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                   setActiveMode("quiz");
                 }
               }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all ${
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeMode === "quiz"
-                  ? "bg-[#E2B743] text-[#140C08] shadow-lg shadow-[#E2B743]/20"
+                  ? "bg-[#E2B743] text-[#140C08] shadow-lg shadow-[#E2B743]/20 font-bold"
                   : "text-amber-200/70 hover:text-[#FBF8F3]"
               }`}
             >
               <Award className="w-4 h-4" />
-              Khảo Thí Phản Xạ ({quizQuestionCount} Câu)
+              <span>Luyện Phản Xạ ({quizQuestionCount})</span>
             </button>
           </div>
         </div>
@@ -219,6 +259,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery("")}
+                    aria-label="Xóa nội dung tìm kiếm"
                     className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-amber-400 hover:text-white"
                   >
                     Xóa
@@ -233,6 +274,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                 <select
                   value={selectedDanger}
                   onChange={(e) => setSelectedDanger(e.target.value as "all" | ScenarioDangerLevel)}
+                  aria-label="Lọc theo mức độ nguy hiểm"
                   className="bg-[#140C08] border border-[#3D291F] rounded-xl px-2.5 py-1.5 text-xs text-amber-100 focus:outline-none focus:border-[#E2B743]"
                 >
                   <option value="all">Tất cả cấp độ</option>
@@ -249,120 +291,220 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                 className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-[#C49A32] to-[#E2B743] text-[#140C08] text-xs font-bold flex items-center justify-center gap-1.5 shadow-md shadow-[#E2B743]/20 hover:brightness-110 shrink-0"
               >
                 <Flame className="w-3.5 h-3.5" />
-                Làm Test Nhanh (10 Câu)
+                <span className="hidden sm:inline">Làm Test Nhanh (10 Câu)</span>
+                <span className="sm:hidden">Luyện 10 Câu</span>
               </button>
             </div>
           </div>
 
-          {/* Results Count Banner */}
-          <div className="flex items-center justify-between text-xs text-amber-200/60 px-1">
-            <span>
-              Hiển thị <strong className="text-[#E2B743]">{filteredScenarios.length}</strong> / 200 tình huống võ học
-            </span>
-            {searchQuery && (
-              <span>Kết quả lọc cho: &quot;{searchQuery}&quot;</span>
-            )}
-          </div>
+          {/* Results Count Banner & View Layout Switcher */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-200/60 px-1">
+            <div className="flex items-center gap-2">
+              <span>
+                Hiển thị <strong className="text-[#E2B743]">{filteredScenarios.length}</strong> / 200 thế đối kháng
+              </span>
+              {searchQuery && (
+                <span className="text-amber-200/40">| Lọc: &quot;{searchQuery}&quot;</span>
+              )}
+            </div>
 
-          {/* Scenarios Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {filteredScenarios.map((s) => (
-              <div
-                key={s.id}
-                className="glass-panel p-5 rounded-2xl border border-[#3D291F] hover:border-[#E2B743]/40 transition-all flex flex-col justify-between group shadow-lg"
+            {/* View Layout Switcher */}
+            <div className="flex items-center gap-1 bg-[#140C08] p-1 rounded-xl border border-[#3D291F] self-start sm:self-auto">
+              <button
+                onClick={() => setViewLayout("compact")}
+                className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-semibold flex items-center gap-1 sm:gap-1.5 transition cursor-pointer ${
+                  viewLayout === "compact"
+                    ? "bg-[#E2B743] text-[#140C08] font-bold shadow-sm"
+                    : "text-amber-200/60 hover:text-white"
+                }`}
+                title="Xem danh sách gọn"
               >
-                <div>
-                  {/* Top Metadata */}
-                  <div className="flex items-center justify-between gap-2 mb-2.5">
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono text-xs font-bold text-[#E2B743] bg-[#E2B743]/10 px-2 py-0.5 rounded border border-[#E2B743]/20">
-                        {s.id}
-                      </span>
-                      <span className="text-[11px] text-amber-200/60">
-                        {s.category}
-                      </span>
-                    </div>
-                    <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
-                      {s.dangerLevel}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-sm sm:text-base font-bold text-[#FBF8F3] group-hover:text-[#E2B743] transition-colors leading-snug">
-                    {s.title}
-                  </h3>
-
-                  {/* Opponent Attack vs Wing Chun Solution */}
-                  <div className="mt-3.5 space-y-2.5 text-xs">
-                    {/* Attack */}
-                    <div className="p-2.5 rounded-xl bg-[#2A1510]/50 border border-rose-900/40 text-rose-200/90 flex items-start gap-2">
-                      <Swords className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
-                      <div>
-                        <strong className="text-rose-300 font-semibold block text-[11px] uppercase tracking-wide">
-                          Đòn Tấn Công Của Địch:
-                        </strong>
-                        <p className="mt-0.5 leading-relaxed">{s.opponentAction}</p>
-                      </div>
-                    </div>
-
-                    {/* Defense Solution */}
-                    <div className="p-2.5 rounded-xl bg-[#142318]/50 border border-emerald-800/40 text-emerald-200/90 flex items-start gap-2">
-                      <ShieldAlert className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <div>
-                        <strong className="text-emerald-300 font-semibold block text-[11px] uppercase tracking-wide">
-                          Hóa Giải Vịnh Xuân:
-                        </strong>
-                        <p className="mt-0.5 leading-relaxed">{s.wingChunSolution}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Khẩu Quyết & Thủ Pháp */}
-                  <div className="mt-3 pt-3 border-t border-[#3D291F]/60 flex flex-wrap items-center gap-1.5 text-[11px]">
-                    <span className="text-amber-400 font-medium">Thủ pháp:</span>
-                    {s.hands.map((h, i) => (
-                      <span key={i} className="px-1.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 border border-[#3D291F]">
-                        {h}
-                      </span>
-                    ))}
-                    <span className="text-amber-400 font-medium ml-2">Tấn:</span>
-                    {s.stances.map((st, i) => (
-                      <span key={i} className="px-1.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 border border-[#3D291F]">
-                        {st}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Core Kinh */}
-                  <div className="mt-2 text-[11px] text-amber-200/60 italic flex items-center gap-1">
-                    <Compass className="w-3 h-3 text-[#E2B743] shrink-0" />
-                    <span className="truncate">&quot;{s.coreKinh}&quot;</span>
-                  </div>
-                </div>
-
-                {/* Footer Actions */}
-                <div className="mt-4 pt-3 border-t border-[#3D291F] flex items-center justify-between gap-2">
-                  <button
-                    onClick={() => setSelectedScenarioForModal(s)}
-                    className="text-xs text-amber-400 hover:text-[#E2B743] font-semibold flex items-center gap-1 py-1"
-                  >
-                    <HelpCircle className="w-3.5 h-3.5" />
-                    Xem Câu Hỏi Trắc Nghiệm
-                  </button>
-
-                  {onNavigateForm && (
-                    <button
-                      onClick={() => onNavigateForm(s.relatedFormId, s.relatedTechCode)}
-                      className="px-3 py-1.5 rounded-lg bg-[#2A1B10] hover:bg-[#3D291F] text-[#E2B743] text-xs font-semibold border border-[#E2B743]/30 flex items-center gap-1.5 transition-all shadow"
-                    >
-                      <span>Xem Sàn Tập</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </button>
-                  )}
-                </div>
-              </div>
-            ))}
+                <LayoutList className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Xem Gọn</span>
+                <span className="sm:hidden">Gọn</span>
+              </button>
+              <button
+                onClick={() => setViewLayout("cards")}
+                className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-semibold flex items-center gap-1 sm:gap-1.5 transition cursor-pointer ${
+                  viewLayout === "cards"
+                    ? "bg-[#E2B743] text-[#140C08] font-bold shadow-sm"
+                    : "text-amber-200/60 hover:text-white"
+                }`}
+                title="Xem dạng thẻ chi tiết"
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Thẻ Chi Tiết</span>
+                <span className="sm:hidden">Thẻ</span>
+              </button>
+            </div>
           </div>
+
+          {/* Scenarios List / Grid */}
+          {viewLayout === "compact" ? (
+            /* COMPACT LIST VIEW: DANH SÁCH GỌN GÀNG */
+            <div className="space-y-2.5">
+              {filteredScenarios.map((s) => {
+                const num = getScenarioNumber(s.id, s.title);
+                const cleanTitle = getCleanScenarioTitle(s.title);
+                return (
+                  <div
+                    key={s.id}
+                    className="p-3.5 sm:p-4 rounded-2xl bg-[#180E09]/90 hover:bg-[#22130C] border border-[#3D291F] hover:border-[#E2B743]/50 transition-all flex flex-col md:flex-row md:items-center justify-between gap-3 group shadow-md"
+                  >
+                    <div className="flex items-start md:items-center gap-3 min-w-0 flex-1">
+                      <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 shrink-0">
+                        #{num.toString().padStart(3, "0")}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-[10px] text-amber-200/70 font-semibold bg-[#20150F] px-2 py-0.5 rounded border border-[#3D291F]">
+                            {s.category}
+                          </span>
+                          <span className={`text-[9px] font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
+                            {s.dangerLevel}
+                          </span>
+                        </div>
+                        <h4 className="text-xs sm:text-sm font-bold text-[#FBF8F3] group-hover:text-[#E2B743] transition-colors line-clamp-1">
+                          {cleanTitle}
+                        </h4>
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-1 text-[11px] text-amber-200/80">
+                          <span className="truncate text-rose-300/90">
+                            <strong className="text-rose-400">Địch:</strong> {s.opponentAction}
+                          </span>
+                          <span className="truncate text-emerald-300/90">
+                            <strong className="text-emerald-400">Hóa giải:</strong> {s.wingChunSolution}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2 shrink-0 self-end md:self-center">
+                      <button
+                        onClick={() => setSelectedScenarioForModal(s)}
+                        className="px-3 py-1.5 rounded-xl bg-[#20150F] hover:bg-[#2E1810] text-[#E2B743] border border-[#E2B743]/30 text-xs font-semibold transition cursor-pointer flex items-center gap-1"
+                        title="Xem chi tiết & câu hỏi trắc nghiệm"
+                      >
+                        <HelpCircle className="w-3.5 h-3.5" />
+                        <span>Trắc nghiệm</span>
+                      </button>
+                      {onNavigateForm && (
+                        <button
+                          onClick={() => onNavigateForm(s.relatedFormId, s.relatedTechCode)}
+                          className="px-3 py-1.5 rounded-xl bg-[#E2B743] hover:bg-[#E2B743]/90 text-[#140C08] text-xs font-bold transition cursor-pointer flex items-center gap-1 shadow"
+                          title="Xem phân thế bài quyền tương ứng"
+                        >
+                          <span>Phân thế</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            /* DETAILED CARDS VIEW: THẺ CHI TIẾT */
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {filteredScenarios.map((s) => {
+                const num = getScenarioNumber(s.id, s.title);
+                const cleanTitle = getCleanScenarioTitle(s.title);
+                return (
+                  <div
+                    key={s.id}
+                    className="glass-panel p-5 rounded-2xl border border-[#3D291F] hover:border-[#E2B743]/40 transition-all flex flex-col justify-between group shadow-lg"
+                  >
+                    <div>
+                      {/* Top Metadata */}
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-xs font-bold text-[#E2B743] bg-[#E2B743]/15 px-2.5 py-0.5 rounded border border-[#E2B743]/30">
+                            #{num.toString().padStart(3, "0")}
+                          </span>
+                          <span className="text-[11px] text-amber-200/60 font-medium">
+                            {s.category}
+                          </span>
+                        </div>
+                        <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
+                          {s.dangerLevel}
+                        </span>
+                      </div>
+
+                      {/* Title: Gọn gàng không tiền tố thừa */}
+                      <h3 className="text-sm sm:text-base font-bold text-[#FBF8F3] group-hover:text-[#E2B743] transition-colors leading-snug">
+                        {cleanTitle}
+                      </h3>
+
+                      {/* Opponent Attack vs Wing Chun Solution */}
+                      <div className="mt-3.5 space-y-2.5 text-xs">
+                        <div className="p-2.5 rounded-xl bg-[#2A1510]/50 border border-rose-900/40 text-rose-200/90 flex items-start gap-2">
+                          <Swords className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
+                          <div>
+                            <strong className="text-rose-300 font-semibold block text-[11px] uppercase tracking-wide">
+                              Đòn Tấn Công Của Địch:
+                            </strong>
+                            <p className="mt-0.5 leading-relaxed">{s.opponentAction}</p>
+                          </div>
+                        </div>
+
+                        <div className="p-2.5 rounded-xl bg-[#142318]/50 border border-emerald-800/40 text-emerald-200/90 flex items-start gap-2">
+                          <ShieldAlert className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                          <div>
+                            <strong className="text-emerald-300 font-semibold block text-[11px] uppercase tracking-wide">
+                              Hóa Giải Vịnh Xuân:
+                            </strong>
+                            <p className="mt-0.5 leading-relaxed">{s.wingChunSolution}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Khẩu Quyết & Thủ Pháp */}
+                      <div className="mt-3 pt-3 border-t border-[#3D291F]/60 flex flex-wrap items-center gap-1.5 text-[11px]">
+                        <span className="text-amber-400 font-medium">Thủ pháp:</span>
+                        {s.hands.map((h, i) => (
+                          <span key={i} className="px-1.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 border border-[#3D291F]">
+                            {h}
+                          </span>
+                        ))}
+                        <span className="text-amber-400 font-medium ml-2">Tấn:</span>
+                        {s.stances.map((st, i) => (
+                          <span key={i} className="px-1.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 border border-[#3D291F]">
+                            {st}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Core Kinh */}
+                      <div className="mt-2 text-[11px] text-amber-200/60 italic flex items-center gap-1">
+                        <Compass className="w-3 h-3 text-[#E2B743] shrink-0" />
+                        <span className="truncate">&quot;{s.coreKinh}&quot;</span>
+                      </div>
+                    </div>
+
+                    {/* Footer Actions */}
+                    <div className="mt-4 pt-3 border-t border-[#3D291F] flex items-center justify-between gap-2">
+                      <button
+                        onClick={() => setSelectedScenarioForModal(s)}
+                        className="text-xs text-amber-400 hover:text-[#E2B743] font-semibold flex items-center gap-1 py-1 cursor-pointer"
+                      >
+                        <HelpCircle className="w-3.5 h-3.5" />
+                        Xem Câu Hỏi Trắc Nghiệm
+                      </button>
+
+                      {onNavigateForm && (
+                        <button
+                          onClick={() => onNavigateForm(s.relatedFormId, s.relatedTechCode)}
+                          className="px-3 py-1.5 rounded-xl bg-[#2A1B10] hover:bg-[#3D291F] text-[#E2B743] text-xs font-semibold border border-[#E2B743]/30 flex items-center gap-1.5 transition-all shadow cursor-pointer"
+                        >
+                          <span>Xem Phân Thế</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 
@@ -558,7 +700,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
               <div className="p-3 rounded-xl bg-[#140C08] border border-[#3D291F] max-w-md mx-auto text-xs text-amber-200/70">
                 {calculateScore() / quizScenarios.length >= 0.8 ? (
                   <p className="text-emerald-300 font-semibold">
-                    Thượng thừa phản xạ! Bạn đã thấm nhuần trọn vẹn võ lý Tý Ngọ Tuyến và khẩu quyết giải phóng lực của Phật Gia Vịnh Xuân.
+                    Phản xạ rất tốt! Bạn đã nắm vững võ lý Tý Ngọ Tuyến và khẩu quyết giải phóng lực của Phật Gia Vịnh Xuân.
                   </p>
                 ) : (
                   <p className="text-amber-300 font-semibold">
@@ -600,8 +742,8 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
           >
             <div className="flex items-center justify-between border-b border-[#3D291F] pb-3">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-xs font-bold text-[#E2B743] bg-[#E2B743]/15 px-2 py-0.5 rounded border border-[#E2B743]/30">
-                  {selectedScenarioForModal.id}
+                <span className="font-mono text-xs font-bold text-[#E2B743] bg-[#E2B743]/15 px-2.5 py-0.5 rounded border border-[#E2B743]/30">
+                  #{getScenarioNumber(selectedScenarioForModal.id, selectedScenarioForModal.title).toString().padStart(3, "0")}
                 </span>
                 <span className="text-xs font-semibold text-amber-200/80">
                   {selectedScenarioForModal.category}
@@ -609,14 +751,15 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
               </div>
               <button
                 onClick={() => setSelectedScenarioForModal(null)}
-                className="text-amber-400 hover:text-white text-xs font-bold px-2 py-1 rounded bg-[#20150F] border border-[#3D291F]"
+                aria-label="Đóng chi tiết tình huống"
+                className="text-amber-400 hover:text-white text-xs font-bold px-2.5 py-1 rounded bg-[#20150F] border border-[#3D291F] cursor-pointer"
               >
                 Đóng ✕
               </button>
             </div>
 
             <h3 className="text-base sm:text-lg font-bold text-[#FBF8F3]">
-              {selectedScenarioForModal.title}
+              {getCleanScenarioTitle(selectedScenarioForModal.title)}
             </h3>
 
             <div className="p-3.5 rounded-xl bg-[#20150F] border border-[#3D291F] text-xs space-y-2">
@@ -673,7 +816,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                   }}
                   className="px-4 py-2 rounded-xl bg-[#E2B743] text-[#140C08] text-xs font-bold hover:brightness-110 flex items-center gap-1.5"
                 >
-                  <span>Mở Sàn Tập Chiêu Thức Này</span>
+                  <span>Xem Phân Thế Chiêu Thức Này</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               )}

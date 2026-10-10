@@ -28,6 +28,7 @@ export const StanceCheckerModal: React.FC<StanceCheckerModalProps> = ({
           </div>
           <button
             onClick={onClose}
+            aria-label="Đóng quy chuẩn tấn pháp"
             className="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-[#2A1C14]"
           >
             <X className="w-5 h-5" />
