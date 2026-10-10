@@ -81,6 +81,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { AnalyticsProvider } from "@/components/AnalyticsProvider";
+
 export default function RootLayout({
   children,
 }: {
@@ -96,6 +98,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full flex flex-col bg-[#140C08] text-[#FBF8F3] font-sans selection:bg-[#E2B743]/30 selection:text-[#FDF3D6]"
       >
+        <AnalyticsProvider />
         {children}
       </body>
     </html>

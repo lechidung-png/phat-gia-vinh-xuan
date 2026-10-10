@@ -45,7 +45,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = () => {
             Tài liệu khảo cứu võ học
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-            Không gian tĩnh lặng lưu trữ toàn bộ lịch sử truyền thừa, lời tựa, triết lý võ đạo, phương pháp luyện khí đan điền và các văn bản gốc từ 225 trang sách của GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức.
+            Không gian tĩnh lặng lưu trữ toàn bộ lịch sử truyền thừa, lời tựa, triết lý võ đạo, phương pháp luyện khí đan điền và các văn bản gốc từ công trình sách của GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức.
           </p>
         </div>
 

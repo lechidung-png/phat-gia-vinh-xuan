@@ -10,7 +10,7 @@
 
 ## I. MỤC TIÊU & TÔN CHỈ THỰC HIỆN
 
-Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa toàn vẹn di sản võ học 225 trang sách giáo trình **"Phật Gia Vịnh Xuân Quyền"** (NXB Văn Hóa Thông Tin 2012) của Cố Đại sư GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức, chuyển hóa thành hệ sinh thái số hiện đại:
+Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa toàn vẹn di sản võ học cuốn sách giáo trình kinh điển **"Phật Gia Vịnh Xuân Quyền"** (NXB Văn Hóa Thông Tin 2012) của Cố Đại sư GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức, chuyển hóa thành hệ sinh thái số hiện đại:
 1. **Bảo tồn tính chân xác 100%:** Tuyệt đối không làm mẫu đại diện (Zero-Sampling Rule), không suy diễn số chiêu, không ngụy tạo ảnh, giữ nguyên tính mộc mạc và chuẩn xác giải phẫu võ học của sư môn.
 2. **Chất lượng công nghệ đỉnh cao:** Ứng dụng Next.js 16 App Router, React 19, Tailwind CSS v4, Web Audio API thuần synthesizer, SSG $0 chi phí server, tốc độ tìm kiếm in-memory $< 2\text{ms}$.
 3. **Thẩm mỹ doanh nghiệp & Bản sắc môn phái:** Phong cách Zen-Martial Cyber Glassmorphism trên nền Nâu Đất sẫm (`#140C08`) — màu áo bà ba nâu sồng đặc trưng của môn phái kết hợp ánh hổ phách sang trọng, typography tiếng Việt hoàn mỹ (`Be Vietnam Pro` & `Noto Serif`).
@@ -85,6 +85,19 @@ Toàn bộ 22 bài học kinh nghiệm sâu sắc đã được hệ thống hó
 20. **Tinh giản nút bấm Mobile (Responsive Adaptive Wording):** Nhãn nút tự động cô đọng trên điện thoại, giữ 1 hàng duy nhất, touch target $\ge 44\text{px}$.
 21. **Chuẩn mực Console sạch tuyệt đối:** Dọn sạch dead code, thay thế ảnh 404 bằng CSS gradient nội sinh, duy trì console sạch bóng.
 22. **Chuẩn xác thống kê & Tôn trọng ngữ cảnh ảnh võ sư:** Bãi bỏ các con số thống kê phô trương thiếu chuẩn xác, chuẩn hóa 3 nút điều hướng sư phạm Hero, xóa lặp từ "chân dung" và sử dụng ảnh linh hoạt theo từng câu châm ngôn võ đạo.
+23. **Hệ Thống Hồ Sơ Bảo Tàng Số Chi Tiết Về Các Vị Thầy Truyền Thừa (Master Heritage Profiles):** Chắt lọc tư liệu chuẩn xác về Sư Tổ Nguyễn Tế Công, Cố Võ sư Trần Thúc Tiển, GS.TS Y khoa Nguyễn Mạnh Nhâm và Võ sư Lê Đắc Kiên; tích hợp trang hồ sơ chi tiết chuyển động mượt mà với 4 chương khảo cứu sâu sắc, giai thoại chân thực, công thái học bàn phím (`←` `→` `Esc`) và chuẩn WCAG 2.1 touch target $\ge 44\text{px}$.
+24. **Khiêm Tốn Hóa & Chuẩn Xác Tuyệt Đối Hồ Sơ Võ Sư Lê Đắc Kiên:**
+   - Chuẩn hóa thông tin: Sinh năm 1968 (loại bỏ hoàn toàn ngày tháng 03/11 và triệt tiêu lỗi lặp năm sinh nhiều lần trên cùng màn hình).
+   - Không gán ghép hay trích dẫn các phát biểu cá nhân trong các bài viết về ông; văn phong trung thực, khiêm tốn, giản dị về quá trình công tác tại Tập đoàn VNPT và theo học GS.TS Y khoa Nguyễn Mạnh Nhâm.
+   - Badge thẻ chân dung hạ xuống nhã nhặn: "Võ Đường Huỳnh Thúc Kháng" (loại bỏ "20 Năm Võ Nghiệp").
+25. **Tích Hợp Tầng Phân Tích Chuyên Nghiệp (Google Analytics 4 & Cloudflare Web Analytics):**
+   - Loại bỏ hoàn toàn thanh widget đếm số ảo cục bộ (`VisitorAnalyticsWidget`) và modal mô phỏng tại chân trang.
+   - Xây dựng module `AnalyticsProvider` và `analytics.ts` chuẩn quốc tế, hỗ trợ Google Analytics 4 (`NEXT_PUBLIC_GA_ID`) và Cloudflare Web Analytics (`NEXT_PUBLIC_CF_ANALYTICS_TOKEN`).
+   - Tích hợp hệ thống Custom Martial Events: Theo dõi chính xác bài quyền nào được xem nhiều nhất (`view_martial_form`), hồ sơ vị thầy (`view_master_profile`), tương tác Mộc Nhân (`interact_wooden_dummy`), từ khóa tra cứu (`search`), chuông thiền (`toggle_zen_audio`).
+   - Xuất bản tài liệu hướng dẫn chi tiết `ANALYTICS_SETUP.md` và tệp mẫu `.env.example`.
+26. **Thanh Lọc Triệt Để Con Số "225 Trang" Khỏi Toàn Bộ Giao Diện:**
+   - Bãi bỏ hoàn toàn câu *"Nơi lưu trữ toàn văn 225 trang giáo trình và tư liệu gốc"* tại Hero Banner, trả lại vẻ đẹp thoáng đạt, uy nghi cho tiêu đề H1.
+   - Rà soát toàn bộ dự án và thay thế 100% các đoạn văn nhắc về con số "225 trang" (tại Node 3 Sơ đồ truyền thừa, Tab Triết lý, Tàng kinh các, Hồ sơ GS.TS Nguyễn Mạnh Nhâm...) bằng các danh xưng trang nhã: "công trình giáo trình kinh điển", "toàn văn giáo trình chân truyền".
 
 ---
 
@@ -106,7 +119,7 @@ Mã nguồn sạch sẽ, không còn file rác, đã được đồng bộ hóa 
 
 ## VI. TUYÊN BỐ KẾT THÚC DỰ ÁN
 
-Toàn bộ các yêu cầu của Thầy / Bạn và Ban Quản Trị Võ Đường từ việc số hóa 225 trang sách gốc, phục chế 1.096 ảnh 2x Retina, xây dựng ứng dụng web tương tác võ đường số, kiểm định tính chân xác võ học, thanh lọc từ ngữ, tối ưu hóa công thái học di động, xử lý nợ kỹ thuật cho đến triển khai mã nguồn lên kho chứa đều đã **hoàn thành 100% với chất lượng cao nhất**.
+Toàn bộ các yêu cầu của Thầy / Bạn và Ban Quản Trị Võ Đường từ việc số hóa toàn văn sách gốc, phục chế 1.096 ảnh 2x Retina, xây dựng ứng dụng web tương tác võ đường số, kiểm định tính chân xác võ học, thanh lọc từ ngữ, tối ưu hóa công thái học di động, xử lý nợ kỹ thuật cho đến triển khai mã nguồn lên kho chứa đều đã **hoàn thành 100% với chất lượng cao nhất**.
 
 Dự án chính thức được **ĐÓNG GÓI, NGHIỆM THU VÀ KẾT THÚC TỐT ĐẸP**. Kính chúc Võ đường Huỳnh Thúc Kháng và môn phái Phật Gia Vịnh Xuân Quyền ngày càng phát triển, lan tỏa tinh hoa võ đạo và trí tuệ ngàn đời của tiền nhân!
 

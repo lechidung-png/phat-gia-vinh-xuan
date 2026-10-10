@@ -227,7 +227,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
       "11 Võ sư nòng cốt ghi danh trong sách giáo trình 2012"
     ],
     summary:
-      "Bậc đại thụ y học Việt Nam và là đại danh sư của dòng phái Phật Gia Vịnh Xuân. Người có công vĩ đại nhất trong việc dùng tri thức khoa học giải phẫu, cơ sinh học và sinh lý thần kinh hiện đại để giải mã, hệ thống hóa và xuất bản thành sách toàn bộ 225 trang giáo trình chân truyền cho hậu thế.",
+      "Bậc đại thụ y học Việt Nam và là đại danh sư của dòng phái Phật Gia Vịnh Xuân. Người có công lớn trong việc dùng tri thức khoa học giải phẫu, cơ sinh học và sinh lý thần kinh hiện đại để giải mã, hệ thống hóa và xuất bản thành sách toàn bộ giáo trình chân truyền cho hậu thế.",
     sections: [
       {
         title: "1. Sự Nghiệp Y Khoa Lẫy Lừng & Đại Thụ Ngoại Khoa",
@@ -251,9 +251,9 @@ export const MASTER_PROFILES: MasterProfile[] = [
       },
       {
         title: "3. Tác Phẩm Để Đời: 'Phật Gia Vịnh Xuân Quyền' (2012)",
-        subtitle: "225 trang giáo trình chuẩn mực — Báu vật di sản số hóa",
+        subtitle: "Giáo trình chuẩn mực — Báu vật di sản số hóa",
         content: [
-          "Năm 2012, sau nhiều thập kỷ ấp ủ và chắt lọc, GS.TS Y khoa Nguyễn Mạnh Nhâm cùng ThS.DS Nguyễn Duy Thức đã xuất bản tác phẩm kinh điển: 'Phật Gia Vịnh Xuân Quyền' (Nhà xuất bản Văn Hóa Thông Tin, 225 trang).",
+          "Năm 2012, sau nhiều thập kỷ ấp ủ và chắt lọc, GS.TS Y khoa Nguyễn Mạnh Nhâm cùng ThS.DS Nguyễn Duy Thức đã xuất bản tác phẩm kinh điển: 'Phật Gia Vịnh Xuân Quyền' (Nhà xuất bản Văn Hóa Thông Tin).",
           "Cuốn sách quy tụ 1.096 bức ảnh chụp thị phạm chân thực của các võ sư nòng cốt (như HLV Lê Đắc Kiên, Lê Văn Tùng, Nguyễn Việt Dũng...), phân định chi tiết toàn bộ hệ thống quyền pháp, binh khí, cọc mộc nhân, 200 thế đòn đối kháng và 42 lời khuyên vàng của sư phụ.",
           "Đây chính là cuốn cẩm nang toàn thư duy nhất của môn phái có giá trị pháp lý, học thuật và tư liệu gốc chuẩn mực nhất, là nền tảng cốt lõi được số hóa 100% trong công trình Di Sản Võ Học hôm nay."
         ],
@@ -262,7 +262,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
     ],
     keyContributions: [
       "Khoa học hóa và y học hóa toàn bộ lý luận võ học Phật Gia Vịnh Xuân.",
-      "Tác giả công trình đồ sộ 225 trang sách 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin 2012).",
+      "Tác giả tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin 2012).",
       "Chủ tịch Hội Vịnh Xuân Hà Nội, người quy tụ và đào tạo 11 Võ sư nòng cốt kỳ cựu.",
       "Định hình 7 Đại Khẩu Quyết, Trục Tý Ngọ Tuyến và 42 Lời Khuyên Của Sư Phụ lưu truyền hậu thế."
     ]

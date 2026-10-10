@@ -10,7 +10,7 @@
 
 ## I. MỤC TIÊU & TÔN CHỈ THỰC HIỆN
 
-Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa toàn vẹn di sản võ học 225 trang sách giáo trình **"Phật Gia Vịnh Xuân Quyền"** (NXB Văn Hóa Thông Tin 2012) của Cố Đại sư GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức, chuyển hóa thành hệ sinh thái số hiện đại:
+Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa toàn vẹn di sản võ học cuốn sách giáo trình kinh điển **"Phật Gia Vịnh Xuân Quyền"** (NXB Văn Hóa Thông Tin 2012) của Cố Đại sư GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức, chuyển hóa thành hệ sinh thái số hiện đại:
 1. **Bảo tồn tính chân xác 100%:** Tuyệt đối không làm mẫu đại diện (Zero-Sampling Rule), không suy diễn số chiêu, không ngụy tạo ảnh, giữ nguyên tính mộc mạc và chuẩn xác giải phẫu võ học của sư môn.
 2. **Chất lượng công nghệ đỉnh cao:** Ứng dụng Next.js 16 App Router, React 19, Tailwind CSS v4, Web Audio API thuần synthesizer, SSG $0 chi phí server, tốc độ tìm kiếm in-memory $< 2\text{ms}$.
 3. **Thẩm mỹ doanh nghiệp & Bản sắc môn phái:** Phong cách Zen-Martial Cyber Glassmorphism trên nền Nâu Đất sẫm (`#140C08`) — màu áo bà ba nâu sồng đặc trưng của môn phái kết hợp ánh hổ phách sang trọng, typography tiếng Việt hoàn mỹ (`Be Vietnam Pro` & `Noto Serif`).
@@ -105,7 +105,7 @@ Mã nguồn sạch sẽ, không còn file rác, đã được đồng bộ hóa 
 
 ## VI. TUYÊN BỐ KẾT THÚC DỰ ÁN
 
-Toàn bộ các yêu cầu của Thầy / Bạn và Ban Quản Trị Võ Đường từ việc số hóa 225 trang sách gốc, phục chế 1.096 ảnh 2x Retina, xây dựng ứng dụng web tương tác võ đường số, kiểm định tính chân xác võ học, thanh lọc từ ngữ, tối ưu hóa công thái học di động, xử lý nợ kỹ thuật cho đến triển khai mã nguồn lên kho chứa đều đã **hoàn thành 100% với chất lượng cao nhất**.
+Toàn bộ các yêu cầu của Thầy / Bạn và Ban Quản Trị Võ Đường từ việc số hóa toàn văn sách gốc, phục chế 1.096 ảnh 2x Retina, xây dựng ứng dụng web tương tác võ đường số, kiểm định tính chân xác võ học, thanh lọc từ ngữ, tối ưu hóa công thái học di động, xử lý nợ kỹ thuật cho đến triển khai mã nguồn lên kho chứa đều đã **hoàn thành 100% với chất lượng cao nhất**.
 
 Dự án chính thức được **ĐÓNG GÓI, NGHIỆM THU VÀ KẾT THÚC TỐT ĐẸP**. Kính chúc Võ đường Huỳnh Thúc Kháng và môn phái Phật Gia Vịnh Xuân Quyền ngày càng phát triển, lan tỏa tinh hoa võ đạo và trí tuệ ngàn đời của tiền nhân!
 

@@ -1,4 +1,4 @@
-// Dữ liệu toàn văn 36 bài học và 225 trang sách gốc Phật Gia Vịnh Xuân
+// Dữ liệu toàn văn 36 bài học từ sách gốc Phật Gia Vịnh Xuân
 // Nguồn: Phat-gia-Vinh-Xuan-Quyen-Phuc-che/noi-dung/
 
 import lessonsData from "./lessonsFullText.json";

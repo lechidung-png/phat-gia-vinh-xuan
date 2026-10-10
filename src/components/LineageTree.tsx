@@ -332,7 +332,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 </span>
               </div>
               <p className="text-xs text-[#10B981] font-semibold uppercase tracking-wider">
-                Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (225 Trang • NXB Văn Hóa Thông Tin 2012)
+                Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (NXB Văn Hóa Thông Tin 2012)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 GS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
@@ -346,7 +346,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   <ArrowRight className="w-3.5 h-3.5 text-[#10B981] group-hover/btn:translate-x-1 transition-transform" />
                 </button>
                 <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5 text-xs">
-                  <BookOpen className="w-3.5 h-3.5 text-[#E2B743]" /> Sách xuất bản 2012 (225 trang)
+                  <BookOpen className="w-3.5 h-3.5 text-[#E2B743]" /> Sách xuất bản năm 2012
                 </span>
                 <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5 text-xs">
                   <HeartHandshake className="w-3.5 h-3.5 text-[#10B981]" /> Y Võ Kết Hợp
