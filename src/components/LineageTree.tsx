@@ -17,9 +17,12 @@ import {
   Clock,
   Users,
   GitBranch,
-  Layers
+  Layers,
+  ArrowRight
 } from "lucide-react";
 import { PhilosophyHub } from "@/components/PhilosophyHub";
+import { MasterDetailModal } from "@/components/MasterDetailModal";
+import { getMasterProfileById } from "@/data/masterProfiles";
 
 interface PhilosophyQuote {
   id: string;
@@ -132,7 +135,10 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
 }) => {
   const [subTab, setSubTab] = useState<"tree" | "philosophy">(initialSubTab);
   const [activeQuoteId, setActiveQuoteId] = useState<string>("bat-tranh");
+  const [selectedMasterId, setSelectedMasterId] = useState<string | null>(null);
+
   const activeQuote = PHILOSOPHY_QUOTES.find((q) => q.id === activeQuoteId) || PHILOSOPHY_QUOTES[0];
+  const currentMaster = selectedMasterId ? getMasterProfileById(selectedMasterId) || null : null;
 
   useEffect(() => {
     if (initialSubTab) {
@@ -209,7 +215,11 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         {/* Node 1: Sư Tổ Nguyễn Tế Công (Yuen Chai Wan) */}
         <div className="glass-panel p-6 rounded-2xl border-2 border-[#E2B743]/60 relative group hover:border-[#E2B743] transition-all shadow-xl bg-gradient-to-br from-[#1C120B] to-[#140C08]">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300">
+            <div
+              onClick={() => setSelectedMasterId("nguyen-te-cong")}
+              className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+              title="Nhấp để xem hồ sơ chi tiết Sư Tổ Nguyễn Tế Công"
+            >
               <Image
                 src="/assets/images/historical/nguyen_te_cong.png"
                 alt="Sư Tổ Nguyễn Tế Công (Yuen Chai Wan) (1877 - 1959)"
@@ -236,6 +246,15 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 Người có công truyền bá Vịnh Xuân Quyền sang Việt Nam từ những năm đầu thế kỷ 20. Cụ truyền dạy tại Hà Nội và sau đó là Chợ Lớn (Sài Gòn), đào tạo nên các bậc danh sư lỗi lạc cho nền võ học nước nhà.
               </p>
+              <div className="pt-2">
+                <button
+                  onClick={() => setSelectedMasterId("nguyen-te-cong")}
+                  className="px-4 py-2 rounded-xl bg-[#20150F] hover:bg-[#2F1D14] border border-[#E2B743]/50 hover:border-[#E2B743] text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
+                >
+                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#E2B743] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -246,7 +265,11 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         {/* Node 2: Cố Võ Sư Trần Thúc Tiển */}
         <div className="sm:ml-8 glass-panel p-6 rounded-2xl border border-[#3D291F] relative group hover:border-[#E2B743]/50 transition-all shadow-xl">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743]/60 shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300">
+            <div
+              onClick={() => setSelectedMasterId("tran-thuc-tien")}
+              className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#E2B743]/60 shadow-2xl shrink-0 bg-[#140C08] group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+              title="Nhấp để xem hồ sơ chi tiết Cố Võ Sư Trần Thúc Tiển"
+            >
               <Image
                 src="/assets/images/historical/tran_thuc_tien.png"
                 alt="Cố Võ sư Trần Thúc Tiển (1912 - 1980)"
@@ -268,6 +291,15 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 Học trò đắc ý của cụ Tế Công tại Hà Nội, nổi danh với công phu nội kình thâm hậu, linh giác nhạy bén và tấm lòng đức độ. Cụ đã dày công gìn giữ và truyền thụ lại cho các thế hệ học trò tinh anh.
               </p>
+              <div className="pt-2">
+                <button
+                  onClick={() => setSelectedMasterId("tran-thuc-tien")}
+                  className="px-4 py-2 rounded-xl bg-[#20150F] hover:bg-[#2F1D14] border border-[#E2B743]/50 hover:border-[#E2B743] text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
+                >
+                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#E2B743] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -278,14 +310,26 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         {/* Node 3: GS.TS Nguyễn Mạnh Nhâm & ThS. Nguyễn Duy Thức */}
         <div className="sm:ml-14 glass-panel p-6 rounded-2xl border border-[#10B981]/40 relative group hover:border-[#10B981] transition-all shadow-xl">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div className="w-20 h-20 rounded-2xl bg-[#10B981]/15 border-2 border-[#10B981] flex items-center justify-center text-[#10B981] font-serif font-black text-2xl shadow-xl shrink-0">
-              佛
+            <div
+              onClick={() => setSelectedMasterId("nguyen-manh-nham")}
+              className="w-24 h-24 sm:w-28 sm:h-36 rounded-2xl bg-gradient-to-b from-[#10B981]/20 to-[#0A3D2A]/40 border-2 border-[#10B981] flex flex-col items-center justify-center text-[#10B981] shadow-xl shrink-0 cursor-pointer hover:scale-105 transition-transform group/card"
+              title="Nhấp để xem hồ sơ chi tiết GS.TS Y Khoa Nguyễn Mạnh Nhâm"
+            >
+              <span className="font-serif font-black text-3xl sm:text-4xl text-[#10B981] group-hover/card:scale-110 transition-transform">
+                佛
+              </span>
+              <span className="text-[10px] font-mono font-bold mt-1 text-emerald-300 bg-black/60 px-2 py-0.5 rounded-full border border-[#10B981]/40">
+                Y Võ Hợp Nhất
+              </span>
             </div>
             <div className="space-y-2 text-center sm:text-left flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h4 className="text-lg font-bold font-serif text-white">
+                <h4 className="text-lg sm:text-xl font-bold font-serif text-white">
                   GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS. Nguyễn Duy Thức
                 </h4>
+                <span className="text-xs px-2.5 py-0.5 rounded bg-[#10B981]/15 text-[#10B981] font-mono border border-[#10B981]/40 font-bold">
+                  Sinh 1932 (94 Tuổi)
+                </span>
               </div>
               <p className="text-xs text-[#10B981] font-semibold uppercase tracking-wider">
                 Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (225 Trang • NXB Văn Hóa Thông Tin 2012)
@@ -293,11 +337,18 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 GS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
               </p>
-              <div className="pt-2 flex flex-wrap gap-2 text-xs">
-                <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5">
+              <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+                <button
+                  onClick={() => setSelectedMasterId("nguyen-manh-nham")}
+                  className="px-4 py-2 rounded-xl bg-[#0f241a] hover:bg-[#163828] border border-[#10B981]/50 hover:border-[#10B981] text-emerald-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
+                >
+                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#10B981] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+                <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5 text-xs">
                   <BookOpen className="w-3.5 h-3.5 text-[#E2B743]" /> Sách xuất bản 2012 (225 trang)
                 </span>
-                <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5">
+                <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5 text-xs">
                   <HeartHandshake className="w-3.5 h-3.5 text-[#10B981]" /> Y Võ Kết Hợp
                 </span>
               </div>
@@ -313,7 +364,11 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
             {/* Ảnh Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
             <div className="flex flex-col items-center shrink-0 space-y-2.5">
-              <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
+              <div
+                onClick={() => setSelectedMasterId("le-dac-kien")}
+                className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl bg-[#0F0805] group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                title="Nhấp để xem hồ sơ chi tiết Võ Sư Lê Đắc Kiên"
+              >
                 <Image
                   src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
                   alt="Võ sư Lê Đắc Kiên - Phụ trách Võ đường Huỳnh Thúc Kháng"
@@ -358,6 +413,16 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 <span>
                   &ldquo;Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.&rdquo;
                 </span>
+              </div>
+
+              <div className="pt-2">
+                <button
+                  onClick={() => setSelectedMasterId("le-dac-kien")}
+                  className="px-4 py-2 rounded-xl bg-[#20150F] hover:bg-[#2F1D14] border border-[#E2B743]/50 hover:border-[#E2B743] text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
+                >
+                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#E2B743] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
               </div>
             </div>
           </div>
@@ -509,6 +574,14 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
       </section>
       </div>
       )}
+
+      {/* Modal Chi Tiết Tiểu Sử & Công Trạng Vị Thầy */}
+      <MasterDetailModal
+        master={currentMaster}
+        isOpen={!!selectedMasterId}
+        onClose={() => setSelectedMasterId(null)}
+        onSelectMaster={(id) => setSelectedMasterId(id)}
+      />
     </div>
   );
 };
