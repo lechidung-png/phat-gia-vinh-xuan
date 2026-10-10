@@ -116,7 +116,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     quote:
       "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
     explanation:
-      "Kho di sản võ học bảo tồn trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
+      "Tàng thư di sản võ học lưu trữ trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
     source: "Đúc kết tâm pháp • Võ sư Lê Đắc Kiên",
     icon: <Layers className="w-5 h-5 text-[#E2B743]" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
@@ -396,16 +396,16 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-[#10B981]" /> Hơn 20 năm công phu Vịnh Xuân
+                  <Clock className="w-3.5 h-3.5 text-[#10B981]" /> Sinh 03/11/1968
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Users className="w-3.5 h-3.5 text-sky-400" /> Thế hệ học trò nòng cốt của GS.TS Nguyễn Mạnh Nhâm
+                  <Users className="w-3.5 h-3.5 text-sky-400" /> Quản lý cấp cao VNPT • Học trò GS.TS Nguyễn Mạnh Nhâm
                 </span>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia.
+                Là doanh nhân, nhà quản lý cấp cao tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), đồng thời là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia.
               </p>
 
               <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">

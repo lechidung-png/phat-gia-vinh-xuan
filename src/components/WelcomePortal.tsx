@@ -134,22 +134,22 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           {/* Top Heritage Badge */}
           <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/40 text-[#F5D06C] text-xs font-bold tracking-widest uppercase">
             <span className="w-2 h-2 rounded-full bg-[#F5D06C] animate-pulse" />
-            Di Sản Võ Học Cổ Truyền • Phật Gia Vịnh Xuân Quyền
+            Tàng Thư Kinh Điển • Phật Gia Vịnh Xuân Quyền
           </div>
 
           {/* Main Title */}
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-serif tracking-tight leading-tight gold-gradient">
-              Kho Di Sản Phật Gia Vịnh Xuân
+              Di Sản Võ Học Phật Gia Vịnh Xuân
             </h1>
             <p className="text-base sm:text-xl text-amber-200/90 font-serif font-medium tracking-wide">
-              Nơi lưu trữ và bảo tồn toàn văn di sản võ học kinh điển
+              Nơi lưu trữ toàn văn 225 trang giáo trình và tư liệu gốc
             </p>
           </div>
 
           {/* Tagline */}
           <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-            Bảo tồn & phát huy di sản võ học Phật Gia Vịnh Xuân — Võ Đường Huỳnh Thúc Kháng.
+            Được số hóa và gìn giữ bởi Võ Đường Huỳnh Thúc Kháng — Phục vụ môn sinh và người yêu võ tra cứu học tập.
           </p>
 
           {/* CTA Action Buttons: 3 Nút Điều Hướng Trọng Tâm */}

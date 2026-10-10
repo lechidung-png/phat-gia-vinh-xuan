@@ -244,7 +244,7 @@ export const AnalyticsModal: React.FC<AnalyticsModalProps> = ({
                   <span>Ý Nghĩa Lưu Trữ Di Sản</span>
                 </div>
                 <p>
-                  Trang web được xây dựng như một <strong>Kho Di Sản Võ Học</strong> bảo tồn 225 trang giáo trình gốc. Dữ liệu thống kê giúp nhận diện những quyền thế, triết lý được cộng đồng quan tâm nhất để định hướng nội dung và giải thích chi tiết hơn.
+                  Trang web được xây dựng như một <strong>Tàng Thư Di Sản Võ Học</strong> lưu trữ toàn văn 225 trang giáo trình gốc. Dữ liệu thống kê giúp nhận diện những quyền thế, triết lý được cộng đồng quan tâm nhất để định hướng nội dung và giải thích chi tiết hơn.
                 </p>
               </div>
             </div>
