@@ -101,7 +101,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     imgUrl: "/assets/images/fundamentals/bang_thu.png",
     level: "Trung (Chấn Thủy/Mỏ Ác)",
     shortDesc: "Đặc hiệu của Vịnh Xuân Quyền. Cánh tay chéo vào trong, cùi chỏ ở trung lộ, cẳng và bàn tay quay sang phía bên.",
-    techniqueDetail: "Bàng thủ tạo thành hình cánh cung đàn hồi tuyệt đối. Vai và tay mềm mại thả lỏng hoàn toàn. Tuyệt đối không dùng sức cơ bắp để chống cự lại lực đối thủ, mà mượn cấu trúc vòm cung và chuyển động xoay trục thân mình để trượt tiêu biến toàn bộ kình lực của địch.",
+    techniqueDetail: "Bàng thủ tạo thành hình cánh cung đàn hồi linh hoạt. Vai và tay mềm mại thả lỏng hoàn toàn. Không dùng sức cơ bắp để chống cự lại lực đối thủ, mà mượn cấu trúc vòm cung và chuyển động xoay trục thân mình để trượt tiêu biến toàn bộ kình lực của địch.",
     keyPoints: [
       "Cùi chỏ nâng cao hơn cổ tay một góc tù thoải mái (khoảng 120-135 độ)",
       "Cổ tay thả lỏng, bàn tay hướng nghiêng sang bên",
@@ -283,7 +283,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     imgUrl: "/assets/images/fundamentals/lien_xung_quyen.png",
     level: "Trung (Chấn Thủy/Mỏ Ác)",
     shortDesc: "Đấm thẳng tay ra trước (trung lộ), trong khi đó giật mạnh tay kia về nách. Đổi tay liên tiếp như giương cung.",
-    techniqueDetail: "Đòn đấm liên hoàn nổi tiếng nhất của Vịnh Xuân: Tay phải đấm ra thì tay trái giật về nách tích lực, khi tay phải chạm đích thì tay trái lập tức phóng tiếp nối theo đúng quỹ đạo. Hai tay vận hành ngược chiều nhau tạo mô-men xoắn cân bằng tuyệt đối.",
+    techniqueDetail: "Đòn đấm liên hoàn nổi tiếng nhất của Vịnh Xuân: Tay phải đấm ra thì tay trái giật về nách tích lực, khi tay phải chạm đích thì tay trái lập tức phóng tiếp nối theo đúng quỹ đạo. Hai tay vận hành ngược chiều nhau tạo mô-men xoắn cân bằng ổn định.",
     keyPoints: [
       "Hai tay chuyển động ngược chiều như giương cung kéo tên",
       "Cả hai nắm đấm đều đi trên cùng một đường ray Tý Ngọ Tuyến",
@@ -393,7 +393,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     keyPoints: [
       "Đầu gối chân đá dâng cao che kín hạ bộ trước khi duỗi cước",
       "Chỉ đá từ thắt lưng trở xuống (gối, cẳng chân, mắt cá)",
-      "Chân trụ hơi chùng giữ thăng bằng tuyệt đối",
+      "Chân trụ hơi chùng giữ thăng bằng vững vàng",
       "Hai tay vẫn giữ thế thủ chặt chẽ trước ngực"
     ],
     combatApplication: "Đá triệt gối (Triệt cước), dẫm mắt cá chân, đá móc hất gót hạ bộ đối thủ trong lúc tay đang giằng co cận chiến.",
@@ -406,7 +406,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     imgUrl: "/assets/hinh-2x/p031-h01.png",
     category: "Tấn Pháp",
     shortDesc: "Khi địch hạ thấp người đánh hạ bàn, không được cúi gập lưng mà phải hạ thấp theo thế Quy Mã Tấn: quỳ một gối, chân kia giẫm sàn, người vuông góc đùi.",
-    techniqueDetail: "Yếu lĩnh sách gốc (Trang 31-34): Khi địch hạ người xuống thấp, tuyệt đối không được cúi người xuống mà 'hạ thấp' người theo thế Quy Mã Tấn. Trong tấn này, một bàn chân giẫm xuống đất, chân kia quỳ gối, người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất. Giữ lưng thẳng, che kín hạ bộ và sẵn sàng tung đòn đánh tầm thấp hoặc luồn lách né đòn.",
+    techniqueDetail: "Yếu lĩnh giáo trình: Khi địch hạ người xuống thấp, tuyệt đối không được cúi người xuống mà 'hạ thấp' người theo thế Quy Mã Tấn. Trong tấn này, một bàn chân giẫm xuống đất, chân kia quỳ gối, người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất. Giữ lưng thẳng, che kín hạ bộ và sẵn sàng tung đòn đánh tầm thấp hoặc luồn lách né đòn.",
     keyPoints: [
       "Một chân giẫm vững trên sàn, một đầu gối quỳ sát đất",
       "Thân người giữ vuông góc với đùi của chân giẫm sàn, không cúi gập lưng",
@@ -423,7 +423,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     imgUrl: "/assets/hinh-2x/p031-h02.png",
     category: "Bộ Pháp",
     shortDesc: "Mã bộ phức tạp di chuyển bằng cách xoay 2 chân sát nhau đan chéo, lướt 2 chân cùng lúc, bộ pháp luồn lách đặc thù của Xà quyền.",
-    techniqueDetail: "Yếu lĩnh sách gốc (Trang 31): 'Có một số mã bộ phức tạp như mã chéo, mã di chuyển bằng quay 2 chân sát nhau (như trong bài Xà Quyền), lướt 2 chân cùng một lúc... chỉ khi học cao mới được tập.' Đôi chân di chuyển mềm mại, vặn xoắn như thân rắn trườn bò, tạo ra những góc tiếp cận bất ngờ mà đối phương không thể lường trước.",
+    techniqueDetail: "Yếu lĩnh giáo trình: 'Có một số mã bộ phức tạp như mã chéo, mã di chuyển bằng quay 2 chân sát nhau (như trong bài Xà Quyền), lướt 2 chân cùng một lúc... chỉ khi học cao mới được tập.' Đôi chân di chuyển mềm mại, vặn xoắn như thân rắn trườn bò, tạo ra những góc tiếp cận bất ngờ mà đối phương không thể lường trước.",
     keyPoints: [
       "Hai bàn chân đặt sát nhau đan chéo linh hoạt",
       "Lướt hai chân cùng một lúc ma sát sàn",
@@ -440,7 +440,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     imgUrl: "/assets/hinh-2x/p034-h01.png",
     category: "Bộ Pháp",
     shortDesc: "Sơ đồ các bước chân di chuyển tiến, lùi trên trục Tý Ngọ Tuyến A-B: chân trước tiến kéo chân sau theo, đạp cung trung, túc bất ly địa.",
-    techniqueDetail: "Yếu lĩnh sách gốc (Trang 34 - Đồ hình A-B): Bộ pháp di chuyển thẳng trên trục Tý Ngọ Tuyến. Tiến bước: Chân trước nhích lên một bước ngắn theo trục thẳng, chân sau lập tức lướt theo giữ nguyên cự ly hẹp. Lùi bước: Chân sau lùi trước, chân trước rút theo. Đạp cung trung: Thường tiến 3 bước, lùi 3 bước nhịp nhàng. Túc bất ly địa: Bàn chân luôn ma sát trượt sát mặt sàn.",
+    techniqueDetail: "Yếu lĩnh giáo trình: Bộ pháp di chuyển thẳng trên trục Tý Ngọ Tuyến. Tiến bước: Chân trước nhích lên một bước ngắn theo trục thẳng, chân sau lập tức lướt theo giữ nguyên cự ly hẹp. Lùi bước: Chân sau lùi trước, chân trước rút theo. Đạp cung trung: Thường tiến 3 bước, lùi 3 bước nhịp nhàng. Túc bất ly địa: Bàn chân luôn ma sát trượt sát mặt sàn.",
     keyPoints: [
       "Trục thẳng A-B định hướng đường tiến thoái trung tâm",
       "Chân trước bước trước - chân sau theo sau; Lùi chân sau bước trước - chân trước theo sau",
@@ -457,7 +457,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     imgUrl: "/assets/hinh-2x/p034-h02.png",
     category: "Bộ Pháp",
     shortDesc: "Kỹ thuật quay chuyển thân người 90° (sang trái) và 270° (sang phải) đưa vai ra trước thành thế biên thân né đòn trong chớp mắt.",
-    techniqueDetail: "Yếu lĩnh sách gốc (Trang 34): Hoành thoái là quay chuyển thân người sang phải hay trái và kết quả là đưa vai trái hay phải ra trước với tư thế biên thân. Quay sang Trái (90°): Bàn chân trái quay ra sau 90°, bàn chân phải đặt trước song song chân trái. Quay sang Phải (270°): Bàn chân phải quay ra sau 270° theo chiều kim đồng hồ, thân quay 90° sang phải, vai trái và chân trái ra trước.",
+    techniqueDetail: "Yếu lĩnh giáo trình: Hoành thoái là quay chuyển thân người sang phải hay trái và kết quả là đưa vai trái hay phải ra trước với tư thế biên thân. Quay sang Trái (90°): Bàn chân trái quay ra sau 90°, bàn chân phải đặt trước song song chân trái. Quay sang Phải (270°): Bàn chân phải quay ra sau 270° theo chiều kim đồng hồ, thân quay 90° sang phải, vai trái và chân trái ra trước.",
     keyPoints: [
       "Quay người kết hợp di chuyển vòng của bàn chân",
       "Đưa thân về thế biên thân, thu hẹp diện tích tiếp xúc với đòn địch",

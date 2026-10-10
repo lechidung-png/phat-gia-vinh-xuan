@@ -151,7 +151,7 @@ export const CenterlineExplorer: React.FC = () => {
       combatImg: "/assets/hinh-2x/p065-h08.png",
       combatCaption: "Thế đối luyện chiêu 6 (phần 2): A đấm xuống sườn B. B dùng Hạ Bàng Thủ / Thác Thủ đè chặn, tay kia xuất chưởng phản công.",
       practitioners: "HLV Nguyễn Việt Dũng & HLV Nguyễn Trường Thanh",
-      tacticalBreakdown: "Tay dưới đè chẹn đòn móc, tay trên xuất chưởng thẳng vào mỏ ác. Một nhịp tay vừa thủ vừa công hoàn hảo.",
+      tacticalBreakdown: "Tay dưới đè chẹn đòn móc, tay trên xuất chưởng thẳng vào mỏ ác. Một nhịp tay kết hợp vừa thủ vừa công nhịp nhàng.",
     },
     low_kick: {
       title: "Đòn Đá Vòng Cầu Hạ Bàn / Quét Chân (Đê Cước)",

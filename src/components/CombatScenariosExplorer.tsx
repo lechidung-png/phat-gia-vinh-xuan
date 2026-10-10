@@ -180,7 +180,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
               200 Tình Huống Đối Kháng Thực Chiến
             </h2>
             <p className="mt-1.5 text-xs sm:text-sm text-amber-100/70 max-w-3xl leading-relaxed">
-              Hệ thống 200 kịch bản công thủ đối kháng từ cận chiến, góc hẹp, khóa siết đến đoạt vũ khí gắn liền với 108 đại pháp và 18 bài quyền chính tông.
+              Hệ thống 200 kịch bản công thủ đối kháng từ cận chiến, góc hẹp, khóa siết đến đoạt vũ khí gắn liền với 108 đại pháp và 18 bài quyền truyền thừa.
             </p>
           </div>
 

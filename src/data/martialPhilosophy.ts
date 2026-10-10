@@ -64,7 +64,7 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Là đường giữa (trung lộ, trung tuyến), đường chia đôi thân thể, đi từ huyệt Ấn Đường (giữa hai lông mày) qua Chấn Thủy đến Đan Điền (bụng dưới). Môn đồ Phật Gia Vịnh Xuân phải cố gắng bảo vệ Tý Ngọ Tuyến của mình và tấn công đối phương trên đường này (tối ưu).",
     biomechanics: "Khuỷu tay luôn ở chéo áo, cách ngực đúng một nắm đấm (quyền). Hai cẳng tay tạo thành hình chóp nêm tam giác vững chãi, phân tán mọi lực trực diện của địch về hai bên vai mà không làm tổn hại lồng ngực hay ngũ tạng.",
     originalQuote: "Đỡ và tấn công theo trung lộ. Khuỷu tay thường ở chéo áo, cách ngực một quyền là vừa (thủ lưu trung tuyến). Đây là một đặc điểm nhận biết đúng là môn đồ Vịnh Xuân Quyền.",
-    pageRef: "Trang 161",
+    pageRef: "Khẩu Quyết Số 1",
     tacticalApplication: "Chiếm giữ trung lộ khiến đối phương buộc phải đánh vòng. Đòn vòng luôn đi chậm và tốn năng lượng hơn đòn thẳng trung tâm.",
     keyConcepts: ["Thủ Lưu Trung Tuyến", "Chóp Nêm Bảo Vệ", "Huyệt Đan Điền", "Cùi Chỏ Chéo Áo"]
   },
@@ -77,7 +77,7 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Khi lực tấn công đến, môn sinh không chống lại (không lực đối lực), nhưng tiếp nhận dính sát, làm chệch hướng tý chút (tứ lạng bạt thiên cân). Khi đối phương rút tay về thì theo sát bổ sung lực, và khi sự tiếp xúc mất đi thì phóng thẳng ra trước không cần do dự.",
     biomechanics: "Cơ bắp và gân khớp hoạt động như một khúc cật tre dẻo hoặc lò xo xoắn: Bị ép thì thu nén đàn hồi tích năng lượng, giải phóng áp lực là tự động bung ra phía trước với tốc độ cực đại.",
     originalQuote: "Chân tay của môn sinh VXQ hoạt động như một khúc tre hay một cái lò xo: khi thoát ép nó bật ra phía trước rất nhanh (thoát thủ trực xông). Sử dụng thành thạo biên thân, quay người, hoành thoái với đòn hẹp là cơ sở thực hiện.",
-    pageRef: "Trang 161 - 162",
+    pageRef: "Khẩu Quyết Số 2",
     tacticalApplication: "Không tìm kiếm tay địch, nhưng hễ chạm là dính, dính là hóa giải, buông rời là đòn phản công tự động phóng trúng đích.",
     keyConcepts: ["Lò Xo Đàn Hồi", "Tứ Lạng Bạt Thiên Cân", "Xúc Giác Niêm Thủ", "Thoát Thủ Trực Xông"]
   },
@@ -90,7 +90,7 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Vịnh Xuân Quyền chủ trương tích cực tấn công để tranh tiên đoạt thế. Khi địch đánh tới, ta phản đòn ngay lập tức để đòn công của ta tự động triệt tiêu đòn của địch. Tuyệt đối không đỡ xong rồi mới đánh trả vì như vậy sẽ bị chậm một nhịp sinh tử.",
     biomechanics: "Tay đánh thẳng trực diện có quãng đường ngắn hơn quả đấm móc vòng của địch. Tấn công vào gốc đòn (khớp vai hoặc liên sườn của địch) sẽ làm sụp đổ toàn bộ cấu trúc phát lực của tay tấn công đối phương.",
     originalQuote: "Ví dụ: Đối thủ đấm một quyền tay phải móc vòng vào ngực ta: thay vì dùng tay đỡ quả đấm đó, ta dùng đòn thẳng đánh vào vai phải họ. Ta sẽ đến trước vì tay ta đi quãng ngắn hơn. Phương pháp phòng ngự tốt nhất là tấn công.",
-    pageRef: "Trang 162 - 163",
+    pageRef: "Khẩu Quyết Số 3",
     tacticalApplication: "Động sau nhưng đến trước (Hậu phát tiên chí). Triệt hạ ý chí và vũ khí của đối phương ngay thời khắc họ vừa phát động tấn công.",
     keyConcepts: ["Hậu Phát Tiên Chí", "Tranh Tiên", "Triệt Tiêu Tại Gốc", "Phản Thủ Đồng Thời"]
   },
@@ -103,7 +103,7 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Mọi đường vòng vèo, múa lượn hoa mỹ trong võ thuật đều là sự lãng phí thời gian và năng lượng. Phật Gia Vịnh Xuân chắt lọc đòn đánh về dạng kỷ hà tối giản: Đường thẳng nối từ tâm của ta đến tâm của đối thủ.",
     biomechanics: "Chuyển động tuyến tính tối thiểu hóa sự tham gia của các nhóm cơ phụ, tập trung toàn bộ lực lượng vào chuỗi động học duỗi thẳng cẳng tay, giải phóng thốn kình ở cự ly chỉ vài centimet.",
     originalQuote: "Môn đồ PGVX ở ngay ranh giới giữa thắng và thua - giống như khi đánh bóng bàn, trái bóng luôn là sát lưới, sang thì được (thắng), nếu chỉ hơi thấp một chút thì bóng sẽ rúc lưới rơi về phía mình (thua). Đòi hỏi kỹ thuật chính xác, khổ luyện và bình tĩnh.",
-    pageRef: "Trang 162 - 163",
+    pageRef: "Khẩu Quyết Số 4",
     tacticalApplication: "Rút ngắn thời gian tiếp cận mục tiêu xuống dưới ngưỡng phản xạ quang học của con người (dưới 0.15 giây).",
     keyConcepts: ["Đường Thẳng Tối Giản", "Ranh Giới Sát Lưới", "Tối Ưu Năng Lượng", "Chuỗi Động Học"]
   },
@@ -114,9 +114,9 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     hanzi: "短打緊湊 • 依模循規",
     shortSummary: "Đòn hẹp kín kẽ, theo khuôn khổ chuẩn xác — Trường thắng đoản, bảo toàn trọng tâm.",
     philosophy: "Đòn thế không vung rộng ra ngoài phạm vi thân thể. Đi theo 'khuôn' chuẩn mực của môn phái để không tạo khoảng hở hông sườn. Khi xuất đòn ở thế biên thân, tay ta đi đường thẳng nên hóa ra dài hơn tay địch vung vòng — đây chính là đạo lý 'Trường thắng đoản'.",
-    biomechanics: "Tiết kiệm lực tuyệt đối: Chỉ phóng lực (phát kình) vào đúng mili-giây tiếp xúc mục tiêu. Không bị lỡ trớn hay mất thăng bằng nếu đối phương né tránh vì cùi chỏ luôn nằm trong tầm kiểm soát của cơ trọng tâm.",
+    biomechanics: "Tiết kiệm sức lực tối đa: Chỉ phóng lực (phát kình) vào đúng mili-giây tiếp xúc mục tiêu. Không bị lỡ trớn hay mất thăng bằng nếu đối phương né tránh vì cùi chỏ luôn nằm trong tầm kiểm soát của cơ trọng tâm.",
     originalQuote: "Đánh đòn hẹp, ngắn, theo khuôn đạt nhiều lợi ích: Tiết kiệm di chuyển, đòn đi đường ngắn nên nhanh; trường thắng đoản; tiết kiệm lực, chỉ xuất lực khi chạm mục tiêu; không bị lỡ trớn mất đà.",
-    pageRef: "Trang 163 - 164",
+    pageRef: "Khẩu Quyết Số 5",
     tacticalApplication: "Giữ chặt khung xương không bị biến dạng dưới áp lực va chạm, luôn sẵn sàng tung đòn tiếp nối mà không cần thời gian thu tay.",
     keyConcepts: ["Trường Thắng Đoản", "Đòn Theo Khuôn", "Không Lỡ Trớn", "Kín Cửa Mạn Sườn"]
   },
@@ -129,8 +129,8 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Chân là cầu nối giữa đất với thân thể. Lực không tự sinh ra từ bắp tay mà bắt đầu từ đất, truyền qua lòng bàn chân (Dũng Tuyền), khớp gối Kiềm Dương, xoay chuyển qua eo hông, lưng truyền, chỏ phóng và bộc phát ở đầu ngón tay. Đòn đánh không định sẵn trong đầu mà tùy địch ra đòn thế nào ta phản ứng thế ấy (Tâm Ứng Thủ).",
     biomechanics: "Khái niệm 'Vững động' như con lật đật hoặc xe đạp lăn bánh: Trọng tâm di động liên tục nhưng cấu trúc không bao giờ ngã. Linh giác của cánh tay (Nhãn thủ - tay có mắt, Thính kình - nghe lực) truyền trực tiếp vào tủy sống, bỏ qua vỏ não để loại bỏ độ trễ phản xạ.",
     originalQuote: "Lực từ mặt đất qua chân, hông, vai rồi ra điểm đích... Môn sinh VXQ không chuẩn bị sẵn các thế đánh trước, tùy địch thủ ra đòn thế nào mà có phản đòn thích hợp. Nhờ tập luyện linh giác, tay có khả năng 'nhìn thấy' trước khi mắt kịp thấy.",
-    pageRef: "Trang 163 - 165",
-    tacticalApplication: "Bịt mắt song đấu vẫn thi triển võ công trôi chảy nhờ xúc giác nhạy bén tuyệt đối tại hai cẳng tay.",
+    pageRef: "Khẩu Quyết Số 6",
+    tacticalApplication: "Bịt mắt song đấu vẫn thi triển võ công trôi chảy nhờ linh giác xúc giác nhạy bén tại hai cẳng tay.",
     keyConcepts: ["Huyệt Dũng Tuyền", "Vững Động Con Lật Đật", "Nhãn Thủ", "Thính Kình", "Tâm Ứng Thủ"]
   },
   {
@@ -142,14 +142,14 @@ export const STRATEGIC_APHORISMS: StrategicAphorism[] = [
     philosophy: "Quyền xuất liên tục như dòng nước chảy. Nước gặp vật cản thì lách qua, gặp khe hở thì thẩm thấu vào, gặp vực sâu thì đổ ập xuống với uy lực ngàn cân. Không bao giờ dừng lại ở một đòn đơn lẻ; hễ đã phát động là tuôn trào cho đến khi đối thủ hoàn toàn mất khả năng phản kích.",
     biomechanics: "Tận dụng triệt để đà co giãn cơ học của chuỗi liên hoàn đấm thẳng (Nhật Tự Quyền xoay trục). Cơ bắp thả lỏng hoàn toàn trong hành trình vung tay và chỉ siết cứng trong khoảnh khắc va chạm để đạt trạng thái 'Sóng kình'.",
     originalQuote: "Quyền như lưu thủy. Quyền xuất liên tục như nước chảy. Tự nó tìm ra những kẽ hở để chảy vào, liên tục đến khi tràn đầy... Để chấm dứt đòn liên tiếp của đối thủ tốt nhất là đánh vào gốc xuất đòn. Phải chăng cơ chế này đã được Lý Tiểu Long lấy làm cơ sở cho Triệt Quyền Đạo?",
-    pageRef: "Trang 165",
+    pageRef: "Khẩu Quyết Số 7",
     tacticalApplication: "Tấn công dồn dập khiến đối phương rơi vào tình trạng quá tải xử lý thông tin, hoàn toàn sụp đổ thế trận phòng ngự.",
     keyConcepts: ["Nước Chảy Tràn Bờ", "Triệt Đòn Tại Gốc", "Nhật Tự Liên Hoàn", "Sóng Kình Thẩm Thấu"]
   }
 ];
 
 // ==============================================================================
-// 2. TRỌN BỘ 42 LỜI KHUYÊN VÀNG CỦA SƯ PHỤ (TRANG 166 SÁCH GỐC)
+// 2. TRỌN BỘ 42 LỜI KHUYÊN CỦA SƯ PHỤ
 // ==============================================================================
 export const MASTER_COUNSELS_42: MasterCounsel[] = [
   {
@@ -301,7 +301,7 @@ export const MASTER_COUNSELS_42: MasterCounsel[] = [
     text: "Khi luyện các thế võ cần chú ý: Phối hợp với thở — Quay người — Thả lỏng cơ bắp.",
     category: "training",
     categoryLabel: "Luyện Công & Thân Pháp",
-    elaboration: "Tam bảo trong mỗi động tác: Thở bụng sâu kích hoạt đan điền; xoay biên thân đổi góc đón lực; thả lỏng tuyệt đối để khí huyết và kình lực lưu chuyển thông suốt.",
+    elaboration: "Tam bảo trong mỗi động tác: Thở bụng sâu kích hoạt đan điền; xoay biên thân đổi góc đón lực; thả lỏng tự nhiên để khí huyết và kình lực lưu chuyển thông suốt.",
     keywords: ["thở bụng", "quay người", "thả lỏng", "tam bảo"]
   },
   {
@@ -461,7 +461,7 @@ export const MASTER_COUNSELS_42: MasterCounsel[] = [
     text: "Luyện tập linh giác trong thời gian dài thì mới đạt được linh giác cần thiết.",
     category: "training",
     categoryLabel: "Luyện Công & Thân Pháp",
-    elaboration: "Linh giác là giác quan thứ sáu hình thành qua hàng vạn giờ cọ xát cẳng tay. Không thể đốt cháy giai đoạn; công phu là sự tích lũy của năm tháng.",
+    elaboration: "Linh giác là cảm nhận tinh tế hình thành qua quá trình kiên trì cọ xát cẳng tay. Không thể đốt cháy giai đoạn; công phu là sự tích lũy của năm tháng.",
     keywords: ["linh giác", "thời gian dài", "công phu", "kiên định"]
   },
   {
@@ -502,7 +502,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     coreDoctrine: "Lý Luận Trung Tâm Tuyến & Đề Cao Võ Đức",
     famousQuote: "Võ thuật không phải để bắt nạt người khác, mà là để tu dưỡng nhân cách và bảo vệ người yếu thế.",
     pgvxCorrelation: "Tương đồng 100% với Trục Tý Ngọ Tuyến và Tấn Kiềm Dương của Phật Gia Vịnh Xuân. Diệp Vấn và Nguyễn Tế Công vốn là đồng môn tại Phật Sơn (Trung Quốc), cùng chia sẻ cội nguồn quyền thuật tinh túy.",
-    historicalContext: "Tông sư đưa Vịnh Xuân Quyền từ một môn phái bí truyền ở Phật Sơn ra toàn cầu qua các đệ tử xuất chúng tại Hồng Kông.",
+    historicalContext: "Tông sư đưa Vịnh Xuân Quyền từ một môn phái truyền thống ở Phật Sơn ra toàn cầu qua các đệ tử xuất chúng tại Hồng Kông.",
     sharedPrinciples: [
       "Thủ trung dụng trung (Giữ trung tâm, đánh trung tâm)",
       "Độc thủ bất hành, song thủ thành công (Hai tay phối hợp)",
@@ -516,7 +516,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     period: "1947 – nay",
     coreDoctrine: "4 Nguyên Lý Lực Kinh Điển (4 Principles of Force)",
     famousQuote: "Hãy biến cơ thể thành một chiếc nêm thép: Địch tiến thì ta nêm dẹp, địch rút thì ta theo sát lấp đầy.",
-    pgvxCorrelation: "Trùng khớp tuyệt đối với Khẩu quyết 'Lai lưu khứ tống, thoát thủ trực xông' và nguyên lý 'Dĩ công vi thủ' trong giáo trình của GS.TS Nguyễn Mạnh Nhâm.",
+    pgvxCorrelation: "Tương đồng chặt chẽ với Khẩu quyết 'Lai lưu khứ tống, thoát thủ trực xông' và nguyên lý 'Dĩ công vi thủ' trong giáo trình của GS.TS Nguyễn Mạnh Nhâm.",
     historicalContext: "Người hệ thống hóa Vịnh Xuân thành giáo trình sư phạm phương Tây khoa học, đưa môn võ phổ biến rộng rãi khắp Châu Âu và Châu Mỹ.",
     sharedPrinciples: [
       "1. Tiến lên khi đường thông suốt",
@@ -532,8 +532,8 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     period: "1935 – 1997",
     coreDoctrine: "Vịnh Xuân Khoa Học & Cận Chiến Thực Dụng",
     famousQuote: "Mắt là kẻ lừa dối; chỉ có cẳng tay xúc giác mới không bao giờ nói dối.",
-    pgvxCorrelation: "Khớp sâu sắc với chuyên đề Linh Giác (Chương II sách gốc): Cơ chế phản xạ tủy sống xúc giác nhanh hơn thị giác vỏ não gấp nhiều lần, loại bỏ hoàn toàn độ trễ thần kinh.",
-    historicalContext: "Người nổi danh với hàng trăm trận tỉ thí không găng thắng lợi tại Hồng Kông, là người trực tiếp hướng dẫn thực chiến cho Lý Tiểu Long thuở niên thiếu.",
+    pgvxCorrelation: "Khớp sâu sắc với chuyên đề Linh Giác: Cơ chế phản xạ tủy sống xúc giác nhanh hơn thị giác vỏ não, loại bỏ đáng kể độ trễ phản xạ.",
+    historicalContext: "Người nổi danh trong các cuộc giao lưu võ thuật thực chiến tại Hồng Kông, là người trực tiếp hướng dẫn luyện tập cho Lý Tiểu Long thuở niên thiếu.",
     sharedPrinciples: [
       "Đánh góc chéo 45° triệt tiêu vũ khí của đối thủ",
       "Vịnh Xuân là công cụ khoa học chính xác, không phải điệu múa",
@@ -547,7 +547,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     period: "1940 – 1973",
     coreDoctrine: "Be Water, My Friend — Quyền Như Lưu Thủy & Triệt Đòn Tại Gốc",
     famousQuote: "Đừng đóng khung trong một hình tướng nào. Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm.",
-    pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm trích dẫn trực tiếp tại trang 164 và 165 giáo trình gốc để giải thích cho Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
+    pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
     historicalContext: "Học trò xuất sắc của Diệp Vấn và Hoàng Thuần Lương, người đã đem triết lý võ đạo phương Đông chấn hưng toàn cầu.",
     sharedPrinciples: [
       "Tâm Ứng Thủ: Đòn đánh ra tùy thuộc đối phương ra đòn gì",
@@ -589,7 +589,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     quote: "Lai lưu khứ tống, thoát thủ trực xông.",
     hanNom: "來留去送 甩手直衝",
     author: "Khẩu quyết truyền thừa",
-    roleOrSource: "Chương III: Khẩu Quyết • Trang 161",
+    roleOrSource: "Chương III: Khẩu Quyết Truyền Thừa",
     category: "strategy",
     context: "Địch đến tiếp nhận dính sát, địch rút theo tiễn, buông rời lập tức phóng quyền."
   },
@@ -598,7 +598,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     quote: "Đả quyền bất luyện công, đáo lão nhất trường không. Lực bất đả quyền, quyền bất đả công.",
     hanNom: "打拳不練功 到老一場空 • 力不打拳 拳不打功",
     author: "Ngạn ngữ võ học cổ kim",
-    roleOrSource: "Chương IV: Nội Công • Trang 167",
+    roleOrSource: "Chương IV: Nội Công Dưỡng Sinh",
     category: "philosophy",
     context: "Luyện chiêu thức mà không rèn nội lực và khí công thì về già chỉ là con số không."
   },
@@ -632,7 +632,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     id: "q07",
     quote: "Quyền như lưu thủy — Tự nó tìm ra những kẽ hở để tràn vào cho đến khi lấp đầy.",
     author: "GS.TS Nguyễn Mạnh Nhâm",
-    roleOrSource: "Chương III: Khẩu Quyết • Trang 165",
+    roleOrSource: "Chương III: Khẩu Quyết Truyền Thừa",
     category: "strategy",
     context: "Đòn đánh liên hoàn không đứt đoạn như dòng nước chảy tràn ngập trận địa."
   },
@@ -648,7 +648,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     id: "q09",
     quote: "Tôi không biết sẽ ra đòn gì trước khi chiến đấu. Đòn tôi đánh tùy thuộc vào phía địch thủ ra đòn thế nào.",
     author: "Lý Tiểu Long (Bruce Lee)",
-    roleOrSource: "Trích dẫn trong sách gốc • Trang 164",
+    roleOrSource: "Trích dẫn giáo trình Phật Gia Vịnh Xuân",
     category: "mindset",
     context: "Tâm Ứng Thủ: Vô chiêu thắng hữu chiêu, không đóng khung trong khuôn mẫu cứng nhắc."
   },
@@ -673,7 +673,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     quote: "Khoảng cách ngắn nhất giữa hai điểm là đường thẳng. Lưỡng điểm chi gian, trực tuyến tối giản.",
     hanNom: "兩點之間 直線最短",
     author: "Khẩu quyết hình học võ học",
-    roleOrSource: "Chương III: Khẩu Quyết • Trang 162",
+    roleOrSource: "Chương III: Khẩu Quyết Truyền Thừa",
     category: "strategy",
     context: "Tối ưu hóa năng lượng và thời gian di chuyển để chiếm thế tiên cơ."
   },
@@ -699,7 +699,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     author: "Khẩu quyết Thốn Kình",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 30",
     category: "strategy",
-    context: "Tiết kiệm lực tuyệt đối để đòn đánh đạt gia tốc cực đại trong tích tắc."
+    context: "Tiết kiệm sức lực để đòn đánh đạt gia tốc cao khi tiếp xúc mục tiêu."
   },
   {
     id: "q16",
@@ -731,7 +731,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     author: "GS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 19",
     category: "health",
-    context: "Sự kết hợp hoàn hảo giữa y học dưỡng sinh và cơ chế vận động cận chiến."
+    context: "Sự kết hợp hài hòa giữa y học dưỡng sinh và cơ chế vận động cận chiến."
   },
   {
     id: "q20",

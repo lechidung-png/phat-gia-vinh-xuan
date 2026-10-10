@@ -38,7 +38,7 @@ export const MONOGRAPHS: MonographSection[] = [
     content: [
       "Khác biệt căn bản nhất giữa Phật Gia Vịnh Xuân và các môn phái ngoại gia như Thiếu Lâm, Karatedo là cự ly hai bàn chân. Môn phái tuyệt đối không đứng tấn rộng (trung bình tấn bành rộng).",
       "Quy cách chuẩn: Hai bàn chân đứng rất gần nhau (khoảng cách hẹp hơn vai), mũi chân hướng nhẹ vào trong hoặc song song, hai đầu gối chùng nhẹ và kẹp miết vào trong để che kín 100% cửa hạ bộ.",
-      "Cột sống luôn giữ trục thẳng đứng tuyệt đối (Hư linh đỉnh kình), xương cụt hơi thu vào trong để mở khóa khớp háng và tụ khí đan điền."
+      "Cột sống luôn giữ trục thẳng đứng tự nhiên (Hư linh đỉnh kình), xương cụt hơi thu vào trong để mở khóa khớp háng và tụ khí đan điền."
     ],
     keypoints: [
       "Khoảng cách hai bàn chân hẹp hơn vai, hai gối khép che kín hạ bộ.",
@@ -66,7 +66,7 @@ export const MONOGRAPHS: MonographSection[] = [
   },
   {
     id: "khau-quyet",
-    title: "Khẩu Quyết Bí Truyền & Trục Tý Ngọ Tuyến",
+    title: "Khẩu Quyết Truyền Thừa & Trục Tý Ngọ Tuyến",
     chapter: "Phần 2: Chương 3",
     badge: "Khẩu Quyết",
     readTime: "5 phút",

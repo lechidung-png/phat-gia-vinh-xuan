@@ -101,7 +101,7 @@ export const CONTENT_GROUPS: ContentGroup[] = [
     "id": "ngu-hinh-va-tong-hop",
     "order": 6,
     "name": "Tổng Hợp & Ngũ Hình Quyền",
-    "desc": "Bài luyện tổng hợp và 5 linh vật võ thuật bí truyền: Long, Xà, Hổ, Báo, Hạc.",
+    "desc": "Bài luyện tổng hợp và 5 bài Ngũ Hình Quyền: Long, Xà, Hổ, Báo, Hạc.",
     "pages": "Trang 117 – 145",
     "icon": "Flame"
   },
@@ -142,7 +142,7 @@ export const CONTENT_GROUPS: ContentGroup[] = [
     "order": 11,
     "name": "Tư Liệu & Phụ Lục",
     "desc": "Lịch sử Thiếu Lâm Tự, nhân vật tiêu biểu võ học Trung Hoa và giới thiệu võ đường.",
-    "pages": "Trang 207 – 225",
+    "pages": "Phụ Lục & Tư Liệu",
     "icon": "Award"
   }
 ];
@@ -22501,7 +22501,7 @@ export const CANONICAL_LESSONS: CanonicalLesson[] = [
     "pdfPages": [
       225
     ],
-    "pageRange": "Trang PDF 225 – 225",
+    "pageRange": "Phụ Lục",
     "assetCount": 2,
     "assets": [
       {

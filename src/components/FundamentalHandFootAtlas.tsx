@@ -342,7 +342,7 @@ const CORE_HAND_POSTURES: CoreHandTechnique[] = [
     instructor: "Tư Thế Chuẩn Môn Phái",
     source: "Đồ Hình Tay Trói Buộc",
     level: "Thượng - Hạ Đồng Thời (Song Tuyến Phong Tỏa)",
-    shortDesc: "Sự kết hợp hoàn hảo giữa Than Thủ (tay trên vươn xa) và Hạ Bàng Thủ (tay dưới hạ thấp). Tạo thành chiếc kìm trói chặt đường phát lực của địch.",
+    shortDesc: "Sự phối hợp nhịp nhàng giữa Than Thủ (tay trên vươn xa) và Hạ Bàng Thủ (tay dưới hạ thấp). Tạo thành chiếc kìm trói chặt đường phát lực của địch.",
     techniqueDetail: "Khổn thủ (chữ Khổn nghĩa là trói buộc, trói chặt) là thế phòng thủ kép trứ danh của Vịnh Xuân. Một tay mở Than thủ vươn dài ra phía trước khống chế đòn công của địch ở vùng ngực/mặt, trong khi tay còn lại hạ thành Hạ Bàng thủ bảo vệ sườn và hạ bộ. Hai tay tạo thành một chiếc gọng kìm trói chặt đường phát lực của đối thủ từ trên xuống dưới.",
     keyPoints: [
       "Tay trên mở Than thủ ngửa tay đón đỡ trên trục Tý Ngọ Tuyến",
@@ -646,7 +646,7 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
           <div>
             <div className="flex items-center gap-2 text-[#E2B743] text-xs font-semibold tracking-wider uppercase">
               <Sparkles className="w-3.5 h-3.5" />
-              Lộ Trình Sư Phạm Võ Học Chính Tông
+              Lộ Trình Sư Phạm Võ Học Truyền Thống
             </div>
             <h2 className="text-lg sm:text-xl font-bold font-serif gold-gradient">
               Trình Tự Học Võ Chuẩn Phật Gia Vịnh Xuân (Theo Giáo Trình)

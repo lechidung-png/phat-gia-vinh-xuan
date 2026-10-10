@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://phat-gia-vinh-xuan.pages.dev"),
   title: "Phật Gia Vịnh Xuân — Di Sản Võ Học Kinh Điển",
   description:
-    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và các chuyên đề kinh điển từ giáo trình chính thống của GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
+    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và các chuyên đề kinh điển từ giáo trình của GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
   keywords: [
     "Phật Gia Vịnh Xuân",
     "Vịnh Xuân Quyền",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Phật Gia Vịnh Xuân — Di Sản Võ Học Kinh Điển",
     description:
-      "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
+      "Nơi lưu trữ và tra cứu di sản võ học: Quyền pháp, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ truyền thừa.",
     url: "https://phat-gia-vinh-xuan.pages.dev",
     siteName: "Phật Gia Vịnh Xuân",
     images: [
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Phật Gia Vịnh Xuân — Di Sản Võ Học Kinh Điển",
     description:
-      "Không gian số hóa 100% tài liệu võ học kinh điển: 7 Bài quyền chính tông, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ chân truyền.",
+      "Nơi lưu trữ và tra cứu di sản võ học: Quyền pháp, Cọc gỗ Mộc Nhân, Trục Tý Ngọ Tuyến và 108 thế võ truyền thừa.",
     images: ["/og-image.png"],
   },
 };

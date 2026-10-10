@@ -223,7 +223,7 @@ export default function Home() {
             openStanceGuide={() => setIsStanceGuideOpen(true)}
           />
         )}
-        {/* Tab 1: Hệ Thống 18 Bài Quyền Pháp & Binh Khí (18 Bài Quyền Chính Tông & Lời Dẫn) */}
+        {/* Tab 1: Hệ Thống 18 Bài Quyền Pháp & Binh Khí */}
         {activeTab === "forms" && (
           <CurriculumExplorer 
             initialLessonId={selectedFormId || "bai-07"} 
@@ -232,7 +232,7 @@ export default function Home() {
           />
         )}
 
-        {/* Tab 2: Cơ Bản Công - Thủ Pháp & Cước Pháp Chuẩn Mực (Trang 28-35) */}
+        {/* Tab 2: Cơ Bản Công - Thủ Pháp & Cước Pháp Chuẩn Mực */}
         {activeTab === "fundamentals" && (
           <FundamentalHandFootAtlas 
             initialSubTab={fundamentalsSubTab}

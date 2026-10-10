@@ -436,7 +436,6 @@ export const PhilosophyHub: React.FC = () => {
                           {counsel.categoryLabel}
                         </span>
                       </div>
-                      <span className="text-[10px] text-amber-200/50 font-mono">Trang 166</span>
                     </div>
 
                     <h4 className="text-sm sm:text-base font-serif font-bold text-white leading-snug group-hover:text-amber-100 transition">

@@ -176,7 +176,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   // 8. NGŨ HÌNH QUYỀN (LONG, XÀ, HỔ, BÁO, HẠC)
   "gioi-thieu-ngu-hinh-m-1": {
     kieu: "Ngũ Linh Võ Học • Long Quyền",
-    khauQuyet: "Du Long uốn lượn • Nhu trung hữu cương • Rồng lượn mây bay, biến hóa khôn lường.",
+    khauQuyet: "Du Long uốn lượn • Nhu trung hữu cương • Rồng lượn chuyển mình, biến chuyển linh hoạt theo lực đối phương.",
     yeuLinh: "Thân pháp uốn lượn theo hình sóng, cánh tay vươn dài kéo giãn cơ gân. Bàn tay hóa Long Trảo chụp bắt, kéo giật đối phương vào thế mất trọng tâm.",
     cotTu: [
       "Lực phát ra từ sống lưng truyền qua khớp vai ra đầu móng vuốt.",
@@ -189,7 +189,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
     khauQuyet: "Linh xà thổ tín • Nhu nhuận triền ty • Mềm như dải lụa, mổ trúng huyệt sâu.",
     yeuLinh: "Cổ tay mềm dẻo như đầu rắn linh hoạt. Đòn đánh luồn lách qua các khe hở phòng thủ của đối phương, phóng mổ nhanh vào yết hầu, nách, mắt sườn.",
     cotTu: [
-      "Thả lỏng tuyệt đối toàn bộ cánh tay để gia tăng tốc độ luồn lách.",
+      "Thả lỏng toàn bộ cánh tay để gia tăng tốc độ luồn lách.",
       "Đòn mổ xuất phát bất ngờ không báo trước đường đi.",
       "Sau khi chạm mục tiêu lập tức rút về thế quấn trói như trăn xà."
     ]
@@ -219,9 +219,9 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
     khauQuyet: "Bạch hạc lượng dực • Khinh linh thâm nhập • Độc lập hạc tấn, điểm châm chính xác.",
     yeuLinh: "Cánh tay mở rộng dang như cánh hạc, chụm 5 ngón tay thành mỏ hạc (Hạc trủy). Đứng tấn một chân thanh thoát, đòn mổ chính xác vào các đại huyệt cơ thể.",
     cotTu: [
-      "Khả năng giữ thăng bằng tuyệt hảo trên một chân.",
+      "Khả năng giữ thăng bằng ổn định trên một chân.",
       "Cánh tay rung giật tạo lực chém bằng cạnh bàn tay như cánh chim bổ xuống.",
-      "Thần thái điềm tĩnh, nhắm mục tiêu chính xác tuyệt đối."
+      "Thần thái điềm tĩnh, nhắm mục tiêu chính xác cao."
     ]
   },
   "bai-25-m-1": {
@@ -273,7 +273,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
     khauQuyet: "Tay dính như keo • Không đón không xua, nương theo mà đánh • Thính kình tinh tường.",
     yeuLinh: "Hai cánh tay chạm nhau xoay tròn liên tục (Xí Sao). Nhắm mắt vẫn cảm nhận được hướng lực, cường độ lực và ý đồ của đối phương qua bề mặt da cẳng tay.",
     cotTu: [
-      "Thả lỏng khớp vai tuyệt đối để dây thần kinh xúc giác nhạy bén tối đa.",
+      "Thả lỏng khớp vai để dây thần kinh xúc giác nhạy bén.",
       "Khi đối phương xô tới thì nhường bước hóa giải; khi đối phương rút thì theo sát.",
       "Chỉ phát lực phản công vào đúng khoảnh khắc đối phương đổi lực."
     ]
@@ -283,7 +283,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
     khauQuyet: "Khí trầm đan điền • Ý dẫn khí hành, khí sinh kình lực • Thiền võ nhất như.",
     yeuLinh: "Hít sâu thở chậm bằng cơ hoành. Dẫn luồng chân khí từ đan điền chạy dọc cột sống lên đỉnh đầu (Bách hội) rồi hạ xuống ngực, tích lũy nội công thâm hậu.",
     cotTu: [
-      "Tâm trí tuyệt đối thanh tịnh, loại bỏ mọi tạp niệm khi luyện tập.",
+      "Tâm trí thanh tịnh, giữ tâm an tĩnh khi luyện tập.",
       "Không gượng ép hơi thở; hơi thở phải êm, sâu, dài và tự nhiên.",
       "Cảm nhận luồng hơi ấm lan tỏa tại vùng đan điền dưới rốn 3 thốn."
     ]

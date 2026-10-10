@@ -50,7 +50,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   initialMotionIndex = 0,
   onNavigateTab,
 }) => {
-  // Lọc duy nhất 18 bài quyền & binh khí chính tông (có motions thị phạm thực tế)
+  // Lọc duy nhất 18 bài quyền & binh khí (có motions thị phạm thực tế)
   const FORMS_18 = useMemo(() => {
     return CANONICAL_LESSONS.filter((l) => l.motions && l.motions.length > 0);
   }, []);
@@ -176,13 +176,13 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   return (
     <div className="space-y-8 animate-fadeIn">
       
-      {/* 1. TOP HERO: 18 BÀI QUYỀN CHÍNH TÔNG & 5 ĐẠI PHÂN HỆ QUYỀN PHÁP */}
+      {/* 1. TOP HERO: 18 BÀI QUYỀN PHÁP & 5 ĐẠI PHÂN HỆ QUYỀN PHÁP */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/35 relative overflow-hidden shadow-2xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 text-[#F5D06C] border border-[#F5D06C]/40 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
-              Hệ Thống Quyền Pháp Chính Tông • 18 Bài Quyền &amp; Binh Khí
+              Hệ Thống Quyền Pháp Truyền Thừa • 18 Bài Quyền &amp; Binh Khí
             </div>
             <h2 className="text-2xl sm:text-4xl font-extrabold font-serif text-white leading-tight">
               18 Bài Quyền Pháp &amp; Binh Khí
@@ -225,7 +225,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
           </div>
         </div>
 
-        {/* 5 PHÂN HỆ QUYỀN PHÁP CHÍNH TÔNG */}
+        {/* 5 PHÂN HỆ QUYỀN PHÁP TRUYỀN THỪA */}
         <div className="mt-6 pt-5 border-t border-[#F5D06C]/20 space-y-3">
           <div className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <span className="flex items-center gap-1.5">

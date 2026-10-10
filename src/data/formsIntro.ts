@@ -1,4 +1,4 @@
-// DỮ LIỆU CHUẨN XÁC: LỜI NÓI ĐẦU & TRIẾT LÝ YẾU CHỈ 18 BÀI QUYỀN CHÍNH TÔNG
+// DỮ LIỆU CHUẨN XÁC: LỜI NÓI ĐẦU & TRIẾT LÝ YẾU CHỈ 18 BÀI QUYỀN
 // Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền (GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức)
 
 export interface FormIntroduction {
@@ -87,7 +87,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     globalBridge: {
       master: "Lý Tiểu Long (Bruce Lee)",
       doctrine: "Triệt Quyền Đạo — Dĩ Công Vi Thủ & Finger Jab",
-      correlation: "Lý Tiểu Long phát triển đòn xỉa ngón tay (Finger Jab) và nguyên lý 'Dĩ công vi thủ' từ chính bài Tiêu Chỉ của Vịnh Xuân Quyền, khớp trực tiếp với trích dẫn của GS.TS Nguyễn Mạnh Nhâm tại trang 164."
+      correlation: "Lý Tiểu Long phát triển đòn xỉa ngón tay (Finger Jab) và nguyên lý 'Dĩ công vi thủ' từ chính bài Tiêu Chỉ của Vịnh Xuân Quyền, tương đồng với phân tích của GS.TS Nguyễn Mạnh Nhâm trong giáo trình gốc khi luận giải về bài quyền Tiêu Chỉ."
     }
   },
   "bai-12": {
@@ -168,7 +168,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     formOrder: 8,
     demonstrator: "HLV Nguyễn Quốc Minh (38 Gia Ngư, 1954)",
     meaning: "Bài Mộc Nhân Thung tại chỗ — Rèn đòn và tôi luyện xương cốt trên cọc gỗ",
-    philosophy: "Cọc gỗ Mộc Nhân là người bạn tập vô hình không bao giờ khoan nhượng. Luyện Mộc Nhân giúp tôi luyện cẳng tay, cạnh bàn tay và ống chân cứng cáp, đồng thời định hình kỹ năng nêm góc hoàn hảo quanh 3 tay và chân cọc gỗ.",
+    philosophy: "Cọc gỗ Mộc Nhân là người bạn tập vô hình không bao giờ khoan nhượng. Luyện Mộc Nhân giúp tôi luyện cẳng tay, cạnh bàn tay và ống chân cứng cáp, đồng thời định hình kỹ năng nêm góc chuẩn xác quanh 3 tay và chân cọc gỗ.",
     principles: [
       "Nêm góc lướt gỗ: Coi 2 tay trên của cọc như đòn tấn công, dùng Bàng Thủ và Than Thủ lướt sát mặt gỗ.",
       "Chặn khóa chân cọc: Dùng gối và cẳng chân gài sát chân gỗ cong để rèn kỹ năng khóa chân và quật ngã.",
@@ -208,7 +208,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     principles: [
       "Thân pháp uốn lượn: Cột sống xoay chuyển linh hoạt như thân rồng uốn khúc.",
       "Chưởng pháp biến ảo: Dùng lòng bàn tay và gót chưởng phát kình chấn động nội tạng.",
-      "Tĩnh trung cầu động: Tâm tĩnh như mặt nước phẳng, khi xuất đòn thì biến hóa khôn lường."
+      "Tĩnh trung cầu động: Tâm tĩnh như mặt nước phẳng, khi xuất đòn thì linh hoạt tùy duyên tiếp lực."
     ],
     keyMantra: "Long hình luyện thần • Tĩnh trung cầu động • Nhu trung hữu cương",
     introQuote: "Long quyền trong Ngũ hình chủ về luyện thần. Thần thái uy nghiêm, thân pháp uốn lượn mềm dẻo nhưng phát kình chấn động sâu sắc."
@@ -239,14 +239,14 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     categoryOrder: 4,
     formOrder: 12,
     demonstrator: "Võ sư Đặng Danh Tuấn",
-    meaning: "Mãnh hổ vồ mồi — Luyện Cốt, cương mãnh tuyệt luân, áp đảo đối thủ",
+    meaning: "Mãnh hổ vồ mồi — Luyện Cốt, phát kình dũng mãnh, thế tấn vững chãi",
     philosophy: "Hổ hình chủ luyện Cốt (xương cốt). Đòn đánh mang khí thế áp đảo của chúa sơn lâm, kình lực phát xuất từ gót chân truyền qua eo hông lên móng vuốt, cấu xé và chấn động nội tạng đối thủ.",
     principles: [
       "Hổ trảo (Móng vuốt hổ): 5 ngón tay cong quắp vững chắc, dùng để bóp nát, chộp bắt và giật đứt gân cơ.",
       "Hạ bàn trầm thấp: Tấn bộ vững chãi, tạo điểm tựa phóng lực toàn thân.",
       "Khí thế áp đảo: Phát lực dũng mãnh kèm theo tiếng thở dồn nén làm rúng động tinh thần địch thủ."
     ],
-    keyMantra: "Hổ hình luyện cốt • Khí thế xung thiên • Cương mãnh tuyệt luân",
+    keyMantra: "Hổ hình luyện cốt • Khí thế trầm ổn • Kình lực sung mãn",
     introQuote: "Hổ quyền chủ về luyện cốt. Luyện tập giúp xương cốt cứng cáp, gân lực dũng mãnh, phát kình chấn động toàn thân."
   },
   "bai-24": {
@@ -282,7 +282,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Điềm tĩnh thanh cao: Thần thái ung dung, lấy tĩnh chế động, lấy thăng bằng thắng hỗn loạn."
     ],
     keyMantra: "Hạc hình luyện tinh • Điểm huyệt thanh linh • Độc lập thăng bằng",
-    introQuote: "Hạc quyền chủ về luyện tinh. Đòn đánh nhẹ nhàng, thanh thoát, tập trung vào sự thăng bằng tuyệt hảo và điểm huyệt chính xác."
+    introQuote: "Hạc quyền chủ về luyện tinh. Đòn đánh nhẹ nhàng, thanh thoát, tập trung vào sự thăng bằng ổn định và định vị mục tiêu chuẩn xác."
   },
   "bai-26": {
     formId: "bai-26",
@@ -291,7 +291,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Ngũ Hình Quyền",
     categoryOrder: 4,
     formOrder: 15,
-    meaning: "Ngũ thú hợp nhất — Tinh hoa biến hóa khôn lường của Long, Xà, Hổ, Báo, Hạc",
+    meaning: "Ngũ thú hợp nhất — Tổng hòa linh hoạt các yếu lĩnh của Long, Xà, Hổ, Báo, Hạc",
     philosophy: "Hợp nhất trọn vẹn cả 5 linh thú: Thần của Rồng, Khí của Rắn, Cốt của Cọp, Lực của Báo, Tinh của Hạc. Võ sinh biến hóa không ngừng tùy theo thế đánh của đối phương, khi thì mềm mại như lụa, khi thì dũng mãnh như sét đánh.",
     principles: [
       "Ngũ hành tương sinh tương khắc: Gặp địch cương mãnh dùng Xà Hạc hóa giải, gặp địch né tránh dùng Hổ Báo áp đảo.",
@@ -358,7 +358,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
 };
 
 export const FORM_CATEGORIES = [
-  { id: "all", name: "Tất Cả 18 Bài", count: 18, desc: "Trọn bộ 18 bài quyền & binh khí chính tông" },
+  { id: "all", name: "Tất Cả 18 Bài", count: 18, desc: "Trọn bộ 18 bài quyền & binh khí truyền thừa" },
   { id: "Tam Đại Quyền", name: "Tam Đại Quyền", count: 3, desc: "Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ" },
   { id: "108 Thế Liên Hoàn", name: "108 Thế Liên Hoàn", count: 4, desc: "Đơn luyện & đối luyện (tại chỗ và tiến lùi)" },
   { id: "Cọc Gỗ Mộc Nhân", name: "Cọc Gỗ Mộc Nhân", count: 2, desc: "Mộc nhân số 1 và mộc nhân tiến lùi" },
