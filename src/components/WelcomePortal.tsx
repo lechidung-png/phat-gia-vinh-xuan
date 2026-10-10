@@ -140,10 +140,10 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           {/* Main Title */}
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-serif tracking-tight leading-tight gold-gradient">
-              Võ Đường Số Phật Gia Vịnh Xuân
+              Kho Di Sản Phật Gia Vịnh Xuân
             </h1>
             <p className="text-base sm:text-xl text-amber-200/90 font-serif font-medium tracking-wide">
-              Không gian lưu trữ di sản võ học
+              Nơi lưu trữ và bảo tồn toàn văn di sản võ học kinh điển
             </p>
           </div>
 

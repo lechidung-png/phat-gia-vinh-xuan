@@ -14,8 +14,16 @@ import { CommandPalette } from "@/components/CommandPalette";
 import { StanceCheckerModal } from "@/components/StanceCheckerModal";
 import { MegaMenuModal } from "@/components/MegaMenuModal";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
+import { VisitorAnalyticsWidget } from "@/components/VisitorAnalyticsWidget";
+import { AnalyticsModal } from "@/components/AnalyticsModal";
 import { TECHNIQUES, Technique } from "@/data/techniques";
 import { resolveLessonId } from "@/lib/lessonResolver";
+import {
+  recordPageVisit,
+  recordContentView,
+  getAnalyticsSummary,
+  AnalyticsSummary,
+} from "@/lib/analytics";
 
 import { LandingSplash } from "@/components/LandingSplash";
 
@@ -29,6 +37,8 @@ export default function Home() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [isAnalyticsOpen, setIsAnalyticsOpen] = useState(false);
+  const [analyticsData, setAnalyticsData] = useState<AnalyticsSummary>(() => getAnalyticsSummary());
 
   // Đọc query parameters từ URL khi mở trang (hỗ trợ liên kết chia sẻ)
   useEffect(() => {
@@ -79,6 +89,50 @@ export default function Home() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+
+  // Theo dõi lượt truy cập trang web (đếm tự động khi vào trang)
+  useEffect(() => {
+    recordPageVisit();
+    setAnalyticsData(getAnalyticsSummary());
+  }, []);
+
+  // Theo dõi lượt xem nội dung khi người dùng chuyển phân hệ hoặc bài quyền
+  useEffect(() => {
+    if (activeTab === "forms") {
+      recordContentView(selectedFormId || "bai-07");
+    } else if (activeTab === "fundamentals") {
+      recordContentView(fundamentalsSubTab || "hands");
+    } else if (activeTab === "dummy") {
+      recordContentView("dummy");
+    } else if (activeTab === "scenarios") {
+      recordContentView("scenarios");
+    } else if (activeTab === "lineage") {
+      recordContentView("philosophy");
+    }
+    setAnalyticsData(getAnalyticsSummary());
+  }, [activeTab, selectedFormId, fundamentalsSubTab]);
+
+  const handleNavigateFromAnalytics = (id: string, category: string) => {
+    if (category === "forms") {
+      handleNavigateTab("forms", id);
+    } else if (category === "dummy") {
+      handleNavigateTab("dummy");
+    } else if (category === "scenarios") {
+      handleNavigateTab("scenarios");
+    } else if (category === "fundamentals") {
+      if (id === "centerline") {
+        handleNavigateTab("centerline");
+      } else if (id === "bai-to") {
+        handleNavigateTab("fundamentals", undefined, "bai-to");
+      } else if (id === "4-bai-luyen") {
+        handleNavigateTab("fundamentals", undefined, "drills");
+      } else {
+        handleNavigateTab("fundamentals", undefined, "hands");
+      }
+    } else if (category === "lineage") {
+      handleNavigateTab("lineage");
+    }
+  };
 
   const handleNavigateTab = (tab: NavTab, formId?: string, subTab?: string) => {
     if (tab === "centerline") {
@@ -284,6 +338,20 @@ export default function Home() {
         isOpen={isMegaMenuOpen}
         onClose={() => setIsMegaMenuOpen(false)}
         onNavigateTab={handleNavigateTab}
+      />
+
+      {/* Modal Thống Kê Chi Tiết (Analytics Modal) */}
+      <AnalyticsModal
+        isOpen={isAnalyticsOpen}
+        onClose={() => setIsAnalyticsOpen(false)}
+        data={analyticsData}
+        onNavigateToContent={handleNavigateFromAnalytics}
+      />
+
+      {/* Thanh Thống Kê Truy Cập & Nội Dung Xem Nhiều (Chân Trang) */}
+      <VisitorAnalyticsWidget
+        data={analyticsData}
+        onOpenDetails={() => setIsAnalyticsOpen(true)}
       />
 
       {/* Modern Martial Footer */}

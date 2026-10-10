@@ -116,7 +116,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     quote:
       "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
     explanation:
-      "Nền tảng võ đường số bảo tồn trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
+      "Kho di sản võ học bảo tồn trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
     source: "Đúc kết tâm pháp • Võ sư Lê Đắc Kiên",
     icon: <Layers className="w-5 h-5 text-[#E2B743]" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",

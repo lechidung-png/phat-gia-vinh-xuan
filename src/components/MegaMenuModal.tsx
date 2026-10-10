@@ -59,7 +59,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
             </div>
             <div>
               <h3 className="text-base sm:text-xl font-bold font-serif gold-gradient">
-                Mục Lục Toàn Cảnh • Võ Đường Số Phật Gia Vịnh Xuân
+                Mục Lục Toàn Cảnh • Kho Di Sản Phật Gia Vịnh Xuân
               </h3>
               <p className="text-xs text-amber-200/80">
                 Toàn bộ 11 Đại Phân Hệ, 18 Bài Quyền Pháp & Binh Khí và 7 Trụ Cột Võ Học Kinh Điển
@@ -79,7 +79,7 @@ export const MegaMenuModal: React.FC<MegaMenuModalProps> = ({
         {/* Quick Access Pillars Grid */}
         <div className="p-4 sm:p-6 border-b border-[#F5D06C]/15 bg-black/30">
           <div className="text-[11px] font-bold uppercase tracking-wider text-[#F5D06C] mb-3 flex items-center gap-1.5">
-            <Layers className="w-3.5 h-3.5" /> 7 Đại Trụ Cột Của Nền Tảng Võ Đường Số:
+            <Layers className="w-3.5 h-3.5" /> 7 Đại Trụ Cột Của Kho Di Sản Võ Học:
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-2.5">
             {quickNavPillars.map((p) => {

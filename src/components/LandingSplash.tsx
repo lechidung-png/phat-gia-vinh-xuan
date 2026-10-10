@@ -64,7 +64,7 @@ export const LandingSplash: React.FC<LandingSplashProps> = ({ onEnter }) => {
         {/* Enter Button */}
         <button
           onClick={onEnter}
-          aria-label="Khám phá Võ Đường Số Phật Gia Vịnh Xuân"
+          aria-label="Khám phá Kho Di Sản Phật Gia Vịnh Xuân"
           className="group relative px-8 py-4 bg-transparent outline-none overflow-hidden rounded-full border border-[#E2B743]/50 hover:border-[#E2B743] transition-colors duration-500"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#E2B743]/0 via-[#E2B743]/10 to-[#E2B743]/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>

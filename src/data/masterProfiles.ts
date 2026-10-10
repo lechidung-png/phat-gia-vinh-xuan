@@ -255,7 +255,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
         content: [
           "Năm 2012, sau nhiều thập kỷ ấp ủ và chắt lọc, GS.TS Y khoa Nguyễn Mạnh Nhâm cùng ThS.DS Nguyễn Duy Thức đã xuất bản tác phẩm kinh điển: 'Phật Gia Vịnh Xuân Quyền' (Nhà xuất bản Văn Hóa Thông Tin, 225 trang).",
           "Cuốn sách quy tụ 1.096 bức ảnh chụp thị phạm chân thực của các võ sư nòng cốt (như HLV Lê Đắc Kiên, Lê Văn Tùng, Nguyễn Việt Dũng...), phân định chi tiết toàn bộ hệ thống quyền pháp, binh khí, cọc mộc nhân, 200 thế đòn đối kháng và 42 lời khuyên vàng của sư phụ.",
-          "Đây chính là cuốn cẩm nang toàn thư duy nhất của môn phái có giá trị pháp lý, học thuật và tư liệu gốc chuẩn mực nhất, là nền tảng cốt lõi được số hóa 100% trong dự án Võ Đường Số hôm nay."
+          "Đây chính là cuốn cẩm nang toàn thư duy nhất của môn phái có giá trị pháp lý, học thuật và tư liệu gốc chuẩn mực nhất, là nền tảng cốt lõi được số hóa 100% trong công trình Kho Di Sản Võ Học hôm nay."
         ],
         keyHighlight: "Cuốn sách là kim chỉ nam bảo tồn tính chân xác 100% cho toàn bộ hệ thống kỹ thuật Phật Gia Vịnh Xuân, ngăn chặn hoàn toàn nguy cơ tam sao thất bản."
       }
@@ -288,7 +288,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
     historicalLocations: [
       "Võ Đường Huỳnh Thúc Kháng (Hà Nội)",
       "Sàn tập Phật Gia Vịnh Xuân Hà Nội",
-      "Không gian Võ Đường Số (Digital Dojo)"
+      "Kho Di Sản Số (Digital Archive)"
     ],
     lineagePredecessor: "GS.TS Y Khoa Nguyễn Mạnh Nhâm",
     lineageSuccessors: [
@@ -321,11 +321,11 @@ export const MASTER_PROFILES: MasterProfile[] = [
         title: "3. Tầm Nhìn Số Hóa Di Sản & Khẩu Quyết Thực Hành",
         subtitle: "Cầu nối giữa kho tàng tiền nhân và người học hiện đại",
         content: [
-          "Trong kỷ nguyên công nghệ số, Võ sư Lê Đắc Kiên ủng hộ mạnh mẽ việc số hóa toàn văn 225 trang giáo trình, phục chế 1.096 bức ảnh $2\\times$ Retina và xây dựng nền tảng Web Võ Đường Số nhằm lưu giữ ngọn lửa di sản mãi mãi với thời gian.",
+          "Trong kỷ nguyên công nghệ số, Võ sư Lê Đắc Kiên ủng hộ mạnh mẽ việc số hóa toàn văn 225 trang giáo trình, phục chế 1.096 bức ảnh $2\\times$ Retina và xây dựng nền tảng Kho Di Sản Võ Học nhằm lưu giữ ngọn lửa di sản mãi mãi với thời gian.",
           "Tuy nhiên, ông luôn đau đáu dặn dò môn sinh khẩu quyết mang tính thức tỉnh: 'Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.'",
           "Màn hình số hay cuốn sách giáo trình chỉ là tấm bản đồ chỉ đường; nếu người học không tự mình bước lên sàn tập, không đổ mồ hôi đứng tấn và niêm thủ mỗi ngày thì mãi mãi không thể chạm tới công phu thực chứng của Phật Gia Vịnh Xuân."
         ],
-        keyHighlight: "Khẩu quyết 'Số hóa tri thức — Khổ luyện thực chứng' của Võ sư Kiên đã trở thành triết lý kim chỉ nam xuyên suốt toàn bộ dự án Võ Đường Số hôm nay."
+        keyHighlight: "Khẩu quyết 'Số hóa tri thức — Khổ luyện thực chứng' của Võ sư Kiên đã trở thành triết lý kim chỉ nam xuyên suốt toàn bộ công trình Kho Di Sản Võ Học hôm nay."
       }
     ],
     keyContributions: [
