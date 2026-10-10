@@ -94,10 +94,10 @@ Mã nguồn sạch sẽ, không còn file rác, đã được đồng bộ hóa 
 
 1. **Kho lưu trữ chính (Primary Remote):**
    - URL: [https://github.com/lechidung-png/phat-gia-vinh-xuan.git](https://github.com/lechidung-png/phat-gia-vinh-xuan.git)
-   - Nhánh: `main` (Commit mới nhất: `c598e9b` và các cập nhật hoàn thiện tài liệu)
+   - Nhánh: `main` (Commit: `6efa7c1`)
 2. **Kho lưu trữ thứ hai (Secondary Remote):**
    - URL: [https://github.com/dunglechi/phat-gia-vinh-xuan.git](https://github.com/dunglechi/phat-gia-vinh-xuan.git)
-   - Nhánh: `main`
+   - Nhánh: `main` (Commit: `6efa7c1`)
 3. **Gói triển khai tĩnh (Static Hosting Deliverable):**
    - Thư mục: `web/out/` (sẵn sàng tải lên Cloudflare Pages, Vercel, Netlify hoặc GitHub Pages với chi phí vận hành $0).
    - Hướng dẫn triển khai chi tiết: [web/DEPLOYMENT_GUIDE.md](file:///c:/Cowork/Phat%20gia%20Vinh%20Xuan/web/DEPLOYMENT_GUIDE.md).
