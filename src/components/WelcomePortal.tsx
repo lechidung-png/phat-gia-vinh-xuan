@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   Swords,
@@ -12,10 +12,9 @@ import {
   Award,
   Layers,
   Quote,
-  RefreshCw,
 } from "lucide-react";
 import { NavTab } from "@/components/Header";
-import { getDailyMartialQuote, getRandomMartialQuote, MartialWisdomQuote } from "@/data/martialPhilosophy";
+import { getRandomMartialQuote, MartialWisdomQuote } from "@/data/martialPhilosophy";
 
 interface WelcomePortalProps {
   onNavigateTab: (tab: NavTab, formId?: string, subTab?: string) => void;
@@ -36,11 +35,15 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   onNavigateTab,
   openStanceGuide,
 }) => {
-  const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getDailyMartialQuote());
+  const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getRandomMartialQuote());
 
-  const handleNextDailyQuote = () => {
-    setDailyQuote(getRandomMartialQuote());
-  };
+  // Tự động ngẫu nhiên đổi câu châm ngôn võ đạo sau mỗi 12 giây
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDailyQuote(getRandomMartialQuote());
+    }, 12000);
+    return () => clearInterval(timer);
+  }, []);
   const portalGateways = [
     {
       id: "library" as NavTab,
@@ -203,71 +206,65 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
         </div>
       </section>
 
-      {/* 3. CHÂM NGÔN VÕ ĐẠO MỖI NGÀY (DAILY MARTIAL WISDOM) */}
-      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#F5D06C]/35 bg-gradient-to-br from-[#2D160E] to-[#140C08] relative overflow-hidden shadow-xl animate-fadeIn">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col sm:flex-row items-center gap-5 flex-1 text-center sm:text-left">
-            {dailyQuote.authorImage && (
-              <div className="relative w-20 h-26 sm:w-22 sm:h-28 rounded-2xl overflow-hidden border-2 border-[#F5D06C]/70 shadow-xl shrink-0 bg-[#0F0805]">
+      {/* 3. CHÂM NGÔN VÕ ĐẠO TỰ ĐỘNG (MARTIAL WISDOM - AUTO RANDOM) */}
+      <section className="glass-panel p-6 sm:p-8 lg:p-10 rounded-3xl border border-[#F5D06C]/35 bg-gradient-to-br from-[#2D160E] to-[#140C08] relative overflow-hidden shadow-2xl">
+        <div key={dailyQuote.id} className="flex flex-col sm:flex-row items-center sm:items-start lg:items-center gap-6 sm:gap-8 animate-fadeIn">
+          {/* Khung Ảnh Người Nói - To Rõ Ràng & Cân Đối */}
+          <div className="shrink-0 flex flex-col items-center space-y-2.5">
+            <div className="relative w-36 h-48 sm:w-44 sm:h-58 lg:w-48 lg:h-64 rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#F5D06C] shadow-2xl bg-[#0F0805]">
+              {dailyQuote.authorImage ? (
                 <Image
                   src={dailyQuote.authorImage}
                   alt={dailyQuote.author}
                   fill
-                  sizes="100px"
-                  className="object-cover object-top"
+                  sizes="(max-width: 640px) 144px, (max-width: 1024px) 176px, 192px"
+                  className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                  priority
                 />
-                {dailyQuote.imageCaption && (
-                  <div className="absolute bottom-0 inset-x-0 bg-black/85 text-[9px] font-mono text-[#F5D06C] text-center py-0.5 truncate px-1">
-                    {dailyQuote.imageCaption}
-                  </div>
-                )}
-              </div>
-            )}
-
-            <div className="space-y-2 flex-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/30 text-[#F5D06C] text-xs font-mono font-bold uppercase tracking-wider">
-                <Quote className="w-3.5 h-3.5" />
-                Châm Ngôn Võ Đạo Hôm Nay
-              </div>
-
-              {dailyQuote.hanNom && (
-                <p className="text-xs font-serif text-[#F5D06C] tracking-widest font-mono">
-                  {dailyQuote.hanNom}
-                </p>
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-[#2A160E] to-[#140C08] p-4 text-center">
+                  <span className="text-5xl sm:text-6xl font-serif text-[#F5D06C] gold-gradient drop-shadow mb-1">
+                    佛
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-200/70">
+                    Phật Gia Vịnh Xuân
+                  </span>
+                </div>
               )}
-
-              <blockquote className="text-base sm:text-xl lg:text-2xl font-serif font-bold text-white leading-relaxed gold-gradient">
-                &ldquo;{dailyQuote.quote}&rdquo;
-              </blockquote>
-
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
-                <span className="text-amber-200 font-bold font-serif">{dailyQuote.author}</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-amber-200/70 font-mono text-[11px]">{dailyQuote.roleOrSource}</span>
-              </div>
             </div>
+            {dailyQuote.imageCaption && (
+              <span className="text-[11px] sm:text-xs font-mono text-[#F5D06C] text-center max-w-[200px] leading-tight opacity-90">
+                {dailyQuote.imageCaption}
+              </span>
+            )}
           </div>
 
-          {/* Nút thao tác chuyển nhanh */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <button
-              onClick={handleNextDailyQuote}
-              className="w-full sm:w-auto px-4 py-2.5 rounded-2xl bg-[#20150F] hover:bg-[#2F1C14] text-amber-200 border border-[#F5D06C]/30 text-xs font-semibold flex items-center justify-center gap-2 transition cursor-pointer"
-              title="Đổi châm ngôn ngẫu nhiên"
-            >
-              <RefreshCw className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Đổi Câu Khác</span>
-              <span className="sm:hidden">Đổi Câu</span>
-            </button>
+          {/* Khối Nội Dung Quote Cân Đối */}
+          <div className="space-y-3.5 flex-1 text-center sm:text-left">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/30 text-[#F5D06C] text-xs font-mono font-bold uppercase tracking-wider">
+              <Quote className="w-3.5 h-3.5" />
+              Châm Ngôn Võ Đạo
+            </div>
 
-            <button
-              onClick={() => onNavigateTab("lineage", undefined, "philosophy")}
-              className="w-full sm:w-auto px-5 py-2.5 rounded-2xl bg-[#F5D06C] hover:bg-[#E2B743] text-[#2A0E0A] font-bold text-xs flex items-center justify-center gap-2 transition cursor-pointer shadow-lg shadow-[#F5D06C]/20"
-            >
-              <span className="hidden sm:inline">Triết Lý &amp; Yếu Quyết</span>
-              <span className="sm:hidden">Triết Lý</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+            {dailyQuote.hanNom && (
+              <p className="text-xs sm:text-sm font-serif text-[#F5D06C] tracking-widest font-mono">
+                {dailyQuote.hanNom}
+              </p>
+            )}
+
+            <blockquote className="text-lg sm:text-2xl lg:text-3xl font-serif font-bold text-white leading-relaxed lg:leading-normal gold-gradient">
+              &ldquo;{dailyQuote.quote}&rdquo;
+            </blockquote>
+
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-1 text-xs sm:text-sm">
+              <span className="text-[#F5D06C] font-bold font-serif text-sm sm:text-base">
+                {dailyQuote.author}
+              </span>
+              <span className="text-slate-500">•</span>
+              <span className="text-amber-200/80 font-mono text-xs">
+                {dailyQuote.roleOrSource}
+              </span>
+            </div>
           </div>
         </div>
       </section>
