@@ -292,7 +292,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
     ],
     lineagePredecessor: "GS.TS Y Khoa Nguyễn Mạnh Nhâm",
     lineageSuccessors: [
-      "Hàng trăm môn sinh và huấn luyện viên trẻ tại Võ đường Huỳnh Thúc Kháng"
+      "Các môn sinh và người tập tại Võ đường Huỳnh Thúc Kháng"
     ],
     summary:
       "Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (2012). Người trực tiếp phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, gìn giữ phương pháp sư phạm y võ chuẩn xác và tiên phong đưa di sản võ học bước vào kỷ nguyên số.",

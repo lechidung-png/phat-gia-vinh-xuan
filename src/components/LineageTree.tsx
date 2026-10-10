@@ -405,7 +405,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho hàng trăm người tập theo đúng tinh thần Thiền Võ Phật Gia.
+                Là một trong 11 Võ sư nòng cốt kỳ cựu được ghi danh chính thức trong tác phẩm kinh điển <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Võ sư Lê Đắc Kiên hiện phụ trách giảng dạy và truyền lửa tại Võ đường Huỳnh Thúc Kháng, kiên trì gìn giữ phương pháp sư phạm y võ chuẩn xác, rèn giũa thân tâm và khai mở linh giác cho người tập theo đúng tinh thần Thiền Võ Phật Gia.
               </p>
 
               <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">
