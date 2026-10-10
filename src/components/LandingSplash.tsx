@@ -49,7 +49,7 @@ export const LandingSplash: React.FC<LandingSplashProps> = ({ onEnter }) => {
         {/* Typography */}
         <div className="space-y-4 mb-14 px-6">
           <p className="text-[#E2B743] uppercase tracking-[0.3em] sm:tracking-[0.5em] text-xs sm:text-sm font-semibold opacity-90">
-            Di Sản Võ Học • 1954 - 2012
+            Di Sản Võ Học
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white tracking-wide uppercase drop-shadow-2xl">
             Phật Gia <span className="gold-gradient">Vịnh Xuân</span>

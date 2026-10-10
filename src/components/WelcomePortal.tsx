@@ -131,7 +131,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           {/* Top Heritage Badge */}
           <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/40 text-[#F5D06C] text-xs font-bold tracking-widest uppercase">
             <span className="w-2 h-2 rounded-full bg-[#F5D06C] animate-pulse" />
-            Di Sản Võ Học Cổ Truyền • Phật Gia Vịnh Xuân Quyền (1954 - 2012)
+            Di Sản Võ Học Cổ Truyền • Phật Gia Vịnh Xuân Quyền
           </div>
 
           {/* Main Title */}
