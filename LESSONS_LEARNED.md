@@ -414,4 +414,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
   3. **Tôn trọng ngữ cảnh ảnh Võ sư Lê Đắc Kiên:**
      - Xóa bỏ triệt để tab switcher `[Chân Dung] [Thế Chào]` và xóa bỏ badge lặp từ "Chân Dung Võ Sư" ở cả `WelcomePortal.tsx` và `LineageTree.tsx`. Thẻ giới thiệu chỉ hiển thị ảnh chân dung đĩnh đạc kèm huy hiệu "20 Năm Võ Nghiệp".
      - Các bức ảnh khác của Võ sư Lê Đắc Kiên được sử dụng đúng tôn chỉ: đồng hành cùng các câu châm ngôn, phát biểu triết lý môn phái trong widget châm ngôn hằng ngày và trung tâm triết lý.
+  4. **Tích hợp câu châm ngôn sứ mệnh của Võ sư Lê Đắc Kiên:**
+     - Khẩu truyền tâm pháp: *“Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.”*
+     - Tôn vinh ở vị trí trang trọng: Khối Featured Wisdom Trang Chủ, khối trích dẫn Node 4 Sơ Đồ Truyền Thừa, mở rộng thành chủ đề thứ 6 *“Số Hóa & Thực Chứng”* (數字化與實修) và câu #26 trong Kho Châm Ngôn Võ Đạo, nhắc nhở môn sinh: Công nghệ số là ngọn hải đăng lưu giữ di sản, nhưng công phu thực chứng bắt buộc phải rèn giũa bằng mồ hôi và khổ luyện hằng ngày.
 

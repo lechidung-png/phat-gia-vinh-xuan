@@ -369,8 +369,12 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             </div>
 
             <blockquote className="font-serif italic text-base sm:text-lg lg:text-xl text-amber-100 font-semibold leading-relaxed">
-              &quot;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&quot;
+              &ldquo;Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.&rdquo;
             </blockquote>
+
+            <p className="text-xs text-amber-200/80 leading-relaxed font-serif">
+              Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.
+            </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs text-amber-200/70">
               <span>Học Trò Đời Thứ Tư</span>
@@ -381,7 +385,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
                 onClick={() => onNavigateTab("lineage")}
                 className="text-[#E2B743] hover:underline font-bold inline-flex items-center gap-1 cursor-pointer"
               >
-                Khám phá 5 chủ đề triết lý võ đạo <ArrowRight className="w-3 h-3" />
+                Khám phá 6 chủ đề triết lý võ đạo <ArrowRight className="w-3 h-3" />
               </button>
             </div>
           </div>

@@ -16,7 +16,8 @@ import {
   MapPin,
   Clock,
   Users,
-  GitBranch
+  GitBranch,
+  Layers
 } from "lucide-react";
 import { PhilosophyHub } from "@/components/PhilosophyHub";
 
@@ -102,6 +103,20 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Yếu lĩnh hạ bàn Kiềm Dương Tấn",
     icon: <ShieldCheck className="w-5 h-5 text-amber-500" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
+  },
+  {
+    id: "so-hoa-thuc-chung",
+    topic: "Số Hóa & Thực Chứng",
+    hanNom: "數字化與實修",
+    title: "Kiến Thức Số Hóa — Luyện Tập Thực Chứng Hằng Ngày",
+    quote:
+      "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
+    explanation:
+      "Nền tảng võ đường số bảo tồn trọn vẹn từng đồ hình, khẩu quyết và động tác chân truyền của tiền nhân. Nhưng công phu võ học không thể thẩm thấu qua màn hình; võ sinh phải trực tiếp bước lên sàn tập, đổ mồ hôi, cảm nhận từng nhịp thở và kiên trì rèn luyện mỗi ngày thì tri thức mới hóa thành phản xạ tự nhiên của cơ thể.",
+    source: "Đúc kết tâm pháp • Võ sư Lê Đắc Kiên",
+    icon: <Layers className="w-5 h-5 text-[#E2B743]" />,
+    image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
     imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   }
 ];
@@ -341,7 +356,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">
                 <Quote className="w-4 h-4 text-[#E2B743] shrink-0 mt-0.5 rotate-180" />
                 <span>
-                  &ldquo;Tập Vịnh Xuân không cốt để thắng người, mà để tĩnh tại trước vạn biến, gìn giữ tâm hồn thanh tịnh và nâng cao sinh lực nội tại.&rdquo;
+                  &ldquo;Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.&rdquo;
                 </span>
               </div>
             </div>
@@ -364,8 +379,8 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
           </p>
         </div>
 
-        {/* Tab Selector Cho 5 Chủ Đề Triết Lý */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+        {/* Tab Selector Cho 6 Chủ Đề Triết Lý */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
           {PHILOSOPHY_QUOTES.map((q) => {
             const isActive = q.id === activeQuoteId;
             return (

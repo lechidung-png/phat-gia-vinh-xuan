@@ -792,6 +792,16 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     context: "Cội nguồn tinh hoa truyền thừa từ Sư Tổ Nguyễn Tế Công khi đặt chân đến Việt Nam năm 1939.",
     authorImage: "/assets/images/historical/nguyen_te_cong.png",
     imageCaption: "Sư Tổ Nguyễn Tế Công (1877 - 1959)"
+  },
+  {
+    id: "q26",
+    quote: "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
+    author: "Võ sư Lê Đắc Kiên",
+    roleOrSource: "Võ Đường Huỳnh Thúc Kháng • Đúc kết tâm pháp",
+    category: "mindset",
+    context: "Số hóa tri thức là ngọn đèn lưu giữ di sản, nhưng công phu võ học bắt buộc phải rèn giũa bằng mồ hôi và khổ luyện thực chứng hằng ngày.",
+    authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   }
 ];
 
