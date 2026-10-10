@@ -271,18 +271,13 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
 
       {/* 2. CỔNG KHÁM PHÁ 3 KHÔNG GIAN (3 SPACES) */}
       <section className="space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-[#3D291F] pb-4">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#E2B743]">
-              <Layers className="w-3.5 h-3.5" /> Kiến trúc hệ thống
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
-              Nội dung hệ thống
-            </h2>
+        <div className="border-b border-[#3D291F] pb-4">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#E2B743]">
+            <Layers className="w-3.5 h-3.5" /> Kiến trúc hệ thống
           </div>
-          <p className="text-xs text-slate-400 max-w-md">
-            Mọi bài quyền, tư liệu và sơ đồ được bố trí khoa học, tra cứu tức thì chỉ với một thao tác nhấp chuột.
-          </p>
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
+            Nội dung hệ thống
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-5">
