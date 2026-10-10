@@ -198,7 +198,7 @@ interface CoreHandTechnique {
 const CORE_HAND_POSTURES: CoreHandTechnique[] = [
   {
     id: "than-thu",
-    nameVn: "Than Thủ (Tay Ngửa Xin Ăn)",
+    nameVn: "Than Thủ (Tay Ngửa)",
     nameHán: "攤手",
     pinyin: "Tān Shǒu",
     imgUrl: "/assets/images/fundamentals/than_thu.png",
@@ -206,7 +206,7 @@ const CORE_HAND_POSTURES: CoreHandTechnique[] = [
     source: "Đồ Hình Bàn Tay Ngửa",
     level: "Trung Bàn (Ngang Mỏ Ác / Chấn Thủy)",
     shortDesc: "Bàn tay mở ngửa hướng lên trời, cùi chỏ ép chặt trung lộ cách ngực 1 nắm tay. Lực phát từ bả vai truyền thẳng qua cùi chỏ ra đầu ngón tay.",
-    techniqueDetail: "Than thủ là thế đỡ cơ bản và quan trọng bậc nhất của Vịnh Xuân. Bàn tay mở ngửa hướng lên trời như người ăn mày ngửa tay xin ăn. Cùi chỏ ghim chặt vào trung lộ, không bao giờ nhấc bổng hay mở nách. Lực phát từ xương bả vai truyền thẳng qua cùi chỏ ra đầu ngón tay trên trục Tý Ngọ Tuyến.",
+    techniqueDetail: "Than thủ là thế đỡ cơ bản và quan trọng bậc nhất của Vịnh Xuân. Bàn tay mở ngửa hướng lên trời, các ngón tay duỗi thẳng tự nhiên mềm mại. Cùi chỏ ghim chặt vào trung lộ, không bao giờ nhấc bổng hay mở nách. Lực phát từ xương bả vai truyền thẳng qua cùi chỏ ra đầu ngón tay trên trục Tý Ngọ Tuyến.",
     keyPoints: [
       "Bàn tay ngửa, các ngón tay khép tự nhiên mềm mại",
       "Khuỷu tay cách mỏ ác đúng bằng 1 nắm tay (khoảng 8-10cm)",
