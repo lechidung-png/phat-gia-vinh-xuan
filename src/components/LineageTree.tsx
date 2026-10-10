@@ -46,7 +46,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Tâm đắc truyền thừa • Võ sư Lê Đắc Kiên (Võ đường Huỳnh Thúc Kháng)",
     icon: <Feather className="w-5 h-5 text-amber-400" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Thế chào Bão Quyền Lễ • Tâm Pháp Bất Tranh"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "ty-ngo-tuyen",
@@ -60,7 +60,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Triết lý hình học võ học • Phật Gia Vịnh Xuân",
     icon: <Compass className="w-5 h-5 text-emerald-400" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Chân dung Võ sư Lê Đắc Kiên • Trục Tý Ngọ"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "thinh-kinh-linh-giac",
@@ -74,7 +74,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Công phu Niêm Thủ • Khẩu quyết truyền thừa",
     icon: <Eye className="w-5 h-5 text-sky-400" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Chân dung Võ sư Lê Đắc Kiên • Thính Kình & Linh Giác"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "thien-vo-nhat-nhu",
@@ -88,7 +88,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Phật Gia Vịnh Xuân Quyền • Tông chỉ môn phái",
     icon: <Sparkles className="w-5 h-5 text-amber-300" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Thế chào Bão Quyền Lễ • Thiền Võ Nhất Như"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "tan-kiem-duong-tam-phap",
@@ -102,7 +102,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     source: "Yếu lĩnh hạ bàn Kiềm Dương Tấn",
     icon: <ShieldCheck className="w-5 h-5 text-amber-500" />,
     image: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Thế chào Bão Quyền Lễ • Hạ Bàn Tấn Pháp"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   }
 ];
 
@@ -117,7 +117,6 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
 }) => {
   const [subTab, setSubTab] = useState<"tree" | "philosophy">(initialSubTab);
   const [activeQuoteId, setActiveQuoteId] = useState<string>("bat-tranh");
-  const [kienNodePhoto, setKienNodePhoto] = useState<"portrait" | "greeting">("portrait");
   const activeQuote = PHILOSOPHY_QUOTES.find((q) => q.id === activeQuoteId) || PHILOSOPHY_QUOTES[0];
 
   useEffect(() => {
@@ -297,59 +296,17 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         {/* Node 4: Võ Sư Lê Đắc Kiên - Võ Đường Huỳnh Thúc Kháng */}
         <div className="sm:ml-20 glass-panel p-6 sm:p-7 rounded-2xl border-2 border-[#E2B743]/60 relative group hover:border-[#E2B743] transition-all bg-gradient-to-br from-[#1C120B] to-[#120B07] shadow-2xl">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-            {/* Ảnh chân dung / thế chào Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
+            {/* Ảnh Võ sư Lê Đắc Kiên - To rõ & trang trọng */}
             <div className="flex flex-col items-center shrink-0 space-y-2.5">
               <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-72 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl bg-[#0F0805] group-hover:scale-105 transition-transform duration-300">
                 <Image
-                  src={
-                    kienNodePhoto === "portrait"
-                      ? "/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                      : "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg"
-                  }
-                  alt={
-                    kienNodePhoto === "portrait"
-                      ? "Võ sư Lê Đắc Kiên - Chân dung phụ trách Võ đường Huỳnh Thúc Kháng"
-                      : "Võ sư Lê Đắc Kiên - Thế chào Bão Quyền Lễ truyền thống"
-                  }
+                  src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
+                  alt="Võ sư Lê Đắc Kiên - Phụ trách Võ đường Huỳnh Thúc Kháng"
                   fill
                   sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 224px"
                   className="object-cover object-top transition-opacity duration-300"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
-                <div className="absolute bottom-2 inset-x-2 text-center">
-                  <span className="text-[11px] font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow">
-                    {kienNodePhoto === "portrait" ? "Chân Dung Võ Sư" : "Thế Chào Bão Quyền Lễ"}
-                  </span>
-                </div>
-              </div>
-
-              {/* Bộ nút chuyển đổi 2 ảnh cho Võ sư Lê Đắc Kiên */}
-              <div className="flex items-center gap-1.5 p-1 rounded-xl bg-black/60 border border-[#3D291F] text-[11px]">
-                <button
-                  type="button"
-                  onClick={() => setKienNodePhoto("portrait")}
-                  className={`px-2.5 py-1 rounded-lg font-medium transition cursor-pointer ${
-                    kienNodePhoto === "portrait"
-                      ? "bg-[#E2B743] text-black font-bold shadow"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                  title="Xem ảnh chân dung đĩnh đạc"
-                >
-                  Chân Dung
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setKienNodePhoto("greeting")}
-                  className={`px-2.5 py-1 rounded-lg font-medium transition cursor-pointer ${
-                    kienNodePhoto === "greeting"
-                      ? "bg-[#E2B743] text-black font-bold shadow"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                  title="Xem ảnh thế chào Bão Quyền Lễ tôn sư trọng đạo"
-                >
-                  Thế Chào
-                </button>
               </div>
             </div>
 
@@ -466,7 +423,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   Võ Đường Huỳnh Thúc Kháng
                 </p>
                 <span className="text-[10px] text-amber-200/70 block font-mono">
-                  {activeQuote.imageCaption || "Phật Gia Vịnh Xuân"}
+                  Phật Gia Vịnh Xuân
                 </span>
               </div>
             </div>

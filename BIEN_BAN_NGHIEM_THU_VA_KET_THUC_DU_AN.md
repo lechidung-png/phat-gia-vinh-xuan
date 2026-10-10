@@ -23,12 +23,12 @@ Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa to�
 | STT | Hạng Mục / Tài Sản | Quy Mô / Số Lượng | Trạng Thái Kiểm Định | Vị Trí Lưu Trữ / Đường Dẫn |
 | :---: | :--- | :--- | :---: | :--- |
 | **1** | **Kho Ảnh Phục Chế $2\times$ Retina** | **1.096 ảnh** sạch nền `#FFFFFF`, khử nhiễu, tẩy chữ thấm mặt sau | **100% Đạt Chuẩn** | `web/public/assets/images/techniques/` |
-| **2** | **18 Bài Quyền & Binh Khí** | **1.096 động tác phân thế** chi tiết (Tam đại quyền, 108, Mộc nhân, Ngũ hình, Song đao, Côn, Kiếm) | **100% Đạt Chuẩn** | `web/src/data/canonicalCatalog.ts` |
+| **2** | **18 Bài Quyền & Binh Khí** | **18 bài quyền & binh khí** (Tam đại quyền, 108, Mộc nhân, Ngũ hình, Song đao, Côn, Kiếm) từ 1.096 ảnh phục chế gốc | **100% Đạt Chuẩn** | `web/src/data/canonicalCatalog.ts` |
 | **3** | **Cơ Bản Công & Bái Tổ** | 14 thủ pháp, 8 thế cước pháp, **9 bước Bái Tổ** (VS Lê Văn Tùng), 4 bài luyện căn bản (xoay tay B-M-A-N-B) | **100% Đạt Chuẩn** | `web/src/components/FundamentalHandFootAtlas.tsx` |
 | **4** | **Trục Tý Ngọ Tuyến Giải Phẫu** | Laser Tý Ngọ thẳng tắp sống mũi $\rightarrow$ giữa hai chân ($\Delta x = 0\text{px}$), 4 ảnh đối kháng 2 người thực chiến | **100% Đạt Chuẩn** | `web/src/components/CenterlineExplorer.tsx` |
 | **5** | **Cọc Gỗ Mộc Nhân Số Hóa** | Vector SVG 5 tầng cọc tương tác & kho ảnh thao pháp thực tế từ sách gốc | **100% Đạt Chuẩn** | `web/src/components/WoodenDummyCanvas.tsx` |
 | **6** | **200 Tình Huống Thực Chiến** | 200 thế đòn chia 5 vùng (Thượng/Trung/Hạ bàn, Cầm nã, Tự vệ phố) & Trắc nghiệm phản xạ 10 câu | **100% Đạt Chuẩn** | `web/src/components/CombatScenariosExplorer.tsx` |
-| **7** | **Triết Lý & Yếu Quyết Võ Học** | 7 Khẩu quyết cốt lõi, 42 Lời khuyên của sư phụ, Châm ngôn hôm nay, Thế chào Bão Quyền Lễ (VS Lê Đắc Kiên), 5 tông sư thế giới | **100% Đạt Chuẩn** | `web/src/components/PhilosophyHub.tsx` |
+| **7** | **Triết Lý & Yếu Quyết Võ Học** | 7 Khẩu quyết cốt lõi, 42 Lời khuyên của sư phụ, Châm ngôn hôm nay, Tư liệu ảnh Võ sư Lê Đắc Kiên, 5 tông sư thế giới | **100% Đạt Chuẩn** | `web/src/components/PhilosophyHub.tsx` |
 | **8** | **Âm Thanh Thiền Định (Zen Audio)** | Synthesizer chuông xoay Tây Tạng & mõ gỗ Đan Điền thuần Web Audio API | **100% Đạt Chuẩn** | `web/src/lib/zenAudio.ts` |
 | **9** | **Công Thái Học Di Động (Mobile UX)**| Responsive Adaptive Wording, Mobile Bottom Dock, Swipe Gestures, $0\text{px}$ overflow | **100% Đạt Chuẩn** | `web/src/components/MobileBottomBar.tsx` |
 | **10**| **Bộ Tìm Kiếm Toàn Thư (`Ctrl + K`)**| In-memory search $< 2\text{ms}$, chuẩn hóa tiếng Việt NFD không dấu | **100% Đạt Chuẩn** | `web/src/components/CommandPalette.tsx` |
@@ -59,9 +59,9 @@ Mọi chỉ số đều được đo lường thực tế bằng máy học và 
 
 ---
 
-## IV. BẢN ĐÚC KẾT 21 BÀI HỌC KINH NGHIỆM CỐT TỬ (LESSONS LEARNED SUMMARY)
+## IV. BẢN ĐÚC KẾT 22 BÀI HỌC KINH NGHIỆM CỐT TỬ (LESSONS LEARNED SUMMARY)
 
-Toàn bộ 21 bài học kinh nghiệm sâu sắc đã được hệ thống hóa chi tiết tại file [LESSONS_LEARNED.md](file:///c:/Cowork/Phat%20gia%20Vinh%20Xuan/LESSONS_LEARNED.md):
+Toàn bộ 22 bài học kinh nghiệm sâu sắc đã được hệ thống hóa chi tiết tại file [LESSONS_LEARNED.md](file:///c:/Cowork/Phat%20gia%20Vinh%20Xuan/LESSONS_LEARNED.md):
 
 1. **Chống co rút quy mô trang:** Ban hành quy tắc Zero-Sampling, đảm bảo đủ 108/108 chiêu thức và Page Budget $\ge 100$ trang Word.
 2. **Bảo toàn 2 người đối kháng:** Thuật toán Computer Vision phát hiện đa contour liên hợp, không để mất người thứ hai.
@@ -84,6 +84,7 @@ Toàn bộ 21 bài học kinh nghiệm sâu sắc đã được hệ thống hó
 19. **Đa dạng hóa hình ảnh võ sư & Thế chào Bão Quyền Lễ:** Bổ sung ảnh nghi lễ của Võ sư Lê Đắc Kiên, tôn vinh tinh thần "Tiên học lễ, hậu học văn".
 20. **Tinh giản nút bấm Mobile (Responsive Adaptive Wording):** Nhãn nút tự động cô đọng trên điện thoại, giữ 1 hàng duy nhất, touch target $\ge 44\text{px}$.
 21. **Chuẩn mực Console sạch tuyệt đối:** Dọn sạch dead code, thay thế ảnh 404 bằng CSS gradient nội sinh, duy trì console sạch bóng.
+22. **Chuẩn xác thống kê & Tôn trọng ngữ cảnh ảnh võ sư:** Bãi bỏ các con số thống kê phô trương thiếu chuẩn xác, chuẩn hóa 3 nút điều hướng sư phạm Hero, xóa lặp từ "chân dung" và sử dụng ảnh linh hoạt theo từng câu châm ngôn võ đạo.
 
 ---
 

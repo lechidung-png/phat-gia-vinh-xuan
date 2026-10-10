@@ -39,7 +39,7 @@ web/src/
 │   ├── HeritageReader.tsx           # Tàng Kinh Các: Đọc toàn văn 18 chuyên đề lịch sử, lý luận & nội công
 │   ├── KnowledgeHub.tsx             # Trung tâm tri thức & quản trị dữ liệu võ học
 │   ├── LandingSplash.tsx            # Cổng chào mừng Welcome Portal và Stepper 5 chặng
-│   ├── LineageTree.tsx              # Sơ đồ truyền thừa 4 thế hệ, trích dẫn triết lý & thế chào Bão Quyền Lễ
+│   ├── LineageTree.tsx              # Sơ đồ truyền thừa 4 thế hệ, trích dẫn triết lý & hình ảnh Võ sư Lê Đắc Kiên
 │   ├── MartialEmblem.tsx            # Biểu tượng linh thú Ngũ Hình Quyền (Rồng, Rắn, Hổ, Báo, Hạc) & Binh Khí
 │   ├── MegaMenuModal.tsx            # Modal mục lục toàn thư 5 phân hệ
 │   ├── MobileBottomBar.tsx          # Thanh điều hướng đáy cố định (Mobile Bottom Dock) chuẩn công thái học
@@ -49,7 +49,7 @@ web/src/
 │   └── WoodenDummyCanvas.tsx        # Cọc Gỗ Mộc Nhân SVG tương tác 5 tầng cọc & thư viện ảnh thao pháp
 │
 ├── data/                            # Cơ sở dữ liệu võ học chính xác
-│   ├── canonicalCatalog.ts          # CSDL chuẩn 18 bài quyền, 1.096 động tác và danh mục phân hệ
+│   ├── canonicalCatalog.ts          # CSDL chuẩn 18 bài quyền và danh mục phân hệ từ 1.096 ảnh phục chế gốc
 │   ├── fundamentals.ts              # Dữ liệu 14 thủ pháp căn bản, 8 thế cước pháp & 4 bài luyện
 │   ├── bai_to_data.json             # Dữ liệu 9 bước nghi thức Bái Tổ Sư Môn do Võ sư Lê Văn Tùng thị phạm
 │   ├── combatScenarios.ts           # CSDL 200 tình huống đối kháng phân theo 5 vùng giải phẫu

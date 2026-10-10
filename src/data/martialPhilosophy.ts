@@ -741,7 +741,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     category: "philosophy",
     context: "Thiền võ nhất như: Giữ tâm tĩnh lặng giữa muôn trùng bão táp đối kháng.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Thế chào Bão Quyền Lễ"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q21",
@@ -751,7 +751,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     category: "philosophy",
     context: "Lai lưu khứ tống, suất thủ trực xung: Hóa giải xung đột bằng tâm thế mềm mại, nhu hòa mà kiên định.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q22",
@@ -761,7 +761,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     category: "mindset",
     context: "Nghi lễ bão quyền biểu thị tay trái dựng chưởng là đức nhân từ, tay phải nắm quyền là ý chí dũng mãnh, lấy nhân chế cương.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Thế chào Bão Quyền Lễ"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q23",
@@ -771,7 +771,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     category: "strategy",
     context: "Thính kình và linh giác: Khi tâm an tịnh, xúc giác sẽ trở thành đôi mắt thứ hai nhạy bén không độ trễ.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q24",
@@ -781,7 +781,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     category: "strategy",
     context: "Định hình trục Tý Ngọ và kết cấu vòm nêm kiềm dương bảo toàn tuyệt đối vùng hạ bàn.",
     authorImage: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    imageCaption: "Võ sư Lê Đắc Kiên • Thế chào Bão Quyền Lễ"
+    imageCaption: "Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng"
   },
   {
     id: "q25",

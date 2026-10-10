@@ -28,6 +28,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
 19. [Bài Học 19: Đa Dạng Hóa Hình Ảnh Võ Sư & Thế Chào Bão Quyền Lễ (Martial Etiquette & Dynamic Visuals)](#bài-học-19-đa-dạng-hóa-hình-ảnh-võ-sư--thế-chào-bão-quyền-lễ-martial-etiquette--dynamic-visuals)
 20. [Bài Học 20: Tinh Giản Nút Bấm Di Động & Responsive Adaptive Wording (Mobile Touch Target & Ergonomics)](#bài-học-20-tinh-giản-nút-bấm-di-động--responsive-adaptive-wording-mobile-touch-target--ergonomics)
 21. [Bài Học 21: Triệt Tiêu Nợ Kỹ Thuật & Chuẩn Mực "Console Sạch Tuyệt Đối" (Zero-Tech-Debt & Clean Console Discipline)](#bài-học-21-triệt-tiêu-nợ-kỹ-thuật--chuẩn-mực-console-sạch-tuyệt-đối-zero-tech-debt--clean-console-discipline)
+22. [Bài Học 22: Chuẩn Xác Thống Kê & Tôn Trọng Ngữ Cảnh Ảnh Võ Sư (Authentic Asset Counting & Dynamic Quote Context)](#bài-học-22-chuẩn-xác-thống-kê--tôn-trọng-ngữ-cảnh-ảnh-võ-sư-authentic-asset-counting--dynamic-quote-context)
 
 ---
 
@@ -390,4 +391,27 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
   1. **Xóa sổ triệt để Dead Code:** Dọn sạch 100% các file cũ, quy tụ toàn bộ dữ liệu 18 bài quyền và động tác phân thế về một nguồn chân lý duy nhất (Single Source of Truth) là `canonicalCatalog.ts`.
   2. **Khắc phục triệt để lỗi 404:** Thay thế ảnh `noise.png` bằng CSS `radial-gradient` pattern siêu nhẹ nội sinh, không phát sinh bất kỳ HTTP request nào, tải tức thì 0ms.
   3. **Nâng cấp Quality Gate:** Ban hành quy tắc thép V-AOF: *"Bất kỳ một lỗi đỏ console nào (kể cả 404 tài nguyên nhỏ hay warning hydration) đều bị tính là nghiệm thu THẤT BẠI"*. Console trình duyệt phải hoàn toàn sạch bóng (`0 errors, 0 warnings`) trên 100% các trang.
+
+---
+
+### Bài Học 22: Chuẩn Xác Thống Kê & Tôn Trọng Ngữ Cảnh Ảnh Võ Sư (Authentic Asset Counting & Dynamic Quote Context)
+- **Hiện tượng & Người dùng phản ánh:**
+  - Người dùng xem xét kỹ lưỡng và chỉ ra các bất cập:
+    1. *"Tôi xem kỹ lại thì không thể lên đến 1096 động tác được, bản chất là có 1096 ảnh, còn số động tác thì không nhiều như thế, nhiều hình ảnh lặp hoặc là các nội dung giao đấu, tập mộc nhân. Hãy điều chỉnh lại con số thống kê này."*
+    2. *"Bỏ các thống kê vì không chính xác và không nhiều ý nghĩa."*
+    3. *"Các hình ảnh Võ sư Lê Đắc Kiên dùng để hiển thị kèm các câu quote khác nhau không phải để thêm vào thành các động tác chào hay gì khác, hãy bỏ tab thế chào đi. Cùng một chỗ 2 lần nhắc chữ chân dung."*
+    4. *"3 nút đầu tiên trên Hero cần là: 1. Lịch sử và triết lý, 2. Kiến thức chung, 3. Các bài quyền."*
+- **Nguyên nhân gốc rễ (RCA):**
+  - **Đồng nhất cơ học giữa tệp ảnh và động tác võ học:** Trong sách giáo trình 225 trang có 1.096 bức ảnh được phục chế. Tuy nhiên, nhiều bức ảnh là các góc máy khác nhau của cùng một thế, các bước lặp chu kỳ (như xoay tay, thu quyền), các giai đoạn tiếp cận trong đòn giao đấu 2 người, hoặc các nhịp gõ trên cọc mộc nhân. Việc ghi "1.096 Động Tác Thị Phạm" là thiếu chính xác về mặt võ học và tạo cảm giác phóng đại số lượng.
+  - **Thiếu nhạy bén về mục đích sử dụng tư liệu:** Khi người dùng cung cấp thêm ảnh Võ sư Lê Đắc Kiên thực hiện nghi lễ bão quyền, mục đích là để đa dạng hóa hình ảnh đồng hành cùng các câu danh ngôn/châm ngôn triết lý khác nhau. Việc máy móc tạo ra tab switcher `[Chân Dung] [Thế Chào]` biến một cử chỉ lễ nghi thành một "thế võ" để bật tắt, gây rườm rà và dẫn đến lỗi lặp từ ("Chân Dung Võ Sư" trong ảnh và nút "Chân Dung" bên dưới).
+  - **Phô trương số liệu thừa:** Khối 4 thẻ thống kê số liệu trên Hero Banner vừa không chính xác tuyệt đối vừa không hỗ trợ hành trình học tập của võ sinh.
+- **Giải pháp triệt để:**
+  1. **Bãi bỏ hoàn toàn khối thống kê:** Xóa bỏ 4 thẻ thống kê số liệu khỏi Hero Banner của `WelcomePortal.tsx`, loại bỏ các đoạn văn bản tuyên bố "1.096 thế đòn" trong `CurriculumExplorer.tsx`.
+  2. **Chuẩn hóa 3 nút điều hướng Hero đúng thứ tự sư phạm:**
+     - Nút 1: `Lịch sử và triết lý` $\rightarrow$ Dẫn trực tiếp vào phân hệ Truyền thừa & Triết lý (`lineage`).
+     - Nút 2: `Kiến thức chung` $\rightarrow$ Dẫn trực tiếp vào phân hệ Cơ bản công (`fundamentals`).
+     - Nút 3: `Các bài quyền` $\rightarrow$ Dẫn trực tiếp vào phân hệ 18 bài quyền & binh khí (`forms`).
+  3. **Tôn trọng ngữ cảnh ảnh Võ sư Lê Đắc Kiên:**
+     - Xóa bỏ triệt để tab switcher `[Chân Dung] [Thế Chào]` và xóa bỏ badge lặp từ "Chân Dung Võ Sư" ở cả `WelcomePortal.tsx` và `LineageTree.tsx`. Thẻ giới thiệu chỉ hiển thị ảnh chân dung đĩnh đạc kèm huy hiệu "20 Năm Võ Nghiệp".
+     - Các bức ảnh khác của Võ sư Lê Đắc Kiên được sử dụng đúng tôn chỉ: đồng hành cùng các câu châm ngôn, phát biểu triết lý môn phái trong widget châm ngôn hằng ngày và trung tâm triết lý.
 

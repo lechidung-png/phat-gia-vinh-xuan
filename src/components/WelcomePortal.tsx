@@ -5,9 +5,7 @@ import Image from "next/image";
 import {
   Swords,
   Hand,
-  Sparkles,
   BookOpen,
-  Search,
   ArrowRight,
   ShieldCheck,
   ChevronRight,
@@ -21,7 +19,7 @@ import { getDailyMartialQuote, getRandomMartialQuote, MartialWisdomQuote } from 
 
 interface WelcomePortalProps {
   onNavigateTab: (tab: NavTab, formId?: string, subTab?: string) => void;
-  openSearch: () => void;
+  openSearch?: () => void;
   openStanceGuide: () => void;
 }
 
@@ -36,11 +34,9 @@ interface LearningStep {
 
 export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   onNavigateTab,
-  openSearch,
   openStanceGuide,
 }) => {
   const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getDailyMartialQuote());
-  const [kienHomePhoto, setKienHomePhoto] = useState<"portrait" | "greeting">("portrait");
 
   const handleNextDailyQuote = () => {
     setDailyQuote(getRandomMartialQuote());
@@ -153,62 +149,32 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             Bảo tồn & phát huy di sản võ học Phật Gia Vịnh Xuân — Võ Đường Huỳnh Thúc Kháng.
           </p>
 
-          {/* CTA Action Buttons */}
+          {/* CTA Action Buttons: 3 Nút Điều Hướng Trọng Tâm */}
           <div className="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-4">
             <button
-              onClick={() => onNavigateTab("forms", "bai-07")}
+              onClick={() => onNavigateTab("lineage")}
               className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-gradient-to-r from-[#F5D06C] to-[#C27D38] text-[#2A0E0A] font-bold text-xs sm:text-sm hover:brightness-110 transition shadow-lg shadow-[#F5D06C]/20 flex items-center gap-1.5 sm:gap-2 group cursor-pointer"
             >
-              <Swords className="w-4 h-4 text-[#2A0E0A] group-hover:rotate-12 transition-transform" />
-              <span className="hidden sm:inline">Khám Phá 18 Bài Quyền</span>
-              <span className="sm:hidden">18 Bài Quyền</span>
-              <ArrowRight className="w-4 h-4" />
+              <BookOpen className="w-4 h-4 text-[#2A0E0A]" />
+              <span>Lịch sử và triết lý</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </button>
 
             <button
-              onClick={() => onNavigateTab("dummy")}
+              onClick={() => onNavigateTab("fundamentals")}
               className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-[#20150F] border border-[#F5D06C]/40 text-amber-200 hover:text-white hover:bg-[#2D1D16] hover:border-[#F5D06C] font-semibold text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-[#F5D06C]" />
-              <span className="hidden sm:inline">Mộc Nhân (1954)</span>
-              <span className="sm:hidden">Mộc Nhân</span>
+              <Layers className="w-4 h-4 text-[#F5D06C]" />
+              <span>Kiến thức chung</span>
             </button>
 
             <button
-              onClick={openSearch}
-              className="px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
+              onClick={() => onNavigateTab("forms", "bai-07")}
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
             >
-              <Search className="w-4 h-4 text-[#F5D06C]" />
-              <span className="hidden sm:inline">Tra Cứu Chiêu Thức</span>
-              <span className="sm:hidden">Tra Cứu</span>
-              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-[#2A1C14] rounded border border-[#3D291F] text-amber-200/80 font-mono">
-                Ctrl+K
-              </kbd>
+              <Swords className="w-4 h-4 text-[#F5D06C]" />
+              <span>Các bài quyền</span>
             </button>
-          </div>
-        </div>
-
-        {/* 4 Heritage Martial Stats Pillars */}
-        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-[#F5D06C]/20">
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">11 • 18</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Phân Hệ • Bài Quyền</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Quyền pháp, mộc nhân & binh khí</div>
-          </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">1.096</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Động Tác Thị Phạm</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Phân thế chi tiết từng bước</div>
-          </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#F5D06C]">108</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Chiêu Thức Liên Hoàn</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Đơn luyện & đối kháng chân truyền</div>
-          </div>
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-[#140C08]/80 border border-[#F5D06C]/30 shadow-inner">
-            <div className="text-xl sm:text-3xl font-serif font-black text-[#10B981]">4</div>
-            <div className="text-[11px] sm:text-xs font-bold text-white mt-0.5">Thế Hệ Di Sản</div>
-            <div className="text-[10px] text-amber-200/70 mt-1">Từ Sư Tổ đến VS Lê Đắc Kiên</div>
           </div>
         </div>
       </section>
@@ -376,63 +342,22 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       {/* 3. FEATURED WISDOM: VÕ SƯ LÊ ĐẮC KIÊN & TRIẾT LÝ VÕ ĐẠO */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#C27D38]/40 relative overflow-hidden shadow-xl">
         <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
-          {/* Ảnh chân dung / thế chào Võ sư Lê Đắc Kiên - To rõ & Trang trọng */}
+          {/* Ảnh Võ sư Lê Đắc Kiên - To rõ & Trang trọng */}
           <div className="relative shrink-0 flex flex-col items-center space-y-2.5">
             <div className="w-48 h-60 sm:w-60 sm:h-76 md:w-72 md:h-92 rounded-3xl overflow-hidden border-2 border-[#E2B743] shadow-2xl shadow-amber-950/80 relative bg-[#140C08] group">
               <Image
-                src={
-                  kienHomePhoto === "portrait"
-                    ? "/assets/images/instructors/vo_su_le_dac_kien.jpg"
-                    : "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg"
-                }
-                alt={
-                  kienHomePhoto === "portrait"
-                    ? "Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
-                    : "Võ sư Lê Đắc Kiên - Thế chào Bão Quyền Lễ tôn sư trọng đạo"
-                }
+                src="/assets/images/instructors/vo_su_le_dac_kien.jpg"
+                alt="Võ sư Lê Đắc Kiên - Chủ nhiệm Võ đường Huỳnh Thúc Kháng"
                 fill
                 sizes="(max-width: 640px) 192px, (max-width: 768px) 240px, 288px"
                 className="object-cover object-top group-hover:scale-105 transition-all duration-500"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-3 inset-x-2 text-center">
-                <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-3 py-1 rounded-full border border-[#E2B743]/50 shadow-lg">
-                  {kienHomePhoto === "portrait" ? "Chân Dung Võ Sư" : "Thế Chào Bão Quyền Lễ"}
-                </span>
-              </div>
             </div>
 
-            {/* Switcher 2 ảnh & huy hiệu */}
-            <div className="flex items-center gap-2">
-              <div className="flex items-center gap-1 p-1 rounded-xl bg-black/60 border border-[#3D291F] text-xs">
-                <button
-                  type="button"
-                  onClick={() => setKienHomePhoto("portrait")}
-                  className={`px-3 py-1 rounded-lg font-medium transition cursor-pointer ${
-                    kienHomePhoto === "portrait"
-                      ? "bg-[#E2B743] text-black font-bold shadow"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  Chân Dung
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setKienHomePhoto("greeting")}
-                  className={`px-3 py-1 rounded-lg font-medium transition cursor-pointer ${
-                    kienHomePhoto === "greeting"
-                      ? "bg-[#E2B743] text-black font-bold shadow"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  Thế Chào
-                </button>
-              </div>
-              <div className="px-3 py-1 rounded-xl bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
-                <Award className="w-3.5 h-3.5" />
-                20 Năm Võ Nghiệp
-              </div>
+            <div className="px-3.5 py-1.5 rounded-xl bg-[#E2B743] text-black text-xs font-bold shadow-md font-mono flex items-center gap-1.5">
+              <Award className="w-3.5 h-3.5" />
+              20 Năm Võ Nghiệp
             </div>
           </div>
 

@@ -188,7 +188,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               18 Bài Quyền Pháp &amp; Binh Khí
             </h2>
             <p className="text-xs sm:text-sm text-amber-200/80 leading-relaxed">
-              Trọn bộ <strong>18 bài quyền &amp; binh khí thị phạm thực tế</strong> với 1.096 thế đòn liên hoàn từ giáo trình chính thống: Tam Đại Quyền Pháp (Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ), 108 Thế liên hoàn (đơn luyện &amp; đối luyện), Mộc Nhân, Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc) và Kho Binh Khí Cổ Truyền (Bát Trảm Đao, Côn, Kiếm).
+              Trọn bộ <strong>18 bài quyền &amp; binh khí thị phạm thực tế</strong> từ giáo trình chính thống: Tam Đại Quyền Pháp (Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ), 108 Thế liên hoàn (đơn luyện &amp; đối luyện), Mộc Nhân, Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc) và Kho Binh Khí Cổ Truyền (Bát Trảm Đao, Côn, Kiếm).
             </p>
           </div>
 
