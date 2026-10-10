@@ -283,8 +283,8 @@ export const MASTER_PROFILES: MasterProfile[] = [
     hometown: "Hà Nội, Việt Nam",
     portrait: "/assets/images/instructors/vo_su_le_dac_kien.jpg",
     greetingPhoto: "/assets/images/instructors/vo_su_le_dac_kien_chao.jpg",
-    coreQuote: "Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.",
-    quoteContext: "Thông điệp tâm huyết gửi tới thế hệ môn đồ thời đại số tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
+    coreQuote: "Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.",
+    quoteContext: "Tâm pháp truyền thừa của Võ sư Lê Đắc Kiên gửi tới môn sinh tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
     historicalLocations: [
       "Võ Đường Huỳnh Thúc Kháng (Hà Nội)",
       "Sàn tập Phật Gia Vịnh Xuân Hà Nội",

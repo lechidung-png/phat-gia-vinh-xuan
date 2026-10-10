@@ -411,7 +411,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <div className="p-3.5 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-100/90 italic flex items-start gap-2">
                 <Quote className="w-4 h-4 text-[#E2B743] shrink-0 mt-0.5 rotate-180" />
                 <span>
-                  &ldquo;Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.&rdquo;
+                  &ldquo;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&rdquo;
                 </span>
               </div>
 

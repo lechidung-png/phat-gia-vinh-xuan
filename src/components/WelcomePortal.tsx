@@ -365,8 +365,8 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Võ Sư Lê Đắc Kiên • Chủ Nhiệm Võ Đường Huỳnh Thúc Kháng
             </div>
 
-            <blockquote className="font-serif italic text-lg sm:text-xl lg:text-2xl text-amber-100 font-bold leading-relaxed">
-              &ldquo;Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.&rdquo;
+            <blockquote className="font-serif italic text-base sm:text-lg lg:text-xl text-amber-100 font-semibold leading-relaxed">
+              &ldquo;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&rdquo;
             </blockquote>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs text-amber-200/70">
