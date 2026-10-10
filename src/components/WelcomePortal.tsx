@@ -190,13 +190,13 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               <span>Lời Giới Thiệu • Nguồn Gốc Tư Liệu Võ Học</span>
             </div>
             <h3 className="text-lg sm:text-2xl font-bold font-serif text-white leading-snug">
-              Giáo Trình Chính Thống Phật Gia Vịnh Xuân Quyền
+              Giáo Trình Phật Gia Vịnh Xuân Quyền
             </h3>
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình và khẩu quyết được số hóa từ giáo trình chính thống của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
+              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình và khẩu quyết được số hóa từ giáo trình của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
             </p>
-            <div className="pt-1 flex items-center gap-2 text-xs text-amber-200/80 italic">
-              <span className="text-[#F5D06C] font-bold">Quy ước hiển thị:</span>
+            <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 text-xs text-amber-200/90 italic bg-[#1E120B] p-2.5 rounded-xl border border-[#F5D06C]/25">
+              <span className="text-[#F5D06C] font-bold not-italic shrink-0">Quy ước hiển thị:</span>
               <span>Hệ thống lược bỏ chú thích số trang trong từng chiêu thức để người tập tập trung vào yếu lĩnh thân pháp và tâm pháp võ học.</span>
             </div>
           </div>

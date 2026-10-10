@@ -175,7 +175,7 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
     return (
       <div className="glass-panel p-8 rounded-3xl border border-[#F5D06C]/30 text-center space-y-3">
         <p className="text-amber-200/90 text-sm">Bài học này là bài đọc lý thuyết / tư liệu lịch sử tổng hợp.</p>
-        <div className="text-xs text-[#F5D06C] font-mono font-semibold">Phạm vi: {lesson.pageRange}</div>
+        <div className="text-xs text-[#F5D06C] font-mono font-semibold">Chuyên đề: {lesson.title}</div>
       </div>
     );
   }

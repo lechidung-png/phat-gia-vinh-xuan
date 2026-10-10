@@ -1393,7 +1393,7 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
                   4 Bài Luyện Căn Bản (Xoay Cổ Tay, Biên Thân &amp; Bộ Pháp Tý Ngọ)
                 </h3>
                 <p className="text-xs sm:text-sm text-amber-200/80 mt-1 max-w-3xl leading-relaxed">
-                  Trọn bộ 4 bài tập cốt tủy từ giáo trình chính thống: Khai mở 8 khớp xương cổ tay (đồ hình vòng xoay A-B-M-N Than thủ &amp; Phục thủ), hoành thoái biên thân né đòn trên trục Tý Ngọ Tuyến, và bộ pháp xước mã tiến thoái túc bất ly địa.
+                  Trọn bộ 4 bài tập cốt tủy từ giáo trình: Khai mở 8 khớp xương cổ tay (đồ hình vòng xoay A-B-M-N Than thủ &amp; Phục thủ), hoành thoái biên thân né đòn trên trục Tý Ngọ Tuyến, và bộ pháp xước mã tiến thoái túc bất ly địa.
                 </p>
               </div>
 

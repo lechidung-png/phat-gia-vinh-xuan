@@ -188,8 +188,12 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               18 Bài Quyền Pháp &amp; Binh Khí
             </h2>
             <p className="text-xs sm:text-sm text-amber-200/80 leading-relaxed">
-              Trọn bộ <strong>18 bài quyền &amp; binh khí thị phạm thực tế</strong> từ giáo trình chính thống: Tam Đại Quyền Pháp (Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ), 108 Thế liên hoàn (đơn luyện &amp; đối luyện), Mộc Nhân, Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc) và Kho Binh Khí Cổ Truyền (Bát Trảm Đao, Côn, Kiếm).
+              Trọn bộ <strong>18 bài quyền &amp; binh khí thị phạm thực tế</strong> từ giáo trình: Tam Đại Quyền Pháp (Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ), 108 Thế liên hoàn (đơn luyện &amp; đối luyện), Mộc Nhân, Ngũ Hình Quyền (Long, Xà, Hổ, Báo, Hạc) và Kho Binh Khí Cổ Truyền (Bát Trảm Đao, Côn, Kiếm).
             </p>
+            <div className="pt-1.5 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 text-xs text-amber-200/80 italic">
+              <span className="text-[#F5D06C] font-bold not-italic shrink-0">Quy ước hiển thị:</span>
+              <span>Hệ thống lược bỏ chú thích số trang trong từng chiêu thức để người tập tập trung vào yếu lĩnh thân pháp và tâm pháp võ học.</span>
+            </div>
           </div>
 
           {/* Switcher Buttons: Lộ trình Sư Phạm 5 Chặng vs Danh Mục 18 Bài */}
@@ -468,7 +472,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                 {/* Trích đoạn giáo trình */}
                 <div className="p-4 rounded-2xl bg-[#140C08] border-l-4 border-l-[#F5D06C] border border-[#F5D06C]/20 text-xs text-amber-200/80 italic font-serif leading-relaxed">
                   <span className="font-mono not-italic uppercase font-bold text-[#F5D06C] block mb-1 text-[10px]">
-                    Trích Giáo Trình Chính Thống:
+                    Trích Giáo Trình:
                   </span>
                   &ldquo;{currentFormIntro.introQuote}&rdquo;
                 </div>

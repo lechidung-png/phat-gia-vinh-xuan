@@ -1,6 +1,6 @@
 // ==============================================================================
 // HỒ SƠ TỔ SƯ & CÁC BẬC TIỀN BỐI TRUYỀN THỪA PHẬT GIA VỊNH XUÂN
-// Tư liệu lịch sử chính thống & đối chiếu công trình "Phật Gia Vịnh Xuân Quyền"
+// Tư liệu lịch sử & đối chiếu công trình "Phật Gia Vịnh Xuân Quyền"
 // (GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức - 2012)
 // ==============================================================================
 
@@ -87,7 +87,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
           "Cụ là anh ruột của võ sư Nguyễn Kỳ Sơn (Yuen Kay Shan) — một trong ba 'Phật Sơn Vịnh Xuân Tam Hùng' lừng lẫy (cùng với Diệp Vấn và Diêu Tài). Thân phụ của hai anh em là cụ Nguyễn Long Minh, một phú thương cự phách sở hữu xưởng chế tác pháo hoa danh tiếng Mulberry Gardens tại Phật Sơn.",
           "Nhờ gia thế giàu có và lòng say mê võ học tột bậc, gia đình đã mời những bậc đại tông sư đương thời về tư gia thụ giáo riêng: Đại sư Hoắc Bảo Toàn (truyền thụ Vịnh Xuân quyền và song đao Bát Trảm Đao) và Danh sư Phùng Thiếu Thanh (truyền thụ đại đao, trường côn và công phu cận chiến nội gia). Cụ Tế Công tiếp thu trọn vẹn cả hai dòng mạch quyền pháp và binh khí tinh thâm nhất của võ phái."
         ],
-        keyHighlight: "Nguyễn Tế Công là bậc tiền bối đồng môn của Đại sư Diệp Vấn tại Phật Sơn, sở hữu nguồn cội võ học chính thống và thuần khiết nhất."
+        keyHighlight: "Nguyễn Tế Công là bậc tiền bối đồng môn của Đại sư Diệp Vấn tại Phật Sơn, sở hữu nguồn cội võ học thuần khiết và thâm sâu nhất."
       },
       {
         title: "2. Hành Trình Về Phương Nam & Khai Đạo Tại Hà Nội",
@@ -111,7 +111,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
       }
     ],
     keyContributions: [
-      "Khai sơn lập phái, truyền bá Vịnh Xuân Quyền chính thống vào Việt Nam từ năm 1939.",
+      "Khai sơn lập phái, truyền bá Phật Gia Vịnh Xuân Quyền vào Việt Nam từ năm 1939.",
       "Thiết kế và chuẩn hóa hệ thống Mộc Nhân 5 tầng cọc (38 Gia Ngư, Hà Nội).",
       "Đào tạo nên thế hệ đại sư đầu tiên lẫy lừng cho nền võ học nước nhà.",
       "Kết hợp hoàn hảo giữa võ thuật cận chiến đỉnh cao và y thuật dưỡng sinh trường thọ."
@@ -184,7 +184,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
         content: [
           "Võ sư Trần Thúc Tiển nổi danh với trình độ Niêm Thủ (黐手) đạt tới mức xuất quỷ nhập thần. Mắt Cụ có thể nhắm nghiền, nhưng chỉ cần cẳng tay đối phương chạm vào tay Cụ là toàn bộ hướng lực, tốc độ và ý đồ tấn công của đối thủ đều bị hóa giải và phản hồi kình lực ngược trở lại ngay tức khắc.",
           "Cụ dạy học trò: 'Đánh Vịnh Xuân không được gồng cơ bắp, phải buông lỏng như nước, thở sâu dưới Đan Điền. Khi lực đến thì nhường đường cho lực đi, khi lực hết thì kình tự phóng.'",
-          "Những năm tháng cuối đời, Cụ đã dốc lòng truyền thụ toàn bộ tinh hoa quyền pháp, mộc nhân pháp và triết lý y võ cho học trò xuất sắc là Bác sĩ Nguyễn Mạnh Nhâm, đặt nền móng vững chắc cho sự ra đời của công trình giáo trình chính thống sau này."
+          "Những năm tháng cuối đời, Cụ đã dốc lòng truyền thụ toàn bộ tinh hoa quyền pháp, mộc nhân pháp và triết lý y võ cho học trò xuất sắc là Bác sĩ Nguyễn Mạnh Nhâm, đặt nền móng vững chắc cho sự ra đời của công trình giáo trình sau này."
         ],
         keyHighlight: "Năm 2016, Cố Võ sư Trần Thúc Tiển được Hội Võ thuật Hà Nội chính thức vinh danh vì những cống hiến kiệt xuất cho nền võ học cổ truyền dân tộc."
       }

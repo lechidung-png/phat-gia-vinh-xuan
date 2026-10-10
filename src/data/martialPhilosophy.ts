@@ -1,6 +1,6 @@
 // ==============================================================================
 // TRIẾT LÝ, YẾU QUYẾT & TINH HOA VÕ ĐẠO PHẬT GIA VỊNH XUÂN
-// Căn cứ: Giáo trình chính thống của GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức
+// Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền của GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức
 // Mở rộng: Đối chiếu tinh hoa Vịnh Xuân thế giới (Ip Man, Leung Ting, Wong Shun Leung, Bruce Lee)
 // ==============================================================================
 

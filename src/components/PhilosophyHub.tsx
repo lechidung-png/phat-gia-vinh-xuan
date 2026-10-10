@@ -143,7 +143,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="sm:hidden">42 Lời Khuyên</span>
               </div>
               <div className={`text-[10px] truncate ${activeTab === "counsels" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
-                Sư phụ truyền đời (Trang 166)
+                Sư phụ truyền đời • Yếu lĩnh tu tập
               </div>
             </div>
           </button>
@@ -234,8 +234,8 @@ export const PhilosophyHub: React.FC = () => {
                   <span className="text-xs font-serif text-amber-200/70 font-mono">
                     {selectedAphorism.hanzi}
                   </span>
-                  <span className="text-[11px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40">
-                    {selectedAphorism.pageRef}
+                  <span className="text-[11px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
+                    Tâm Pháp Chân Truyền
                   </span>
                 </div>
                 <h3 className="text-xl sm:text-3xl font-extrabold font-serif text-white">
@@ -319,7 +319,7 @@ export const PhilosophyHub: React.FC = () => {
             {/* Trích Dẫn Nguyên Bản Giáo Trình */}
             <div className="p-4 sm:p-5 rounded-2xl bg-[#2A140B] border-l-4 border-l-[#F5D06C] border border-[#F5D06C]/30 text-xs sm:text-sm text-amber-100 font-serif italic leading-relaxed">
               <span className="not-italic font-mono font-bold text-[#F5D06C] uppercase text-[10px] block mb-1">
-                Trích Dẫn Nguyên Văn Giáo Trình ({selectedAphorism.pageRef}):
+                Trích Dẫn Nguyên Văn Giáo Trình:
               </span>
               &ldquo;{selectedAphorism.originalQuote}&rdquo;
             </div>
@@ -328,7 +328,7 @@ export const PhilosophyHub: React.FC = () => {
       )}
 
       {/* ==================================================================== */}
-      {/* NỘI DUNG PHÂN HỆ 2: TRỌN BỘ 42 LỜI KHUYÊN VÀNG SƯ PHỤ (TRANG 166)    */}
+      {/* NỘI DUNG PHÂN HỆ 2: TRỌN BỘ 42 LỜI KHUYÊN VÀNG SƯ PHỤ                */}
       {/* ==================================================================== */}
       {activeTab === "counsels" && (
         <div className="space-y-6 animate-fadeIn">

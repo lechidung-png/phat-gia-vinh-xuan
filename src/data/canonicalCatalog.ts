@@ -93,7 +93,7 @@ export const CONTENT_GROUPS: ContentGroup[] = [
     "id": "moc-nhan",
     "order": 5,
     "name": "Cọc Gỗ Mộc Nhân (Mộc Nhân Thung)",
-    "desc": "Bản vẽ nhân trắc học trang 94, cọc 5 tầng 1954 tại 38 Gia Ngư, Bài 1 & Bài tiến lùi.",
+    "desc": "Bản vẽ nhân trắc học, cọc 5 tầng 1954 tại 38 Gia Ngư, Bài 1 & Bài tiến lùi.",
     "pages": "Trang 92 – 116",
     "icon": "Layers"
   },

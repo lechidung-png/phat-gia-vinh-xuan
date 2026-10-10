@@ -119,7 +119,7 @@ export const HeritageReader: React.FC<HeritageReaderProps> = ({
       <div className="pt-6 border-t border-[#F5D06C]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-amber-200/70">
         <div className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[#F5D06C]" />
-          <span>Trích xuất từ giáo trình chính thống Phật Gia Vịnh Xuân Quyền</span>
+          <span>Trích xuất từ giáo trình Phật Gia Vịnh Xuân Quyền</span>
         </div>
         <div className="font-mono text-[#F5D06C]">
           Lưu trữ số hóa di sản võ phái
