@@ -73,7 +73,17 @@ export const PhilosophyHub: React.FC = () => {
   };
 
   const handleCopyQuote = (quote: MartialWisdomQuote) => {
-    const textToCopy = `“${quote.quote}” — ${quote.author} (${quote.roleOrSource})`;
+    const isNamedMaster =
+      quote.author &&
+      !quote.author.includes("Khẩu quyết") &&
+      !quote.author.includes("Khẩu Quyết") &&
+      !quote.author.includes("Yếu Lĩnh") &&
+      !quote.author.includes("Lễ Nghi") &&
+      !quote.author.includes("Ngạn ngữ") &&
+      !quote.author.includes("Phật Gia Vịnh Xuân") &&
+      !quote.author.includes("Võ Đường") &&
+      !quote.author.includes("truyền dạy");
+    const textToCopy = isNamedMaster ? `“${quote.quote}” — ${quote.author}` : `“${quote.quote}”`;
     if (typeof navigator !== "undefined" && navigator.clipboard) {
       navigator.clipboard.writeText(textToCopy);
       setIsCopied(true);
@@ -601,14 +611,19 @@ export const PhilosophyHub: React.FC = () => {
                   &ldquo;{currentQuote.quote}&rdquo;
                 </blockquote>
 
-                <div className="space-y-1">
-                  <div className="text-base sm:text-lg font-serif font-bold text-amber-200">
-                    {currentQuote.author}
-                  </div>
-                  <div className="text-xs font-mono text-[#F5D06C]/80">
-                    {currentQuote.roleOrSource}
-                  </div>
-                </div>
+                {currentQuote.author &&
+                  !currentQuote.author.includes("Khẩu quyết") &&
+                  !currentQuote.author.includes("Khẩu Quyết") &&
+                  !currentQuote.author.includes("Yếu Lĩnh") &&
+                  !currentQuote.author.includes("Lễ Nghi") &&
+                  !currentQuote.author.includes("Ngạn ngữ") &&
+                  !currentQuote.author.includes("Phật Gia Vịnh Xuân") &&
+                  !currentQuote.author.includes("Võ Đường") &&
+                  !currentQuote.author.includes("truyền dạy") && (
+                    <div className="text-base sm:text-lg font-serif font-bold text-amber-200">
+                      — {currentQuote.author}
+                    </div>
+                  )}
 
                 <p className="text-xs text-slate-300 max-w-xl mx-auto italic font-serif">
                   Luận giải: {currentQuote.context}

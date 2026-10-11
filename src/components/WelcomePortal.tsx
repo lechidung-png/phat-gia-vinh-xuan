@@ -264,16 +264,6 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             <blockquote className="text-lg sm:text-2xl lg:text-3xl font-serif font-bold text-white leading-relaxed lg:leading-normal gold-gradient">
               &ldquo;{dailyQuote.quote}&rdquo;
             </blockquote>
-
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-1 text-xs sm:text-sm">
-              <span className="text-[#F5D06C] font-bold font-serif text-sm sm:text-base">
-                {dailyQuote.author}
-              </span>
-              <span className="text-slate-500">•</span>
-              <span className="text-amber-200/80 font-mono text-xs">
-                {dailyQuote.roleOrSource}
-              </span>
-            </div>
           </div>
         </div>
       </section>
