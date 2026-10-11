@@ -316,7 +316,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
               <div className="shrink-0 flex flex-col items-center space-y-2.5">
                 <div className="relative w-52 h-68 sm:w-60 sm:h-76 md:w-64 md:h-84 rounded-3xl overflow-hidden border-2 border-[#F5D06C] shadow-2xl bg-[#0F0805]">
                   <Image
-                    src="/assets/images/meditation/vo_su_le_dac_kien_thien.jpg"
+                    src="/assets/images/meditation/vo_su_le_dac_kien_thien_nghieng.jpg"
                     alt="Võ sư Lê Đắc Kiên"
                     fill
                     sizes="(max-width: 640px) 208px, (max-width: 768px) 240px, 256px"
