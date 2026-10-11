@@ -18,6 +18,7 @@ import { resolveLessonId } from "@/lib/lessonResolver";
 import { trackTabChange, trackFormView } from "@/lib/analytics";
 
 import { LandingSplash } from "@/components/LandingSplash";
+import { MeditationQiGongHub } from "@/components/MeditationQiGongHub";
 
 export default function Home() {
   const [hasEntered, setHasEntered] = useState(false);
@@ -173,6 +174,8 @@ export default function Home() {
       setActiveTab("forms");
     } else if (stageId === "scenarios") {
       setActiveTab("scenarios");
+    } else if (stageId === "meditation" || stageId === "khi-cong") {
+      setActiveTab("meditation");
     } else {
       setSelectedFormId(resolveLessonId(stageId));
       setActiveTab("forms");
@@ -238,6 +241,11 @@ export default function Home() {
             initialSubTab={fundamentalsSubTab}
             onNavigateStage={handleNavigateStage} 
           />
+        )}
+
+        {/* Tab Chuyên Biệt: Thiền & Khí Công Dưỡng Sinh (Thở 4 Thì) */}
+        {activeTab === "meditation" && (
+          <MeditationQiGongHub />
         )}
 
         {/* Tab 3: 200 Tình Huống Thực Chiến & Khảo Thí Phản Xạ Võ Học */}

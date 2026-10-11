@@ -7,6 +7,7 @@ import {
   Swords,
   Sparkles,
   ShieldAlert,
+  Wind,
 } from "lucide-react";
 import { NavTab } from "./Header";
 
@@ -27,6 +28,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
     { id: "lineage", label: "Truyền Thừa", icon: GitBranch },
     { id: "fundamentals", label: "Cơ Bản", icon: Hand },
     { id: "forms", label: "18 Quyền", icon: Swords },
+    { id: "meditation", label: "Thiền", icon: Wind },
     { id: "dummy", label: "Mộc Nhân", icon: Sparkles },
     { id: "scenarios", label: "Tình Huống", icon: ShieldAlert },
   ];
@@ -53,7 +55,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
             <button
               key={tab.id}
               onClick={() => handleTabClick(tab.id)}
-              className={`flex flex-col items-center justify-center min-w-[56px] h-full py-1 px-1.5 rounded-xl transition-all relative cursor-pointer ${
+              className={`flex flex-col items-center justify-center flex-1 min-w-0 h-full py-1 px-1 rounded-xl transition-all relative cursor-pointer ${
                 isActive
                   ? "text-[#F5D06C]"
                   : "text-slate-400 hover:text-slate-200"

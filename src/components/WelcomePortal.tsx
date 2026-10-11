@@ -12,6 +12,7 @@ import {
   Award,
   Layers,
   Quote,
+  Wind,
 } from "lucide-react";
 import { NavTab } from "@/components/Header";
 import { getRandomMartialQuote, MartialWisdomQuote } from "@/data/martialPhilosophy";
@@ -78,6 +79,17 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       color: "from-[#F5D06C]/30 to-[#461A14]/20",
       borderColor: "border-[#F5D06C]/50 hover:border-[#F5D06C]",
       tagColor: "bg-[#F5D06C]/30 text-[#F5D06C]",
+    },
+    {
+      id: "meditation" as NavTab,
+      title: "4. Thiền & Khí công",
+      subtitle: "Nội công dưỡng sinh & Thở 4 thì",
+      desc: "Tọa thiền điều tức, ý thủ đan điền, phòng luyện thở 4 thì trực quan và bí quyết xoa bóp nội tạng của GS.TS Nguyễn Mạnh Nhâm.",
+      icon: Wind,
+      badge: "Nội công",
+      color: "from-purple-900/30 to-purple-950/20",
+      borderColor: "border-purple-500/50 hover:border-purple-400",
+      tagColor: "bg-purple-500/30 text-purple-300",
     }
   ];
 
@@ -277,7 +289,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {portalGateways.map((item) => {
             const Icon = item.icon;
             return (

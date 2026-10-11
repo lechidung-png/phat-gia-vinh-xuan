@@ -17,13 +17,10 @@ import {
   Zap,
   X,
   Grid,
-  Volume2,
-  VolumeX,
 } from "lucide-react";
 import { CanonicalLesson, MotionStep } from "@/data/canonicalCatalog";
 import { getFormKinematics } from "@/data/martialKinematics";
 import { cleanMotionTitle, extractMotionChieu } from "@/lib/formatters";
-import { zenAudio } from "@/lib/zenAudio";
 
 interface DojoPlayer3Props {
   lesson: CanonicalLesson;
@@ -43,7 +40,6 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
   const [isMatrixOpen, setIsMatrixOpen] = useState(false);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(2200); // 2.2s per step
   const [copiedShare, setCopiedShare] = useState(false);
-  const [isZenAudioOn, setIsZenAudioOn] = useState<boolean>(() => zenAudio.isEnabled());
   const [isBookmarked, setIsBookmarked] = useState<boolean>(() => {
     if (typeof window === "undefined") return false;
     try {
@@ -103,30 +99,6 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [activeMotionIndex, totalMotions, onSelectMotionIndex]);
-
-  // Phát tiếng mõ nhẹ khi chuyển thế võ (nếu bật âm thanh thiền)
-  const isFirstRender = useRef(true);
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-    if (isZenAudioOn) {
-      zenAudio.playWoodBlock();
-    }
-  }, [activeMotionIndex, isZenAudioOn]);
-
-  // Phát chuông xoay khi bắt đầu chuỗi tự động phát
-  useEffect(() => {
-    if (isPlaying && isZenAudioOn) {
-      zenAudio.playSingingBowl();
-    }
-  }, [isPlaying, isZenAudioOn]);
-
-  const handleToggleZenAudio = () => {
-    const next = zenAudio.toggle();
-    setIsZenAudioOn(next);
-  };
 
   // Đồng bộ trạng thái bookmark khi đổi bài học
   useEffect(() => {
@@ -462,34 +434,20 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
               </button>
             </div>
 
-            {/* Tầng 2: Cài Đặt (Tốc Độ Phát & Chuông Thiền) + Phím Tắt Desktop */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-1">
-              <div className="grid grid-cols-2 sm:flex sm:items-center gap-2 w-full sm:w-auto">
+            {/* Tầng 2: Cài Đặt (Tốc Độ Tự Động Phát) + Phím Tắt Desktop */}
+            <div className="flex items-center justify-between gap-2.5 pt-1">
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-amber-200/70 font-medium hidden sm:inline">Tốc độ chuyển thế:</span>
                 <select
                   value={playbackSpeed}
                   onChange={(e) => setPlaybackSpeed(Number(e.target.value))}
-                  className="min-h-[44px] bg-[#20150F] border border-[#F5D06C]/30 rounded-xl px-2.5 sm:px-3 py-2 text-xs font-semibold text-amber-200 focus:outline-none focus:border-[#F5D06C] cursor-pointer text-center sm:text-left w-full sm:w-auto"
+                  className="min-h-[40px] bg-[#20150F] border border-[#F5D06C]/30 rounded-xl px-3 py-1.5 text-xs font-semibold text-amber-200 focus:outline-none focus:border-[#F5D06C] cursor-pointer"
                   aria-label="Tốc độ tự động phát"
                 >
-                  <option value={1500}>1.5s / thế</option>
-                  <option value={2200}>2.2s (Chuẩn)</option>
-                  <option value={3500}>3.5s (Chậm)</option>
+                  <option value={1500}>1.5s / thế (Nhanh)</option>
+                  <option value={2200}>2.2s / thế (Chuẩn)</option>
+                  <option value={3500}>3.5s / thế (Chậm)</option>
                 </select>
-
-                <button
-                  onClick={handleToggleZenAudio}
-                  className={`min-h-[44px] px-2.5 sm:px-3 py-2 rounded-xl text-xs font-semibold shadow-sm transition flex items-center justify-center gap-1 sm:gap-1.5 border cursor-pointer w-full sm:w-auto ${
-                    isZenAudioOn
-                      ? "bg-[#F5D06C]/20 text-[#F5D06C] border-[#F5D06C]"
-                      : "bg-[#20150F] text-amber-200/60 hover:text-white border-[#F5D06C]/30"
-                  }`}
-                  title="Âm thanh chuông xoay thiền & mõ đan điền theo nhịp thế võ"
-                  aria-label={isZenAudioOn ? "Tắt âm thanh thiền đan điền" : "Bật âm thanh thiền đan điền"}
-                >
-                  {isZenAudioOn ? <Volume2 className="w-4 h-4 text-[#F5D06C]" /> : <VolumeX className="w-4 h-4" />}
-                  <span className="hidden sm:inline">{isZenAudioOn ? "Chuông Thiền: Bật" : "Chuông Thiền"}</span>
-                  <span className="sm:hidden">{isZenAudioOn ? "Chuông: Bật" : "Chuông Thiền"}</span>
-                </button>
               </div>
 
               {/* Phím tắt chỉ hiển thị trên máy tính (sm & up) */}

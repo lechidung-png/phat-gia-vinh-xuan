@@ -11,9 +11,10 @@ import {
   ShieldAlert,
   Menu,
   X,
+  Wind,
 } from "lucide-react";
 
-export type NavTab = "welcome" | "forms" | "fundamentals" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
+export type NavTab = "welcome" | "forms" | "fundamentals" | "meditation" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
 
 interface HeaderProps {
   activeTab: NavTab;
@@ -33,7 +34,8 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems: { id: NavTab; label: string; shortLabel: string; icon: React.ComponentType<{ className?: string }> }[] = [
     { id: "lineage", label: "Truyền Thừa", shortLabel: "Truyền Thừa", icon: GitBranch },
     { id: "fundamentals", label: "Cơ Bản", shortLabel: "Cơ Bản", icon: Hand },
-    { id: "forms", label: "18 Bài Quyền", shortLabel: "18 Bài Quyền", icon: Swords },
+    { id: "forms", label: "18 Bài Quyền", shortLabel: "18 Quyền", icon: Swords },
+    { id: "meditation", label: "Thiền Khí Công", shortLabel: "Thiền", icon: Wind },
     { id: "dummy", label: "Mộc Nhân", shortLabel: "Mộc Nhân", icon: Sparkles },
     { id: "scenarios", label: "Tình Huống", shortLabel: "Tình Huống", icon: ShieldAlert },
   ];
@@ -146,7 +148,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
-            Danh Mục 5 Phân Hệ Võ Học
+            Danh Mục Phân Hệ Võ Học &amp; Khí Công
           </div>
 
           <div className="grid grid-cols-2 gap-2 pt-0.5">
