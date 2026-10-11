@@ -77,6 +77,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "google4051fa9c42ac17ab",
+  },
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -289,6 +292,8 @@ export default function RootLayout({
       className={`dark h-full antialiased ${beVietnamPro.variable} ${notoSerif.variable}`}
     >
       <head>
+        <meta name="google-site-verification" content="google4051fa9c42ac17ab" />
+        <meta name="google-site-verification" content="4051fa9c42ac17ab" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
