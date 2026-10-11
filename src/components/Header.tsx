@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Search,
   Swords,
@@ -54,8 +55,15 @@ export const Header: React.FC<HeaderProps> = ({
           className="flex items-center gap-2.5 sm:gap-3 cursor-pointer select-none shrink-0"
           onClick={() => handleSelectNav("welcome")}
         >
-          <div className="w-10 h-10 rounded-xl bg-[#F5D06C]/15 border border-[#F5D06C]/40 flex items-center justify-center text-[#F5D06C] font-serif font-black text-xl shadow-lg shadow-[#F5D06C]/10">
-            佛
+          <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden shadow-lg shadow-red-950/40 border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] hover:scale-105 transition-transform">
+            <Image
+              src="/assets/images/logo/an_vuong_phat_gia_vinh_xuan.png"
+              alt="Ấn Vuông Phật Gia Vịnh Xuân"
+              fill
+              sizes="(max-width: 640px) 40px, 44px"
+              className="object-contain p-0.5"
+              priority
+            />
           </div>
           <div>
             <h1 className="font-bold text-sm sm:text-base tracking-wide gold-gradient leading-tight uppercase font-serif">

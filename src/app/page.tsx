@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { Header, NavTab } from "@/components/Header";
 import { WelcomePortal } from "@/components/WelcomePortal";
 import { CurriculumExplorer } from "@/components/CurriculumExplorer";
@@ -298,9 +299,20 @@ export default function Home() {
       {/* Modern Martial Footer */}
       <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5 mb-16 lg:mb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-amber-200/60">
-          <p className="text-center sm:text-left font-medium">
-            Đơn vị đóng góp xây dựng: Võ đường Huỳnh Thúc Kháng • Phật Gia Vịnh Xuân Quyền
-          </p>
+          <div className="flex items-center gap-2.5">
+            <div className="relative w-6 h-6 rounded-md overflow-hidden border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] shadow-sm">
+              <Image
+                src="/assets/images/logo/an_vuong_phat_gia_vinh_xuan.png"
+                alt="Ấn Vuông Phật Gia Vịnh Xuân"
+                fill
+                sizes="24px"
+                className="object-contain p-0.5"
+              />
+            </div>
+            <p className="text-center sm:text-left font-medium">
+              Đơn vị đóng góp xây dựng: Võ đường Huỳnh Thúc Kháng • Phật Gia Vịnh Xuân Quyền
+            </p>
+          </div>
           <div className="flex items-center gap-4 text-[11px]">
             <span className="text-[#E2B743]">Di Sản Võ Học</span>
             <span>•</span>

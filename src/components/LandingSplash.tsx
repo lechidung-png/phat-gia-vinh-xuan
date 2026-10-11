@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 interface LandingSplashProps {
@@ -36,13 +37,19 @@ export const LandingSplash: React.FC<LandingSplashProps> = ({ onEnter }) => {
           詠春
         </div>
 
-        {/* Central Emblem */}
-        <div className="relative w-28 h-28 md:w-36 md:h-36 mb-10 flex items-center justify-center group">
-          <div className="absolute inset-0 rounded-full border border-[#E2B743]/20 animate-spin" style={{ animationDuration: '15s' }}></div>
-          <div className="absolute inset-2 rounded-full border border-[#E2B743]/40 border-dashed animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}></div>
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#E2B743]/10 to-transparent blur-md group-hover:blur-xl transition-all duration-700"></div>
-          <div className="relative z-10 text-5xl md:text-7xl font-serif text-[#E2B743] gold-gradient drop-shadow-[0_0_15px_rgba(226,183,67,0.4)]">
-            佛
+        {/* Central Emblem - Ấn Vuông Phật Gia Vịnh Xuân */}
+        <div className="relative w-32 h-32 md:w-44 md:h-44 mb-10 flex items-center justify-center group">
+          <div className="absolute -inset-3 rounded-3xl border border-[#F5D06C]/30 animate-pulse pointer-events-none" />
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-[#C27D38]/30 via-[#F5D06C]/15 to-transparent blur-md group-hover:blur-xl transition-all duration-700" />
+          <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden shadow-2xl border-2 border-[#F5D06C]/60 bg-[#FFFDF8] hover:scale-105 transition-transform duration-500">
+            <Image
+              src="/assets/images/logo/an_vuong_phat_gia_vinh_xuan.png"
+              alt="Ấn Vuông Phật Gia Vịnh Xuân"
+              fill
+              sizes="(max-width: 768px) 128px, 176px"
+              className="object-contain p-2"
+              priority
+            />
           </div>
         </div>
 
