@@ -18,7 +18,8 @@ import {
   Users,
   GitBranch,
   Layers,
-  ArrowRight
+  ArrowRight,
+  History
 } from "lucide-react";
 import { PhilosophyHub } from "@/components/PhilosophyHub";
 import { MasterDetailModal } from "@/components/MasterDetailModal";
@@ -246,13 +247,21 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 Người có công truyền bá Vịnh Xuân Quyền sang Việt Nam từ những năm đầu thế kỷ 20. Cụ truyền dạy tại Hà Nội và sau đó là Chợ Lớn (Sài Gòn), đào tạo nên các bậc danh sư lỗi lạc cho nền võ học nước nhà.
               </p>
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
                 <button
                   onClick={() => setSelectedMasterId("nguyen-te-cong")}
                   className="px-4 py-2 rounded-xl bg-[#20150F] hover:bg-[#2F1D14] border border-[#E2B743]/50 hover:border-[#E2B743] text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
                 >
                   <span>Xem tiểu sử &amp; công trạng chi tiết</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#E2B743] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+                <button
+                  onClick={() => setSelectedMasterId("nguyen-te-cong")}
+                  className="px-3.5 py-2 rounded-xl bg-[#E2B743]/15 hover:bg-[#E2B743]/25 border border-[#E2B743]/40 text-[#E2B743] text-xs font-semibold inline-flex items-center gap-1.5 transition cursor-pointer"
+                  title="Xem ảnh tư liệu Sư Tổ và các môn đồ tại Hà Nội (thập niên 1950)"
+                >
+                  <History className="w-3.5 h-3.5" />
+                  <span>Ảnh tư liệu (1950)</span>
                 </button>
               </div>
             </div>

@@ -38,6 +38,11 @@ export interface MasterProfile {
     title: string;
     story: string;
   }[];
+  historicGroupPhoto?: {
+    url: string;
+    caption: string;
+    description: string;
+  };
 }
 
 export const MASTER_PROFILES: MasterProfile[] = [
@@ -122,7 +127,12 @@ export const MASTER_PROFILES: MasterProfile[] = [
         story:
           "Trong thời kỳ kháng chiến tại Hà Nội, một nhóm lính lê dương to lớn hung hãn đã bao vây và tìm cách xô ngã Cụ Tế Công. Cụ điềm nhiên chùng chân đứng thế Nhị Tự Kiềm Dương Tấn, hai tay thu dưới nách. Khi đối phương dốc toàn lực lao vào đẩy, thân Cụ như ghim chặt rễ sắt vào lòng đất; ngược lại, kình lực nén đàn hồi bung ra khiến đối phương bật ngửa văng xa hàng mét mà Cụ không hề xê dịch một tấc."
       }
-    ]
+    ],
+    historicGroupPhoto: {
+      url: "/assets/images/historical/su_to_nguyen_te_cong_cung_hoc_tro.jpg",
+      caption: "Sư Tổ Nguyễn Tế Công và các môn đồ tại Hà Nội (thập niên 1950)",
+      description: "Sư Tổ Nguyễn Tế Công ngồi ghế trung tâm cùng các môn sinh thế hệ đầu tiên tại Hà Nội, trong đó có Cố Võ sư Trần Thúc Tiển đứng phía sau bên phải."
+    }
   },
 
   // ============================================================================

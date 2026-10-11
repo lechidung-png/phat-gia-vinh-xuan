@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Wind,
   ShieldCheck,
@@ -50,28 +51,48 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
       <div className="glass-panel p-6 sm:p-10 rounded-3xl border border-[#F5D06C]/35 shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-radial from-[#F5D06C]/10 to-transparent pointer-events-none" />
         
-        <div className="relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[#F5D06C] text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Chương IV: Nội Công — Giáo Trình Phật Gia Vịnh Xuân Quyền</span>
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10">
+          <div className="space-y-4 flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[#F5D06C] text-xs font-semibold">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Chương IV: Nội Công — Giáo Trình Phật Gia Vịnh Xuân Quyền</span>
+            </div>
+
+            <div className="space-y-2">
+              <h2 className="text-2xl sm:text-4xl font-serif font-black gold-gradient leading-tight tracking-wide">
+                Thiền &amp; Khí Công Dưỡng Sinh
+              </h2>
+              <p className="text-xs sm:text-sm text-amber-100/90 max-w-2xl leading-relaxed">
+                Hệ thống tọa thiền tĩnh công, điều tức thổ nạp và phương pháp Thở 4 Thì đan điền được đúc kết từ công trình nghiên cứu của <span className="text-[#F5D06C] font-semibold">GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</span>, kết hợp tinh hoa y học hiện đại và tâm pháp Phật Gia.
+              </p>
+            </div>
+
+            {/* Khẩu quyết vàng */}
+            <div className="p-3 sm:p-4 rounded-2xl bg-black/40 border border-[#F5D06C]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-amber-200/90 font-serif italic text-left">
+              <span>
+                &quot;Đả quyền bất luyện công, đáo lão nhất trường không — Thần định Khí liễm, Ý thủ Đan Điền.&quot;
+              </span>
+              <span className="text-[11px] font-mono text-[#F5D06C] not-italic shrink-0">
+                Khí là vua của Lực
+              </span>
+            </div>
           </div>
 
-          <div className="space-y-2">
-            <h2 className="text-2xl sm:text-4xl font-serif font-black gold-gradient leading-tight tracking-wide">
-              Thiền &amp; Khí Công Dưỡng Sinh
-            </h2>
-            <p className="text-sm sm:text-base text-amber-100/90 max-w-4xl leading-relaxed">
-              Hệ thống tọa thiền tĩnh công, điều tức thổ nạp và phương pháp Thở 4 Thì đan điền được đúc kết từ công trình nghiên cứu của <span className="text-[#F5D06C] font-semibold">GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</span>, kết hợp tinh hoa y học hiện đại và tâm pháp Phật Gia.
-            </p>
-          </div>
-
-          {/* Khẩu quyết vàng */}
-          <div className="p-3.5 sm:p-4 rounded-2xl bg-black/40 border border-[#F5D06C]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-200/90 font-serif italic">
-            <span>
-              &quot;Đả quyền bất luyện công, đáo lão nhất trường không — Thần định Khí liễm, Ý thủ Đan Điền.&quot;
-            </span>
-            <span className="text-[11px] font-mono text-[#F5D06C] not-italic shrink-0">
-              Khí là vua của Lực
+          {/* Khung Ảnh Thị Phạm Tọa Thiền Tĩnh Công */}
+          <div className="shrink-0 flex flex-col items-center space-y-2">
+            <div className="relative w-44 h-58 sm:w-52 sm:h-68 md:w-56 md:h-74 rounded-3xl overflow-hidden border-2 border-[#F5D06C] shadow-2xl bg-[#0F0805] group">
+              <Image
+                src="/assets/images/meditation/vo_su_le_dac_kien_thien.jpg"
+                alt="Võ sư Lê Đắc Kiên"
+                fill
+                sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, 224px"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+            </div>
+            <span className="text-[11px] font-serif text-amber-200/80 italic text-center">
+              Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng
             </span>
           </div>
         </div>
@@ -288,6 +309,95 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
       {activeTab === "postures" && (
         <div className="space-y-8 animate-fadeIn">
           
+          {/* KHUNG THỊ PHẠM THÂN PHÁP TỌA THIỀN CHUẨN MỰC */}
+          <div className="glass-panel p-6 sm:p-8 rounded-3xl border-2 border-[#F5D06C]/40 bg-gradient-to-br from-[#20130B] via-[#1A0E08] to-[#120804] shadow-2xl">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+              {/* Ảnh Võ sư Lê Đắc Kiên tọa thiền */}
+              <div className="shrink-0 flex flex-col items-center space-y-2.5">
+                <div className="relative w-52 h-68 sm:w-60 sm:h-76 md:w-64 md:h-84 rounded-3xl overflow-hidden border-2 border-[#F5D06C] shadow-2xl bg-[#0F0805]">
+                  <Image
+                    src="/assets/images/meditation/vo_su_le_dac_kien_thien.jpg"
+                    alt="Võ sư Lê Đắc Kiên"
+                    fill
+                    sizes="(max-width: 640px) 208px, (max-width: 768px) 240px, 256px"
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+                <span className="text-xs text-amber-200/80 font-serif italic text-center">
+                  Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng
+                </span>
+              </div>
+
+              {/* 5 Yếu lĩnh thân pháp giải phẫu */}
+              <div className="space-y-4 flex-1">
+                <div className="space-y-1 text-center lg:text-left">
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#F5D06C]">
+                    Yếu Lĩnh Thân Pháp
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-bold font-serif text-white gold-gradient">
+                    5 Chuẩn Mực Giải Phẫu Võ Học Khi Tọa Thiền
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    Năm yếu lĩnh thân pháp cốt tủy trong tĩnh công theo giáo trình của GS.TS Nguyễn Mạnh Nhâm:
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-200">
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                    <span className="font-bold text-[#F5D06C] flex items-center gap-1.5 font-serif">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      1. Cột Sống Thẳng Dây Dọi
+                    </span>
+                    <p className="text-xs text-slate-300">
+                      Thuận hàng đề đính, đầu treo hư linh, cột sống dựng thẳng đứng tự nhiên từ xương cụt lên bách hội, không ưỡn không gù.
+                    </p>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                    <span className="font-bold text-[#F5D06C] flex items-center gap-1.5 font-serif">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      2. Xuôi Vai &amp; Hàm Hung
+                    </span>
+                    <p className="text-xs text-slate-300">
+                      Hai khớp vai thả lỏng tối đa, ngực hơi ngậm nhẹ (hàm hung bạt bối) để cơ hoành hạ sâu, giúp khí dễ dàng chìm xuống Đan Điền.
+                    </p>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                    <span className="font-bold text-[#F5D06C] flex items-center gap-1.5 font-serif">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      3. Nối Nhịp Nhâm - Đốc
+                    </span>
+                    <p className="text-xs text-slate-300">
+                      Miệng ngậm tự nhiên, đầu lưỡi uốn nhẹ chạm nướu răng hàm trên, tạo cầu nối khép kín thông suốt giữa hai mạch Nhâm và Đốc.
+                    </p>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                    <span className="font-bold text-[#F5D06C] flex items-center gap-1.5 font-serif">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      4. Mắt Nhìn Ba Điểm (Nội Quan)
+                    </span>
+                    <p className="text-xs text-slate-300">
+                      Mắt khép hờ lim dim: <em>Mắt nhìn đầu mũi — Mũi nhìn miệng — Miệng nhìn tâm</em>. Tuyệt đối không để ý nghĩ tán loạn theo ngoại giới.
+                    </p>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-1 sm:col-span-2">
+                    <span className="font-bold text-[#F5D06C] flex items-center gap-1.5 font-serif">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      5. Bắt Ấn Định Tâm Trước Hạ Đan Điền
+                    </span>
+                    <p className="text-xs text-slate-300">
+                      Hai bàn tay xếp chồng mềm mại, hai ngón tay cái chạm nhẹ vào nhau đặt sát vùng bụng dưới (cách dưới rốn khoảng 3cm), tập trung mọi tâm thức tụ khí tại đây.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* LƯỚI 4 TƯ THẾ TỌA THIỀN */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {MEDITATION_POSTURES.map((p) => (

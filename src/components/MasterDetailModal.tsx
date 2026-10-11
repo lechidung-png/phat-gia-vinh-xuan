@@ -282,6 +282,47 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
             </div>
           </div>
 
+          {/* HISTORIC GROUP PHOTO (TƯ LIỆU HÌNH ẢNH LỊCH SỬ NẾU CÓ) */}
+          {master.historicGroupPhoto && (
+            <div className="p-5 sm:p-7 rounded-3xl bg-gradient-to-br from-[#1C120B] via-[#160D08] to-[#100804] border-2 border-[#F5D06C]/50 shadow-2xl space-y-4">
+              <div className="flex items-center justify-between border-b border-[#3D291F] pb-3">
+                <div className="flex items-center gap-2">
+                  <History className="w-5 h-5 text-[#F5D06C]" />
+                  <h4 className="text-sm uppercase tracking-wider font-bold text-white">
+                    Ảnh Tư Liệu Lịch Sử
+                  </h4>
+                </div>
+                <span className="text-[10px] font-mono text-[#F5D06C] bg-[#F5D06C]/15 px-2.5 py-0.5 rounded-full border border-[#F5D06C]/30 font-bold">
+                  Thập Niên 1950
+                </span>
+              </div>
+
+              {/* Khung ảnh lịch sử trang nhã */}
+              <div className="space-y-3">
+                <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[480px] rounded-2xl overflow-hidden border border-[#F5D06C]/40 shadow-2xl bg-black">
+                  <Image
+                    src={master.historicGroupPhoto.url}
+                    alt={master.historicGroupPhoto.caption}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 860px"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+
+                <div className="p-3.5 sm:p-4 rounded-xl bg-black/60 border border-white/10 space-y-1.5">
+                  <div className="text-xs sm:text-sm font-bold text-[#F5D06C] font-serif flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
+                    <span>{master.historicGroupPhoto.caption}</span>
+                  </div>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    {master.historicGroupPhoto.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* KEY CONTRIBUTIONS */}
           <div className="p-5 sm:p-6 rounded-2xl bg-[#160D08] border border-[#3D291F] space-y-4">
             <div className="flex items-center gap-2">
