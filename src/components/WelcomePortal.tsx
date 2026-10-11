@@ -38,11 +38,11 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
 }) => {
   const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getRandomMartialQuote());
 
-  // Tự động ngẫu nhiên đổi câu châm ngôn võ đạo sau mỗi 12 giây
+  // Tự động ngẫu nhiên đổi câu châm ngôn võ đạo sau mỗi 3 phút (180.000ms) để người đọc chiêm nghiệm chiều sâu
   useEffect(() => {
     const timer = setInterval(() => {
-      setDailyQuote(getRandomMartialQuote());
-    }, 12000);
+      setDailyQuote((prev) => getRandomMartialQuote(prev?.id));
+    }, 180000); // 3 phút = 180.000ms
     return () => clearInterval(timer);
   }, []);
   const portalGateways = [

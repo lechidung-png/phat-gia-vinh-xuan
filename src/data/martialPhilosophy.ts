@@ -819,10 +819,14 @@ export function getDailyMartialQuote(): MartialWisdomQuote {
   return MARTIAL_WISDOM_QUOTES[index];
 }
 
-/** Lấy ngẫu nhiên một câu quote */
-export function getRandomMartialQuote(): MartialWisdomQuote {
-  const index = Math.floor(Math.random() * MARTIAL_WISDOM_QUOTES.length);
-  return MARTIAL_WISDOM_QUOTES[index];
+/** Lấy ngẫu nhiên một câu quote (tránh lặp lại câu hiện tại nếu có thể) */
+export function getRandomMartialQuote(excludeId?: string): MartialWisdomQuote {
+  const pool = excludeId
+    ? MARTIAL_WISDOM_QUOTES.filter((q) => q.id !== excludeId)
+    : MARTIAL_WISDOM_QUOTES;
+  const list = pool.length > 0 ? pool : MARTIAL_WISDOM_QUOTES;
+  const index = Math.floor(Math.random() * list.length);
+  return list[index];
 }
 
 /** Lấy danh sách lời khuyên theo danh mục */
