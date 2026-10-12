@@ -21,6 +21,7 @@ import {
   FlipHorizontal,
   Maximize2,
   Globe,
+  HeartPulse,
 } from "lucide-react";
 import {
   CANONICAL_LESSONS,
@@ -478,13 +479,110 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                 </div>
               </div>
 
-              {/* Đối Chiếu Tinh Hoa Vịnh Xuân Thế Giới (Nếu có) */}
+              {/* Khối 3: Đối Sánh Hệ Thống Vịnh Xuân Thế Giới (Bối Cảnh Lịch Sử & Nguyên Lý Chung) */}
+              {currentFormIntro.worldLineageContext && (
+                <div className="col-span-1 md:col-span-2 p-5 sm:p-6 rounded-3xl bg-[#170E0A] border border-[#F5D06C]/35 space-y-4 shadow-xl">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#F5D06C]/20 pb-3">
+                    <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#F5D06C]">
+                      <Globe className="w-4 h-4 text-[#F5D06C]" />
+                      <span>3. Đối Sánh Hệ Thống Vịnh Xuân Thế Giới • Bối Cảnh &amp; Nguyên Lý Phổ Quát</span>
+                    </div>
+                    <span className="text-xs font-mono font-bold text-amber-200/90 bg-[#2A160E] px-3 py-1 rounded-full border border-[#F5D06C]/25">
+                      {currentFormIntro.worldLineageContext.globalName}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                    <div className="space-y-3">
+                      <div>
+                        <span className="text-[11px] font-mono uppercase font-bold text-[#F5D06C] block mb-1">
+                          Vị Thế Trong Hệ Thống Vịnh Xuân Toàn Cầu:
+                        </span>
+                        <p className="text-amber-100/90 leading-relaxed">
+                          {currentFormIntro.worldLineageContext.globalStanding}
+                        </p>
+                      </div>
+                      <div>
+                        <span className="text-[11px] font-mono uppercase font-bold text-[#F5D06C] block mb-1">
+                          Cội Nguồn Lịch Sử &amp; Liên Hệ Chi Phái:
+                        </span>
+                        <p className="text-amber-200/80 leading-relaxed font-sans">
+                          {currentFormIntro.worldLineageContext.historicalRoots}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <span className="text-[11px] font-mono uppercase font-bold text-[#F5D06C] block mb-1">
+                        Nguyên Lý Sinh Cơ Học Phổ Quát Chung:
+                      </span>
+                      <div className="space-y-2">
+                        {currentFormIntro.worldLineageContext.universalPrinciples.map((up, uIdx) => (
+                          <div
+                            key={uIdx}
+                            className="p-2.5 rounded-xl bg-[#20120B] border border-[#F5D06C]/20 flex items-start gap-2 text-xs text-amber-100 leading-relaxed"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#F5D06C] mt-1.5 shrink-0" />
+                            <span>{up}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Khối 4: Bản Sắc Đặc Thù & Giá Trị Y Võ Của Phật Gia Vịnh Xuân Việt Nam */}
+              {currentFormIntro.pgvxUniqueness && (
+                <div className="col-span-1 md:col-span-2 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-[#24130A] to-[#180D08] border border-emerald-500/35 space-y-4 shadow-xl">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-500/20 pb-3">
+                    <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-emerald-400">
+                      <HeartPulse className="w-4 h-4 text-emerald-400" />
+                      <span>4. Bản Sắc Đặc Thù &amp; Giá Trị Y Võ Phật Gia Vịnh Xuân Việt Nam</span>
+                    </div>
+                    <span className="text-xs font-mono font-bold text-emerald-300 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-700/40">
+                      Truyền Thừa &amp; Y Sinh Học GS.TS Nguyễn Mạnh Nhâm
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div className="p-3.5 rounded-2xl bg-[#140C08] border border-emerald-500/20 space-y-1.5">
+                      <span className="text-[11px] font-mono uppercase font-bold text-emerald-400 block">
+                        Nét Dị Biệt Tinh Hoa:
+                      </span>
+                      <p className="text-emerald-100/90 leading-relaxed">
+                        {currentFormIntro.pgvxUniqueness.distinctiveFeatures}
+                      </p>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl bg-[#140C08] border border-emerald-500/20 space-y-1.5">
+                      <span className="text-[11px] font-mono uppercase font-bold text-emerald-400 block">
+                        Giá Trị Y Học &amp; Cột Sống (Y Võ):
+                      </span>
+                      <p className="text-emerald-100/90 leading-relaxed">
+                        {currentFormIntro.pgvxUniqueness.biomechanicalMedicalValue}
+                      </p>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl bg-[#140C08] border border-emerald-500/20 space-y-1.5">
+                      <span className="text-[11px] font-mono uppercase font-bold text-emerald-400 block">
+                        Tôn Chỉ Thực Chiến Cận Chiến:
+                      </span>
+                      <p className="text-emerald-100/90 leading-relaxed">
+                        {currentFormIntro.pgvxUniqueness.combatDoctrine}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Khối 5: Cầu Nối Tinh Hoa Tông Sư Thế Giới (100% Các Bài) */}
               {currentFormIntro.globalBridge && (
-                <div className="col-span-1 md:col-span-2 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#24130A] to-[#160D08] border border-[#F5D06C]/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-md">
+                <div className="col-span-1 md:col-span-2 p-5 rounded-2xl bg-gradient-to-r from-[#24130A] via-[#1E1009] to-[#140C08] border border-[#F5D06C]/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg">
                   <div className="space-y-1.5 flex-1">
                     <div className="flex items-center gap-2 text-[#F5D06C] text-xs font-mono font-bold uppercase tracking-wider">
-                      <Globe className="w-3.5 h-3.5 text-[#F5D06C]" />
-                      <span>Đối Chiếu Tinh Hoa Vịnh Xuân Thế Giới • {currentFormIntro.globalBridge.master}</span>
+                      <Globe className="w-4 h-4 text-[#F5D06C]" />
+                      <span>Cầu Nối Học Thuật Tông Sư Thế Giới • {currentFormIntro.globalBridge.master}</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-200 font-serif leading-relaxed">
                       <strong className="text-amber-200">{currentFormIntro.globalBridge.doctrine}:</strong> {currentFormIntro.globalBridge.correlation}
@@ -706,18 +804,45 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
 
               {/* Nội dung mở rộng khi không thu gọn */}
               {!isIntroCollapsed && (
-                <div className="mt-3 pt-3 border-t border-[#F5D06C]/15 grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-amber-100/90">
-                  {currentFormIntro.principles.map((pr, i) => (
-                    <div
-                      key={i}
-                      className="p-2.5 rounded-xl bg-[#140C08] border border-[#F5D06C]/15 flex items-start gap-2"
-                    >
-                      <span className="text-[#F5D06C] font-mono font-bold text-[10px] bg-[#F5D06C]/15 px-1.5 py-0.5 rounded">
-                        #{i + 1}
-                      </span>
-                      <span className="leading-snug text-[11px]">{pr}</span>
+                <div className="mt-3 pt-3 border-t border-[#F5D06C]/15 space-y-2.5">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-amber-100/90">
+                    {currentFormIntro.principles.map((pr, i) => (
+                      <div
+                        key={i}
+                        className="p-2.5 rounded-xl bg-[#140C08] border border-[#F5D06C]/15 flex items-start gap-2"
+                      >
+                        <span className="text-[#F5D06C] font-mono font-bold text-[10px] bg-[#F5D06C]/15 px-1.5 py-0.5 rounded">
+                          #{i + 1}
+                        </span>
+                        <span className="leading-snug text-[11px]">{pr}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Thanh tóm tắt đối sánh thế giới & PGVX */}
+                  {(currentFormIntro.worldLineageContext || currentFormIntro.pgvxUniqueness) && (
+                    <div className="p-2.5 rounded-xl bg-[#20120B] border border-[#F5D06C]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px]">
+                      <div className="flex flex-wrap items-center gap-2">
+                        {currentFormIntro.worldLineageContext && (
+                          <span className="inline-flex items-center gap-1 text-[#F5D06C] font-mono font-semibold">
+                            <Globe className="w-3 h-3 text-[#F5D06C]" />
+                            <span>{currentFormIntro.worldLineageContext.globalName}</span>
+                          </span>
+                        )}
+                        {currentFormIntro.pgvxUniqueness && (
+                          <span className="text-amber-200/80 truncate max-w-xl">
+                            • <strong className="text-emerald-400 font-normal">Đặc thù PGVX:</strong> {currentFormIntro.pgvxUniqueness.distinctiveFeatures}
+                          </span>
+                        )}
+                      </div>
+                      <button
+                        onClick={() => setActiveFormTab("intro")}
+                        className="text-[#F5D06C] hover:underline font-bold text-[10px] shrink-0 self-end sm:self-auto cursor-pointer"
+                      >
+                        Đọc nghiên cứu đối sánh →
+                      </button>
                     </div>
-                  ))}
+                  )}
                 </div>
               )}
             </div>
