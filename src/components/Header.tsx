@@ -6,7 +6,6 @@ import {
   Search,
   Swords,
   GitBranch,
-  ShieldCheck,
   Sparkles,
   Hand,
   ShieldAlert,
@@ -21,14 +20,12 @@ interface HeaderProps {
   activeTab: NavTab;
   setActiveTab: (tab: NavTab) => void;
   openSearch: () => void;
-  openStanceGuide: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   activeTab,
   setActiveTab,
   openSearch,
-  openStanceGuide,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -97,18 +94,8 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Right Action Icons: Search + Stance Guide + Mobile Menu Toggle */}
+        {/* Right Action Icons: Search + Mobile Menu Toggle */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-
-          {/* Quick Stance Guide Button (Chỉ hiển thị từ tablet md trở lên) */}
-          <button
-            onClick={openStanceGuide}
-            title="Quy chuẩn Tấn Kiềm Dương (Chân Hẹp)"
-            aria-label="Quy chuẩn Tấn Kiềm Dương (Chân Hẹp)"
-            className="hidden md:flex min-w-[40px] min-h-[40px] items-center justify-center p-2 rounded-xl text-[#10B981] bg-[#10B981]/15 border border-[#10B981]/30 hover:bg-[#10B981]/25 transition-all cursor-pointer"
-          >
-            <ShieldCheck className="w-4 h-4" />
-          </button>
 
           {/* Search Trigger (Chuẩn Touch Target >= 44px trên Mobile) */}
           <button
@@ -139,22 +126,6 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile / Tablet Dropdown Menu Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#180E09] border-b border-[#3D291F] px-4 py-3.5 space-y-3 shadow-2xl animate-fadeIn">
-          {/* Tiện ích Quick-Access trên Mobile (Quy Chuẩn Tấn) */}
-          <button
-            onClick={() => {
-              setMobileMenuOpen(false);
-              openStanceGuide();
-            }}
-            className="w-full p-2.5 rounded-xl bg-[#10B981]/10 border border-[#10B981]/30 text-emerald-200 hover:text-white flex items-center gap-2.5 transition cursor-pointer text-left"
-            aria-label="Mở quy chuẩn Tấn Kiềm Dương"
-          >
-            <ShieldCheck className="w-4 h-4 text-[#10B981] shrink-0" />
-            <div className="min-w-0">
-              <div className="text-xs font-bold text-emerald-400 truncate">Quy Chuẩn Tấn Kiềm Dương</div>
-              <div className="text-[10px] text-emerald-200/60 truncate">Định hình trục thân &amp; chân hẹp chuẩn mực</div>
-            </div>
-          </button>
-
           <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
             Danh Mục Phân Hệ Võ Học &amp; Khí Công
           </div>

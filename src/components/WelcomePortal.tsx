@@ -7,7 +7,6 @@ import {
   Hand,
   BookOpen,
   ArrowRight,
-  ShieldCheck,
   ChevronRight,
   Award,
   Layers,
@@ -20,7 +19,6 @@ import { getRandomMartialQuote, MartialWisdomQuote } from "@/data/martialPhiloso
 interface WelcomePortalProps {
   onNavigateTab: (tab: NavTab, formId?: string, subTab?: string) => void;
   openSearch?: () => void;
-  openStanceGuide: () => void;
 }
 
 interface LearningStep {
@@ -34,7 +32,6 @@ interface LearningStep {
 
 export const WelcomePortal: React.FC<WelcomePortalProps> = ({
   onNavigateTab,
-  openStanceGuide,
 }) => {
   const [dailyQuote, setDailyQuote] = useState<MartialWisdomQuote>(() => getRandomMartialQuote());
 
@@ -384,7 +381,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
 
       {/* 4. LỘ TRÌNH SƯ PHẠM 5 CHẶNG (LEARNING ROADMAP) */}
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#3D291F] space-y-5">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#3D291F] pb-3">
+        <div className="border-b border-[#3D291F] pb-3">
           <div>
             <span className="text-[11px] font-bold text-[#E2B743] uppercase tracking-wider">
               Khuyến Nghị Huấn Luyện Chuẩn Sách Gốc
@@ -393,13 +390,6 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Lộ Trình Tầm Đạo 5 Chặng Chuẩn Sư Phạm Theo Sách Gốc
             </h3>
           </div>
-          <button
-            onClick={openStanceGuide}
-            className="self-start sm:self-auto text-xs px-3 py-1.5 rounded-xl bg-[#10B981]/20 border border-[#10B981]/40 text-[#10B981] font-semibold hover:bg-[#10B981]/30 transition flex items-center gap-1.5 cursor-pointer"
-          >
-            <ShieldCheck className="w-4 h-4" />
-            <span>Quy Chuẩn Tấn Kiềm Dương</span>
-          </button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">

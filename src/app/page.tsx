@@ -12,7 +12,6 @@ import { CenterlineExplorer } from "@/components/CenterlineExplorer";
 import { LineageTree } from "@/components/LineageTree";
 import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
-import { StanceCheckerModal } from "@/components/StanceCheckerModal";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { TECHNIQUES, Technique } from "@/data/techniques";
 import { resolveLessonId } from "@/lib/lessonResolver";
@@ -29,7 +28,6 @@ export default function Home() {
   const [lineageSubTab, setLineageSubTab] = useState<"tree" | "philosophy">("tree");
   const [initialMotionIndex, setInitialMotionIndex] = useState<number | undefined>(undefined);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isStanceGuideOpen, setIsStanceGuideOpen] = useState(false);
 
   // Đọc query parameters từ URL khi mở trang (hỗ trợ liên kết chia sẻ)
   useEffect(() => {
@@ -214,7 +212,6 @@ export default function Home() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         openSearch={() => setIsSearchOpen(true)}
-        openStanceGuide={() => setIsStanceGuideOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -224,7 +221,6 @@ export default function Home() {
           <WelcomePortal
             onNavigateTab={handleNavigateTab}
             openSearch={() => setIsSearchOpen(true)}
-            openStanceGuide={() => setIsStanceGuideOpen(true)}
           />
         )}
         {/* Tab 1: Hệ Thống 18 Bài Quyền Pháp & Binh Khí */}
@@ -287,14 +283,6 @@ export default function Home() {
         onSelectTechnique={handleSelectTechnique}
         onSelectMonograph={() => handleNavigateTab("library")}
       />
-
-      {/* Stance Checker Modal (Quy chuẩn Tấn Kiềm Dương) */}
-      <StanceCheckerModal
-        isOpen={isStanceGuideOpen}
-        onClose={() => setIsStanceGuideOpen(false)}
-      />
-
-
 
       {/* Modern Martial Footer */}
       <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5 mb-16 lg:mb-0">
