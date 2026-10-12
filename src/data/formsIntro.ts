@@ -1,12 +1,13 @@
 // DỮ LIỆU CHUẨN XÁC: LỜI NÓI ĐẦU, TRIẾT LÝ YẾU CHỈ & ĐỐI SÁNH VỊNH XUÂN THẾ GIỚI CỦA 18 BÀI QUYỀN
 // Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền (GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức)
-// Mở rộng nghiên cứu học thuật: Đối chiếu hệ thống Vịnh Xuân Quốc Tế (Diệp Vấn, Hoàng Thuần Lương, Chu Thượng Đồng, Lương Đỉnh, Bành Nam...)
+// Mở rộng nghiên cứu học thuật: Đối chiếu hệ thống Vịnh Xuân Quốc Tế (Diệp Vấn, Nguyễn Kỳ Sơn - Sầm Năng, Hoàng Thuần Lương, Chu Thượng Đồng, Lương Đỉnh, Bành Nam...)
 
 export interface WorldLineageContext {
   globalName: string; // Tên gọi quốc tế (Cantonese / English / Hanzi)
   globalStanding: string; // Vị thế kinh điển trong hệ thống Vịnh Xuân thế giới
   historicalRoots: string; // Nguồn gốc lịch sử & liên hệ chi phái
   universalPrinciples: string[]; // Các nguyên lý sinh cơ học phổ quát mà Vịnh Xuân thế giới đều tuân thủ
+  lineageVariantNotes?: string; // Dị bản chi phái (nhánh Nguyễn Kỳ Sơn, Samuel Kwok, Mui Wing Chun...)
 }
 
 export interface PgvxUniqueness {
@@ -37,6 +38,155 @@ export interface FormIntroduction {
   };
 }
 
+// ==============================================================================
+// LỤC ĐẠI TRỤ CỘT KINH ĐIỂN VỊNH XUÂN THẾ GIỚI (THE SIX CLASSICAL PILLARS)
+// ==============================================================================
+export interface Classical6Pillar {
+  order: number;
+  code: string;
+  formTitle: string;
+  hanziName: string;
+  coreMnemonic: string; // 6 ý ghi nhớ kinh điển: "Xây nền", "Chuyển động", "Ứng biến", "Chỉnh góc", "Rèn lực tầm dài", "Binh khí ngắn"
+  meaning: string;
+  coreFunction: string;
+  pedagogicalRole: string;
+  scholarlyInsight: string;
+  pgvxIntegration: string;
+}
+
+export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
+  {
+    order: 1,
+    code: "siu-nim-tau",
+    formTitle: "Tiểu Niệm Đầu",
+    hanziName: "小念頭 • Siu Nim Tau",
+    coreMnemonic: "Tiểu Niệm Đầu xây nền",
+    meaning: "Ý niệm nhỏ ban đầu — Những ý niệm căn bản đầu tiên",
+    coreFunction: "Xây dựng nền móng tĩnh: Định hình tư thế Nhị Tự Kiềm Dương Tấn, cấu trúc thân thể chóp nêm, vị trí khuỷu tay thủ trung lộ và khả năng thả lỏng tuyệt đối khi vận động.",
+    pedagogicalRole: "Bài thường tập tại chỗ, giúp người học chú ý tới chất lượng từng milimet động tác. Mọi bài quyền sau đều phát triển từ nền tảng này.",
+    scholarlyInsight: "Rèn luyện cấu trúc khi đứng tương đối tĩnh; triệt tiêu hoàn toàn sự phụ thuộc vào quán tính bước chân để ép các khớp xương và gân cơ tự phát lực.",
+    pgvxIntegration: "Phật Gia Vịnh Xuân kết hợp Nhị Tự Kiềm Dương Tấn chân hẹp che kín hạ bộ và nguyên lý giải phẫu cột sống của GS.TS Nguyễn Mạnh Nhâm (cuộn xương cùng cụt, thẳng cột sống thắt lưng chống thoái hóa L4-L5)."
+  },
+  {
+    order: 2,
+    code: "chum-kiu",
+    formTitle: "Tầm Kiều",
+    hanziName: "尋橋 / 沉橋 • Chum Kiu",
+    coreMnemonic: "Tầm Kiều đưa cơ thể vào chuyển động",
+    meaning: "Tìm cầu ('cầu' chỉ cánh tay tạo tiếp xúc) / Trầm cầu (dìm nén cầu đối phương)",
+    coreFunction: "Đưa nền tảng tĩnh vào chuyển động: Xoay thân biên thân, bước chân đạp bộ, phối hợp tay - thân - chân nhịp nhàng và kỹ thuật cước triệt hạ thấp.",
+    pedagogicalRole: "Tiếp cận, thiết lập tiếp xúc xúc giác và xử lý lực của đối phương trong khi toàn thân vẫn giữ được sự phối hợp đồng trục.",
+    scholarlyInsight: "Mối quan hệ hữu cơ: Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh; Tầm Kiều rèn cách giữ và sử dụng cấu trúc ấy khi di chuyển. Dòng Nguyễn Kỳ Sơn — Sầm Năng (Quảng Châu) còn gọi là 'Trầm Kiều' (nhấn chìm, đè nén cầu đối phương).",
+    pgvxIntegration: "PGVX dung hợp cả hai: 'Vấn lộ' đưa tay hỏi đường nghe lực (Tìm Kiều) và 'Thủ chìm cùi chỏ' nêm trôi ép góc phá thế địch (Trầm Kiều), kết hợp bộ pháp Xước mã đạp bộ trượt sát đất."
+  },
+  {
+    order: 3,
+    code: "biu-jee",
+    formTitle: "Tiêu Chỉ",
+    hanziName: "標指 • Biu Jee / Biu Ji",
+    coreMnemonic: "Tiêu Chỉ phát triển ứng biến & phục hồi",
+    meaning: "Ngón tay phóng ra qua đầu ngón — Kỹ pháp cứu nguy khẩn cấp",
+    coreFunction: "Phát triển khả năng ứng biến và phục hồi: Bổ sung cách phát lực ở cự ly cực ngắn (thốn kình), kỹ thuật cùi chỏ cận chiến, chuyển hướng đột ngột và xử lý khi bị kẹt tay hoặc rơi vào vị trí bất lợi.",
+    pedagogicalRole: "Trong nhiều nhánh Diệp Vấn và Samuel Kwok, bài được giải thích như hệ kỹ thuật 'cứu nguy' (Emergency Recovery). Ý nghĩa của bài rộng hơn nhiều so với riêng động tác ngón tay.",
+    scholarlyInsight: "Khôi phục trung tuyến khi bị phá vỡ cấu trúc phòng thủ; giải thoát cơ thể khỏi các đòn khóa siết hoặc các góc kẹt bằng chỏ pháp và chỉ pháp xỉa xuyên thấu.",
+    pgvxIntegration: "Khẩu quyết chân truyền PGVX: 'Dĩ công vi thủ, dĩ đả vi tiêu' kết hợp bộ pháp hoành thoái lách góc hẹp và kỹ thuật điểm huyệt giải phẫu chuẩn xác."
+  },
+  {
+    order: 4,
+    code: "muk-yan-jong",
+    formTitle: "Mộc Nhân Thung",
+    hanziName: "木人樁 • Muk Yan Jong",
+    coreMnemonic: "Mộc Nhân chỉnh khoảng cách và góc",
+    meaning: "Cọc người gỗ — Người bạn tập vô hình không bao giờ khoan nhượng",
+    coreFunction: "Kiểm tra kỹ thuật trên đối tượng có cấu trúc cố định: Rèn khoảng cách, góc tiếp xúc, vị trí thân người, bộ pháp và sự phối hợp đồng bộ giữa đòn tay và đòn chân.",
+    pedagogicalRole: "Kết nối kiến thức của ba bài tay không với thực tế vận dụng; nguồn Mui Wing Chun và truyền thống nhấn mạnh trọng tâm không chỉ ở động tác tay mà nằm ở cách đặt và di chuyển cơ thể quanh cọc.",
+    scholarlyInsight: "Cọc gỗ cố định buộc người tập phải tự uốn nắn cơ thể mình thích ứng với không gian vật lý, thay vì chờ đợi đối thủ di chuyển theo ý mình.",
+    pgvxIntegration: "Bảo tồn cây Mộc Nhân lịch sử 1954 tại 38 Gia Ngư; chia thành 2 bài: Mộc Nhân Số 1 (rèn nêm góc lướt gỗ, khóa chân cọc cong) và Mộc Nhân Tiến Lùi (né diện kích trắc, chuyển góc 180° - 360° quanh cọc)."
+  },
+  {
+    order: 5,
+    code: "luk-dim-boon-gwun",
+    formTitle: "Lục Điểm Bán Côn",
+    hanziName: "六點半棍 • Luk Dim Boon Gwun",
+    coreMnemonic: "Côn rèn lực và độ chính xác ở tầm dài",
+    meaning: "Côn sáu điểm rưỡi — Hệ phương pháp trường binh đoản dụng",
+    coreFunction: "Rèn luyện binh khí dài (2.4m - 2.7m): Độ vững của chân, phối hợp toàn thân, khả năng truyền lực từ gót chân qua eo hông tới đầu côn và độ chính xác về phương hướng.",
+    pedagogicalRole: "Chiều dài của côn khiến những sai lệch nhỏ ở thân thể trở nên rất lớn ở đầu côn, hoạt động như một công cụ khuếch đại sai số giúp người tập tự chỉnh lại kỹ thuật phát lực.",
+    scholarlyInsight: "Đoản binh trường dụng: Vận dụng cây gậy dài với tốc độ và sự súc tích của đoản quyền, đâm xuyên trung tâm bằng thương kình Thiếu Lâm.",
+    pgvxIntegration: "Ứng dụng trên thế tấn Kiềm Dương hạ thấp vững như bàn thạch, đòn đâm thẳng trung lộ 'Thương kình nhập côn' làm chủ đạo, phát kình chấn động sâu sắc."
+  },
+  {
+    order: 6,
+    code: "baat-jaam-do",
+    formTitle: "Bát Trảm Đao",
+    hanziName: "八斬刀 • Baat Jaam Do",
+    coreMnemonic: "Song đao mở rộng nguyên lý sang binh khí ngắn",
+    meaning: "Tám phép chém đao — Cặp song đao cận chiến ngắn",
+    coreFunction: "Rèn luyện binh khí ngắn đôi: Phối hợp độc lập hai tay, bộ pháp áp sát nhập nội, góc vận động biến ảo và kiểm soát cự ly chiến thuật khi cầm binh khí.",
+    pedagogicalRole: "Củng cố các nguyên lý tiết kiệm động tác (motion economy) và chuyển hướng lực đã học trong quyền tay không; là bài học tốt nghiệp đỉnh cao của môn phái.",
+    scholarlyInsight: "Song đao như đôi cánh sắt nối dài cẳng tay; lưỡi đao áp sát cẳng tay bảo vệ trung lộ và các đường chém triệt hạ cổ tay, khuỷu tay và chân đối thủ.",
+    pgvxIntegration: "Lưỡi đao ép sát xương cẳng tay dùng sống đao đỡ đòn vũ khí dài và xoay cổ tay chém xả cận chiến, kết hợp xước mã đạp bộ nhập nội triệt tiêu ưu thế binh khí dài."
+  }
+];
+
+// ==============================================================================
+// CHUYÊN KHẢO HỌC THUẬT: ĐỐI SÁNH CÁC DÒNG TRUYỀN THỪA & NGUYÊN LÝ THỰC VẬN
+// ==============================================================================
+export interface LineageInsight {
+  id: string;
+  title: string;
+  subtitle: string;
+  historicalContext: string;
+  coreDoctrine: string;
+  pgvxCorrelation: string;
+  bulletPoints: string[];
+}
+
+export const LINEAGE_SCHOLARLY_INSIGHTS: LineageInsight[] = [
+  {
+    id: "yuen-brothers-lineage",
+    title: "Mối Liên Hệ Huyết Thống Sư Tổ Nguyễn Tế Công & Đại Sư Nguyễn Kỳ Sơn",
+    subtitle: "Hai Anh Em Lừng Danh Phật Sơn — Thập Nhị Tán Thức & 'Trầm Kiều' vs 'Tìm Kiều'",
+    historicalContext: "Sư Tổ Nguyễn Tế Công (Yuen Chai Wan, 1877–1959, người truyền bá Vịnh Xuân sang Việt Nam) và Đại Sư Nguyễn Kỳ Sơn (Yuen Kay Shan, 1889–1956, trụ cột Vịnh Xuân Quảng Châu - dòng Sầm Năng Sum Nung) là hai anh em ruột xuất thân từ gia tộc quyền quý tại Phật Sơn. Nguyễn Tế Công là anh cả, Nguyễn Kỳ Sơn là người em thứ năm (thường gọi là Nguyễn Lão Ngũ).",
+    coreDoctrine: "Dòng Nguyễn Kỳ Sơn lưu giữ hệ thống 'Thập Nhị Tán Thức' (12 nhóm kỹ thuật rời) bên cạnh 3 bài quyền, mộc nhân, côn và song đao. Đặc biệt, bài thứ hai ở dòng này được diễn giải là 'Trầm Kiều' (沉橋 - dìm nén, nhấn chìm cầu đối phương) thay vì chỉ là 'Tìm Kiều' (尋橋 - tìm kiếm tiếp xúc).",
+    pgvxCorrelation: "Trong Phật Gia Vịnh Xuân của GS.TS Nguyễn Mạnh Nhâm, cả hai tầng nghĩa đều được dung hợp hoàn hảo: Vừa 'Vấn lộ' đưa tay hỏi đường lắng nghe lực (Tìm Kiều), vừa hạ chìm cùi chỏ 'Thủ lưu trung tuyến' để dìm nén đường phát lực của địch (Trầm Kiều).",
+    bulletPoints: [
+      "Huyết thống cội nguồn: Hai anh em Nguyễn Tế Công và Nguyễn Kỳ Sơn cùng thọ giáo Hoắc Bảo Toàn và Phùng Thiếu Khanh.",
+      "Thập Nhị Tán Thức: Nhánh Quảng Châu phát triển 12 thức rời; nhánh Việt Nam phát triển hệ thống đồ sộ 108 Chiêu thức (đơn luyện & đối luyện).",
+      "Tìm Kiều vs Trầm Kiều: Tìm kiếm nhịp cầu tiếp xúc (xúc giác) đồng thời dìm nén trọng tâm và đòn đánh của địch xuống (cơ học)."
+    ]
+  },
+  {
+    id: "forms-vs-chi-sao-reality",
+    title: "Bản Chất Bài Quyền vs Niêm Thủ (Chi Sao) & Giải Mã Kiến Trúc 108 Đối Luyện",
+    subtitle: "Bài Quyền Lưu Giữ Nguyên Lý — Niêm Thủ & Đối Luyện Là Chiếc Cầu Nối Người Thật",
+    historicalContext: "Trong võ học Vịnh Xuân toàn cầu, bài quyền là kho lưu trữ nguyên lý cơ học và phương tiện tự rèn luyện cơ thể (đơn luyện). Tuy nhiên, bài quyền một mình không thể tạo ra khả năng chiến đấu nếu thiếu luyện tập với người thật.",
+    coreDoctrine: "Niêm thủ (Chi Sao) là phương pháp luyện đôi, không phải là một bài quyền đơn lẻ; nó đóng vai trò cầu nối sống còn nối liền động tác đã học với cảm nhận xúc giác (thính kình) và phản xạ sinh tồn khi tiếp xúc.",
+    pgvxCorrelation: "Đây chính là lý do Phật Gia Vịnh Xuân thiết lập kiến trúc đối xứng độc bản: Bài 108 Tại Chỗ Đơn Luyện đi kèm Bài 108 Tại Chỗ Đối Luyện; Bài 108 Tiến Lùi Đơn Luyện đi kèm Bài 108 Tiến Lùi Đối Luyện. Các bài đối luyện này thực chất là hệ thống hóa toàn diện các kịch bản Niêm thủ 2 người, giúp võ sinh chuyển hóa trọn vẹn kỹ thuật từ lý thuyết sang phản xạ da thịt.",
+    bulletPoints: [
+      "Bài quyền = Bản đồ nguyên lý và rèn luyện chất lượng cấu trúc cá nhân.",
+      "Niêm thủ (Chi Sao) = Phòng thí nghiệm xúc giác, loại bỏ độ trễ thị giác của não bộ.",
+      "108 Đối Luyện PGVX = Hệ thống kịch bản đối kháng 2 người hoàn chỉnh, hiện thực hóa Niêm Thủ thành thực chiến."
+    ]
+  },
+  {
+    id: "biu-jee-recovery-and-pole-precision",
+    title: "Tiêu Chỉ: Kỹ Pháp Cứu Nguy Phục Hồi & Côn Dài Khuếch Đại Sai Lệch",
+    subtitle: "Giải Mã Hệ Thống Thoát Kẹt Tay Của Samuel Kwok & Nguyên Lý Đòn Bẩy 2.7 Mét",
+    historicalContext: "Trong các nhánh truyền thừa Diệp Vấn và đặc biệt là hệ thống của Đại sư Samuel Kwok, bài Tiêu Chỉ (Biu Jee) được giảng giải là bài quyền 'Cứu nguy khẩn cấp' khi người tập rơi vào tình thế bất lợi hoặc bị khóa kẹt tay.",
+    coreDoctrine: "Tiêu Chỉ dạy cách phóng sức từ cùi chỏ và đầu ngón tay ở cự ly hẹp nhất để lật ngược tình thế khi đường trung lộ bị phá vỡ. Trong khi đó, Lục Điểm Bán Côn (dài 2.7m) biến những sai lệch nhỏ ở thân thể thành lỗi sai lớn ở đầu côn, buộc người tập phải tinh chỉnh sự đồng bộ toàn thân.",
+    pgvxCorrelation: "GS.TS Nguyễn Mạnh Nhâm nhấn mạnh: Tiêu Chỉ là 'Dĩ công vi thủ, dĩ đả vi tiêu' — khi bị ép vào góc kẹt, chỉ có phản công xuyên thấu mới là lối thoát duy nhất. Còn với Lục Điểm Bán Côn, sức mạnh phát ra không phải từ cơ bắp cánh tay mà là 'Thương kình' phóng từ gót chân Kiềm Dương qua eo hông.",
+    bulletPoints: [
+      "Tiêu Chỉ: Ý nghĩa bài vượt xa động tác ngón tay, là nghệ thuật xoay chuyển càn khôn khi bị kẹt tay hoặc vỡ trung tuyến.",
+      "Lục Điểm Bán Côn: Côn dài 2.7m hoạt động như chiếc kính lúp phóng đại mọi sai lệch cơ học ở eo và chân.",
+      "Bát Trảm Đao: Củng cố tính tiết kiệm động tác (kinematic economy) tột cùng trong không gian hẹp."
+    ]
+  }
+];
+
+// ==============================================================================
+// DANH MỤC CHI TIẾT 18 BÀI QUYỀN & BINH KHÍ
+// ==============================================================================
 export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
   // ==============================================================================
   // 1. TAM ĐẠI QUYỀN PHÁP CỐT LÕI
@@ -48,24 +198,25 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Tam Đại Quyền",
     categoryOrder: 1,
     formOrder: 1,
-    meaning: "Ý niệm nhỏ ban đầu — Nền móng cội nguồn của toàn bộ hệ thống Phật Gia Vịnh Xuân",
+    meaning: "Ý niệm nhỏ ban đầu — Những ý niệm căn bản đầu tiên xây nền móng toàn phái",
     philosophy: "Định tâm thủ trung, quy nguyên bế khí. Không cầu chiêu thức hoa mỹ, toàn bộ bài quyền tập trung rèn luyện cảm giác thăng bằng của Nhị Tự Kiềm Dương Tấn, định hình trục Tý Ngọ Tuyến và cùi chỏ thủ trung lộ.",
     principles: [
       "Thủ trung dụng trung: Mọi đường phát lực đều xuất phát từ hoặc bảo vệ đường trung tuyến.",
       "Khép cùi chỏ, chìm vai hạ hông: Cùi chỏ cách ngực một nắm tay, khóa kín mạn sườn và hạ bộ.",
       "Ý thủ đan điền: Thở sâu bằng bụng dưới (cơ hoành), dùng ý dẫn khí, dĩ nhu khắc cương."
     ],
-    keyMantra: "Ý thủ đan điền • Trực chỉ trung tuyến • Nhu trung hữu cương",
+    keyMantra: "Tiểu Niệm Đầu xây nền • Định tâm thủ trung • Nhu trung hữu cương",
     introQuote: "Tiểu Niệm Đầu là bài quyền cơ bản nhất nhưng cũng là bài quan trọng nhất của Phật Gia Vịnh Xuân. Toàn bộ các thủ pháp cốt lõi: Than Thủ, Bàng Thủ, Phục Thủ, Nhật Tự Quyền đều được định hình chuẩn mực tại đây.",
     worldLineageContext: {
       globalName: "Siu Nim Tau (Little Idea / Little Beginning / 小念頭)",
-      globalStanding: "Bài quyền nhập môn số 1 bắt buộc của mọi chi phái Vịnh Xuân toàn cầu. Được ví như bảng chữ cái 'ABC' định hình hình học cơ thể và tư duy cấu trúc.",
+      globalStanding: "Bài quyền nhập môn số 1 bắt buộc của mọi chi phái Vịnh Xuân toàn cầu. Trụ cột thứ nhất: 'Tiểu Niệm Đầu xây nền' — rèn luyện cấu trúc khi đứng tương đối tĩnh, giúp người học chú ý tới chất lượng từng động tác.",
       historicalRoots: "Bảo tồn nguyên vẹn từ cội nguồn Hồng Thuyền Quảng Đông và truyền thừa Diệp Vấn Hồng Kông, Bành Nam Phật Sơn đến Nguyễn Tế Công Việt Nam.",
       universalPrinciples: [
         "Trục Tý Ngọ Tuyến (Centerline Theory) chia đôi cơ thể.",
-        "Khép cùi chỏ phát lực (Elbow Energy - Kình lực khuỷu tay).",
-        "Đứng yên một vị trí triệt tiêu quán tính bước chân, buộc khớp xương tự phát lực."
-      ]
+        "Khép cùi chỏ phát lực (Elbow Energy - Kình lực khuỷu tay cách ngực 1 quyền).",
+        "Đứng yên một vị trí triệt tiêu quán tính bước chân, buộc khớp xương tự phát lực và thả lỏng khi vận động."
+      ],
+      lineageVariantNotes: "Mọi tổ chức Vịnh Xuân quốc tế (Ip Man Ving Tsun, Leung Ting WingTsun, Wong Shun Leung) đều coi bài này là nền móng tĩnh bất biến định hình khung tay."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Thế Nhị Tự Kiềm Dương Tấn chân rất hẹp (khoảng cách hai gót chân chỉ khoảng một nắm tay, mũi chân khép nhọn), bảo vệ triệt để hạ bộ và khớp háng khác với tấn rộng bằng vai của các chi phái Hồng Kông.",
@@ -82,29 +233,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
   "bai-09": {
     formId: "bai-09",
     title: "Tầm Kiều",
-    hanziName: "尋橋 • Chum Kiu",
+    hanziName: "尋橋 / 沉橋 • Chum Kiu",
     category: "Tam Đại Quyền",
     categoryOrder: 1,
     formOrder: 2,
     demonstrator: "HLV Nguyễn Trọng Sơn",
-    meaning: "Tìm cầu, bắc cầu — Kết nối và thiết lập tiếp xúc xúc giác với đối phương",
+    meaning: "Tìm cầu ('cầu' là cánh tay tiếp xúc) / Trầm cầu (dìm nén cầu đối phương)",
     philosophy: "Tầm kiều là tìm cầu nối giữa mình và đối thủ ('Tầm kiều tầm sư, tầm hữu, tầm đối phương'). Tay đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ). Nhờ tiếp xúc mà thấu hiểu sức mạnh (thính kình) và hướng đánh của địch, từ đó tay chân tự động xuất đòn hóa giải.",
     principles: [
       "Xước mã đạp bộ: Di chuyển theo kiểu leo núi, chân trước tiến kéo chân sau theo, trọng tâm 7/3 giữ ở chân sau.",
       "Xoay người biên thân: Vận dụng tối đa các góc xoay thân để hóa giải thế tấn công trực diện và tạo góc phản đòn hiểm hóc.",
       "Bàng Thủ hóa giải: Bàng Thủ là chiêu thức chủ đạo, dùng để lướt trôi lực của đối phương và nhập nội cận chiến."
     ],
-    keyMantra: "Vấn lộ Tầm Kiều thủ tiên hành • Thính kình hóa giải • Xước mã nhập nội",
+    keyMantra: "Tầm Kiều chuyển động • Vấn lộ thính kình • Xước mã nhập nội",
     introQuote: "Tầm Kiều di chuyển theo kiểu leo núi (đạp bộ)... Tay thường đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ). Do tay đưa ra trước mà ta hiểu được nhiều yếu tố của đối phương như sức mạnh (thính kình), hướng đánh, nhiều khi biết được chiêu đó là hư hay thực. Bàng Thủ là chiêu thức được dùng nhiều nhất, thiên về phòng ngự.",
     worldLineageContext: {
-      globalName: "Chum Kiu (Seeking the Bridge / Sinking the Bridge / 尋橋)",
-      globalStanding: "Bài quyền thứ hai của hệ thống Vịnh Xuân thế giới, chuyển từ trạng thái tĩnh tại của Tiểu Niệm Đầu sang trạng thái động của thân pháp và bộ pháp.",
-      historicalRoots: "Hệ thống hóa nguyên lý bắc cầu tiếp xúc (Bridge Contact) truyền thừa từ Lương Tán (Leung Jan) tại Phật Sơn.",
+      globalName: "Chum Kiu (Seeking the Bridge / Sinking the Bridge / 尋橋 / 沉橋)",
+      globalStanding: "Trụ cột thứ hai: 'Tầm Kiều đưa cơ thể vào chuyển động'. Nếu Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh, thì Tầm Kiều rèn cách giữ và sử dụng cấu trúc ấy khi di chuyển, xoay thân và tung đòn đá thấp.",
+      historicalRoots: "Hệ thống hóa nguyên lý bắc cầu tiếp xúc (Bridge Contact) truyền thừa từ Lương Tán tại Phật Sơn; dòng Nguyễn Kỳ Sơn — Sầm Năng diễn giải là 'Trầm Kiều' (nhấn chìm đè nén cầu đối phương).",
       universalPrinciples: [
         "Xoay eo chuyển trục (Turning Stance / Waist Torque) giải phóng lực trực diện.",
         "Thiết lập cầu nối xúc giác (Bridge Concept) để lắng nghe ý đồ đối thủ.",
         "Đòn đá thấp triệt hạ (Low Kicking Techniques) nhắm vào khớp gối và cẳng chân."
-      ]
+      ],
+      lineageVariantNotes: "Mối liên hệ đối xứng: Nhánh Diệp Vấn nhấn mạnh 'Tìm cầu' (Seeking); nhánh Nguyễn Kỳ Sơn nhấn mạnh 'Trầm cầu' (Sinking). PGVX hợp nhất cả hai trong thủ pháp vấn lộ và chìm chỏ."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Kỹ thuật 'Vấn lộ' (hỏi đường bằng cẳng tay) kết hợp đòn cước triệt hạ ngầm kín đáo tuyệt đối không nâng chân quá thắt lưng để bảo toàn trọng tâm.",
@@ -126,24 +278,25 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     categoryOrder: 1,
     formOrder: 3,
     demonstrator: "Võ sư Hồ Chí Cang",
-    meaning: "Ngón tay phóng sức — Kỹ pháp cứu nguy và phản kích chớp nhoáng",
-    philosophy: "Phóng sức ra qua những đầu ngón tay — kỹ pháp chuyên sâu môn phái ('Tiêu Chỉ bất xuất môn'). Chuyển từ thế phòng ngự sang phản công chủ động: 'Dĩ công vi thủ, dĩ đả vi tiêu'. Dùng bàn tay mở và ngón tay xỉa xuyên thấu để đạt tầm với tối ưu và tiếp cận điểm hiểm.",
+    meaning: "Ngón tay phóng sức — Kỹ pháp cứu nguy khẩn cấp và phục hồi trung lộ",
+    philosophy: "Phóng sức ra qua những đầu ngón tay — kỹ pháp chuyên sâu môn phái ('Tiêu Chỉ bất xuất môn'). Chuyển từ thế phòng ngự sang phản công chủ động: 'Dĩ công vi thủ, dĩ đả vi tiêu'. Dùng bàn tay mở và ngón tay xỉa xuyên thấu để đạt tầm với tối ưu và xử lý khi bị kẹt tay hoặc bất lợi.",
     principles: [
       "Mở bàn tay, phát lực đầu ngón: Không nắm quyền mà dùng ngón tay xỉa xuyên thấu (chỉ pháp), gia tăng tầm với và độ hiểm sát thương.",
       "Hoành thoái, mã chéo: Bộ pháp chuyển đổi đột ngột ở cự ly cực ngắn, thoát khỏi vòng vây hoặc góc kẹt.",
       "Phục hồi trung tuyến: Khi bị phá vỡ cấu trúc phòng thủ, dùng chỉ pháp và chỏ pháp xoay chuyển tình thế tức thì."
     ],
-    keyMantra: "Tiêu Chỉ bất xuất môn • Dĩ công vi thủ • Dĩ đả vi tiêu",
+    keyMantra: "Tiêu Chỉ ứng biến • Cứu nguy phục hồi • Dĩ công vi thủ",
     introQuote: "Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay... Theo tên thì đây là 'phóng sức ra qua những đầu ngón tay', một kỹ pháp đặc sắc của VXQ. Chủ trương tấn công là chủ yếu (dĩ công vi thủ, dĩ đả vi tiêu).",
     worldLineageContext: {
       globalName: "Biu Jee (Darting Fingers / Thrusting Fingers / 鏢指)",
-      globalStanding: "Bài quyền đỉnh cao thứ ba của Vịnh Xuân thế giới, được mệnh danh là 'Kỹ thuật cứu nguy khẩn cấp' (Emergency & Recovery Form).",
-      historicalRoots: "Từng được giữ kín nghiêm ngặt trong nội môn truyền thống ('Tiêu Chỉ bất xuất môn' — không truyền ra ngoài cửa phái).",
+      globalStanding: "Trụ cột thứ ba: 'Tiêu Chỉ phát triển ứng biến & phục hồi'. Được định danh là hệ kỹ thuật cứu nguy khẩn cấp (Emergency Recovery Form) khi cấu trúc bị phá vỡ hoặc bị kẹt tay ở cự ly gần.",
+      historicalRoots: "Từng được giữ kín nghiêm ngặt trong nội môn truyền thống ('Tiêu Chỉ bất xuất môn'); hệ Samuel Kwok và Diệp Vấn đều nhấn mạnh khả năng ứng biến trong tình thế hiểm nghèo.",
       universalPrinciples: [
         "Khôi phục trung tuyến khi bị phá vỡ cấu trúc bảo vệ ban đầu.",
         "Phát lực đầu ngón tay (Finger Thrusts) mở rộng tầm đánh tối đa.",
-        "Chỏ pháp cận chiến tàn khốc giải cứu khi bị ôm ghì khóa khớp."
-      ]
+        "Chỏ pháp cận chiến tàn khốc giải cứu khi bị ôm ghì khóa khớp hoặc kẹt tay."
+      ],
+      lineageVariantNotes: "Ý nghĩa của Tiêu Chỉ rộng hơn riêng động tác ngón tay; đó là tư duy phục hồi vị thế chiến thuật khi rơi vào góc chết."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Vận dụng nguyên lý 'Chỉ thấu kình' — ngón tay phóng lực như mũi phi tiêu kết hợp điểm huyệt giải phẫu, chuyển hướng thân pháp bằng bộ hoành thoái cự ly hẹp.",
@@ -168,7 +321,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     categoryOrder: 2,
     formOrder: 4,
     demonstrator: "HLV Phạm Đức Hùng",
-    meaning: "108 Chiêu thức liên hoàn tại chỗ — Khung xương kỹ thuật cơ bản nhất của môn phái",
+    meaning: "108 Chiêu thức liên hoàn tại chỗ — Khung xương kỹ thuật cơ bản đơn luyện của môn phái",
     philosophy: "Đây là bài quyền cơ bản và toàn diện nhất. Luyện tập tại chỗ trên thế Tấn Kiềm Dương giúp định hình chuẩn xác các góc độ công thủ, khắc sâu phản xạ cơ bắp và rèn luyện tính liên hoàn của 108 thế võ chân truyền.",
     principles: [
       "Định hình góc độ chuẩn xác: Khớp vai, cùi chỏ và cổ tay di chuyển đúng tọa độ trung tuyến.",
@@ -179,13 +332,14 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     introQuote: "Đây là bài võ cơ bản nhất, thường gọi tắt là Bài 108. Theo truyền thống thì bài có 108 thế, bao gồm toàn bộ các đòn thế công thủ nền tảng của Phật Gia Vịnh Xuân.",
     worldLineageContext: {
       globalName: "108 Stationary Solo Drills (一百零八式 原地單練)",
-      globalStanding: "Con số 108 mang tính biểu tượng Phật giáo thiêng liêng (đoạn trừ 108 phiền não). Trong khi Vịnh Xuân Hồng Kông đưa 108/116 thế lên Mộc Nhân, nhánh Việt Nam bảo tồn trọn vẹn 108 thế tay không độc lập.",
-      historicalRoots: "Truyền thừa trực tiếp từ Sư Tổ Nguyễn Tế Công truyền dạy cho Cụ Trần Thúc Tiển tại Hà Nội từ những năm 1940 - 1950.",
+      globalStanding: "Con số 108 mang tính biểu tượng Phật giáo thiêng liêng (đoạn trừ 108 phiền não). Trong khi Vịnh Xuân Hồng Kông đưa 108/116 thế lên Mộc Nhân, nhánh Việt Nam bảo tồn trọn vẹn 108 thế tay không đơn luyện.",
+      historicalRoots: "Truyền thừa trực tiếp từ Sư Tổ Nguyễn Tế Công truyền dạy cho Cụ Trần Thúc Tiển tại Hà Nội từ những năm 1940 - 1950, tương ứng với tinh thần đúc kết kỹ thuật của dòng họ Nguyễn Phật Sơn.",
       universalPrinciples: [
         "In vết đường truyền thần kinh cơ bắp qua chuỗi lặp lại vận động.",
         "Thiết lập tọa độ không gian chính xác đến từng milimet của mọi thủ pháp.",
         "Cân bằng hai bán cầu đại não thông qua luyện tập đồng đều tay trái và tay phải."
-      ]
+      ],
+      lineageVariantNotes: "Bài quyền đóng vai trò lưu giữ nguyên lý và rèn cấu trúc thân thể; là tiền đề không thể thiếu trước khi bước vào đối luyện người thật."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Thực hiện hoàn toàn trên thế Tấn Kiềm Dương chân hẹp không rời vị trí, tạo nên khả năng xoay hông phát kình nội lực mạnh mẽ trong phạm vi chật hẹp.",
@@ -206,24 +360,25 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "108 Thế Liên Hoàn",
     categoryOrder: 2,
     formOrder: 5,
-    meaning: "Đối kháng 108 thế tại cự ly cố định — Luyện thính kình và cảm nhận lực tiếp xúc thực tế",
+    meaning: "Đối kháng 108 thế tại cự ly cố định — Cầu nối Niêm Thủ (Chi Sao) đưa bài quyền vào người thật",
     philosophy: "Đưa 108 thế vào bài tập thực hành 2 người tại chỗ. Học cách hóa giải lực đánh trực diện của đối phương mà không cần lùi bước, ứng dụng triệt để nguyên lý 'Mượn lực đả lực' (tá lực sinh kình).",
     principles: [
       "Duy trì tiếp xúc da thịt: Luôn giữ tay tiếp chạm đối thủ để lắng nghe hướng lực và ý đồ.",
       "Hóa giải trước, phản đòn sau: Dùng nêm góc chệch hướng đòn đánh của bạn tập, lập tức chèn đòn vào sơ hở.",
       "Hòa ái tương trợ: Kiểm soát kình lực chuẩn xác để đảm bảo an toàn tuyệt đối cho bạn tập."
     ],
-    keyMantra: "Tá lực đả lực • Lai lưu khứ tống • Thính kình nhập nội",
+    keyMantra: "Cầu nối Niêm Thủ • Tá lực đả lực • Lai lưu khứ tống",
     introQuote: "Đối luyện 108 thế tại chỗ giúp môn sinh chuyển hóa các thế võ đơn lẻ thành phản xạ sinh tồn khi đối mặt với lực đánh thực tế từ bạn tập.",
     worldLineageContext: {
-      globalName: "108 Stationary Partner Drills (Two-Person Applied Sets)",
-      globalStanding: "Cầu nối trực tiếp giữa bài quyền lý thuyết và chiến đấu thực tế, tương tự hệ thống Niêm Thủ nâng cao (Applied Chi Sao Drills) của quốc tế.",
+      globalName: "108 Stationary Partner Drills (Two-Person Applied Chi Sao Sets)",
+      globalStanding: "Chiếc cầu nối kinh điển: Niêm thủ (Chi Sao) không phải bài quyền đơn độc mà là phương pháp luyện đôi; 108 Đối Luyện chính là hình thái hóa hoàn chỉnh của Niêm thủ thành các kịch bản đối kháng 2 người.",
       historicalRoots: "Phương pháp rèn luyện đối kháng kinh điển của Phật Sơn xưa, đảm bảo người học không rơi vào tình trạng 'quyền hoa thế tú' phi thực tế.",
       universalPrinciples: [
-        "Xúc giác phản xạ thay thế thị giác (Tactile Reflexes).",
+        "Xúc giác phản xạ thay thế thị giác (Tactile Reflexes loại bỏ độ trễ não bộ).",
         "Nguyên lý chiếc nêm tam giác trôi lực (Deflection Wedge).",
         "Mượn lực đối phương để hoàn trả lực (Borrowing Force)."
-      ]
+      ],
+      lineageVariantNotes: "Nối liền khoảng cách giữa bài quyền lý thuyết và chiến đấu thực tế; kiểm chứng xem cấu trúc thân thể có giữ được khi chịu ngoại lực ép thật hay không."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Đứng đối diện cự ly hẹp không lùi bước, sử dụng biên thân và xoay hông để hóa giải quả đấm nặng của đối phương, phản đòn ngay trên đường về của đòn địch.",
@@ -244,7 +399,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "108 Thế Liên Hoàn",
     categoryOrder: 2,
     formOrder: 6,
-    meaning: "108 Thế vận động tiến thoái — Kết hợp bộ pháp di chuyển linh hoạt và quyền pháp",
+    meaning: "108 Thế vận động tiến thoái — Rèn luyện bộ pháp di động và phối hợp tay chân đồng bộ",
     philosophy: "Giải phóng thân pháp khỏi vị trí đứng yên. Môn sinh học cách tiến, lùi, chuyển tấn, xoay góc 45 độ trong khi vẫn duy trì sự ổn định của trục Tý Ngọ Tuyến và uy lực của đòn đánh.",
     principles: [
       "Thân động tấn bất động: Chân bước dứt khoát nhưng trọng tâm luôn vững vàng, không chao đảo nhấp nhô.",
@@ -282,7 +437,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "108 Thế Liên Hoàn",
     categoryOrder: 2,
     formOrder: 7,
-    meaning: "Đối kháng di động toàn diện 108 thế — Ứng dụng thực chiến tay không",
+    meaning: "Đối kháng di động toàn diện 108 thế — Ứng dụng thực chiến tay không tự do",
     philosophy: "Mô phỏng tình huống chiến đấu thực tế nhất của bài 108: Cả hai võ sinh cùng di chuyển tiến lùi, hóa giải và phản kích liên hoàn. Kiểm tra toàn diện sự phối hợp nhịp nhàng giữa mắt, bộ pháp, thủ pháp và giác quan xúc giác.",
     principles: [
       "Khoảng cách chiến thuật chuẩn mực: Không để bị áp sát gây nghẽn đòn, không đứng quá xa làm mất tiếp xúc.",
@@ -324,24 +479,25 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     categoryOrder: 3,
     formOrder: 8,
     demonstrator: "HLV Nguyễn Quốc Minh (38 Gia Ngư, 1954)",
-    meaning: "Bài Mộc Nhân Thung tại chỗ — Rèn đòn và tôi luyện xương cốt trên cọc gỗ",
+    meaning: "Bài Mộc Nhân Thung tại chỗ — Kiểm tra kỹ thuật trên cấu trúc cố định, rèn khoảng cách và góc",
     philosophy: "Cọc gỗ Mộc Nhân là người bạn tập vô hình không bao giờ khoan nhượng. Luyện Mộc Nhân giúp tôi luyện cẳng tay, cạnh bàn tay và ống chân cứng cáp, đồng thời định hình kỹ năng nêm góc chuẩn xác quanh 3 tay và chân cọc gỗ.",
     principles: [
       "Nêm góc lướt gỗ: Coi 2 tay trên của cọc như đòn tấn công, dùng Bàng Thủ và Than Thủ lướt sát mặt gỗ.",
       "Chặn khóa chân cọc: Dùng gối và cẳng chân gài sát chân gỗ cong để rèn kỹ năng khóa chân và quật ngã.",
       "Phát kình giật từ eo hông: Không đánh bầm tay vào gỗ mà dùng lực xoay hông giật phát kình nội gia."
     ],
-    keyMantra: "Gỗ cứng tôi cốt • Nêm góc lướt tay • Khóa chân phát kình",
+    keyMantra: "Mộc Nhân chỉnh góc • Gỗ cứng tôi cốt • Nêm góc lướt tay",
     introQuote: "Mộc Nhân (người gỗ) là một phương pháp luyện tập độc đáo của Vịnh Xuân Quyền. Cây Mộc Nhân lịch sử chế tác năm 1954 tại 38 Gia Ngư là chứng nhân di sản của môn phái.",
     worldLineageContext: {
       globalName: "Mok Yan Jong Form 1 (Wooden Dummy Solo Routine / 木人樁)",
-      globalStanding: "Cọc gỗ Mộc Nhân là thiết bị luyện công biểu tượng nhất của Vịnh Xuân toàn cầu. Cấu trúc 3 tay và 1 chân cong mô phỏng thế công thủ của con người.",
-      historicalRoots: "Khởi nguồn từ 108 cọc gỗ Thiếu Lâm Tự, được các nghệ nhân Hồng Thuyền thu gọn thành một cây cọc đơn lập duy nhất.",
+      globalStanding: "Trụ cột thứ tư: 'Mộc Nhân chỉnh khoảng cách và góc'. Kiểm tra kỹ thuật trên một đối tượng có cấu trúc cố định: rèn khoảng cách, góc tiếp xúc, vị trí thân người, bộ pháp và sự phối hợp các động tác.",
+      historicalRoots: "Khởi nguồn từ 108 cọc gỗ Thiếu Lâm Tự, được các nghệ nhân Hồng Thuyền thu gọn thành một cây cọc đơn lập duy nhất; nhánh Mui Wing Chun nhấn mạnh việc đặt cơ thể hơn là đánh tay.",
       universalPrinciples: [
-        "Chuẩn hóa góc độ hình học không gian của thủ pháp.",
+        "Chuẩn hóa góc độ hình học không gian của thủ pháp đối với vật thể cố định.",
         "Tôi luyện độ cứng cáp của màng xương cẳng tay và cẳng chân.",
         "Rèn luyện kỹ thuật ép góc và chèn đòn qua khe hở tay đối phương."
-      ]
+      ],
+      lineageVariantNotes: "Trọng tâm Mộc Nhân không phải là đánh mạnh vào gỗ mà là cách điều chỉnh vị trí thân thể và bộ pháp để tìm góc thâm nhập tối ưu."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Gắn liền với cây Mộc Nhân lịch sử chế tác năm 1954 tại 38 Gia Ngư (Hà Nội). Kỹ thuật nêm góc lướt gỗ tinh tế, tuyệt đối không dùng sức đập thô bạo làm tổn hại xương khớp.",
@@ -363,7 +519,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     categoryOrder: 3,
     formOrder: 9,
     demonstrator: "HLV Phạm Vũ Toản",
-    meaning: "Bộ pháp chuyển vòng Mộc Nhân — Đột kích và chiếm lĩnh các góc chết quanh cọc gỗ",
+    meaning: "Bộ pháp chuyển vòng Mộc Nhân — Đột kích mạn sườn và góc chết quanh cọc gỗ",
     philosophy: "Không đứng yên trước mặt cọc gỗ. Môn sinh di chuyển chuyển góc quanh cọc, tấn công từ bên sườn, luồn ra sau lưng cọc để tập kỹ năng đột kích mạn sườn và góc hiểm của đối phương.",
     principles: [
       "Vòng tròn thân pháp quanh cọc: Bước chân xoay chuyển 180 độ bám sát thân gỗ.",
@@ -635,29 +791,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
   "bai-31": {
     formId: "bai-31",
     title: "Bát Trảm Đao",
-    hanziName: "八斬刀 • Bart Cham Dao",
+    hanziName: "八斬刀 • Baat Jaam Do / Bart Cham Dao",
     category: "Kho Binh Khí",
     categoryOrder: 5,
     formOrder: 16,
     demonstrator: "Võ sư Nguyễn Chí Kiên",
-    meaning: "Tám đường chém hộ thân — Cặp song đao cận chiến đặc trưng của Vịnh Xuân Quyền",
+    meaning: "Tám phép chém đao — Mở rộng nguyên lý tiết kiệm động tác sang song binh khí ngắn",
     philosophy: "Bát Trảm Đao là cặp đao ngắn dính liền với cẳng tay như mọc thêm đôi cánh sắt. Đao không múa lượn rườm rà mà áp dụng nguyên lý cùi chỏ và Tý Ngọ Tuyến của tay không, chém xả dứt khoát trong cự ly hẹp.",
     principles: [
       "Đao sát cẳng tay: Lưỡi đao luôn nằm sát cạnh tay để vừa đỡ đòn của đối phương, vừa chém xoay bất ngờ.",
       "Song đao phối hợp: Một đao đỡ gạt khống chế vũ khí địch, một đao lập tức chém vào cổ tay hoặc yết hầu.",
       "Cước bộ linh hoạt: Kết hợp xước mã và đạp bộ nhanh nhẹn để nhập nội áp sát đối phương."
     ],
-    keyMantra: "Song đao hộ thân • Đao sát cẳng tay • Bát trảm đoạn môn",
+    keyMantra: "Song đao mở rộng • Tiết kiệm động tác • Bát trảm đoạn môn",
     introQuote: "Bát Trảm Đao là vũ khí tiêu biểu nhất của Vịnh Xuân Quyền. Đao ngắn gọn, thực dụng, kết hợp nhuần nhuyễn giữa kỹ thuật chém, đỡ và nhập nội.",
     worldLineageContext: {
-      globalName: "Bart Cham Dao (Eight Slash Butterfly Swords / 八斬刀)",
-      globalStanding: "Binh khí ngắn tối cao và là bài học tốt nghiệp kinh điển của mọi hệ phái Vịnh Xuân trên thế giới.",
+      globalName: "Baat Jaam Do (Eight Slash Butterfly Swords / 八斬刀)",
+      globalStanding: "Trụ cột thứ sáu: 'Song đao mở rộng nguyên lý sang binh khí ngắn'. Rèn luyện phối hợp độc lập hai tay, bộ pháp, góc vận động và kiểm soát cự ly; củng cố tính tiết kiệm động tác (motion economy) đã học ở tay không.",
       historicalRoots: "Được thiết kế cho các cao thủ Hồng Thuyền để chiến đấu cận chiến trong khoang thuyền hẹp chống lại giáo mác dài của quan binh.",
       universalPrinciples: [
         "Song đao coi như sự kéo dài của cẳng tay (Extension of the Arms).",
         "Áp dụng nguyên lý góc chóp nêm và bảo vệ Tý Ngọ Tuyến như quyền pháp tay không.",
         "8 tiết đoạn chém triệt hạ vũ khí và các khớp cổ tay của đối phương."
-      ]
+      ],
+      lineageVariantNotes: "Thường được truyền dạy ở giai đoạn sau cùng để hoàn thiện tư duy chiến thuật toàn diện của môn đồ."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Bản đao dày dặn, lưỡi đao ép sát xương cẳng tay dùng sống đao đỡ đòn nặng và xoay cổ tay chém xả chớp nhoáng, kết hợp bộ pháp tiến thoái áp sát triệt tiêu ưu thế binh khí dài.",
@@ -674,29 +831,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
   "con": {
     formId: "con",
     title: "Lục Điểm Bán Côn",
-    hanziName: "六點半棍 • Luk Dim Boon Kwun",
+    hanziName: "六點半棍 • Luk Dim Boon Gwun",
     category: "Kho Binh Khí",
     categoryOrder: 5,
     formOrder: 17,
     demonstrator: "Võ sư Nguyễn Văn Chiến",
-    meaning: "Sáu điểm rưỡi đoản đả — Trường binh đoản đả đặc trưng của Vịnh Xuân",
+    meaning: "Côn sáu điểm rưỡi — Rèn lực và độ chính xác ở tầm dài, khuếch đại sai lệch kỹ thuật",
     philosophy: "Cây côn dài hơn 2 mét nhưng vận dụng kỹ thuật 'đoản binh trường dụng'. Lục Điểm Bán Côn tập trung vào 6 điểm rưỡi then chốt: Đâm, gạt, nâng, đè, chém, đập và nửa điểm mượn lực, phóng kình từ gót chân lên đầu côn.",
     principles: [
       "Thương kình nhập côn: Dùng đầu côn đâm xuyên như ngọn giáo, phát lực kình chấn động cực mạnh.",
       "Trung tuyến côn pháp: Giữ thân côn luôn chiếm đường giữa, kiểm soát hoàn toàn không gian trước mặt.",
       "Vững như bàn thạch: Tấn pháp trầm thấp, eo hông xoay mở tối đa để sinh lực phóng ra đầu côn."
     ],
-    keyMantra: "Lục điểm bán côn • Thương kình nhập côn • Trực chỉ trung tâm",
+    keyMantra: "Côn rèn tầm dài • Khuếch đại sai số • Trực chỉ trung tâm",
     introQuote: "Lục Điểm Bán Côn là môn binh khí dài độc đáo. Côn pháp tinh giản nhưng ẩn chứa kình lực sâu dày phát xuất từ toàn thân.",
     worldLineageContext: {
-      globalName: "Luk Dim Boon Kwun (Six and a Half Point Pole / 六點半棍)",
-      globalStanding: "Binh khí dài duy nhất của Vịnh Xuân Quyền, cây côn dài từ 2.4m đến 2.7m (côn đuôi chuột).",
+      globalName: "Luk Dim Boon Gwun (Six and a Half Point Pole / 六點半棍)",
+      globalStanding: "Trụ cột thứ năm: 'Côn rèn lực và độ chính xác ở tầm dài'. Chiều dài 2.7m của côn khiến những sai lệch nhỏ ở chân - eo - tay trở nên rất rõ ràng ở đầu côn, giúp người tập tự chỉnh lại toàn bộ cấu trúc phát lực.",
       historicalRoots: "Truyền từ Chí Thiện Thiền Sư (Chi Shin) truyền cho Lương Nhị Đệ (Leung Yee Tai) trên Hồng Thuyền, sau đó dung hợp vào Vịnh Xuân.",
       universalPrinciples: [
         "Sáu điểm rưỡi kỹ thuật chuẩn mực (Hồi, Tiêu, Đạn, Khiêu, Lang, Triệt, và Bán Điểm).",
         "Đoản binh trường dụng — Dùng côn dài với sự nhanh gọn của đoản đả.",
         "Phát lực từ eo hông và gót chân xuyên suốt thân côn ra đầu côn."
-      ]
+      ],
+      lineageVariantNotes: "Chiều dài của côn đóng vai trò như đòn bẩy đo lường tính chuẩn xác của cấu trúc cơ sinh học toàn thân."
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Thế tấn Kiềm Dương hạ thấp vững chắc, đòn đâm thẳng trung lộ (Thương kình) làm chủ đạo, không múa may hoa mỹ, đâm thẳng vào tim mục tiêu với sức công phá cực mạnh.",

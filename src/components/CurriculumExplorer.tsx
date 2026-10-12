@@ -22,6 +22,9 @@ import {
   Maximize2,
   Globe,
   HeartPulse,
+  GraduationCap,
+  Target,
+  Scale,
 } from "lucide-react";
 import {
   CANONICAL_LESSONS,
@@ -32,8 +35,12 @@ import {
   FORMS_18_INTRO,
   FORM_CATEGORIES,
   FORMS_18_STAGES,
+  CLASSICAL_6_PILLARS,
+  LINEAGE_SCHOLARLY_INSIGHTS,
   getFormIntro,
   FormIntroduction,
+  Classical6Pillar,
+  LineageInsight,
 } from "@/data/formsIntro";
 import { DojoPlayer3 } from "@/components/DojoPlayer3";
 import { MartialEmblem } from "@/components/MartialEmblem";
@@ -87,6 +94,34 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   // Thông tin Lời nói đầu & Triết lý yếu chỉ của bài hiện tại
   const currentFormIntro: FormIntroduction = useMemo(() => {
     return getFormIntro(currentLesson.id) || FORMS_18_INTRO["bai-07"];
+  }, [currentLesson.id]);
+
+  // Trạng thái mở rộng xem toàn bộ chuyên khảo học thuật
+  const [showAllInsights, setShowAllInsights] = useState(false);
+
+  // Trụ cột tương ứng trong 6 trụ cột kinh điển thế giới (nếu thuộc 6 trụ cột)
+  const matchingPillar = useMemo(() => {
+    if (currentLesson.id === "bai-07") return CLASSICAL_6_PILLARS[0]; // Siu Nim Tau
+    if (currentLesson.id === "bai-09") return CLASSICAL_6_PILLARS[1]; // Chum Kiu
+    if (currentLesson.id === "bai-10") return CLASSICAL_6_PILLARS[2]; // Biu Jee
+    if (currentLesson.id === "bai-17" || currentLesson.id === "bai-18") return CLASSICAL_6_PILLARS[3]; // Muk Yan Jong
+    if (currentLesson.id === "con") return CLASSICAL_6_PILLARS[4]; // Luk Dim Boon Gwun
+    if (currentLesson.id === "bai-31") return CLASSICAL_6_PILLARS[5]; // Baat Jaam Do
+    return null;
+  }, [currentLesson.id]);
+
+  // Chuyên khảo phù hợp nhất với bài hiện tại
+  const relevantInsight = useMemo(() => {
+    if (currentLesson.id === "bai-07" || currentLesson.id === "bai-09") {
+      return LINEAGE_SCHOLARLY_INSIGHTS[0]; // Nguyễn Tế Công - Nguyễn Kỳ Sơn & Trầm Kiều
+    }
+    if (["bai-12", "bai-13", "bai-14", "bai-15"].includes(currentLesson.id)) {
+      return LINEAGE_SCHOLARLY_INSIGHTS[1]; // Bài quyền vs Niêm thủ & 108 Đối luyện
+    }
+    if (["bai-10", "con", "bai-31"].includes(currentLesson.id)) {
+      return LINEAGE_SCHOLARLY_INSIGHTS[2]; // Tiêu Chỉ cứu nguy & Côn dài khuếch đại sai lệch
+    }
+    return LINEAGE_SCHOLARLY_INSIGHTS[0];
   }, [currentLesson.id]);
 
   // Lắng nghe phím Escape để đóng Modal Lightbox phóng to ảnh
@@ -194,6 +229,20 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
             <div className="pt-1.5 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 text-xs text-amber-200/80 italic">
               <span className="text-[#F5D06C] font-bold not-italic shrink-0">Quy ước hiển thị:</span>
               <span>Hệ thống lược bỏ chú thích số trang trong từng chiêu thức để người tập tập trung vào yếu lĩnh thân pháp và tâm pháp võ học.</span>
+            </div>
+
+            {/* Dải 6 ý ghi nhớ kinh điển Vịnh Xuân Quốc Tế */}
+            <div className="pt-2 flex flex-wrap items-center gap-1.5 text-[11px] text-amber-200/90 font-mono">
+              <span className="text-[#F5D06C] font-bold flex items-center gap-1">
+                <GraduationCap className="w-3.5 h-3.5 text-[#F5D06C]" />
+                Lục Đại Trụ Cột:
+              </span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">1. Niệm Đầu xây nền</span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">2. Tầm Kiều chuyển động</span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">3. Tiêu Chỉ ứng biến</span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">4. Mộc Nhân chỉnh góc</span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">5. Côn rèn tầm dài</span>
+              <span className="bg-[#140C08] px-2 py-0.5 rounded-md border border-[#F5D06C]/20 text-amber-100">6. Đao mở rộng binh khí</span>
             </div>
           </div>
 
@@ -590,6 +639,157 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                   </div>
                 </div>
               )}
+
+              {/* Khối 6: Lục Đại Trụ Cột Vịnh Xuân Thế Giới & 6 Ý Ghi Nhớ Cốt Tủy */}
+              <div className="col-span-1 md:col-span-2 p-5 sm:p-6 rounded-3xl bg-[#150D09] border border-[#F5D06C]/35 space-y-4 shadow-xl">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#F5D06C]/20 pb-3">
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#F5D06C]">
+                    <GraduationCap className="w-4 h-4 text-[#F5D06C]" />
+                    <span>6. Lục Đại Trụ Cột Vịnh Xuân Thế Giới &amp; 6 Ý Ghi Nhớ Cốt Tủy</span>
+                  </div>
+                  <span className="text-xs font-mono text-amber-200/80 italic">
+                    Hệ thống hóa chuẩn mực theo Vịnh Xuân quốc tế
+                  </span>
+                </div>
+
+                <div className="text-xs text-amber-200/90 leading-relaxed font-sans">
+                  Vịnh Xuân thế giới đúc kết vai trò sư phạm của hệ thống 6 bài kinh điển qua 6 ý cốt lõi: <strong>Tiểu Niệm Đầu xây nền; Tầm Kiều chuyển động; Tiêu Chỉ ứng biến; Mộc Nhân chỉnh khoảng cách và góc; Côn rèn lực tầm dài; Song đao mở rộng sang binh khí ngắn</strong>.
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
+                  {CLASSICAL_6_PILLARS.map((p) => {
+                    const isCurrent =
+                      (p.code === "siu-nim-tau" && currentLesson.id === "bai-07") ||
+                      (p.code === "chum-kiu" && currentLesson.id === "bai-09") ||
+                      (p.code === "biu-jee" && currentLesson.id === "bai-10") ||
+                      (p.code === "muk-yan-jong" && (currentLesson.id === "bai-17" || currentLesson.id === "bai-18")) ||
+                      (p.code === "luk-dim-boon-gwun" && currentLesson.id === "con") ||
+                      (p.code === "baat-jaam-do" && currentLesson.id === "bai-31");
+
+                    // Map code sang formId để bấm chuyển bài
+                    const targetFormId =
+                      p.code === "siu-nim-tau"
+                        ? "bai-07"
+                        : p.code === "chum-kiu"
+                        ? "bai-09"
+                        : p.code === "biu-jee"
+                        ? "bai-10"
+                        : p.code === "muk-yan-jong"
+                        ? "bai-17"
+                        : p.code === "luk-dim-boon-gwun"
+                        ? "con"
+                        : "bai-31";
+
+                    return (
+                      <div
+                        key={p.code}
+                        onClick={() => handleSelectForm(targetFormId)}
+                        className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between ${
+                          isCurrent
+                            ? "bg-[#2E180E] border-[#F5D06C] shadow-lg shadow-[#F5D06C]/15 ring-2 ring-[#F5D06C]/50"
+                            : "bg-[#1C100B] hover:bg-[#25140E] border-[#F5D06C]/20 hover:border-[#F5D06C]/50"
+                        }`}
+                      >
+                        <div className="space-y-1.5">
+                          <div className="flex items-center justify-between text-[11px]">
+                            <span className="font-mono font-bold text-[#F5D06C]">
+                              Trụ cột #{p.order}
+                            </span>
+                            {isCurrent && (
+                              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[#F5D06C] text-[#2A0E0A] font-bold">
+                                Đang xem
+                              </span>
+                            )}
+                          </div>
+                          <h5 className="font-bold text-white text-xs sm:text-sm font-serif">
+                            {p.formTitle}
+                          </h5>
+                          <div className="inline-block px-2 py-0.5 rounded-md bg-[#F5D06C]/15 text-[#F5D06C] text-[10px] font-bold font-mono">
+                            {p.coreMnemonic}
+                          </div>
+                          <p className="text-[11px] text-amber-200/80 leading-relaxed font-sans">
+                            {p.coreFunction}
+                          </p>
+                        </div>
+
+                        <div className="mt-2.5 pt-2 border-t border-[#F5D06C]/15 text-[10px] text-amber-300/70 italic flex items-center justify-between">
+                          <span>{p.hanziName}</span>
+                          <span className="text-[#F5D06C] hover:underline font-bold not-italic">
+                            Khảo cứu →
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Khối 7: Chuyên Khảo Học Thuật Đối Sánh & Cội Nguồn Lịch Sử */}
+              <div className="col-span-1 md:col-span-2 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-[#1C100B] to-[#120A06] border border-amber-500/35 space-y-4 shadow-xl">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-500/20 pb-3">
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-amber-300">
+                    <Scale className="w-4 h-4 text-amber-300" />
+                    <span>7. Chuyên Khảo Học Thuật: Đối Sánh Truyền Thừa &amp; Niêm Thủ Thực Vận</span>
+                  </div>
+                  <button
+                    onClick={() => setShowAllInsights(!showAllInsights)}
+                    className="text-xs text-[#F5D06C] hover:underline font-mono font-bold flex items-center gap-1 self-start sm:self-auto cursor-pointer"
+                  >
+                    <span>{showAllInsights ? "Thu gọn chuyên khảo" : "Xem trọn bộ 3 chuyên khảo"}</span>
+                    {showAllInsights ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                  </button>
+                </div>
+
+                {/* Danh sách chuyên khảo (Hiển thị chuyên khảo phù hợp nhất hoặc toàn bộ) */}
+                <div className="space-y-4">
+                  {(showAllInsights ? LINEAGE_SCHOLARLY_INSIGHTS : [relevantInsight]).map((ins) => (
+                    <div
+                      key={ins.id}
+                      className="p-4 sm:p-5 rounded-2xl bg-[#140C08] border border-[#F5D06C]/25 space-y-3"
+                    >
+                      <div className="space-y-1">
+                        <span className="text-[10px] font-mono font-bold text-[#F5D06C] uppercase tracking-wider block">
+                          Chuyên Đề Nghiên Cứu • {ins.subtitle}
+                        </span>
+                        <h5 className="text-sm sm:text-base font-bold text-white font-serif">
+                          {ins.title}
+                        </h5>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div className="space-y-2">
+                          <div>
+                            <strong className="text-amber-200 block mb-0.5">Bối cảnh lịch sử &amp; Truyền thừa:</strong>
+                            <p className="text-amber-100/90 leading-relaxed font-sans">{ins.historicalContext}</p>
+                          </div>
+                          <div>
+                            <strong className="text-amber-200 block mb-0.5">Lý luận cốt lõi:</strong>
+                            <p className="text-amber-100/90 leading-relaxed font-sans">{ins.coreDoctrine}</p>
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <div>
+                            <strong className="text-emerald-400 block mb-0.5">Dung hợp trong Phật Gia Vịnh Xuân:</strong>
+                            <p className="text-emerald-100/90 leading-relaxed font-sans">{ins.pgvxCorrelation}</p>
+                          </div>
+                          <div className="space-y-1.5 pt-1">
+                            {ins.bulletPoints.map((bp, bIdx) => (
+                              <div
+                                key={bIdx}
+                                className="flex items-start gap-2 text-[11px] text-amber-200/90 leading-snug"
+                              >
+                                <span className="text-[#F5D06C] font-bold">✓</span>
+                                <span>{bp}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="pt-4 border-t border-[#F5D06C]/20 flex flex-wrap items-center justify-end gap-3">
