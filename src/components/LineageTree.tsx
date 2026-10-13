@@ -163,7 +163,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
           Sơ Đồ Truyền Thừa &amp; Triết Lý Võ Học
         </h2>
         <p className="text-slate-300 text-xs sm:text-base max-w-3xl mx-auto leading-relaxed">
-          Ghi nhận cội nguồn và công lao truyền bá gìn giữ tinh hoa Phật Gia Vịnh Xuân qua các thế hệ tiền bối, từ Sư Tổ Nguyễn Tế Công đến Cố Võ Sư Trần Thúc Tiển, công trình học thuật của GS.TS Y Khoa Nguyễn Mạnh Nhâm và thế hệ Võ sư nòng cốt tiếp nối.
+          Ghi nhận cội nguồn và công lao truyền bá gìn giữ tinh hoa Phật Gia Vịnh Xuân qua các thế hệ tiền bối, từ Sư Tổ Nguyễn Tế Công đến Cố Võ Sư Trần Thúc Tiển, công trình học thuật của PGS.TS Y Khoa Nguyễn Mạnh Nhâm và thế hệ Võ sư nòng cốt tiếp nối.
         </p>
 
         {/* 2 Chế Độ Xem: Sơ Đồ Cây Truyền Thừa vs Triết Lý & Yếu Quyết */}
@@ -316,25 +316,31 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         {/* Connector Line */}
         <div className="w-0.5 h-8 bg-[#3D291F] mx-auto sm:ml-16"></div>
 
-        {/* Node 3: GS.TS Nguyễn Mạnh Nhâm & ThS. Nguyễn Duy Thức */}
         <div className="sm:ml-14 glass-panel p-6 rounded-2xl border border-[#10B981]/40 relative group hover:border-[#10B981] transition-all shadow-xl">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
             <div
               onClick={() => setSelectedMasterId("nguyen-manh-nham")}
-              className="w-24 h-24 sm:w-28 sm:h-36 rounded-2xl bg-gradient-to-b from-[#10B981]/20 to-[#0A3D2A]/40 border-2 border-[#10B981] flex flex-col items-center justify-center text-[#10B981] shadow-xl shrink-0 cursor-pointer hover:scale-105 transition-transform group/card"
-              title="Nhấp để xem hồ sơ chi tiết GS.TS Y Khoa Nguyễn Mạnh Nhâm"
+              className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#10B981] shadow-2xl shrink-0 bg-[#0f241a] group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+              title="Nhấp để xem hồ sơ chi tiết PGS.TS Y Khoa Nguyễn Mạnh Nhâm"
             >
-              <span className="font-serif font-black text-3xl sm:text-4xl text-[#10B981] group-hover/card:scale-110 transition-transform">
-                佛
-              </span>
-              <span className="text-[10px] font-mono font-bold mt-1 text-emerald-300 bg-black/60 px-2 py-0.5 rounded-full border border-[#10B981]/40">
-                Y Võ Hợp Nhất
-              </span>
+              <Image
+                src="/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg"
+                alt="PGS.TS Y Khoa Nguyễn Mạnh Nhâm (Sinh 1932)"
+                fill
+                sizes="(max-width: 640px) 128px, 160px"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-1.5 inset-x-1 text-center">
+                <span className="text-[10px] font-mono font-bold text-emerald-300 bg-black/85 px-2 py-0.5 rounded-full border border-[#10B981]/40 shadow">
+                  Thế Hệ Thứ Ba
+                </span>
+              </div>
             </div>
             <div className="space-y-2 text-center sm:text-left flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                 <h4 className="text-lg sm:text-xl font-bold font-serif text-white">
-                  GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS. Nguyễn Duy Thức
+                  PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức
                 </h4>
                 <span className="text-xs px-2.5 py-0.5 rounded bg-[#10B981]/15 text-[#10B981] font-mono border border-[#10B981]/40 font-bold">
                   Sinh 1932 (94 Tuổi)
@@ -344,7 +350,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (NXB Văn Hóa Thông Tin 2012)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                GS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
+                PGS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
                 <button
@@ -409,12 +415,12 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Users className="w-3.5 h-3.5 text-sky-400" /> Cán bộ quản lý tại VNPT • Học trò GS.TS Nguyễn Mạnh Nhâm
+                  <Users className="w-3.5 h-3.5 text-sky-400" /> Cán bộ quản lý tại VNPT • Học trò PGS.TS Nguyễn Mạnh Nhâm
                 </span>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của GS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong tác phẩm <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).
+                Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của PGS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong tác phẩm <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).
               </p>
 
               <div className="pt-2">

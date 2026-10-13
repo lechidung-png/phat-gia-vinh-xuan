@@ -564,7 +564,7 @@ const DRILL_IMAGE_METADATA: Record<
       key: "niemThuMasterImg",
       label: "Thị Phạm Niêm Thủ Linh Giác",
       src: "/assets/hinh-2x/p146-h01.png",
-      desc: "GS.TS Nguyễn Mạnh Nhâm và môn sinh thị phạm Niêm Thủ Linh Giác tiếp xúc cẳng tay, rèn luyện thính kình cảm ứng lực."
+      desc: "PGS.TS Nguyễn Mạnh Nhâm và môn sinh thị phạm Niêm Thủ Linh Giác tiếp xúc cẳng tay, rèn luyện thính kình cảm ứng lực."
     },
     {
       key: "reflexDiagram",

@@ -304,7 +304,7 @@ export default function Home() {
           <div className="flex items-center gap-4 text-[11px]">
             <span className="text-[#E2B743]">Di Sản Võ Học</span>
             <span>•</span>
-            <span className="text-slate-400">Tài liệu: GS.TS Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức</span>
+            <span className="text-slate-400">Tài liệu: PGS.TS Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức</span>
           </div>
         </div>
       </footer>

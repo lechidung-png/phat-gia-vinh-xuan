@@ -1,7 +1,7 @@
 // ==============================================================================
 // HỒ SƠ TỔ SƯ & CÁC BẬC TIỀN BỐI TRUYỀN THỪA PHẬT GIA VỊNH XUÂN
 // Tư liệu lịch sử & đối chiếu công trình "Phật Gia Vịnh Xuân Quyền"
-// (GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức - 2012)
+// (PGS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức - 2012)
 // ==============================================================================
 
 export interface MasterProfileSection {
@@ -161,7 +161,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
     ],
     lineagePredecessor: "Sư Tổ Nguyễn Tế Công",
     lineageSuccessors: [
-      "GS.TS Nguyễn Mạnh Nhâm",
+      "PGS.TS Nguyễn Mạnh Nhâm",
       "Trần Thiết Côn (con trai)",
       "Các môn sinh nòng cốt Hà Nội"
     ],
@@ -203,12 +203,12 @@ export const MASTER_PROFILES: MasterProfile[] = [
       "Gìn giữ và duy trì trọn vẹn mạch nguồn Vịnh Xuân Quyền miền Bắc sau năm 1954.",
       "Lưu giữ và bảo tồn cây Mộc Nhân 5 tầng cọc lịch sử tại 38 Gia Ngư, Hà Nội.",
       "Huấn luyện võ thuật cận chiến cho lực lượng Công an và Quân đội nhân dân Việt Nam.",
-      "Đào tạo và trao truyền toàn bộ di sản cho GS.TS Y khoa Nguyễn Mạnh Nhâm."
+      "Đào tạo và trao truyền toàn bộ di sản cho PGS.TS Y khoa Nguyễn Mạnh Nhâm."
     ]
   },
 
   // ============================================================================
-  // ĐỜI THỨ BA: ĐẠI SƯ GS.TS Y KHOA NGUYỄN MẠNH NHÂM (1932 – NAY)
+  // ĐỜI THỨ BA: ĐẠI SƯ PGS.TS Y KHOA NGUYỄN MẠNH NHÂM (1932 – NAY)
   // ============================================================================
   {
     id: "nguyen-manh-nham",
@@ -219,9 +219,9 @@ export const MASTER_PROFILES: MasterProfile[] = [
     hanzi: "阮孟壬",
     period: "1932 – nay (Đại thọ 94 tuổi)",
     birthYear: 1932,
-    roleTitle: "Đại Sư Phật Gia Vịnh Xuân • Tác Giả Giáo Trình 2012 • Giáo Sư Y Khoa",
+    roleTitle: "Đại Sư Phật Gia Vịnh Xuân • Tác Giả Giáo Trình 2012 • PGS.TS Y Khoa",
     hometown: "Hà Nội, Việt Nam",
-    portrait: "/assets/images/historical/tran_thuc_tien.png", // Dùng portrait placeholder trang trọng
+    portrait: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
     coreQuote: "Phương pháp tốt nhất trước một cuộc chiến là tránh cuộc chiến. Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
     quoteContext: "Trích Lời khuyên số 3 trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin 2012).",
     historicalLocations: [
@@ -243,27 +243,27 @@ export const MASTER_PROFILES: MasterProfile[] = [
         title: "1. Sự Nghiệp Y Khoa Lẫy Lừng & Đại Thụ Ngoại Khoa",
         subtitle: "Gần 60 năm cứu người tại Bệnh viện Hữu nghị Việt Đức",
         content: [
-          "Giáo sư, Tiến sĩ Y khoa Nguyễn Mạnh Nhâm sinh năm 1932 tại Hà Nội. Ông là một trong những chuyên gia ngoại khoa đầu ngành uy tín bậc nhất Việt Nam, nguyên Trưởng khoa Phẫu thuật Tiêu hóa Bệnh viện Hữu nghị Việt Đức, Chủ tịch Danh dự Hội Hậu môn Trực tràng Việt Nam.",
-          "Với gần 60 năm tận tụy cống hiến cho sự nghiệp cứu người, GS.TS Nguyễn Mạnh Nhâm đã thực hiện nhiều ca phẫu thuật phức tạp, cứu sống vô số bệnh nhân hiểm nghèo và đào tạo nhiều thế hệ bác sĩ phẫu thuật xuất sắc cho đất nước.",
+          "Phó Giáo sư, Tiến sĩ Y khoa Nguyễn Mạnh Nhâm sinh năm 1932 tại Hà Nội. Ông là một trong những chuyên gia ngoại khoa đầu ngành uy tín bậc nhất Việt Nam, nguyên Trưởng khoa Phẫu thuật Tiêu hóa Bệnh viện Hữu nghị Việt Đức, Chủ tịch Danh dự Hội Hậu môn Trực tràng Việt Nam.",
+          "Với gần 60 năm tận tụy cống hiến cho sự nghiệp cứu người, PGS.TS Nguyễn Mạnh Nhâm đã thực hiện nhiều ca phẫu thuật phức tạp, cứu sống vô số bệnh nhân hiểm nghèo và đào tạo nhiều thế hệ bác sĩ phẫu thuật xuất sắc cho đất nước.",
           "Chính nền tảng y học lâm sàng sâu sắc, sự thấu hiểu tường tận về hệ cơ xương khớp, mạng lưới mạch máu và các cung phản xạ thần kinh đã trở thành chiếc chìa khóa vàng giúp ông tiếp cận võ học cổ truyền dưới góc nhìn khoa học thực nghiệm hiếm có."
         ],
-        keyHighlight: "GS.TS Nguyễn Mạnh Nhâm là hiện thân sống động của mẫu hình 'Y Võ Tương Thông' — Lấy y thuật cứu người, lấy võ thuật rèn tâm và bảo vệ sinh mạng."
+        keyHighlight: "PGS.TS Nguyễn Mạnh Nhâm là hiện thân sống động của mẫu hình 'Y Võ Tương Thông' — Lấy y thuật cứu người, lấy võ thuật rèn tâm và bảo vệ sinh mạng."
       },
       {
         title: "2. Thọ Giáo Chân Truyền & Khoa Học Hóa Vịnh Xuân",
         subtitle: "Giải mã thính kình, trục Tý Ngọ dưới góc độ sinh lý thần kinh",
         content: [
           "Từ thập niên 1960, Bác sĩ Nguyễn Mạnh Nhâm theo học Cố Võ sư Trần Thúc Tiển tại số nhà 38 Gia Ngư. Nhờ tư chất thông tuệ và sự kiên trì bền bỉ, ông lĩnh hội trọn vẹn các công phu tinh túy nhất từ Cụ Tiển: từ các bài quyền Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 thế liên hoàn đến kỹ thuật Mộc Nhân và ngũ hình binh khí.",
-          "Khác với cách truyền miệng bí hiểm xưa cũ, GS.TS Nguyễn Mạnh Nhâm đã dùng ngôn ngữ cơ sinh học hiện đại để luận giải tường tận: Tại sao cùi chỏ phải luôn cách ngực một nắm đấm (thủ lưu trung tuyến)? Tại sao đòn đánh theo trục Tý Ngọ đi quãng ngắn nhất và uy lực nhất? Tại sao phản xạ Niêm Thủ xúc giác lại nhanh hơn thị giác của mắt (bỏ qua vỏ não, đi thẳng qua tủy sống)?",
+          "Khác với cách truyền miệng bí hiểm xưa cũ, PGS.TS Nguyễn Mạnh Nhâm đã dùng ngôn ngữ cơ sinh học hiện đại để luận giải tường tận: Tại sao cùi chỏ phải luôn cách ngực một nắm đấm (thủ lưu trung tuyến)? Tại sao đòn đánh theo trục Tý Ngọ đi quãng ngắn nhất và uy lực nhất? Tại sao phản xạ Niêm Thủ xúc giác lại nhanh hơn thị giác của mắt (bỏ qua vỏ não, đi thẳng qua tủy sống)?",
           "Dưới sự lãnh đạo của ông trên cương vị Chủ tịch Hội Vịnh Xuân Hà Nội, môn phái đã bước ra khỏi phạm vi truyền dạy hạn hẹp xưa cũ, trở thành một môn thể thao võ đạo rèn luyện sức khỏe lành mạnh, khoa học và nhân văn."
         ],
-        keyHighlight: "Chuyên khảo về cơ chế phản xạ tủy xúc giác trong chương 'Linh Giác' là đóng góp học thuật sâu sắc của GS.TS Nguyễn Mạnh Nhâm trong việc soi sáng cơ chế sinh học của võ học cổ truyền."
+        keyHighlight: "Chuyên khảo về cơ chế phản xạ tủy xúc giác trong chương 'Linh Giác' là đóng góp học thuật sâu sắc của PGS.TS Nguyễn Mạnh Nhâm trong việc soi sáng cơ chế sinh học của võ học cổ truyền."
       },
       {
         title: "3. Tác Phẩm Để Đời: 'Phật Gia Vịnh Xuân Quyền' (2012)",
         subtitle: "Giáo trình chuẩn mực — Báu vật di sản số hóa",
         content: [
-          "Năm 2012, sau nhiều thập kỷ ấp ủ và chắt lọc, GS.TS Y khoa Nguyễn Mạnh Nhâm cùng ThS.DS Nguyễn Duy Thức đã xuất bản tác phẩm kinh điển: 'Phật Gia Vịnh Xuân Quyền' (Nhà xuất bản Văn Hóa Thông Tin).",
+          "Năm 2012, sau nhiều thập kỷ ấp ủ và chắt lọc, PGS.TS Y khoa Nguyễn Mạnh Nhâm cùng ThS.DS Nguyễn Duy Thức đã xuất bản tác phẩm kinh điển: 'Phật Gia Vịnh Xuân Quyền' (Nhà xuất bản Văn Hóa Thông Tin).",
           "Cuốn sách quy tụ hệ thống ảnh chụp thị phạm chân thực của các võ sư nòng cốt (như HLV Lê Đắc Kiên, Lê Văn Tùng, Nguyễn Việt Dũng...), phân định chi tiết toàn bộ hệ thống quyền pháp, binh khí, cọc mộc nhân, 200 thế đòn đối kháng và 42 lời khuyên vàng của sư phụ.",
           "Đây là công trình tư liệu có giá trị học thuật và chuẩn mực của môn phái, là nền tảng được số hóa trong công trình Di Sản Võ Học hôm nay."
         ],
@@ -298,12 +298,12 @@ export const MASTER_PROFILES: MasterProfile[] = [
       "Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT)",
       "Võ Đường Huỳnh Thúc Kháng (Hà Nội)"
     ],
-    lineagePredecessor: "GS.TS Y Khoa Nguyễn Mạnh Nhâm",
+    lineagePredecessor: "PGS.TS Y Khoa Nguyễn Mạnh Nhâm",
     lineageSuccessors: [
       "Người tập tại Võ đường Huỳnh Thúc Kháng"
     ],
     summary:
-      "Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của GS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
+      "Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của PGS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).",
     sections: [
       {
         title: "1. Quá Trình Công Tác & Quản Lý Doanh Nghiệp",
@@ -318,7 +318,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
         title: "2. Quá Trình Tập Luyện & Hướng Dẫn Võ Thuật",
         subtitle: "Người phụ trách tập luyện tại Võ đường Huỳnh Thúc Kháng",
         content: [
-          "Ông theo học GS.TS Y khoa Nguyễn Mạnh Nhâm trong nhiều năm và là một trong các võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' do Nhà xuất bản Văn Hóa Thông Tin phát hành năm 2012.",
+          "Ông theo học PGS.TS Y khoa Nguyễn Mạnh Nhâm trong nhiều năm và là một trong các võ sư được ghi nhận trong cuốn sách 'Phật Gia Vịnh Xuân Quyền' do Nhà xuất bản Văn Hóa Thông Tin phát hành năm 2012.",
           "Hiện nay, ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội), kiên trì gìn giữ các bài tập cơ bản và phương pháp rèn luyện do thầy truyền dạy."
         ],
         keyHighlight: "Tập trung gìn giữ kỹ thuật cơ bản và rèn luyện sức khỏe thực chất, giản dị."

@@ -1,6 +1,6 @@
 // Auto-generated 200 Martial Combat Scenarios & Situational Test Suite
 // Di Sản Võ Học Phật Gia Vịnh Xuân Quyền - V-AOF Master Standard 2026
-// Nguồn tư liệu: Sách "Phật Gia Vịnh Xuân Quyền" (GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức - 2012)
+// Nguồn tư liệu: Sách "Phật Gia Vịnh Xuân Quyền" (PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức - 2012)
 
 export type ScenarioCategory = 
   | "Thượng Bàn (Đầu/Mặt)" 

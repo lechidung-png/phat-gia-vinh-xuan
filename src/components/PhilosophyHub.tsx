@@ -108,7 +108,7 @@ export const PhilosophyHub: React.FC = () => {
             Triết Lý &amp; Yếu Quyết Võ Học
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-serif">
-            Hệ thống hóa toàn bộ tư tưởng cốt tủy từ giáo trình gốc của <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</strong>, kết hợp đối chiếu tinh hoa các dòng phái Vịnh Xuân thế giới (Diệp Vấn, Lương Đỉnh, Hoàng Thuần Lương, Lý Tiểu Long).
+            Hệ thống hóa toàn bộ tư tưởng cốt tủy từ giáo trình gốc của <strong>PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</strong>, kết hợp đối chiếu tinh hoa các dòng phái Vịnh Xuân thế giới (Diệp Vấn, Lương Đỉnh, Hoàng Thuần Lương, Lý Tiểu Long).
           </p>
         </div>
 
@@ -303,7 +303,7 @@ export const PhilosophyHub: React.FC = () => {
                   </p>
                 </div>
                 <div className="pt-2 border-t border-[#F5D06C]/10 text-[11px] text-emerald-400/80 font-mono">
-                  Cơ sở: GS.TS Y Khoa Nguyễn Mạnh Nhâm
+                  Cơ sở: PGS.TS Y Khoa Nguyễn Mạnh Nhâm
                 </div>
               </div>
 

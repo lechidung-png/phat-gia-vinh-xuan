@@ -81,7 +81,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       id: "meditation" as NavTab,
       title: "4. Thiền & Khí công",
       subtitle: "Nội công dưỡng sinh & Thở 4 thì",
-      desc: "Tọa thiền điều tức, ý thủ đan điền, phòng luyện thở 4 thì trực quan và bí quyết xoa bóp nội tạng của GS.TS Nguyễn Mạnh Nhâm.",
+      desc: "Tọa thiền điều tức, ý thủ đan điền, phòng luyện thở 4 thì trực quan và bí quyết xoa bóp nội tạng của PGS.TS Nguyễn Mạnh Nhâm.",
       icon: Wind,
       badge: "Nội công",
       color: "from-purple-900/30 to-purple-950/20",
@@ -202,7 +202,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
               Giáo Trình Phật Gia Vịnh Xuân Quyền
             </h3>
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình và khẩu quyết được số hóa từ giáo trình của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>GS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
+              Toàn bộ hệ thống kỹ thuật quyền pháp, binh khí, đồ hình và khẩu quyết được số hóa từ giáo trình của môn phái: <strong>&ldquo;Phật Gia Vịnh Xuân Quyền&rdquo;</strong> do <strong>PGS.TS Y Khoa Nguyễn Mạnh Nhâm</strong> (Chủ tịch Hội Vịnh Xuân Hà Nội) &amp; <strong>ThS.DS Nguyễn Duy Thức</strong> biên soạn (Nhà xuất bản Văn Hóa Thông Tin).
             </p>
             <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 text-xs text-amber-200/90 italic bg-[#1E120B] p-2.5 rounded-xl border border-[#F5D06C]/25">
               <span className="text-[#F5D06C] font-bold not-italic shrink-0">Quy ước hiển thị:</span>
@@ -366,7 +366,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs text-amber-200/70">
               <span>Sinh năm 1968</span>
               <span>•</span>
-              <span>Học trò GS.TS Nguyễn Mạnh Nhâm</span>
+              <span>Học trò PGS.TS Nguyễn Mạnh Nhâm</span>
               <span>•</span>
               <button
                 onClick={() => onNavigateTab("lineage")}

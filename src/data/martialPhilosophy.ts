@@ -1,6 +1,6 @@
 // ==============================================================================
 // TRIẾT LÝ, YẾU QUYẾT & TINH HOA VÕ ĐẠO PHẬT GIA VỊNH XUÂN
-// Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền của GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức
+// Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền của PGS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức
 // Mở rộng: Đối chiếu tinh hoa Vịnh Xuân thế giới (Ip Man, Leung Ting, Wong Shun Leung, Bruce Lee)
 // ==============================================================================
 
@@ -505,7 +505,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     portraitUrl: "/assets/images/masters/leung_jan.jpg",
     coreDoctrine: "Đoản Đả Cận Chiến & Thốn Kình Nhập Cốt",
     famousQuote: "Tập Vịnh Xuân giả, tiên tri trung tuyến, thứ minh thính kình, chung quy ư vô tướng. Đoản quyền đoản cước, thốn kình nhập cốt. Bất cầu hoa lệ, duy cầu chân thực.",
-    pgvxCorrelation: "Cội nguồn tổ sư truyền thừa xuống Nguyễn Tế Công và Trần Hoa Thuận. Tương thích 100% với tôn chỉ 'Đơn giản, đi đường ngắn nhất, không hoành tráng biểu diễn' của GS.TS Nguyễn Mạnh Nhâm.",
+    pgvxCorrelation: "Cội nguồn tổ sư truyền thừa xuống Nguyễn Tế Công và Trần Hoa Thuận. Tương thích 100% với tôn chỉ 'Đơn giản, đi đường ngắn nhất, không hoành tráng biểu diễn' của PGS.TS Nguyễn Mạnh Nhâm.",
     historicalContext: "Vị danh y mở hiệu thuốc Vĩnh An Đường tại Phật Sơn, người có công hệ thống hóa và truyền dạy Vịnh Xuân sâu rộng khắp Nam Trung Hoa.",
     sharedPrinciples: [
       "Thủ trung dụng trung (Giữ trung lộ tuyệt đối)",
@@ -556,12 +556,29 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     portraitUrl: "/assets/images/historical/tran_thuc_tien.png",
     coreDoctrine: "Cước Căn Bàn Thạch, Tấn Đàn Hồi & Thốn Kình Thấu Cốt",
     famousQuote: "Chân vững như cây có gốc cắm sâu vào lòng đất. Chân không vững thì đòn tay chỉ là sức quơ quào hời hợt bên ngoài. Đấm không cần gồng cứng cơ bắp, hãy để kình lực từ gót chân truyền qua thắt lưng mà thấu vào xương tủy đối phương.",
-    pgvxCorrelation: "Thầy truyền dạy trực tiếp toàn bộ tinh hoa quyền pháp, 108 thế mộc nhân và khí công dưỡng sinh cho GS.TS Nguyễn Mạnh Nhâm.",
+    pgvxCorrelation: "Thầy truyền dạy trực tiếp toàn bộ tinh hoa quyền pháp, 108 thế mộc nhân và khí công dưỡng sinh cho PGS.TS Nguyễn Mạnh Nhâm.",
     historicalContext: "Học trò xuất sắc của Sư Tổ Nguyễn Tế Công tại Hà Nội, nội lực thâm hậu, nổi tiếng với đôi tay hộ thủ vững chãi, nhu hòa.",
     sharedPrinciples: [
       "Cước căn vững vàng, tấn như lò xo nén",
       "Kình phát từ gót chân, eo hông điều khiển",
       "Buông lỏng tối đa để phát lực xuyên thấu"
+    ]
+  },
+  {
+    id: "nguyen-manh-nham",
+    masterName: "PGS.TS Y Khoa Nguyễn Mạnh Nhâm",
+    hanziName: "阮孟壬 • Tác Giả Giáo Trình 2012",
+    branch: "Phật Gia Vịnh Xuân Việt Nam",
+    period: "1932 – nay (Đại thọ 94 tuổi)",
+    portraitUrl: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    coreDoctrine: "Y Võ Tương Thông & Khoa Học Hóa Vịnh Xuân",
+    famousQuote: "Phương pháp tốt nhất trước một cuộc chiến là tránh cuộc chiến. Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
+    pgvxCorrelation: "Tác giả công trình giáo trình 'Phật Gia Vịnh Xuân Quyền' (2012). Dùng tri thức y khoa hiện đại và cơ sinh học để đúc kết, hệ thống hóa và chuẩn hóa toàn bộ giáo lý chân truyền của môn phái.",
+    historicalContext: "Nguyên Trưởng khoa Phẫu thuật Tiêu hóa Bệnh viện Hữu nghị Việt Đức, Chủ tịch Danh dự Hội Hậu môn Trực tràng VN, Nguyên Chủ tịch Hội Vịnh Xuân Hà Nội. Học trò chân truyền của Cụ Trần Thúc Tiển.",
+    sharedPrinciples: [
+      "Y võ tương thông, lấy y đạo bổ trợ võ đạo",
+      "Thủ lưu trung tuyến, tối ưu hóa đường đi của lực",
+      "Thính kình linh giác qua cơ chế phản xạ tủy sống"
     ]
   },
   {
@@ -607,7 +624,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     portraitUrl: "/assets/images/masters/bruce_lee.jpg",
     coreDoctrine: "Be Water, My Friend — Quyền Như Lưu Thủy & Triệt Đòn Tại Gốc",
     famousQuote: "Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm. Nước có thể chảy trôi êm ả, nhưng cũng có thể phá nát đá tảng. Đơn giản là nét tinh tế cốt lõi.",
-    pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
+    pgvxCorrelation: "Được PGS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
     historicalContext: "Học trò xuất sắc của Diệp Vấn và Hoàng Thuần Lương, người đã đem triết lý võ đạo phương Đông chấn hưng toàn cầu.",
     sharedPrinciples: [
       "Tâm Ứng Thủ: Đòn đánh ra tùy thuộc đối phương ra đòn gì",
@@ -624,7 +641,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     portraitUrl: "/assets/images/masters/chu_shong_tin.jpg",
     coreDoctrine: "Ý Niệm Lực (Nim Lik) & Giải Phóng Cơ Bắp",
     famousQuote: "Ý niệm lực không sinh ra từ cơ bắp gồng cứng, mà phát xuất từ sự thả lỏng tuyệt đối và cấu trúc xương khớp chuẩn xác. Tiểu Niệm Đầu chứa đựng trọn vẹn các nguyên lý cốt lõi của Vịnh Xuân.",
-    pgvxCorrelation: "Tương thích 100% với lời răn dạy số 19 và số 30 của GS.TS Nguyễn Mạnh Nhâm: 'Thả lỏng cơ bắp, phối hợp với thở, chỉ khi chạm vào đối thủ mới xuất lực thốn kình'.",
+    pgvxCorrelation: "Tương thích 100% với lời răn dạy số 19 và số 30 của PGS.TS Nguyễn Mạnh Nhâm: 'Thả lỏng cơ bắp, phối hợp với thở, chỉ khi chạm vào đối thủ mới xuất lực thốn kình'.",
     historicalContext: "Đệ tử thứ ba của Diệp Vấn tại Hồng Kông, người dành hơn 60 năm nghiên cứu chiều sâu cơ sinh học và kình lực nội tại của bài Tiểu Niệm Đầu.",
     sharedPrinciples: [
       "Cấu trúc xương khớp tối ưu truyền lực từ mặt đất",
@@ -641,7 +658,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     portraitUrl: "/assets/images/masters/leung_ting.jpg",
     coreDoctrine: "4 Nguyên Lý Lực Kinh Điển (4 Principles of Force)",
     famousQuote: "Hãy biến cơ thể thành một chiếc nêm thép: Đường thông suốt thì tiến, có tiếp xúc thì dính, gặp lực lớn hơn thì nhường bước, đối phương rút lui thì bám sát theo sau.",
-    pgvxCorrelation: "Tương đồng chặt chẽ với Khẩu quyết 'Lai lưu khứ tống, thoát thủ trực xông' và nguyên lý 'Dĩ công vi thủ' trong giáo trình của GS.TS Nguyễn Mạnh Nhâm.",
+    pgvxCorrelation: "Tương đồng chặt chẽ với Khẩu quyết 'Lai lưu khứ tống, thoát thủ trực xông' và nguyên lý 'Dĩ công vi thủ' trong giáo trình của PGS.TS Nguyễn Mạnh Nhâm.",
     historicalContext: "Người hệ thống hóa Vịnh Xuân thành giáo trình sư phạm phương Tây khoa học, đưa môn võ phổ biến rộng rãi khắp Châu Âu và Châu Mỹ.",
     sharedPrinciples: [
       "1. Tiến lên khi đường thông suốt",
@@ -691,10 +708,12 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q01",
     quote: "Phương pháp tốt nhất trước một cuộc chiến là tránh cuộc chiến.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 3",
     category: "mindset",
-    context: "Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người."
+    context: "Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm (1932 – nay)"
   },
   {
     id: "q02",
@@ -717,10 +736,12 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q04",
     quote: "Nếu chỉ dựa vào sức mạnh cơ bắp, ta ắt sẽ gặp người mạnh hơn ta.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 16",
     category: "strategy",
-    context: "Nhu thuận và trí tuệ là vũ khí duy nhất trường tồn trước sự biến đổi thể chất."
+    context: "Nhu thuận và trí tuệ là vũ khí duy nhất trường tồn trước sự biến đổi thể chất.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q05",
@@ -743,10 +764,12 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q07",
     quote: "Quyền như lưu thủy — Tự nó tìm ra những kẽ hở để tràn vào cho đến khi lấp đầy.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Chương III: Khẩu Quyết Truyền Thừa",
     category: "strategy",
-    context: "Đòn đánh liên hoàn không đứt đoạn như dòng nước chảy tràn ngập trận địa."
+    context: "Đòn đánh liên hoàn không đứt đoạn như dòng nước chảy tràn ngập trận địa.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q08",
@@ -754,7 +777,9 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     author: "Võ Sư Hoàng Thuần Lương",
     roleOrSource: "Tinh hoa Vịnh Xuân thế giới • Khảo cứu đối chiếu",
     category: "mindset",
-    context: "Phản xạ thị giác qua não bộ luôn có độ trễ; xúc giác niêm thủ truyền thẳng vào tủy sống."
+    context: "Phản xạ thị giác qua não bộ luôn có độ trễ; xúc giác niêm thủ truyền thẳng vào tủy sống.",
+    authorImage: "/assets/images/masters/wong_shun_leung.jpg",
+    imageCaption: "Võ Sư Hoàng Thuần Lương (1935 – 1997)"
   },
   {
     id: "q09",
@@ -762,23 +787,29 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     author: "Lý Tiểu Long (Bruce Lee)",
     roleOrSource: "Trích dẫn giáo trình Phật Gia Vịnh Xuân",
     category: "mindset",
-    context: "Tâm Ứng Thủ: Vô chiêu thắng hữu chiêu, không đóng khung trong khuôn mẫu cứng nhắc."
+    context: "Tâm Ứng Thủ: Vô chiêu thắng hữu chiêu, không đóng khung trong khuôn mẫu cứng nhắc.",
+    authorImage: "/assets/images/masters/bruce_lee.jpg",
+    imageCaption: "Lý Tiểu Long (1940 – 1973)"
   },
   {
     id: "q10",
     quote: "Tập linh giác đối luyện phải thân thiện. Đánh trúng bạn không phải là thắng; bị bạn đánh trúng không phải là thua.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 41",
     category: "mindset",
-    context: "Đồng môn giúp nhau tôi luyện sự nhạy bén, buông bỏ bản ngã và thói háo thắng."
+    context: "Đồng môn giúp nhau tôi luyện sự nhạy bén, buông bỏ bản ngã và thói háo thắng.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q11",
     quote: "Cổ tay phải vừa dẻo, vừa khéo, vừa nhanh, vừa mạnh.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 8",
     category: "strategy",
-    context: "Cổ tay là khớp then chốt cuối cùng điều phối kình lực thấu triệt."
+    context: "Cổ tay là khớp then chốt cuối cùng điều phối kình lực thấu triệt.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q12",
@@ -792,18 +823,22 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q13",
     quote: "Mười miếng thuần thục hơn một trăm miếng tập dở dang.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 38",
     category: "philosophy",
-    context: "Tinh thâm hơn bác tạp. Rèn một đòn vạn lần tạo nên kỹ năng thuần thục."
+    context: "Tinh thâm hơn bác tạp. Rèn một đòn vạn lần tạo nên kỹ năng thuần thục.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q14",
     quote: "Thời điểm (Timing) và khoảng cách (Distance) là hai điều sinh tử.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 9",
     category: "strategy",
-    context: "Căn bản của cận chiến: Đúng khoảng cách mới phát lực, đúng thời điểm mới điểm trúng."
+    context: "Căn bản của cận chiến: Đúng khoảng cách mới phát lực, đúng thời điểm mới điểm trúng.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q15",
@@ -816,18 +851,22 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q16",
     quote: "Khi bị ngã không phải là thua, tiếp tục tấn công ngay khi đang nằm dưới đất.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 10",
     category: "mindset",
-    context: "Địa chiến bất khuất: Chân triệt cước, tay hộ thủ, biến nghịch cảnh thành thời cơ."
+    context: "Địa chiến bất khuất: Chân triệt cước, tay hộ thủ, biến nghịch cảnh thành thời cơ.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q17",
     quote: "Phật Gia Vịnh Xuân là võ của nữ nên tuyệt đối không đối lực.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 31",
     category: "philosophy",
-    context: "Bản chất lấy nhu thắng cương, mượn sức địch đánh địch của Ni sư Ngũ Mai."
+    context: "Bản chất lấy nhu thắng cương, mượn sức địch đánh địch của Ni sư Ngũ Mai.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q18",
@@ -840,10 +879,12 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
     id: "q19",
     quote: "Tam bảo khi luyện võ: Phối hợp thở bụng — Xoay người biên thân — Thả lỏng cơ bắp.",
-    author: "GS.TS Nguyễn Mạnh Nhâm",
+    author: "PGS.TS Nguyễn Mạnh Nhâm",
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 19",
     category: "health",
-    context: "Sự kết hợp hài hòa giữa y học dưỡng sinh và cơ chế vận động cận chiến."
+    context: "Sự kết hợp hài hòa giữa y học dưỡng sinh và cơ chế vận động cận chiến.",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
     id: "q20",

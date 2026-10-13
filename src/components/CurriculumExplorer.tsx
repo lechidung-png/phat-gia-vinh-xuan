@@ -590,7 +590,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                       <span>4. Bản Sắc Đặc Thù &amp; Giá Trị Y Võ Phật Gia Vịnh Xuân Việt Nam</span>
                     </div>
                     <span className="text-xs font-mono font-bold text-emerald-300 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-700/40">
-                      Truyền Thừa &amp; Y Sinh Học GS.TS Nguyễn Mạnh Nhâm
+                      Truyền Thừa &amp; Y Sinh Học PGS.TS Nguyễn Mạnh Nhâm
                     </span>
                   </div>
 

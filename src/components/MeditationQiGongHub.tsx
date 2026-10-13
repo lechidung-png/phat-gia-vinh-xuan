@@ -63,7 +63,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
                 Thiền &amp; Khí Công Dưỡng Sinh
               </h2>
               <p className="text-xs sm:text-sm text-amber-100/90 max-w-2xl leading-relaxed">
-                Hệ thống tọa thiền tĩnh công, điều tức thổ nạp và phương pháp Thở 4 Thì đan điền được đúc kết từ công trình nghiên cứu của <span className="text-[#F5D06C] font-semibold">GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</span>, kết hợp tinh hoa y học hiện đại và tâm pháp Phật Gia.
+                Hệ thống tọa thiền tĩnh công, điều tức thổ nạp và phương pháp Thở 4 Thì đan điền được đúc kết từ công trình nghiên cứu của <span className="text-[#F5D06C] font-semibold">PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức</span>, kết hợp tinh hoa y học hiện đại và tâm pháp Phật Gia.
               </p>
             </div>
 
@@ -295,7 +295,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
               Quy Luật Ưu Thế Tại Não Bộ &amp; Nhất Niệm Trừ Vạn Niệm
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Theo GS.TS Nguyễn Mạnh Nhâm, khó khăn lớn nhất của người ngồi thiền một mình trong đêm thanh vắng là <strong className="text-amber-200">Tạp niệm (ý mã tâm viên)</strong> và <strong className="text-amber-200">Sự nản chí</strong>. Thiền học Phật Gia áp dụng quy luật &quot;Ưu thế&quot; của hệ thần kinh: khi ta chuyên tâm tuyệt đối vào một ý nghĩ duy nhất tại Hạ Đan Điền, vùng hưng phấn này sẽ ức chế toàn bộ các vùng vỏ não khác, làm các suy nghĩ lan man tự động tan biến.
+              Theo PGS.TS Nguyễn Mạnh Nhâm, khó khăn lớn nhất của người ngồi thiền một mình trong đêm thanh vắng là <strong className="text-amber-200">Tạp niệm (ý mã tâm viên)</strong> và <strong className="text-amber-200">Sự nản chí</strong>. Thiền học Phật Gia áp dụng quy luật &quot;Ưu thế&quot; của hệ thần kinh: khi ta chuyên tâm tuyệt đối vào một ý nghĩ duy nhất tại Hạ Đan Điền, vùng hưng phấn này sẽ ức chế toàn bộ các vùng vỏ não khác, làm các suy nghĩ lan man tự động tan biến.
             </p>
             <div className="p-4 rounded-2xl bg-black/30 border border-white/10 text-xs text-amber-200/90 font-serif italic">
               &quot;Nước chảy đá mòn. Đừng trông chờ kết quả hiển nhiên trong vài ngày. Hãy coi việc ngồi thiền điều tức như việc đánh răng, rửa mặt mỗi ngày. Sau nhiều năm bền bỉ, công phu ắt tự thành tựu.&quot;
@@ -339,7 +339,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
                     5 Chuẩn Mực Giải Phẫu Võ Học Khi Tọa Thiền
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Năm yếu lĩnh thân pháp cốt tủy trong tĩnh công theo giáo trình của GS.TS Nguyễn Mạnh Nhâm:
+                    Năm yếu lĩnh thân pháp cốt tủy trong tĩnh công theo giáo trình của PGS.TS Nguyễn Mạnh Nhâm:
                   </p>
                 </div>
 

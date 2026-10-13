@@ -20,11 +20,11 @@ export const MONOGRAPHS: MonographSection[] = [
     content: [
       "Vịnh Xuân Quyền bắt nguồn từ phong trào 'Phản Thanh Phục Minh' tại miền Nam Trung Hoa sau khi chùa Nam Thiếu Lâm bị đốt phá. Để đào tạo nhanh chóng những nghĩa sĩ có khả năng cận chiến sát thương cao trong không gian chật hẹp, các bậc cao đồ đã chắt lọc những tinh hoa giản dị, thực chiến nhất để sáng tạo nên môn phái.",
       "Năm 1939, Sư Tổ Nguyễn Tế Công (1877 - 1959) từ Phật Sơn sang Việt Nam, đặt chân tới Hà Nội rồi sau này vào Chợ Lớn. Tại Hà Nội, Cụ đã truyền thụ võ công cho Đại đệ tử Trần Thúc Tiển (1912 - 1980).",
-      "Võ sư Trần Thúc Tiển là tấm gương võ học mẫu mực, người đã truyền thụ toàn bộ hệ thống quyền pháp Vịnh Xuân và Nội công cho GS.TS Y khoa Nguyễn Mạnh Nhâm, tạo nên nền móng vững chắc cho Võ đường Phật Gia Vịnh Xuân ngày nay."
+      "Võ sư Trần Thúc Tiển là tấm gương võ học mẫu mực, người đã truyền thụ toàn bộ hệ thống quyền pháp Vịnh Xuân và Nội công cho PGS.TS Y khoa Nguyễn Mạnh Nhâm, tạo nên nền móng vững chắc cho Võ đường Phật Gia Vịnh Xuân ngày nay."
     ],
     keypoints: [
       "Sư Tổ Nguyễn Tế Công là người khai sơn phá thạch Vịnh Xuân Quyền Việt Nam.",
-      "Cố Đại Võ Sư Trần Thúc Tiển là sư phụ chân truyền trực tiếp của GS.TS Nguyễn Mạnh Nhâm.",
+      "Cố Đại Võ Sư Trần Thúc Tiển là sư phụ chân truyền trực tiếp của PGS.TS Nguyễn Mạnh Nhâm.",
       "Võ phái luôn giữ vững đạo lý Tôn Sư Trọng Đạo và tinh thần phụng sự y võ."
     ]
   },
@@ -89,7 +89,7 @@ export const MONOGRAPHS: MonographSection[] = [
     chapter: "Phần 2: Chương 4",
     badge: "Y Võ",
     readTime: "9 phút",
-    excerpt: "Luận giải của GS.TS Y khoa Nguyễn Mạnh Nhâm về cơ chế thở cơ hoành, kích thích hệ thần kinh phó giao cảm và phát lực thấu kình.",
+    excerpt: "Luận giải của PGS.TS Y khoa Nguyễn Mạnh Nhâm về cơ chế thở cơ hoành, kích thích hệ thần kinh phó giao cảm và phát lực thấu kình.",
     content: [
       "Câu nói ngạn ngữ: 'Đả quyền bất luyện công - Đáo lão nhất trường không; Lực bất đả quyền - Quyền bất đả công'. Sức mạnh cơ bắp theo tuổi tác sẽ teo nhược, nhưng nội công thì càng già càng thâm hậu.",
       "Dưới góc nhìn y học hiện đại: Thở đan điền (thở cơ hoành) huy động toàn bộ các phế nang vùng đáy phổi, tăng thể tích thông khí và giải phóng nồng độ hormone hạnh phúc Endorphin.",
@@ -130,7 +130,7 @@ export const MONOGRAPHS: MonographSection[] = [
     content: [
       "Bắc Thiếu Lâm tại Tung Sơn (Hà Nam) do Bạt Đà lập năm 495, Bồ Đề Đạt Ma truyền Dịch Cân Kinh năm 527. Nam Thiếu Lâm tại Lộc Tùng (Phúc Kiến) là nơi khai sinh ra Vịnh Xuân Quyền trong phong trào kháng Thanh.",
       "Dòng truyền thừa Phật Sơn: Ngũ Mai Sư Thái -> Nghiêm Vịnh Xuân -> Lương Nhị Tỷ & Hoàng Hoa Bảo -> Lương Tán -> Trần Hoa Thuận -> Ngô Trọng Tố -> Nguyễn Tế Công & Diêu Tài.",
-      "Năm 2004, đoàn võ sư Võ đường Phật Gia Vịnh Xuân do GS.TS Nguyễn Mạnh Nhâm dẫn đầu đã sang Phật Sơn, dâng hương tại Nhà thờ họ Diêu và Võ đường Diêu Kỳ, diện kiến VS Diêu Cường kết nối tình thâm huynh đệ đồng môn."
+      "Năm 2004, đoàn võ sư Võ đường Phật Gia Vịnh Xuân do PGS.TS Nguyễn Mạnh Nhâm dẫn đầu đã sang Phật Sơn, dâng hương tại Nhà thờ họ Diêu và Võ đường Diêu Kỳ, diện kiến VS Diêu Cường kết nối tình thâm huynh đệ đồng môn."
     ],
     keypoints: [
       "Vịnh Xuân Quyền kế thừa dòng máu hào kiệt của Nam Thiếu Lâm.",

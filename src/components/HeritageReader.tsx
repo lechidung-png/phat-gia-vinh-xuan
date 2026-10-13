@@ -60,7 +60,7 @@ export const HeritageReader: React.FC<HeritageReaderProps> = ({
         </h2>
 
         <p className="text-xs sm:text-sm text-amber-200/80 leading-relaxed font-serif italic">
-          Biên soạn: GS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức • NXB Văn Hóa Thông Tin
+          Biên soạn: PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức • NXB Văn Hóa Thông Tin
         </p>
       </div>
 

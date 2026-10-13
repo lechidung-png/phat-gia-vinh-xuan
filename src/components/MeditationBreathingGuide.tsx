@@ -243,7 +243,7 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
                 </span>
               </h3>
               <p className="text-xs text-amber-200/70">
-                Phương pháp nội công Vịnh Xuân của GS.TS Nguyễn Mạnh Nhâm
+                Phương pháp nội công Vịnh Xuân của PGS.TS Nguyễn Mạnh Nhâm
               </p>
             </div>
           </div>

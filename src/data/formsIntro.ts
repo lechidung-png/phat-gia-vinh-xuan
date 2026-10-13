@@ -1,5 +1,5 @@
 // DỮ LIỆU CHUẨN XÁC: LỜI NÓI ĐẦU, TRIẾT LÝ YẾU CHỈ & ĐỐI SÁNH VỊNH XUÂN THẾ GIỚI CỦA 18 BÀI QUYỀN
-// Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền (GS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức)
+// Căn cứ: Giáo trình Phật Gia Vịnh Xuân Quyền (PGS.TS Y khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức)
 // Mở rộng nghiên cứu học thuật: Đối chiếu hệ thống Vịnh Xuân Quốc Tế (Diệp Vấn, Nguyễn Kỳ Sơn - Sầm Năng, Hoàng Thuần Lương, Chu Thượng Đồng, Lương Đỉnh, Bành Nam...)
 
 export interface WorldLineageContext {
@@ -12,7 +12,7 @@ export interface WorldLineageContext {
 
 export interface PgvxUniqueness {
   distinctiveFeatures: string; // Nét dị biệt tinh hoa của Phật Gia Vịnh Xuân Việt Nam
-  biomechanicalMedicalValue: string; // Giá trị y học, sinh cơ học cột sống & dưỡng sinh khớp (GS.TS Nguyễn Mạnh Nhâm)
+  biomechanicalMedicalValue: string; // Giá trị y học, sinh cơ học cột sống & dưỡng sinh khớp (PGS.TS Nguyễn Mạnh Nhâm)
   combatDoctrine: string; // Tôn chỉ chiến thuật thực chiến đặc trưng
 }
 
@@ -65,7 +65,7 @@ export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
     coreFunction: "Xây dựng nền móng tĩnh: Định hình tư thế Nhị Tự Kiềm Dương Tấn, cấu trúc thân thể chóp nêm, vị trí khuỷu tay thủ trung lộ và khả năng thả lỏng tuyệt đối khi vận động.",
     pedagogicalRole: "Bài thường tập tại chỗ, giúp người học chú ý tới chất lượng từng milimet động tác. Mọi bài quyền sau đều phát triển từ nền tảng này.",
     scholarlyInsight: "Rèn luyện cấu trúc khi đứng tương đối tĩnh; triệt tiêu hoàn toàn sự phụ thuộc vào quán tính bước chân để ép các khớp xương và gân cơ tự phát lực.",
-    pgvxIntegration: "Phật Gia Vịnh Xuân kết hợp Nhị Tự Kiềm Dương Tấn chân hẹp che kín hạ bộ và nguyên lý giải phẫu cột sống của GS.TS Nguyễn Mạnh Nhâm (cuộn xương cùng cụt, thẳng cột sống thắt lưng chống thoái hóa L4-L5)."
+    pgvxIntegration: "Phật Gia Vịnh Xuân kết hợp Nhị Tự Kiềm Dương Tấn chân hẹp che kín hạ bộ và nguyên lý giải phẫu cột sống của PGS.TS Nguyễn Mạnh Nhâm (cuộn xương cùng cụt, thẳng cột sống thắt lưng chống thoái hóa L4-L5)."
   },
   {
     order: 2,
@@ -149,7 +149,7 @@ export const LINEAGE_SCHOLARLY_INSIGHTS: LineageInsight[] = [
     subtitle: "Hai Anh Em Lừng Danh Phật Sơn — Thập Nhị Tán Thức & 'Trầm Kiều' vs 'Tìm Kiều'",
     historicalContext: "Sư Tổ Nguyễn Tế Công (Yuen Chai Wan, 1877–1959, người truyền bá Vịnh Xuân sang Việt Nam) và Đại Sư Nguyễn Kỳ Sơn (Yuen Kay Shan, 1889–1956, trụ cột Vịnh Xuân Quảng Châu - dòng Sầm Năng Sum Nung) là hai anh em ruột xuất thân từ gia tộc quyền quý tại Phật Sơn. Nguyễn Tế Công là anh cả, Nguyễn Kỳ Sơn là người em thứ năm (thường gọi là Nguyễn Lão Ngũ).",
     coreDoctrine: "Dòng Nguyễn Kỳ Sơn lưu giữ hệ thống 'Thập Nhị Tán Thức' (12 nhóm kỹ thuật rời) bên cạnh 3 bài quyền, mộc nhân, côn và song đao. Đặc biệt, bài thứ hai ở dòng này được diễn giải là 'Trầm Kiều' (沉橋 - dìm nén, nhấn chìm cầu đối phương) thay vì chỉ là 'Tìm Kiều' (尋橋 - tìm kiếm tiếp xúc).",
-    pgvxCorrelation: "Trong Phật Gia Vịnh Xuân của GS.TS Nguyễn Mạnh Nhâm, cả hai tầng nghĩa đều được dung hợp hoàn hảo: Vừa 'Vấn lộ' đưa tay hỏi đường lắng nghe lực (Tìm Kiều), vừa hạ chìm cùi chỏ 'Thủ lưu trung tuyến' để dìm nén đường phát lực của địch (Trầm Kiều).",
+    pgvxCorrelation: "Trong Phật Gia Vịnh Xuân của PGS.TS Nguyễn Mạnh Nhâm, cả hai tầng nghĩa đều được dung hợp hoàn hảo: Vừa 'Vấn lộ' đưa tay hỏi đường lắng nghe lực (Tìm Kiều), vừa hạ chìm cùi chỏ 'Thủ lưu trung tuyến' để dìm nén đường phát lực của địch (Trầm Kiều).",
     bulletPoints: [
       "Huyết thống cội nguồn: Hai anh em Nguyễn Tế Công và Nguyễn Kỳ Sơn cùng thọ giáo Hoắc Bảo Toàn và Phùng Thiếu Khanh.",
       "Thập Nhị Tán Thức: Nhánh Quảng Châu phát triển 12 thức rời; nhánh Việt Nam phát triển hệ thống đồ sộ 108 Chiêu thức (đơn luyện & đối luyện).",
@@ -175,7 +175,7 @@ export const LINEAGE_SCHOLARLY_INSIGHTS: LineageInsight[] = [
     subtitle: "Giải Mã Hệ Thống Thoát Kẹt Tay Của Samuel Kwok & Nguyên Lý Đòn Bẩy 2.7 Mét",
     historicalContext: "Trong các nhánh truyền thừa Diệp Vấn và đặc biệt là hệ thống của Đại sư Samuel Kwok, bài Tiêu Chỉ (Biu Jee) được giảng giải là bài quyền 'Cứu nguy khẩn cấp' khi người tập rơi vào tình thế bất lợi hoặc bị khóa kẹt tay.",
     coreDoctrine: "Tiêu Chỉ dạy cách phóng sức từ cùi chỏ và đầu ngón tay ở cự ly hẹp nhất để lật ngược tình thế khi đường trung lộ bị phá vỡ. Trong khi đó, Lục Điểm Bán Côn (dài 2.7m) biến những sai lệch nhỏ ở thân thể thành lỗi sai lớn ở đầu côn, buộc người tập phải tinh chỉnh sự đồng bộ toàn thân.",
-    pgvxCorrelation: "GS.TS Nguyễn Mạnh Nhâm nhấn mạnh: Tiêu Chỉ là 'Dĩ công vi thủ, dĩ đả vi tiêu' — khi bị ép vào góc kẹt, chỉ có phản công xuyên thấu mới là lối thoát duy nhất. Còn với Lục Điểm Bán Côn, sức mạnh phát ra không phải từ cơ bắp cánh tay mà là 'Thương kình' phóng từ gót chân Kiềm Dương qua eo hông.",
+    pgvxCorrelation: "PGS.TS Nguyễn Mạnh Nhâm nhấn mạnh: Tiêu Chỉ là 'Dĩ công vi thủ, dĩ đả vi tiêu' — khi bị ép vào góc kẹt, chỉ có phản công xuyên thấu mới là lối thoát duy nhất. Còn với Lục Điểm Bán Côn, sức mạnh phát ra không phải từ cơ bắp cánh tay mà là 'Thương kình' phóng từ gót chân Kiềm Dương qua eo hông.",
     bulletPoints: [
       "Tiêu Chỉ: Ý nghĩa bài vượt xa động tác ngón tay, là nghệ thuật xoay chuyển càn khôn khi bị kẹt tay hoặc vỡ trung tuyến.",
       "Lục Điểm Bán Côn: Côn dài 2.7m hoạt động như chiếc kính lúp phóng đại mọi sai lệch cơ học ở eo và chân.",
@@ -220,7 +220,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Thế Nhị Tự Kiềm Dương Tấn chân rất hẹp (khoảng cách hai gót chân chỉ khoảng một nắm tay, mũi chân khép nhọn), bảo vệ triệt để hạ bộ và khớp háng khác với tấn rộng bằng vai của các chi phái Hồng Kông.",
-      biomechanicalMedicalValue: "Dưới góc nhìn giải phẫu y học của GS.TS Nguyễn Mạnh Nhâm, việc cuộn nhẹ xương cùng cụt và giữ thẳng cột sống thắt lưng giúp giải tỏa áp lực đè nén lên đĩa đệm L4-L5 và S1, kích hoạt hô hấp cơ hoành sâu tăng cường dung tích phổi.",
+      biomechanicalMedicalValue: "Dưới góc nhìn giải phẫu y học của PGS.TS Nguyễn Mạnh Nhâm, việc cuộn nhẹ xương cùng cụt và giữ thẳng cột sống thắt lưng giúp giải tỏa áp lực đè nén lên đĩa đệm L4-L5 và S1, kích hoạt hô hấp cơ hoành sâu tăng cường dung tích phổi.",
       combatDoctrine: "Bất động chế vạn động — Xây dựng bộ khung phòng thủ chóp nêm tam giác không thể bị xô đổ ở cự ly cận chiến."
     },
     globalBridge: {
@@ -266,7 +266,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     globalBridge: {
       master: "Võ Sư Hoàng Thuần Lương (Wong Shun Leung)",
       doctrine: "Xúc Giác Niêm Thủ & Chiếm Góc 45°",
-      correlation: "Hoàng Thuần Lương coi Tầm Kiều là chiếc chìa khóa mở cánh cửa cận chiến bằng cách dùng cẳng tay bắc cầu hỏi đường (vấn thủ), khớp hoàn toàn với nguyên lý nghe lực (thính kình) của GS.TS Nguyễn Mạnh Nhâm."
+      correlation: "Hoàng Thuần Lương coi Tầm Kiều là chiếc chìa khóa mở cánh cửa cận chiến bằng cách dùng cẳng tay bắc cầu hỏi đường (vấn thủ), khớp hoàn toàn với nguyên lý nghe lực (thính kình) của PGS.TS Nguyễn Mạnh Nhâm."
     }
   },
 
@@ -306,7 +306,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     globalBridge: {
       master: "Lý Tiểu Long (Bruce Lee)",
       doctrine: "Triệt Quyền Đạo — Dĩ Công Vi Thủ & Finger Jab",
-      correlation: "Lý Tiểu Long phát triển đòn xỉa ngón tay (Finger Jab) và nguyên lý 'Dĩ công vi thủ' từ chính bài Tiêu Chỉ của Vịnh Xuân Quyền, tương đồng với phân tích của GS.TS Nguyễn Mạnh Nhâm trong giáo trình gốc khi luận giải về bài quyền Tiêu Chỉ."
+      correlation: "Lý Tiểu Long phát triển đòn xỉa ngón tay (Finger Jab) và nguyên lý 'Dĩ công vi thủ' từ chính bài Tiêu Chỉ của Vịnh Xuân Quyền, tương đồng với phân tích của PGS.TS Nguyễn Mạnh Nhâm trong giáo trình gốc khi luận giải về bài quyền Tiêu Chỉ."
     }
   },
 
@@ -582,7 +582,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Long quyền trong Phật Gia Vịnh Xuân kết hợp chặt chẽ với động tác chưởng pháp xoay vòng, lấy tâm bình khí hòa chế ngự hung khí đối phương.",
-      biomechanicalMedicalValue: "Theo y học cổ truyền và phân tích của GS.TS Nguyễn Mạnh Nhâm, Long quyền tác động đến kinh Tâm (Tim mạch), điều hòa huyết áp, dưỡng tâm an thần và giải tỏa stress thần kinh.",
+      biomechanicalMedicalValue: "Theo y học cổ truyền và phân tích của PGS.TS Nguyễn Mạnh Nhâm, Long quyền tác động đến kinh Tâm (Tim mạch), điều hòa huyết áp, dưỡng tâm an thần và giải tỏa stress thần kinh.",
       combatDoctrine: "Thần định tâm an — Tâm trí tĩnh lặng như nước tù, đối phương vừa động là chưởng kình lập tức phát ra chấn động nội tạng."
     },
     globalBridge: {

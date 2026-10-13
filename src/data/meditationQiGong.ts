@@ -2,7 +2,7 @@
  * meditationQiGong.ts
  * Hệ thống hóa toàn bộ lý thuyết, khẩu quyết, thân pháp và kỹ thuật Thở 4 Thì
  * thuộc Chương IV: Nội Công — Sách Giáo Trình Phật Gia Vịnh Xuân Quyền
- * Tác giả: GS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)
+ * Tác giả: PGS.TS Y Khoa Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2012)
  * Cố vấn & thực hành: Võ Đường Huỳnh Thúc Kháng
  */
 
@@ -93,7 +93,7 @@ export const BREATHING_PHASES: BreathingPhaseGuide[] = [
     details: [
       "Toàn thân buông lỏng, ngưng mọi động tác thở, tuyệt đối không gồng cứng.",
       "Bụng dưới duy trì ở trạng thái xẹp rỗng hoàn toàn trong suốt thời lượng thì này.",
-      "Kỹ thuật thút cốc đạo (thu thút hậu môn): Người tập nhẹ nhàng thút hậu môn 2 nhịp nhỏ, giúp lưu thông tĩnh mạch trĩ, phòng ngừa táo bón và sa ruột theo y huấn của GS.TS Nguyễn Mạnh Nhâm.",
+      "Kỹ thuật thút cốc đạo (thu thút hậu môn): Người tập nhẹ nhàng thút hậu môn 2 nhịp nhỏ, giúp lưu thông tĩnh mạch trĩ, phòng ngừa táo bón và sa ruột theo y huấn của PGS.TS Nguyễn Mạnh Nhâm.",
       "Tâm trí an định vào khoảng không tịch mịch, không vướng bận ngoại giới.",
     ],
   },
@@ -156,7 +156,7 @@ export const BREATHING_PRESETS: BreathingPreset[] = [
   {
     id: "standard",
     name: "Giáo Trình Chuẩn (5 Giây / Thì)",
-    description: "Nhịp thở kinh điển được GS.TS Nguyễn Mạnh Nhâm hướng dẫn trong giáo trình Phật Gia Vịnh Xuân (2012).",
+    description: "Nhịp thở kinh điển được PGS.TS Nguyễn Mạnh Nhâm hướng dẫn trong giáo trình Phật Gia Vịnh Xuân (2012).",
     secondsPerPhase: 5,
     recommendation: "Mỗi chu kỳ 20 giây. Thời lượng tối ưu từ 30 - 45 phút (tương đương tàn một tuần hương).",
   },

@@ -100,7 +100,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               setQuery(e.target.value);
               setSelectedIndex(0);
             }}
-            placeholder="Tra cứu: Chiêu 38, Bàng thủ, Mộc nhân, Kiềm dương, GS.TS Nguyễn Mạnh Nhâm..."
+            placeholder="Tra cứu: Chiêu 38, Bàng thủ, Mộc nhân, Kiềm dương, PGS.TS Nguyễn Mạnh Nhâm..."
             className="flex-1 bg-transparent text-white placeholder-slate-500 focus:outline-none text-sm"
           />
           {query && (

@@ -33,7 +33,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = () => {
 
         <div className="flex items-center gap-2 text-xs text-slate-400">
           <FileText className="w-4 h-4 text-[#E2B743]" />
-          <span>Ấn bản gốc 2012 • GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức</span>
+          <span>Ấn bản gốc 2012 • PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức</span>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = () => {
             Tài liệu khảo cứu võ học
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-            Không gian tĩnh lặng lưu trữ toàn bộ lịch sử truyền thừa, lời tựa, triết lý võ đạo, phương pháp luyện khí đan điền và các văn bản gốc từ công trình sách của GS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức.
+            Không gian tĩnh lặng lưu trữ toàn bộ lịch sử truyền thừa, lời tựa, triết lý võ đạo, phương pháp luyện khí đan điền và các văn bản gốc từ công trình sách của PGS.TS Y khoa Nguyễn Mạnh Nhâm và ThS.DS Nguyễn Duy Thức.
           </p>
         </div>
 
@@ -162,7 +162,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = () => {
 
             {/* Modal Footer */}
             <div className="pt-4 mt-4 border-t border-[#3D291F] flex items-center justify-between text-xs text-slate-500">
-              <span>Trích từ tác phẩm 2012 của GS.TS Nguyễn Mạnh Nhâm</span>
+              <span>Trích từ tác phẩm 2012 của PGS.TS Nguyễn Mạnh Nhâm</span>
               <button
                 onClick={() => setSelectedMonograph(null)}
                 className="px-4 py-2 rounded-xl bg-[#E2B743] text-[#140C08] font-bold"

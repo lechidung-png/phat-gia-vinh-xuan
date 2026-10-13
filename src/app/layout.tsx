@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s | Phật Gia Vịnh Xuân",
   },
   description:
-    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân 3D, Thiền & Khí công dưỡng sinh thở 4 thì, Trục Tý Ngọ Tuyến và tư liệu truyền thừa từ GS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
+    "Nền tảng số hóa di sản võ học Phật Gia Vịnh Xuân: Tra cứu trọn vẹn 108 chiêu thức liên hoàn, Cọc gỗ Mộc Nhân 3D, Thiền & Khí công dưỡng sinh thở 4 thì, Trục Tý Ngọ Tuyến và tư liệu truyền thừa từ PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức.",
   keywords: [
     "Phật Gia Vịnh Xuân",
     "Vịnh Xuân Quyền",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "Võ đường Huỳnh Thúc Kháng",
   ],
   authors: [
-    { name: "GS.TS Nguyễn Mạnh Nhâm" },
+    { name: "PGS.TS Nguyễn Mạnh Nhâm" },
     { name: "ThS.DS Nguyễn Duy Thức" },
   ],
   creator: "Võ Đường Phật Gia Vịnh Xuân",
@@ -179,7 +179,7 @@ const jsonLd = {
         },
         {
           "@type": "Person",
-          "name": "GS.TS Nguyễn Mạnh Nhâm",
+          "name": "PGS.TS Nguyễn Mạnh Nhâm",
           "jobTitle": "Đồng tác giả & Cố vấn Y võ",
           "description":
             "Chủ tịch Hội Hậu môn Trực tràng Việt Nam, nguyên Trưởng khoa Ngoại Bệnh viện Việt Đức, đệ tử Cụ Trần Thúc Tiển.",
