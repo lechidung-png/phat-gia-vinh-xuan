@@ -1,18 +1,18 @@
 # NHẬT KÝ RÚT KINH NGHIỆM & QUẢN TRỊ TRI THỨC DỰ ÁN (LESSONS LEARNED LOG)
-*(Phật Gia Vịnh Xuân Quyền - Continuous Improvement & Quality Retrospective)*
+*(Phật Gia Vịnh Xuân Quyền — Continuous Improvement & Quality Retrospective)*
 
-Tài liệu này được cập nhật tự động sau mỗi phiên làm việc nhằm đúc kết các bài học xương máu, phân tích nguyên nhân gốc rễ (Root Cause Analysis - RCA), ghi nhận giải pháp kỹ thuật đã khắc phục thành công và thiết lập các chốt chặn (Quality Gates) ngăn chặn tái diễn lỗi.
+Tài liệu này được cập nhật sau mỗi giai đoạn phát triển nhằm đúc kết các bài học thực tế, phân tích nguyên nhân gốc rễ (Root Cause Analysis - RCA), ghi nhận giải pháp kỹ thuật đã khắc phục và thiết lập các chốt chặn (Quality Gates) ngăn chặn tái diễn lỗi.
 
 ---
 
-## MỤC LỤC CÁC BÀI HỌC KINH NGHIỆM
+## MỤC LỤC 30 BÀI HỌC KINH NGHIỆM
 
 1. [Bài Học 1: Chống Co Rút Quy Mô Trang (Từ 16 Trang Lên Chuẩn 225 Trang)](#bài-học-1-chống-co-rút-quy-mô-trang-từ-16-trang-lên-chuẩn-225-trang)
 2. [Bài Học 2: Bảo Toàn Trọn Vẹn 2 Người Đối Kháng Trong Ảnh Phục Chế](#bài-học-2-bảo-toàn-trọn-vẹn-2-người-đối-kháng-trong-ảnh-phục-chế)
 3. [Bài Học 3: Tẩy Sạch Chữ In Thấm Mặt Sau (Bleed-Through) & Nhãn Số Đen](#bài-học-3-tẩy-sạch-chữ-in-thấm-mặt-sau-bleed-through--nhãn-số-đen)
 4. [Bài Học 4: Tuyệt Đối Bảo Toàn Chuẩn Mực Võ Học (Tấn Kiềm Dương Chân Hẹp)](#bài-học-4-tuyệt-đối-bảo-toàn-chuẩn-mực-võ-học-tấn-kiềm-dương-chân-hẹp)
 5. [Bài Học 5: Bản Sắc Môn Phái (Gam Màu Nâu Đất Võ Phục Phật Gia Vịnh Xuân)](#bài-học-5-bản-sắc-môn-phái-gam-màu-nâu-đất-võ-phục-phật-gia-vịnh-xuân)
-6. [Bài Học 6: Tối Ưu Hóa Nền Tảng Web (Next.js 15 SSG & In-Memory Search)](#bài-học-6-tối-ưu-hóa-nền-tảng-web-nextjs-15-ssg--in-memory-search)
+6. [Bài Học 6: Tối Ưu Hóa Nền Tảng Web (Next.js 16 SSG & In-Memory Search)](#bài-học-6-tối-ưu-hóa-nền-tảng-web-nextjs-16-ssg--in-memory-search)
 7. [Bài Học 7: Hoàn Thiện Typography Tiếng Việt (Be Vietnam Pro & Noto Serif)](#bài-học-7-hoàn-thiện-typography-tiếng-việt-be-vietnam-pro--noto-serif)
 8. [Bài Học 8: Tái Tạo Ảnh 3D Siêu Thực Khớp Hoàn Toàn Bằng Động Cơ Chồng Chập & Hồi Tiếp Prompt](#bài-học-8-tái-tạo-ảnh-3d-siêu-thực-khớp-hoàn-toàn-bằng-động-cơ-chồng-chập--hồi-tiếp-prompt)
 9. [Bài Học 9: So Khớp Hướng Mắt/Mặt & Tinh Chỉnh Gối Chụm Khép Hạ Bộ Trong Tấn Kiềm Dương](#bài-học-9-so-khớp-hướng-mắtmặt--tinh-chỉnh-gối-chụm-khép-hạ-bộ-trong-tấn-kiềm-dương)
@@ -29,6 +29,14 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
 20. [Bài Học 20: Tinh Giản Nút Bấm Di Động & Responsive Adaptive Wording (Mobile Touch Target & Ergonomics)](#bài-học-20-tinh-giản-nút-bấm-di-động--responsive-adaptive-wording-mobile-touch-target--ergonomics)
 21. [Bài Học 21: Triệt Tiêu Nợ Kỹ Thuật & Chuẩn Mực "Console Sạch Tuyệt Đối" (Zero-Tech-Debt & Clean Console Discipline)](#bài-học-21-triệt-tiêu-nợ-kỹ-thuật--chuẩn-mực-console-sạch-tuyệt-đối-zero-tech-debt--clean-console-discipline)
 22. [Bài Học 22: Chuẩn Xác Thống Kê & Tôn Trọng Ngữ Cảnh Ảnh Võ Sư (Authentic Asset Counting & Dynamic Quote Context)](#bài-học-22-chuẩn-xác-thống-kê--tôn-trọng-ngữ-cảnh-ảnh-võ-sư-authentic-asset-counting--dynamic-quote-context)
+23. [Bài Học 23: Không Gian Bảo Tàng Số Giới Thiệu Chi Tiết Về Tổ Sư & Các Vị Thầy Truyền Thừa (Master Heritage Profiles & Dedicated Detail View)](#bài-học-23-không-gian-bảo-tàng-số-giới-thiệu-chi-tiết-về-tổ-sư--các-vị-thầy-truyền-thừa-master-heritage-profiles--dedicated-detail-view)
+24. [Bài Học 24: Khiêm Tốn Hóa Hồ Sơ Võ Sư & Tích Hợp GA4 / Looker Studio Dashboard](#bài-học-24-khiêm-tốn-hóa-hồ-sơ-võ-sư--tích-hợp-ga4--looker-studio-dashboard)
+25. [Bài Học 25: Không Gian Thiền Định & Khí Công Thở Vuông 4 Thì Đan Điền](#bài-học-25-không-gian-thiền-định--khí-công-thở-vuông-4-thì-đan-điền)
+26. [Bài Học 26: Xác Thực Chéo Chân Dung Nhân Vật Lịch Sử (Chống Gán Nhầm Ảnh Võ Sư Trần Thúc Tiển)](#bài-học-26-xác-thực-chéo-chân-dung-nhân-vật-lịch-sử-chống-gán-nhầm-ảnh-võ-sư-trần-thúc-tiển)
+27. [Bài Học 27: Chuẩn Xác Học Hàm PGS.TS & Nghiêm Cấm Tự Bịa Biệt Danh Sư Phụ](#bài-học-27-chuẩn-xác-học-hàm-pgsts--nghiêm-cấm-tự-bịa-biệt-danh-sư-phụ)
+28. [Bài Học 28: Nghiên Cứu Đối Chiếu 6 Bài Quyền Vịnh Xuân Thế Giới & 7 Nhân Vật Huyền Thoại](#bài-học-28-nghiên-cứu-đối-chiếu-6-bài-quyền-vịnh-xuân-thế-giới--7-nhân-vật-huyền-thoại)
+29. [Bài Học 29: Công Thái Học Đọc Quốc Tế Chống Mỏi Mắt & Hệ Thống Cỡ Chữ Động A- / A / A+](#bài-học-29-công-thái-học-đọc-quốc-tế-chống-mỏi-mắt--hệ-thống-cỡ-chữ-động-a--a--a)
+30. [Bài Học 30: Hoàn Thiện Chân Dung Đồng Tác Giả ThS.DS Nguyễn Duy Thức & Ảnh Cận Cảnh PGS.TS Nguyễn Mạnh Nhâm](#bài-học-30-hoàn-thiện-chân-dung-đồng-tác-giả-thsds-nguyễn-duy-thức--ảnh-cận-cảnh-pgsts-nguyễn-mạnh-nhâm)
 
 ---
 
@@ -87,10 +95,10 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
 
 ---
 
-### Bài Học 6: Tối Ưu Hóa Nền Tảng Web (Next.js 15 SSG & In-Memory Search)
+### Bài Học 6: Tối Ưu Hóa Nền Tảng Web (Next.js 16 SSG & In-Memory Search)
 - **Hiện tượng:** Nguy cơ tốn chi phí vận hành máy chủ và độ trễ truy vấn nếu sử dụng mô hình Backend Database truyền thống.
 - **Giải pháp triệt để:**
-  - Chuyển toàn bộ kiến trúc sang **Next.js 15 Static Site Generation (SSG)** với `output: 'export'`. Toàn bộ 108 chiêu thức và 13 chuyên đề được tiền biên dịch ra thư mục `web/out/`.
+  - Chuyển toàn bộ kiến trúc sang **Next.js 16 Static Site Generation (SSG)** với `output: 'export'`. Toàn bộ 108 chiêu thức và 18 chuyên đề được tiền biên dịch ra thư mục `web/out/`.
   - Tích hợp **In-Memory Search Engine** (`web/src/lib/searchEngine.ts`), chuẩn hóa tiếng Việt không dấu (NFD), cho phép tìm kiếm toàn văn trong $< 2\text{ms}$ ngay trên trình duyệt mà không cần gửi request về máy chủ.
   - Kết quả: Chi phí máy chủ $0, an toàn tuyệt đối 100% (không có database để bị hack), sẵn sàng triển khai một chạm lên Vercel và Cloudflare Pages.
 
@@ -103,7 +111,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
     1. **`Be Vietnam Pro` (Sans-serif):** Bộ phông được thiết kế riêng cho ngôn ngữ tiếng Việt bởi các chuyên gia Typography Việt Nam, đảm bảo các dấu thanh đặt đúng tỷ lệ vàng, độ tương phản sắc nét trên mọi loại màn hình.
     2. **`Noto Serif` (Serif):** Bộ phông có chân uy nghiêm, cổ kính, trang trọng như bản in khắc gỗ kinh điển cho toàn bộ tiêu đề võ học, tên chiêu thức và khẩu quyết thiền môn.
   - Tối ưu hóa CSS chuyên sâu:
-    - `line-height: 1.68` ngăn chặn hoàn toàn hiện tượng dính dấu giữa các dòng.
+    - `line-height: 1.8` ngăn chặn hoàn toàn hiện tượng dính dấu giữa các dòng.
     - `text-rendering: optimizeLegibility` và `font-feature-settings: "liga" 1, "kern" 1` đảm bảo độ mượt mà của các ký tự ligatures.
     - Tiền tải và nhúng sẵn định dạng WOFF2 vào gói tĩnh `web/out/`, cho phép website tải cực nhanh và hiển thị chuẩn xác 100% ngay cả khi chạy offline không có mạng.
 
@@ -134,71 +142,40 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
      - Đưa số liệu đo lệch vào prompt sinh ảnh vòng kế tiếp:
        - Nếu $\Delta_{\text{elbow}} > 0 \rightarrow$ Thêm: `BOTH ELBOWS TUCKED STRICTLY INWARD against the ribcage along the vertical centerline (Tý Ngọ Tuyến), zero outward elbow flare`.
        - Nếu khoảng cách 2 người quá xa $\rightarrow$ Thêm: `The two masters stand VERY CLOSE together, close intimate combat distance, legs vertical under hips`.
-- **Kết quả thực nghiệm đã được kiểm chứng (Pilot Benchmark):**
-  - **Chiêu 01 (Đơn Luyện Tấn Kiềm Dương):**
-    - Vòng 1: IoU 65.63% (do dính bóng đổ sàn nhà).
-    - Vòng 2 (Sau khi khử bóng sàn & bù trừ cùi chỏ): IoU đạt **88.31%**, sai số thế chân thu hẹp về **$-7.81\%$**, cùi chỏ thu sát nách đạt $+14.83\%$.
-  - **Chiêu 38 (Đối Kháng 2 Người A vs B - Cầm Nã):**
-    - Vòng 1: IoU 57.16% (khoảng cách 2 võ sư bị doãi chân về sau).
-    - Vòng 2 (Sau khi ép cự ly áp sát cận chiến): IoU tăng vọt lên **70.68%**, sai số cùi chỏ chỉ còn **$-2.69\%$**, cự ly đứng sát nhau chuẩn xác tuyệt đối.
 - **Đóng gói chuẩn hóa:**
   - Quy chuẩn hóa thành Agent Skill: `.agents/skills/pgvx-hyper-reconstructor/SKILL.md`.
   - Tích hợp công cụ phân tích tự động: `tools/pose_diff_analyzer.py`.
-  - Triển khai giao diện trải nghiệm song hành trên Web: Nút gạt `[Ảnh Gốc 2012] <-> [3D Siêu Thực 2026]` và Modal Kiểm Định Chồng Chập (`DojoPlayer.tsx`).
 
 ---
 
 ### Bài Học 9: So Khớp Hướng Mắt/Mặt & Tinh Chỉnh Gối Chụm Khép Hạ Bộ Trong Tấn Kiềm Dương
 - **Phản hồi & Hiện tượng phát hiện:**
-  1. *Hướng nhìn của mặt và mắt không giống ảnh gốc:* Trong ảnh scan gốc (như Chiêu 02, Chiêu 03), võ sư đứng thế thân xoay nghiêng 3/4 nhưng **khuôn mặt và ánh mắt vẫn hướng thẳng về phía trước ống kính (khóa chặt mục tiêu trên đường Tý Ngọ Tuyến)**. Mô hình AI mặc định lại xoay cả đầu và mắt theo hướng thân người (Head rotation aligned with torso rotation), dẫn đến việc nhân vật nhìn chệch đi hướng khác.
+  1. *Hướng nhìn của mặt và mắt không giống ảnh gốc:* Trong ảnh scan gốc (như Chiêu 02, Chiêu 03), võ sư đứng thế thân xoay nghiêng 3/4 nhưng **khuôn mặt và ánh mắt vẫn hướng thẳng về phía trước ống kính (khóa chặt mục tiêu trên đường Tý Ngọ Tuyến)**. Mô hình AI mặc định lại xoay cả đầu và mắt theo hướng thân người, dẫn đến việc nhân vật nhìn chệch đi hướng khác.
   2. *Tư thế chân chưa chuẩn võ học Vịnh Xuân:* Khoảng cách giữa 2 mũi chân và tư thế 2 đầu gối chưa đủ độ chụm. Hai đầu gối của nhân vật 3D đứng song song dạng ống trụ thông thường, chưa thể hiện được nguyên lý cốt lõi: **hai mũi chân hướng vào trong (pigeon-toed / hình chữ Nhị 二 & chữ Bát 八), khoảng cách giữa 2 mũi chân rất hẹp, hai đầu gối chùng và ép chặt vào nhau (knees clamped tightly inward) để tạo lá chắn tự nhiên che kín hoàn toàn vùng hạ bộ**.
-- **Nguyên nhân gốc rễ (RCA):**
-  - Prompt mô tả chung chung "three-quarter profile" khiến AI xoay đồng trục toàn bộ cơ thể.
-  - Các mô hình tạo ảnh AI có thiên kiến tự nhiên về tư thế đứng thẳng chân của giải phẫu học phương Tây, nếu không có từ khóa giải phẫu chuyên biệt ép buộc gối chụm vào trong (*knock-kneed / inward clamp*) thì đầu gối sẽ luôn bị doãi rộng ra.
 - **Giải pháp triệt để:**
   1. **Ràng buộc Hướng Mặt & Nhãn Pháp (Head Pose & Gaze Constraint):**
-     - Bổ sung mệnh đề bắt buộc: `HEAD & EYE GAZE DIRECTION: Despite the body and torso turning in a three-quarter angle, THE HEAD IS TURNED TO FACE DIRECTLY FORWARD TOWARDS THE CAMERA/VIEWER. The master maintains direct, piercing eye contact looking straight ahead at the viewer. Head does not turn away with the body.`
+     - Bổ sung mệnh đề bắt buộc: `HEAD & EYE GAZE DIRECTION: Despite the body and torso turning in a three-quarter angle, THE HEAD IS TURNED TO FACE DIRECTLY FORWARD TOWARDS THE CAMERA/VIEWER. The master maintains direct, piercing eye contact looking straight ahead at the viewer.`
   2. **Ràng buộc Giải Phẫu Tấn Kiềm Dương Chụm Gối Khép Hạ Bộ (Groin Protection Stance):**
-     - Bổ sung mệnh đề bắt buộc: `STRICT YEE JEE KIM YEUNG MA KNEE CLAMP & FOOT GEOMETRY: Both knees are visibly bent deeply and PRESSED TIGHTLY INWARD TOWARDS EACH OTHER, clamping tightly together to completely block and protect the groin. The two feet have toes turned inward towards each other (pigeon-toed / inward wedge), with the distance between the two big toes significantly narrower than the heels. The inner thighs and knees angle sharply inward towards the central vertical axis (Tý Ngọ Tuyến).`
+     - Bổ sung mệnh đề bắt buộc: `STRICT YEE JEE KIM YEUNG MA KNEE CLAMP & FOOT GEOMETRY: Both knees are visibly bent deeply and PRESSED TIGHTLY INWARD TOWARDS EACH OTHER, clamping tightly together to completely block and protect the groin.`
   3. **Nâng cấp công cụ kiểm tra `tools/pose_diff_analyzer.py`:**
      - Bổ sung đo tỷ lệ độ rộng đầu gối ($W_{\text{knees}}$ ở vị trí 35% chiều cao) so với bề rộng hông/vai để phát hiện và cảnh báo nếu gối chưa chụm đủ hẹp.
-
-
-
 
 ---
 
 ### Bài Học 10: Cơ Chế Kiểm Định Sàng Lọc Võ Học & Khả Năng Tự Phục Hồi (QA Curation & Fallback Resilience)
 - **Bối cảnh & Nhu cầu người dùng:**
-  - Người dùng cần có toàn quyền thẩm định võ học trên từng hình ảnh: **Chọn hình nào giữ lại (đạt chuẩn) và hình nào loại bỏ (không đảm bảo chất lượng, bị khác hoàn toàn so với ảnh gốc)**.
-  - Nguyên tắc bất di bất dịch của môn phái: **Ảnh Gốc 2012 không bao giờ được phép mất đi**, luôn sẵn sàng xem lại mọi lúc mọi nơi ngay trên màn hình chính chỉ bằng một cú nhấp chuột ở góc hình mới.
-- **Giải pháp Kiến Trúc & UI/UX (V-AOF Standard):**
-  1. **Quick Corner Toggle (Nút Bấm Ở Góc Hình Mới):**
-     - Đặt tại góc trên bên phải khung hình (\bsolute top-3 right-3 z-30\) với hiệu ứng Glassmorphism sang trọng.
-     - Tích hợp Mini Thumbnail ảnh gốc 2012 và nhãn \[ 👁️ Soi Ảnh Gốc 2012 ]\ giúp chuyển đổi tức thì giữa bản 3D và bản gốc 2012 mà không làm gián đoạn việc quan sát thế võ.
-  2. **Thanh Thao Tác Kiểm Định Chất Lượng (QA Curation Action Bar):**
-     - Đặt ngay dưới Picture Box hiển thị rõ nét 3 trạng thái:
-       - \[ ✓ ĐÃ DUYỆT GIỮ ]\ (Xanh ngọc Emerald): Giữ lại hình 3D do đạt chuẩn giải phẫu.
-       - \[ ✕ ĐÃ LOẠI BỎ ]\ (Đỏ son Ruby): Loại bỏ hình 3D do sai lệch võ học, **hệ thống tự động khóa và kích hoạt ngay Ảnh Gốc 2012** để bảo toàn truyền thống môn phái, đồng thời hiển thị dải Banner cảnh báo đỏ.
-       - \[ ⏳ CHỜ THẨM ĐỊNH ]\ (Hổ phách Amber): Trạng thái mặc định ban đầu.
-     - Các nút thao tác nhanh: \[ ✓ Giữ Hình ]\, \[ ✕ Loại Bỏ ]\, \[ ↺ Đặt Lại ]\, \[ 🛡️ Quản Lý 108 Hình ]\.
-  3. **Trung Tâm Kiểm Định & Quản Lý 108 Hình (\CurationManagerModal\):**
-     - Thống kê toàn diện 108 chiêu: Số chiêu có 3D, số chiêu đã duyệt, số chiêu bị loại bỏ, số chiêu chờ thẩm định.
-     - Bộ lọc thông minh và tìm kiếm đa năng theo mã chiêu, tên chiêu, phân đoạn.
-     - Hiển thị song song thumbnail ảnh gốc 2012 và ảnh 3D để đối chiếu nhanh.
-     - **Tính năng Xuất Hàng Đợi Sinh Lại (Re-gen Queue JSON):** Tải về tệp JSON chứa danh sách các chiêu bị loại bỏ kèm hướng dẫn chấn chỉnh giải phẫu (chụm gối, khóa mắt) để chuyển trực tiếp cho AI tái tạo lại.
-     - **Tính năng Sao Lưu & Phục Hồi (Import / Export JSON):** Lưu toàn bộ trạng thái thẩm định hoặc đồng bộ giữa các thiết bị.
+  - Người dùng cần có toàn quyền thẩm định võ học trên từng hình ảnh: **Chọn hình nào giữ lại (đạt chuẩn) và hình nào loại bỏ (không đảm bảo chất lượng)**.
+  - Nguyên tắc bất di bất dịch của môn phái: **Ảnh Gốc 2012 không bao giờ được phép mất đi**, luôn sẵn sàng xem lại mọi lúc mọi nơi.
+- **Giải pháp Kiến Trúc & UI/UX:**
+  - Khi bất kỳ hình ảnh phụ trợ nào không đạt chuẩn, hệ thống tự động khóa và kích hoạt ngay **Ảnh Phục Chế Gốc 2012** làm nguồn chân lý duy nhất để bảo toàn truyền thống môn phái.
 
 ---
 
 ### Bài Học 11: Nghiên Cứu Vi Giải Phẫu Bàn Tay, Ngón Tay & Ngón Chân Bấm Đất Trong Vịnh Xuân Quyền
 - **Bối cảnh & Vấn đề phát hiện:**
-  - Người dùng và Hội đồng Chuyên môn phát hiện các hình ảnh tái tạo của AI thường thiếu các chi tiết chuẩn mực về ngón tay, bàn tay, ngón chân và thế đứng đặc trưng của Vịnh Xuân.
-  - AI thường vẽ theo lối mòn hoạt hình chung chung: bàn tay xòe bừa bãi, đấm bằng 2 ngón trên kiểu Karate, ngón chân không bám sàn, mất đi bản sắc Thốn Kình và Lạc Địa Sinh Căn của Vịnh Xuân.
-- **Nguyên nhân gốc rễ (RCA):**
-  - Prompt tạo ảnh trước đây chỉ mô tả tên chiêu tổng quát mà không đặc tả chi tiết cơ sinh học (Biomechanics) và động học khớp ngón tay/ngón chân (Interphalangeal & Metacarpal Joint Kinematics).
+  - Hình ảnh minh họa võ thuật cần tuân thủ nghiêm ngặt các chi tiết chuẩn mực về ngón tay, bàn tay, ngón chân và thế đứng đặc trưng của Vịnh Xuân.
 - **Giải pháp triệt để:**
-  1. **Khảo cứu y võ toàn diện:** Biên soạn tài liệu \docs/VINH_XUAN_ANATOMICAL_TAXONOMY.md\ chuẩn hóa 11 thế tay (Nhật tự quyền, Thán, Phục, Bàng, Hộ, Chưởng căn, Cương đao, Tiêu chỉ, Long trảo, Báo chùy, Hạc chùy) và 4 thế tấn (Kiềm Dương, Biên thân Lạc mã, Đinh tấn, Độc hạc).
+  1. **Khảo cứu y võ toàn diện:** Biên soạn tài liệu `docs/VINH_XUAN_ANATOMICAL_TAXONOMY.md` chuẩn hóa 11 thế tay (Nhật tự quyền, Thán, Phục, Bàng, Hộ, Chưởng căn, Cương đao, Tiêu chỉ, Long trảo, Báo chùy, Hạc chùy) và 4 thế tấn (Kiềm Dương, Biên thân Lạc mã, Đinh tấn, Độc hạc).
   2. **Cơ chế Vi Giải Phẫu Bàn Tay & Ngón Tay:**
      - *Nhật Tự Quyền:* Đấm dọc, lực phát từ 3 khớp đốt ngón dưới (ngón út, áp út, ngón giữa) thẳng hàng với xương trụ và cùi chỏ, ngón cái nẹp cứng đốt 2 ngón trỏ/giữa.
      - *Chưởng Pháp:* Cổ tay bẻ gập ngửa ra sau (dorsiflexion), phát lực từ gốc cườm tay (Chưởng Căn / hypothenar eminence), 4 ngón khép sát tự nhiên.
@@ -208,9 +185,6 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
      - Mười ngón chân bấm chặt xuống đất (ngón chân cái bấm mạnh nhất để kích hoạt cơ khép đùi và kinh Tỳ/Can).
      - Vòm lòng bàn chân (huyệt Dũng Tuyền) hơi co rút tạo giác hút chân không.
      - Hai đầu gối chùng sâu và ép chặt chụm vào nhau che kín 100% vùng hạ bộ.
-  4. **Xây dựng Engine Tự Động Hóa (\	ools/vinh_xuan_anatomy_engine.py\):**
-     - Tự động phân tích từng chiêu thức và sinh ra Master Prompt giàu chi tiết giải phẫu học, cập nhật toàn bộ 108 chiêu trong \web/src/data/master_108_prompts.json\.
-
 
 ---
 
@@ -219,18 +193,17 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
   - Tiêu đề giao diện trước đây hiển thị "36 Bài Quyền". Người học thắc mắc vì sao môn phái lại có tới 36 bài quyền trong khi truyền thống chỉ có Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, 108 thế, Mộc nhân, Ngũ hình và Binh khí.
 - **Nguyên nhân gốc rễ (RCA):**
   - Trong quá trình số hóa 225 trang sách giáo trình gốc, mục lục có 36 chương mục đánh số từ `bai-01` đến `bai-36`. Nhiều chương trong số đó là: Lời tựa (Trang 1-6), Lịch sử truyền thừa (Trang 7), Cấu trúc giải phẫu bàn tay (Trang 9), Khẩu quyết thiền môn (Trang 54), Phương pháp luyện khí Đan Điền (Trang 161), v.v.
-  - Một số agent trước đây đã tự tạo ra các "động tác giả" (ví dụ: gán chân dung cụ Trần Thúc Tiển làm "Động tác thứ 1").
 - **Giải pháp triệt để:**
   - **Phân tách rạch ròi 2 loại hình nội dung:**
     1. **18 Bài Quyền & Binh Khí Thị Phạm:** Có động tác phân thế thực tế (`motions.length > 0`), có ảnh phục chế 2x Retina, trình phát Dojo Player và ma trận ô thế võ.
     2. **18 Chuyên Đề Lý Luận & Lịch Sử:** Là văn bản chuyên khảo, bài đọc toàn văn (`contentType: 'reading'`, `motions: []`), đọc trên giao diện Tàng Kinh Các (Heritage Reader).
-  - Chuẩn hóa toàn bộ nhãn giao diện: "18 Bài Quyền & Binh Khí Kinh Điển" (gồm 11 Đại Phân Hệ, 1.096 động tác).
+  - Chuẩn hóa toàn bộ nhãn giao diện: "18 Bài Quyền & Binh Khí" (gồm 11 Đại Phân Hệ).
 
 ---
 
 ### Bài Học 13: Đối Chiếu Ngữ Nghĩa Hình Ảnh Thực Chiến (Semantic Image-to-Context Verification)
 - **Hiện tượng:**
-  - Người dùng phản ánh gay gắt: *"Ảnh thực chiến đối kháng mà chỉ có 1 người, minh họa sai. Tại sao bạn có những lỗi lớn như vậy mà không tự phát hiện được?"*
+  - Người dùng phản ánh: *"Ảnh thực chiến đối kháng mà chỉ có 1 người, minh họa sai. Tại sao bạn có những lỗi lớn như vậy mà không tự phát hiện được?"*
 - **Nguyên nhân gốc rễ (RCA):**
   - Thiếu chốt chặn kiểm định ngữ nghĩa (Semantic Context Check). Agent khi tạo dữ liệu đã copy đường dẫn ảnh đơn luyện (1 võ sư) gán vào các thẻ đòn thế đối kháng phân thế A vs B.
 - **Giải pháp triệt để:**
@@ -265,7 +238,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
     2. *Ma trận toàn bộ (Grid View):* Lưới ma trận đa cột trực quan, huy hiệu thế võ, lọc tìm kiếm nhanh, lật gương đối xứng, nhấp vào xem phóng to tức thì.
     3. *Lời nói đầu & Triết lý:* Bố cục trang trọng, ý nghĩa danh xưng, 3 yếu lĩnh cốt tử, khẩu quyết và trích dẫn giáo trình.
   - **Tinh giản ngôn từ:** Chuyển về ngôn phong giản dị, mộc mạc, đậm chất thiền môn ("Triết lý & Yếu quyết", "42 Lời khuyên của sư phụ", "7 Khẩu quyết cốt lõi").
-  - **Trợ năng WCAG 2.1 Level AA:** Bổ sung `aria-label` cho 100% nút bấm (574/574 nút trên toàn bộ DOM), hỗ trợ phím `Esc` đóng Lightbox, `Ctrl + K` mở tìm kiếm in-memory.
+  - **Trợ năng WCAG 2.1 Level AA:** Bổ sung `aria-label` cho 100% nút bấm, hỗ trợ phím `Esc` đóng Lightbox, `Ctrl + K` mở tìm kiếm in-memory.
 
 ---
 
@@ -288,7 +261,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
   - Trên màn hình điện thoại thực tế (375px - 390px), phát sinh 2 lỗi nghiêm trọng:
     1. *Kẹt người dùng (Blocker):* Khi mở Modal phóng to ảnh Lightbox, nút đóng `[X]` bị trôi ra tọa độ $x = 445\text{px}$ (vượt quá màn hình $390\text{px}$), người dùng bị kẹt cứng không thể đóng ảnh để học tiếp.
     2. *Tràn ngang toàn trang 134px (Critical):* Thanh điều khiển DojoPlayer3 dùng `flex-nowrap` dài $483.5\text{px}$, làm phình to trang web lên $524\text{px}$, giấu mất nút Chuông Thiền và tốc độ phát, khiến trang bị trượt lắc ngang khi cuộn dọc.
-    3. *Header quá tải:* 4 nút icon bên phải chiếm $166\text{px}$, ép mép phải và cắt cụt nút Menu Hamburger $12.6\text{px} - 27.6\text{px}$.
+    3. *Header quá tải:* Các nút icon bên phải ép mép phải và cắt cụt nút Menu Hamburger.
 - **Nguyên nhân gốc rễ (RCA):**
   - Quá trình phát triển trên màn hình Desktop rộng rãi đã tạo ra "điểm mù di động":
     - Modal `fixed inset-0` tự động mở rộng theo `document.scrollWidth` (524px) thay vì giới hạn theo `window.innerWidth` (390px).
@@ -301,7 +274,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
      - Tầng 1: Nút Lùi ($44\text{px}$) — Nút Tự Động Phát to ở giữa ($200\text{px}$) — Nút Tiến ($44\text{px}$).
      - Tầng 2: Dropdown tốc độ ($150\text{px}$) + Nút Chuông Thiền ($150\text{px}$) chia 50/50 đều nhau, hiển thị 100% trọn vẹn.
      - Tích hợp **Cử chỉ cảm ứng vuốt (Swipe Gestures)**: Vuốt trái sang thế tiếp, vuốt phải lùi lại thế trước kèm rung phản hồi haptic.
-  4. **Tinh gọn Header di động:** Giữ đúng **2 nút bấm chuẩn $\ge 40\text{px}$** (Tra Cứu + Menu Hamburger); đưa Mục Lục và Quy Chuẩn Tấn vào Drawer to rõ; chấm dứt hoàn toàn hiện tượng cắt xén mép phải.
+  4. **Tinh gọn Header di động:** Giữ các nút bấm chuẩn $\ge 40\text{px}$; chấm dứt hoàn toàn hiện tượng cắt xén mép phải.
   5. **Đột phá UX - Mobile Bottom Dock:** Tạo thanh điều hướng đáy 5 tab (`MobileBottomBar.tsx`) cố định ở mép dưới trong vùng ngón tay cái, kèm khoảng đệm `pb-28 lg:pb-8` bảo vệ nội dung không bị che khuất.
 
 ---
@@ -318,7 +291,7 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
     * *"Tâm vô địch"*, *"đòn thẳng vô địch"*
     * *"Kho binh khí tối thượng"*
 - **Nguyên nhân gốc rễ (RCA):**
-  - Trong các lượt sinh nội dung trước đây, AI thường có xu hướng dùng các tính từ đòn thế hoa mỹ, phóng đại để làm cho bài viết "hấp dẫn" mà không nhận thức được rằng trong võ thuật chính thống — đặc biệt là Phật Gia Vịnh Xuân của GS.TS Y khoa Nguyễn Mạnh Nhâm — võ đạo luôn đề cao sự **giản dị, khiêm cung, thiết thực, khoa học và mộc mạc** ("Chân truyền nhất cú thoán, giả truyền vạn quyển thư").
+  - Trong các lượt sinh nội dung trước đây, AI thường có xu hướng dùng các tính từ đòn thế hoa mỹ, phóng đại để làm cho bài viết "hấp dẫn" mà không nhận thức được rằng trong võ thuật chính thống — đặc biệt là Phật Gia Vịnh Xuân của PGS.TS Y khoa Nguyễn Mạnh Nhâm — võ đạo luôn đề cao sự **giản dị, khiêm cung, thiết thực, khoa học và mộc mạc** ("Chân truyền nhất cú thoán, giả truyền vạn quyển thư").
 - **Giải pháp triệt để:**
   1. **Thanh lọc 100% tàn dư ngôn từ khoa trương:**
      - `Tuyệt đỉnh lý luận` $\rightarrow$ `Lý Luận & Nguyên Lý Vịnh Xuân Quyền`
@@ -330,53 +303,28 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
      - `Tối thượng` $\rightarrow$ `Cốt lõi` / `Tạo nên hiệu quả` / `Cảnh giới cao`
   2. **Quét sạch toàn bộ Codebase:**
      - Sử dụng script tự động quét qua 100% tệp trong `web/src` (components, data, app). Đưa số lượng từ ngữ "đao to búa lớn" về **đúng 0**.
-  3. **Đảm bảo Quality Gates:**
-     - TypeScript `npx tsc --noEmit` = **0 lỗi**.
-     - ESLint `npm run lint` = **0 lỗi**.
-     - Next.js SSG `npm run build` = **9/9 routes passed**.
-     - Browser Subagent nghiệm thu trực quan 100% các phân hệ.
 
 ---
 
 ### Bài Học 19: Đa Dạng Hóa Hình Ảnh Võ Sư & Thế Chào Bão Quyền Lễ (Martial Etiquette & Dynamic Visuals)
 - **Hiện tượng & Người dùng phản ánh:**
   - Người dùng cung cấp tư liệu quý: ảnh Võ sư Lê Đắc Kiên thực hiện nghi thức chào Bão Quyền Lễ (áo nâu sồng truyền thống, tay ôm quyền trang nghiêm) và yêu cầu: *"Bổ sung ảnh chào Võ sư Lê Đắc Kiên, để đa dạng ảnh cho các câu quote"*.
-  - Trước đây, mọi trích dẫn triết lý, danh ngôn và thẻ truyền thừa của Võ sư Lê Đắc Kiên chỉ dùng đơn điệu 1 ảnh chân dung duy nhất, chưa làm nổi bật được lễ nghi và phong thái võ đạo Phật Gia Vịnh Xuân.
-- **Nguyên nhân gốc rễ (RCA):**
-  - Cấu trúc dữ liệu `martialPhilosophy.ts` và `quotes` trước đó bị cố định (hardcoded) ảnh chân dung, thiếu các trường linh hoạt như `authorImage`, `imageCaption` và `imageVariants`.
-  - Giao diện chưa có cơ chế tương tác (Switcher) cho phép người học hoán đổi góc nhìn giữa chân dung đời thường và thế võ lễ nghi.
 - **Giải pháp triệt để:**
   1. **Tích hợp kho tư liệu:** Bổ sung ảnh chuẩn hóa `vo_su_le_dac_kien_chao.jpg` vào `web/public/assets/images/instructors/`.
-  2. **Mở rộng Schema CSDL Võ Đạo:** Bổ sung `authorImage` và `imageCaption` cho từng câu châm ngôn; phân định các chủ đề sâu sắc (Tâm Pháp Bất Tranh, Thiền Võ Nhất Như) sử dụng ảnh thế chào trang nghiêm, trong khi các chủ đề kỹ thuật (Đạo Trung Tuyến) sử dụng ảnh chân dung tĩnh tại.
-  3. **Tương tác linh hoạt trên UI:**
-     - Tại `LineageTree.tsx` (Node Võ sư Lê Đắc Kiên) và `WelcomePortal.tsx` (Featured Wisdom): Thêm bộ nút switcher mượt mà `Chân Dung` và `Thế Chào`, kèm huy hiệu động "Thế Chào Bão Quyền Lễ".
-     - Tại `PhilosophyHub.tsx`: Thẻ châm ngôn lớn hiển thị ảnh tác giả nổi bật; danh sách châm ngôn có avatar tròn nhỏ giúp nhận diện người phát ngôn tức thì.
-  4. **Bài học võ đạo:** Trong võ thuật truyền thống, "Tiên học lễ, hậu học văn". Việc xuất hiện hình ảnh chào Bão Quyền Lễ nhắc nhở võ sinh về đạo đức võ môn, sự tôn kính sư môn và tinh thần khiêm hạ trước khi bước vào luyện chiêu.
+  2. **Mở rộng Schema CSDL Võ Đạo:** Bổ sung `authorImage` và `imageCaption` cho từng câu châm ngôn; phân định các chủ đề sâu sắc sử dụng ảnh phù hợp.
+  3. **Bài học võ đạo:** Trong võ thuật truyền thống, "Tiên học lễ, hậu học văn". Việc xuất hiện hình ảnh chào Bão Quyền Lễ nhắc nhở võ sinh về đạo đức võ môn, sự tôn kính sư môn và tinh thần khiêm hạ trước khi bước vào luyện chiêu.
 
 ---
 
 ### Bài Học 20: Tinh Giản Nút Bấm Di Động & Responsive Adaptive Wording (Mobile Touch Target & Ergonomics)
 - **Hiện tượng & Người dùng phản ánh:**
   - Người dùng yêu cầu: *"Xử lý nợ kỹ thuật, tinh giản bớt chữ, đặc biệt là các nút để hiển thị tốt trên giao diện mobile"*.
-  - Trên màn hình điện thoại kích thước hẹp (viewport $375\text{px} - 390\text{px}$ như iPhone 14/15/16), các nút bấm dài bị:
-    * Bẻ thành 2 đến 3 dòng, phá vỡ chiều cao và khoảng cách lề.
-    * Nút bị co ép, chữ chạm sát mép viền, mất tính cân đối thẩm mỹ.
-    * Một số nhóm 3 nút bị rơi rớt thành 2 hàng lộn xộn (ví dụ: bộ 3 tab Tiểu Niệm Đầu `Từng động tác`, `Ma trận toàn bộ`, `Lời nói đầu & Triết lý`).
-- **Nguyên nhân gốc rễ (RCA):**
-  - Tư duy thiết kế giao diện trên máy tính (Desktop-First) thường sử dụng nhãn nút đầy đủ, mang tính văn bản học thuật (VD: *"Khám Phá 18 Bài Quyền"*, *"Ma trận toàn bộ (52 thế)"*, *"Đồ Hình Người Thật (Võ Sư Trục Tuyến)"*).
-  - Khi chuyển xuống màn hình di động mà không có tầng trung gian thích ứng từ ngữ, không gian vật lý hữu hạn của điện thoại bị tràn ngập bởi các phụ từ không cần thiết.
+  - Trên màn hình điện thoại kích thước hẹp (viewport $375\text{px} - 390\text{px}$ như iPhone 14/15/16), các nút bấm dài bị bẻ thành 2 đến 3 dòng, phá vỡ chiều cao và khoảng cách lề.
 - **Giải pháp triệt để (Responsive Adaptive Wording):**
   1. **Ứng dụng cặp class Tailwind thích ứng:**
      - Sử dụng `<span className="hidden sm:inline">...</span>` cho phần chữ chi tiết dành cho Desktop.
      - Sử dụng `<span className="sm:hidden">...</span>` cho phiên bản cô đọng tối đa dành cho Mobile.
-  2. **Chuẩn hóa hệ thống nhãn nút toàn dự án:**
-     - `Khám Phá 18 Bài Quyền` $\rightarrow$ `18 Bài Quyền`
-     - `Từng động tác (52)` | `Ma trận toàn bộ (52 thế)` | `Lời nói đầu & Triết lý` $\rightarrow$ `Chi tiết (52)` | `Ma trận (52)` | `Triết lý` (vừa khít 1 hàng duy nhất).
-     - `Tự Động Phát Chuỗi` $\rightarrow$ `Tự Phát` / `Tạm Dừng`.
-     - `Chuông Thiền: Bật` $\rightarrow$ `Chuông: Bật` / `Chuông Thiền`.
-     - `Xem Gọn` / `Thẻ Chi Tiết` $\rightarrow$ `Gọn` / `Thẻ`.
-     - `Bước trước` / `Bước tiếp` $\rightarrow$ `Trước` / `Tiếp`.
-  3. **Bảo đảm chuẩn Touch Target:** Mọi nút bấm sau khi tinh giản chữ đều có padding và min-height bảo đảm kích thước chạm tối thiểu $\ge 44 \times 44\text{ px}$, không bị co rúm, không trượt bấm nhầm.
+  2. **Bảo đảm chuẩn Touch Target:** Mọi nút bấm sau khi tinh giản chữ đều có padding và min-height bảo đảm kích thước chạm tối thiểu $\ge 44 \times 44\text{ px}$, không bị co rúm, không trượt bấm nhầm.
 
 ---
 
@@ -384,9 +332,6 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
 - **Hiện tượng:**
   - Kiểm tra hệ thống phát hiện một số tệp mã nguồn "chết" (Dead Code) từ các giai đoạn thử nghiệm trước không còn được import nhưng vẫn tồn tại trong thư mục (`CurationManagerModal.tsx`, `DojoPlayer.tsx`, `FormsExplorer.tsx`, `all_7_forms.ts`).
   - Trình duyệt ghi nhận 1 request lỗi tài nguyên nền: `GET /noise.png [404 Not Found]`.
-- **Nguyên nhân gốc rễ (RCA):**
-  - Thiếu quy trình rà soát dead code định kỳ sau các đợt refactor lớn.
-  - Phụ thuộc vào file tài nguyên đồ họa ngoại lai (file ảnh noise) thay vì giải pháp CSS nội tại. Khi file ảnh bị thiếu hoặc không copy sang build, trình duyệt sinh lỗi 404.
 - **Giải pháp triệt để:**
   1. **Xóa sổ triệt để Dead Code:** Dọn sạch 100% các file cũ, quy tụ toàn bộ dữ liệu 18 bài quyền và động tác phân thế về một nguồn chân lý duy nhất (Single Source of Truth) là `canonicalCatalog.ts`.
   2. **Khắc phục triệt để lỗi 404:** Thay thế ảnh `noise.png` bằng CSS `radial-gradient` pattern siêu nhẹ nội sinh, không phát sinh bất kỳ HTTP request nào, tải tức thì 0ms.
@@ -401,20 +346,115 @@ Tài liệu này được cập nhật tự động sau mỗi phiên làm việc
     2. *"Bỏ các thống kê vì không chính xác và không nhiều ý nghĩa."*
     3. *"Các hình ảnh Võ sư Lê Đắc Kiên dùng để hiển thị kèm các câu quote khác nhau không phải để thêm vào thành các động tác chào hay gì khác, hãy bỏ tab thế chào đi. Cùng một chỗ 2 lần nhắc chữ chân dung."*
     4. *"3 nút đầu tiên trên Hero cần là: 1. Lịch sử và triết lý, 2. Kiến thức chung, 3. Các bài quyền."*
-- **Nguyên nhân gốc rễ (RCA):**
-  - **Đồng nhất cơ học giữa tệp ảnh và động tác võ học:** Trong sách giáo trình 225 trang có 1.096 bức ảnh được phục chế. Tuy nhiên, nhiều bức ảnh là các góc máy khác nhau của cùng một thế, các bước lặp chu kỳ (như xoay tay, thu quyền), các giai đoạn tiếp cận trong đòn giao đấu 2 người, hoặc các nhịp gõ trên cọc mộc nhân. Việc ghi "1.096 Động Tác Thị Phạm" là thiếu chính xác về mặt võ học và tạo cảm giác phóng đại số lượng.
-  - **Thiếu nhạy bén về mục đích sử dụng tư liệu:** Khi người dùng cung cấp thêm ảnh Võ sư Lê Đắc Kiên thực hiện nghi lễ bão quyền, mục đích là để đa dạng hóa hình ảnh đồng hành cùng các câu danh ngôn/châm ngôn triết lý khác nhau. Việc máy móc tạo ra tab switcher `[Chân Dung] [Thế Chào]` biến một cử chỉ lễ nghi thành một "thế võ" để bật tắt, gây rườm rà và dẫn đến lỗi lặp từ ("Chân Dung Võ Sư" trong ảnh và nút "Chân Dung" bên dưới).
-  - **Phô trương số liệu thừa:** Khối 4 thẻ thống kê số liệu trên Hero Banner vừa không chính xác tuyệt đối vừa không hỗ trợ hành trình học tập của võ sinh.
 - **Giải pháp triệt để:**
   1. **Bãi bỏ hoàn toàn khối thống kê:** Xóa bỏ 4 thẻ thống kê số liệu khỏi Hero Banner của `WelcomePortal.tsx`, loại bỏ các đoạn văn bản tuyên bố "1.096 thế đòn" trong `CurriculumExplorer.tsx`.
   2. **Chuẩn hóa 3 nút điều hướng Hero đúng thứ tự sư phạm:**
      - Nút 1: `Lịch sử và triết lý` $\rightarrow$ Dẫn trực tiếp vào phân hệ Truyền thừa & Triết lý (`lineage`).
      - Nút 2: `Kiến thức chung` $\rightarrow$ Dẫn trực tiếp vào phân hệ Cơ bản công (`fundamentals`).
      - Nút 3: `Các bài quyền` $\rightarrow$ Dẫn trực tiếp vào phân hệ 18 bài quyền & binh khí (`forms`).
-  3. **Tôn trọng ngữ cảnh ảnh Võ sư Lê Đắc Kiên:**
-     - Xóa bỏ triệt để tab switcher `[Chân Dung] [Thế Chào]` và xóa bỏ badge lặp từ "Chân Dung Võ Sư" ở cả `WelcomePortal.tsx` và `LineageTree.tsx`. Thẻ giới thiệu chỉ hiển thị ảnh chân dung đĩnh đạc kèm huy hiệu "20 Năm Võ Nghiệp".
-     - Các bức ảnh khác của Võ sư Lê Đắc Kiên được sử dụng đúng tôn chỉ: đồng hành cùng các câu châm ngôn, phát biểu triết lý môn phái trong widget châm ngôn hằng ngày và trung tâm triết lý.
-  4. **Tích hợp câu châm ngôn sứ mệnh của Võ sư Lê Đắc Kiên:**
-     - Khẩu truyền tâm pháp: *“Kiến thức thì số hoá nhưng luyện tập vẫn là thật và cần thực hành hàng ngày.”*
-     - Tôn vinh ở vị trí trang trọng: Khối Featured Wisdom Trang Chủ, khối trích dẫn Node 4 Sơ Đồ Truyền Thừa, mở rộng thành chủ đề thứ 6 *“Số Hóa & Thực Chứng”* (數字化與實修) và câu #26 trong Kho Châm Ngôn Võ Đạo, nhắc nhở môn sinh: Công nghệ số là ngọn hải đăng lưu giữ di sản, nhưng công phu thực chứng bắt buộc phải rèn giũa bằng mồ hôi và khổ luyện hằng ngày.
+  3. **Tôn trọng ngữ cảnh ảnh Võ sư Lê Đắc Kiên:** Xóa bỏ triệt để tab switcher `[Chân Dung] [Thế Chào]` và xóa bỏ badge lặp từ "Chân Dung Võ Sư".
 
+---
+
+### Bài Học 23: Không Gian Bảo Tàng Số Giới Thiệu Chi Tiết Về Tổ Sư & Các Vị Thầy Truyền Thừa (Master Heritage Profiles & Dedicated Detail View)
+- **Hiện tượng & Yêu cầu người dùng:**
+  - *"Có nhiều thông tin về Sư Tổ Nguyễn Tế Công (Yuen Chai Wan), võ sư Trần Thúc Tiển, PGS.TS Y khoa Nguyễn Mạnh Nhâm trên Internet, hãy tìm kiếm chắt lọc để bổ sung một trang riêng giới thiệu về tổ sư và các vị thầy mỗi khi bấm vào xem chi tiết trong mục Truyền thừa."*
+- **Giải pháp triệt để:**
+  1. **Nghiên cứu & Chắt lọc tư liệu lịch sử chính thống (`masterProfiles.ts`):**
+     - Xây dựng kho dữ liệu hồ sơ chuyên sâu chuẩn mực cho các thế hệ danh sư: niên đại chuẩn, quê quán, danh hiệu, các địa danh lịch sử gắn liền (38 Gia Ngư, BV Việt Đức, chùa Phúc Lâm...), câu danh ngôn tâm đắc, 4 chương luận giải chuyên sâu (Thân thế, Kỹ pháp, Đóng góp di sản, Giai thoại võ lâm) và danh sách cống hiến cốt lõi.
+  2. **Thiết kế Bảo tàng số di sản (`MasterDetailModal.tsx`):**
+     - Giao diện bảo tàng số trang trọng, tông màu lụa ngà và vàng kim hoàng gia.
+     - Thanh chuyển nhanh (Quick Master Switcher) các vị thầy trên đầu trang giúp người xem dễ dàng tìm hiểu liên tục giữa các đời.
+  3. **Tương tác công thái học & Trợ năng cao cấp:**
+     - Nút "Xem tiểu sử & đóng góp chi tiết" và khả năng click trực tiếp vào ảnh chân dung tại các Node của `LineageTree.tsx`.
+     - Phím tắt bàn phím: Mũi tên phải (`→`) chuyển thầy kế tiếp, Mũi tên trái (`←`) chuyển thầy trước đó, Phím `Escape` đóng modal tức thì.
+
+---
+
+### Bài Học 24: Khiêm Tốn Hóa Hồ Sơ Võ Sư & Tích Hợp GA4 / Looker Studio Dashboard
+- **Hiện tượng & Yêu cầu người dùng:**
+  - Chuẩn hóa hồ sơ Võ sư Lê Đắc Kiên (sinh năm 1968), giữ văn phong khiêm tốn, giản dị, bỏ các câu trích dẫn gán ghép hoặc huy hiệu phô trương số năm tuổi nghề.
+  - Thay thế bộ đếm truy cập ảo cục bộ bằng công cụ phân tích chuyên nghiệp Google Analytics 4 (`G-17V87XT91Y`), Google Search Console và báo cáo trực quan trên Google Looker Studio.
+- **Giải pháp triệt để:**
+  - Cập nhật `masterProfiles.ts` và `LineageTree.tsx` với văn phong chừng mực, nhã nhặn ("Võ Đường Huỳnh Thúc Kháng").
+  - Xây dựng `AnalyticsProvider.tsx` và `analytics.ts` kết nối trực tiếp GA4, Cloudflare Web Analytics và bảng điều khiển KPI trực tuyến trên Looker Studio.
+  - Thanh lọc hoàn toàn cụm từ "225 trang" trên giao diện người dùng để giữ nét trang nhã của di sản.
+
+---
+
+### Bài Học 25: Không Gian Thiền Định & Khí Công Thở Vuông 4 Thì Đan Điền
+- **Bối cảnh & Nhu cầu võ học:**
+  - Phật Gia Vịnh Xuân lấy **Thiền và Nội công Khí công** làm gốc ("Nội luyện nhất khẩu khí"). Học viên cần một công cụ trực quan hướng dẫn điều thân, điều tức, điều tâm theo đúng phương pháp thở bụng Đan Điền (Thở nghịch / Thở vuông 4 thì) và bài *Phật Gia Khí Công Quyền*.
+- **Giải pháp triệt để:**
+  - Phát triển tổ hợp `MeditationQiGongHub.tsx`, `MeditationBreathingGuide.tsx` và cơ sở dữ liệu `meditationQiGong.ts`.
+  - Xây dựng vòng tròn dẫn nhịp thở tương tác 4 pha: **Hít vào (Inhale) — Nín giữ (Hold-in) — Thở ra (Exhale) — Buông thư (Hold-out)** kết hợp âm thanh chuông xoay Tây Tạng (`zenAudio.ts`), đồng hồ đếm thời gian hành thiền và hướng dẫn chi tiết Tam Điều (Điều Thân, Điều Tức, Điều Tâm).
+
+---
+
+### Bài Học 26: Xác Thực Chéo Chân Dung Nhân Vật Lịch Sử (Chống Gán Nhầm Ảnh Võ Sư Trần Thúc Tiển)
+- **Hiện tượng & Sự cố nghiêm trọng:**
+  - Trong quá trình cập nhật ảnh chân dung cho PGS.TS Nguyễn Mạnh Nhâm, một bức ảnh đen trắng chụp cụ Trần Thúc Tiển (mặc áo vest, đeo cà vạt) bị gán nhầm vào vị trí của PGS.TS Nguyễn Mạnh Nhâm. Người dùng phát hiện và nhắc nhở: *"Đây là ảnh võ sư Trần Thúc Tiển không phải Nguyễn Mạnh Nhâm"*.
+- **Nguyên nhân gốc rễ (RCA):**
+  - Thiếu bước đối chiếu nhân trắc học và trang phục lịch sử với ảnh chuẩn của các vị đại sư trước khi ghi đè file tài nguyên trong `web/public/assets/images/historical/`.
+- **Giải pháp triệt để:**
+  - Khôi phục và phân định rạch ròi ảnh chân dung của **Cố Võ sư Trần Thúc Tiển** (`co_vo_su_tran_thuc_tien.jpg`) và ảnh chân dung của **PGS.TS Nguyễn Mạnh Nhâm** (`pgs_ts_nguyen_manh_nham.jpg`, mặc võ phục nâu sồng trong phòng tập có cọc mộc nhân).
+  - Bổ sung quy tắc **Cross-Reference Historical Portrait Audit** vào `pgvx-martial-auditor`: Bắt buộc kiểm tra đối chiếu đặc điểm khuôn mặt, trang phục và bối cảnh lịch sử của từng vị thầy trước khi gắn vào sơ đồ truyền thừa.
+
+---
+
+### Bài Học 27: Chuẩn Xác Học Hàm PGS.TS & Nghiêm Cấm Tự Bịa Biệt Danh Sư Phụ
+- **Hiện tượng & Người dùng chấn chỉnh:**
+  1. Người dùng nghiêm khắc chỉ rõ: *"Bạn không được bịa thêm biệt danh cho các sư phụ. VD: (Bác Sĩ Nhâm Vịnh Xuân)"*.
+  2. Trên trang bìa cuốn sách gốc xuất bản năm 2012 ghi rõ đồng tác giả là **"PGS.TS Nguyễn Mạnh Nhâm - ThS. Nguyễn Duy Thức"**, nhưng một số văn bản trước đó lại ghi tự phát là "GS.TS Nguyễn Mạnh Nhâm" hoặc thậm chí ghi sai lệch hoàn toàn là "Cố Đại sư" (trong khi cụ sinh năm 1932, hiện đại thọ 94 tuổi).
+- **Nguyên nhân gốc rễ (RCA):**
+  - AI có thói quen tự suy diễn hoặc "tô điểm" thêm biệt danh dân gian không có trong chính sử môn phái, đồng thời thiếu kiểm chứng chéo với bìa sách gốc.
+- **Giải pháp triệt để:**
+  - **Cấm tuyệt đối tự đặt biệt danh:** Xóa bỏ hoàn toàn cụm từ tự bịa `(Bác Sĩ Nhâm Vịnh Xuân)` và mọi danh xưng suy diễn trên toàn bộ codebase.
+  - **Chuẩn hóa 100% học hàm học vị chính danh:** Đồng bộ toàn bộ mã nguồn (`web/src/`), siêu dữ liệu SEO, sơ đồ truyền thừa, bài viết chuyên khảo và hệ thống tài liệu dự án về đúng danh xưng chính thức: **PGS.TS Y khoa Nguyễn Mạnh Nhâm (1932 – nay)** và **ThS.DS Nguyễn Duy Thức**.
+
+---
+
+### Bài Học 28: Nghiên Cứu Đối Chiếu 6 Bài Quyền Vịnh Xuân Thế Giới & 7 Nhân Vật Huyền Thoại
+- **Hiện tượng & Yêu cầu mở rộng:**
+  - Người dùng yêu cầu khảo cứu sâu về các nhân vật huyền thoại của Vịnh Xuân thế giới, trích xuất tư liệu ảnh, tổng hợp danh ngôn và đối chiếu cấu trúc 6 bài quyền Vịnh Xuân quốc tế với hệ thống Phật Gia Vịnh Xuân Việt Nam.
+- **Giải pháp triệt để:**
+  - Mở rộng `martialPhilosophy.ts` và `PhilosophyHub.tsx` với hồ sơ, chân dung và trích dẫn võ đạo của **7 nhân vật huyền thoại Vịnh Xuân thế giới**:
+    1. **Tổ Sư Ngũ Mai** (Linh hồn Thiền - Võ dung thông).
+    2. **Tổ Sư Nghiêm Vịnh Xuân** (Khởi nguyên danh xưng môn phái, lấy nhu chế cương).
+    3. **Lương Bác俦 (Leung Bok-chau)** (Người chồng tận tâm hệ thống hóa quyền pháp mang tên vợ).
+    4. **Lương Tán (Leung Jan - Vịnh Xuân Quyền Vương)** (Đỉnh cao thực chiến Phật Sơn & hệ thống *Thập Nhị Tán Thức*).
+    5. **Sư Tổ Nguyễn Tế Công (Yuen Chai-wan)** (Khai tổ Vịnh Xuân Việt Nam).
+    6. **Đại Sư Diệp Vấn (Ip Man)** (Người đưa Vịnh Xuân Hồng Kông vươn tầm đại chúng).
+    7. **Hoàng Thuần Lương (Wong Shun-leung)** ("Giảng Thủ Vương", giải mã Vịnh Xuân dưới góc nhìn cơ học chiến đấu).
+  - Bổ sung chuyên khảo đối chiếu **6 bài quyền kinh điển của Vịnh Xuân thế giới** (*Tiểu Niệm Đầu, Tầm Kiều, Tiêu Chỉ, Mộc Nhân Trang, Lục Điểm Bán Côn, Bát Trảm Đao*) và hệ thống *Cổ Lao Thập Nhị Tán Thức* để làm sáng tỏ sự phong phú của nhánh Phật Gia Vịnh Xuân Việt Nam (bảo tồn thêm *108 Thế*, *Ngũ Hình Quyền*, *Phật Gia Khí Công Quyền*).
+
+---
+
+### Bài Học 29: Công Thái Học Đọc Quốc Tế Chống Mỏi Mắt & Hệ Thống Cỡ Chữ Động A- / A / A+
+- **Hiện tượng & Người dùng phản ánh:**
+  - Người dùng chia sẻ trải nghiệm thực tế: *"Với cá nhân tôi, chữ nhiều và nhỏ làm tôi đọc khá căng mắt. Bạn cần so sánh các tiêu chuẩn quốc tế về giao diện và trải nghiệm để đặt ra các nguyên tắc thiết kế chuẩn mực, nâng cao trải nghiệm người dùng."*
+- **Nguyên nhân gốc rễ (RCA):**
+  - Nhiều thành phần giao diện trước đó lạm dụng các class chữ siêu nhỏ của Tailwind (`text-[9px]`, `text-[10px]`, `text-[11px]`, `text-xs`), khoảng cách dòng hẹp (`leading-tight`, `leading-snug`) và độ tương phản xám mờ trên nền tối dẫn đến hiện tượng lóa ngược (Halation effect) và mỏi cơ điều tiết mắt khi đọc lâu.
+- **Giải pháp triệt để theo chuẩn quốc tế (WCAG 2.1 AAA, Apple HIG, Material Design 3, Nielsen Norman Group):**
+  1. **Kiến trúc Điều Chỉnh Cỡ Chữ Toàn Cục (`FontSizeProvider.tsx`):**
+     - Tích hợp cụm 3 nút **`A-` (16px) | `A` (18px - Mặc định) | `A+` (20px)** ngay trên thanh `Header.tsx` (cả Desktop & Mobile), tự động điều chỉnh biến gốc `--base-font-scale` trên thẻ `<html>` và lưu vào `localStorage`.
+  2. **Loại bỏ 100% chữ siêu nhỏ dưới 12px:**
+     - Nâng cấp toàn bộ `text-[9px]` $\rightarrow$ `text-[11px]` lên tối thiểu `text-xs` ($13.5\text{px}$) và `text-sm` ($15.75\text{px}$); văn bản nội dung chính nâng lên `text-base` ($18\text{px}$) và `text-lg` ($20.25\text{px}$).
+  3. **Tối ưu khoảng cách dòng & độ rộng cột đọc:**
+     - Áp dụng `leading-[1.8]` (180% chiều cao chữ) cho tiếng Việt có dấu thanh kép và giới hạn độ dài dòng `65ch` chống mỏi cổ khi đảo mắt.
+  4. **Dịu hóa tương phản nền tối (Anti-Halation Warm Cream):**
+     - Chuyển màu chữ chính sang tông Kem Ấm Ngà (`#F5EBE6`) và chữ phụ sang Kem Dịu (`#DFD3C8`), đạt chuẩn tương phản $\ge 8.5:1$ (WCAG AAA) mà không gây chói lóa võng mạc.
+
+---
+
+### Bài Học 30: Hoàn Thiện Chân Dung Đồng Tác Giả ThS.DS Nguyễn Duy Thức & Ảnh Cận Cảnh PGS.TS Nguyễn Mạnh Nhâm
+- **Hiện tượng & Yêu cầu người dùng:**
+  - Người dùng hỏi: *"Bài quyền nào có Duy Thức biểu diễn"* và cung cấp 2 bức ảnh tư liệu quý:
+    1. Ảnh chân dung **ThS.DS Nguyễn Duy Thức** (`Ths Nguyen Duy Thuc 1.jpeg` — con trai PGS.TS Nguyễn Mạnh Nhâm, đồng tác giả cuốn sách giáo trình 2012, người trực tiếp thị phạm bài **Phật Gia Khí Công Quyền** trang 172 và phần Binh khí đối luyện đao kiếm trang 186–188).
+    2. Ảnh chân dung chụp cận cảnh rõ nét hơn của **PGS.TS Nguyễn Mạnh Nhâm** (`PGS.TS Nguyễn Mạnh Nhâm 3.jpeg`).
+- **Giải pháp triệt để:**
+  1. **Cập nhật ảnh cận cảnh PGS.TS Nguyễn Mạnh Nhâm:** Chuẩn hóa và đồng bộ vào `web/public/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg` và `masters/pgs_ts_nguyen_manh_nham.jpg`, giúp gương mặt hiền từ, phúc hậu của thầy hiển thị rõ nét trên mọi khung avatar.
+  2. **Bổ sung chân dung & Hồ sơ Bảo tàng số ThS.DS Nguyễn Duy Thức:**
+     - Xử lý và lưu trữ ảnh tại `web/public/assets/images/historical/ths_nguyen_duy_thuc.jpg`, `instructors/ths_nguyen_duy_thuc.jpg` và `masters/ths_nguyen_duy_thuc.jpg`.
+     - Xây dựng hồ sơ chi tiết `nguyen-duy-thuc` trong `masterProfiles.ts` (4 chương khảo cứu về truyền thống gia học Y – Dược – Võ, công trình đồng biên soạn sách giáo trình 2012, sự kết hợp Đông Dược với Khí công dưỡng sinh và trực tiếp thị phạm bài *Phật Gia Khí Công Quyền*).
+     - Cập nhật `LineageTree.tsx` hiển thị trang trọng chân dung hai cha con đồng tác giả (**PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức**) tại Thế Hệ Thứ Ba và mở rộng Bảo tàng số (`MasterDetailModal.tsx`) lên **5 vị thầy tiêu biểu**.
