@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import { AnalyticsProvider } from "@/components/AnalyticsProvider";
+import { FontSizeProvider } from "@/components/FontSizeProvider";
 
 // 1. Phông chữ Sans-serif tối ưu đặc thù cho tiếng Việt (Typography Việt Nam)
 const beVietnamPro = Be_Vietnam_Pro({
@@ -303,8 +304,10 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full flex flex-col bg-[#140C08] text-[#FBF8F3] font-sans selection:bg-[#E2B743]/30 selection:text-[#FDF3D6]"
       >
-        <AnalyticsProvider />
-        {children}
+        <FontSizeProvider>
+          <AnalyticsProvider />
+          {children}
+        </FontSizeProvider>
       </body>
     </html>
   );

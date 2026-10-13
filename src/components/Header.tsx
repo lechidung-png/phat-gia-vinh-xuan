@@ -13,6 +13,8 @@ import {
   X,
   Wind,
 } from "lucide-react";
+import { FontSizeControls } from "@/components/FontSizeProvider";
+
 
 export type NavTab = "welcome" | "forms" | "fundamentals" | "meditation" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
 
@@ -94,8 +96,11 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Right Action Icons: Search + Mobile Menu Toggle */}
+        {/* Right Action Icons: Font Size Switcher + Search + Mobile Menu Toggle */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+
+          {/* Bộ điều chỉnh cỡ chữ chống mỏi mắt (Desktop) */}
+          <FontSizeControls className="hidden sm:inline-flex" />
 
           {/* Search Trigger (Chuẩn Touch Target >= 44px trên Mobile) */}
           <button
@@ -126,6 +131,12 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile / Tablet Dropdown Menu Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#180E09] border-b border-[#3D291F] px-4 py-3.5 space-y-3 shadow-2xl animate-fadeIn">
+          {/* Bộ chỉnh cỡ chữ trên mobile */}
+          <div className="flex items-center justify-between p-2.5 rounded-xl bg-[#140C08] border border-[#3D291F]">
+            <span className="text-xs text-amber-200/90 font-medium">Cỡ chữ đọc (A- / A / A+):</span>
+            <FontSizeControls />
+          </div>
+
           <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
             Danh Mục Phân Hệ Võ Học &amp; Khí Công
           </div>

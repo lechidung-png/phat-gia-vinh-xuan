@@ -230,15 +230,15 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
           </div>
 
           {/* SUMMARY OVERVIEW */}
-          <div className="p-5 sm:p-6 rounded-2xl bg-[#180E09] border border-[#3D291F] text-xs sm:text-sm text-slate-200 leading-relaxed font-serif italic border-l-4 border-l-[#F5D06C]">
+          <div className="p-5 sm:p-7 rounded-2xl bg-[#180E09] border border-[#3D291F] text-base sm:text-lg text-amber-100 leading-[1.8] font-serif italic border-l-4 border-l-[#F5D06C]">
             {master.summary}
           </div>
 
           {/* DETAILED SECTIONS */}
           <div className="space-y-6">
             <div className="flex items-center gap-2 border-b border-[#3D291F] pb-2">
-              <BookOpen className="w-4 h-4 text-[#F5D06C]" />
-              <h4 className="text-sm uppercase tracking-widest font-bold text-white">
+              <BookOpen className="w-5 h-5 text-[#F5D06C]" />
+              <h4 className="text-sm sm:text-base uppercase tracking-widest font-bold text-white">
                 Khảo Luận Tiểu Sử &amp; Sự Nghiệp Võ Học
               </h4>
             </div>
@@ -247,28 +247,28 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
               {master.sections.map((sec, idx) => (
                 <div
                   key={idx}
-                  className="p-5 sm:p-6 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-3 hover:border-[#F5D06C]/40 transition-colors"
+                  className="p-5 sm:p-7 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-3.5 hover:border-[#F5D06C]/40 transition-colors"
                 >
                   <div>
-                    <h5 className="text-base sm:text-lg font-serif font-bold text-white text-[#F5D06C]">
+                    <h5 className="text-lg sm:text-xl font-serif font-bold text-[#F5D06C]">
                       {sec.title}
                     </h5>
                     {sec.subtitle && (
-                      <span className="text-xs text-amber-200/70 italic font-serif">
+                      <span className="text-xs sm:text-sm text-amber-200/80 italic font-serif mt-0.5 block">
                         {sec.subtitle}
                       </span>
                     )}
                   </div>
 
-                  <div className="space-y-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="space-y-3.5 text-sm sm:text-base text-[#F7E7D9] leading-[1.82] max-w-reading">
                     {sec.content.map((p, pIdx) => (
                       <p key={pIdx}>{p}</p>
                     ))}
                   </div>
 
                   {sec.keyHighlight && (
-                    <div className="p-3 rounded-xl bg-[#24130A] border border-[#F5D06C]/30 text-xs text-amber-100 flex items-start gap-2.5 font-medium">
-                      <Sparkles className="w-4 h-4 text-[#F5D06C] shrink-0 mt-0.5" />
+                    <div className="p-3.5 sm:p-4 rounded-xl bg-[#24130A] border border-[#F5D06C]/30 text-sm sm:text-base text-amber-100 flex items-start gap-3 font-medium leading-[1.7]">
+                      <Sparkles className="w-4 h-4 text-[#F5D06C] shrink-0 mt-1" />
                       <span>{sec.keyHighlight}</span>
                     </div>
                   )}
@@ -305,12 +305,12 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                   />
                 </div>
 
-                <div className="p-3.5 sm:p-4 rounded-xl bg-black/60 border border-white/10 space-y-1.5">
-                  <div className="text-xs sm:text-sm font-bold text-[#F5D06C] font-serif flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
+                <div className="p-4 sm:p-5 rounded-xl bg-black/60 border border-white/10 space-y-1.5">
+                  <div className="text-sm sm:text-base font-bold text-[#F5D06C] font-serif flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-[#F5D06C]" />
                     <span>{master.historicGroupPhoto.caption}</span>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <p className="text-sm text-slate-200 leading-[1.75]">
                     {master.historicGroupPhoto.description}
                   </p>
                 </div>
@@ -321,19 +321,19 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
           {/* KEY CONTRIBUTIONS */}
           <div className="p-5 sm:p-6 rounded-2xl bg-[#160D08] border border-[#3D291F] space-y-4">
             <div className="flex items-center gap-2">
-              <BookmarkCheck className="w-4 h-4 text-[#10B981]" />
-              <h4 className="text-sm uppercase tracking-wider font-bold text-white">
+              <BookmarkCheck className="w-5 h-5 text-[#10B981]" />
+              <h4 className="text-sm sm:text-base uppercase tracking-wider font-bold text-white">
                 Đóng Góp Di Sản Cho Phật Gia Vịnh Xuân
               </h4>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {master.keyContributions.map((c, i) => (
                 <div
                   key={i}
-                  className="p-3 rounded-xl bg-[#1F120B] border border-[#3D291F] flex items-start gap-2 text-xs text-slate-200"
+                  className="p-3.5 rounded-xl bg-[#1F120B] border border-[#3D291F] flex items-start gap-2.5 text-sm text-[#F7E7D9] leading-[1.7]"
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
                   <span>{c}</span>
                 </div>
               ))}
@@ -342,20 +342,20 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
 
           {/* FAMOUS ANECDOTES (IF ANY) */}
           {master.famousAnecdotes && master.famousAnecdotes.length > 0 && (
-            <div className="p-5 sm:p-6 rounded-2xl bg-[#1F120B] border border-[#F5D06C]/30 space-y-3">
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#1F120B] border border-[#F5D06C]/30 space-y-3.5">
               <div className="flex items-center gap-2">
-                <History className="w-4 h-4 text-[#F5D06C]" />
-                <h4 className="text-sm uppercase tracking-wider font-bold text-[#F5D06C]">
+                <History className="w-5 h-5 text-[#F5D06C]" />
+                <h4 className="text-sm sm:text-base uppercase tracking-wider font-bold text-[#F5D06C]">
                   Giai Thoại Võ Lâm Chân Thực
                 </h4>
               </div>
 
               {master.famousAnecdotes.map((a, i) => (
-                <div key={i} className="space-y-1.5 text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  <h6 className="font-serif font-bold text-white text-amber-200">
+                <div key={i} className="space-y-2 text-sm sm:text-base text-slate-200 leading-[1.8]">
+                  <h6 className="font-serif font-bold text-[#F5D06C] text-base">
                     {a.title}
                   </h6>
-                  <p className="italic text-slate-300 font-serif">
+                  <p className="italic text-[#F7E7D9] font-serif leading-[1.82]">
                     &ldquo;{a.story}&rdquo;
                   </p>
                 </div>

@@ -244,7 +244,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs text-[#E2B743] font-semibold uppercase tracking-wider">
                 Sư Tổ Vịnh Xuân Việt Nam (Nguyên quán: Phật Sơn, Quảng Đông)
               </p>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.8] max-w-reading">
                 Người có công truyền bá Vịnh Xuân Quyền sang Việt Nam từ những năm đầu thế kỷ 20. Cụ truyền dạy tại Hà Nội và sau đó là Chợ Lớn (Sài Gòn), đào tạo nên các bậc danh sư lỗi lạc cho nền võ học nước nhà.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
@@ -297,7 +297,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs text-[#E2B743] font-semibold uppercase tracking-wider">
                 Đại Đệ Tử Xuất Sắc Của Sư Tổ Nguyễn Tế Công Tại Hà Nội
               </p>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.8] max-w-reading">
                 Học trò đắc ý của cụ Tế Công tại Hà Nội, nổi danh với công phu nội kình thâm hậu, linh giác nhạy bén và tấm lòng đức độ. Cụ đã dày công gìn giữ và truyền thụ lại cho các thế hệ học trò tinh anh.
               </p>
               <div className="pt-2">
@@ -349,7 +349,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               <p className="text-xs text-[#10B981] font-semibold uppercase tracking-wider">
                 Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (NXB Văn Hóa Thông Tin 2012)
               </p>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.8] max-w-reading">
                 PGS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
@@ -419,7 +419,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 </span>
               </div>
 
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.8] max-w-reading">
                 Ông Lê Đắc Kiên công tác tại Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT). Ông là học trò của PGS.TS Y khoa Nguyễn Mạnh Nhâm và là một trong những võ sư được ghi nhận trong tác phẩm <em>Phật Gia Vịnh Xuân Quyền</em> (2012). Hiện ông phụ trách hướng dẫn tập luyện cho một số người tập tại Võ đường Huỳnh Thúc Kháng (Hà Nội).
               </p>
 
@@ -447,7 +447,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
           <h3 className="text-2xl sm:text-3xl font-bold font-serif gold-gradient">
             Triết Lý Sâu Xa Của Phật Gia Vịnh Xuân
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-amber-100/90 leading-[1.8] max-w-reading mx-auto">
             Những đúc kết tâm huyết về đạo học, giải phẫu, chuyển hóa nội kình và nhân sinh quan từ các bậc danh sư tiền bối của môn phái.
           </p>
         </div>
@@ -529,16 +529,16 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 &ldquo;{activeQuote.quote}&rdquo;
               </blockquote>
 
-              <div className="p-4 rounded-2xl bg-black/40 border border-[#3D291F] space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed text-left">
-                <strong className="text-amber-300 flex items-center gap-1.5 font-sans">
+              <div className="p-5 sm:p-6 rounded-2xl bg-black/45 border border-[#3D291F] space-y-2.5 text-sm sm:text-base text-[#F7E7D9] leading-[1.8] text-left max-w-reading">
+                <strong className="text-amber-300 flex items-center gap-2 font-sans text-sm sm:text-base">
                   <CheckCircle2 className="w-4 h-4 text-[#10B981]" /> Luận Giải Ý Nghĩa Võ Đạo:
                 </strong>
                 <p>{activeQuote.explanation}</p>
               </div>
 
-              <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-[#3D291F]/60">
+              <div className="pt-2 flex items-center justify-between text-xs text-amber-200/80 border-t border-[#3D291F]/60">
                 <span>{activeQuote.source}</span>
-                <span className="font-mono text-amber-200/60 hidden sm:inline">
+                <span className="font-mono text-amber-200/70 hidden sm:inline">
                   {activeQuote.hanNom}
                 </span>
               </div>
@@ -546,34 +546,34 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
           </div>
         </div>
 
-        {/* 4 Trụ Cột Triết Lý Đạo Võ Cốt Lõi */}
+        {/* 3 Trụ Cột Triết Lý Đạo Võ Cốt Lõi */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2">
+          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2.5">
             <div className="flex items-center gap-2 text-[#E2B743]">
               <Compass className="w-4 h-4" />
-              <h5 className="font-bold text-sm font-serif">1. Không Cưỡng Cầu</h5>
+              <h5 className="font-bold text-base font-serif">1. Không Cưỡng Cầu</h5>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-sm text-[#F7E7D9] leading-[1.75]">
               Không dùng sức cơ bắp chống lại lực đối phương. Kẻ dùng ngàn cân lực đến, ta chỉ dùng vài lạng kình mượn đà triệt tiêu.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2">
+          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2.5">
             <div className="flex items-center gap-2 text-[#10B981]">
               <Eye className="w-4 h-4" />
-              <h5 className="font-bold text-sm font-serif">2. Lắng Nghe & Thấu Cảm</h5>
+              <h5 className="font-bold text-base font-serif">2. Lắng Nghe & Thấu Cảm</h5>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-sm text-[#F7E7D9] leading-[1.75]">
               Tập trung linh giác vào Đan Điền và đôi tay dính dắt. Cảm nhận được sự chuyển dịch kình lực của đối phương trước khi mắt nhìn thấy.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2">
+          <div className="p-5 rounded-2xl bg-[#140C08] border border-[#3D291F] space-y-2.5">
             <div className="flex items-center gap-2 text-sky-400">
               <Sparkles className="w-4 h-4" />
-              <h5 className="font-bold text-sm font-serif">3. Hòa Hợp & Dưỡng Sinh</h5>
+              <h5 className="font-bold text-base font-serif">3. Hòa Hợp & Dưỡng Sinh</h5>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-sm text-[#F7E7D9] leading-[1.75]">
               Mục tiêu cốt lõi của võ học là khai thông kinh mạch, tôi luyện ý chí kiên định và giữ tâm hồn an nhiên giữa cuộc sống hiện đại.
             </p>
           </div>

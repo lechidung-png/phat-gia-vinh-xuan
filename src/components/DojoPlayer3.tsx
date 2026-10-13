@@ -357,38 +357,40 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
 
 
           {/* Khẩu Quyết Võ Đạo Chuyên Biệt */}
-          <div className="p-4 rounded-2xl bg-[#F5D06C]/10 border border-[#F5D06C]/30 space-y-1.5 shadow-inner">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
+          <div className="p-4 sm:p-5 rounded-2xl bg-[#F5D06C]/10 border border-[#F5D06C]/35 space-y-2 shadow-inner">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
+              <Sparkles className="w-4 h-4 text-[#F5D06C]" />
               Khẩu Quyết Cốt Tủy • {lesson.title}:
             </span>
-            <p className="text-xs sm:text-sm text-amber-100 font-serif italic leading-relaxed">
+            <p className="text-base sm:text-lg text-amber-100 font-serif italic leading-[1.8]">
               &quot;{getFormKinematics(lesson.id).khauQuyet}&quot;
             </p>
           </div>
 
           {/* Yếu Lĩnh Thân Pháp & Điểm Đặt Lực Chuyên Biệt */}
-          <div className="p-4 rounded-2xl bg-black/30 border border-[#F5D06C]/20 space-y-2">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-amber-200 flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5 text-[#F5D06C]" />
+          <div className="p-4 sm:p-5 rounded-2xl bg-black/35 border border-[#F5D06C]/25 space-y-2.5">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-amber-200 flex items-center gap-1.5">
+              <Zap className="w-4 h-4 text-[#F5D06C]" />
               Yếu Lĩnh Thân Pháp &amp; Vận Lực:
             </span>
-            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.82] max-w-reading">
               {getFormKinematics(lesson.id).yeuLinh}
             </p>
           </div>
 
           {/* 3 Điểm Cốt Tử Cần Khắc Ghi Chuyên Biệt */}
-          <div className="space-y-2 p-4 rounded-2xl bg-emerald-950/20 border border-emerald-500/25">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="space-y-2.5 p-4 sm:p-5 rounded-2xl bg-emerald-950/25 border border-emerald-500/30">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
               3 Điểm Cốt Tử Khi Luyện Tập:
             </span>
-            <ul className="space-y-1.5 text-xs sm:text-sm text-slate-300">
+            <ul className="space-y-2 text-sm sm:text-base text-slate-200 leading-[1.75]">
               {getFormKinematics(lesson.id).cotTu.map((point, pIdx) => (
-                <li key={pIdx} className="flex items-start gap-2">
-                  <span className="text-emerald-400 font-bold">•</span>
-                  <span>{point}</span>
+                <li key={pIdx} className="flex items-start gap-2.5">
+                  <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">
+                    {pIdx + 1}
+                  </span>
+                  <span className="text-[#F7E7D9]">{point}</span>
                 </li>
               ))}
             </ul>
