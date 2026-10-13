@@ -13,11 +13,8 @@ import {
   HeartPulse,
   Activity,
   UserCheck,
-  ChevronRight,
-  Info,
 } from "lucide-react";
 import {
-  BREATHING_PHASES,
   MEDITATION_POSTURES,
   FOUR_GOLDEN_RULES,
   FOUR_TABOOS_AND_THREE_NEEDS,

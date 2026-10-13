@@ -259,7 +259,7 @@ const CORE_HAND_POSTURES: CoreHandTechnique[] = [
     nameVn: "Nắm Đấm (Nhật Tự Quyền)",
     nameHán: "日字拳",
     pinyin: "Rì Zì Quán",
-    imgUrl: "/assets/images/fundamentals/nam_dam_nhat_tu_quyen.png",
+    imgUrl: "/assets/images/fundamentals/nhat_tu_quyen.png",
     instructor: "Tư Thế Chuẩn Môn Phái",
     source: "Nắm Đấm Dựng Đứng",
     level: "Thẳng Trục Tý Ngọ Tuyến",

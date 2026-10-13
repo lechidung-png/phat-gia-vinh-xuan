@@ -17,10 +17,8 @@ const STORAGE_KEY = "pgvx_font_size";
 
 export const FontSizeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [fontSize, setFontSizeState] = useState<FontSizeLevel>("normal");
-  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
     try {
       const saved = localStorage.getItem(STORAGE_KEY) as FontSizeLevel | null;
       if (saved && (saved === "normal" || saved === "large" || saved === "extra")) {

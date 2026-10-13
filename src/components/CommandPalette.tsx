@@ -10,7 +10,6 @@ import { MonographSection } from "@/data/monographs";
 interface CommandPaletteProps {
   isOpen: boolean;
   onClose: () => void;
-  techniques: Technique[];
   onSelectTechnique: (tech: Technique) => void;
   onSelectMonograph?: (mono: MonographSection) => void;
 }

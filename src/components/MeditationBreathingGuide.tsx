@@ -8,17 +8,14 @@ import {
   Volume2,
   VolumeX,
   Sparkles,
-  Info,
   Clock,
   CheckCircle2,
   Sliders,
   Maximize2,
   Minimize2,
   Wind,
-  Flame,
   Moon,
   Sun,
-  Shield,
 } from "lucide-react";
 import {
   BREATHING_PHASES,
@@ -33,9 +30,7 @@ interface MeditationBreathingGuideProps {
   onOpenTheoryTab?: () => void;
 }
 
-export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> = ({
-  onOpenTheoryTab,
-}) => {
+export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> = () => {
   // Trạng thái vận hành
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [selectedPresetId, setSelectedPresetId] = useState<string>("standard");
@@ -51,7 +46,7 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
 
   // Âm thanh thiền
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
-  const [metronomeTick, setMetronomeTick] = useState<boolean>(false); // Gõ mõ từng giây
+  const [metronomeTick] = useState<boolean>(false); // Gõ mõ từng giây
   const [isFullscreenMode, setIsFullscreenMode] = useState<boolean>(false);
 
   // Tham chiếu timer
@@ -175,12 +170,6 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
     playPhaseChime,
     handleFinishSession,
   ]);
-
-  // Tính phần trăm tiến trình của thì hiện tại (cho vòng tròn và thanh tiến trình)
-  const currentPhaseProgress = Math.max(
-    0,
-    Math.min(100, ((secondsPerPhase - phaseSecondsLeft + 1) / secondsPerPhase) * 100)
-  );
 
   // Tính tỷ lệ co giãn động của vòng tròn thở
   let circleScale = 0.8;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface LandingSplashProps {
@@ -87,14 +88,14 @@ export const LandingSplash: React.FC<LandingSplashProps> = ({ onEnter }) => {
         <nav aria-label="Mục lục phân hệ di sản võ học" className="sr-only">
           <h2>Danh mục tra cứu võ học Phật Gia Vịnh Xuân</h2>
           <ul>
-            <li><a href="/?tab=forms">18 Bài Quyền Pháp &amp; 108 Chiêu Thức Liên Hoàn</a></li>
-            <li><a href="/?tab=meditation">Thiền &amp; Khí Công Dưỡng Sinh Thở 4 Thì</a></li>
-            <li><a href="/?tab=dummy">Mộc Nhân Thung Trực Quan 3D &amp; 108 Thế</a></li>
-            <li><a href="/?tab=fundamentals">Thủ Pháp &amp; Cước Pháp Căn Bản</a></li>
-            <li><a href="/?tab=lineage">Lịch Sử Truyền Thừa Sư Tổ Nguyễn Tế Công</a></li>
-            <li><a href="/?tab=scenarios">200 Tình Huống Tự Vệ Đối Kháng</a></li>
-            <li><a href="/?tab=centerline">Trục Tý Ngọ Tuyến &amp; Tam Giác Sinh Lực</a></li>
-            <li><a href="/?tab=library">Tàng Thư Võ Lý &amp; Khảo Cứu</a></li>
+            <li><Link href="/?tab=forms">18 Bài Quyền Pháp &amp; 108 Chiêu Thức Liên Hoàn</Link></li>
+            <li><Link href="/?tab=meditation">Thiền &amp; Khí Công Dưỡng Sinh Thở 4 Thì</Link></li>
+            <li><Link href="/?tab=dummy">Mộc Nhân Thung Trực Quan 3D &amp; 108 Thế</Link></li>
+            <li><Link href="/?tab=fundamentals">Thủ Pháp &amp; Cước Pháp Căn Bản</Link></li>
+            <li><Link href="/?tab=lineage">Lịch Sử Truyền Thừa Sư Tổ Nguyễn Tế Công</Link></li>
+            <li><Link href="/?tab=scenarios">200 Tình Huống Tự Vệ Đối Kháng</Link></li>
+            <li><Link href="/?tab=centerline">Trục Tý Ngọ Tuyến &amp; Tam Giác Sinh Lực</Link></li>
+            <li><Link href="/?tab=library">Tàng Thư Võ Lý &amp; Khảo Cứu</Link></li>
           </ul>
         </nav>
       </div>

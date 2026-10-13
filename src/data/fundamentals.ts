@@ -172,7 +172,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     nameHán: "肘法",
     pinyin: "Zhǒu Fǎ",
     isSanShouCore: false,
-    imgUrl: "/assets/images/fundamentals/don_cui_cho.png",
+    imgUrl: "/assets/images/fundamentals/cui_cho.png",
     level: "Đa Dụng",
     shortDesc: "Đòn cận chiến hiệu quả. Dùng đầu khuỷu tay đánh vào các vị trí sơ hở trong cự ly áp sát.",
     techniqueDetail: "Khuỷu tay là đòn thế có độ cứng vững cao trên cơ thể. Uy lực của đòn cùi chỏ lớn nhờ truyền trực tiếp toàn bộ khối lượng thân người qua xoay hông mà không qua khớp giảm chấn cổ tay. Khớp vai và khuỷu tay cần được rèn luyện linh hoạt.",

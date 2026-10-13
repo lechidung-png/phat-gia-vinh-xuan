@@ -23,7 +23,6 @@ import {
   Globe,
   HeartPulse,
   GraduationCap,
-  Target,
   Scale,
 } from "lucide-react";
 import {
@@ -39,8 +38,6 @@ import {
   LINEAGE_SCHOLARLY_INSIGHTS,
   getFormIntro,
   FormIntroduction,
-  Classical6Pillar,
-  LineageInsight,
 } from "@/data/formsIntro";
 import { DojoPlayer3 } from "@/components/DojoPlayer3";
 import { MartialEmblem } from "@/components/MartialEmblem";
@@ -98,17 +95,6 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
 
   // Trạng thái mở rộng xem toàn bộ chuyên khảo học thuật
   const [showAllInsights, setShowAllInsights] = useState(false);
-
-  // Trụ cột tương ứng trong 6 trụ cột kinh điển thế giới (nếu thuộc 6 trụ cột)
-  const matchingPillar = useMemo(() => {
-    if (currentLesson.id === "bai-07") return CLASSICAL_6_PILLARS[0]; // Siu Nim Tau
-    if (currentLesson.id === "bai-09") return CLASSICAL_6_PILLARS[1]; // Chum Kiu
-    if (currentLesson.id === "bai-10") return CLASSICAL_6_PILLARS[2]; // Biu Jee
-    if (currentLesson.id === "bai-17" || currentLesson.id === "bai-18") return CLASSICAL_6_PILLARS[3]; // Muk Yan Jong
-    if (currentLesson.id === "con") return CLASSICAL_6_PILLARS[4]; // Luk Dim Boon Gwun
-    if (currentLesson.id === "bai-31") return CLASSICAL_6_PILLARS[5]; // Baat Jaam Do
-    return null;
-  }, [currentLesson.id]);
 
   // Chuyên khảo phù hợp nhất với bài hiện tại
   const relevantInsight = useMemo(() => {

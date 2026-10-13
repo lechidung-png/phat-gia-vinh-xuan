@@ -13,7 +13,7 @@ import { LineageTree } from "@/components/LineageTree";
 import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
-import { TECHNIQUES, Technique } from "@/data/techniques";
+import { Technique } from "@/data/techniques";
 import { resolveLessonId } from "@/lib/lessonResolver";
 import { trackTabChange, trackFormView } from "@/lib/analytics";
 
@@ -253,7 +253,6 @@ export default function Home() {
         {/* Tab 3: Cọc Gỗ Mộc Nhân Số Hóa (Digital Wooden Dummy) */}
         {activeTab === "dummy" && (
           <WoodenDummyCanvas
-            techniques={TECHNIQUES}
             onSelectTechnique={handleSelectTechnique}
           />
         )}
@@ -279,7 +278,6 @@ export default function Home() {
       <CommandPalette
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
-        techniques={TECHNIQUES}
         onSelectTechnique={handleSelectTechnique}
         onSelectMonograph={() => handleNavigateTab("library")}
       />

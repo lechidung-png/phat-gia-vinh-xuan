@@ -1,7 +1,7 @@
 # NỀN TẢNG VÕ ĐƯỜNG SỐ PHẬT GIA VỊNH XUÂN (WEB APPLICATION)
 *(Next.js 16 App Router, React 19, Tailwind CSS v4, Web Audio API, PWA)*
 
-Đây là ứng dụng web tương tác chính của dự án, cung cấp nền tảng số hóa học tập võ thuật trực quan cho môn phái Phật Gia Vịnh Xuân Quyền (dựa trên giáo trình của **PGS.TS Y khoa Nguyễn Mạnh Nhâm** & **ThS.DS Nguyễn Duy Thức**).
+Đây là ứng dụng web tương tác chính của dự án, cung cấp nền tảng số hóa học tập võ thuật trực quan cho môn phái Phật Gia Vịnh Xuân Quyền (dựa trên giáo trình của **PGS.TS Y khoa Nguyễn Mạnh Nhâm** & **ThS.DS Nguyễn Duy Thức**, tích hợp 1.096 hình ảnh và 36 chương mục từ bộ dữ liệu chuẩn `C:\Cowork\Phat gia Vinh Xuan\Vinh xuan Phat gia\Phat-gia-Vinh-Xuan-Quyen-Phuc-che`).
 
 ---
 
@@ -52,17 +52,19 @@ web/src/
 │   ├── WelcomePortal.tsx            # Cổng chào mừng, Lộ trình học tập & Widget Châm Ngôn Hôm Nay
 │   └── WoodenDummyCanvas.tsx        # Cọc Gỗ Mộc Nhân SVG tương tác 5 tầng cọc & thư viện ảnh thao pháp
 │
-├── data/                            # Cơ sở dữ liệu võ học chính xác (10 modules)
-│   ├── canonicalCatalog.ts          # CSDL chuẩn 18 bài quyền và danh mục phân hệ từ 1.096 ảnh phục chế gốc
+├── data/                            # Cơ sở dữ liệu võ học tinh gọn (11 files)
+│   ├── canonicalCatalog.ts          # CSDL chuẩn 18 bài quyền và 18 chuyên đề từ gói Vinh xuan Phat gia
+│   ├── lessonsFullText.json         # Toàn văn 36 chương mục sách gốc
+│   ├── lessonsFullText.ts           # Typed wrapper cho toàn văn chương mục
 │   ├── fundamentals.ts              # Dữ liệu 14 thủ pháp căn bản, 8 thế cước pháp & 4 bài luyện
-│   ├── bai_to_data.json             # Dữ liệu 9 bước nghi thức Bái Tổ Sư Môn do Võ sư Lê Văn Tùng thị phạm
 │   ├── combatScenarios.ts           # CSDL 200 tình huống đối kháng phân theo 5 vùng giải phẫu
 │   ├── martialPhilosophy.ts         # CSDL 7 khẩu quyết, 42 lời khuyên, 7 huyền thoại & đối chiếu 6 bài quyền thế giới
 │   ├── masterProfiles.ts            # Hồ sơ khảo cứu chuyên sâu của 5 vị thầy truyền thừa
 │   ├── meditationQiGong.ts          # CSDL Thiền định, Tam Điều, Thở 4 thì Đan Điền & Phật Gia Khí Công Quyền
 │   ├── formsIntro.ts                # Giới thiệu xuất xứ, yếu lĩnh và khẩu quyết cho từng bài quyền
 │   ├── martialKinematics.ts         # Cơ sinh học vận động, quỹ đạo lực và động học quyền pháp
-│   └── monographs.ts                # Toàn văn các chuyên luận lý thuyết, lịch sử truyền thừa & y võ
+│   ├── monographs.ts                # Toàn văn các chuyên luận lý thuyết, lịch sử truyền thừa & y võ
+│   └── techniques.ts                # Định nghĩa TypeScript interfaces (Technique, TechniqueStep, SparringInfo)
 │
 └── lib/                             # Thư viện logic dữ liệu & thuật toán (5 modules)
     ├── analytics.ts                 # Hàm theo dõi sự kiện võ học (view_martial_form, view_master_profile...)
@@ -101,27 +103,4 @@ Yêu cầu: Cả 3 lệnh kiểm định phải đạt `PASS 100%`, `0 error` v�
 ```powershell
 npm run build
 ```
-Thư mục `web/out/` sẽ được tạo ra với toàn bộ HTML/JS/CSS tĩnh và 1.096 ảnh phục chế HD $2\times$ Retina, sẵn sàng triển khai trên Cloudflare Pages, Vercel hoặc GitHub Pages.
-
----
-
-## 🚀 KHO LƯU TRỮ GIT & TRIỂN KHAI PRODUCTION
-- **Kho lưu trữ Git Remote:**
-  - `origin/main`: [https://github.com/lechidung-png/phat-gia-vinh-xuan.git](https://github.com/lechidung-png/phat-gia-vinh-xuan.git)
-  - `dunglechi/main`: [https://github.com/dunglechi/phat-gia-vinh-xuan.git](https://github.com/dunglechi/phat-gia-vinh-xuan.git)
-- **Hướng dẫn chi tiết:** Xem tại [DEPLOYMENT_GUIDE.md](file:///c:/Cowork/Phat%20gia%20Vinh%20Xuan/web/DEPLOYMENT_GUIDE.md).
-
----
-
-## 🛡️ CHUẨN THIẾT KẾ & CÔNG THÁI HỌC ĐỌC (V-AOF ERGONOMICS)
-- **Glassmorphism:** Sử dụng `bg-martial-card/90 backdrop-blur-md` kết hợp border hổ phách `border-martial-amber/30`.
-- **Reading Ergonomics (`A- / A / A+`):** Phông chữ `Be Vietnam Pro` và `Noto Serif`, cỡ chữ cơ sở $18\text{px}$, giãn dòng `1.8`, màu chữ kem ấm `#F5EBE6` đạt độ tương phản $\ge 8.5:1$ theo WCAG 2.1 AAA chống mỏi mắt.
-- **Responsive Adaptive Wording:** Nút bấm tự động tinh giản từ ngữ trên màn hình di động ($\le 390\text{px}$) bằng cặp class `hidden sm:inline` và `sm:hidden`, không bẻ gãy dòng, không tràn ngang ($0\text{px}$ overflow).
-- **Touch Target:** 100% nút bấm, icon thao tác và nút đóng modal đều bảo đảm kích thước chạm tối thiểu $\ge 44 \times 44\text{ px}$.
-- **Accessible Elements:** Mọi nút icon đơn lẻ bắt buộc phải có thuộc tính `aria-label` mô tả hành động.
-- **Phím tắt & Cử chỉ:**
-  - `Ctrl + K`: Mở hộp tìm kiếm toàn thư.
-  - `Escape`: Đóng Modal, Lightbox.
-  - `Space`: Tự động phát / Tạm dừng chuỗi động tác.
-  - `←` / `→`: Lùi lại / Tiến tới động tác tiếp theo hoặc vị thầy tiếp theo.
-  - Vuốt cảm ứng trái/phải trên màn hình điện thoại để chuyển thế võ kèm phản hồi rung haptic.
+Thư mục `web/out/` sẽ được tạo ra với toàn bộ HTML/JS/CSS tĩnh và 1.096 ảnh (`hinh/`, `hinh-2x/`), sẵn sàng triển khai trên Cloudflare Pages, Vercel hoặc GitHub Pages.
