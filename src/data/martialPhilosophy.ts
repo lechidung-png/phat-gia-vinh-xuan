@@ -499,8 +499,8 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "leung-jan",
     masterName: "Đại Danh Y Lương Tán (Leung Jan)",
-    hanziName: "梁贊 • Phật Sơn Tán Tiên Sinh",
-    branch: "Cội Nguồn Vịnh Xuân Phật Sơn (Vịnh Xuân Quyền Vương)",
+    hanziName: "梁贊 • Leung Jan",
+    branch: "Cội Nguồn Vịnh Xuân Phật Sơn",
     period: "1826 – 1901",
     portraitUrl: "/assets/images/masters/leung_jan.jpg",
     coreDoctrine: "Đoản Đả Cận Chiến & Thốn Kình Nhập Cốt",
@@ -516,7 +516,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "yuen-kay-shan",
     masterName: "Đại Sư Nguyễn Kỳ Sơn (Yuen Kay Shan)",
-    hanziName: "阮奇山 • Nguyễn Lão Ngũ",
+    hanziName: "阮奇山 • Yuen Kay Shan",
     branch: "Vịnh Xuân Phật Sơn & Quảng Châu (Phái Sầm Năng)",
     period: "1889 – 1956",
     portraitUrl: "/assets/images/masters/yuen_kay_shan.jpg",
@@ -533,7 +533,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "nguyen-te-cong",
     masterName: "Sư Tổ Nguyễn Tế Công (Yuen Chai Wan)",
-    hanziName: "阮濟雲 • Sư Tổ Vịnh Xuân Việt Nam",
+    hanziName: "阮濟雲 • Yuen Chai Wan",
     branch: "Vịnh Xuân Việt Nam (Hà Nội & Sài Gòn - Chợ Lớn)",
     period: "1877 – 1959",
     portraitUrl: "/assets/images/historical/nguyen_te_cong.png",
@@ -550,7 +550,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "tran-thuc-tien",
     masterName: "Cố Võ Sư Trần Thúc Tiển",
-    hanziName: "陳叔展 • Cao Đồ Sư Tổ Tế Công",
+    hanziName: "陳叔展 • Trần Thúc Tiển",
     branch: "Phật Gia Vịnh Xuân Hà Nội",
     period: "1911 – 1980",
     portraitUrl: "/assets/images/historical/tran_thuc_tien.png",
@@ -567,7 +567,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "nguyen-manh-nham",
     masterName: "PGS.TS Y Khoa Nguyễn Mạnh Nhâm",
-    hanziName: "阮孟壬 • Tác Giả Giáo Trình 2012",
+    hanziName: "阮孟壬 • Nguyễn Mạnh Nhâm",
     branch: "Phật Gia Vịnh Xuân Việt Nam",
     period: "1932 – nay (Đại thọ 94 tuổi)",
     portraitUrl: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
@@ -584,7 +584,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "ip-man",
     masterName: "Đại Sư Diệp Vấn (Ip Man)",
-    hanziName: "葉問 • Nhất Đại Tông Sư",
+    hanziName: "葉問 • Ip Man",
     branch: "Diệp Vấn Vịnh Xuân (Hồng Kông / Toàn Cầu)",
     period: "1893 – 1972",
     portraitUrl: "/assets/images/masters/ip_man.jpg",
@@ -601,7 +601,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "wong-shun-leung",
     masterName: "Võ Sư Hoàng Thuần Lương (Wong Shun Leung)",
-    hanziName: "黃淳樑 • Vua Tỉ Thí / Talking Hands",
+    hanziName: "黃淳樑 • Wong Shun Leung",
     branch: "Vịnh Xuân Thực Chiến Khoa Học (WSL Ving Tsun)",
     period: "1935 – 1997",
     portraitUrl: "/assets/images/masters/wong_shun_leung.jpg",
@@ -618,7 +618,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "bruce-lee",
     masterName: "Lý Tiểu Long (Bruce Lee)",
-    hanziName: "李小龍 • Triệt Quyền Đạo",
+    hanziName: "李小龍 • Bruce Lee",
     branch: "Triệt Quyền Đạo (Jeet Kune Do / Cội nguồn Vịnh Xuân)",
     period: "1940 – 1973",
     portraitUrl: "/assets/images/masters/bruce_lee.jpg",
@@ -635,7 +635,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "chu-shong-tin",
     masterName: "Đại Sư Chu Thượng Đồng (Chu Shong Tin)",
-    hanziName: "徐尚田 • Vua Niệm Đầu / King of Siu Nim Tau",
+    hanziName: "徐尚田 • Chu Shong Tin",
     branch: "Chu Shong Tin Ving Tsun (Ý Niệm Lực & Cấu Trúc Khớp)",
     period: "1933 – 2014",
     portraitUrl: "/assets/images/masters/chu_shong_tin.jpg",
@@ -652,7 +652,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "leung-ting",
     masterName: "Đại Sư Lương Đỉnh (Leung Ting)",
-    hanziName: "梁挺 • IWTA WingTsun",
+    hanziName: "梁挺 • Leung Ting",
     branch: "WingTsun Quốc Tế (IWTA)",
     period: "1947 – nay",
     portraitUrl: "/assets/images/masters/leung_ting.jpg",
@@ -670,7 +670,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "moy-yat",
     masterName: "Đại Sư Mai Dật (Moy Yat)",
-    hanziName: "梅逸 • Moy Yat Ving Tsun",
+    hanziName: "梅逸 • Moy Yat",
     branch: "Moy Yat Ving Tsun (New York / Hoa Kỳ)",
     period: "1938 – 2001",
     coreDoctrine: "Ving Tsun Kuen Kuit — Khẩu Quyết Khắc Đá & Lối Sống Chánh Niệm",
@@ -686,7 +686,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
     id: "nam-thieu-lam-zen",
     masterName: "Thiền Tông Nam Thiếu Lâm & Ngũ Mai Sư Thái",
-    hanziName: "五枚師太 • Nam Thiếu Lâm",
+    hanziName: "五枚師太 • Ng Mui",
     branch: "Cội Nguồn Tâm Pháp Phật Gia Vịnh Xuân",
     period: "Khởi nguồn thế kỷ 17 – 18",
     coreDoctrine: "Tâm Vô Ngã (Mushin) & Dĩ Nhu Khắc Cương",

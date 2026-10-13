@@ -16,7 +16,6 @@ export interface MasterProfile {
   generation: number;
   generationLabel: string;
   name: string;
-  courtesyName?: string; // Tên chữ / Biệt danh
   hanzi?: string;
   cantoneseName?: string;
   period: string;
@@ -54,7 +53,6 @@ export const MASTER_PROFILES: MasterProfile[] = [
     generation: 1,
     generationLabel: "Sư Tổ Khai Sơn (Thế Hệ Thứ Nhất)",
     name: "Nguyễn Tế Công",
-    courtesyName: "Nguyễn Lão Tứ, Đậu Bì Tế",
     hanzi: "阮濟雲",
     cantoneseName: "Yuen Chai Wan (Nguyễn Tế Vân)",
     period: "1877 – 1959",
@@ -143,7 +141,6 @@ export const MASTER_PROFILES: MasterProfile[] = [
     generation: 2,
     generationLabel: "Đại Đệ Tử Chân Truyền (Thế Hệ Thứ Hai)",
     name: "Trần Thúc Tiển",
-    courtesyName: "Thầy Tiển 38 Gia Ngư",
     hanzi: "陳叔展",
     period: "1911 – 1980",
     birthYear: 1911,
@@ -215,7 +212,6 @@ export const MASTER_PROFILES: MasterProfile[] = [
     generation: 3,
     generationLabel: "Bậc Thầy Y Võ (Thế Hệ Thứ Ba)",
     name: "Nguyễn Mạnh Nhâm",
-    courtesyName: "Bác Sĩ Nhâm Vịnh Xuân",
     hanzi: "阮孟壬",
     period: "1932 – nay (Đại thọ 94 tuổi)",
     birthYear: 1932,

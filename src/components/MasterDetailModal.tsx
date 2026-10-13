@@ -175,11 +175,6 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white gold-gradient">
                   {master.name}
-                  {master.courtesyName && (
-                    <span className="text-base sm:text-lg font-serif font-normal text-amber-200/80 block sm:inline sm:ml-2">
-                      ({master.courtesyName})
-                    </span>
-                  )}
                 </h3>
               </div>
 
