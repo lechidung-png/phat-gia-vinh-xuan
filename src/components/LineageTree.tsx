@@ -87,7 +87,7 @@ const PHILOSOPHY_QUOTES: PhilosophyQuote[] = [
     hanNom: "禪武一如",
     title: "Luyện Quyền Là Luyện Tâm — Tĩnh Lặng Giữa Muôn Trùng Biến Hóa",
     quote:
-      "Trong cái động tột cùng có cái tĩnh sâu xa; trong cái mềm mại như nước ẩn chứa kình lực xuyên thấu như sấm sét. Đấm một cú Nhật Tự Quyền hay đứng một thế Tấn Kiềm Dương cũng chính là một thời khóa thiền định quán chiếu thân tâm.",
+      "Trong cái động có cái tĩnh sâu xa; trong cái mềm mại như nước ẩn chứa kình lực xuyên thấu thâm sâu. Đấm một cú Nhật Tự Quyền hay đứng một thế Tấn Kiềm Dương cũng chính là một thời khóa rèn luyện quán chiếu thân tâm.",
     explanation:
       "Khởi nguồn từ Thiền tông Nam Thiếu Lâm, Phật Gia Vịnh Xuân coi võ thuật là phương tiện tu dưỡng đạo đức và sức khỏe. Thả lỏng không phải là yếu đuối, mà là trạng thái cơ bắp không bị co thắt cục bộ, giúp kình lực toàn thân phát xuất từ gốc chân, xoay qua hông và bộc phát ở đầu ngón tay.",
     source: "Phật Gia Vịnh Xuân Quyền • Tông chỉ môn phái",

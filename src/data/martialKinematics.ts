@@ -196,7 +196,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
   "bai-22-m-1": {
     kieu: "Ngũ Linh Võ Học • Hổ Quyền",
-    khauQuyet: "Mãnh hổ phục cừu • Kình phát sấm sét • Cương mãnh trầm hùng, bẻ gãy khớp xương.",
+    khauQuyet: "Mãnh hổ phục cừu • Kình phát quyết đoán • Cương mãnh trầm hùng, khóa giải khớp xương.",
     yeuLinh: "Các ngón tay co quắp cứng như móng vuốt cọp. Phát lực bộc phát (thốn kình) từ hông và gót chân, đè bẹp phòng ngự đối phương bằng sức mạnh chấn động.",
     cotTu: [
       "Hạ tấn vững như bàn thạch, gầm hơi thở phát âm tạo uy thế.",

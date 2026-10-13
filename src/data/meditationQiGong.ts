@@ -307,16 +307,16 @@ export const MEDICAL_AND_MARTIAL_BENEFITS = [
         content: "'Đả quyền bất luyện công, đáo lão nhất trường không - Lực bất đả quyền, quyền bất đả công'. Cơ bắp có giới hạn theo tuổi tác, nhưng nội khí càng luyện càng thâm hậu. Khi xuất đòn, ý dẫn khí, khí phát kình lực thấu triệt.",
       },
       {
-        title: "Phát Kình Thốn Kình Uy Mãnh",
-        content: "Nội công giúp võ sinh phát lực ở cự ly cực ngắn (thốn kình / một tấc) mà kình lực chấn động sâu vào kinh lạc đối thủ, không cần lấy đà cơ bắp.",
+        title: "Phát Lực Thốn Kình Xuyên Thấu",
+        content: "Nội công giúp võ sinh phát lực ở cự ly cực ngắn (thốn kình / một tấc) mà kình lực dẫn truyền sâu, không cần lấy đà cơ bắp.",
       },
       {
         title: "Hình Thành Vòng Khí Hộ Thân (Thiết Bố Sam)",
-        content: "Khí kích động xuyên suốt toàn thân như một tấm lưới vô hình bao bọc quanh người, tăng khả năng chịu lực va đập tại các điểm xung yếu mà không tổn thương nội tạng.",
+        content: "Khí vận hành điều hòa toàn thân, tăng khả năng chịu lực va đập tại các điểm xung yếu mà không tổn thương nội tạng.",
       },
       {
-        title: "Thính Kình & Linh Giác Đỉnh Cao",
-        content: "Tâm có định thì thần mới sáng, giúp hệ thần kinh cảm nhận xúc giác cực kỳ nhạy bén (thính kình), đoán trước hướng lực của đối phương ngay khi vừa tiếp xúc tay.",
+        title: "Thính Kình & Linh Giác Nhạy Bén",
+        content: "Tâm có định thì thần mới sáng, giúp hệ thần kinh cảm nhận xúc giác nhạy bén (thính kình), nhận biết hướng lực của đối phương ngay khi vừa tiếp xúc tay.",
       },
     ],
   },

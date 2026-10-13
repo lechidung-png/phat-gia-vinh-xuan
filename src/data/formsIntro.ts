@@ -123,7 +123,7 @@ export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
     coreMnemonic: "Song đao mở rộng nguyên lý sang binh khí ngắn",
     meaning: "Tám phép chém đao — Cặp song đao cận chiến ngắn",
     coreFunction: "Rèn luyện binh khí ngắn đôi: Phối hợp độc lập hai tay, bộ pháp áp sát nhập nội, góc vận động biến ảo và kiểm soát cự ly chiến thuật khi cầm binh khí.",
-    pedagogicalRole: "Củng cố các nguyên lý tiết kiệm động tác (motion economy) và chuyển hướng lực đã học trong quyền tay không; là bài học tốt nghiệp đỉnh cao của môn phái.",
+    pedagogicalRole: "Củng cố các nguyên lý tiết kiệm động tác (motion economy) và chuyển hướng lực đã học trong quyền tay không; là bài học hoàn thiện giai đoạn sau của môn phái.",
     scholarlyInsight: "Song đao như đôi cánh sắt nối dài cẳng tay; lưỡi đao áp sát cẳng tay bảo vệ trung lộ và các đường chém triệt hạ cổ tay, khuỷu tay và chân đối thủ.",
     pgvxIntegration: "Lưỡi đao ép sát xương cẳng tay dùng sống đao đỡ đòn vũ khí dài và xoay cổ tay chém xả cận chiến, kết hợp xước mã đạp bộ nhập nội triệt tiêu ưu thế binh khí dài."
   }
@@ -294,7 +294,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       universalPrinciples: [
         "Khôi phục trung tuyến khi bị phá vỡ cấu trúc bảo vệ ban đầu.",
         "Phát lực đầu ngón tay (Finger Thrusts) mở rộng tầm đánh tối đa.",
-        "Chỏ pháp cận chiến tàn khốc giải cứu khi bị ôm ghì khóa khớp hoặc kẹt tay."
+        "Chỏ pháp cận chiến hiệu quả giải cứu khi bị ôm ghì khóa khớp hoặc kẹt tay."
       ],
       lineageVariantNotes: "Ý nghĩa của Tiêu Chỉ rộng hơn riêng động tác ngón tay; đó là tư duy phục hồi vị thế chiến thuật khi rơi vào góc chết."
     },
@@ -448,7 +448,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     introQuote: "108 Tiến lùi đối luyện là bài kiểm nghiệm thực tế cao nhất của hệ thống 108 thế, rèn luyện bản lĩnh cận chiến vững vàng.",
     worldLineageContext: {
       globalName: "108 Mobile Partner Dynamic Combat (進退對練)",
-      globalStanding: "Bài tập đối kháng ứng dụng đỉnh cao, hoàn thiện khả năng chiến đấu tay không tự do ở cự ly cận chiến.",
+      globalStanding: "Bài tập đối kháng ứng dụng nâng cao, giúp người tập làm quen với cự ly cận chiến.",
       historicalRoots: "Kế thừa tinh hoa tỉ võ cận chiến của các võ phái Nam Thiếu Lâm và Vịnh Xuân Phật Sơn cổ truyền.",
       universalPrinciples: [
         "Kiểm soát cự ly chiến đấu (Distance Management).",
@@ -463,8 +463,8 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     globalBridge: {
       master: "Tông Sư Lương Tán (Leung Jan - Phật Sơn Tán Tiên Sinh)",
-      doctrine: "Đoản Đả Vô Địch & Chiếm Lĩnh Trung Môn",
-      correlation: "Lương Tán nổi danh bất bại nhờ khả năng di chuyển áp sát và tung đòn đoản đả liên hoàn, là hình mẫu kinh điển của bài 108 tiến lùi đối luyện."
+      doctrine: "Đoản Đả Cận Chiến & Chiếm Lĩnh Trung Môn",
+      correlation: "Lương Tán nổi danh nhờ khả năng di chuyển áp sát và tung đòn đoản đả liên hoàn thực tiễn, là hình mẫu tiêu biểu của bài 108 tiến lùi đối luyện."
     }
   },
 
@@ -765,8 +765,8 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     introQuote: "Bài Ngũ hình tổng hợp là sự kết tinh toàn diện của 5 linh vật võ thuật, thể hiện nét đặc sắc nghệ thuật quyền pháp Phật Gia Vịnh Xuân.",
     worldLineageContext: {
       globalName: "Shaolin Five Animals Synthesis Form (五形綜合拳)",
-      globalStanding: "Đỉnh cao dung hợp toàn diện của quyền thuật Thiếu Lâm mô phỏng tự nhiên, kết tinh trí tuệ của nền võ học phương Đông.",
-      historicalRoots: "Được Sư Tổ Nguyễn Tế Công và Cụ Trần Thúc Tiển gìn giữ như kho tàng bí truyền của Phật Gia Vịnh Xuân tại Hà Nội.",
+      globalStanding: "Sự dung hợp hài hòa của quyền thuật mô phỏng tự nhiên, kết tinh trí tuệ của nền võ học phương Đông.",
+      historicalRoots: "Được Sư Tổ Nguyễn Tế Công và Cụ Trần Thúc Tiển gìn giữ như di sản truyền thống quý báu của Phật Gia Vịnh Xuân tại Hà Nội.",
       universalPrinciples: [
         "Vô hình vô tướng — Tùy cơ ứng biến không rập khuôn.",
         "Dung hợp hoàn hảo giữa Nhu (Xà, Hạc) và Cương (Hổ, Báo) dưới sự chỉ huy của Tâm (Long).",
@@ -776,12 +776,12 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     pgvxUniqueness: {
       distinctiveFeatures: "Chuyển hóa mượt mà giữa các hình thái linh vật trong cùng một bài quyền: Vừa mở đầu mềm mại như Rắn luồn cỏ, lập tức biến thành Móng vuốt Cọp bẻ khớp và tung Cánh hạc bay lượn.",
       biomechanicalMedicalValue: "Bài tập dưỡng sinh toàn thân toàn bích nhất: Vận hành trọn vẹn cả 5 tạng (Tâm - Can - Tỳ - Phế - Thận) và thông suốt 12 đường kinh lạc chính của cơ thể.",
-      combatDoctrine: "Dĩ bất biến ứng vạn biến — Không để đối phương đoán biết được ý đồ, đòn thế biến hóa khôn lường như nước chảy mây trôi."
+      combatDoctrine: "Dĩ bất biến ứng vạn biến — Không để lộ ý đồ, đòn thế chuyển đổi linh hoạt uyển chuyển như nước chảy mây trôi."
     },
     globalBridge: {
       master: "Sư Tổ Nguyễn Tế Công (Yuen Chai Wan)",
       doctrine: "Ngũ Thú Quy Nhất & Y Võ Song Tu",
-      correlation: "Sư Tổ Nguyễn Tế Công truyền dạy Ngũ Hình Quyền Tổng Hợp như một di sản đỉnh cao, minh chứng cho sự thâm sâu vượt bậc của dòng Vịnh Xuân Phật môn tại Việt Nam."
+      correlation: "Sư Tổ Nguyễn Tế Công truyền dạy Ngũ Hình Quyền Tổng Hợp như một di sản quý báu, minh chứng cho nét đặc sắc của dòng Vịnh Xuân tại Việt Nam."
     }
   },
 

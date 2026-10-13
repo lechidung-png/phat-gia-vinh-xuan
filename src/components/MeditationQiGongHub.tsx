@@ -188,10 +188,10 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
 
               <div className="p-4 rounded-2xl bg-black/40 border border-emerald-500/20 space-y-2">
                 <span className="font-bold text-emerald-300 block">
-                  2. Sức chịu đựng phi thường trước tay đấm vô địch:
+                  2. Khả năng chịu lực đặc biệt trước võ sĩ quyền Anh:
                 </span>
                 <p>
-                  Năm 1955-1956, khi cụ Tiển gần 50 tuổi (nặng chỉ hơn 40kg), cụ đứng một chân cho võ sĩ vô địch quyền Anh Phạm Xuân Nhàn (23 tuổi, 57kg) lấy đà lao vào đẩy mà thân thể vẫn đứng sừng sững không chuyển dịch, dùng nội khí hóa giải hoàn toàn lực đấm mỏ ác.
+                  Năm 1955-1956, khi cụ Tiển gần 50 tuổi (nặng chỉ hơn 40kg), cụ đứng một chân cho võ sĩ quyền Anh hạng lông Phạm Xuân Nhàn (23 tuổi, 57kg) lấy đà lao vào đẩy mà thân thể vẫn giữ thăng bằng vững vàng, dùng nội khí hóa giải hoàn toàn lực đấm mỏ ác.
                 </p>
               </div>
             </div>

@@ -197,7 +197,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="sm:hidden">Châm Ngôn</span>
               </div>
               <div className={`text-[10px] truncate ${activeTab === "quotes" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
-                Kho 60+ Quote Bất Hủ
+                Kho 60+ Lời Răn &amp; Châm Ngôn
               </div>
             </div>
           </button>

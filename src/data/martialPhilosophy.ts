@@ -503,10 +503,10 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     branch: "Cội Nguồn Vịnh Xuân Phật Sơn (Vịnh Xuân Quyền Vương)",
     period: "1826 – 1901",
     portraitUrl: "/assets/images/masters/leung_jan.jpg",
-    coreDoctrine: "Đoản Đả Vô Địch & Thốn Kình Nhập Cốt",
+    coreDoctrine: "Đoản Đả Cận Chiến & Thốn Kình Nhập Cốt",
     famousQuote: "Tập Vịnh Xuân giả, tiên tri trung tuyến, thứ minh thính kình, chung quy ư vô tướng. Đoản quyền đoản cước, thốn kình nhập cốt. Bất cầu hoa lệ, duy cầu chân thực.",
     pgvxCorrelation: "Cội nguồn tổ sư truyền thừa xuống Nguyễn Tế Công và Trần Hoa Thuận. Tương thích 100% với tôn chỉ 'Đơn giản, đi đường ngắn nhất, không hoành tráng biểu diễn' của GS.TS Nguyễn Mạnh Nhâm.",
-    historicalContext: "Vị đại danh y lỗi lạc mở hiệu thuốc Vĩnh An Đường tại Phật Sơn, người đầu tiên hệ thống hóa đưa Vịnh Xuân thành môn phái lừng danh bất bại khắp Nam Trung Hoa.",
+    historicalContext: "Vị danh y mở hiệu thuốc Vĩnh An Đường tại Phật Sơn, người có công hệ thống hóa và truyền dạy Vịnh Xuân sâu rộng khắp Nam Trung Hoa.",
     sharedPrinciples: [
       "Thủ trung dụng trung (Giữ trung lộ tuyệt đối)",
       "Đoản quyền đoản đả cận chiến",
@@ -557,7 +557,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     coreDoctrine: "Cước Căn Bàn Thạch, Tấn Đàn Hồi & Thốn Kình Thấu Cốt",
     famousQuote: "Chân vững như cây có gốc cắm sâu vào lòng đất. Chân không vững thì đòn tay chỉ là sức quơ quào hời hợt bên ngoài. Đấm không cần gồng cứng cơ bắp, hãy để kình lực từ gót chân truyền qua thắt lưng mà thấu vào xương tủy đối phương.",
     pgvxCorrelation: "Thầy truyền dạy trực tiếp toàn bộ tinh hoa quyền pháp, 108 thế mộc nhân và khí công dưỡng sinh cho GS.TS Nguyễn Mạnh Nhâm.",
-    historicalContext: "Đại đệ tử kiệt xuất bậc nhất của Sư Tổ Nguyễn Tế Công tại Hà Nội, nội lực thâm hậu phi phàm, nổi tiếng với đôi tay hộ thủ vững như đồng thành thiết lũy.",
+    historicalContext: "Học trò xuất sắc của Sư Tổ Nguyễn Tế Công tại Hà Nội, nội lực thâm hậu, nổi tiếng với đôi tay hộ thủ vững chãi, nhu hòa.",
     sharedPrinciples: [
       "Cước căn vững vàng, tấn như lò xo nén",
       "Kình phát từ gót chân, eo hông điều khiển",
@@ -591,7 +591,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     coreDoctrine: "Vịnh Xuân Khoa Học & Cận Chiến Thực Dụng",
     famousQuote: "Mắt là kẻ lừa dối; chỉ có cẳng tay xúc giác mới không bao giờ nói dối. Vịnh Xuân không phải là một môn nghệ thuật để nhảy múa; nó là công cụ khoa học chính xác để kết thúc cuộc chiến nhanh nhất.",
     pgvxCorrelation: "Khớp sâu sắc với chuyên đề Linh Giác: Cơ chế phản xạ tủy sống xúc giác nhanh hơn thị giác vỏ não, loại bỏ đáng kể độ trễ phản xạ.",
-    historicalContext: "Người nổi danh với hàng trăm trận tỉ thí thực chiến bất bại tại Hồng Kông, là người trực tiếp hướng dẫn luyện tập thực chiến cho Lý Tiểu Long thuở niên thiếu.",
+    historicalContext: "Người có kinh nghiệm giao lưu tỉ thí thực tế phong phú tại Hồng Kông, là người trực tiếp hướng dẫn luyện tập thực chiến cho Lý Tiểu Long thuở niên thiếu.",
     sharedPrinciples: [
       "Đánh góc chéo 45° triệt tiêu vũ khí của đối thủ",
       "Vịnh Xuân là công cụ khoa học chính xác, không phải điệu múa",
@@ -606,7 +606,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     period: "1940 – 1973",
     portraitUrl: "/assets/images/masters/bruce_lee.jpg",
     coreDoctrine: "Be Water, My Friend — Quyền Như Lưu Thủy & Triệt Đòn Tại Gốc",
-    famousQuote: "Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm. Nước có thể chảy trôi êm ả, nhưng cũng có thể phá nát đá tảng. Đơn giản là đỉnh cao của sự tinh tế.",
+    famousQuote: "Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm. Nước có thể chảy trôi êm ả, nhưng cũng có thể phá nát đá tảng. Đơn giản là nét tinh tế cốt lõi.",
     pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
     historicalContext: "Học trò xuất sắc của Diệp Vấn và Hoàng Thuần Lương, người đã đem triết lý võ đạo phương Đông chấn hưng toàn cầu.",
     sharedPrinciples: [
@@ -623,7 +623,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     period: "1933 – 2014",
     portraitUrl: "/assets/images/masters/chu_shong_tin.jpg",
     coreDoctrine: "Ý Niệm Lực (Nim Lik) & Giải Phóng Cơ Bắp",
-    famousQuote: "Ý niệm lực không sinh ra từ cơ bắp gồng cứng, mà phát xuất từ sự thả lỏng tuyệt đối và cấu trúc xương khớp chuẩn xác. Tiểu Niệm Đầu chứa đựng toàn bộ bí mật của vũ trụ Vịnh Xuân.",
+    famousQuote: "Ý niệm lực không sinh ra từ cơ bắp gồng cứng, mà phát xuất từ sự thả lỏng tuyệt đối và cấu trúc xương khớp chuẩn xác. Tiểu Niệm Đầu chứa đựng trọn vẹn các nguyên lý cốt lõi của Vịnh Xuân.",
     pgvxCorrelation: "Tương thích 100% với lời răn dạy số 19 và số 30 của GS.TS Nguyễn Mạnh Nhâm: 'Thả lỏng cơ bắp, phối hợp với thở, chỉ khi chạm vào đối thủ mới xuất lực thốn kình'.",
     historicalContext: "Đệ tử thứ ba của Diệp Vấn tại Hồng Kông, người dành hơn 60 năm nghiên cứu chiều sâu cơ sinh học và kình lực nội tại của bài Tiểu Niệm Đầu.",
     sharedPrinciples: [
@@ -685,7 +685,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
 ];
 
 // ==============================================================================
-// 4. KHO 60+ CÂU CHÂM NGÔN / QUOTE BẤT HỦ
+// 4. KHO 60+ CÂU CHÂM NGÔN & LỜI RĂN DẠY VÕ ĐẠO
 // ==============================================================================
 export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   {
@@ -847,7 +847,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
   },
   {
     id: "q20",
-    quote: "Trong cái động tột cùng có cái tĩnh sâu xa; trong cái mềm mại như nước ẩn chứa kình lực xuyên thấu như sấm sét.",
+    quote: "Trong cái động có cái tĩnh sâu xa; trong cái mềm mại như nước ẩn chứa kình lực xuyên thấu thâm sâu.",
     author: "Phật Gia Vịnh Xuân",
     roleOrSource: "Tông chỉ môn phái • Thiền võ nhất như",
     category: "philosophy",

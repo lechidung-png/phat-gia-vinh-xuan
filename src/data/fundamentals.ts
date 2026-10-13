@@ -174,15 +174,15 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     isSanShouCore: false,
     imgUrl: "/assets/images/fundamentals/don_cui_cho.png",
     level: "Đa Dụng",
-    shortDesc: "Đòn cận chiến cực kỳ lợi hại. Dùng đầu khuỷu tay đánh vào những điểm quan trọng trong cự ly áp sát.",
-    techniqueDetail: "Khuỷu tay là vũ khí cứng rắn bậc nhất trên cơ thể. Uy lực của đòn cùi chỏ cực lớn và tàn khốc vì truyền trực tiếp toàn bộ khối lượng thân người xoay hông mà không qua khớp giảm chấn cổ tay. Khớp vai và khuỷu tay phải cực kỳ linh hoạt.",
+    shortDesc: "Đòn cận chiến hiệu quả. Dùng đầu khuỷu tay đánh vào các vị trí sơ hở trong cự ly áp sát.",
+    techniqueDetail: "Khuỷu tay là đòn thế có độ cứng vững cao trên cơ thể. Uy lực của đòn cùi chỏ lớn nhờ truyền trực tiếp toàn bộ khối lượng thân người qua xoay hông mà không qua khớp giảm chấn cổ tay. Khớp vai và khuỷu tay cần được rèn luyện linh hoạt.",
     keyPoints: [
       "Áp sát cự ly gần (Zero Distance)",
       "Phát lực đồng thời từ xoay eo và đạp gót chân",
       "Tay kia che chắn kín đáo bảo vệ mặt và sườn"
     ],
     combatApplication: "Đánh cùi chỏ thốc lên cằm, giật cùi chỏ ngang thái dương hoặc thúc cùi chỏ sau khi đối phương ôm vật.",
-    rhyme: "Trửu pháp hiểm hóc cự ly gần • Khớp cứng như sắt bẻ vỡ địch."
+    rhyme: "Trửu pháp cận thân giữ thế công • Khớp xoay linh hoạt chế ngự đòn."
   },
   {
     id: "khuyen-thu",
@@ -200,7 +200,7 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
       "Tốc độ xoay nhanh, êm ái như vòng bi bôi dầu"
     ],
     combatApplication: "Hóa giải đòn nắm cổ tay (cầm nã), luồn tay từ mặt trong ra mặt ngoài tay địch để tung chưởng hoặc quyền.",
-    rhyme: "Khuyên thủ cuộn tròn thoát hiểm nguy • Cổ tay linh hoạt biến khôn lường."
+    rhyme: "Khuyên thủ cuộn tròn thoát hiểm nguy • Cổ tay linh hoạt chuyển nhu mì."
   },
   {
     id: "hoanh-thu",
@@ -431,7 +431,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
       "Kết hợp đòn xỉa ngón tay (Chỉ pháp) của Xà quyền"
     ],
     combatApplication: "Luồn lách vào mạn sườn hoặc sau lưng đối thủ trong góc hẹp, đánh lừa tầm nhìn và phản xạ của đối phương.",
-    rhyme: "Mã chéo xà hành thân biến ảo • Luồn lách khôn lường nhập tử môn."
+    rhyme: "Mã chéo xà hành thân chuyển bước • Uyển chuyển luồn lách nhập trung môn."
   },
   {
     id: "bo-phap-ty-ngo",
@@ -464,7 +464,7 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
       "Điểm cố định xoay ở giữa bàn chân, không nhấc gót nhấc mũi",
       "Lực xuất phát từ lòng đất qua chân sau (Lực do địa khởi)"
     ],
-    combatApplication: "Hóa giải các cú đấm thẳng sấm sét của địch mà không cần lùi bước, biến góc đánh của địch thành góc hở của ta.",
+    combatApplication: "Hóa giải các cú đấm thẳng mạnh mẽ của đối phương mà không cần lùi bước, biến góc đánh của địch thành sơ hở để phản công.",
     rhyme: "Hoành thoái xoay thân tiêu kình lực • Biên thân nhập nội chế địch quân."
   }
 ];

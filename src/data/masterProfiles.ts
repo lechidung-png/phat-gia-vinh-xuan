@@ -105,7 +105,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
         keyHighlight: "Năm 1954, tại 38 Gia Ngư, Sư Tổ Nguyễn Tế Công đã trực tiếp chỉ đạo thiết kế và lắp đặt cây Mộc Nhân 5 tầng cọc lịch sử làm chuẩn mực truyền dạy cho môn đồ miền Bắc."
       },
       {
-        title: "3. Giai Đoạn Sài Gòn — Chợ Lớn & Di Sản Bất Hủ",
+        title: "3. Giai Đoạn Sài Gòn — Chợ Lớn & Di Sản Truyền Đời",
         subtitle: "Những năm tháng cuối đời và sự lan tỏa toàn cầu",
         content: [
           "Năm 1954, theo dòng biến động của lịch sử, Sư Tổ Nguyễn Tế Công di chuyển vào miền Nam, định cư tại khu vực Chợ Lớn (Sài Gòn). Tại đây, Cụ tiếp tục mở rộng truyền dạy cho các môn sinh như Lục Viễn Khai, Nguyễn Bá Khả, Đỗ Bá Vinh...",

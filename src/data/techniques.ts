@@ -3395,7 +3395,7 @@ export const TECHNIQUES: Technique[] = [
         "imgUrl": "/assets/hinh-2x/p061-h08.png",
         "isSymmetricLeft": false,
         "keypoints": [
-          "Phóng chưởng sấm sét vào mặt đối thủ",
+          "Đánh chưởng dứt khoát vào vùng mặt đối phương",
           "Tay trái che sườn non"
         ]
       }
@@ -3450,7 +3450,7 @@ export const TECHNIQUES: Technique[] = [
         "isSymmetricLeft": true,
         "keypoints": [
           "Thực hiện đối xứng sang bên phải so với Chiêu 64",
-          "Phóng chưởng sấm sét vào mặt đối thủ",
+          "Đánh chưởng dứt khoát vào vùng mặt đối phương",
           "Tay phải che sườn non"
         ]
       }
