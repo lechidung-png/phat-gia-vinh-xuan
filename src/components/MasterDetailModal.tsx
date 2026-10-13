@@ -366,7 +366,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
           {/* MASTER SWITCHER PILLS (AT BOTTOM) */}
           <div className="pt-4 border-t border-[#3D291F] flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs text-slate-400 font-mono">
-              Bốn Thế Hệ Tiếp Nối Ngọn Lửa Di Sản:
+              Các Bậc Tiền Bối Tiếp Nối Ngọn Lửa Di Sản:
             </span>
 
             <div className="flex flex-wrap items-center justify-center gap-2">

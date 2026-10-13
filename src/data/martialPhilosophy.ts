@@ -582,6 +582,23 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     ]
   },
   {
+    id: "nguyen-duy-thuc",
+    masterName: "ThS.DS Nguyễn Duy Thức",
+    hanziName: "Nguyễn Duy Thức • Thạc Sĩ - Dược Sĩ",
+    branch: "Phật Gia Vịnh Xuân (Đồng Tác Giả 2012)",
+    period: "Thế hệ kế thừa",
+    portraitUrl: "/assets/images/historical/ths_nguyen_duy_thuc.jpg",
+    coreDoctrine: "Phật Gia Khí Công, Vận Khí Dưỡng Sinh & Y Võ Tương Thông",
+    famousQuote: "Khí công và nội công không phải là phép màu siêu nhiên, mà là sự hòa hợp tuyệt đối giữa hơi thở cơ hoành, hệ kinh lạc và tâm ý buông xả vô vi.",
+    pgvxCorrelation: "Đồng tác giả cuốn sách giáo trình năm 2012 cùng thân phụ. Trực tiếp thực hiện và thị phạm bài quyền nội công Phật Gia Khí Công Quyền (trang 172) cùng các bài đối luyện binh khí nâng cao.",
+    historicalContext: "Giảng viên Học Viện Y Dược Học Cổ Truyền Việt Nam, Trưởng khoa Dược. Được thân phụ truyền thụ các bí quyết nội gia từ sớm và phụ trách võ đường Phật Gia Vịnh Xuân Tuệ Tĩnh.",
+    sharedPrinciples: [
+      "Hô hấp cơ hoành bốn thì đan điền tích khí",
+      "Khai thông kinh mạch, bồi bổ nguyên khí dưỡng sinh",
+      "Vũ khí là cánh tay nối dài, lấy linh giác niêm dính"
+    ]
+  },
+  {
     id: "ip-man",
     masterName: "Đại Sư Diệp Vấn (Ip Man)",
     hanziName: "葉問 • Ip Man",

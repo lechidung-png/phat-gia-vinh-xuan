@@ -325,6 +325,71 @@ export const MASTER_PROFILES: MasterProfile[] = [
       "Được ghi nhận trong tác phẩm 'Phật Gia Vịnh Xuân Quyền' (2012).",
       "Phụ trách hướng dẫn tập luyện tại Võ đường Huỳnh Thúc Kháng."
     ]
+  },
+
+  // ============================================================================
+  // ĐỒNG TÁC GIẢ: THẠC SĨ - DƯỢC SĨ NGUYỄN DUY THỨC
+  // ============================================================================
+  {
+    id: "nguyen-duy-thuc",
+    generation: 3,
+    generationLabel: "Đồng Tác Giả Giáo Trình 2012 • Thế Hệ Kế Thừa",
+    name: "ThS.DS Nguyễn Duy Thức",
+    period: "Thế hệ kế thừa",
+    birthYear: 1970,
+    roleTitle: "Thạc Sĩ - Dược Sĩ • Giảng Viên Học Viện Y Dược Học Cổ Truyền • Võ Sư Phật Gia Vịnh Xuân",
+    hometown: "Hà Nội, Việt Nam",
+    portrait: "/assets/images/historical/ths_nguyen_duy_thuc.jpg",
+    coreQuote: "Khí công và nội công không phải là phép màu siêu nhiên, mà là sự hòa hợp tuyệt đối giữa hơi thở cơ hoành, hệ kinh lạc và tâm ý buông xả vô vi.",
+    quoteContext: "Luận giải về Phật Gia Khí Công Quyền và phương pháp vận khí Đan Điền dưỡng sinh.",
+    historicalLocations: [
+      "Học Viện Y Dược Học Cổ Truyền Việt Nam",
+      "Võ đường Phật Gia Vịnh Xuân Tuệ Tĩnh (Hà Nội)",
+      "Võ đường Trung tâm (Hội Môn Phật Gia Vịnh Xuân)"
+    ],
+    lineagePredecessor: "PGS.TS Y Khoa Nguyễn Mạnh Nhâm (thân phụ)",
+    lineageSuccessors: [
+      "Các môn sinh tại Võ đường Tuệ Tĩnh và môn đồ thế hệ trẻ"
+    ],
+    summary:
+      "Con trai của PGS.TS Y khoa Nguyễn Mạnh Nhâm, đồng tác giả cuốn sách giáo trình 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin, 2012). ThS.DS Nguyễn Duy Thức là giảng viên, chuyên gia Dược học cổ truyền, được thân phụ trực tiếp truyền dạy các tuyệt kỹ nội gia từ sớm và là người trực tiếp thị phạm bài Phật Gia Khí Công Quyền cùng các bài đối luyện Binh khí trong sách giáo trình.",
+    sections: [
+      {
+        title: "1. Thân Thế & Kế Thừa Gia Truyền",
+        subtitle: "Được thân phụ rèn giũa công phu từ sớm",
+        content: [
+          "Thạc sĩ - Dược sĩ Nguyễn Duy Thức là con trai của PGS.TS Y khoa Nguyễn Mạnh Nhâm. Sinh ra và lớn lên trong một gia đình y võ truyền thống, anh được thân phụ chỉ dạy võ thuật từ thuở nhỏ.",
+          "Nhờ tư chất thông minh và sự rèn luyện bền bỉ dưới sự hướng dẫn nghiêm cẩn của cha, anh đã tiếp thu các công phu tinh túy của Phật Gia Vịnh Xuân, đặc biệt là phần nội công, khí công vận khí đan điền và các bài đối luyện binh khí nâng cao."
+        ],
+        keyHighlight: "Kế thừa trọn vẹn mạch nguồn y võ từ thân phụ và dòng phái Cố Võ sư Trần Thúc Tiển."
+      },
+      {
+        title: "2. Chuyên Môn Y Dược Học & 'Y Võ Tương Thông'",
+        subtitle: "Giảng viên Học Viện Y Dược Học Cổ Truyền Việt Nam",
+        content: [
+          "Là một nhà khoa học trẻ, Trưởng khoa Dược và Giảng viên tại Học Viện Y Dược Học Cổ Truyền Việt Nam, ThS.DS Nguyễn Duy Thức có nền tảng học thuật sâu rộng về dược học, học thuyết kinh lạc và đông y dưỡng sinh.",
+          "Sự kết hợp giữa chuyên môn Dược học cổ truyền và công phu Vịnh Xuân giúp anh soi sáng cơ chế điều hòa khí huyết, khai thông kinh mạch và phục hồi thể lực qua các bài tập thở và động thiền."
+        ],
+        keyHighlight: "Hiện thực hóa tôn chỉ 'Y Võ Tương Thông' kết hợp giữa Y Dược học cổ truyền và võ học nội gia."
+      },
+      {
+        title: "3. Đồng Tác Giả Giáo Trình 2012 & Thị Phạm Võ Học",
+        subtitle: "Trực tiếp thực hiện bài Phật Gia Khí Công Quyền và Binh khí",
+        content: [
+          "Năm 2012, ThS.DS Nguyễn Duy Thức cùng thân phụ xuất bản công trình giáo trình 'Phật Gia Vịnh Xuân Quyền' (225 trang, NXB Văn Hóa Thông Tin).",
+          "Trong cuốn giáo trình, anh là người trực tiếp biểu diễn và thị phạm bài quyền nội công: 'Phật Gia Khí Công Quyền' (Chương IV, trang 172, hình H0945-H0947).",
+          "Bên cạnh đó, anh cùng các võ sư đồng môn trực tiếp thị phạm các màn đối luyện binh khí cao cấp: Lục Điểm Bán Côn đấu Bát Trảm Đao (trang 186), Kiếm đấu Côn (trang 188), và màn luyện Côn, Đao trực tiếp với Sư Phụ PGS.TS Nguyễn Mạnh Nhâm (trang 187).",
+          "Hiện nay, anh trực tiếp phụ trách giảng dạy tại Võ đường Phật Gia Vịnh Xuân Tuệ Tĩnh (Hà Nội)."
+        ],
+        keyHighlight: "Thị phạm bài quyền 'Phật Gia Khí Công Quyền' và trực tiếp đối luyện binh khí cùng Sư Phụ trong giáo trình gốc."
+      }
+    ],
+    keyContributions: [
+      "Đồng tác giả công trình sách giáo trình 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin 2012).",
+      "Trực tiếp biểu diễn bài 'Phật Gia Khí Công Quyền' (trang 172) và các bài đối luyện binh khí kinh điển.",
+      "Vận dụng tri thức Dược học cổ truyền để luận giải và phát triển phương pháp khí công dưỡng sinh đan điền.",
+      "Phụ trách truyền dạy tại Võ đường Phật Gia Vịnh Xuân chi nhánh Tuệ Tĩnh."
+    ]
   }
 ];
 
@@ -333,10 +398,11 @@ export function getMasterProfileById(id: string): MasterProfile | undefined {
   return MASTER_PROFILES.find((m) => m.id === id);
 }
 
-/** Lấy danh sách ID 4 vị thầy theo thứ tự truyền thừa */
+/** Lấy danh sách ID các vị thầy theo thứ tự truyền thừa */
 export const MASTER_IDS = [
   "nguyen-te-cong",
   "tran-thuc-tien",
   "nguyen-manh-nham",
+  "nguyen-duy-thuc",
   "le-dac-kien"
 ];

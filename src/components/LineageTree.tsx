@@ -317,48 +317,87 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         <div className="w-0.5 h-8 bg-[#3D291F] mx-auto sm:ml-16"></div>
 
         <div className="sm:ml-14 glass-panel p-6 rounded-2xl border border-[#10B981]/40 relative group hover:border-[#10B981] transition-all shadow-xl">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-            <div
-              onClick={() => setSelectedMasterId("nguyen-manh-nham")}
-              className="relative w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-[#10B981] shadow-2xl shrink-0 bg-[#0f241a] group-hover:scale-105 transition-transform duration-300 cursor-pointer"
-              title="Nhấp để xem hồ sơ chi tiết PGS.TS Y Khoa Nguyễn Mạnh Nhâm"
-            >
-              <Image
-                src="/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg"
-                alt="PGS.TS Y Khoa Nguyễn Mạnh Nhâm (Sinh 1932)"
-                fill
-                sizes="(max-width: 640px) 128px, 160px"
-                className="object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-1.5 inset-x-1 text-center">
-                <span className="text-[10px] font-mono font-bold text-emerald-300 bg-black/85 px-2 py-0.5 rounded-full border border-[#10B981]/40 shadow">
-                  Thế Hệ Thứ Ba
-                </span>
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6">
+            {/* Cặp ảnh 2 tác giả: PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức */}
+            <div className="flex items-center gap-3 shrink-0">
+              {/* Ảnh 1: PGS.TS Nguyễn Mạnh Nhâm */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => setSelectedMasterId("nguyen-manh-nham")}
+                  className="relative w-28 h-40 sm:w-32 sm:h-44 md:w-36 md:h-48 rounded-2xl overflow-hidden border-2 border-[#10B981] shadow-2xl shrink-0 bg-[#0f241a] hover:scale-105 transition-transform duration-300 cursor-pointer group/nham"
+                  title="Nhấp để xem hồ sơ chi tiết PGS.TS Y Khoa Nguyễn Mạnh Nhâm"
+                >
+                  <Image
+                    src="/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg"
+                    alt="PGS.TS Y Khoa Nguyễn Mạnh Nhâm (Sinh 1932)"
+                    fill
+                    sizes="(max-width: 640px) 112px, 144px"
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-1.5 inset-x-1 text-center">
+                    <span className="text-[9px] sm:text-[10px] font-mono font-bold text-emerald-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-[#10B981]/40 shadow">
+                      Thầy Nhâm
+                    </span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-emerald-200/90 font-medium mt-1.5 text-center">PGS.TS Nguyễn Mạnh Nhâm</span>
+              </div>
+
+              {/* Ảnh 2: ThS.DS Nguyễn Duy Thức */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => setSelectedMasterId("nguyen-duy-thuc")}
+                  className="relative w-28 h-40 sm:w-32 sm:h-44 md:w-36 md:h-48 rounded-2xl overflow-hidden border-2 border-[#10B981] shadow-2xl shrink-0 bg-[#0f241a] hover:scale-105 transition-transform duration-300 cursor-pointer group/thuc"
+                  title="Nhấp để xem hồ sơ chi tiết ThS.DS Nguyễn Duy Thức"
+                >
+                  <Image
+                    src="/assets/images/historical/ths_nguyen_duy_thuc.jpg"
+                    alt="ThS.DS Nguyễn Duy Thức (Đồng tác giả)"
+                    fill
+                    sizes="(max-width: 640px) 112px, 144px"
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-1.5 inset-x-1 text-center">
+                    <span className="text-[9px] sm:text-[10px] font-mono font-bold text-amber-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-amber-500/40 shadow">
+                      Thầy Thức
+                    </span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-amber-200/90 font-medium mt-1.5 text-center">ThS.DS Nguyễn Duy Thức</span>
               </div>
             </div>
-            <div className="space-y-2 text-center sm:text-left flex-1">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+
+            <div className="space-y-2 text-center lg:text-left flex-1">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
                 <h4 className="text-lg sm:text-xl font-bold font-serif text-white">
-                  PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức
+                  PGS.TS Y Khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức
                 </h4>
                 <span className="text-xs px-2.5 py-0.5 rounded bg-[#10B981]/15 text-[#10B981] font-mono border border-[#10B981]/40 font-bold">
-                  Sinh 1932 (94 Tuổi)
+                  Thế Hệ Thứ Ba • Đồng Tác Giả 2012
                 </span>
               </div>
               <p className="text-xs text-[#10B981] font-semibold uppercase tracking-wider">
                 Tác Giả Công Trình &ldquo;Phật Gia Vịnh Xuân Quyền&rdquo; (NXB Văn Hóa Thông Tin 2012)
               </p>
               <p className="text-sm sm:text-base text-[#F7E7D9] leading-[1.8] max-w-reading">
-                PGS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS-DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
+                PGS.TS Y Khoa Nguyễn Mạnh Nhâm (học trò đầu của Võ sư Trần Thúc Tiển) cùng con trai là ThS.DS Nguyễn Duy Thức đã đúc kết hơn nửa thế kỷ luyện tập và nghiên cứu y võ, hệ thống hóa toàn bộ giáo trình Phật Gia Vịnh Xuân để truyền lại cho muôn đời sau.
               </p>
-              <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+              <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
                 <button
                   onClick={() => setSelectedMasterId("nguyen-manh-nham")}
-                  className="px-4 py-2 rounded-xl bg-[#0f241a] hover:bg-[#163828] border border-[#10B981]/50 hover:border-[#10B981] text-emerald-200 hover:text-white text-xs font-semibold inline-flex items-center gap-2 transition cursor-pointer shadow-sm group/btn"
+                  className="px-3.5 py-2 rounded-xl bg-[#0f241a] hover:bg-[#163828] border border-[#10B981]/50 hover:border-[#10B981] text-emerald-200 hover:text-white text-xs font-semibold inline-flex items-center gap-1.5 transition cursor-pointer shadow-sm group/btn"
                 >
-                  <span>Xem tiểu sử &amp; công trạng chi tiết</span>
+                  <span>Hồ sơ PGS.TS Nguyễn Mạnh Nhâm</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#10B981] group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+                <button
+                  onClick={() => setSelectedMasterId("nguyen-duy-thuc")}
+                  className="px-3.5 py-2 rounded-xl bg-[#1e170a] hover:bg-[#2d220f] border border-amber-500/50 hover:border-amber-400 text-amber-200 hover:text-white text-xs font-semibold inline-flex items-center gap-1.5 transition cursor-pointer shadow-sm group/btn"
+                >
+                  <span>Hồ sơ ThS.DS Nguyễn Duy Thức</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-amber-400 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
                 <span className="px-2.5 py-1 rounded bg-[#140C08] text-slate-300 border border-[#3D291F] flex items-center gap-1.5 text-xs">
                   <BookOpen className="w-3.5 h-3.5 text-[#E2B743]" /> Sách xuất bản năm 2012
