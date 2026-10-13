@@ -506,19 +506,41 @@ export const PhilosophyHub: React.FC = () => {
                 className="glass-panel p-6 sm:p-7 rounded-3xl border border-[#F5D06C]/30 bg-[#160D09]/95 hover:border-[#F5D06C]/60 transition-all space-y-5"
               >
                 {/* Header Tông Sư */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#F5D06C]/20 pb-4">
-                  <div>
-                    <div className="inline-flex items-center gap-2 text-xs font-mono text-[#F5D06C]">
-                      <span>{master.branch}</span>
-                      <span>•</span>
-                      <span className="text-amber-200/70">{master.period}</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#F5D06C]/20 pb-4">
+                  <div className="flex items-center gap-4">
+                    {master.portraitUrl ? (
+                      <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-[#F5D06C]/40 bg-[#1e100a] shrink-0 shadow-lg group">
+                        <Image
+                          src={master.portraitUrl}
+                          alt={master.masterName}
+                          fill
+                          sizes="(max-width: 640px) 64px, 80px"
+                          className="object-cover object-top hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border-2 border-[#F5D06C]/30 bg-[#25120a] flex items-center justify-center shrink-0 text-[#F5D06C]">
+                        <BookOpen className="w-8 h-8 opacity-70" />
+                      </div>
+                    )}
+                    <div>
+                      <div className="inline-flex flex-wrap items-center gap-2 text-xs font-mono text-[#F5D06C]">
+                        <span>{master.branch}</span>
+                        <span>•</span>
+                        <span className="text-amber-200/70">{master.period}</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold font-serif text-white mt-1">
+                        {master.masterName}
+                      </h3>
+                      {master.hanziName && (
+                        <p className="text-xs font-serif text-amber-200/70 mt-0.5">
+                          {master.hanziName}
+                        </p>
+                      )}
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-bold font-serif text-white mt-1">
-                      {master.masterName}
-                    </h3>
                   </div>
 
-                  <span className="self-start sm:self-auto px-3 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[#F5D06C] text-xs font-mono font-bold">
+                  <span className="self-start sm:self-auto px-3.5 py-1.5 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[#F5D06C] text-xs font-mono font-bold shrink-0">
                     {master.coreDoctrine}
                   </span>
                 </div>

@@ -30,8 +30,10 @@ export interface MasterCounsel {
 export interface GlobalMasterBridge {
   id: string;
   masterName: string;
+  hanziName?: string;
   branch: string;
   period: string;
+  portraitUrl?: string;
   coreDoctrine: string;
   famousQuote: string;
   pgvxCorrelation: string;
@@ -495,13 +497,83 @@ export const MASTER_COUNSELS_42: MasterCounsel[] = [
 // ==============================================================================
 export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
   {
+    id: "leung-jan",
+    masterName: "Đại Danh Y Lương Tán (Leung Jan)",
+    hanziName: "梁贊 • Phật Sơn Tán Tiên Sinh",
+    branch: "Cội Nguồn Vịnh Xuân Phật Sơn (Vịnh Xuân Quyền Vương)",
+    period: "1826 – 1901",
+    portraitUrl: "/assets/images/masters/leung_jan.jpg",
+    coreDoctrine: "Đoản Đả Vô Địch & Thốn Kình Nhập Cốt",
+    famousQuote: "Tập Vịnh Xuân giả, tiên tri trung tuyến, thứ minh thính kình, chung quy ư vô tướng. Đoản quyền đoản cước, thốn kình nhập cốt. Bất cầu hoa lệ, duy cầu chân thực.",
+    pgvxCorrelation: "Cội nguồn tổ sư truyền thừa xuống Nguyễn Tế Công và Trần Hoa Thuận. Tương thích 100% với tôn chỉ 'Đơn giản, đi đường ngắn nhất, không hoành tráng biểu diễn' của GS.TS Nguyễn Mạnh Nhâm.",
+    historicalContext: "Vị đại danh y lỗi lạc mở hiệu thuốc Vĩnh An Đường tại Phật Sơn, người đầu tiên hệ thống hóa đưa Vịnh Xuân thành môn phái lừng danh bất bại khắp Nam Trung Hoa.",
+    sharedPrinciples: [
+      "Thủ trung dụng trung (Giữ trung lộ tuyệt đối)",
+      "Đoản quyền đoản đả cận chiến",
+      "Thốn kình phát lực xuyên thấu"
+    ]
+  },
+  {
+    id: "yuen-kay-shan",
+    masterName: "Đại Sư Nguyễn Kỳ Sơn (Yuen Kay Shan)",
+    hanziName: "阮奇山 • Nguyễn Lão Ngũ",
+    branch: "Vịnh Xuân Phật Sơn & Quảng Châu (Phái Sầm Năng)",
+    period: "1889 – 1956",
+    portraitUrl: "/assets/images/masters/yuen_kay_shan.jpg",
+    coreDoctrine: "Thập Nhị Tán Thức & Trầm Kiều Áp Hạ",
+    famousQuote: "Trầm kiều áp hạ, vấn lộ thông tâm. Bất tranh tiên phát, hậu phát tiên chí. Thập nhị tán thức, biến hóa vô cùng. Nhất thức thuần thục, vạn chiêu nan phá.",
+    pgvxCorrelation: "Là em ruột của Sư Tổ Nguyễn Tế Công (anh cả). Sự tương đồng sâu sắc giữa 'Trầm Kiều' của Nguyễn Kỳ Sơn và 'Vấn lộ - Chìm chỏ' của Phật Gia Vịnh Xuân Việt Nam minh chứng cho cội nguồn huyết thống võ học thuần khiết.",
+    historicalContext: "Một trong 'Phật Sơn Vịnh Xuân Tam Hùng' (cùng Diệp Vấn và Diêu Tài), danh gia võ học tinh thông cả quyền pháp, thiết sa chưởng và song đao Bát Trảm Đao.",
+    sharedPrinciples: [
+      "Trầm kiều nhấn chìm đè nén cầu đối phương",
+      "Thập Nhị Tán Thức ứng dụng linh hoạt",
+      "Hậu phát tiên chí (Động sau đến trước)"
+    ]
+  },
+  {
+    id: "nguyen-te-cong",
+    masterName: "Sư Tổ Nguyễn Tế Công (Yuen Chai Wan)",
+    hanziName: "阮濟雲 • Sư Tổ Vịnh Xuân Việt Nam",
+    branch: "Vịnh Xuân Việt Nam (Hà Nội & Sài Gòn - Chợ Lớn)",
+    period: "1877 – 1959",
+    portraitUrl: "/assets/images/historical/nguyen_te_cong.png",
+    coreDoctrine: "Nhu Thuận Khắc Cương & Tông Chỉ Phật Gia Vịnh Xuân",
+    famousQuote: "Đạo Vịnh Xuân lấy nhu thuận làm gốc, lấy thẳng thắn làm đường, lấy trung dung làm đích. Đứng tấn như tùng bách ngút ngàn, xuất thủ như mây bay nước chảy.",
+    pgvxCorrelation: "Cội nguồn khai sáng dòng truyền thừa Vịnh Xuân tại Việt Nam từ năm 1939, truyền dạy trực tiếp cho Cố Võ Sư Trần Thúc Tiển, đặt nền móng vĩnh cửu cho Phật Gia Vịnh Xuân.",
+    historicalContext: "Anh ruột của Nguyễn Kỳ Sơn tại Phật Sơn, sang Việt Nam năm 1939 truyền dạy võ học tại Hà Nội và Chợ Lớn, được toàn thể các nhánh Vịnh Xuân Việt Nam đồng lòng tôn xưng là Sư Tổ.",
+    sharedPrinciples: [
+      "Dĩ nhu chế cương, mượn lực đả lực",
+      "Trung tâm tuyến tuyệt đối trong công thủ",
+      "Thính kình linh giác qua niêm thủ tay đôi"
+    ]
+  },
+  {
+    id: "tran-thuc-tien",
+    masterName: "Cố Võ Sư Trần Thúc Tiển",
+    hanziName: "陳叔展 • Cao Đồ Sư Tổ Tế Công",
+    branch: "Phật Gia Vịnh Xuân Hà Nội",
+    period: "1911 – 1980",
+    portraitUrl: "/assets/images/historical/tran_thuc_tien.png",
+    coreDoctrine: "Cước Căn Bàn Thạch, Tấn Đàn Hồi & Thốn Kình Thấu Cốt",
+    famousQuote: "Chân vững như cây có gốc cắm sâu vào lòng đất. Chân không vững thì đòn tay chỉ là sức quơ quào hời hợt bên ngoài. Đấm không cần gồng cứng cơ bắp, hãy để kình lực từ gót chân truyền qua thắt lưng mà thấu vào xương tủy đối phương.",
+    pgvxCorrelation: "Thầy truyền dạy trực tiếp toàn bộ tinh hoa quyền pháp, 108 thế mộc nhân và khí công dưỡng sinh cho GS.TS Nguyễn Mạnh Nhâm.",
+    historicalContext: "Đại đệ tử kiệt xuất bậc nhất của Sư Tổ Nguyễn Tế Công tại Hà Nội, nội lực thâm hậu phi phàm, nổi tiếng với đôi tay hộ thủ vững như đồng thành thiết lũy.",
+    sharedPrinciples: [
+      "Cước căn vững vàng, tấn như lò xo nén",
+      "Kình phát từ gót chân, eo hông điều khiển",
+      "Buông lỏng tối đa để phát lực xuyên thấu"
+    ]
+  },
+  {
     id: "ip-man",
     masterName: "Đại Sư Diệp Vấn (Ip Man)",
+    hanziName: "葉問 • Nhất Đại Tông Sư",
     branch: "Diệp Vấn Vịnh Xuân (Hồng Kông / Toàn Cầu)",
     period: "1893 – 1972",
+    portraitUrl: "/assets/images/masters/ip_man.jpg",
     coreDoctrine: "Lý Luận Trung Tâm Tuyến & Đề Cao Võ Đức",
-    famousQuote: "Võ thuật không phải để bắt nạt người khác, mà là để tu dưỡng nhân cách và bảo vệ người yếu thế.",
-    pgvxCorrelation: "Tương đồng 100% với Trục Tý Ngọ Tuyến và Tấn Kiềm Dương của Phật Gia Vịnh Xuân. Diệp Vấn và Nguyễn Tế Công vốn là đồng môn tại Phật Sơn (Trung Quốc), cùng chia sẻ cội nguồn quyền thuật tinh túy.",
+    famousQuote: "Thủ trung dụng trung, độc thủ bất hành, song thủ thành công. Võ thuật không phải để chứng minh bạn mạnh hơn người khác, mà là để tu dưỡng nhân cách và bảo vệ người yếu thế.",
+    pgvxCorrelation: "Tương đồng 100% với Trục Tý Ngọ Tuyến và Tấn Kiềm Dương của Phật Gia Vịnh Xuân. Diệp Vấn và Nguyễn Tế Công vốn là đồng môn tại Phật Sơn, cùng chia sẻ cội nguồn quyền thuật tinh túy.",
     historicalContext: "Tông sư đưa Vịnh Xuân Quyền từ một môn phái truyền thống ở Phật Sơn ra toàn cầu qua các đệ tử xuất chúng tại Hồng Kông.",
     sharedPrinciples: [
       "Thủ trung dụng trung (Giữ trung tâm, đánh trung tâm)",
@@ -510,12 +582,65 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     ]
   },
   {
+    id: "wong-shun-leung",
+    masterName: "Võ Sư Hoàng Thuần Lương (Wong Shun Leung)",
+    hanziName: "黃淳樑 • Vua Tỉ Thí / Talking Hands",
+    branch: "Vịnh Xuân Thực Chiến Khoa Học (WSL Ving Tsun)",
+    period: "1935 – 1997",
+    portraitUrl: "/assets/images/masters/wong_shun_leung.jpg",
+    coreDoctrine: "Vịnh Xuân Khoa Học & Cận Chiến Thực Dụng",
+    famousQuote: "Mắt là kẻ lừa dối; chỉ có cẳng tay xúc giác mới không bao giờ nói dối. Vịnh Xuân không phải là một môn nghệ thuật để nhảy múa; nó là công cụ khoa học chính xác để kết thúc cuộc chiến nhanh nhất.",
+    pgvxCorrelation: "Khớp sâu sắc với chuyên đề Linh Giác: Cơ chế phản xạ tủy sống xúc giác nhanh hơn thị giác vỏ não, loại bỏ đáng kể độ trễ phản xạ.",
+    historicalContext: "Người nổi danh với hàng trăm trận tỉ thí thực chiến bất bại tại Hồng Kông, là người trực tiếp hướng dẫn luyện tập thực chiến cho Lý Tiểu Long thuở niên thiếu.",
+    sharedPrinciples: [
+      "Đánh góc chéo 45° triệt tiêu vũ khí của đối thủ",
+      "Vịnh Xuân là công cụ khoa học chính xác, không phải điệu múa",
+      "Tay có mắt (Nhãn thủ) qua thính kình cẳng tay"
+    ]
+  },
+  {
+    id: "bruce-lee",
+    masterName: "Lý Tiểu Long (Bruce Lee)",
+    hanziName: "李小龍 • Triệt Quyền Đạo",
+    branch: "Triệt Quyền Đạo (Jeet Kune Do / Cội nguồn Vịnh Xuân)",
+    period: "1940 – 1973",
+    portraitUrl: "/assets/images/masters/bruce_lee.jpg",
+    coreDoctrine: "Be Water, My Friend — Quyền Như Lưu Thủy & Triệt Đòn Tại Gốc",
+    famousQuote: "Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm. Nước có thể chảy trôi êm ả, nhưng cũng có thể phá nát đá tảng. Đơn giản là đỉnh cao của sự tinh tế.",
+    pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
+    historicalContext: "Học trò xuất sắc của Diệp Vấn và Hoàng Thuần Lương, người đã đem triết lý võ đạo phương Đông chấn hưng toàn cầu.",
+    sharedPrinciples: [
+      "Tâm Ứng Thủ: Đòn đánh ra tùy thuộc đối phương ra đòn gì",
+      "Đơn giản tạo nên hiệu quả",
+      "Đánh vào gốc xuất đòn để triệt tiêu chuỗi đòn của địch"
+    ]
+  },
+  {
+    id: "chu-shong-tin",
+    masterName: "Đại Sư Chu Thượng Đồng (Chu Shong Tin)",
+    hanziName: "徐尚田 • Vua Niệm Đầu / King of Siu Nim Tau",
+    branch: "Chu Shong Tin Ving Tsun (Ý Niệm Lực & Cấu Trúc Khớp)",
+    period: "1933 – 2014",
+    portraitUrl: "/assets/images/masters/chu_shong_tin.jpg",
+    coreDoctrine: "Ý Niệm Lực (Nim Lik) & Giải Phóng Cơ Bắp",
+    famousQuote: "Ý niệm lực không sinh ra từ cơ bắp gồng cứng, mà phát xuất từ sự thả lỏng tuyệt đối và cấu trúc xương khớp chuẩn xác. Tiểu Niệm Đầu chứa đựng toàn bộ bí mật của vũ trụ Vịnh Xuân.",
+    pgvxCorrelation: "Tương thích 100% với lời răn dạy số 19 và số 30 của GS.TS Nguyễn Mạnh Nhâm: 'Thả lỏng cơ bắp, phối hợp với thở, chỉ khi chạm vào đối thủ mới xuất lực thốn kình'.",
+    historicalContext: "Đệ tử thứ ba của Diệp Vấn tại Hồng Kông, người dành hơn 60 năm nghiên cứu chiều sâu cơ sinh học và kình lực nội tại của bài Tiểu Niệm Đầu.",
+    sharedPrinciples: [
+      "Cấu trúc xương khớp tối ưu truyền lực từ mặt đất",
+      "Thả lỏng tuyệt đối để khí huyết và kình lực thông suốt",
+      "Tiểu Niệm Đầu là gốc rễ của mọi công phu"
+    ]
+  },
+  {
     id: "leung-ting",
     masterName: "Đại Sư Lương Đỉnh (Leung Ting)",
+    hanziName: "梁挺 • IWTA WingTsun",
     branch: "WingTsun Quốc Tế (IWTA)",
     period: "1947 – nay",
+    portraitUrl: "/assets/images/masters/leung_ting.jpg",
     coreDoctrine: "4 Nguyên Lý Lực Kinh Điển (4 Principles of Force)",
-    famousQuote: "Hãy biến cơ thể thành một chiếc nêm thép: Địch tiến thì ta nêm dẹp, địch rút thì ta theo sát lấp đầy.",
+    famousQuote: "Hãy biến cơ thể thành một chiếc nêm thép: Đường thông suốt thì tiến, có tiếp xúc thì dính, gặp lực lớn hơn thì nhường bước, đối phương rút lui thì bám sát theo sau.",
     pgvxCorrelation: "Tương đồng chặt chẽ với Khẩu quyết 'Lai lưu khứ tống, thoát thủ trực xông' và nguyên lý 'Dĩ công vi thủ' trong giáo trình của GS.TS Nguyễn Mạnh Nhâm.",
     historicalContext: "Người hệ thống hóa Vịnh Xuân thành giáo trình sư phạm phương Tây khoa học, đưa môn võ phổ biến rộng rãi khắp Châu Âu và Châu Mỹ.",
     sharedPrinciples: [
@@ -526,42 +651,29 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     ]
   },
   {
-    id: "wong-shun-leung",
-    masterName: "Võ Sư Hoàng Thuần Lương (Wong Shun Leung)",
-    branch: "Vịnh Xuân Thực Chiến (Vua Tỉ Thí)",
-    period: "1935 – 1997",
-    coreDoctrine: "Vịnh Xuân Khoa Học & Cận Chiến Thực Dụng",
-    famousQuote: "Mắt là kẻ lừa dối; chỉ có cẳng tay xúc giác mới không bao giờ nói dối.",
-    pgvxCorrelation: "Khớp sâu sắc với chuyên đề Linh Giác: Cơ chế phản xạ tủy sống xúc giác nhanh hơn thị giác vỏ não, loại bỏ đáng kể độ trễ phản xạ.",
-    historicalContext: "Người nổi danh trong các cuộc giao lưu võ thuật thực chiến tại Hồng Kông, là người trực tiếp hướng dẫn luyện tập cho Lý Tiểu Long thuở niên thiếu.",
+    id: "moy-yat",
+    masterName: "Đại Sư Mai Dật (Moy Yat)",
+    hanziName: "梅逸 • Moy Yat Ving Tsun",
+    branch: "Moy Yat Ving Tsun (New York / Hoa Kỳ)",
+    period: "1938 – 2001",
+    coreDoctrine: "Ving Tsun Kuen Kuit — Khẩu Quyết Khắc Đá & Lối Sống Chánh Niệm",
+    famousQuote: "Ving Tsun không phải là một lối đánh nhau; đó là một phong cách tư duy và một lối sống. Khẩu quyết không phải để đọc trên môi, mà để khắc tạc vào xương tủy qua hàng ngàn giờ đứng tấn.",
+    pgvxCorrelation: "Khớp với phương châm 'Tu thân dưỡng tính, dĩ võ nhập đạo' của Phật Gia Vịnh Xuân: Coi võ thuật là phương tiện tu dưỡng nhân cách cao đẹp.",
+    historicalContext: "Đệ tử chân truyền của Diệp Vấn tại Hồng Kông, người di cư sang New York năm 1973 khai mở hệ thống Moy Yat Ving Tsun lừng danh và khắc 108 câu khẩu quyết Vịnh Xuân lên đá hoa cương.",
     sharedPrinciples: [
-      "Đánh góc chéo 45° triệt tiêu vũ khí của đối thủ",
-      "Vịnh Xuân là công cụ khoa học chính xác, không phải điệu múa",
-      "Tay có mắt (Nhãn thủ) qua thính kình cẳng tay"
-    ]
-  },
-  {
-    id: "bruce-lee",
-    masterName: "Lý Tiểu Long (Bruce Lee)",
-    branch: "Triệt Quyền Đạo (Jeet Kune Do / Cội nguồn Vịnh Xuân)",
-    period: "1940 – 1973",
-    coreDoctrine: "Be Water, My Friend — Quyền Như Lưu Thủy & Triệt Đòn Tại Gốc",
-    famousQuote: "Đừng đóng khung trong một hình tướng nào. Hãy vô hình vô tướng như nước. Nước đổ vào cốc thì thành cốc, đổ vào ấm thì thành ấm.",
-    pgvxCorrelation: "Được GS.TS Nguyễn Mạnh Nhâm dẫn giải trong giáo trình gốc khi phân tích Khẩu quyết số 6 (Tâm Ứng Thủ) và Khẩu quyết số 7 (Quyền như lưu thủy, triệt đòn tại gốc).",
-    historicalContext: "Học trò xuất sắc của Diệp Vấn và Hoàng Thuần Lương, người đã đem triết lý võ đạo phương Đông chấn hưng toàn cầu.",
-    sharedPrinciples: [
-      "Tâm Ứng Thủ: Đòn đánh ra tùy thuộc đối phương ra đòn gì",
-      "Đơn giản tạo nên hiệu quả",
-      "Đánh vào gốc xuất đòn để triệt tiêu chuỗi đòn của địch"
+      "Khẩu quyết truyền thừa định hình tư duy chiến lược",
+      "Võ đạo gắn liền với nghệ thuật và văn hóa",
+      "Tâm pháp chỉ đạo thủ pháp"
     ]
   },
   {
     id: "nam-thieu-lam-zen",
-    masterName: "Thiền Tông Nam Thiếu Lâm",
+    masterName: "Thiền Tông Nam Thiếu Lâm & Ngũ Mai Sư Thái",
+    hanziName: "五枚師太 • Nam Thiếu Lâm",
     branch: "Cội Nguồn Tâm Pháp Phật Gia Vịnh Xuân",
-    period: "Khởi nguồn thế kỷ 17",
-    coreDoctrine: "Tâm Vô Ngã (Mushin) & Động Thiền Chánh Niệm",
-    famousQuote: "Quyền bản vô quyền, ý bản vô ý. Vô quyền vô ý thị chân quyền.",
+    period: "Khởi nguồn thế kỷ 17 – 18",
+    coreDoctrine: "Tâm Vô Ngã (Mushin) & Dĩ Nhu Khắc Cương",
+    famousQuote: "Quyền bản vô quyền, ý bản vô ý. Vô quyền vô ý thị chân quyền. Dĩ đoản chế trường, dĩ nhu khắc cương, từ bi hộ sinh.",
     pgvxCorrelation: "Đây chính là căn nguyên của danh xưng 'Phật Gia': Coi võ học là phương tiện tu tâm dưỡng tính, hướng tới sự an nhiên tự tại, từ bi hộ sinh và bảo vệ sự sống.",
     historicalContext: "Ni sư Ngũ Mai tu tập tại Nam Thiếu Lâm đã quan sát trận chiến giữa Xà và Hạc để chắt lọc nên công phu lấy nhu thắng cương, lập nên phái Vịnh Xuân.",
     sharedPrinciples: [
