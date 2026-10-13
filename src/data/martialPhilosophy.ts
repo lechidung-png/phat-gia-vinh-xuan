@@ -570,7 +570,7 @@ export const GLOBAL_WING_CHUN_MASTERS: GlobalMasterBridge[] = [
     hanziName: "阮孟壬 • Nguyễn Mạnh Nhâm",
     branch: "Phật Gia Vịnh Xuân Việt Nam",
     period: "1932 – nay (Đại thọ 94 tuổi)",
-    portraitUrl: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    portraitUrl: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     coreDoctrine: "Y Võ Tương Thông & Khoa Học Hóa Vịnh Xuân",
     famousQuote: "Phương pháp tốt nhất trước một cuộc chiến là tránh cuộc chiến. Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
     pgvxCorrelation: "Tác giả công trình giáo trình 'Phật Gia Vịnh Xuân Quyền' (2012). Dùng tri thức y khoa hiện đại và cơ sinh học để đúc kết, hệ thống hóa và chuẩn hóa toàn bộ giáo lý chân truyền của môn phái.",
@@ -729,7 +729,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 3",
     category: "mindset",
     context: "Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm (1932 – nay)"
   },
   {
@@ -757,7 +757,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 16",
     category: "strategy",
     context: "Nhu thuận và trí tuệ là vũ khí duy nhất trường tồn trước sự biến đổi thể chất.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -785,7 +785,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Chương III: Khẩu Quyết Truyền Thừa",
     category: "strategy",
     context: "Đòn đánh liên hoàn không đứt đoạn như dòng nước chảy tràn ngập trận địa.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -815,7 +815,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 41",
     category: "mindset",
     context: "Đồng môn giúp nhau tôi luyện sự nhạy bén, buông bỏ bản ngã và thói háo thắng.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -825,7 +825,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 8",
     category: "strategy",
     context: "Cổ tay là khớp then chốt cuối cùng điều phối kình lực thấu triệt.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -844,7 +844,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 38",
     category: "philosophy",
     context: "Tinh thâm hơn bác tạp. Rèn một đòn vạn lần tạo nên kỹ năng thuần thục.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -854,7 +854,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 9",
     category: "strategy",
     context: "Căn bản của cận chiến: Đúng khoảng cách mới phát lực, đúng thời điểm mới điểm trúng.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -872,7 +872,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 10",
     category: "mindset",
     context: "Địa chiến bất khuất: Chân triệt cước, tay hộ thủ, biến nghịch cảnh thành thời cơ.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -882,7 +882,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 31",
     category: "philosophy",
     context: "Bản chất lấy nhu thắng cương, mượn sức địch đánh địch của Ni sư Ngũ Mai.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {
@@ -900,7 +900,7 @@ export const MARTIAL_WISDOM_QUOTES: MartialWisdomQuote[] = [
     roleOrSource: "Giáo trình Phật Gia Vịnh Xuân • Lời khuyên số 19",
     category: "health",
     context: "Sự kết hợp hài hòa giữa y học dưỡng sinh và cơ chế vận động cận chiến.",
-    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    authorImage: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     imageCaption: "PGS.TS Nguyễn Mạnh Nhâm"
   },
   {

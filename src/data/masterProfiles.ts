@@ -217,7 +217,7 @@ export const MASTER_PROFILES: MasterProfile[] = [
     birthYear: 1932,
     roleTitle: "Đại Sư Phật Gia Vịnh Xuân • Tác Giả Giáo Trình 2012 • PGS.TS Y Khoa",
     hometown: "Hà Nội, Việt Nam",
-    portrait: "/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg",
+    portrait: "/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg",
     coreQuote: "Phương pháp tốt nhất trước một cuộc chiến là tránh cuộc chiến. Ý nghĩa cao nhất của võ đạo là bảo tồn sinh mạng và sự hòa hiếu giữa con người.",
     quoteContext: "Trích Lời khuyên số 3 trong tác phẩm kinh điển 'Phật Gia Vịnh Xuân Quyền' (NXB Văn Hóa Thông Tin 2012).",
     historicalLocations: [

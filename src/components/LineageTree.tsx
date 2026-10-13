@@ -328,7 +328,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   title="Nhấp để xem hồ sơ chi tiết PGS.TS Y Khoa Nguyễn Mạnh Nhâm"
                 >
                   <Image
-                    src="/assets/images/historical/pgs_ts_nguyen_manh_nham.jpg"
+                    src="/assets/images/historical/pgs_ts_nguyen_manh_nham_3.jpg"
                     alt="PGS.TS Y Khoa Nguyễn Mạnh Nhâm (Sinh 1932)"
                     fill
                     sizes="(max-width: 640px) 112px, 144px"
