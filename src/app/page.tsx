@@ -2,23 +2,49 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Header, NavTab } from "@/components/Header";
 import { WelcomePortal } from "@/components/WelcomePortal";
-import { CurriculumExplorer } from "@/components/CurriculumExplorer";
-import { FundamentalHandFootAtlas, FundamentalSubTab } from "@/components/FundamentalHandFootAtlas";
-import { KnowledgeHub } from "@/components/KnowledgeHub";
-import { WoodenDummyCanvas } from "@/components/WoodenDummyCanvas";
-import { CenterlineExplorer } from "@/components/CenterlineExplorer";
-import { LineageTree } from "@/components/LineageTree";
-import { CombatScenariosExplorer } from "@/components/CombatScenariosExplorer";
-import { CommandPalette } from "@/components/CommandPalette";
+import { LandingSplash } from "@/components/LandingSplash";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
-import { Technique } from "@/data/techniques";
-import { resolveLessonId } from "@/lib/lessonResolver";
+import type { FundamentalSubTab } from "@/components/FundamentalHandFootAtlas";
+import type { Technique } from "@/data/techniques";
+import type { MonographSection } from "@/data/monographs";
+import {
+  resolveLessonId,
+  resolveScenarioTarget,
+  isReadingOnlyLesson,
+} from "@/lib/lessonResolver";
 import { trackTabChange, trackFormView } from "@/lib/analytics";
 
-import { LandingSplash } from "@/components/LandingSplash";
-import { MeditationQiGongHub } from "@/components/MeditationQiGongHub";
+// Tách gói (Code-splitting) các phân hệ lớn để giảm tải JS khởi tạo ban đầu
+const CurriculumExplorer = dynamic(() =>
+  import("@/components/CurriculumExplorer").then((m) => m.CurriculumExplorer)
+);
+const FundamentalHandFootAtlas = dynamic(() =>
+  import("@/components/FundamentalHandFootAtlas").then((m) => m.FundamentalHandFootAtlas)
+);
+const KnowledgeHub = dynamic(() =>
+  import("@/components/KnowledgeHub").then((m) => m.KnowledgeHub)
+);
+const WoodenDummyCanvas = dynamic(() =>
+  import("@/components/WoodenDummyCanvas").then((m) => m.WoodenDummyCanvas)
+);
+const CenterlineExplorer = dynamic(() =>
+  import("@/components/CenterlineExplorer").then((m) => m.CenterlineExplorer)
+);
+const LineageTree = dynamic(() =>
+  import("@/components/LineageTree").then((m) => m.LineageTree)
+);
+const CombatScenariosExplorer = dynamic(() =>
+  import("@/components/CombatScenariosExplorer").then((m) => m.CombatScenariosExplorer)
+);
+const MeditationQiGongHub = dynamic(() =>
+  import("@/components/MeditationQiGongHub").then((m) => m.MeditationQiGongHub)
+);
+const CommandPalette = dynamic(() =>
+  import("@/components/CommandPalette").then((m) => m.CommandPalette)
+);
 
 export default function Home() {
   const [hasEntered, setHasEntered] = useState(false);
@@ -26,26 +52,48 @@ export default function Home() {
   const [selectedFormId, setSelectedFormId] = useState<string>("bai-07");
   const [fundamentalsSubTab, setFundamentalsSubTab] = useState<FundamentalSubTab>("hands");
   const [lineageSubTab, setLineageSubTab] = useState<"tree" | "philosophy">("tree");
-  const [initialMotionIndex, setInitialMotionIndex] = useState<number | undefined>(undefined);
+  const [initialMotionIndex, setInitialMotionIndex] = useState<number>(0);
+  const [libraryLessonId, setLibraryLessonId] = useState<string | null>(null);
+  const [selectedMonograph, setSelectedMonograph] = useState<MonographSection | null>(null);
+  const [navigationSeq, setNavigationSeq] = useState<number>(0);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  // Đọc query parameters từ URL khi mở trang (hỗ trợ liên kết chia sẻ)
+  // Đọc query parameters từ URL khi mở trang (hỗ trợ cả ?step=1..N lẫn ?motion=0..N-1 và chương đọc toàn văn)
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
       const params = new URLSearchParams(window.location.search);
       const lessonParam = params.get("lesson");
+      const stepParam = params.get("step");
       const motionParam = params.get("motion");
       const tabParam = params.get("tab") as NavTab | null;
 
       if (lessonParam) {
         setHasEntered(true);
-        setActiveTab("forms");
-        setSelectedFormId(resolveLessonId(lessonParam));
-        if (motionParam !== null) {
-          const mIdx = parseInt(motionParam, 10);
-          if (!isNaN(mIdx)) setInitialMotionIndex(mIdx);
+        const resolvedId = resolveLessonId(lessonParam);
+
+        if (isReadingOnlyLesson(resolvedId) && tabParam !== "forms") {
+          setActiveTab("fundamentals");
+          setFundamentalsSubTab("theory");
+          setLibraryLessonId(resolvedId);
+          setNavigationSeq((s) => s + 1);
+          return;
         }
+
+        setActiveTab("forms");
+        setSelectedFormId(resolvedId);
+        if (stepParam !== null) {
+          const stepNum = parseInt(stepParam, 10);
+          if (!Number.isNaN(stepNum)) {
+            setInitialMotionIndex(Math.max(0, stepNum - 1));
+          }
+        } else if (motionParam !== null) {
+          const mIdx = parseInt(motionParam, 10);
+          if (!Number.isNaN(mIdx)) {
+            setInitialMotionIndex(Math.max(0, mIdx));
+          }
+        }
+        setNavigationSeq((s) => s + 1);
       } else if (tabParam) {
         setHasEntered(true);
         if (tabParam === "centerline") {
@@ -63,7 +111,7 @@ export default function Home() {
         }
       }
     } catch {
-      // Ignore
+      // Ignore malformed URL parameters
     }
   }, []);
 
@@ -79,7 +127,7 @@ export default function Home() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Theo dõi sự kiện chuyển tab và bài quyền lên hệ thống Analytics chuyên nghiệp
+  // Theo dõi sự kiện chuyển tab và bài quyền lên hệ thống Analytics
   useEffect(() => {
     trackTabChange(activeTab);
     if (activeTab === "forms" && selectedFormId) {
@@ -91,12 +139,14 @@ export default function Home() {
     if (tab === "centerline") {
       setActiveTab("fundamentals");
       setFundamentalsSubTab("centerline");
+      setNavigationSeq((s) => s + 1);
       if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
     if (tab === "library") {
       setActiveTab("fundamentals");
       setFundamentalsSubTab("theory");
+      setNavigationSeq((s) => s + 1);
       if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
@@ -120,18 +170,55 @@ export default function Home() {
     }
     if (formId) {
       setSelectedFormId(resolveLessonId(formId));
+      setInitialMotionIndex(0);
     }
+    setNavigationSeq((s) => s + 1);
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
   const handleSelectTechnique = (tech: Technique) => {
-    if (tech.formId) {
-      setSelectedFormId(resolveLessonId(tech.formId));
-    } else {
-      setSelectedFormId("bai-07");
+    const resolvedId = resolveLessonId(tech.formId || tech.id);
+
+    // Nếu là chương đọc lý thuyết / toàn văn (không có chuỗi động tác), mở thẳng chương đó trong Tàng Kinh Các
+    if (tech.isReadingLesson || isReadingOnlyLesson(resolvedId)) {
+      setLibraryLessonId(resolvedId);
+      setSelectedMonograph(null);
+      setActiveTab("fundamentals");
+      setFundamentalsSubTab("theory");
+      setNavigationSeq((s) => s + 1);
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
     }
+
+    setSelectedFormId(resolvedId);
+    setInitialMotionIndex(typeof tech.motionIndex === "number" ? tech.motionIndex : 0);
+    setNavigationSeq((s) => s + 1);
+    setActiveTab("forms");
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 380, behavior: "smooth" });
+    }
+  };
+
+  const handleSelectMonograph = (mono: MonographSection) => {
+    setSelectedMonograph(mono);
+    setLibraryLessonId(null);
+    setActiveTab("fundamentals");
+    setFundamentalsSubTab("theory");
+    setNavigationSeq((s) => s + 1);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleOpenDojoLesson = (lessonId: string) => {
+    const resolvedId = resolveLessonId(lessonId);
+    setSelectedFormId(resolvedId);
+    setInitialMotionIndex(0);
+    setNavigationSeq((s) => s + 1);
     setActiveTab("forms");
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 380, behavior: "smooth" });
@@ -158,43 +245,44 @@ export default function Home() {
       setActiveTab("fundamentals");
       setFundamentalsSubTab("theory");
     } else if (stageId === "forms-core") {
-      setSelectedFormId("bai-07"); // Tiểu Niệm Đầu
+      setSelectedFormId("bai-07");
+      setInitialMotionIndex(0);
       setActiveTab("forms");
     } else if (stageId === "108-the") {
-      setSelectedFormId("bai-12"); // 108 Thế Tại Chỗ
+      setSelectedFormId("bai-12");
+      setInitialMotionIndex(0);
       setActiveTab("forms");
     } else if (stageId === "dummy") {
       setActiveTab("dummy");
     } else if (stageId === "weapons") {
-      setSelectedFormId("bai-31"); // Bát Trảm Đao
+      setSelectedFormId("bai-31");
+      setInitialMotionIndex(0);
       setActiveTab("forms");
     } else if (stageId === "dojo" || stageId === "forms") {
       setSelectedFormId("bai-12");
+      setInitialMotionIndex(0);
       setActiveTab("forms");
     } else if (stageId === "scenarios") {
       setActiveTab("scenarios");
     } else if (stageId === "meditation" || stageId === "khi-cong") {
       setActiveTab("meditation");
     } else {
-      setSelectedFormId(resolveLessonId(stageId));
+      const resolved = resolveLessonId(stageId);
+      setSelectedFormId(resolved);
+      setInitialMotionIndex(0);
       setActiveTab("forms");
     }
+    setNavigationSeq((s) => s + 1);
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 380, behavior: "smooth" });
     }
   };
 
   const handleNavigateFromScenario = (formId: string, techCode?: string) => {
-    setSelectedFormId(resolveLessonId(formId));
-    if (techCode) {
-      const numMatch = techCode.match(/\d+/);
-      if (numMatch) {
-        const idx = Math.max(0, parseInt(numMatch[0], 10) - 1);
-        setInitialMotionIndex(idx);
-      }
-    } else {
-      setInitialMotionIndex(0);
-    }
+    const target = resolveScenarioTarget(formId, techCode);
+    setSelectedFormId(target.lessonId);
+    setInitialMotionIndex(target.motionIndex);
+    setNavigationSeq((s) => s + 1);
     setActiveTab("forms");
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 380, behavior: "smooth" });
@@ -223,49 +311,56 @@ export default function Home() {
             openSearch={() => setIsSearchOpen(true)}
           />
         )}
+
         {/* Tab 1: Hệ Thống 18 Bài Quyền Pháp & Binh Khí */}
         {activeTab === "forms" && (
-          <CurriculumExplorer 
-            initialLessonId={selectedFormId || "bai-07"} 
+          <CurriculumExplorer
+            initialLessonId={selectedFormId || "bai-07"}
             initialMotionIndex={initialMotionIndex}
+            navigationSeq={navigationSeq}
             onNavigateTab={handleNavigateTab}
           />
         )}
 
-        {/* Tab 2: Cơ Bản Công - Thủ Pháp & Cước Pháp Chuẩn Mực */}
+        {/* Tab 2: Cơ Bản Công - Thủ Pháp, Cước Pháp & Tàng Kinh Các */}
         {activeTab === "fundamentals" && (
-          <FundamentalHandFootAtlas 
+          <FundamentalHandFootAtlas
             initialSubTab={fundamentalsSubTab}
-            onNavigateStage={handleNavigateStage} 
+            initialLibraryLessonId={libraryLessonId}
+            initialMonograph={selectedMonograph}
+            navigationSeq={navigationSeq}
+            onNavigateStage={handleNavigateStage}
+            onOpenDojoLesson={handleOpenDojoLesson}
           />
         )}
 
         {/* Tab Chuyên Biệt: Thiền & Khí Công Dưỡng Sinh (Thở 4 Thì) */}
-        {activeTab === "meditation" && (
-          <MeditationQiGongHub />
-        )}
+        {activeTab === "meditation" && <MeditationQiGongHub />}
 
         {/* Tab 3: 200 Tình Huống Thực Chiến & Khảo Thí Phản Xạ Võ Học */}
         {activeTab === "scenarios" && (
           <CombatScenariosExplorer onNavigateForm={handleNavigateFromScenario} />
         )}
 
-        {/* Tab 3: Cọc Gỗ Mộc Nhân Số Hóa (Digital Wooden Dummy) */}
+        {/* Tab 4: Cọc Gỗ Mộc Nhân Số Hóa (Digital Wooden Dummy) */}
         {activeTab === "dummy" && (
-          <WoodenDummyCanvas
-            onSelectTechnique={handleSelectTechnique}
+          <WoodenDummyCanvas onSelectTechnique={handleSelectTechnique} />
+        )}
+
+        {/* Tab 5: Trục Tý Ngọ Tuyến & Tam Giác Sinh Lực */}
+        {activeTab === "centerline" && <CenterlineExplorer />}
+
+        {/* Tab 6: Tàng Kinh Các (Toàn văn 36 chương sách gốc & 6 chuyên đề) */}
+        {activeTab === "library" && (
+          <KnowledgeHub
+            initialLessonId={libraryLessonId}
+            initialMonograph={selectedMonograph}
+            navigationSeq={navigationSeq}
+            onOpenDojoLesson={handleOpenDojoLesson}
           />
         )}
 
-        {/* Tab 4: Trục Tý Ngọ Tuyến & Tam Giác Sinh Lực */}
-        {activeTab === "centerline" && <CenterlineExplorer />}
-
-        {/* Tab 5: Tàng Kinh Các (Toàn văn chuyên đề khảo cứu) */}
-        {activeTab === "library" && (
-          <KnowledgeHub />
-        )}
-
-        {/* Tab 6: Sơ Đồ Truyền Thừa & Triết Lý Võ Học */}
+        {/* Tab 7: Sơ Đồ Truyền Thừa & Triết Lý Võ Học */}
         {activeTab === "lineage" && (
           <LineageTree
             initialSubTab={lineageSubTab}
@@ -275,12 +370,14 @@ export default function Home() {
       </main>
 
       {/* Global Command Palette Modal (Ctrl + K) */}
-      <CommandPalette
-        isOpen={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        onSelectTechnique={handleSelectTechnique}
-        onSelectMonograph={() => handleNavigateTab("library")}
-      />
+      {isSearchOpen && (
+        <CommandPalette
+          isOpen={isSearchOpen}
+          onClose={() => setIsSearchOpen(false)}
+          onSelectTechnique={handleSelectTechnique}
+          onSelectMonograph={handleSelectMonograph}
+        />
+      )}
 
       {/* Modern Martial Footer */}
       <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5 mb-16 lg:mb-0">

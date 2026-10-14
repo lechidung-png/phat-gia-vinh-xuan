@@ -33,14 +33,18 @@ interface IndexedLessonItem {
   normTitle: string;
   normGroupId: string;
   normPageRange: string;
+  summaryLabel: string;
   rawTechnique: Technique;
 }
 
 interface IndexedMotionItem {
   lesson: CanonicalLesson;
   motion: MotionStep;
+  motionIndex: number;
   normLessonTitle: string;
   normStepNo: string;
+  normBookStepNo: string;
+  normDisplayId: string;
   normDesc: string;
   rawTechnique: Technique;
 }
@@ -53,11 +57,25 @@ interface IndexedMonographItem {
   normChapter: string;
 }
 
-// 1. Tiền xử lý chỉ mục Bài Học (Canonical Lessons)
+// 1. Tiền xử lý chỉ mục 36 Bài Học Chuẩn (Canonical Lessons)
 const INDEXED_LESSONS: IndexedLessonItem[] = CANONICAL_LESSONS.map((lesson) => {
   const firstMotion = lesson.motions?.[0];
-  const firstImg = firstMotion?.img2xUrl || firstMotion?.imgUrl || lesson.assets?.[0]?.img2xUrl || "/assets/hinh-2x/p038-h01.png";
-  
+  const firstImg =
+    firstMotion?.img2xUrl ||
+    firstMotion?.imgUrl ||
+    lesson.assets?.[0]?.img2xUrl ||
+    lesson.assets?.[0]?.imgUrl ||
+    "/assets/hinh-2x/p038-h01.png";
+
+  const motionCount = lesson.motions?.length || 0;
+  const isReadingLesson = motionCount === 0;
+  const summaryLabel =
+    motionCount > 0
+      ? `${motionCount} bước động tác • ${lesson.assetCount} ảnh`
+      : lesson.assetCount > 0
+        ? `Chương lý thuyết • ${lesson.assetCount} hình tư liệu`
+        : "Chương khảo cứu toàn văn";
+
   const rawTech: Technique = {
     id: lesson.id,
     code: lesson.id.toUpperCase(),
@@ -65,11 +83,13 @@ const INDEXED_LESSONS: IndexedLessonItem[] = CANONICAL_LESSONS.map((lesson) => {
     formId: lesson.id,
     formName: lesson.title,
     order: lesson.bookOrder,
-    summary: lesson.assetCount > 0 ? `${lesson.assetCount} động tác thị phạm` : "Chuyên đề khảo cứu lý luận",
+    summary: summaryLabel,
     stances: [],
     hands: [],
     targetZones: [],
     difficulty: "Cơ bản",
+    motionIndex: 0,
+    isReadingLesson,
     steps: [
       {
         stepNo: firstMotion?.stepNo || "1",
@@ -85,26 +105,37 @@ const INDEXED_LESSONS: IndexedLessonItem[] = CANONICAL_LESSONS.map((lesson) => {
     normTitle: removeVietnameseAccents(lesson.title),
     normGroupId: removeVietnameseAccents(lesson.groupId),
     normPageRange: removeVietnameseAccents(lesson.pageRange),
+    summaryLabel,
     rawTechnique: rawTech,
   };
 });
 
-// 2. Tiền xử lý chỉ mục Động Tác (1.096 Motions)
+// 2. Tiền xử lý chỉ mục 917 Động Tác thuộc 18 Bài Quyền & Binh Khí
 const INDEXED_MOTIONS: IndexedMotionItem[] = [];
 for (const lesson of CANONICAL_LESSONS) {
-  for (const motion of lesson.motions || []) {
+  const motions = lesson.motions || [];
+  for (let mIdx = 0; mIdx < motions.length; mIdx++) {
+    const motion = motions[mIdx];
+    const stepLabel =
+      motion.bookStepNo && motion.bookStepNo !== motion.stepNo
+        ? `Chiêu ${motion.bookStepNo} (Bước ${motion.stepNo})`
+        : `Thế ${motion.stepNo}`;
+
     const rawTech: Technique = {
       id: `${lesson.id}-${motion.id}`,
-      code: `THE_${motion.stepNo}`,
-      name: `${lesson.title} — Thế ${motion.stepNo}`,
+      code: `THE_${motion.bookStepNo || motion.stepNo}`,
+      name: `${lesson.title} — ${stepLabel}`,
       formId: lesson.id,
       formName: lesson.title,
-      order: parseInt(motion.stepNo, 10) || 1,
+      order: parseInt(motion.stepNo, 10) || mIdx + 1,
       summary: cleanMotionTitle(motion.desc),
       stances: [],
       hands: [],
       targetZones: [],
       difficulty: "Cơ bản",
+      motionIndex: mIdx,
+      bookStepNo: motion.bookStepNo || motion.stepNo,
+      isReadingLesson: false,
       steps: [
         {
           stepNo: motion.stepNo,
@@ -113,14 +144,16 @@ for (const lesson of CANONICAL_LESSONS) {
           keypoints: [],
         },
       ],
-
     };
 
     INDEXED_MOTIONS.push({
       lesson,
       motion,
+      motionIndex: mIdx,
       normLessonTitle: removeVietnameseAccents(lesson.title),
-      normStepNo: motion.stepNo,
+      normStepNo: motion.stepNo.toLowerCase(),
+      normBookStepNo: (motion.bookStepNo || motion.stepNo).toLowerCase(),
+      normDisplayId: (motion.displayId || "").toLowerCase(),
       normDesc: removeVietnameseAccents(motion.desc),
       rawTechnique: rawTech,
     });
@@ -137,8 +170,8 @@ const INDEXED_MONOGRAPHS: IndexedMonographItem[] = MONOGRAPHS.map((mono) => ({
 }));
 
 /**
- * In-memory Search Engine tối ưu hóa cho 100% Di Sản Phật Gia Vịnh Xuân
- * Đạt độ trễ < 1ms, phủ kín 34 bài học, 1.096 động tác và 12 chuyên luận kinh điển.
+ * In-memory Search Engine tối ưu hóa cho Di Sản Phật Gia Vịnh Xuân
+ * Phủ kín 36 bài học sách gốc, 917 bước động tác (1.095 tư liệu ảnh) và 6 chuyên đề khảo cứu.
  */
 export function searchKnowledgeBase(query: string): SearchResultItem[] {
   const cleanQuery = query.trim();
@@ -149,12 +182,12 @@ export function searchKnowledgeBase(query: string): SearchResultItem[] {
 
   const results: SearchResultItem[] = [];
 
-  // A. Tìm kiếm theo Bài Học (Ưu tiên bài quyền)
+  // A. Tìm kiếm theo Bài Học (36 bài học sách gốc)
   for (const item of INDEXED_LESSONS) {
-    const { lesson, normTitle, normGroupId, rawTechnique } = item;
+    const { lesson, normTitle, normGroupId, summaryLabel, rawTechnique } = item;
     let score = 0;
 
-    if (normTitle === normQuery) {
+    if (normTitle === normQuery || lesson.id === normQuery) {
       score += 150;
     } else if (normTitle.includes(normQuery)) {
       score += 80;
@@ -176,25 +209,46 @@ export function searchKnowledgeBase(query: string): SearchResultItem[] {
         id: lesson.id,
         type: "technique",
         title: lesson.title,
-        subtitle: lesson.assetCount > 0 ? `${lesson.assetCount} động tác thị phạm` : "Tư liệu khảo cứu",
+        subtitle: `${summaryLabel} • Trang ${lesson.pageRange}`,
         badge: `Bài ${lesson.bookOrder}`,
         imgUrl: firstImg,
-        highlightSnippet: `Giáo trình Phật Gia Vịnh Xuân`,
+        highlightSnippet: rawTechnique.isReadingLesson
+          ? "Mở chương đọc toàn văn sách gốc"
+          : "Mở bài luyện tương tác từng động tác",
         rawTechnique,
         score,
       });
     }
   }
 
-  // B. Tìm kiếm theo từng Động Tác (1.096 Motions)
+  // B. Tìm kiếm theo từng Động Tác (917 Motions)
+  const numMatch = cleanQuery.match(/\b\d+(?:\.\d+)?\b/);
   for (const item of INDEXED_MOTIONS) {
-    const { lesson, motion, normLessonTitle, normStepNo, normDesc, rawTechnique } = item;
+    const {
+      lesson,
+      motion,
+      normLessonTitle,
+      normStepNo,
+      normBookStepNo,
+      normDisplayId,
+      normDesc,
+      rawTechnique,
+    } = item;
     let score = 0;
 
-    // Khớp số thứ tự thế võ (ví dụ gõ "15", "thế 15", "động tác 15")
-    const numMatch = cleanQuery.match(/\b\d{1,3}\b/);
-    if (numMatch && numMatch[0] === normStepNo) {
-      score += 45;
+    // Khớp mã ảnh thư viện Hxxxx (ví dụ "H0120", "h0001")
+    if (normDisplayId && (normDisplayId === normQuery || normQuery.includes(normDisplayId))) {
+      score += 120;
+    }
+
+    // Khớp số thứ tự thế võ hoặc số chiêu sách gốc (ví dụ "15", "2.5", "39.1")
+    if (numMatch) {
+      const targetNum = numMatch[0];
+      if (targetNum === normBookStepNo) {
+        score += 55;
+      } else if (targetNum === normStepNo) {
+        score += 45;
+      }
     }
 
     // Khớp tên bài học trong truy vấn
@@ -210,7 +264,12 @@ export function searchKnowledgeBase(query: string): SearchResultItem[] {
     // Khớp từng token từ khóa
     let tokensMatched = 0;
     for (const token of queryTokens) {
-      if (normDesc.includes(token) || normLessonTitle.includes(token)) {
+      if (
+        normDesc.includes(token) ||
+        normLessonTitle.includes(token) ||
+        normBookStepNo === token ||
+        normDisplayId === token
+      ) {
         tokensMatched++;
       }
     }
@@ -219,12 +278,16 @@ export function searchKnowledgeBase(query: string): SearchResultItem[] {
     }
 
     if (score > 30) {
+      const stepBadge =
+        motion.bookStepNo && motion.bookStepNo !== motion.stepNo
+          ? `Chiêu ${motion.bookStepNo}`
+          : `#${motion.stepNo}`;
       results.push({
         id: `${lesson.id}-${motion.id}`,
         type: "technique",
-        title: `${lesson.title} — Thế ${motion.stepNo}`,
-        subtitle: `${lesson.title} • Trang ${motion.pdfPage}`,
-        badge: `#${motion.stepNo}`,
+        title: rawTechnique.name,
+        subtitle: `${lesson.title} • Ảnh ${motion.displayId} • Trang ${motion.pdfPage}`,
+        badge: stepBadge,
         imgUrl: motion.img2xUrl || motion.imgUrl,
         highlightSnippet: cleanMotionTitle(motion.desc),
         rawTechnique,

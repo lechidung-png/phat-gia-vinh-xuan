@@ -224,7 +224,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
           {/* Controls Bar: Category Pills + Search + Danger Filter */}
           <div className="glass-panel p-4 sm:p-5 rounded-2xl border border-[#3D291F] space-y-4">
             {/* Category Tabs */}
-            <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
+            <div className="flex flex-wrap items-center gap-2">
               {CATEGORIES.map((cat) => (
                 <button
                   key={cat.id}

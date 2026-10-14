@@ -95,7 +95,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
         </div>
 
         {/* BỘ TAB NAVIGATION ĐIỀU HƯỚNG 4 CHUYÊN ĐỀ */}
-        <div className="relative z-10 pt-6 mt-6 border-t border-[#F5D06C]/20 flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+        <div className="relative z-10 pt-6 mt-6 border-t border-[#F5D06C]/20 flex flex-wrap items-center gap-2">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;

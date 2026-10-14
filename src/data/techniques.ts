@@ -39,4 +39,7 @@ export interface Technique {
   instructor?: string;
   isTwoPerson?: boolean;
   sparringInfo?: SparringInfo | null;
+  motionIndex?: number;
+  bookStepNo?: string;
+  isReadingLesson?: boolean;
 }

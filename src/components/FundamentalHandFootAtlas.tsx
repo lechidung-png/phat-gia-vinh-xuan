@@ -27,14 +27,25 @@ import {
   LEARNING_STAGES,
   SAN_SHOU_CORE_MOTO,
 } from "@/data/fundamentals";
-import { CenterlineExplorer } from "@/components/CenterlineExplorer";
-import { KnowledgeHub } from "@/components/KnowledgeHub";
+import dynamic from "next/dynamic";
+import type { MonographSection } from "@/data/monographs";
+
+const CenterlineExplorer = dynamic(() =>
+  import("@/components/CenterlineExplorer").then((m) => m.CenterlineExplorer)
+);
+const KnowledgeHub = dynamic(() =>
+  import("@/components/KnowledgeHub").then((m) => m.KnowledgeHub)
+);
 
 export type FundamentalSubTab = "hands" | "feet" | "bai-to" | "drills" | "centerline" | "theory";
 
 interface FundamentalAtlasProps {
   onNavigateStage?: (stageId: string) => void;
   initialSubTab?: FundamentalSubTab;
+  initialLibraryLessonId?: string | null;
+  initialMonograph?: MonographSection | null;
+  navigationSeq?: number;
+  onOpenDojoLesson?: (lessonId: string) => void;
 }
 
 export interface BaiToStep {
@@ -585,6 +596,10 @@ const DRILL_IMAGE_METADATA: Record<
 export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
   onNavigateStage,
   initialSubTab,
+  initialLibraryLessonId,
+  initialMonograph,
+  navigationSeq,
+  onOpenDojoLesson,
 }) => {
   const [activeTab, setActiveTab] = useState<FundamentalSubTab>(initialSubTab || "hands");
   const [selectedHand, setSelectedHand] = useState<CoreHandTechnique>(CORE_HAND_POSTURES[0]);
@@ -610,7 +625,7 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
     if (initialSubTab) {
       setActiveTab(initialSubTab);
     }
-  }, [initialSubTab]);
+  }, [initialSubTab, navigationSeq]);
 
   // Tự động phát trình chiếu các bước Bái Tổ khi bật auto-play
   useEffect(() => {
@@ -1786,7 +1801,12 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
       {/* ========================================================================= */}
       {activeTab === "theory" && (
         <div className="space-y-6">
-          <KnowledgeHub />
+          <KnowledgeHub
+            initialLessonId={initialLibraryLessonId}
+            initialMonograph={initialMonograph}
+            navigationSeq={navigationSeq}
+            onOpenDojoLesson={onOpenDojoLesson}
+          />
         </div>
       )}
 

@@ -20,7 +20,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Mắt nhìn thẳng tầm mắt đối phương, duy trì thần thái trầm tĩnh an định."
     ]
   },
-  "bai-06-m-1": {
+  "bai-07": {
     kieu: "Khởi Môn Định Hình",
     khauQuyet: "Tiểu Niệm Đầu tâm tư bất tranh • Trọng tâm hạ trầm kiềm dương • Nhật tự xung quyền trung tuyến khai thông.",
     yeuLinh: "Nhị Tự Kiềm Dương Tấn chân hẹp hơn vai, hai đầu gối khép hướng tâm. Cùi chỏ ghì sát mạn sườn, xuất lực xoay cổ tay mượn kình từ gân cốt.",
@@ -64,7 +64,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Thân pháp xoay chuyển đột ngột giải phóng toàn bộ kình lực tích tụ."
     ]
   },
-  "bai-09-m-1": {
+  "bai-10": {
     kieu: "Kỹ Pháp Cứu Nguy",
     khauQuyet: "Tiêu Chỉ hộ mệnh • Xuyên thấu hiểm huyệt, cứu nguy phá vây.",
     yeuLinh: "Tập trung lực ở đầu 4 ngón tay duỗi thẳng, cùi chỏ đóng vai trò đòn bẩy. Vừa né tránh vừa phản công vào các tử huyệt thượng bàn.",
@@ -86,7 +86,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Hơi thở nhịp nhàng theo từng nhịp ra đòn và thu quyền."
     ]
   },
-  "bai-11-m-1": {
+  "bai-12": {
     kieu: "Đại Pháp Đơn Luyện",
     khauQuyet: "108 thế liên hoàn tại chỗ • Đơn luyện thuần thục, thấu suốt âm dương.",
     yeuLinh: "Rèn luyện sự dẻo dai của khớp vai, cùi chỏ và cổ tay qua 108 tư thế biến hóa. Giữ trục cột sống thẳng đứng, đan điền tích khí.",
@@ -108,7 +108,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Nương theo hướng lực của bạn tập để dẫn dắt vào thế bẫy."
     ]
   },
-  "bai-12-m-1": {
+  "bai-13": {
     kieu: "Đối Kháng Thực Chiến",
     khauQuyet: "108 thế đối luyện tại chỗ • Cầm nã hóa giải, song quyền tương triệt.",
     yeuLinh: "Người đánh người đỡ phối hợp nhịp nhàng. Tập thói quen phản xạ không cần suy nghĩ khi cánh tay chạm đối thủ.",
@@ -130,7 +130,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Thân trên giữ tĩnh trong khi hạ bàn di chuyển linh hoạt."
     ]
   },
-  "bai-13-m-1": {
+  "bai-14": {
     kieu: "Bộ Pháp Tiến Lùi",
     khauQuyet: "Tiến thoái như ý • Khoa chân né đòn, chớp thời cơ dứt điểm.",
     yeuLinh: "Di chuyển liên tục trên trục thẳng và chéo 45 độ, duy trì thế thủ trước ngực trong mọi bước chuyển dịch.",
@@ -140,7 +140,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Khoảng cách giữa hai chân luôn ổn định sau mỗi bước lướt."
     ]
   },
-  "bai-14-m-1": {
+  "bai-15": {
     kieu: "Đối Luyện Tiến Lùi",
     khauQuyet: "Tiến lui giáp chiến • Vồ long trảo, thúc gối nhọn, quét gót triệt hạ.",
     yeuLinh: "Thực chiến di động 2 người. Một người tấn công dồn dập, một người thoái lui hóa giải rồi phản kích chiếm lại không gian trung lộ.",
@@ -152,7 +152,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
 
   // 7. CỌC GỖ MỘC NHÂN (MỘC NHÂN THUNG)
-  "bai-16-m-1": {
+  "bai-17": {
     kieu: "Thao Pháp Cọc Gỗ",
     khauQuyet: "Cọc gỗ như địch sống • Lắng nghe thớ gỗ lim • Đạp cọc sinh lực, chuyển bộ quanh tâm.",
     yeuLinh: "Tập đòn thế với 3 tay cọc và 1 chân cọc cong. Dùng góc nêm đón đỡ lực cứng của gỗ, xoay thân áp sát thân cọc, chân gài khóa chân cọc gỗ.",
@@ -162,7 +162,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Cẳng tay trượt nhẹ nhàng trên tay cọc để bảo vệ màng xương."
     ]
   },
-  "bai-17-m-1": {
+  "bai-18": {
     kieu: "Mộc Nhân Tiến Lùi",
     khauQuyet: "Vây quanh cọc gỗ • Chuyển bộ 8 hướng, triệt cọc phá thế.",
     yeuLinh: "Di chuyển liên tục quanh cọc gỗ 38 Gia Ngư. Đổi góc đánh từ trước mặt sang bên sườn và phía sau cọc mộc nhân.",
@@ -174,7 +174,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
 
   // 8. NGŨ HÌNH QUYỀN (LONG, XÀ, HỔ, BÁO, HẠC)
-  "gioi-thieu-ngu-hinh-m-1": {
+  "bai-21": {
     kieu: "Ngũ Linh Võ Học • Long Quyền",
     khauQuyet: "Du Long uốn lượn • Nhu trung hữu cương • Rồng lượn chuyển mình, biến chuyển linh hoạt theo lực đối phương.",
     yeuLinh: "Thân pháp uốn lượn theo hình sóng, cánh tay vươn dài kéo giãn cơ gân. Bàn tay hóa Long Trảo chụp bắt, kéo giật đối phương vào thế mất trọng tâm.",
@@ -184,7 +184,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Mắt thần uy nghiêm thể hiện khí phách thần long xuất hải."
     ]
   },
-  "bai-21-m-1": {
+  "bai-22": {
     kieu: "Ngũ Linh Võ Học • Xà Quyền",
     khauQuyet: "Linh xà thổ tín • Nhu nhuận triền ty • Mềm như dải lụa, mổ trúng huyệt sâu.",
     yeuLinh: "Cổ tay mềm dẻo như đầu rắn linh hoạt. Đòn đánh luồn lách qua các khe hở phòng thủ của đối phương, phóng mổ nhanh vào yết hầu, nách, mắt sườn.",
@@ -194,7 +194,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Sau khi chạm mục tiêu lập tức rút về thế quấn trói như trăn xà."
     ]
   },
-  "bai-22-m-1": {
+  "bai-23": {
     kieu: "Ngũ Linh Võ Học • Hổ Quyền",
     khauQuyet: "Mãnh hổ phục cừu • Kình phát quyết đoán • Cương mãnh trầm hùng, khóa giải khớp xương.",
     yeuLinh: "Các ngón tay co quắp cứng như móng vuốt cọp. Phát lực bộc phát (thốn kình) từ hông và gót chân, đè bẹp phòng ngự đối phương bằng sức mạnh chấn động.",
@@ -204,7 +204,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Khóa chặt cổ tay đối phương bằng lực bấu của các đầu ngón tay."
     ]
   },
-  "bai-23-m-1": {
+  "bai-24": {
     kieu: "Ngũ Linh Võ Học • Báo Quyền",
     khauQuyet: "Kim báo phi thân • Thân thủ mau lẹ • Ra đòn chuẩn xác, dồn dập liên miên.",
     yeuLinh: "Gập các đốt ngón tay tạo thành nắm đấm báo (Báo quyền). Đánh liên hoàn cự ly ngắn với tốc độ cực nhanh, nhắm vào thái dương, chấn thủy và hạ sườn.",
@@ -214,7 +214,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Cổ tay khóa thẳng góc để tránh bẻ ngược khớp khi đấm nhanh."
     ]
   },
-  "bai-24-m-1": {
+  "bai-25": {
     kieu: "Ngũ Linh Võ Học • Hạc Quyền",
     khauQuyet: "Bạch hạc lượng dực • Khinh linh thâm nhập • Độc lập hạc tấn, điểm châm chính xác.",
     yeuLinh: "Cánh tay mở rộng dang như cánh hạc, chụm 5 ngón tay thành mỏ hạc (Hạc trủy). Đứng tấn một chân thanh thoát, đòn mổ chính xác vào các đại huyệt cơ thể.",
@@ -224,7 +224,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Thần thái điềm tĩnh, nhắm mục tiêu chính xác cao."
     ]
   },
-  "bai-25-m-1": {
+  "bai-26": {
     kieu: "Ngũ Linh Hợp Nhất",
     khauQuyet: "Ngũ hình hợp nhất • Long - Xà - Hổ - Báo - Hạc biến hóa liên hoàn.",
     yeuLinh: "Chuyển đổi nhịp nhàng giữa cương (Hổ, Báo) và nhu (Long, Xà, Hạc). Tùy theo thế đánh của đối phương mà hóa thân thành linh vật khắc chế thích hợp.",
@@ -236,7 +236,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
 
   // 9. BINH KHÍ CỔ TRUYỀN (BÁT TRẢM ĐAO, CÔN, KIẾM)
-  "bai-30-m-1": {
+  "bai-31": {
     kieu: "Binh Khí • Song Đao Cận Chiến",
     khauQuyet: "Bát Trảm Đao pháp • Song đao hộ thân, trảm thủ áp môn • Nhập nội triệt cước.",
     yeuLinh: "Cầm song đao cán ngắn có quai bảo vệ tay. Một đao che chắn thân mình (Than đao, Bàng đao), một đao chém phạt chớp nhoáng vào cổ tay, đùi hoặc cổ đối phương.",
@@ -246,7 +246,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Phối hợp hai tay đao nhịp nhàng như hai cánh cửa khép mở liên tục."
     ]
   },
-  "bai-31-m-1": {
+  "con": {
     kieu: "Binh Khí • Trường Côn",
     khauQuyet: "Lục Điểm Bán Côn • Trường thương phá trận • Khí quán côn đầu, thốn kình điểm huyệt.",
     yeuLinh: "Côn gỗ dài 2m7 hạ thấp trọng tâm. Luyện 6 thế điểm cốt lõi và 1 thế nửa (Bán côn). Phát lực rung giật từ gốc côn truyền thẳng ra đầu ngọn côn đâm thẳng trung tâm.",
@@ -268,7 +268,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
 
   // 10. NIÊM THỦ & NỘI CÔNG
-  "bai-26-m-1": {
+  "bai-27": {
     kieu: "Nội Gia • Niêm Thủ Linh Giác",
     khauQuyet: "Tay dính như keo • Không đón không xua, nương theo mà đánh • Thính kình tinh tường.",
     yeuLinh: "Hai cánh tay chạm nhau xoay tròn liên tục (Xí Sao). Nhắm mắt vẫn cảm nhận được hướng lực, cường độ lực và ý đồ của đối phương qua bề mặt da cẳng tay.",
@@ -278,7 +278,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
       "Chỉ phát lực phản công vào đúng khoảnh khắc đối phương đổi lực."
     ]
   },
-  "bai-28-m-1": {
+  "bai-29": {
     kieu: "Nội Gia • Khí Công Dưỡng Sinh",
     khauQuyet: "Khí trầm đan điền • Ý dẫn khí hành, khí sinh kình lực • Thiền võ nhất như.",
     yeuLinh: "Hít sâu thở chậm bằng cơ hoành. Dẫn luồng chân khí từ đan điền chạy dọc cột sống lên đỉnh đầu (Bách hội) rồi hạ xuống ngực, tích lũy nội công thâm hậu.",

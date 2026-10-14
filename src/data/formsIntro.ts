@@ -16,6 +16,11 @@ export interface PgvxUniqueness {
   combatDoctrine: string; // Tôn chỉ chiến thuật thực chiến đặc trưng
 }
 
+export interface BookMantraItem {
+  mantra: string;
+  explanation: string;
+}
+
 export interface FormIntroduction {
   formId: string;
   title: string;
@@ -29,6 +34,11 @@ export interface FormIntroduction {
   principles: string[];
   keyMantra: string;
   introQuote: string;
+  bookOriginalIntro?: string[]; // Nguyên văn dẫn nhập, tên gọi, lịch sử & điển tích trong sách gốc
+  bookTrainingGuidelines?: string[]; // Nguyên văn "Những điểm cần biết / cần chú ý khi tập" trong sách gốc
+  bookBenefits?: string[]; // Nguyên văn "Các tác dụng / Những lợi ích chính" trong sách gốc
+  bookMantras?: BookMantraItem[]; // Các khẩu quyết cốt tủy xuất hiện trong bài học
+  bookClosingNote?: string; // Câu dẫn người biểu diễn & quy ước tập đối xứng hai bên trong sách gốc
   worldLineageContext?: WorldLineageContext;
   pgvxUniqueness?: PgvxUniqueness;
   globalBridge?: {
@@ -37,6 +47,31 @@ export interface FormIntroduction {
     correlation: string;
   };
 }
+
+// ==============================================================================
+// E. BÀI LUYỆN TỔNG HỢP 8 PHẦN (NGUYÊN VĂN TRANG 117–118 SÁCH GỐC)
+// ==============================================================================
+export const COMPOSITE_TRAINING_ROUTINE_8 = {
+  title: "E. Bài Luyện Tổng Hợp (8 Phần Thường Xuyên)",
+  sourcePage: "Trang PDF 117 – 118",
+  intro: "Để cho các môn sinh dễ nhớ, Võ Đường Phật Gia Vịnh Xuân đã hệ thống lại thành một Bài Luyện Tổng Hợp gồm có 8 phần chính cần luyện tập thường xuyên sau đây:",
+  parts: [
+    "1. Du đẩy.",
+    "2. Linh giác tại chỗ (có quay người): Năm động tác giật, kéo và 3 động tác đỡ đòn đánh cao (cầm nã thủ). Tập kiểu Tán Thủ.",
+    "3. Bài 108 tại chỗ.",
+    "4. Linh giác di chuyển: Các động tác ở phần 2 nhưng kèm di chuyển (tập với Thầy).",
+    "5. Bài 108 di chuyển (Phải & Trái).",
+    "6. Linh giác di chuyển song luyện (với Thầy và/hay với bạn): Chú ý tăng cường linh giác khi tay tiếp xúc với đối thủ. Luyện mã (di chuyển, xoay người, biên thân, hoành thoái, nhập nội...). Tập xuất đòn tay, chân, khuỷu tay, đầu gối... và các chiêu thức phòng ngự, phản đòn.",
+    "7. Song đấu niêm thủ: Tập mở mắt hay băng kín 2 mắt.",
+    "8. Đấu tay dính có dùng bảo hộ (hoặc không)."
+  ],
+  notes: [
+    "Trong khi tập song luyện (mục 6 & 7) cần rất chú ý thái độ luyện tập, phong cách thân thiện, tình cảm huynh đệ.",
+    "Khi tập đến mức cao, cần tập trung tư tưởng cao độ, thả lỏng toàn cơ thể, phối hợp với hô hấp và di chuyển đúng mã bộ. Thực hiện tốt thì đây là hình thức Động Thiền.",
+    "Các yếu quyết cần chú ý chủ yếu là: 'Lai Lưu Khứ Tống, Thoát Thủ Trực Xông' và 'Lưỡng Điểm Chi Gian, Trực Tuyến Tối Giản'."
+  ],
+  photoCaption: "Sư phụ Nguyễn Mạnh Nhâm dạy song đấu cho Võ sư Nguyễn Văn Thắng (1), võ sinh Dương Nhật Anh (2) và võ sinh Đoàn Quang Huy (3)."
+};
 
 // ==============================================================================
 // LỤC ĐẠI TRỤ CỘT KINH ĐIỂN VỊNH XUÂN THẾ GIỚI (THE SIX CLASSICAL PILLARS)
@@ -198,6 +233,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Tam Đại Quyền",
     categoryOrder: 1,
     formOrder: 1,
+    demonstrator: "HLV Đặng Xuân Hùng",
     meaning: "Ý niệm nhỏ ban đầu — Những ý niệm căn bản đầu tiên xây nền móng toàn phái",
     philosophy: "Định tâm thủ trung, quy nguyên bế khí. Không cầu chiêu thức hoa mỹ, toàn bộ bài quyền tập trung rèn luyện cảm giác thăng bằng của Nhị Tự Kiềm Dương Tấn, định hình trục Tý Ngọ Tuyến và cùi chỏ thủ trung lộ.",
     principles: [
@@ -205,8 +241,44 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Khép cùi chỏ, chìm vai hạ hông: Cùi chỏ cách ngực một nắm tay, khóa kín mạn sườn và hạ bộ.",
       "Ý thủ đan điền: Thở sâu bằng bụng dưới (cơ hoành), dùng ý dẫn khí, dĩ nhu khắc cương."
     ],
-    keyMantra: "Tiểu Niệm Đầu xây nền • Định tâm thủ trung • Nhu trung hữu cương",
-    introQuote: "Tiểu Niệm Đầu là bài quyền cơ bản nhất nhưng cũng là bài quan trọng nhất của Phật Gia Vịnh Xuân. Toàn bộ các thủ pháp cốt lõi: Than Thủ, Bàng Thủ, Phục Thủ, Nhật Tự Quyền đều được định hình chuẩn mực tại đây.",
+    keyMantra: "Tiểu Niệm Đầu xây nền • Niệm đầu bất chính, chung thân bất chính • Đại đồng tiểu dị",
+    introQuote: "Tiểu Niệm Đầu là bài tập cơ bản đầu tiên của Phật Gia Vịnh Xuân. Cần tập bài này rất cẩn thận và suốt đời nếu còn muốn lên cao thêm (Niệm đầu bất chính, chung thân bất chính — nghĩa là: Tập Tiểu Niệm Đầu sai thì sau này sẽ sai hết).",
+    bookOriginalIntro: [
+      "Quy ước trình bày trong sách gốc (Trang 36): Bài được tạm chia thành các CHIÊU. Mỗi CHIÊU bao gồm một số động tác, giới thiệu theo số thứ tự. Nếu một chiêu được thực hiện giống nhau ở cả 2 bên (trái, phải) thì chỉ mô tả một bên; bên đối diện cần luyện tương tự theo đối xứng.",
+      "A. TIỂU NIỆM ĐẦU — Bài tập cơ bản đầu tiên của Phật Gia Vịnh Xuân. Có rất nhiều tên, các tên chính hay nói đến là: Tam Bái Phật (bài có dạng như bái Phật); Tiểu Niệm Đầu (khái niệm đầu tiên); Tiểu Luyện Đầu (các chiêu thức cần luyện đầu tiên); Thủ Đầu Quyền (các thế tay đầu tiên).",
+      "Trước đây, đầu tiên các sư phụ bao giờ cũng dạy cho học trò bài này. Nhưng nên biết: cần tập bài này rất cẩn thận và suốt đời nếu còn muốn lên cao thêm. Ngày xưa, thường thầy dạy ba bốn chiêu thức một lúc để trò về nhà tự tập...",
+      "Tương truyền lúc đầu có 108 thức. Tuy nhiên cách tính thức như thế nào cũng còn là điều chưa được thống nhất lắm, vả lại bài Tiểu Niệm Đầu (TNĐ) được dạy của các võ đường thường không giống nhau hoàn toàn. Dù có khác biệt chút ít, nhưng về cơ bản là tương tự (đại đồng tiểu dị), TNĐ thường được hướng dẫn tập luyện khá giống nhau và đều được coi là cơ bản, có tầm quan trọng then chốt trong công trình luyện tập (Niệm đầu bất chính, chung thân bất chính — nghĩa là: Tập Tiểu Niệm Đầu sai thì sau này sẽ sai hết).",
+      "Một tài liệu cổ cho biết Tiểu Niệm Đầu có 4 phần, có cả xoay người nhưng không có di chuyển. Vịnh Xuân Cổ Lao (quê của Đại Sư Lương Tán), có thêm bài Đại Niệm Đầu. Chi phái này chủ biên thân, tán thủ, nặng về tấn công, với đòn thế đơn giản và không nhiều miếng lắm. Côn pháp cũng chỉ có 3 điểm rưỡi (Tam Điểm Bán Côn). Lương Tán là người thích đòn đơn giản mà hiệu quả (đơn giản chế phức tạp).",
+      "Xưa Nghiêm Vịnh Xuân bắt chồng là Lương Bác Trù phải tập rất kỹ, rất lâu bài Tiểu Niệm Đầu rồi mới dạy thêm những phần khác vì coi Tiểu Niệm Đầu là phần then chốt cần luyện kỹ (mặc dù nhiều lúc Lương Bác Trù nổi giận vợ vì sự trì trệ này nhưng bà không nhượng bộ!). Bài tập của chúng tôi luyện tại chỗ, không di chuyển."
+    ],
+    bookTrainingGuidelines: [
+      "1. Trong khi tập, chú ý thả lỏng toàn bộ cơ thể, tinh thần thoải mái, ý thủ đan điền. Khi thực hiện các thế võ hãy tưởng tượng mỗi động tác đều kèm theo sức mạnh (lúc ra đòn cũng như khi tay rút về đều cần có lực để thắng một trở lực rất lớn), tuy nhiên các cơ bắp vẫn phải nới lỏng, mắt nhìn bình thản, thở đều đặn, sức mạnh chỉ là trong tưởng tượng. Các ngón tay khép, bàn tay mềm mại.",
+      "2. Tập chậm, càng chậm càng tốt (tối thiểu 30 - 45 phút). Các động tác không được cứng, mạnh (dùng sức nhiều). Thí dụ: Bàn tay mở ra từ quyền thành chưởng, lý tưởng là các ngón tay phải xòe ra chầm chậm như các cánh hoa nở (thường không nhìn thấy chuyển động của các cánh hoa).",
+      "3. Đây là một dạng thiền đứng. Qua chân, khí Dương sẽ đi lên, khí Âm sẽ đi xuống.",
+      "4. Có thể tập kèm nhắm mắt, với một chân đứng, một chân co lên (kim kê độc lập)."
+    ],
+    bookBenefits: [
+      "Tập và làm quen với các chiêu thức cơ bản: Than thủ, Bàng thủ, Phục thủ, Trầm thủ, Hộ thủ, Lan thủ...",
+      "Luyện thiền — Tập Tiểu Niệm Đầu làm hạ bàn vững chãi, cũng giống như tập tấn của các môn phái khác. Chân phải như mọc rễ xuống đất. Nếu cảm thấy (hình như) có một sức hút của đất kéo chặt người xuống thì rất tốt.",
+      "Muốn tiến lên trong Vịnh Xuân Quyền không thể không tập liên tục Tiểu Niệm Đầu, kể cả các võ sinh, võ sư đã có công phu hàm dưỡng nhiều năm.",
+      "Tập Tiểu Niệm Đầu trong khi ngâm mình dưới nước là một cách rất tốt giúp dễ dàng thấy lực cản các động tác.",
+      "Sau khi tập (đúng), người sẽ thấy nóng râm ran, dễ chịu. Bàn tay có cảm giác căng căng."
+    ],
+    bookMantras: [
+      {
+        mantra: "Niệm đầu bất chính, chung thân bất chính",
+        explanation: "Tập Tiểu Niệm Đầu sai thì sau này sẽ sai hết. Do đó cần tập bài này rất cẩn thận và suốt đời nếu còn muốn lên cao thêm."
+      },
+      {
+        mantra: "Đại đồng tiểu dị",
+        explanation: "Bài Tiểu Niệm Đầu của các võ đường dù có khác biệt chút ít, nhưng về cơ bản là tương tự và đều là nền tảng then chốt."
+      },
+      {
+        mantra: "Đơn giản chế phức tạp",
+        explanation: "Tôn chỉ của Đại sư Lương Tán (Vịnh Xuân Cổ Lao): ưa thích đòn thế đơn giản, tinh gọn mà hiệu quả thực chiến cao."
+      }
+    ],
+    bookClosingNote: "Sau đây là Bài Tiểu Niệm Đầu do HLV Đặng Xuân Hùng biểu diễn.",
     worldLineageContext: {
       globalName: "Siu Nim Tau (Little Idea / Little Beginning / 小念頭)",
       globalStanding: "Bài quyền nhập môn số 1 bắt buộc của mọi chi phái Vịnh Xuân toàn cầu. Trụ cột thứ nhất: 'Tiểu Niệm Đầu xây nền' — rèn luyện cấu trúc khi đứng tương đối tĩnh, giúp người học chú ý tới chất lượng từng động tác.",
@@ -219,7 +291,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       lineageVariantNotes: "Mọi tổ chức Vịnh Xuân quốc tế (Ip Man Ving Tsun, Leung Ting WingTsun, Wong Shun Leung) đều coi bài này là nền móng tĩnh bất biến định hình khung tay."
     },
     pgvxUniqueness: {
-      distinctiveFeatures: "Thế Nhị Tự Kiềm Dương Tấn chân rất hẹp (khoảng cách hai gót chân chỉ khoảng một nắm tay, mũi chân khép nhọn), bảo vệ triệt để hạ bộ và khớp háng khác với tấn rộng bằng vai của các chi phái Hồng Kông.",
+      distinctiveFeatures: "Thế Nhị Tự Kiềm Dương Tấn chân khép hướng tâm chuẩn sách gốc (Trang 20 & 25): hai mũi chân quay vào nhau cách nhau khoảng 1 bàn chân, hai gót chân mở rộng cách nhau 2 bàn chân (khi quay người hai bàn chân song song cách nhau một bề ngang bàn chân), bảo vệ triệt để hạ bộ và khớp háng.",
       biomechanicalMedicalValue: "Dưới góc nhìn giải phẫu y học của PGS.TS Nguyễn Mạnh Nhâm, việc cuộn nhẹ xương cùng cụt và giữ thẳng cột sống thắt lưng giúp giải tỏa áp lực đè nén lên đĩa đệm L4-L5 và S1, kích hoạt hô hấp cơ hoành sâu tăng cường dung tích phổi.",
       combatDoctrine: "Bất động chế vạn động — Xây dựng bộ khung phòng thủ chóp nêm tam giác không thể bị xô đổ ở cự ly cận chiến."
     },
@@ -245,8 +317,32 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Xoay người biên thân: Vận dụng tối đa các góc xoay thân để hóa giải thế tấn công trực diện và tạo góc phản đòn hiểm hóc.",
       "Bàng Thủ hóa giải: Bàng Thủ là chiêu thức chủ đạo, dùng để lướt trôi lực của đối phương và nhập nội cận chiến."
     ],
-    keyMantra: "Tầm Kiều chuyển động • Vấn lộ thính kình • Xước mã nhập nội",
-    introQuote: "Tầm Kiều di chuyển theo kiểu leo núi (đạp bộ)... Tay thường đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ). Do tay đưa ra trước mà ta hiểu được nhiều yếu tố của đối phương như sức mạnh (thính kình), hướng đánh, nhiều khi biết được chiêu đó là hư hay thực. Bàng Thủ là chiêu thức được dùng nhiều nhất, thiên về phòng ngự.",
+    keyMantra: "Vấn lộ Tầm Kiều thủ tiên hành • Trắc thân Kiềm Dương • Bàng Thủ hóa giải",
+    introQuote: "Tầm Kiều di chuyển theo kiểu leo núi (đạp bộ): tiến chân trước kéo chân sau theo, sức nặng chủ yếu để ở chân sau. Tay thường đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ Tầm Kiều thủ tiên hành)... Bàng Thủ là chiêu thức được dùng nhiều nhất, thiên về phòng ngự.",
+    bookOriginalIntro: [
+      "B. TẦM KIỀU - TIÊU CHỈ (Trang 43): Tầm Kiều và Tiêu Chỉ được coi là hai bài tập có trình độ cao hơn, khi võ sinh đã học được những vấn đề cơ bản nhuần nhuyễn. Khác với Tiểu Niệm Đầu, nhiều kiểu di chuyển (mã) được luyện tập kèm theo một số đòn thế mới (chưa được dạy trong Tiểu Niệm Đầu).",
+      "1. Tầm Kiều: Tầm Kiều là tìm cầu nối giữa mình và đối thủ. Theo một số tác giả thì bài còn có tên là Trầm Kiều, nhưng nhiều người nghĩ rằng tên đó không đúng.",
+      "Tầm Kiều di chuyển theo kiểu leo núi (đạp bộ): tiến chân trước kéo chân sau theo, sức nặng chủ yếu để ở chân sau. Kiểu di chuyển này còn gọi là xước mã với thế tấn trắc thân kiềm dương."
+    ],
+    bookTrainingGuidelines: [
+      "Di chuyển theo kiểu leo núi (đạp bộ / xước mã) với thế tấn trắc thân kiềm dương: tiến chân trước kéo chân sau theo, sức nặng chủ yếu để ở chân sau.",
+      "Tay thường đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ Tầm Kiều thủ tiên hành): tiếp xúc với địch thủ để hiểu được sức mạnh (thính kình), hướng đánh, biết chiêu đó là hư hay thực và dự đoán các chiêu tiếp theo.",
+      "Dùng nhiều các thế xoay người nhằm hóa giải các thế tấn công và tạo điều kiện cho trả đòn.",
+      "Một số cước pháp được tập kèm theo nhập nội để tấn công.",
+      "Bàng Thủ là chiêu thức được dùng nhiều nhất. Tầm Kiều dùng nhiều thế thiên về phòng ngự."
+    ],
+    bookBenefits: [
+      "Tạo cơ sở để tay chân tự động xuất đòn đỡ và/hay đánh trả ngay khi tiếp xúc với cầu tay đối thủ.",
+      "Phát triển khả năng cảm nhận lực (thính kình), phân biệt hư thực và dự đoán đòn tiếp theo của đối phương.",
+      "Rèn luyện bộ pháp xước mã (đạp bộ), xoay người biên thân và cước pháp nhập nội vững chãi."
+    ],
+    bookMantras: [
+      {
+        mantra: "Vấn lộ Tầm Kiều thủ tiên hành",
+        explanation: "Trong Tầm Kiều, tay luôn đưa ra trước hỏi đường để bắc cầu tiếp xúc, lắng nghe sức mạnh (thính kình) và hướng đánh của đối thủ."
+      }
+    ],
+    bookClosingNote: "Sau đây là bài Tầm Kiều do HLV Nguyễn Trọng Sơn thực hiện. (Lưu ý trong bài: Chiêu 4.1–4.3, Chiêu 5.1–5.8 và Chiêu 6.1–6.4 đều có phần lặp lại đối xứng với bên tay trái trước khi Bái Tổ kết thúc bài).",
     worldLineageContext: {
       globalName: "Chum Kiu (Seeking the Bridge / Sinking the Bridge / 尋橋 / 沉橋)",
       globalStanding: "Trụ cột thứ hai: 'Tầm Kiều đưa cơ thể vào chuyển động'. Nếu Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh, thì Tầm Kiều rèn cách giữ và sử dụng cấu trúc ấy khi di chuyển, xoay thân và tung đòn đá thấp.",
@@ -277,7 +373,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Tam Đại Quyền",
     categoryOrder: 1,
     formOrder: 3,
-    demonstrator: "Võ sư Hồ Chí Cang",
+    demonstrator: "Võ sư Hồ Chí Quang",
     meaning: "Ngón tay phóng sức — Kỹ pháp cứu nguy khẩn cấp và phục hồi trung lộ",
     philosophy: "Phóng sức ra qua những đầu ngón tay — kỹ pháp chuyên sâu môn phái ('Tiêu Chỉ bất xuất môn'). Chuyển từ thế phòng ngự sang phản công chủ động: 'Dĩ công vi thủ, dĩ đả vi tiêu'. Dùng bàn tay mở và ngón tay xỉa xuyên thấu để đạt tầm với tối ưu và xử lý khi bị kẹt tay hoặc bất lợi.",
     principles: [
@@ -285,8 +381,36 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Hoành thoái, mã chéo: Bộ pháp chuyển đổi đột ngột ở cự ly cực ngắn, thoát khỏi vòng vây hoặc góc kẹt.",
       "Phục hồi trung tuyến: Khi bị phá vỡ cấu trúc phòng thủ, dùng chỉ pháp và chỏ pháp xoay chuyển tình thế tức thì."
     ],
-    keyMantra: "Tiêu Chỉ ứng biến • Cứu nguy phục hồi • Dĩ công vi thủ",
-    introQuote: "Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay... Theo tên thì đây là 'phóng sức ra qua những đầu ngón tay', một kỹ pháp đặc sắc của VXQ. Chủ trương tấn công là chủ yếu (dĩ công vi thủ, dĩ đả vi tiêu).",
+    keyMantra: "Tiêu Chỉ bất xuất môn • Dĩ công vi thủ, dĩ đả vi tiêu • Phóng sức qua đầu ngón tay",
+    introQuote: "Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay... Theo tên thì đây là 'phóng sức ra qua những đầu ngón tay', một tuyệt kỹ của VXQ. Theo truyền thống cũ thì Tiêu Chỉ không được dạy cho người ngoài (Tiêu Chỉ bất xuất môn). Chủ trương tấn công là chủ yếu (dĩ công vi thủ, dĩ đả vi tiêu).",
+    bookOriginalIntro: [
+      "2. Tiêu Chỉ (Trang 43): Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay. Do đó khi giao đấu thường để bàn tay mở (không nắm tay).",
+      "Theo tên thì đây là 'phóng sức ra qua những đầu ngón tay', một tuyệt kỹ của Vịnh Xuân Quyền. Theo truyền thống cũ thì Tiêu Chỉ không được dạy cho người ngoài (Tiêu Chỉ bất xuất môn).",
+      "Cũng có những chi phái tập ngón tay, bàn tay rất mạnh (thiết thủ, thiết chưởng...). Nguyễn Kỳ Sơn trước đây dùng tay xỉa vào cát, sau cả vào sắt vụn. Phùng Thiếu Thanh được nhiều người công nhận có bàn tay rất mạnh."
+    ],
+    bookTrainingGuidelines: [
+      "Chủ yếu dùng bàn tay và các ngón tay, khi giao đấu thường để bàn tay mở (không nắm tay), phóng sức ra qua những đầu ngón tay.",
+      "Tiêu Chỉ chủ tấn công và dạy cho người đã tập cao (sau khi tập Tầm Kiều).",
+      "Tập một số kiểu chuyển mã khó như hoành thoái, mã chéo... và nhiều kiểu tấn công.",
+      "Dạy cách dùng những chiêu thức phức tạp, đòn thế linh hoạt.",
+      "Chủ trương tấn công là chủ yếu: 'Dĩ công vi thủ, dĩ đả vi tiêu'."
+    ],
+    bookBenefits: [
+      "Rèn luyện tuyệt kỹ phóng lực qua đầu ngón tay, bàn tay và khuỷu tay ở cự ly gần.",
+      "Làm chủ các bộ pháp chuyển hướng khó (hoành thoái, mã chéo) và chiêu thức tấn công linh hoạt.",
+      "Ứng dụng nguyên lý 'Dĩ công vi thủ, dĩ đả vi tiêu' để hóa giải thế nguy và phản kích tức thời."
+    ],
+    bookMantras: [
+      {
+        mantra: "Tiêu Chỉ bất xuất môn",
+        explanation: "Theo truyền thống cũ, bài Tiêu Chỉ là tuyệt kỹ cao cấp của môn phái, không dạy cho người ngoài mà chỉ truyền cho đệ tử đã tập cao sau Tầm Kiều."
+      },
+      {
+        mantra: "Dĩ công vi thủ, dĩ đả vi tiêu",
+        explanation: "Lấy tấn công làm phòng thủ, lấy đòn đánh trả làm đòn hóa giải — chủ trương tấn công chủ động của bài Tiêu Chỉ."
+      }
+    ],
+    bookClosingNote: "Sau đây là bài Tiêu Chỉ do Võ sư Hồ Chí Quang thực hiện.",
     worldLineageContext: {
       globalName: "Biu Jee (Darting Fingers / Thrusting Fingers / 鏢指)",
       globalStanding: "Trụ cột thứ ba: 'Tiêu Chỉ phát triển ứng biến & phục hồi'. Được định danh là hệ kỹ thuật cứu nguy khẩn cấp (Emergency Recovery Form) khi cấu trúc bị phá vỡ hoặc bị kẹt tay ở cự ly gần.",
@@ -329,7 +453,39 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Liên hoàn không ngắt quãng: Đòn trước vừa chạm đích, đòn sau lập tức tiếp nối liên hoàn."
     ],
     keyMantra: "Tấn kiềm sinh kình • Thủ pháp liên hoàn • Bách bát quy nhất",
-    introQuote: "Đây là bài võ cơ bản nhất, thường gọi tắt là Bài 108. Theo truyền thống thì bài có 108 thế, bao gồm toàn bộ các đòn thế công thủ nền tảng của Phật Gia Vịnh Xuân.",
+    introQuote: "Đây là bài võ cơ bản nhất, thường gọi tắt là Bài 108. Theo truyền thống thì Bài có 108 thế, mỗi bên 54 thế. Nguyên gốc 'Bài 108' có tên các thế võ, có bài thiệu theo thơ chữ Hán. Cụ Tế Công đã bỏ đi cho phù hợp với học trò ngày nay (không biết chữ Nho).",
+    bookOriginalIntro: [
+      "C. BÀI VÕ 108 THẾ (Trang 54): Đây là bài võ cơ bản nhất. Thường gọi tắt là Bài 108. Theo truyền thống thì Bài có 108 thế, mỗi bên 54 thế.",
+      "Nguyên gốc 'Bài 108' có tên các thế võ, có bài thiệu theo thơ chữ Hán. Cụ Tế Công đã bỏ đi cho phù hợp với học trò ngày nay (không biết chữ Nho).",
+      "Các hình thức tập của Bài 108 trong sách gốc: (1) Bài 108 đứng tại chỗ: 2 bên, mỗi bên 54 thế, tập kèm quay người tại chỗ; (2) Bài 108 tiến - lùi bên phải và bên trái: vẫn đứng tại chỗ nhưng di chuyển 1 chân kèm quay người, mỗi bên là một bài (54 thế); (3) Có thể tập với Sư Phụ hay Huấn luyện viên; (4) Có thể tập với Mộc nhân; (5) Có thể tập một mình — tưởng tượng có thầy xuất đòn (Không Thông); (6) Có thể tập nhanh hay chậm, mạnh hay nhẹ nhàng cốt lấy khuôn, thuộc bài, tập dính tay, xuất kình..."
+    ],
+    bookTrainingGuidelines: [
+      "1. Thả lỏng toàn thân. Ý thủ Đan điền.",
+      "2. Khi chạm tay vào tay người dạy cần xuất lực nhẹ, thực hành dính, vuốt, lượn xoắn, vặn, nắm... nhưng khi chạm đòn vào người thầy hay mộc nhân có thể xuất đòn mạnh.",
+      "3. Trong những thế phải biên thân, cần quay hết người.",
+      "4. Khuỷu tay trong những trường hợp cho phép nên giữ ở trung tuyến.",
+      "5. Khi quay người cũng như khi tiến lùi 2 bàn chân cần song song, sức nặng chủ yếu nằm ở chân sau.",
+      "6. Thở đều, mỗi khi xuất đòn có thể kèm theo thở.",
+      "7. Tránh ngả người ra trước, còng người. Có thể hạ thấp người."
+    ],
+    bookBenefits: [
+      "1. Thực hành các 'Khẩu quyết quan trọng' của Phật Gia Vịnh Xuân.",
+      "2. Tập sử dụng ngón tay, bàn tay, khuỷu tay, bàn chân, đầu gối v.v... Đặc biệt làm cổ tay mềm mại, cánh tay và khuỷu tay có lực.",
+      "3. Tập các thế võ kiểu Tán Thủ (gồm một hay nhiều thế tay, chân).",
+      "4. Tập đánh, đỡ cơ bản, quay người, tiến lùi, nhập nội, linh giác, xuất lực (thốn kình)...",
+      "5. Tập quay chân, vững chân, quay người, du đẩy."
+    ],
+    bookMantras: [
+      {
+        mantra: "Không Thông (Tập một mình tưởng tượng có thầy xuất đòn)",
+        explanation: "Tập đơn luyện tại chỗ nhưng trong tâm tưởng tượng có Sư phụ hoặc đối thủ đang xuất đòn để rèn khuôn chuẩn xác và phát thốn kình."
+      },
+      {
+        mantra: "Thủ lưu trung tuyến • Biên thân quay hết người",
+        explanation: "Khuỷu tay giữ ở trung tuyến trong những trường hợp cho phép; những thế biên thân phải quay hết người, hai bàn chân song song và sức nặng ở chân sau."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: BÀI 108 TẠI CHỖ - KHÔNG THÔNG. Người biểu diễn: HLV Phạm Đức Hùng. (Các chiêu đối xứng 2 bên tập tương tự bên đối diện; cuối bài Chiêu 104 tập bên trái như Chiêu 103, Chiêu 105 giống Chiêu 50, Bái Tổ kết thúc bài).",
     worldLineageContext: {
       globalName: "108 Stationary Solo Drills (一百零八式 原地單練)",
       globalStanding: "Con số 108 mang tính biểu tượng Phật giáo thiêng liêng (đoạn trừ 108 phiền não). Trong khi Vịnh Xuân Hồng Kông đưa 108/116 thế lên Mộc Nhân, nhánh Việt Nam bảo tồn trọn vẹn 108 thế tay không đơn luyện.",
@@ -360,6 +516,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "108 Thế Liên Hoàn",
     categoryOrder: 2,
     formOrder: 5,
+    demonstrator: "HLV Nguyễn Trường Thanh (A - Người dạy) & Võ sinh (B - Người tập)",
     meaning: "Đối kháng 108 thế tại cự ly cố định — Cầu nối Niêm Thủ (Chi Sao) đưa bài quyền vào người thật",
     philosophy: "Đưa 108 thế vào bài tập thực hành 2 người tại chỗ. Học cách hóa giải lực đánh trực diện của đối phương mà không cần lùi bước, ứng dụng triệt để nguyên lý 'Mượn lực đả lực' (tá lực sinh kình).",
     principles: [
@@ -368,7 +525,31 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Hòa ái tương trợ: Kiểm soát kình lực chuẩn xác để đảm bảo an toàn tuyệt đối cho bạn tập."
     ],
     keyMantra: "Cầu nối Niêm Thủ • Tá lực đả lực • Lai lưu khứ tống",
-    introQuote: "Đối luyện 108 thế tại chỗ giúp môn sinh chuyển hóa các thế võ đơn lẻ thành phản xạ sinh tồn khi đối mặt với lực đánh thực tế từ bạn tập.",
+    introQuote: "Đối luyện 108 thế tại chỗ giúp môn sinh thực hành trực tiếp với Sư phụ hoặc Huấn luyện viên: khi chạm tay cần xuất lực nhẹ, thực hành dính, vuốt, lượn xoắn, vặn, nắm; khi chạm đòn vào người có thể xuất đòn mạnh.",
+    bookOriginalIntro: [
+      "Bài 108 Đối Luyện Tại Chỗ (Trang 54 & 65–74): Là hình thức thứ 2 của hệ thống Bài 108 — tập tại chỗ với Sư phụ hoặc Huấn luyện viên hướng dẫn.",
+      "Quy ước trong sách gốc: Người dạy ký hiệu là A (bên trái hình), Người tập ký hiệu là B (bên phải hình). Mỗi thế mô tả rõ đòn tấn công/mồi của A và cách hóa giải, phản đòn liên hoàn của B."
+    ],
+    bookTrainingGuidelines: [
+      "1. Thả lỏng toàn thân. Ý thủ Đan điền.",
+      "2. Khi chạm tay vào tay người dạy (A) cần xuất lực nhẹ, thực hành dính, vuốt, lượn xoắn, vặn, nắm... nhưng khi chạm đòn vào đích có thể xuất lực chuẩn xác.",
+      "3. Trong những thế phải biên thân, người tập (B) cần quay hết người để tránh lực trực diện của A.",
+      "4. Khuỷu tay trong những trường hợp cho phép luôn giữ ở trung tuyến.",
+      "5. Khi quay người hai bàn chân cần song song, sức nặng chủ yếu nằm ở chân sau.",
+      "6. Thở đều, mỗi khi xuất đòn kèm theo thở. Tránh ngả người ra trước hoặc còng người; có thể hạ thấp người."
+    ],
+    bookBenefits: [
+      "Thực hành trực tiếp các 'Khẩu quyết quan trọng' (Lai lưu khứ tống, Dĩ công vi thủ, Phản thủ đồng thời) với người thật.",
+      "Luyện cổ tay mềm mại, thực hành dính, vuốt, lượn xoắn, vặn, nắm (cầm nã thủ) và xuất lực (thốn kình).",
+      "Phát triển linh giác (tay dính), vững chân, quay người và du đẩy ở cự ly gần."
+    ],
+    bookMantras: [
+      {
+        mantra: "Chạm tay xuất lực nhẹ — dính, vuốt, lượn xoắn, vặn, nắm",
+        explanation: "Khi tiếp xúc cầu tay với thầy hoặc bạn tập, tuyệt đối không gồng cứng mà dùng sự mềm dẻo của cổ tay để cảm nhận và dẫn hóa lực."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: BÀI 108 ĐỐI LUYỆN - TẠI CHỖ. Người dạy (A - trái) và Người tập (B - phải). Kết thúc ở Chiêu 105.1–105.2 (như hình 50.1–50.2), Chào - Bái Tổ - Kết thúc bài.",
     worldLineageContext: {
       globalName: "108 Stationary Partner Drills (Two-Person Applied Chi Sao Sets)",
       globalStanding: "Chiếc cầu nối kinh điển: Niêm thủ (Chi Sao) không phải bài quyền đơn độc mà là phương pháp luyện đôi; 108 Đối Luyện chính là hình thái hóa hoàn chỉnh của Niêm thủ thành các kịch bản đối kháng 2 người.",
@@ -407,7 +588,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Điều tức nhịp nhàng: Thở ra khi tiến công phát kình, hít sâu khi thu thế chuyển tấn."
     ],
     keyMantra: "Tiến thoái như phong • Trọng tâm bất động • Khí trầm đan điền",
-    introQuote: "Bài 108 tiến lùi phát triển khả năng vận động không gian của người tập, đưa các thế võ vào trạng thái động uyển chuyển.",
+    introQuote: "Bài 108 tiến - lùi bên phải và bên trái: Vẫn đứng tại chỗ nhưng di chuyển 1 chân kèm quay người. Mỗi bên là một bài (54 thế), tổng cộng hai bên phải - trái là 108 thế.",
+    bookOriginalIntro: [
+      "Bài 108 Tiến Lùi Tập Một Mình — Không Thông (Trang 54 & 75–82): Bài 108 tiến - lùi gồm bên phải và bên trái. Vẫn đứng trên trục nhưng di chuyển 1 chân tiến/lùi kèm quay người biên thân.",
+      "Mỗi bên là một bài (54 thế, đánh số từ Chiêu 1 đến Chiêu 56 gồm cả thức thu thế). Các động tác bài 108 Tiến Lùi Trái được đánh số thứ tự như bài 108 Tiến Lùi Phải (từ chiêu 2 đến chiêu 56) nhưng đối xứng qua bên trái, chỉ khác nhau ở chiêu thứ 1 (Chiêu 1B)."
+    ],
+    bookTrainingGuidelines: [
+      "Khi quay người cũng như khi tiến lùi, 2 bàn chân cần song song, sức nặng chủ yếu nằm ở chân sau.",
+      "Trong những thế phải biên thân kèm bước tiến/lùi, cần quay hết người và giữ khuỷu tay ở trung tuyến.",
+      "Thả lỏng toàn thân, ý thủ Đan điền, thở đều, mỗi khi xuất đòn có thể kèm theo thở.",
+      "Tránh ngả người ra trước hoặc còng người; có thể hạ thấp người khi nhập nội.",
+      "Tập xong bài bên phải (Chiêu 1 đến 56) thì tập sang bài bên trái đối xứng (khởi đầu bằng Chiêu 1B: Chân trái tiến, hai tay đưa xuống, vẩy hai cổ tay từ trong ra ngoài)."
+    ],
+    bookBenefits: [
+      "Rèn luyện sự phối hợp đồng bộ giữa di chuyển 1 chân (tiến - lùi), xoay người biên thân và xuất đòn tay chân.",
+      "Tập đánh, đỡ cơ bản, quay người, tiến lùi, nhập nội và xuất lực (thốn kình) đều cả hai bên phải và trái.",
+      "Làm vững hạ bàn và tăng cường độ linh hoạt của khớp hông, đầu gối, cổ chân."
+    ],
+    bookMantras: [
+      {
+        mantra: "Mỗi bên 54 thế — Hợp thành 108 thế Tiến Lùi Phải & Trái",
+        explanation: "Bài 108 Tiến Lùi chia làm hai nửa đối xứng Phải và Trái (mỗi bên 54 thế chính), chỉ khác nhau ở chiêu mở đầu (1 và 1B), giúp cơ thể phát triển cân bằng tuyệt đối."
+      }
+    ],
+    bookClosingNote: "Kết thúc bài bên phải ở Chiêu 56 (Bái Tổ), sau đó chuyển sang Bài 108 Tiến Lùi Bên Trái từ Chiêu 1B đến Chiêu 56 đối xứng.",
     worldLineageContext: {
       globalName: "108 Stepping Solo Form (進退單練)",
       globalStanding: "Bước phát triển nâng cao của bộ pháp Vịnh Xuân, kết hợp giữa kỹ thuật tay của Siu Nim Tau và bộ pháp linh hoạt của Chum Kiu.",
@@ -445,7 +649,29 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Phản xạ linh giác tức thì: Khi bị dồn ép, lập tức xoay thân thoát góc và chuyển sang phản đòn."
     ],
     keyMantra: "Tùy cơ ứng biến • Phá thế đoạt môn • Cận chiến liên hoàn",
-    introQuote: "108 Tiến lùi đối luyện là bài kiểm nghiệm thực tế cao nhất của hệ thống 108 thế, rèn luyện bản lĩnh cận chiến vững vàng.",
+    introQuote: "108 Tiến lùi đối luyện là bài tập với người hướng dẫn, kết hợp di chuyển chân kèm quay người, nhập nội, linh giác và xuất lực (thốn kình).",
+    bookOriginalIntro: [
+      "Bài 108 Tiến Lùi Đối Luyện — Bên Phải (Trang 54 & 83–91): Là hình thức thứ 4 của hệ thống Bài 108 — tập tiến lùi với người hướng dẫn (Sư phụ hoặc Huấn luyện viên).",
+      "Người dạy (A) tiến hoặc lùi tung đòn tấn công liên hoàn; người tập (B) vừa chuyển mã tiến/lùi, biên thân hóa giải vừa kết hợp tay đánh và chân đá móc vào hạ bộ hoặc khớp gối của A."
+    ],
+    bookTrainingGuidelines: [
+      "Khi chạm tay vào tay người dạy cần xuất lực nhẹ, thực hành dính, vuốt, lượn xoắn, vặn, nắm; khi phản đòn vào đích kết hợp đồng thời cả tay và chân đá móc.",
+      "Khi quay người cũng như khi tiến lùi 2 bàn chân cần song song, sức nặng chủ yếu nằm ở chân sau.",
+      "Trong những thế biên thân cần quay hết người, giữ khuỷu tay ở trung tuyến.",
+      "Tránh ngả người ra trước, còng người; thở đều kèm theo nhịp xuất đòn."
+    ],
+    bookBenefits: [
+      "Rèn luyện toàn diện đánh, đỡ cơ bản, quay người, tiến lùi, nhập nội, linh giác và xuất lực (thốn kình) trong trạng thái di động.",
+      "Thực hành phối hợp tay khống chế trên, chân đá móc dưới (đặc trưng cước pháp cận chiến của Phật Gia Vịnh Xuân).",
+      "Chuẩn bị trực tiếp cho phần Linh giác di chuyển song luyện và Song đấu niêm thủ."
+    ],
+    bookMantras: [
+      {
+        mantra: "Dĩ công vi thủ • Phản thủ đồng thời",
+        explanation: "Vừa di chuyển trụ chân hóa giải đòn của A, vừa lập tức đánh trả bằng cả tay và cổ chân đá móc trong cùng một nhịp."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: BÀI 108 TIẾN LÙI ĐỐI LUYỆN - BÊN PHẢI. Kết thúc ở Chiêu 55.1–55.2 (tương tự động tác 26.1–26.2), Bái Tổ - Kết thúc bài (bên trái tập đối xứng).",
     worldLineageContext: {
       globalName: "108 Mobile Partner Dynamic Combat (進退對練)",
       globalStanding: "Bài tập đối kháng ứng dụng nâng cao, giúp người tập làm quen với cự ly cận chiến.",
@@ -486,8 +712,38 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Chặn khóa chân cọc: Dùng gối và cẳng chân gài sát chân gỗ cong để rèn kỹ năng khóa chân và quật ngã.",
       "Phát kình giật từ eo hông: Không đánh bầm tay vào gỗ mà dùng lực xoay hông giật phát kình nội gia."
     ],
-    keyMantra: "Mộc Nhân chỉnh góc • Gỗ cứng tôi cốt • Nêm góc lướt tay",
-    introQuote: "Mộc Nhân (người gỗ) là một phương pháp luyện tập độc đáo của Vịnh Xuân Quyền. Cây Mộc Nhân lịch sử chế tác năm 1954 tại 38 Gia Ngư là chứng nhân di sản của môn phái.",
+    keyMantra: "Mộc Nhân chỉnh góc • Dĩ thủ vi công, phản thủ đồng thời • Luyện cổ tay mềm, dẻo, khéo, nhanh, mạnh",
+    introQuote: "Vịnh Xuân Phái coi trọng Mộc Nhân, cho đây là một kỹ thuật cao, không dạy tràn lan. Xưa Sư phụ của Cụ Tế Công luôn giữ chìa khóa phòng để Mộc Nhân, chỉ thỉnh thoảng cho môn sinh vào tập, xong lại khóa kín.",
+    bookOriginalIntro: [
+      "D. MỘC NHÂN — 1. Mô tả Mộc Nhân (người gỗ) (Trang 92–94): Mộc Nhân là một cách tập độc đáo với dụng cụ hỗ trợ là một khúc gỗ trồng xuống đất kèm theo một số 'tay' gỗ tượng hình những đòn thế. Trung bình cho một người cao khoảng 1,70 – 1,75m: thân là khúc gỗ tròn đường kính khoảng 30cm (không nên làm to quá nặng!), bằng gỗ tốt, cao khoảng 2m – 2,2m; phần chôn dưới đất khoảng 0,6 – 0,8m nằm trong một 'bao' đỡ bằng bê tông, đặt trên một viên bi to hay một số viên bi nhỏ bằng sắt để có độ di chuyển một chút khi tập.",
+      "Cấu tạo 5 tay gỗ (cây Mộc Nhân do Sư Tổ Tế Công cho làm tại nhà Sư phụ Trần Thúc Tiển, số 38 phố Gia Ngư, Hà Nội): Năm tay gỗ tiện tròn, nhẵn, đầu thuôn (sát thân đường kính 7–8cm, nhỏ dần ra đầu 5–6cm, phần xuyên qua thân gỗ hình vuông có lỗ tra đinh chốt, nhỏ hơn lỗ đục để có độ di động 'giơ' nhất định phát tiếng động đặc trưng): 3 đầu của ba tay giữa tạo thành hình tam giác cân đỉnh ở dưới, đáy ở trên nằm ngang (2 tay ngực tương đương 2 núm vú, 1 tay bụng tương đương rốn, dài bằng cẳng tay + nắm đấm); 1 tay ở ngang mức đầu gối và 1 tay thấp nhất ở ngang mức mắt cá chân (cách mặt đất khoảng 5cm, dài bằng 2/3 tay trên). Có thêm xà ngang trên cao mức ngang đầu (1,65m – 1,70m) và 1 tay ngắn phía trước để tập côn, đao và kiếm.",
+      "Ký ức lịch sử tại 38 phố Gia Ngư (1954–1958): Tại nhà Sư phụ Trần Thúc Tiển khi đó có 2 cây mộc nhân trong 2 gian nhà tầng dưới. Cây mộc nhân ở buồng trong xấu hơn cây bên ngoài nhưng kích thước đúng hơn. Thầy từng tập với Cụ Tế Công ở buồng trong có che màn cửa. Cụ dặn 'không được cho ai xem'. Một hôm đang tập, có bé gái giúp việc độ hơn 10 tuổi vào quét nhà, thế là Cụ bỏ về ngay, xin mãi mới được! Khi sang Phật Sơn thăm võ đường Diêu Kỳ, tác giả còn thấy cây mộc nhân có rất nhiều tay cũng do Sư Tổ Tế Công cho làm khi dạy Diêu Tài."
+    ],
+    bookTrainingGuidelines: [
+      "Bài 108 tập với Mộc Nhân (Bài Mộc Nhân) có 2 kiểu: (1) Người tập đứng tại chỗ, có quay người; (2) Người tập di chuyển chân, kèm quay người.",
+      "1. Luyện cổ tay mềm, dẻo, khéo, nhanh, mạnh, thực hiện các động tác độc đáo như quấn, cuộn, uốn, lượn, nuốt, nhả (của rắn).",
+      "2. Tập các thế tay, các miếng võ cơ bản; các cách đánh đỡ đối phó với những đòn tấn công của địch.",
+      "3. Thuộc bài 108. Đánh theo đúng khuôn.",
+      "4. Tập ra đòn, xuất lực (thốn kình).",
+      "5. Tập quay chân, di chuyển chân (mã bộ) chủ yếu theo tam giác bộ, quay người khi đánh, đỡ (biên thân), nhập nội, thường là dĩ thủ vi công, phản thủ đồng thời hay tiêu đả, triệt quyền (đánh vào thân người hay gốc chi để vừa tấn công vừa hóa giải đòn tấn công của địch).",
+      "6. Tập bộ khuỷu tay (trửu) và một số kiểu đá (cước), dùng đầu gối và bàn chân khi đã khống chế tay đối thủ (đặc điểm của PGVX khi dùng chân: đá ở cự ly gần kèm khống chế tay địch bằng những thế cầm nã)."
+    ],
+    bookBenefits: [
+      "Làm cổ tay mềm, dẻo, khéo, nhanh, mạnh và chuẩn hóa toàn bộ khuôn đòn của Bài 108 trên đối thủ gỗ.",
+      "Rèn luyện xuất lực (thốn kình), biên thân nhập nội, tiêu đả / triệt quyền và cước pháp cận chiến sau khi đã cầm nã khống chế tay địch.",
+      "Phối hợp giữa Bài Mộc Nhân tại chỗ (chủ yếu trình bày hình bên trái) và Bài Mộc Nhân tiến lùi (chủ yếu trình bày hình bên phải) giúp độc giả nắm trọn vẹn cả 2 bên phải - trái."
+    ],
+    bookMantras: [
+      {
+        mantra: "Quấn, cuộn, uốn, lượn, nuốt, nhả (của rắn)",
+        explanation: "Sáu động tác cổ tay đặc trưng khi luyện với tay Mộc Nhân để rèn độ mềm, dẻo, khéo, nhanh, mạnh."
+      },
+      {
+        mantra: "Dĩ thủ vi công, phản thủ đồng thời • Tiêu đả, triệt quyền",
+        explanation: "Đánh vào thân người hay gốc chi của địch để vừa tấn công vừa hóa giải đòn tấn công của địch cùng một lúc."
+      }
+    ],
+    bookClosingNote: "Bài Mộc Nhân tại chỗ (Bài Mộc Nhân Số 1) do HLV Nguyễn Quốc Minh biểu diễn — phần này giới thiệu hình chủ yếu bên trái (bên phải tập ngược lại).",
     worldLineageContext: {
       globalName: "Mok Yan Jong Form 1 (Wooden Dummy Solo Routine / 木人樁)",
       globalStanding: "Trụ cột thứ tư: 'Mộc Nhân chỉnh khoảng cách và góc'. Kiểm tra kỹ thuật trên một đối tượng có cấu trúc cố định: rèn khoảng cách, góc tiếp xúc, vị trí thân người, bộ pháp và sự phối hợp các động tác.",
@@ -526,8 +782,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Đổi tay liên hoàn: Tay trước gạt tay cọc, tay sau đánh thẳng vào thân cọc trong một nhịp thở.",
       "Kỹ thuật quấn chân: Móc chân vào chân cọc khi đổi góc để tập kỹ năng triệt hạ đối thủ."
     ],
-    keyMantra: "Né diện kích trắc • Quấn chân đổi góc • Thân pháp như phong",
-    introQuote: "Bài mộc nhân tiến lùi phát triển khả năng vận động đa chiều quanh đối thủ, rèn luyện sự linh hoạt tối đa của bộ pháp.",
+    keyMantra: "Tam giác bộ nhập nội • Đá cự ly gần kèm cầm nã khống chế tay • Tiêu đả triệt quyền",
+    introQuote: "Người tập di chuyển chân, kèm quay người quanh Mộc nhân. Phối hợp hình của HLV Phạm Vũ Toản trong bài Mộc Nhân tiến lùi (chủ yếu trình bày hình bên phải) với bài Mộc Nhân tại chỗ (bên trái), độc giả dễ dàng nắm được cả 2 bên phải - trái.",
+    bookOriginalIntro: [
+      "Bài Mộc Nhân Tiến Lùi (Trang 94 & 106–116): Là kiểu tập thứ hai của Bài 108 trên Mộc Nhân — người tập di chuyển chân (mã bộ) kèm quay người.",
+      "Trong sách gốc, phần này do HLV Phạm Vũ Toản biểu diễn, chủ yếu trình bày hình bên phải; phối hợp với hình bên trái của HLV Nguyễn Quốc Minh ở Bài Mộc Nhân Số 1 giúp người học nắm trọn vẹn cả hai bên Phải – Trái."
+    ],
+    bookTrainingGuidelines: [
+      "Tập di chuyển chân (mã bộ), chủ yếu theo tam giác bộ, bước chéo chân, quay người khi đánh, đỡ (biên thân) và nhập nội.",
+      "Thực hành dĩ thủ vi công, phản thủ đồng thời hay tiêu đả, triệt quyền (đánh vào thân người hay gốc chi để vừa tấn công vừa hóa giải đòn của địch).",
+      "Tập bộ khuỷu tay (trửu) và một số kiểu đá (cước): ngoáy cổ chân đá móc, dùng đầu gối và bàn chân khi hai tay đã khống chế tay mộc nhân.",
+      "Luyện cổ tay mềm, dẻo, khéo, nhanh, mạnh qua các động tác quấn, cuộn, uốn, lượn, nuốt, nhả và phát thốn kình."
+    ],
+    bookBenefits: [
+      "Làm chủ bộ pháp tam giác bộ, bước chéo chuyển góc và nhập nội quanh đối thủ.",
+      "Kết hợp nhuần nhuyễn giữa cầm nã khống chế tay ở tầng trên và dùng đầu gối / cổ chân đá móc ở cự ly gần.",
+      "Hoàn thiện cả hai chiều Phải – Trái của 108 thế trên Mộc Nhân."
+    ],
+    bookMantras: [
+      {
+        mantra: "Đá ở cự ly gần kèm khống chế tay địch bằng những thế cầm nã",
+        explanation: "Đặc điểm cốt lõi của Phật Gia Vịnh Xuân khi dùng chân trên Mộc Nhân: luôn khống chế tay đối thủ trước hoặc đồng thời khi tung đòn gối và cước."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: BÀI MỘC NHÂN - TIẾN LÙI. Người biểu diễn: HLV Phạm Vũ Toản (chủ yếu trình bày hình bên phải; kết thúc ở Chiêu 105.1–105.2 như động tác 50.1–50.2, Bái Tổ - Kết thúc bài).",
     worldLineageContext: {
       globalName: "Dynamic Moving Wooden Dummy Form (木人樁進退)",
       globalStanding: "Bài tập nâng cao biến cọc gỗ tĩnh thành đối thủ chuyển động, giải phóng người tập khỏi góc nhìn một chiều.",
@@ -568,8 +846,35 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Chưởng pháp biến ảo: Dùng lòng bàn tay và gót chưởng phát kình chấn động nội tạng.",
       "Tĩnh trung cầu động: Tâm tĩnh như mặt nước phẳng, khi xuất đòn thì linh hoạt tùy duyên tiếp lực."
     ],
-    keyMantra: "Long hình luyện thần • Tĩnh trung cầu động • Nhu trung hữu cương",
-    introQuote: "Long quyền trong Ngũ hình chủ về luyện thần. Thần thái uy nghiêm, thân pháp uốn lượn mềm dẻo nhưng phát kình chấn động sâu sắc.",
+    keyMantra: "Long thuộc Thổ (chủ Tỳ) • Luyện Thần • Đạp cung trung (Tiến 3 bước lùi 3 bước)",
+    introQuote: "Phỏng theo hoạt động của con Rồng. Rồng thuộc Thổ (chủ Tỳ), Bài có tác dụng luyện Thần. Bàn tay xòe hình vuốt rồng với các thế chộp, vồ, quay vòng, uốn lượn thân mình. Nhiều đòn bắt, bẻ kiểu cầm nã thủ. Điệp chưởng được dùng mấy lần.",
+    bookOriginalIntro: [
+      "F. NGŨ HÌNH QUYỀN (Trang 118–119): Gồm 6 bài: Long, Xà, Hổ, Báo, Hạc và Ngũ hình tổng hợp. Người xưa ngắm nhìn các con vật hoạt động, đánh nhau, vồ mồi... đã bắt chước những động tác của chúng để sáng tạo ra các thế võ, môn võ. Đó chính là ngành Phỏng Sinh Học áp dụng trong võ thuật.",
+      "Trong võ lâm có 10 hình con vật được sử dụng (long, xà, hổ, báo, hạc, sư, tượng, mã, hầu, miêu) gọi là Thập Hình Quyền. Tuy nhiên còn có những con vật khác vẫn được sử dụng thêm như con cá (Hồng Gia Quyền), con bọ ngựa (Đường Lang Quyền) v.v... Phật Gia Vịnh Xuân chọn 5 con vật tiêu biểu: Long, Xà, Hổ, Báo, Hạc nên có tổng cộng 6 bài võ.",
+      "1. Bài Long Hình Quyền: Phỏng theo hoạt động của con Rồng. Rồng thuộc Thổ (chủ Tỳ). Bài có tác dụng luyện Thần.",
+      "Cả sáu bài Ngũ Hình đều tôn trọng việc tiến 3 bước lùi 3 bước (đạp cung trung). Tiến lùi có thể theo xước mã, truy mã, hoặc lướt 2 bàn chân. Quyền cước đánh tương đối rộng, có những chỗ không hoàn toàn theo các khẩu quyết của Vịnh Xuân Quyền — rất có thể đây là những bài võ hay, giúp võ sinh luyện tập các mặt có lợi cho võ học nên được thêm vào kho tàng Vịnh Xuân Quyền (bởi Cụ Nguyễn Tế Công hoặc các Sư phụ của Cụ là Hoắc Bảo Toàn, Phùng Thiếu Thanh — cả 3 vị cùng tinh thông Võ Thiếu Lâm Trường Quyền)."
+    ],
+    bookTrainingGuidelines: [
+      "Bàn tay xòe hình vuốt rồng (Long trảo) với các thế chộp, vồ, quay vòng, uốn lượn thân mình.",
+      "Thực hành nhiều đòn bắt, bẻ kiểu cầm nã thủ.",
+      "Điệp chưởng (hai chưởng đánh chồng/liên tiếp) được dùng mấy lần trong bài.",
+      "Tuân thủ nguyên tắc tiến 3 bước lùi 3 bước (đạp cung trung) theo xước mã, truy mã hoặc lướt 2 bàn chân."
+    ],
+    bookBenefits: [
+      "Rồng thuộc hành Thổ (chủ Tỳ) — Bài có tác dụng luyện Thần, kiện Tỳ Vị và điều hòa trung châu.",
+      "Rèn luyện sự uốn lượn uyển chuyển của thân mình, kỹ thuật cầm nã thủ (chộp, vồ, bắt, bẻ) và phát lực Điệp chưởng."
+    ],
+    bookMantras: [
+      {
+        mantra: "Rồng thuộc Thổ (chủ Tỳ) — Bài có tác dụng luyện Thần",
+        explanation: "Nguyên lý Y Võ Ngũ Hành – Ngũ Tạng của Bài Long Hình Quyền trong sách gốc (trang 118)."
+      },
+      {
+        mantra: "Đạp cung trung (Tiến 3 bước lùi 3 bước)",
+        explanation: "Quy luật bộ pháp chung của cả 6 bài Ngũ Hình Quyền: luôn tiến 3 bước, lùi 3 bước giữ vững cung trung."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: LONG HÌNH QUYỀN. Người biểu diễn: Võ sư Hồ Văn Khang. (Cuối bài từ Chiêu 36 đến Chiêu 41 lặp lại các chiêu 6, 7, 8, 9, 10, 11 rồi Bái Tổ kết thúc bài).",
     worldLineageContext: {
       globalName: "Dragon Form (Long Quyền / 龍拳)",
       globalStanding: "Bài quyền đứng đầu trong hệ thống Ngũ Hình Thiếu Lâm cổ truyền, đại diện cho linh thú tâm linh cao nhất.",
@@ -582,7 +887,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Long quyền trong Phật Gia Vịnh Xuân kết hợp chặt chẽ với động tác chưởng pháp xoay vòng, lấy tâm bình khí hòa chế ngự hung khí đối phương.",
-      biomechanicalMedicalValue: "Theo y học cổ truyền và phân tích của PGS.TS Nguyễn Mạnh Nhâm, Long quyền tác động đến kinh Tâm (Tim mạch), điều hòa huyết áp, dưỡng tâm an thần và giải tỏa stress thần kinh.",
+      biomechanicalMedicalValue: "Theo sách gốc (trang 118–119), Long quyền thuộc hành Thổ, chủ Tỳ (hệ tiêu hóa và cơ nhục), giúp kiện Tỳ Vị, điều hòa khí huyết trung châu, giải tỏa căng thẳng cột sống và dưỡng thần.",
       combatDoctrine: "Thần định tâm an — Tâm trí tĩnh lặng như nước tù, đối phương vừa động là chưởng kình lập tức phát ra chấn động nội tạng."
     },
     globalBridge: {
@@ -607,8 +912,31 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Uốn lượn triệt tiêu lực: Khi đối phương phát lực, thân người uốn éo theo chiều lực để vô hiệu hóa chấn động.",
       "Khí trầm đan điền: Hơi thở dài êm, kình lực phát ra đầu ngón tay sắc lẹm như mũi kim đâm."
     ],
-    keyMantra: "Xà hình luyện khí • Nhu nhuyễn nhập cốt • Xỉa huyệt đoạt môn",
-    introQuote: "Xà quyền chủ về luyện khí. Đặc trưng là đòn đánh mềm mại, uyển chuyển luồn lách nhưng khi điểm huyệt thì cực kỳ chuẩn xác và hiểm ác.",
+    keyMantra: "Rắn thuộc Thủy (chủ Thận) • Luyện Khí • Xoay 2 bàn chân không nhấc lên, không có đòn đá",
+    introQuote: "Phỏng theo hoạt động của con Rắn. Rắn thuộc Thủy (chủ Thận). Bài có tác dụng luyện Khí. Tay khum hình đầu rắn, cánh và cẳng tay hình thân rắn... Áp dụng tốt biên thân, di chuyển nhẹ nhàng bằng xoay 2 bàn chân mà không nhấc lên. Không có đòn đá (vì rắn không có chân?).",
+    bookOriginalIntro: [
+      "2. Bài Xà Hình Quyền (Trang 118): Phỏng theo hoạt động của con Rắn. Rắn thuộc Thủy (chủ Thận). Bài có tác dụng luyện Khí.",
+      "Tay khum hình đầu rắn, cánh và cẳng tay hình thân rắn. Cũng như con rắn, cần luyện sự nhẹ nhàng, mềm mại, uốn lượn thân mình và cả các chi, nhất là cánh, cẳng, bàn tay."
+    ],
+    bookTrainingGuidelines: [
+      "Tay khum hình đầu rắn, cánh và cẳng tay hình thân rắn.",
+      "Cần luyện sự nhẹ nhàng, mềm mại, uốn lượn thân mình và cả các chi, nhất là cánh, cẳng, bàn tay.",
+      "Dùng eo xoay người để tránh đòn, uốn mình tiến sát địch thủ, hoặc phát lực.",
+      "Thường đánh vào những chỗ hiểm (chọc mắt...).",
+      "Áp dụng tốt biên thân, di chuyển nhẹ nhàng bằng xoay 2 bàn chân mà không nhấc lên (có dùng cả Tấn chéo), tôn trọng tiến 3 bước lùi 3 bước (đạp cung trung).",
+      "Không có đòn đá trong toàn bài (vì rắn không có chân)."
+    ],
+    bookBenefits: [
+      "Rắn thuộc hành Thủy (chủ Thận) — Bài có tác dụng luyện Khí, bồi bổ Thận khí và làm mềm dẻo cột sống, khớp cổ tay.",
+      "Rèn luyện kỹ năng dùng eo xoay người biên thân, lướt nhẹ bàn chân và phóng chỉ pháp đánh vào huyệt hiểm."
+    ],
+    bookMantras: [
+      {
+        mantra: "Rắn thuộc Thủy (chủ Thận) — Bài có tác dụng luyện Khí",
+        explanation: "Nguyên lý Y Võ Ngũ Hành – Ngũ Tạng của Bài Xà Hình Quyền trong sách gốc (trang 118)."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: XÀ HÌNH QUYỀN. Người biểu diễn: Võ sư Lê Đắc Kiên. (Cuối bài Chiêu 37 tương tự Chiêu 36 đối xứng sang trái, Chiêu 38 lặp lại động tác 35.3, Bái Tổ kết thúc bài).",
     worldLineageContext: {
       globalName: "Snake Form (Xà Quyền / 蛇拳)",
       globalStanding: "Linh vật đại diện cho tính nhu nhuyễn thuần khiết nhất trong Ngũ Hình Nam Quyền.",
@@ -646,8 +974,29 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Hạ bàn trầm thấp: Tấn bộ vững chãi, tạo điểm tựa phóng lực toàn thân.",
       "Khí thế áp đảo: Phát lực dũng mãnh kèm theo tiếng thở dồn nén làm rúng động tinh thần địch thủ."
     ],
-    keyMantra: "Hổ hình luyện cốt • Khí thế trầm ổn • Kình lực sung mãn",
-    introQuote: "Hổ quyền chủ về luyện cốt. Luyện tập giúp xương cốt cứng cáp, gân lực dũng mãnh, phát kình chấn động toàn thân.",
+    keyMantra: "Hổ thuộc Kim (chủ Phế) • Làm mạnh cơ bắp & xương cốt • Đòn thẳng dũng mãnh, cẳng tay gióng",
+    introQuote: "Phỏng theo hoạt động của Hổ. Hổ thuộc Kim (chủ Phế). Bài có tác dụng làm mạnh cơ bắp. Tay nắm như quyền thông thường. Đòn dũng mãnh, sử dụng chủ yếu là đường thẳng, với cẳng tay linh hoạt (gióng). Hay dùng đòn khuỷu tay, lưng nắm tay uy lực mạnh mẽ, nhanh, linh hoạt.",
+    bookOriginalIntro: [
+      "3. Bài Hổ Hình Quyền (Trang 118–119): Phỏng theo hoạt động của Hổ. Hổ thuộc Kim (chủ Phế). Bài có tác dụng làm mạnh cơ bắp.",
+      "Tay nắm như quyền thông thường. Đòn dũng mãnh, sử dụng chủ yếu là đường thẳng, với cẳng tay linh hoạt (gióng). Hay dùng đòn khuỷu tay, lưng nắm tay uy lực mạnh mẽ, nhanh, linh hoạt."
+    ],
+    bookTrainingGuidelines: [
+      "Tay nắm như quyền thông thường; đòn đánh dũng mãnh, sử dụng chủ yếu là đường thẳng.",
+      "Rèn cẳng tay linh hoạt (gióng) để đỡ gạt và phản công đồng thời.",
+      "Hay dùng đòn khuỷu tay (trửu) và lưng nắm tay với uy lực mạnh mẽ, nhanh, linh hoạt.",
+      "Tôn trọng việc tiến 3 bước lùi 3 bước (đạp cung trung)."
+    ],
+    bookBenefits: [
+      "Hổ thuộc hành Kim (chủ Phế) — Bài có tác dụng làm mạnh cơ bắp, xương cốt và tăng cường dung tích Phế khí.",
+      "Tăng uy lực đòn thẳng, đòn khuỷu tay, lưng nắm tay và sức bật cẳng tay (gióng)."
+    ],
+    bookMantras: [
+      {
+        mantra: "Hổ thuộc Kim (chủ Phế) — Bài có tác dụng làm mạnh cơ bắp",
+        explanation: "Nguyên lý Y Võ Ngũ Hành – Ngũ Tạng của Bài Hổ Hình Quyền trong sách gốc (trang 118–119)."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: HỔ HÌNH QUYỀN. Người biểu diễn: Võ sư Đặng Danh Tuấn.",
     worldLineageContext: {
       globalName: "Tiger Form (Hổ Quyền / 虎拳)",
       globalStanding: "Hình tượng sức mạnh cương mãnh bậc nhất của Thiếu Lâm, đối trọng hoàn hảo với tính nhu của Xà quyền.",
@@ -685,8 +1034,34 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Tấn công chớp nhoáng: Xuất liên tiếp nhiều đòn trong một nhịp thở khiến đối phương không kịp chống đỡ.",
       "Bộ pháp thoăn thoắt: Lướt cự ly ngắn, đổi góc đánh liên tục làm hoa mắt đối thủ."
     ],
-    keyMantra: "Báo hình luyện lực • Thần tốc như lôi • Liên hoàn công phá",
-    introQuote: "Báo quyền chủ về luyện lực và tốc độ. Đòn thế phát ra chớp nhoáng, sắc bén, dồn dập khiến đối phương trở tay không kịp.",
+    keyMantra: "Báo thuộc Mộc (chủ Can) • Luyện gân • Báo chùy — Chung cổ tề minh",
+    introQuote: "Phỏng theo hoạt động của Báo. Báo thuộc Mộc (chủ Can). Bài nhằm luyện gân... Tay nắm chỉ với các ngón tay gấp lại (báo chùy). Tấn công nhanh, mạnh, hướng tấn công bất kỳ... Đánh 2 báo chùy vào 2 huyệt thái dương cùng một lúc là đòn rất hiểm (chung cổ tề minh).",
+    bookOriginalIntro: [
+      "4. Bài Báo Hình Quyền (Trang 119): Phỏng theo hoạt động của Báo. Báo thuộc Mộc (chủ Can). Bài nhằm luyện gân...",
+      "Tay nắm chỉ với các ngón tay gấp lại (báo chùy). Không dùng đòn đấm thông thường mà đánh với tay nắm kiểu tay báo. Đánh 2 báo chùy vào 2 huyệt thái dương cùng một lúc là đòn rất hiểm (chung cổ tề minh)."
+    ],
+    bookTrainingGuidelines: [
+      "Tay nắm chỉ với các ngón tay gấp lại (báo chùy); không dùng đòn đấm thông thường mà đánh với tay nắm kiểu tay báo.",
+      "Tấn công nhanh, mạnh, hướng tấn công bất kỳ.",
+      "Đánh bằng các khớp bàn, ngón tay, cổ tay, khuỷu tay pha các đòn cước đồng thời.",
+      "Luyện nhiều gân cổ tay và cánh, cẳng, bàn tay; tấn pháp di chuyển nhanh nhẹn theo nguyên tắc đạp cung trung.",
+      "Đòn hiểm đặc trưng: Đánh 2 báo chùy vào 2 huyệt thái dương cùng một lúc (chung cổ tề minh)."
+    ],
+    bookBenefits: [
+      "Báo thuộc hành Mộc (chủ Can — Can chủ cân) — Bài nhằm luyện gân, đặc biệt là gân cổ tay và cánh, cẳng, bàn tay.",
+      "Rèn luyện tốc độ bộc phát nhanh, mạnh, phối hợp đồng thời đòn báo chùy / khuỷu tay với đòn cước."
+    ],
+    bookMantras: [
+      {
+        mantra: "Báo thuộc Mộc (chủ Can) — Bài nhằm luyện gân",
+        explanation: "Nguyên lý Y Võ Ngũ Hành – Ngũ Tạng của Bài Báo Hình Quyền trong sách gốc (trang 119)."
+      },
+      {
+        mantra: "Chung cổ tề minh (Chuông trống cùng kêu)",
+        explanation: "Tuyệt kỹ đánh 2 báo chùy vào 2 huyệt thái dương đối phương cùng một lúc."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: BÁO HÌNH QUYỀN. Người biểu diễn: Võ sư Trần Bạch Tiến.",
     worldLineageContext: {
       globalName: "Leopard Form (Báo Quyền / 豹拳)",
       globalStanding: "Đại diện cho tốc độ bộc phát cực đại và sự hung hãn chớp nhoáng trong ngũ hình quyền truyền thống.",
@@ -716,6 +1091,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Ngũ Hình Quyền",
     categoryOrder: 4,
     formOrder: 14,
+    demonstrator: "Võ sư Nguyễn Hoàng Giang",
     meaning: "Hạc trắng trong sương — Luyện Tinh, thăng bằng thoát tục, điểm huyệt hiểm hóc",
     philosophy: "Hạc hình chủ luyện Tinh (sự tinh túy và tinh thần). Hạc đứng trên một chân vững như bàn thạch, cánh hạc xòe rộng hóa giải mọi đòn tấn công, mỏ hạc xỉa điểm huyệt với độ chính xác cao.",
     principles: [
@@ -723,8 +1099,30 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Độc lập tấn: Luyện thăng bằng đứng trên một chân, chân kia sẵn sàng tung cước hiểm vào hạ bộ hoặc gối đối phương.",
       "Điềm tĩnh thanh cao: Thần thái ung dung, lấy tĩnh chế động, lấy thăng bằng thắng hỗn loạn."
     ],
-    keyMantra: "Hạc hình luyện tinh • Điểm huyệt thanh linh • Độc lập thăng bằng",
-    introQuote: "Hạc quyền chủ về luyện tinh. Đòn đánh nhẹ nhàng, thanh thoát, tập trung vào sự thăng bằng ổn định và định vị mục tiêu chuẩn xác.",
+    keyMantra: "Hạc thuộc Hỏa (chủ Tâm) • Luyện Tinh • Cánh hạc dang rộng, hạc chùy mổ hiểm",
+    introQuote: "Phỏng theo hoạt động của Chim Hạc. Hạc thuộc Hỏa (chủ Tâm). Bài nhằm luyện Tinh. Hạc chiến đấu nhờ đôi cánh (quật rất khỏe), mỏ để mổ (hạc chùy) và bàn chân để quắp... Ngũ Mai Lão Ni đã xem trận Hạc - Rắn (hay Cáo) tranh hùng và Hạc đã thắng. Vì thích thú về cách đánh của nó mà Cụ nghĩ ra Bạch Hạc Quyền.",
+    bookOriginalIntro: [
+      "5. Bài Hạc Hình Quyền (Trang 119): Phỏng theo hoạt động của Chim Hạc. Hạc thuộc Hỏa (chủ Tâm). Bài nhằm luyện Tinh.",
+      "Hạc chiến đấu nhờ đôi cánh (quật rất khỏe), mỏ để mổ (hạc chùy) và bàn chân để quắp. Hạc có lợi là biết bay nên tiến gần hay vọt xa địch thủ rất nhanh và ra những đòn bất ngờ, hiểm hóc sau khi bình tĩnh chờ thời cơ.",
+      "Ngũ Mai Lão Ni đã xem trận Hạc - Rắn (hay Cáo) tranh hùng và Hạc đã thắng. Vì thích thú về cách đánh của nó mà Cụ nghĩ ra Bạch Hạc Quyền."
+    ],
+    bookTrainingGuidelines: [
+      "Bài Hạc chú trọng những đòn thế dang rộng (như cánh chim tung sang 2 bên).",
+      "Sử dụng đòn đánh bằng cẳng tay, khuỷu tay, lưng bàn tay, bàn tay cong các ngón (như bàn chân hạc), cạnh tay, mỏ hạc (hạc chùy) cùng những thế đá rộng.",
+      "Mã bộ giúp quay người 4 phía, có dùng cả Tấn chéo dành cho những cú đá xoay, tôn trọng tiến 3 bước lùi 3 bước (đạp cung trung).",
+      "Nhìn chung đòn rộng, dài, uy mãnh trông rất đẹp mắt."
+    ],
+    bookBenefits: [
+      "Hạc thuộc hành Hỏa (chủ Tâm) — Bài nhằm luyện Tinh, dưỡng Tâm thần và điều hòa huyết mạch.",
+      "Rèn luyện thăng bằng một chân, bộ pháp quay 4 phía, tấn chéo đá xoay và đòn hạc chùy / cánh hạc uy mãnh."
+    ],
+    bookMantras: [
+      {
+        mantra: "Hạc thuộc Hỏa (chủ Tâm) — Bài nhằm luyện Tinh",
+        explanation: "Nguyên lý Y Võ Ngũ Hành – Ngũ Tạng của Bài Hạc Hình Quyền trong sách gốc (trang 119)."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: HẠC HÌNH QUYỀN. Kết thúc ở Chiêu 32 (Tấn kiềm dương, hai tay đồng thời gạt chéo từ trong ra 2 bên ngoài. Bái Tổ - Kết thúc bài).",
     worldLineageContext: {
       globalName: "Crane Form (Hạc Quyền / 鶴拳 - White Crane Roots)",
       globalStanding: "Cội nguồn kỹ thuật trực tiếp nhất của Vịnh Xuân Quyền (bắt nguồn từ Bạch Hạc Phúc Kiến của Phương Thất Nương).",
@@ -737,7 +1135,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     pgvxUniqueness: {
       distinctiveFeatures: "Độc lập tấn đứng một chân cực kỳ vững chãi, chân giấu ngầm bên dưới sẵn sàng tung đòn triệt hạ khớp gối đối thủ một cách bất ngờ.",
-      biomechanicalMedicalValue: "Tác động đến kinh Tỳ (Hệ tiêu hóa), rèn luyện sự ổn định của khớp cổ chân, khớp gối và tăng cường chức năng thăng bằng của tiểu não.",
+      biomechanicalMedicalValue: "Theo sách gốc (trang 118–119), Hạc quyền thuộc hành Hỏa, chủ Tâm (hệ tim mạch và thần minh), giúp dưỡng Tâm an thần, điều hòa huyết mạch, đồng thời rèn luyện sự ổn định của khớp cổ chân, khớp gối và chức năng thăng bằng của tiểu não.",
       combatDoctrine: "Thanh linh điểm huyệt — Nhẹ nhàng như mây gió, dùng mỏ hạc mổ chính xác vào huyệt đạo then chốt kết thúc giao tranh."
     },
     globalBridge: {
@@ -754,6 +1152,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Ngũ Hình Quyền",
     categoryOrder: 4,
     formOrder: 15,
+    demonstrator: "Võ sư Nguyễn Hoàng Giang",
     meaning: "Ngũ thú hợp nhất — Tổng hòa linh hoạt các yếu lĩnh của Long, Xà, Hổ, Báo, Hạc",
     philosophy: "Hợp nhất trọn vẹn cả 5 linh thú: Thần của Rồng, Khí của Rắn, Cốt của Cọp, Lực của Báo, Tinh của Hạc. Võ sinh biến hóa không ngừng tùy theo thế đánh của đối phương, khi thì mềm mại như lụa, khi thì dũng mãnh như sét đánh.",
     principles: [
@@ -761,8 +1160,29 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Thân pháp biến ảo vô cùng: Không câu nệ một hình tướng, hòa quyện tự nhiên theo dòng chảy đối kháng.",
       "Nội ngoại tương hợp: Khí lực, gân cốt và tinh thần hòa làm một thể thống nhất."
     ],
-    keyMantra: "Ngũ thú quy nhất • Biến hóa vô cùng • Nội ngoại tương hợp",
-    introQuote: "Bài Ngũ hình tổng hợp là sự kết tinh toàn diện của 5 linh vật võ thuật, thể hiện nét đặc sắc nghệ thuật quyền pháp Phật Gia Vịnh Xuân.",
+    keyMantra: "Ngũ thú quy nhất • Đạp cung trung (Tiến 3 bước lùi 3 bước) • Hài hòa uyển chuyển",
+    introQuote: "6. Bài Ngũ Hình Tổng Hợp: Là bài võ có đủ cả 5 hình trên (Long, Xà, Hổ, Báo, Hạc), nối tiếp nhau một cách hài hòa uyển chuyển. Cả sáu bài đều tôn trọng việc tiến 3 bước lùi 3 bước (đạp cung trung).",
+    bookOriginalIntro: [
+      "6. Bài Ngũ Hình Tổng Hợp (Trang 119): Là bài võ có đủ cả 5 hình trên (Long, Xà, Hổ, Báo, Hạc), nối tiếp nhau một cách hài hòa uyển chuyển.",
+      "Cả sáu bài đều tôn trọng việc tiến 3 bước lùi 3 bước (đạp cung trung). Tiến lùi có thể theo xước mã, truy mã, hoặc lướt 2 bàn chân, trong 2 bài Xà, Hạc có dùng cả Tấn chéo...",
+      "Quyền cước đánh tương đối rộng, có những chỗ không hoàn toàn theo các khẩu quyết của Vịnh Xuân Quyền. Rất có thể đây là những bài võ hay, giúp võ sinh luyện tập các mặt có lợi cho võ học nên được thêm vào kho tàng Vịnh Xuân Quyền (bởi Cụ Nguyễn Tế Công hoặc các Sư phụ của Cụ là Hoắc Bảo Toàn, Phùng Thiếu Thanh)."
+    ],
+    bookTrainingGuidelines: [
+      "Chuyển tiếp liên hoàn đủ cả 5 hình: Long (vuốt rồng), Hổ (quyền thẳng dũng mãnh), Báo (báo chùy), Hạc (cánh hạc, hạc chùy), Xà (mỏ rắn xỉa) một cách hài hòa uyển chuyển.",
+      "Tuân thủ việc tiến 3 bước lùi 3 bước (đạp cung trung) bằng xước mã, truy mã hoặc lướt 2 bàn chân.",
+      "Luyện tập đối xứng cả hai bên ở các chiêu lặp lại (như Chiêu 22–23 đối xứng hai bên trước khi kết bài ở Chiêu 24)."
+    ],
+    bookBenefits: [
+      "Tổng hòa công năng của cả 5 bài: luyện Thần (Long - Tỳ), luyện Khí (Xà - Thận), làm mạnh cơ bắp & xương cốt (Hổ - Phế), luyện Gân (Báo - Can), luyện Tinh (Hạc - Tâm).",
+      "Giúp thân pháp, bộ pháp và thủ pháp biến hóa linh hoạt không câu nệ một hình tướng."
+    ],
+    bookMantras: [
+      {
+        mantra: "Đạp cung trung (Tiến 3 bước lùi 3 bước)",
+        explanation: "Nguyên tắc bộ pháp xuyên suốt cả 6 bài Ngũ Hình Quyền, giữ vững trục trung tâm trong khi biến hóa 5 hình thú."
+      }
+    ],
+    bookClosingNote: "Tên bài võ: NGŨ HÌNH TỔNG HỢP. Người biểu diễn: Võ sư Nguyễn Hoàng Giang.",
     worldLineageContext: {
       globalName: "Shaolin Five Animals Synthesis Form (五形綜合拳)",
       globalStanding: "Sự dung hợp hài hòa của quyền thuật mô phỏng tự nhiên, kết tinh trí tuệ của nền võ học phương Đông.",
@@ -803,8 +1223,36 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Song đao phối hợp: Một đao đỡ gạt khống chế vũ khí địch, một đao lập tức chém vào cổ tay hoặc yết hầu.",
       "Cước bộ linh hoạt: Kết hợp xước mã và đạp bộ nhanh nhẹn để nhập nội áp sát đối phương."
     ],
-    keyMantra: "Song đao mở rộng • Tiết kiệm động tác • Bát trảm đoạn môn",
-    introQuote: "Bát Trảm Đao là vũ khí tiêu biểu nhất của Vịnh Xuân Quyền. Đao ngắn gọn, thực dụng, kết hợp nhuần nhuyễn giữa kỹ thuật chém, đỡ và nhập nội.",
+    keyMantra: "Đơn đao khán thủ, song đao khán bộ • Đao như mãnh hổ • Vũ khí càng ngắn càng nguy hiểm",
+    introQuote: "Theo tôi hiểu thì Bộ Song Đao là quý nhất trong các vũ khí của VXQ... Bát Trảm Đao thuộc loại đao ngắn. Có câu: 'vũ khí càng ngắn càng nguy hiểm' (nhưng dùng hai đao lại thành ra dài)... Tập đao phải thật chú ý bộ pháp, thân pháp cho linh hoạt. Có câu: 'Đơn đao thì xem tay còn lại, song đao thì xem bộ pháp'.",
+    bookOriginalIntro: [
+      "CHƯƠNG V — VŨ KHÍ (Trang 185–188): Phật Gia Vịnh Xuân có không nhiều vũ khí. Thường được nói đến Bát Trảm Đao, Lục Điểm Bán Côn, Liễu Diệp Kiếm. Tuy nhiên, khi ở Hà Nội, Cụ Tế Công còn dạy: (1) Đao + Khiên: khiên đỡ, đao chém phối hợp rất uyển chuyển; (2) Đại đao cán dài kiểu Thanh Long Yến Nguyệt Đao; (3) Chùy dây (lưu tinh chùy — quả chùy gỗ tròn đường kính khoảng 15cm buộc vào sợi dây nhỏ dài hơn 2m; ông Đinh Công Niết, từng là Ủy viên Quốc Hội nước VNDCCH, mỗi tháng đi ngựa về Hà Nội học Cụ Tế Công môn này); (4) Phi tiêu: nhỏ như lá liễu, dài khoảng 14–15cm, tương truyền Cụ Tế Công chỉ lắc vẩy tay một lúc nhiều phi tiêu cắm sâu vào bảng gỗ phải lấy kìm mới nhổ được ra. Khi học trò liều hỏi thì Cụ Tế Công chỉ trả lời: 'Học sẽ biết à'.",
+      "Trong Trận Địa Chiến cũng cần dùng những thế võ đơn giản nhưng hiệu quả. Thích Kế Quang viết: 'Lâm trận, muôn người cùng tiến, muôn giáo cùng chĩa, vạn đao cùng chém, trở tay đã khó, đừng nói đến múa may tung hoành. Tùy ý tiến thoái, nhảy nhót, đâm chọc chỉ là hoa hòe, hoa sói, không có giá trị thực dụng'.",
+      "Nguyên tắc chung của Vũ Khí (Trang 186): Vũ khí nhìn chung là tay nối dài, do đó những yếu quyết, chiêu thức không khác biệt nhiều với quyền. Cũng có những thế tương tự như quyền: Khuyên, Trầm, Bàng, Than, Thích, Trát... (ví dụ: Khuyên đao, Than đao...). Cổ tay, khuỷu tay cần mềm, dẻo, khéo, nhanh và mạnh. Mã bộ cũng như đòn thế thường rộng hơn một chút; lực chủ yếu dồn vào chân sau nhưng khi đánh tới đích thì dồn cả sức, khí vào vũ khí (chủ yếu dùng tam giác mã và xước mã). Linh giác cũng được tập với vũ khí: niêm côn, niêm kiếm, niêm đao — tiến đến người và vũ khí hợp nhất, thành một dạng thiền động.",
+      "1. Bát Trảm Đao (Trang 187–188): Gọi thế vì có 8 đường đao chính. Có nhiều tên khác: Âm Dương Đoạt Mệnh Song Đao, Nhị Tự Song Đao, Hồ Điệp Đao v.v... Bộ Song Đao là quý nhất trong các vũ khí của VXQ. Trong thời gian đi giang hồ, Sư Tổ Tế Công thường mang theo hai cây que sắt (thiết xích) thay thế song đao để tránh bị nhà chức trách để ý. Đao dài bằng độ dài cẳng tay + bàn tay xòe (khoảng 50cm – 55cm), có chuôi cầm với một quai sắt để lồng tay vào, giúp quay cho đao tỳ trên cẳng tay để đánh đỡ gần rất linh hoạt. Sách xưa nói: 'Đao như mãnh hổ — đao ngắn càng ác liệt'."
+    ],
+    bookTrainingGuidelines: [
+      "Mỗi tay cầm một đao, thường thì một đánh, một đỡ; cũng có lúc dùng 2 đao cùng chém (thường là chém chéo).",
+      "Khi gặp binh khí nặng tấn công (như côn, chùy), phải chập 2 đao để đỡ, tránh đỡ vào đầu ngoài của côn/đao địch; tốt nhất là nhập nội, vừa đỡ vừa tấn công vào tay cầm vũ khí hay phần đốc vũ khí của địch.",
+      "Tập đao phải thật chú ý bộ pháp, thân pháp cho linh hoạt: 'Đơn đao thì xem tay còn lại, song đao thì xem bộ pháp'.",
+      "Nắm vững các thế đao cơ bản (than đao, bàng đao, canh đao, vấn đao, khuyên đao...) trước khi luyện 8 đoạn của bài Bát Trảm Đao (mỗi đoạn có một thế đao gồm nhiều thức)."
+    ],
+    bookBenefits: [
+      "Luyện cổ tay, khuỷu tay mềm, dẻo, khéo, nhanh, mạnh và phối hợp hai tay độc lập như cánh tay nối dài.",
+      "Rèn bộ pháp tam giác mã, xước mã nhập nội cận chiến khắc chế các loại binh khí dài và nặng.",
+      "Khi tập kèm hơi thở và tập trung ý nghĩ (niêm đao), bài tập trở thành một dạng thiền động."
+    ],
+    bookMantras: [
+      {
+        mantra: "Đơn đao thì xem tay còn lại, song đao thì xem bộ pháp (Đơn đao khán thủ, song đao khán bộ)",
+        explanation: "Khẩu quyết kinh điển khi luyện Bát Trảm Đao: dùng song đao cốt tử ở sự linh hoạt của bộ pháp và thân pháp nhập nội."
+      },
+      {
+        mantra: "Đao như mãnh hổ • Vũ khí càng ngắn càng nguy hiểm",
+        explanation: "Bát Trảm Đao thuộc loại đao ngắn (50–55cm), nhưng dùng hai đao phối hợp lại thành ra dài và cực kỳ hiểm hóc khi giáp lá cà."
+      }
+    ],
+    bookClosingNote: "Sau đây là bài Bát Trảm Đao do Võ sư Nguyễn Chí Kiên trình bày.",
     worldLineageContext: {
       globalName: "Baat Jaam Do (Eight Slash Butterfly Swords / 八斬刀)",
       globalStanding: "Trụ cột thứ sáu: 'Song đao mở rộng nguyên lý sang binh khí ngắn'. Rèn luyện phối hợp độc lập hai tay, bộ pháp, góc vận động và kiểm soát cự ly; củng cố tính tiết kiệm động tác (motion economy) đã học ở tay không.",
@@ -843,8 +1291,34 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Trung tuyến côn pháp: Giữ thân côn luôn chiếm đường giữa, kiểm soát hoàn toàn không gian trước mặt.",
       "Vững như bàn thạch: Tấn pháp trầm thấp, eo hông xoay mở tối đa để sinh lực phóng ra đầu côn."
     ],
-    keyMantra: "Côn rèn tầm dài • Khuếch đại sai số • Trực chỉ trung tâm",
-    introQuote: "Lục Điểm Bán Côn là môn binh khí dài độc đáo. Côn pháp tinh giản nhưng ẩn chứa kình lực sâu dày phát xuất từ toàn thân.",
+    keyMantra: "Lục điểm bán côn (Tỏa hầu, Trung bình, Dịch tự, Cái côn, Hạ khiêu, Hoành đả + 1/2 Lậu) • So côn",
+    introQuote: "Gọi là Lục Điểm Bán Côn vì có 6,5 thế đánh chính: Tỏa hầu (khóa hầu), Trung bình (trung bình), Dịch tự (rút mối), Cái côn (che đầu), Hạ khiêu (hất dưới), Hoành đả (đánh ngang). Và thế thứ bảy (tính 1/2 thế) là thế chỉ phòng ngự thôi (Lậu)... Một trong những thế đánh đặc biệt là so côn: đánh côn của mình song song với côn của đối thủ làm cho côn của họ bị rơi.",
+    bookOriginalIntro: [
+      "2. Lục Điểm Bán Côn (Trang 188–189): Theo nhiều tư liệu là do Chí Thiện Thiền Sư sáng tạo và được thêm vào Vịnh Xuân (qua Lương Nhị Tỷ). Côn của chi phái chúng tôi là Tề mi côn — về nguyên tắc là cao ngang lông mày. Các chi phái khác có thể dùng côn dài (trường côn), nếu cắm thêm mũi nhọn ở đầu thì thành thương. Có ý kiến (VS Lục Viễn Khai) cho rằng gọi là Lục Điểm Bán Côn vì côn có độ dài trung bình cộng (7,2 thước TQ) giữa Trường côn (9,6 thước TQ) và Đoản côn (4,8 thước TQ).",
+      "Gọi là Lục Điểm Bán Côn vì có 6,5 thế đánh chính: (1) Tỏa hầu (khóa hầu), (2) Trung bình, (3) Dịch tự (rút mối), (4) Cái côn (che đầu), (5) Hạ khiêu (hất dưới), (6) Hoành đả (đánh ngang), và thế thứ bảy (tính 1/2 thế) là thế chỉ phòng ngự thôi (Lậu). Ngoài ra còn có các biến chiêu như: Mục đồng suy tiêu (trẻ chăn trâu thổi sáo), Ô long bãi vĩ (rồng đen quất đuôi), Kim kê đốc mễ (gà vàng nhặt thóc)...",
+      "Một trong những thế đánh đặc biệt là 'so côn': đánh côn của mình song song với côn của đối thủ (như so 2 chiếc côn với nhau) làm cho côn của họ bị rơi. Tương truyền xưa Cụ Tế Công cho 5–6 học trò cầm côn trong nhà tối, mỗi người ngậm một nén hương (để soi sáng lờ mờ); Cụ cầm côn bước vào và chỉ một lúc là các học trò rơi hết côn!",
+      "Chi phái Cổ Lao có côn ba điểm rưỡi (Tam Điểm Bán Côn). Lương Bích kể lại: khi còn ở Phật Sơn, Lương Tán bàn luận về côn thuật với một cao thủ nói côn của mình chỉ có 2 thế (hai điểm); Lương Tán kết luận côn của mình kém hơn vì có những 6 thế rưỡi — ông cho rằng càng ít thế mà hữu hiệu thì càng tốt. Sau này về Cổ Lao, Lương Tán dạy côn chỉ có 3 thế rưỡi."
+    ],
+    bookTrainingGuidelines: [
+      "Sử dụng Tề mi côn (cao ngang lông mày) linh hoạt cho cận chiến: chân tay nhanh nhẹn, đánh theo tất cả các hướng.",
+      "Luyện thuần thục 6,5 thế côn chính (Tỏa hầu, Trung bình, Dịch tự, Cái côn, Hạ khiêu, Hoành đả và nửa thế phòng ngự Lậu) cùng các thế Mục đồng suy tiêu, Ô long bãi vĩ, Kim kê đốc mễ.",
+      "Lực chủ yếu dồn vào chân sau nhưng khi đánh tới đích thì dồn cả sức, khí vào đầu côn; tập thêm niêm côn (linh giác với côn) và kỹ thuật 'so côn' đánh rơi vũ khí đối phương."
+    ],
+    bookBenefits: [
+      "Rèn luyện sức mạnh cánh tay, cổ tay, bộ pháp vững chãi và khả năng phát kình dẫn khí ra tận đầu côn.",
+      "Làm chủ kỹ thuật niêm côn, nghe lực qua thân gỗ và đánh rơi binh khí địch (so côn)."
+    ],
+    bookMantras: [
+      {
+        mantra: "Tỏa hầu • Trung bình • Dịch tự • Cái côn • Hạ khiêu • Hoành đả • Bán điểm Lậu",
+        explanation: "Sáu thế đánh chính và nửa thế phòng ngự tạo nên danh xưng Lục Điểm Bán Côn trong giáo trình gốc (trang 189)."
+      },
+      {
+        mantra: "So côn — Đánh côn song song làm rơi côn đối thủ",
+        explanation: "Tuyệt kỹ đặc biệt của Sư Tổ Nguyễn Tế Công: dùng côn áp song song và phát thốn kình chấn rơi côn của 5–6 học trò trong phòng tối."
+      }
+    ],
+    bookClosingNote: "Sau đây là bài Lục Điểm Bán Côn do Võ sư Nguyễn Văn Chiến trình bày.",
     worldLineageContext: {
       globalName: "Luk Dim Boon Gwun (Six and a Half Point Pole / 六點半棍)",
       globalStanding: "Trụ cột thứ năm: 'Côn rèn lực và độ chính xác ở tầm dài'. Chiều dài 2.7m của côn khiến những sai lệch nhỏ ở chân - eo - tay trở nên rất rõ ràng ở đầu côn, giúp người tập tự chỉnh lại toàn bộ cấu trúc phát lực.",
@@ -875,7 +1349,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     category: "Kho Binh Khí",
     categoryOrder: 5,
     formOrder: 18,
-    demonstrator: "Võ sư Phật Gia Vịnh Xuân",
+    demonstrator: "Võ sư Nguyễn Văn Thắng",
     meaning: "Thanh kiếm mềm mại như lá liễu — Kiếm khí thanh linh, điểm huyệt thoát tục",
     philosophy: "Thanh kiếm mềm mại thanh thoát như lá liễu trước gió. Không dùng sức mạnh cơ bắp đối đầu trực diện với đao thương nặng, mà dùng mũi kiếm mượn đà trượt theo thân vũ khí đối phương, đâm điểm vào yếu huyệt chớp nhoáng.",
     principles: [
@@ -883,8 +1357,35 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Điểm kiếm, triệt kiếm: Dùng sống kiếm gạt trôi đòn tấn công, dùng mũi kiếm điểm vào khớp tay đối thủ.",
       "Thân kiếm hợp nhất: Người đi theo kiếm, kiếm dẫn dắt người, bộ pháp nhẹ nhàng không vương bụi trần."
     ],
-    keyMantra: "Kiếm khí thanh linh • Thân kiếm hợp nhất • Điểm huyệt như phong",
-    introQuote: "Liễu Diệp Kiếm mang nét đẹp thanh tao, thoát tục của Phật gia. Kiếm pháp đòi hỏi sự tĩnh lặng của tâm hồn và độ nhạy cảm phi thường của cổ tay.",
+    keyMantra: "Lục đại kiếm thế: Khuyên - Trầm - Trát - Thích - Phất - Lặc • Kiếm thân hợp nhất",
+    introQuote: "Rất ít chi phái Vịnh Xuân có kiếm thuật. Như tên gọi (Liễu Diệp Kiếm dịch nghĩa là 'Kiếm Lá Liễu'), kiếm của Phật Gia Vịnh Xuân không to lắm, thân nhẹ, dài khoảng 1m, có chuôi ngắn... Có 6 thế kiếm chính: Khuyên - Trầm - Trát - Thích - Phất - Lặc. Phải học cho thành thuộc từng thế một, vận động khéo léo, nhanh, nhạy, cổ tay cần vừa nhanh vừa có lực - rồi mới được tập bài.",
+    bookOriginalIntro: [
+      "3. Liễu Diệp Kiếm (Trang 189–190): Rất ít chi phái Vịnh Xuân có kiếm thuật. Như tên gọi (Liễu Diệp Kiếm dịch nghĩa là 'Kiếm Lá Liễu'), kiếm của Phật Gia Vịnh Xuân không to lắm, thân nhẹ, dài khoảng 1m, có chuôi ngắn.",
+      "Vì kiếm nhỏ, thanh, nên trong chiến đấu cần tránh đỡ trực diện với các vũ khí khác. Cổ tay đặc biệt cần mềm dẻo, lanh lẹ, linh hoạt — phối hợp với thân pháp, mã bộ uốn lượn tạo nên những đường kiếm lắt léo và nguy hiểm đến cùng cực.",
+      "Kiếm được coi là 'vua của các loại binh khí ngắn'. Thời Hán - Sở tranh hùng, tại Hồng Môn Yến, Phạm Tăng sai Hạng Trang múa kiếm nhằm hạ thủ Lưu Bang, may có Hạng Bá nhảy ra cùng múa lấy mình che cho Lưu Bang (Hạng Vũ bản kỷ). Từ thời Chiến Quốc đã có tục đeo kiếm để phòng thân, coi là 'pháp khí' của đạo sĩ, với những thanh kiếm nổi tiếng như Can Tương, Mạc Tà."
+    ],
+    bookTrainingGuidelines: [
+      "Có 6 thế kiếm chính: Khuyên - Trầm - Trát - Thích - Phất - Lặc. Phải học cho thành thuộc từng thế một, vận động khéo léo, nhanh, nhạy, cổ tay cần vừa nhanh vừa có lực — rồi mới được tập bài.",
+      "Vì kiếm nhỏ, thanh nên cần tránh đỡ trực diện với các vũ khí nặng khác; dùng cổ tay mềm dẻo, lanh lẹ phối hợp thân pháp uốn lượn.",
+      "Bộ pháp chủ yếu dùng xước mã, mã chéo, biên thân. Khi quay người phải gọn gàng nhưng vững chãi, di chuyển như chim bay cá nhảy.",
+      "Phối hợp tay, chân, thân pháp, khi tiến, khi lùi, lúc xoay chuyển, nhằm sơ hở của đối thủ mà xuất ra những đòn hóc hiểm, bất ngờ... khi cần, phối hợp cả quyền cước.",
+      "Thường dùng kiếm khó hơn các vũ khí khác nên phải rất chú ý tập trung tư tưởng, sử dụng phối hợp chân khí thì kiếm mới 'linh' (tiến tới cảnh giới 'kiếm thân hợp nhất')."
+    ],
+    bookBenefits: [
+      "Biểu diễn kiếm đẹp tuyệt vời nếu vẫn giữ được vẻ ung dung, tiêu sái, hư ảo.",
+      "Rèn luyện độ mềm dẻo, nhanh nhạy tối đa của cổ tay, sự tập trung tư tưởng cao độ và khả năng dẫn chân khí vào binh khí (kiếm thân hợp nhất)."
+    ],
+    bookMantras: [
+      {
+        mantra: "Khuyên - Trầm - Trát - Thích - Phất - Lặc",
+        explanation: "Sáu thế kiếm căn bản bắt buộc phải luyện thành thuộc từng thế một cho cổ tay vừa nhanh vừa có lực trước khi tập bài Liễu Diệp Kiếm."
+      },
+      {
+        mantra: "Kiếm thân hợp nhất • Sử dụng phối hợp chân khí thì kiếm mới linh",
+        explanation: "Tập trung tư tưởng, thả lỏng toàn thân, phối hợp hơi thở và chân khí để độ 'linh' của kiếm nhập vào người thành một thể thống nhất."
+      }
+    ],
+    bookClosingNote: "Sau đây là bài Liễu Diệp Kiếm do Võ sư Nguyễn Văn Thắng trình bày.",
     worldLineageContext: {
       globalName: "Willow Leaf Sword (Liễu Diệp Kiếm / 柳葉劍)",
       globalStanding: "Binh khí thanh thoát hiếm có mang phong vị thiền môn sâu đậm, bổ khuyết cho tính cương mãnh của đao và côn.",
@@ -955,6 +1456,17 @@ export const FORMS_18_STAGES = [
   }
 ];
 
+const FORM_INTRO_ALIAS: Record<string, string> = {
+  "bai-08": "bai-09",
+  "bai-08-1": "bai-09",
+  "bai-08-2": "bai-09",
+  "bai-11": "bai-10",
+  "bai-32": "con",
+  "bai-33": "lieu-diep-kiem",
+  "gioi-thieu-ngu-hinh": "bai-21",
+  "bai-20": "bai-21",
+};
+
 export function getFormIntro(formId: string): FormIntroduction | undefined {
-  return FORMS_18_INTRO[formId];
+  return FORMS_18_INTRO[formId] || FORMS_18_INTRO[FORM_INTRO_ALIAS[formId]];
 }

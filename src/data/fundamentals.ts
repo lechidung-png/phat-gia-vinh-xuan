@@ -168,21 +168,21 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
   },
   {
     id: "don-cui-cho",
-    nameVn: "Đòn Cùi Chỏ (Khuỷu Tay / Trửu Pháp)",
-    nameHán: "肘法",
+    nameVn: "Đòn Cùi Chỏ (Lục Chủng Trửu Pháp)",
+    nameHán: "肘法 (六種肘)",
     pinyin: "Zhǒu Fǎ",
     isSanShouCore: false,
     imgUrl: "/assets/images/fundamentals/cui_cho.png",
     level: "Đa Dụng",
-    shortDesc: "Đòn cận chiến hiệu quả. Dùng đầu khuỷu tay đánh vào các vị trí sơ hở trong cự ly áp sát.",
-    techniqueDetail: "Khuỷu tay là đòn thế có độ cứng vững cao trên cơ thể. Uy lực của đòn cùi chỏ lớn nhờ truyền trực tiếp toàn bộ khối lượng thân người qua xoay hông mà không qua khớp giảm chấn cổ tay. Khớp vai và khuỷu tay cần được rèn luyện linh hoạt.",
+    shortDesc: "Đòn cận chiến uy lực rất lớn. Gồm 6 kiểu đánh khuỷu tay chính (Lục chủng trửu): Cát trửu, Quải trửu, Bài trửu, Bình trửu, Hậu trửu, Đỉnh trửu.",
+    techniqueDetail: "Theo sách gốc (Trang 29–30), Phật Gia Vịnh Xuân có 6 kiểu đánh khuỷu tay (trửu) chính đánh đủ các hướng: (1) Cát trửu: dùng cùi chỏ đánh từ trên xuống; (2) Quải trửu: dùng cùi chỏ thúc ngang; (3) Bài trửu: dùng cùi chỏ đánh xéo; (4) Bình trửu: dùng cùi chỏ tạt ngang; (5) Hậu trửu: dùng cùi chỏ đánh ra sau; (6) Đỉnh trửu: dùng cùi chỏ đánh thốc từ dưới lên. Muốn có hiệu quả cao phải có khớp vai và khớp khuỷu linh hoạt, mềm dẻo và biết dùng thốn kình.",
     keyPoints: [
-      "Áp sát cự ly gần (Zero Distance)",
-      "Phát lực đồng thời từ xoay eo và đạp gót chân",
-      "Tay kia che chắn kín đáo bảo vệ mặt và sườn"
+      "Cát trửu (trên xuống), Quải trửu (thúc ngang), Bài trửu (đánh xéo)",
+      "Bình trửu (tạt ngang), Hậu trửu (đánh ra sau), Đỉnh trửu (thốc từ dưới lên)",
+      "Khớp vai và khớp khuỷu phải thật mềm dẻo, phát thốn kình ở cự ly gần"
     ],
-    combatApplication: "Đánh cùi chỏ thốc lên cằm, giật cùi chỏ ngang thái dương hoặc thúc cùi chỏ sau khi đối phương ôm vật.",
-    rhyme: "Trửu pháp cận thân giữ thế công • Khớp xoay linh hoạt chế ngự đòn."
+    combatApplication: "Đánh cùi chỏ bổ xuống phá kiều, thốc lên cằm, tạt ngang thái dương hoặc thúc cùi chỏ ra sau khi bị ôm khóa cận chiến.",
+    rhyme: "Lục chủng trửu pháp cận thân công • Khớp xoay linh hoạt chế ngự đòn."
   },
   {
     id: "khuyen-thu",
@@ -327,6 +327,78 @@ export const HAND_TECHNIQUES: HandTechnique[] = [
     ],
     combatApplication: "Đòn đánh sát thủ ở cự ly ôm sát, đẩy văng đối thủ ra xa hoặc làm gãy xương sườn địch thủ.",
     rhyme: "Điệp chưởng bướm lượn phát thốn kình • Cự ly gang tấc địch nghiêng ngả."
+  },
+  {
+    id: "canh-thu",
+    nameVn: "Canh Thủ (Tay Chém Chéo Phá Lộ)",
+    nameHán: "耕手",
+    pinyin: "Gēng Shǒu",
+    isSanShouCore: false,
+    imgUrl: "/assets/hinh-2x/p028-h06.png",
+    level: "Thấp (Bụng/Hạ Tiêu)",
+    shortDesc: "Bàn tay mở đánh chéo từ trên xuống vào cạnh sườn địch hoặc gạt chặn đòn đánh tầm trung – thấp.",
+    techniqueDetail: "Theo sách gốc (Trang 29): 'Canh thủ: Bàn tay mở đánh chéo từ trên xuống vào cạnh sườn địch.' Cẳng tay cắt chéo qua trục trung tuyến như lưỡi cày lật đất, vừa hất văng đòn tấn công tầm thấp của đối phương vừa chém cạnh bàn tay vào sườn địch.",
+    keyPoints: [
+      "Bàn tay mở phẳng, cạnh ngoài cẳng tay và bàn tay phát lực cắt chéo",
+      "Khuỷu tay không mở quá rộng khỏi khung sườn",
+      "Thường phối hợp đồng thời với một tay Hộ thủ hoặc Phục thủ ở tầng trên"
+    ],
+    combatApplication: "Hóa giải đòn đấm thốc bụng hoặc đòn đá tầm thấp, đồng thời phản đòn chém vào mạn sườn đối phương.",
+    rhyme: "Canh thủ cắt chéo tợ lưỡi cày • Phá đòn hạ lộ chém sườn ngay."
+  },
+  {
+    id: "ho-thu",
+    nameVn: "Hộ Thủ (Tay Dựng Đứng Hộ Trung Tuyến)",
+    nameHán: "護手",
+    pinyin: "Hù Shǒu",
+    isSanShouCore: false,
+    imgUrl: "/assets/hinh-2x/p028-h09.png",
+    level: "Trung (Chấn Thủy/Mỏ Ác)",
+    shortDesc: "Bàn tay dựng đứng tại trung tuyến, cùi chỏ thu sát ngực một nắm tay để hộ vệ trục sinh tử.",
+    techniqueDetail: "Theo sách gốc (Trang 29): 'Hộ thủ: Bàn tay dựng đứng tại trung tuyến.' Đây là thế tay phòng hộ cốt tử xuất hiện xuyên suốt trong đoạn Tam Bái Phật của Tiểu Niệm Đầu và luôn đi kèm làm tay bọc lót phía sau khi tay trước xuất đòn.",
+    keyPoints: [
+      "Bàn tay mở, các ngón khép tự nhiên dựng đứng ngay trên đường Tý Ngọ Tuyến",
+      "Khuỷu tay cách ngực đúng một nắm đấm",
+      "Cổ tay linh hoạt sẵn sàng chuyển thành Phục thủ, Phách thủ hoặc Xung chưởng"
+    ],
+    combatApplication: "Làm lá chắn thứ hai bảo vệ vùng mặt, cổ họng và chấn thủy khi tay trước đang giao tiếp với địch.",
+    rhyme: "Hộ thủ dựng đứng giữ trung tâm • Kín cổng cao tường chẳng ngại xâm."
+  },
+  {
+    id: "tram-thu",
+    nameVn: "Trầm Thủ (Đánh Cổ Tay Chìm Xuống)",
+    nameHán: "沉手",
+    pinyin: "Chén Shǒu",
+    isSanShouCore: false,
+    imgUrl: "/assets/hinh-2x/p028-h10.png",
+    level: "Trung (Chấn Thủy/Mỏ Ác)",
+    shortDesc: "Đánh cổ tay xuống ngắn và đanh, ít di động cẳng tay để triệt tiêu lực tay đối phương.",
+    techniqueDetail: "Theo sách gốc (Trang 29): 'Trầm thủ: Đánh cổ tay xuống ít di động cẳng tay.' Lực phát ra từ độ chìm của khuỷu tay và nhịp gập bật của khớp cổ tay mà không cần vung cả cánh tay.",
+    keyPoints: [
+      "Biên độ cẳng tay cực nhỏ, chủ yếu phát lực chìm từ cổ tay và khuỷu tay",
+      "Giữ nguyên cấu trúc trung tuyến không bị hở phần trên",
+      "Sau nhịp đánh trầm xuống lập tức phóng thẳng ngón tay hoặc chưởng"
+    ],
+    combatApplication: "Đè sập tay đỡ của đối phương xuống vài centimet để mở toang cánh cổng trung lộ ngay lập tức.",
+    rhyme: "Trầm thủ cổ tay giật ngắn đanh • Cẳng tay tĩnh tại kình lực nhanh."
+  },
+  {
+    id: "tam-khong-thu",
+    nameVn: "Tam Không Thủ (Đấm 3 Quyền Liên Tục)",
+    nameHán: "三空手",
+    pinyin: "Sān Kōng Shǒu",
+    isSanShouCore: false,
+    imgUrl: "/assets/hinh-2x/p029-h01.png",
+    level: "Trung (Chấn Thủy/Mỏ Ác)",
+    shortDesc: "Đấm ra 3 quyền Nhật tự liên tục theo đường thẳng trung tuyến.",
+    techniqueDetail: "Theo sách gốc (Trang 27): 'Đấm ra 3 quyền liên tục gọi là Tam không thủ. Đánh ra nhiều quyền liên tục trái – phải... gọi là Liên xung chùy (quyền).' Tổ hợp 3 quyền nối tiếp nhau giúp phá vỡ phản xạ đỡ nhịp một của đối thủ.",
+    keyPoints: [
+      "Ba nắm đấm Nhật tự quyền phóng liên tiếp trên đường thẳng ngắn nhất",
+      "Khuỷu tay luôn ở giữa thân (Thủ lưu trung tuyến)",
+      "Không thu tay về lấy đà mà quyền sau nối sát quyền trước (Vô thất quy)"
+    ],
+    combatApplication: "Phá vỡ thế phòng thủ của đối phương bằng nhịp đấm thứ nhất và thứ hai, dứt điểm bằng quyền thứ ba.",
+    rhyme: "Tam không ba quyền nối liền nhau • Trung tuyến xuyên thẳng chẳng dừng lâu."
   }
 ];
 
@@ -337,15 +409,15 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
     nameHán: "二字鉗羊馬",
     imgUrl: "/assets/images/fundamentals/tan_kiem_duong_authentic.png",
     category: "Tấn Pháp",
-    shortDesc: "Cốt lõi hạ bàn Vịnh Xuân: Cự ly hai chân hẹp (khoảng một bề ngang bàn chân), đầu gối hơi khuỵu khép che kín hạ môn, hai tay thu quyền sát nách.",
-    techniqueDetail: "Nguyên tắc khẩu quyết chuẩn mực: 'Đứng: theo Nhị tự Kiềm dương Mã, chỉ hơi khuỵu khớp gối một chút. Bàn chân hình chữ bát, nhưng khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Hai đầu gối khép nhẹ che kín 100% vùng hạ bộ, xương cụt thu, đỉnh đầu treo như dây dọi.",
+    shortDesc: "Cốt lõi hạ bàn Vịnh Xuân: Hai mũi chân quay vào nhau cách khoảng 1 bàn chân, hai gót chân mở rộng bằng 2 bàn chân; khi quay người 2 bàn chân song song cách nhau 1 bề ngang bàn chân.",
+    techniqueDetail: "Nguyên tắc khẩu quyết chuẩn mực trong sách gốc (Trang 20 & 25): 'Đứng theo Nhị tự Kiềm dương Mã, chỉ hơi khuỵu khớp gối một chút. Bàn chân hình chữ bát (hai mũi chân cách nhau khoảng 1 bàn chân, hai gót chân mở rộng bằng 2 bàn chân), nhưng khi quay người thì 2 bàn chân song song, cách nhau khoảng một bề ngang bàn chân.' Hai đầu gối khép nhẹ che kín 100% vùng hạ bộ, xương cụt thu, đỉnh đầu treo như dây dọi.",
     keyPoints: [
-      "Khoảng cách hai bàn chân hẹp (khoảng một bề ngang bàn chân)",
-      "Hai đầu gối hơi khuỵu khép vào trong che kín hạ bộ",
-      "Lưng thẳng, ngực hàm, xương cụt thu vào trong, đỉnh đầu treo như dây dọi",
-      "Trọng tâm phân bổ đều 50/50 trên hai bàn chân"
+      "Khi đứng tĩnh (chữ Bát): Hai mũi chân cách 1 bàn chân, hai gót chân cách 2 bàn chân",
+      "Khi quay người (Biên thân): Hai bàn chân song song cách nhau khoảng 1 bề ngang bàn chân",
+      "Hai đầu gối hơi khuỵu hướng vào trong che kín hạ bộ, lưng thẳng, ý thủ Đan điền",
+      "Chân bám chặt vào mặt đất như mọc rễ xuống (Lực do địa khởi)"
     ],
-    combatApplication: "Là bệ phóng cho toàn bộ 108 chiêu thức và bài Mộc Nhân. Giúp xoay trục né đòn trong nháy mắt mà không cần di chuyển vị trí bàn chân.",
+    combatApplication: "Là bệ phóng cho toàn bộ 18 bài quyền và binh khí. Giúp xoay trục né đòn trong nháy mắt mà không cần di chuyển vị trí bàn chân.",
     rhyme: "Kiềm Dương khép gối vững kiên cường • Hạ bộ che kín tỏa uy quang."
   },
   {
@@ -384,20 +456,20 @@ export const FOOT_STANCES: FootStanceTechnique[] = [
   },
   {
     id: "hlv-xuat-cuoc-full",
-    nameVn: "Tư Thế Chân Khi Xuất Cước (Cước Phạt Tầm Thấp)",
-    nameHán: "出腳式 / 低腿",
+    nameVn: "Cước Pháp & Đòn Gối Cầm Nã (Quyền 5 Cước 7)",
+    nameHán: "腿法 / 膝法 (拳五腳七)",
     imgUrl: "/assets/images/fundamentals/hlv_xuat_cuoc_full.png",
     category: "Cước Pháp",
-    shortDesc: "Chân trụ bám đất vững chắc, chân đá co gối dâng cao vuông góc bảo vệ hạ môn, cước phạt tầm thấp không quá thắt lưng.",
-    techniqueDetail: "Nguyên lý bất di bất dịch của Vịnh Xuân: 'Vô ảnh cước - Cước bất xuất tầm cao' (Đá không cao quá rốn). Khi xuất cước, đầu gối dâng cao vuông góc bảo vệ hạ bộ của mình trước khi phóng cước. Mũi chân chúc nhẹ hướng vào khớp gối, ống quyển hoặc mắt cá chân đối thủ. Chân trụ đứng vững, hai tay thủ ngực bảo vệ trung tuyến.",
+    shortDesc: "Nguyên lý 'Quyền 5 Cước 7': Vô ảnh cước, Tội tâm cước, Đoạt mệnh cước và đòn nâng cao đầu gối khống chế tay đối thủ (cầm nã) rồi quay mũi bàn chân đá móc lên.",
+    techniqueDetail: "Theo sách gốc (Trang 30 & 148): 'Nhìn chung cước mạnh hơn quyền (Quyền 5 cước 7)... Nếu hai người đòn tay bằng nhau thì ai cước hơn thì sẽ thắng.' Dù không đá cao trên thắt lưng nhưng có những đòn đá cực kỳ nguy hiểm: Vô ảnh cước, Tội tâm cước (Toái tâm cước), Đoạt mệnh cước. Đặc biệt khi cận chiến: 'Dâng cao đầu gối, khống chế tay đối thủ (cầm nã) và quay mũi bàn chân đá móc lên — đòn này rất hiểm hóc vì đối thủ không nhìn thấy cú đá (bị gối che lấp)'. Ngoài ra khi gặp dịp còn dùng cả vai, hông, mông, đầu, lưng.",
     keyPoints: [
-      "Đầu gối chân đá dâng cao che kín hạ bộ trước khi duỗi cước",
-      "Chỉ đá từ thắt lưng trở xuống (gối, cẳng chân, mắt cá)",
-      "Chân trụ hơi chùng giữ thăng bằng vững vàng",
-      "Hai tay vẫn giữ thế thủ chặt chẽ trước ngực"
+      "Quyền 5 Cước 7: Hai người đòn tay ngang nhau thì người giỏi cước hơn sẽ thắng",
+      "Tam đại tuyệt cước tầm thấp: Vô ảnh cước, Tội tâm cước, Đoạt mệnh cước",
+      "Đòn gối cầm nã đặc dị: Nâng gối khóa tay địch rồi xoay mũi bàn chân đá móc lên",
+      "Phối hợp các phần khác của cơ thể khi cận chiến: Hích vai, hông, mông, đầu, lưng"
     ],
-    combatApplication: "Đá triệt gối (Triệt cước), dẫm mắt cá chân, đá móc hất gót hạ bộ đối thủ trong lúc tay đang giằng co cận chiến.",
-    rhyme: "Cước xuất tầm thấp giấu bóng hình • Triệt gối gãy chân địch ngã lăn."
+    combatApplication: "Khống chế tay đối phương bằng đầu gối, đá móc từ điểm mù hoặc triệt hạ khớp gối, ống quyển, hạ bộ trong lúc tay đang giao thủ.",
+    rhyme: "Quyền năm cước bảy định hơn thua • Gối khóa chân móc địch khôn ngờ."
   },
   {
     id: "quy-ma-tan",
@@ -481,7 +553,7 @@ export const BASIC_DRILLS = [
       "Tay trái thu quyền sát nách; tay phải đưa ra trước ngực, khuỷu tay cách chéo áo 5-7cm ngang trên rốn.",
       "Chu kỳ 1 (Ngửa tay Than thủ): Đầu ngón tay giữa ở tâm O, đưa ra điểm B, xoay ngược kim đồng hồ B-M-A-N-B một vòng tròn. Lật úp bàn tay, đánh cổ tay sang trái từ B đến A.",
       "Chu kỳ 2 (Úp tay Phục thủ): Từ điểm A, quay cổ tay xuôi kim đồng hồ A-M-B-N-A một vòng tròn. Tại A lật ngửa bàn tay và đánh cổ tay từ A sang B trở về điểm xuất phát.",
-      "Đổi sang tay trái tập tương tự theo chiều đối xứng. Mục tiêu là cổ tay xoay tròn trịa mềm như ổ bi có dầu bôi trơn, cánh tay và cùi chỏ giữ tĩnh tại trung lộ."
+      "Dụng cụ chuẩn theo sách gốc (Trang 32): Có thể dùng một vòng tròn bằng tre hay kim loại, đường kính khoảng 18cm, treo cố định để tập quay cổ tay trong vòng đó mà không chạm vành."
     ],
     repetition: "100 lần xoay thuận + 100 lần xoay nghịch mỗi ngày (khoảng 15-20 phút)",
     martialPrinciple: "Cổ tay mềm thì kình lực mới lưu thông; tay cứng đờ thì không thể hóa giải đòn đấm đối phương.",
@@ -501,9 +573,9 @@ export const BASIC_DRILLS = [
     instructions: [
       "Đứng Tấn Kiềm Dương, hai tay thủ quyền dưới nách.",
       "Quay người tại chỗ: Hai bàn chân quay 30-45 độ, thân người quay 90 độ sang trái. Hai bàn chân song song cách nhau một bề ngang bàn chân, vai phải hướng ra trước (biên thân).",
+      "Trục xoay bàn chân chuẩn sách gốc (Trang 32): Lúc đầu có thể được phép nhấc nhẹ 2 gót chân, nhưng sau phải đặt xuống hoàn toàn và quay trên toàn bộ bàn chân. Điểm cố định sẽ là giữa bàn chân. Tránh quay với điểm cố định là mũi hay gót bàn chân.",
       "Quay người kết hợp quay tay: Vừa xoay thân vừa xuất Than thủ hoặc Phục thủ, trọng tâm dồn 70% vào chân sau, cảm nhận lực từ lòng đất đi lên cơ thể (Lực do địa khởi).",
-      "Hoành thoái 90° (sang trái) và Hoành thoái 270° (sang phải): Di chuyển vòng bàn chân ra sau đồng thời với quay người để chuyển hướng đánh vuông góc mà vẫn bám sát đối phương.",
-      "Cột sống giữ thẳng đứng như chiếc cột xoay quanh tim trục, không nghiêng ngả người."
+      "Hoành thoái 90° (sang trái) và Hoành thoái 270° (sang phải): Di chuyển vòng bàn chân ra sau đồng thời với quay người để chuyển hướng đánh vuông góc mà vẫn bám sát đối phương."
     ],
     repetition: "50 lần sang trái + 50 lần sang phải nhịp nhàng",
     martialPrinciple: "Thân bất ly trục, dĩ dật đãi lao - Lấy sự xoay chuyển nhẹ nhàng của thân thể để triệt tiêu lực ngàn cân của địch.",
