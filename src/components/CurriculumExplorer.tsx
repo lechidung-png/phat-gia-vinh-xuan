@@ -784,13 +784,19 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               </div>
             </div>
 
-            {/* Thanh Trụ Cột Tam Đại Bộ Quyền & KHO TỔNG HỢP 49 VIDEO CỦA ĐỦ 18 BÀI QUYỀN */}
+            {/* Thanh Trụ Cột Tam Đại Bộ Quyền & KHO TỔNG HỢP VIDEO CỦA ĐỦ 18 BÀI QUYỀN */}
             <div className="pt-4 border-t border-[#F5D06C]/25 space-y-4">
               <div className="p-3.5 rounded-2xl bg-gradient-to-r from-[#2A140B] via-[#1E0F09] to-[#160B06] border border-[#F5D06C]/40 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
                 <div className="space-y-0.5">
                   <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
-                    <span>Trụ Cột Nền Tảng: Tam Đại Bộ Quyền (20 Video Kinh Điển &amp; HD Sư Phạm)</span>
+                    <span>
+                      Trụ Cột Nền Tảng: Tam Đại Bộ Quyền (
+                      {getMasterVideosForForm("bai-07").length +
+                        getMasterVideosForForm("bai-09").length +
+                        getMasterVideosForForm("bai-10").length}{" "}
+                      Video Kinh Điển &amp; HD Sư Phạm)
+                    </span>
                   </div>
                   <p className="text-xs text-amber-100/85">
                     Ba bài quyền gốc rễ quyết định toàn bộ cấu trúc trung tuyến, chuyển mã phát kình và tuyệt kỹ cứu nguy của Vịnh Xuân Quyền:
@@ -802,19 +808,19 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                       id: "bai-07",
                       step: "1. Sơ Cấp",
                       name: "Tiểu Niệm Đầu",
-                      focus: "Tùng tĩnh • Lập Trung Tuyến (7 Video)",
+                      focus: `Tùng tĩnh • Lập Trung Tuyến (${getMasterVideosForForm("bai-07").length} Video)`,
                     },
                     {
                       id: "bai-09",
                       step: "2. Trung Cấp",
                       name: "Tầm Kiều",
-                      focus: "Chuyển Mã • Hợp Nhất Thân Bộ (7 Video)",
+                      focus: `Chuyển Mã • Hợp Nhất Thân Bộ (${getMasterVideosForForm("bai-09").length} Video)`,
                     },
                     {
                       id: "bai-10",
                       step: "3. Cao Cấp",
                       name: "Tiêu Chỉ",
-                      focus: "Phóng Chỉ • Cấp Trửu Cứu Nguy (6 Video)",
+                      focus: `Phóng Chỉ • Cấp Trửu Cứu Nguy (${getMasterVideosForForm("bai-10").length} Video)`,
                     },
                   ].map((core) => {
                     const isCoreActive = currentLesson.id === core.id;
@@ -844,7 +850,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                 </div>
               </div>
 
-              {/* DANH MỤC TOÀN CẢNH 49 VIDEO ĐẠI SƯ CỦA 18 BÀI QUYỀN & BINH KHÍ */}
+              {/* DANH MỤC TOÀN CẢNH VIDEO ĐẠI SƯ CỦA 18 BÀI QUYỀN & BINH KHÍ */}
               <div className="p-4 sm:p-5 rounded-2xl bg-[#120905] border border-[#F5D06C]/30 space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#F5D06C]/20 pb-3">
                   <div>
@@ -852,11 +858,13 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                       Thư Viện Video Toàn Phái • 18/18 Bài Quyền &amp; Binh Khí Đều Có Video Cụ Thể
                     </span>
                     <h5 className="text-sm sm:text-lg font-serif font-bold text-white">
-                      Tổng Hợp Toàn Bộ 49 Video Đại Sư Thị Phạm (Theo 5 Chặng Sư Phạm)
+                      Tổng Hợp Toàn Bộ{" "}
+                      {FORMS_18.reduce((sum, f) => sum + getMasterVideosForForm(f.id).length, 0)}{" "}
+                      Video Đại Sư Thị Phạm (Theo 5 Chặng Sư Phạm)
                     </h5>
                   </div>
                   <span className="px-3 py-1 rounded-full bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[#F5D06C] text-xs font-mono font-bold">
-                    49 Video Xác Thực YouTube oEmbed 100%
+                    {FORMS_18.reduce((sum, f) => sum + getMasterVideosForForm(f.id).length, 0)} Video Xác Thực YouTube oEmbed 100%
                   </span>
                 </div>
 

@@ -172,20 +172,6 @@ export const FORM_MASTER_VIDEOS: Record<string, MasterVideoItem[]> = {
       comparisonWithBook: "Cùng chung gốc truyền thừa từ Sư Tổ Nguyễn Tế Công tại Hà Nội với cố Võ sư Trần Thúc Tiển và PGS.TS Nguyễn Mạnh Nhâm."
     },
     {
-      id: "snt-ca-quyet-tieng-viet",
-      youtubeId: "F11pl-6HDlg",
-      title: "Tiểu Niệm Đầu — Tập chậm đồng bộ theo Ca quyết & Khẩu quyết Tiếng Việt",
-      masterName: "Tư Liệu Sư Phạm Vịnh Xuân Việt Nam",
-      lineageBadge: "Thị Phạm Nhịp Chậm • Phụ Đề Ca Quyết Việt Ngữ",
-      pedagogicalFocus: "Video nhịp chậm có thuyết minh/phụ đề tên từng thức và ca quyết bằng Tiếng Việt ngay trên màn hình, rất thuận tiện để võ sinh vừa nhìn vừa tập theo.",
-      watchPoints: [
-        "Theo dõi tên gọi tiếng Việt của từng chiêu thức (Than thủ, Hộ thủ, Phục thủ, Cầm thủ, Lan thủ...) xuất hiện đúng lúc tay chuyển động.",
-        "Nhịp độ chậm rãi giúp người học dễ dàng bắt kịp mà không bị cuống hay đứt nhịp thở.",
-        "Cách mở các ngón tay từ quyền sang chưởng mềm mại ở từng đoạn kết thúc."
-      ],
-      comparisonWithBook: "Khớp trực tiếp với hệ thống thuật ngữ Hán – Việt trong sách gốc Phật Gia Vịnh Xuân (Trang 36–42)."
-    },
-    {
       id: "snt-samuel-kwok",
       youtubeId: "S-uXeqglsBA",
       title: "Đại Sư Samuel Kwok thị phạm Tiểu Niệm Đầu chuẩn mực từng tiết đoạn",
