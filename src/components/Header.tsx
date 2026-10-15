@@ -46,36 +46,36 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 glass-panel border-b border-[#F5D06C]/30 shadow-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
+    <header className="sticky top-0 z-40 bg-[#140A06]/90 backdrop-blur-xl border-b border-white/10 shadow-xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3 sm:gap-6">
         
         {/* Logo & Title */}
         <div
-          className="flex items-center gap-2.5 sm:gap-3 cursor-pointer select-none shrink-0"
+          className="flex items-center gap-3 sm:gap-3.5 cursor-pointer select-none shrink-0"
           onClick={() => handleSelectNav("welcome")}
         >
-          <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden shadow-lg shadow-red-950/40 border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] hover:scale-105 transition-transform">
+          <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden shadow-lg shadow-red-950/40 border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] hover:scale-105 transition-transform">
             <Image
               src="/assets/images/logo/an_vuong_phat_gia_vinh_xuan.png"
               alt="Ấn Vuông Phật Gia Vịnh Xuân"
               fill
-              sizes="(max-width: 640px) 40px, 44px"
+              sizes="48px"
               className="object-contain p-0.5"
               priority
             />
           </div>
           <div>
-            <h1 className="font-bold text-sm sm:text-base tracking-wide gold-gradient leading-tight uppercase font-serif">
+            <h1 className="font-bold text-base sm:text-lg tracking-wide gold-gradient leading-tight uppercase font-serif">
               Phật Gia Vịnh Xuân
             </h1>
-            <p className="text-[10px] sm:text-xs text-amber-200/80 tracking-wider">
+            <p className="text-xs text-amber-200/80 tracking-wider mt-0.5">
               Di Sản Võ Học Cổ Truyền
             </p>
           </div>
         </div>
 
-        {/* Desktop Navigation Menu (Visible on lg & up, No Scrollbar, Perfectly Spaced) */}
-        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+        {/* Desktop Navigation Menu (Spacious Pill Navigation) */}
+        <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -83,10 +83,10 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={item.id}
                 onClick={() => handleSelectNav(item.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition-all whitespace-nowrap cursor-pointer ${
                   isActive
-                    ? "bg-[#E2B743] text-black font-bold shadow-md shadow-[#E2B743]/20"
-                    : "text-slate-300 hover:text-white hover:bg-[#20150F]"
+                    ? "bg-[#F5D06C] text-[#1E0C06] font-bold shadow-md shadow-[#F5D06C]/20"
+                    : "text-amber-100/80 hover:text-white hover:bg-white/8"
                 }`}
               >
                 <Icon className="w-4 h-4" />
@@ -97,21 +97,21 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Right Action Icons: Font Size Switcher + Search + Mobile Menu Toggle */}
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
 
           {/* Bộ điều chỉnh cỡ chữ chống mỏi mắt (Desktop) */}
           <FontSizeControls className="hidden sm:inline-flex" />
 
-          {/* Search Trigger (Chuẩn Touch Target >= 44px trên Mobile) */}
+          {/* Search Trigger (Chuẩn Touch Target >= 44px) */}
           <button
             onClick={openSearch}
             title="Tra cứu nhanh võ học (Ctrl+K)"
             aria-label="Tra cứu nhanh võ học (Ctrl+K)"
-            className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 py-2 rounded-xl bg-[#140C08] border border-[#3D291F] hover:border-[#E2B743]/50 text-slate-300 hover:text-white transition-all text-xs cursor-pointer shadow-inner"
+            className="flex items-center justify-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/5 border border-white/15 hover:border-[#F5D06C]/60 text-amber-100 hover:text-white transition-all text-xs sm:text-sm cursor-pointer"
           >
-            <Search className="w-4 h-4 text-[#E2B743]" />
-            <span className="hidden sm:inline text-xs text-slate-300 font-medium">Tra cứu</span>
-            <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] bg-[#2A1C14] rounded border border-[#3D291F] text-amber-200/80 font-mono">
+            <Search className="w-4 h-4 text-[#F5D06C]" />
+            <span className="hidden sm:inline font-medium">Tra cứu</span>
+            <kbd className="hidden xl:inline-block px-2 py-0.5 text-xs bg-black/40 rounded-full border border-white/10 text-amber-200/80 font-mono">
               Ctrl+K
             </kbd>
           </button>

@@ -10,10 +10,10 @@
     --foreground-sub: #F7E7D9;
     --foreground-muted: #D9C3B4;
     
-    --card: rgba(78, 30, 24, 0.85);
-    --card-subtle: rgba(58, 22, 17, 0.72);
-    --card-border: rgba(245, 208, 108, 0.35);
-    --card-border-gold: rgba(245, 208, 108, 0.6);
+    --card: rgba(34, 15, 11, 0.82);
+    --card-subtle: rgba(24, 11, 8, 0.72);
+    --card-border: rgba(245, 208, 108, 0.22);
+    --card-border-gold: rgba(245, 208, 108, 0.45);
 
     --gold: #F5D06C;
     --gold-light: #FFF3B8;
@@ -22,8 +22,8 @@
     --cinnabar: #DC2626;
     --jade: #10B981;
 
-    --card-shadow: 0 20px 45px -8px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.16);
-    --card-shadow-hover: 0 25px 50px -10px rgba(245, 208, 108, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    --card-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    --card-shadow-hover: 0 28px 54px -12px rgba(245, 208, 108, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.16);
 
     /* Typography Tiếng Việt Chuẩn Mực */
     --font-sans: var(--font-be-vietnam), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -34,20 +34,20 @@
     max-width: 100vw;
     overflow-x: clip;
     -webkit-text-size-adjust: 100%;
-    font-size: 16px;
+    font-size: 16.5px;
     transition: font-size 0.2s ease-in-out;
   }
 
   html[data-font-size="normal"] {
-    font-size: 16px;
+    font-size: 16.5px;
   }
 
   html[data-font-size="large"] {
-    font-size: 18px;
+    font-size: 18.5px;
   }
 
   html[data-font-size="extra"] {
-    font-size: 20px;
+    font-size: 20.5px;
   }
 
   body {
