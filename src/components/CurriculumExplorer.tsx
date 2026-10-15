@@ -260,6 +260,15 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                   <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/70 border border-emerald-700/40 px-1.5 py-0.5 rounded font-bold">
                     {currentLesson.motions.length} thế
                   </span>
+                  {(currentFormIntro.category === "Tam Đại Quyền" ||
+                    currentFormIntro.category === "108 Thế Liên Hoàn") && (
+                    <span
+                      className="text-[10px] font-serif italic font-semibold text-amber-200 bg-[#2A150B] border border-[#F5D06C]/45 px-2 py-0.5 rounded hidden sm:inline-flex items-center gap-1"
+                      title="Châm ngôn cốt lõi của các bài quyền cơ bản: Cấu trúc chuẩn xác trước, Tốc độ theo sau"
+                    >
+                      &ldquo;Structure before Speed&rdquo; • Cấu trúc trước Tốc độ
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-baseline gap-1.5 mt-0.5">
                   <h2 className="text-base sm:text-xl font-bold font-serif text-white truncate">
@@ -788,18 +797,21 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
             <div className="pt-4 border-t border-[#F5D06C]/25 space-y-4">
               <div className="p-3.5 rounded-2xl bg-gradient-to-r from-[#2A140B] via-[#1E0F09] to-[#160B06] border border-[#F5D06C]/40 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
                 <div className="space-y-0.5">
-                  <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5">
+                  <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-1.5 flex-wrap">
                     <Sparkles className="w-3.5 h-3.5 text-[#F5D06C]" />
                     <span>
                       Trụ Cột Nền Tảng: Tam Đại Bộ Quyền (
                       {getMasterVideosForForm("bai-07").length +
                         getMasterVideosForForm("bai-09").length +
                         getMasterVideosForForm("bai-10").length}{" "}
-                      Video Kinh Điển &amp; HD Sư Phạm)
+                      Video Đại Sư)
+                    </span>
+                    <span className="px-2 py-0.5 rounded bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-amber-200 font-serif italic normal-case">
+                      &ldquo;Structure before Speed&rdquo;
                     </span>
                   </div>
                   <p className="text-xs text-amber-100/85">
-                    Ba bài quyền gốc rễ quyết định toàn bộ cấu trúc trung tuyến, chuyển mã phát kình và tuyệt kỹ cứu nguy của Vịnh Xuân Quyền:
+                    Châm ngôn cốt tủy <strong className="text-[#F5D06C]">&ldquo;Structure before Speed&rdquo; (Cấu trúc trước Tốc độ)</strong> — Ba bài quyền gốc rễ quyết định toàn bộ cấu trúc trung tuyến, chuyển mã phát kình và tuyệt kỹ cứu nguy:
                   </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 shrink-0">
@@ -1687,6 +1699,12 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                                         &ldquo;{intro.meaning}&rdquo;
                                       </p>
                                     )}
+                                    {(intro?.category === "Tam Đại Quyền" ||
+                                      intro?.category === "108 Thế Liên Hoàn") && (
+                                      <span className="inline-block mt-1.5 px-2 py-0.5 rounded bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[10px] font-serif italic text-[#F5D06C]">
+                                        &ldquo;Structure before Speed&rdquo;
+                                      </span>
+                                    )}
                                   </div>
                                 </div>
                               </div>
@@ -1779,6 +1797,12 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                                 <p className="text-xs text-amber-200/80 line-clamp-2 mt-1 font-serif italic">
                                   &ldquo;{intro.meaning}&rdquo;
                                 </p>
+                              )}
+                              {(intro?.category === "Tam Đại Quyền" ||
+                                intro?.category === "108 Thế Liên Hoàn") && (
+                                <span className="inline-block mt-1.5 px-2 py-0.5 rounded bg-[#F5D06C]/15 border border-[#F5D06C]/35 text-[10px] font-serif italic text-[#F5D06C]">
+                                  &ldquo;Structure before Speed&rdquo;
+                                </span>
                               )}
                             </div>
                           </div>

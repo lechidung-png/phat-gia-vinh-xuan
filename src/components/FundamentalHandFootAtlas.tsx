@@ -735,8 +735,11 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
             手
           </div>
           <div>
-            <div className="text-[11px] font-semibold tracking-wider text-amber-300 uppercase">
-              Khẩu Quyết Tâm Pháp Vịnh Xuân Quyền
+            <div className="text-[11px] font-semibold tracking-wider text-amber-300 uppercase flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+              <span>Khẩu Quyết Tâm Pháp Vịnh Xuân Quyền</span>
+              <span className="px-2 py-0.5 rounded bg-amber-500/20 border border-amber-500/40 text-amber-200 font-serif italic normal-case">
+                &ldquo;Structure before Speed&rdquo;
+              </span>
             </div>
             <p className="font-bold text-sm sm:text-base text-white font-serif mt-0.5">
               &quot;{SAN_SHOU_CORE_MOTO}&quot;
@@ -744,7 +747,7 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
           </div>
         </div>
         <div className="text-xs text-amber-200/80 font-mono shrink-0">
-          Tam Thủ: Than Thủ • Bàng Thủ • Phục Thủ
+          Cấu trúc trước Tốc độ • Tam Thủ: Than • Bàng • Phục
         </div>
       </div>
 

@@ -12,42 +12,42 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   // 1. TIỂU NIỆM ĐẦU
   "01-tieu-niem-dau": {
     kieu: "Khởi Môn Định Hình",
-    khauQuyet: "Ý thủ đan điền • Trực chỉ trung tuyến • Nhu hòa phát kình • Tùy cơ ứng biến.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Ý thủ đan điền • Trực chỉ trung tuyến • Nhu hòa phát kình.",
     yeuLinh: "Nhị Tự Kiềm Dương Tấn chân hẹp hơn vai, hai đầu gối khép hướng tâm che hạ bộ. Cùi chỏ ghì sát sườn cự ly 1 nắm đấm. Xoay cổ tay (Khẩu thủ) mượn lực xoắn gân, thở bằng bụng tự nhiên.",
     cotTu: [
+      "Structure before Speed: Định hình chuẩn xác cấu trúc xương khớp trước khi nghĩ đến tốc độ.",
       "Không gồng cứng cơ bắp; chuyển động mềm mại như nước chảy để tích lũy nội kình.",
-      "Khép hai đầu gối hướng tâm bảo vệ hạ bàn, không choãi chân làm hở cửa dưới.",
-      "Mắt nhìn thẳng tầm mắt đối phương, duy trì thần thái trầm tĩnh an định."
+      "Khép hai đầu gối hướng tâm bảo vệ hạ bàn, mắt nhìn thẳng thần thái an định."
     ]
   },
   "bai-07": {
     kieu: "Khởi Môn Định Hình",
-    khauQuyet: "Tiểu Niệm Đầu tâm tư bất tranh • Trọng tâm hạ trầm kiềm dương • Nhật tự xung quyền trung tuyến khai thông.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiểu Niệm Đầu tâm tư bất tranh • Trọng tâm hạ trầm kiềm dương • Nhật tự xung quyền trung tuyến khai thông.",
     yeuLinh: "Nhị Tự Kiềm Dương Tấn chân hẹp hơn vai, hai đầu gối khép hướng tâm. Cùi chỏ ghì sát mạn sườn, xuất lực xoay cổ tay mượn kình từ gân cốt.",
     cotTu: [
+      "Structure before Speed: Rèn cấu trúc chuẩn xác từng milimet trong trạng thái chậm rãi.",
       "Cùi chỏ thủ trung tuyến, không mở nách làm hở sườn.",
-      "Hạ trầm đan điền, giữ cột sống thẳng đứng tự nhiên.",
-      "Tập chậm rãi để kiểm soát từng thớ cơ và đường đi của lực."
+      "Hạ trầm đan điền, giữ cột sống thẳng đứng tự nhiên."
     ]
   },
 
   // 2. TẦM KIỀU
   "02-tam-kieu": {
     kieu: "Nhập Nội Bắc Nhịp",
-    khauQuyet: "Hữu kiều độ kiều, vô kiều tầm kiều • Lạc bộ sinh kình, chuyển thân hóa lực • Song Bàng biến ảo.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Hữu kiều độ kiều, vô kiều tầm kiều • Lạc bộ sinh kình, chuyển thân hóa lực.",
     yeuLinh: "Xoay trục hông 90° - 180° né đòn đối kháng, dùng Song Bàng Thủ và Lan Thủ triệt tiêu đòn đấm thẳng. Nhập nội cự ly gần bằng bước tam giác đè chân đối phương.",
     cotTu: [
+      "Structure before Speed: Giữ vững kết nối đồng trục tay - eo - chân trong suốt quá trình di chuyển.",
       "Xoay hông nhưng không nhấc gót chân làm mất trọng tâm hạ bàn.",
-      "Cùi chỏ dẫn đường cho bàn tay, không vung tay quá rộng khỏi trung lộ.",
       "Đón lực rồi mượn lực xoay hướng, không dùng sức thô chặn đối đầu."
     ]
   },
   "bai-09": {
     kieu: "Nhập Nội Bắc Nhịp",
-    khauQuyet: "Hữu kiều độ kiều, vô kiều tầm kiều • Xoay trục né quyền, nhập môn khóa gối.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Hữu kiều độ kiều, vô kiều tầm kiều • Xoay trục né quyền, nhập môn khóa gối.",
     yeuLinh: "Xoay eo đổi góc 45° - 90°, cùi chỏ áp sát sườn. Khi cầu nối (tay đối phương) chạm vào lập tức dính sát không rời, chân lướt vào áp sát.",
     cotTu: [
-      "Chuyển tấn nhịp nhàng giữa Kiềm Dương và Đinh Tấn xoay.",
+      "Structure before Speed: Bảo toàn cấu trúc nguyên khối khi chuyển tấn Kiềm Dương sang Trắc Thân.",
       "Cẳng tay luôn duy trì áp lực nêm hướng về trung tâm đối thủ.",
       "Phối hợp đòn cước tầm thấp triệt hạ bộ khi đối phương tiến bước."
     ]
@@ -56,21 +56,21 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   // 3. TIÊU CHỈ
   "03-tieu-chi": {
     kieu: "Kỹ Pháp Cứu Nguy",
-    khauQuyet: "Tiêu Chỉ bất xuất môn • Phóng tiêu như đạn, thoát hiểm nan sinh • Khử khẩn quy viên.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiêu Chỉ bất xuất môn • Phóng tiêu như đạn, thoát hiểm nan sinh.",
     yeuLinh: "Phóng đầu ngón tay xuyên phá hiểm hóc (mắt, yết hầu, nách). Động tác vung chém xoay tròn thoát khỏi gọng kìm khống chế, lật ngược thế cờ trong gang tấc.",
     cotTu: [
-      "Chỉ xuất thủ khi bị áp chế mất thế hoặc thất thế trung tuyến.",
+      "Structure before Speed: Phục hồi cấu trúc trung tuyến ngay lập tức trước khi bộc phát tốc độ.",
       "Cổ tay và ngón tay phải luyện dẻo dai để tránh tổn thương khi đâm xỉa.",
       "Thân pháp xoay chuyển đột ngột giải phóng toàn bộ kình lực tích tụ."
     ]
   },
   "bai-10": {
     kieu: "Kỹ Pháp Cứu Nguy",
-    khauQuyet: "Tiêu Chỉ hộ mệnh • Xuyên thấu hiểm huyệt, cứu nguy phá vây.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiêu Chỉ hộ mệnh • Xuyên thấu hiểm huyệt, cứu nguy phá vây.",
     yeuLinh: "Tập trung lực ở đầu 4 ngón tay duỗi thẳng, cùi chỏ đóng vai trò đòn bẩy. Vừa né tránh vừa phản công vào các tử huyệt thượng bàn.",
     cotTu: [
+      "Structure before Speed: Dùng cấu trúc đòn bẩy cùi chỏ và xoay eo để tạo gia tốc thay vì gồng bắp tay.",
       "Gân ngón tay phải khóa cứng đúng thời điểm tiếp xúc mục tiêu.",
-      "Xoay eo hết biên độ để gia tăng uy lực ly tâm cho ngón tay.",
       "Hồi thủ lập tức về thế thủ bảo vệ mặt sau khi phóng đòn."
     ]
   },
@@ -78,29 +78,29 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   // 4. BÀI 108 TẠI CHỖ & TIẾN LÙI (ĐƠN LUYỆN)
   "04-108-don-luyen": {
     kieu: "Đại Pháp Đơn Luyện",
-    khauQuyet: "Bách bát liên hoàn bất đoạn kình • Nhất động toàn thân câu động • Khép chặt hạ môn.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Bách bát liên hoàn bất đoạn kình • Nhất động toàn thân câu động.",
     yeuLinh: "108 động tác liên hoàn tại chỗ. Luyện phối hợp Than - Bàng - Phục cùng các thế xỉa chưởng, thung kình và câu thủ trong tư thế hạ bàn bất động.",
     cotTu: [
-      "Đòn nọ nối tiếp đòn kia mượt mà, không dừng ngắt quãng.",
+      "Structure before Speed: Tập cốt lấy khuôn chuẩn xác trước khi tập nhanh hay xuất kình.",
       "Hạ bàn giữ nguyên tấn kiềm dương, chân bám chặt sàn như rễ cây.",
       "Hơi thở nhịp nhàng theo từng nhịp ra đòn và thu quyền."
     ]
   },
   "bai-12": {
     kieu: "Đại Pháp Đơn Luyện",
-    khauQuyet: "108 thế liên hoàn tại chỗ • Đơn luyện thuần thục, thấu suốt âm dương.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • 108 thế liên hoàn tại chỗ • Đơn luyện thuần thục, thấu suốt âm dương.",
     yeuLinh: "Rèn luyện sự dẻo dai của khớp vai, cùi chỏ và cổ tay qua 108 tư thế biến hóa. Giữ trục cột sống thẳng đứng, đan điền tích khí.",
     cotTu: [
-      "Mỗi thế đòn phải đạt chuẩn góc nêm 135° của tam giác sinh lực.",
+      "Structure before Speed: Mỗi thế đòn phải đạt chuẩn góc nêm 135° của tam giác sinh lực trước khi tăng tốc.",
       "Không gồng vai làm tắc nghẽn kinh mạch và giảm tốc độ phát đòn.",
-      "Tập trung tinh thần quán tưởng đối thủ đang ở trước mặt."
+      "Tập trung tinh thần quán tưởng đối thủ đang ở trước mặt (Không Thông)."
     ]
   },
 
   // 5. BÀI 108 ĐỐI LUYỆN (SONG ĐẤU 2 NGƯỜI)
   "05-108-doi-luyen": {
     kieu: "Đối Kháng Thực Chiến",
-    khauQuyet: "Thính kình hiểu lực, mượn sức đánh sức • Cầm nã khóa siết, triệt quyền xuyên tâm.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Thính kình hiểu lực, mượn sức đánh sức • Cầm nã khóa siết, triệt quyền xuyên tâm.",
     yeuLinh: "Hai người A & B đối diện tập hóa giải đòn thế. Luyện cảm giác tiếp xúc tay (niêm thủ), bẻ khóa cổ tay, cùi chỏ và phản đòn lập tức khi phát hiện sơ hở.",
     cotTu: [
       "Không đối đầu sức mạnh cơ bắp; trượt đòn đối phương bằng góc nghiêng.",
@@ -110,7 +110,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
   "bai-13": {
     kieu: "Đối Kháng Thực Chiến",
-    khauQuyet: "108 thế đối luyện tại chỗ • Cầm nã hóa giải, song quyền tương triệt.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • 108 thế đối luyện tại chỗ • Cầm nã hóa giải, song quyền tương triệt.",
     yeuLinh: "Người đánh người đỡ phối hợp nhịp nhàng. Tập thói quen phản xạ không cần suy nghĩ khi cánh tay chạm đối thủ.",
     cotTu: [
       "Khống chế lực vừa phải để bảo vệ an toàn cho bạn đồng môn.",
@@ -122,7 +122,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   // 6. 108 TIẾN LÙI
   "06-108-tien-lui-don": {
     kieu: "Bộ Pháp Tiến Lùi",
-    khauQuyet: "Bộ pháp như thuyền lướt nước • Khoa chân vẽ vòng tròn • Tiến như gió cuốn, thoái như bóng mây.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Bộ pháp như thuyền lướt nước • Khoa chân vẽ vòng tròn.",
     yeuLinh: "Phối hợp Đinh Tấn và bước chân hình bán nguyệt (Khoa bộ). Vừa di chuyển tiến lùi vừa phát đòn chém, đấm bồi và hoành thoái né tránh.",
     cotTu: [
       "Bàn chân lướt sát mặt đất, không nhảy chồm chồm làm mất thăng bằng.",
@@ -132,7 +132,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
   "bai-14": {
     kieu: "Bộ Pháp Tiến Lùi",
-    khauQuyet: "Tiến thoái như ý • Khoa chân né đòn, chớp thời cơ dứt điểm.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiến thoái như ý • Khoa chân né đòn, chớp thời cơ dứt điểm.",
     yeuLinh: "Di chuyển liên tục trên trục thẳng và chéo 45 độ, duy trì thế thủ trước ngực trong mọi bước chuyển dịch.",
     cotTu: [
       "Không bắt chéo chân làm vướng vấp hạ bàn.",
@@ -142,7 +142,7 @@ export const FORM_KINEMATICS_MAP: Record<string, FormKinematics> = {
   },
   "bai-15": {
     kieu: "Đối Luyện Tiến Lùi",
-    khauQuyet: "Tiến lui giáp chiến • Vồ long trảo, thúc gối nhọn, quét gót triệt hạ.",
+    khauQuyet: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiến lui giáp chiến • Vồ long trảo, thúc gối nhọn, quét gót triệt hạ.",
     yeuLinh: "Thực chiến di động 2 người. Một người tấn công dồn dập, một người thoái lui hóa giải rồi phản kích chiếm lại không gian trung lộ.",
     cotTu: [
       "Kiểm soát khoảng cách an toàn, không để đối thủ dồn vào góc tường.",

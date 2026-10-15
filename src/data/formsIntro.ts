@@ -95,11 +95,11 @@ export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
     code: "siu-nim-tau",
     formTitle: "Tiểu Niệm Đầu",
     hanziName: "小念頭 • Siu Nim Tau",
-    coreMnemonic: "Tiểu Niệm Đầu xây nền",
+    coreMnemonic: "Tiểu Niệm Đầu xây nền • Structure before Speed",
     meaning: "Ý niệm nhỏ ban đầu — Những ý niệm căn bản đầu tiên",
-    coreFunction: "Xây dựng nền móng tĩnh: Định hình tư thế Nhị Tự Kiềm Dương Tấn, cấu trúc thân thể chóp nêm, vị trí khuỷu tay thủ trung lộ và khả năng thả lỏng tuyệt đối khi vận động.",
+    coreFunction: "Xây dựng nền móng tĩnh ('Structure before Speed' — Cấu trúc trước Tốc độ): Định hình tư thế Nhị Tự Kiềm Dương Tấn, cấu trúc thân thể chóp nêm, vị trí khuỷu tay thủ trung lộ và khả năng thả lỏng tuyệt đối khi vận động.",
     pedagogicalRole: "Bài thường tập tại chỗ, giúp người học chú ý tới chất lượng từng milimet động tác. Mọi bài quyền sau đều phát triển từ nền tảng này.",
-    scholarlyInsight: "Rèn luyện cấu trúc khi đứng tương đối tĩnh; triệt tiêu hoàn toàn sự phụ thuộc vào quán tính bước chân để ép các khớp xương và gân cơ tự phát lực.",
+    scholarlyInsight: "Minh chứng điển hình cho châm ngôn 'Structure before Speed': Rèn luyện cấu trúc khi đứng tương đối tĩnh; triệt tiêu hoàn toàn sự phụ thuộc vào quán tính bước chân để ép các khớp xương và gân cơ tự phát lực.",
     pgvxIntegration: "Phật Gia Vịnh Xuân kết hợp Nhị Tự Kiềm Dương Tấn chân hẹp che kín hạ bộ và nguyên lý giải phẫu cột sống của PGS.TS Nguyễn Mạnh Nhâm (cuộn xương cùng cụt, thẳng cột sống thắt lưng chống thoái hóa L4-L5)."
   },
   {
@@ -107,11 +107,11 @@ export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
     code: "chum-kiu",
     formTitle: "Tầm Kiều",
     hanziName: "尋橋 / 沉橋 • Chum Kiu",
-    coreMnemonic: "Tầm Kiều đưa cơ thể vào chuyển động",
+    coreMnemonic: "Tầm Kiều đưa cơ thể vào chuyển động • Structure before Speed",
     meaning: "Tìm cầu ('cầu' chỉ cánh tay tạo tiếp xúc) / Trầm cầu (dìm nén cầu đối phương)",
-    coreFunction: "Đưa nền tảng tĩnh vào chuyển động: Xoay thân biên thân, bước chân đạp bộ, phối hợp tay - thân - chân nhịp nhàng và kỹ thuật cước triệt hạ thấp.",
+    coreFunction: "Đưa nền tảng tĩnh vào chuyển động ('Structure before Speed' trong di động): Xoay thân biên thân, bước chân đạp bộ, phối hợp tay - thân - chân nhịp nhàng và kỹ thuật cước triệt hạ thấp.",
     pedagogicalRole: "Tiếp cận, thiết lập tiếp xúc xúc giác và xử lý lực của đối phương trong khi toàn thân vẫn giữ được sự phối hợp đồng trục.",
-    scholarlyInsight: "Mối quan hệ hữu cơ: Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh; Tầm Kiều rèn cách giữ và sử dụng cấu trúc ấy khi di chuyển. Dòng Nguyễn Kỳ Sơn — Sầm Năng (Quảng Châu) còn gọi là 'Trầm Kiều' (nhấn chìm, đè nén cầu đối phương).",
+    scholarlyInsight: "Mối quan hệ hữu cơ: Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh; Tầm Kiều rèn cách giữ vững cấu trúc ấy ('Structure before Speed') khi di chuyển. Dòng Nguyễn Kỳ Sơn — Sầm Năng (Quảng Châu) còn gọi là 'Trầm Kiều' (nhấn chìm, đè nén cầu đối phương).",
     pgvxIntegration: "PGVX dung hợp cả hai: 'Vấn lộ' đưa tay hỏi đường nghe lực (Tìm Kiều) và 'Thủ chìm cùi chỏ' nêm trôi ép góc phá thế địch (Trầm Kiều), kết hợp bộ pháp Xước mã đạp bộ trượt sát đất."
   },
   {
@@ -119,7 +119,7 @@ export const CLASSICAL_6_PILLARS: Classical6Pillar[] = [
     code: "biu-jee",
     formTitle: "Tiêu Chỉ",
     hanziName: "標指 • Biu Jee / Biu Ji",
-    coreMnemonic: "Tiêu Chỉ phát triển ứng biến & phục hồi",
+    coreMnemonic: "Tiêu Chỉ phát triển ứng biến & phục hồi • Structure before Speed",
     meaning: "Ngón tay phóng ra qua đầu ngón — Kỹ pháp cứu nguy khẩn cấp",
     coreFunction: "Phát triển khả năng ứng biến và phục hồi: Bổ sung cách phát lực ở cự ly cực ngắn (thốn kình), kỹ thuật cùi chỏ cận chiến, chuyển hướng đột ngột và xử lý khi bị kẹt tay hoặc rơi vào vị trí bất lợi.",
     pedagogicalRole: "Trong nhiều nhánh Diệp Vấn và Samuel Kwok, bài được giải thích như hệ kỹ thuật 'cứu nguy' (Emergency Recovery). Ý nghĩa của bài rộng hơn nhiều so với riêng động tác ngón tay.",
@@ -241,7 +241,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Khép cùi chỏ, chìm vai hạ hông: Cùi chỏ cách ngực một nắm tay, khóa kín mạn sườn và hạ bộ.",
       "Ý thủ đan điền: Thở sâu bằng bụng dưới (cơ hoành), dùng ý dẫn khí, dĩ nhu khắc cương."
     ],
-    keyMantra: "Tiểu Niệm Đầu xây nền • Niệm đầu bất chính, chung thân bất chính • Đại đồng tiểu dị",
+    keyMantra: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiểu Niệm Đầu xây nền • Niệm đầu bất chính, chung thân bất chính • Đại đồng tiểu dị",
     introQuote: "Tiểu Niệm Đầu là bài tập cơ bản đầu tiên của Phật Gia Vịnh Xuân. Cần tập bài này rất cẩn thận và suốt đời nếu còn muốn lên cao thêm (Niệm đầu bất chính, chung thân bất chính — nghĩa là: Tập Tiểu Niệm Đầu sai thì sau này sẽ sai hết).",
     bookOriginalIntro: [
       "Quy ước trình bày trong sách gốc (Trang 36): Bài được tạm chia thành các CHIÊU. Mỗi CHIÊU bao gồm một số động tác, giới thiệu theo số thứ tự. Nếu một chiêu được thực hiện giống nhau ở cả 2 bên (trái, phải) thì chỉ mô tả một bên; bên đối diện cần luyện tương tự theo đối xứng.",
@@ -266,6 +266,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     ],
     bookMantras: [
       {
+        mantra: "Structure before Speed (Cấu trúc trước Tốc độ)",
+        explanation: "Nguyên tắc vàng của các bài quyền cơ bản: Phải định hình chuẩn xác cấu trúc xương khớp, góc khuỷu tay và trục trung tuyến thông qua tập chậm rãi (30–45 phút) trước khi nghĩ đến tốc độ."
+      },
+      {
         mantra: "Niệm đầu bất chính, chung thân bất chính",
         explanation: "Tập Tiểu Niệm Đầu sai thì sau này sẽ sai hết. Do đó cần tập bài này rất cẩn thận và suốt đời nếu còn muốn lên cao thêm."
       },
@@ -281,9 +285,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     bookClosingNote: "Sau đây là Bài Tiểu Niệm Đầu do HLV Đặng Xuân Hùng biểu diễn.",
     worldLineageContext: {
       globalName: "Siu Nim Tau (Little Idea / Little Beginning / 小念頭)",
-      globalStanding: "Bài quyền nhập môn số 1 bắt buộc của mọi chi phái Vịnh Xuân toàn cầu. Trụ cột thứ nhất: 'Tiểu Niệm Đầu xây nền' — rèn luyện cấu trúc khi đứng tương đối tĩnh, giúp người học chú ý tới chất lượng từng động tác.",
+      globalStanding: "Bài quyền nhập môn số 1 bắt buộc của mọi chi phái Vịnh Xuân toàn cầu. Trụ cột thứ nhất: 'Tiểu Niệm Đầu xây nền' — rèn luyện cấu trúc khi đứng tương đối tĩnh ('Structure before Speed'), giúp người học chú ý tới chất lượng từng động tác.",
       historicalRoots: "Bảo tồn nguyên vẹn từ cội nguồn Hồng Thuyền Quảng Đông và truyền thừa Diệp Vấn Hồng Kông, Bành Nam Phật Sơn đến Nguyễn Tế Công Việt Nam.",
       universalPrinciples: [
+        "Structure before Speed (Cấu trúc chuẩn xác trước, tốc độ tự khắc theo sau).",
         "Trục Tý Ngọ Tuyến (Centerline Theory) chia đôi cơ thể.",
         "Khép cùi chỏ phát lực (Elbow Energy - Kình lực khuỷu tay cách ngực 1 quyền).",
         "Đứng yên một vị trí triệt tiêu quán tính bước chân, buộc khớp xương tự phát lực và thả lỏng khi vận động."
@@ -297,8 +302,8 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     globalBridge: {
       master: "Đại Sư Diệp Vấn (Ip Man)",
-      doctrine: "Thủ Trung Dụng Trung & Độc Thủ Bất Hành",
-      correlation: "Diệp Vấn coi Tiểu Niệm Đầu là bài học nhập môn và cũng là bài học suốt đời để tôi luyện cấu trúc cánh tay. Tương thích 100% với trục Tý Ngọ Tuyến và Nhị Tự Kiềm Dương Tấn của Phật Gia Vịnh Xuân."
+      doctrine: "Structure before Speed • Thủ Trung Dụng Trung & Độc Thủ Bất Hành",
+      correlation: "Diệp Vấn coi Tiểu Niệm Đầu là bài học nhập môn và cũng là bài học suốt đời để tôi luyện cấu trúc cánh tay ('Structure before Speed'). Tương thích 100% với trục Tý Ngọ Tuyến và Nhị Tự Kiềm Dương Tấn của Phật Gia Vịnh Xuân."
     }
   },
 
@@ -317,7 +322,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Xoay người biên thân: Vận dụng tối đa các góc xoay thân để hóa giải thế tấn công trực diện và tạo góc phản đòn hiểm hóc.",
       "Bàng Thủ hóa giải: Bàng Thủ là chiêu thức chủ đạo, dùng để lướt trôi lực của đối phương và nhập nội cận chiến."
     ],
-    keyMantra: "Vấn lộ Tầm Kiều thủ tiên hành • Trắc thân Kiềm Dương • Bàng Thủ hóa giải",
+    keyMantra: "Structure before Speed (Cấu trúc trước Tốc độ) • Vấn lộ Tầm Kiều thủ tiên hành • Trắc thân Kiềm Dương",
     introQuote: "Tầm Kiều di chuyển theo kiểu leo núi (đạp bộ): tiến chân trước kéo chân sau theo, sức nặng chủ yếu để ở chân sau. Tay thường đưa ra trước (vấn thủ) như để hỏi đường (vấn lộ Tầm Kiều thủ tiên hành)... Bàng Thủ là chiêu thức được dùng nhiều nhất, thiên về phòng ngự.",
     bookOriginalIntro: [
       "B. TẦM KIỀU - TIÊU CHỈ (Trang 43): Tầm Kiều và Tiêu Chỉ được coi là hai bài tập có trình độ cao hơn, khi võ sinh đã học được những vấn đề cơ bản nhuần nhuyễn. Khác với Tiểu Niệm Đầu, nhiều kiểu di chuyển (mã) được luyện tập kèm theo một số đòn thế mới (chưa được dạy trong Tiểu Niệm Đầu).",
@@ -338,6 +343,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     ],
     bookMantras: [
       {
+        mantra: "Structure before Speed (Cấu trúc trước Tốc độ)",
+        explanation: "Giữ vững trục kết nối nguyên khối giữa tay – eo – bộ pháp ('Hợp nhất thân bộ') trong từng bước chuyển mã trước khi gia tăng tốc độ nhập nội."
+      },
+      {
         mantra: "Vấn lộ Tầm Kiều thủ tiên hành",
         explanation: "Trong Tầm Kiều, tay luôn đưa ra trước hỏi đường để bắc cầu tiếp xúc, lắng nghe sức mạnh (thính kình) và hướng đánh của đối thủ."
       }
@@ -345,9 +354,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     bookClosingNote: "Sau đây là bài Tầm Kiều do HLV Nguyễn Trọng Sơn thực hiện. (Lưu ý trong bài: Chiêu 4.1–4.3, Chiêu 5.1–5.8 và Chiêu 6.1–6.4 đều có phần lặp lại đối xứng với bên tay trái trước khi Bái Tổ kết thúc bài).",
     worldLineageContext: {
       globalName: "Chum Kiu (Seeking the Bridge / Sinking the Bridge / 尋橋 / 沉橋)",
-      globalStanding: "Trụ cột thứ hai: 'Tầm Kiều đưa cơ thể vào chuyển động'. Nếu Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh, thì Tầm Kiều rèn cách giữ và sử dụng cấu trúc ấy khi di chuyển, xoay thân và tung đòn đá thấp.",
+      globalStanding: "Trụ cột thứ hai: 'Tầm Kiều đưa cơ thể vào chuyển động'. Nếu Tiểu Niệm Đầu rèn cấu trúc khi đứng tĩnh, thì Tầm Kiều rèn cách giữ vững cấu trúc ấy ('Structure before Speed') khi di chuyển, xoay thân và tung đòn đá thấp.",
       historicalRoots: "Hệ thống hóa nguyên lý bắc cầu tiếp xúc (Bridge Contact) truyền thừa từ Lương Tán tại Phật Sơn; dòng Nguyễn Kỳ Sơn — Sầm Năng diễn giải là 'Trầm Kiều' (nhấn chìm đè nén cầu đối phương).",
       universalPrinciples: [
+        "Structure before Speed — Bảo toàn cấu trúc đồng trục khi chuyển tấn và bước bộ.",
         "Xoay eo chuyển trục (Turning Stance / Waist Torque) giải phóng lực trực diện.",
         "Thiết lập cầu nối xúc giác (Bridge Concept) để lắng nghe ý đồ đối thủ.",
         "Đòn đá thấp triệt hạ (Low Kicking Techniques) nhắm vào khớp gối và cẳng chân."
@@ -361,7 +371,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     },
     globalBridge: {
       master: "Võ Sư Hoàng Thuần Lương (Wong Shun Leung)",
-      doctrine: "Xúc Giác Niêm Thủ & Chiếm Góc 45°",
+      doctrine: "Structure before Speed • Xúc Giác Niêm Thủ & Chiếm Góc 45°",
       correlation: "Hoàng Thuần Lương coi Tầm Kiều là chiếc chìa khóa mở cánh cửa cận chiến bằng cách dùng cẳng tay bắc cầu hỏi đường (vấn thủ), khớp hoàn toàn với nguyên lý nghe lực (thính kình) của PGS.TS Nguyễn Mạnh Nhâm."
     }
   },
@@ -381,7 +391,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Hoành thoái, mã chéo: Bộ pháp chuyển đổi đột ngột ở cự ly cực ngắn, thoát khỏi vòng vây hoặc góc kẹt.",
       "Phục hồi trung tuyến: Khi bị phá vỡ cấu trúc phòng thủ, dùng chỉ pháp và chỏ pháp xoay chuyển tình thế tức thì."
     ],
-    keyMantra: "Tiêu Chỉ bất xuất môn • Dĩ công vi thủ, dĩ đả vi tiêu • Phóng sức qua đầu ngón tay",
+    keyMantra: "Structure before Speed (Cấu trúc trước Tốc độ) • Tiêu Chỉ bất xuất môn • Dĩ công vi thủ, dĩ đả vi tiêu",
     introQuote: "Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay... Theo tên thì đây là 'phóng sức ra qua những đầu ngón tay', một tuyệt kỹ của VXQ. Theo truyền thống cũ thì Tiêu Chỉ không được dạy cho người ngoài (Tiêu Chỉ bất xuất môn). Chủ trương tấn công là chủ yếu (dĩ công vi thủ, dĩ đả vi tiêu).",
     bookOriginalIntro: [
       "2. Tiêu Chỉ (Trang 43): Tiêu Chỉ được coi là cao hơn Tầm Kiều, chủ yếu dùng bàn tay và các ngón tay. Do đó khi giao đấu thường để bàn tay mở (không nắm tay).",
@@ -402,6 +412,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
     ],
     bookMantras: [
       {
+        mantra: "Structure before Speed (Cấu trúc trước Tốc độ)",
+        explanation: "Chỉ khi cấu trúc Tiểu Niệm Đầu và Tầm Kiều đã vững chắc, các đòn phóng chỉ và cấp trửu của Tiêu Chỉ mới đạt được gia tốc xuyên thấu mà không làm gãy cấu trúc tự vệ."
+      },
+      {
         mantra: "Tiêu Chỉ bất xuất môn",
         explanation: "Theo truyền thống cũ, bài Tiêu Chỉ là tuyệt kỹ cao cấp của môn phái, không dạy cho người ngoài mà chỉ truyền cho đệ tử đã tập cao sau Tầm Kiều."
       },
@@ -416,6 +430,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       globalStanding: "Trụ cột thứ ba: 'Tiêu Chỉ phát triển ứng biến & phục hồi'. Được định danh là hệ kỹ thuật cứu nguy khẩn cấp (Emergency Recovery Form) khi cấu trúc bị phá vỡ hoặc bị kẹt tay ở cự ly gần.",
       historicalRoots: "Từng được giữ kín nghiêm ngặt trong nội môn truyền thống ('Tiêu Chỉ bất xuất môn'); hệ Samuel Kwok và Diệp Vấn đều nhấn mạnh khả năng ứng biến trong tình thế hiểm nghèo.",
       universalPrinciples: [
+        "Structure before Speed — Phục hồi cấu trúc trung tuyến trước khi bộc phát tốc độ.",
         "Khôi phục trung tuyến khi bị phá vỡ cấu trúc bảo vệ ban đầu.",
         "Phát lực đầu ngón tay (Finger Thrusts) mở rộng tầm đánh tối đa.",
         "Chỏ pháp cận chiến hiệu quả giải cứu khi bị ôm ghì khóa khớp hoặc kẹt tay."
@@ -452,7 +467,7 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "Thế tấn vững như bàn thạch: Hai chân khép hẹp, gối kiềm chặt che hạ bộ, xoay eo sinh kình.",
       "Liên hoàn không ngắt quãng: Đòn trước vừa chạm đích, đòn sau lập tức tiếp nối liên hoàn."
     ],
-    keyMantra: "Tấn kiềm sinh kình • Thủ pháp liên hoàn • Bách bát quy nhất",
+    keyMantra: "Structure before Speed (Cấu trúc trước Tốc độ) • Tấn kiềm sinh kình • Thủ pháp liên hoàn • Bách bát quy nhất",
     introQuote: "Đây là bài võ cơ bản nhất, thường gọi tắt là Bài 108. Theo truyền thống thì Bài có 108 thế, mỗi bên 54 thế. Nguyên gốc 'Bài 108' có tên các thế võ, có bài thiệu theo thơ chữ Hán. Cụ Tế Công đã bỏ đi cho phù hợp với học trò ngày nay (không biết chữ Nho).",
     bookOriginalIntro: [
       "C. BÀI VÕ 108 THẾ (Trang 54): Đây là bài võ cơ bản nhất. Thường gọi tắt là Bài 108. Theo truyền thống thì Bài có 108 thế, mỗi bên 54 thế.",
@@ -476,6 +491,10 @@ export const FORMS_18_INTRO: Record<string, FormIntroduction> = {
       "5. Tập quay chân, vững chân, quay người, du đẩy."
     ],
     bookMantras: [
+      {
+        mantra: "Structure before Speed (Cấu trúc trước Tốc độ — Tập lấy khuôn chuẩn xác)",
+        explanation: "Đúng như lời căn dặn trong sách gốc: tập cốt lấy khuôn chuẩn xác, giữ khuỷu tay ở trung tuyến và biên thân quay hết người trước khi tăng tốc độ hay xuất kình."
+      },
       {
         mantra: "Không Thông (Tập một mình tưởng tượng có thầy xuất đòn)",
         explanation: "Tập đơn luyện tại chỗ nhưng trong tâm tưởng tượng có Sư phụ hoặc đối thủ đang xuất đòn để rèn khuôn chuẩn xác và phát thốn kình."
@@ -1422,15 +1441,15 @@ export const FORMS_18_STAGES = [
   {
     sequence: 1,
     id: "stage-tam-dai-quyen",
-    title: "Chặng 1: Tam Đại Quyền Pháp Cốt Lõi",
-    desc: "Nền tảng quyền thuật tay không kinh điển: Khởi đầu từ Tiểu Niệm Đầu, mở rộng qua Tầm Kiều và tinh thông với Tiêu Chỉ.",
+    title: "Chặng 1: Tam Đại Quyền Pháp Cốt Lõi (Structure before Speed)",
+    desc: "Châm ngôn cốt tủy: \"Structure before Speed\" (Cấu trúc chuẩn xác trước, Tốc độ theo sau) — Khởi đầu từ Tiểu Niệm Đầu, mở rộng qua Tầm Kiều và tinh thông với Tiêu Chỉ.",
     formIds: ["bai-07", "bai-09", "bai-10"]
   },
   {
     sequence: 2,
     id: "stage-108-the",
     title: "Chặng 2: Hệ Thống 108 Thế Liên Hoàn",
-    desc: "Bộ pháp và quyền pháp hoàn chỉnh gồm 108 thế võ chân truyền, luyện cả đơn luyện và đối luyện 2 người.",
+    desc: "Thực hành \"Structure before Speed\" qua bộ pháp và quyền pháp hoàn chỉnh gồm 108 thế võ chân truyền (đơn luyện và đối luyện 2 người).",
     formIds: ["bai-12", "bai-13", "bai-14", "bai-15"]
   },
   {
