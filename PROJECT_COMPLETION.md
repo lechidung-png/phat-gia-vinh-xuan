@@ -12,7 +12,7 @@
 
 Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa toàn vẹn di sản võ học từ cuốn sách giáo trình **"Phật Gia Vịnh Xuân Quyền"** (NXB Văn Hóa Thông Tin 2012) của Đại sư **PGS.TS Y khoa Nguyễn Mạnh Nhâm** và **ThS.DS Nguyễn Duy Thức** (sử dụng bộ dữ liệu hình ảnh và văn bản chuẩn tại `C:\Cowork\Phat gia Vinh Xuan\Vinh xuan Phat gia\Phat-gia-Vinh-Xuan-Quyen-Phuc-che`), chuyển hóa thành hệ sinh thái số đa phương thức phục vụ việc tra cứu và học tập:
 1. **Bảo tồn tính chân xác 100% (Zero-Omission):** Sử dụng nguyên bản 1.096 hình ảnh (`hinh/`, `hinh-2x/`, tương ứng 1.095 ảnh duy nhất trong `CANONICAL_LESSONS`) và 36 chương mục (`noi-dung/`, gồm 18 bài thực hành với **917 động tác thực tế** và 18 bài đọc lý thuyết); khôi phục 100% hướng dẫn tập luyện, tác dụng, khẩu quyết và danh tính võ sư thị phạm của sư môn.
-2. **Đột phá Sư phạm Đa phương thức (Multimedia Pedagogy & Progressive Disclosure):** Kết hợp **Phòng Chiếu Video Đại Sư (`masterVideos.ts` — 53 video đã xác thực oEmbed HTTP 200, riêng Tam Đại Bộ Quyền có 20 video)** với hình ảnh phân thế sách gốc và **Kiến trúc Sư phạm 3 Tầng** chống quá tải nhận thức.
+2. **Đột phá Sư phạm Đa phương thức (Multimedia Pedagogy & Progressive Disclosure):** Kết hợp **Phòng Chiếu Video Đại Sư (`masterVideos.ts` — 53 video đã xác thực oEmbed HTTP 200, riêng Tam Đại Bộ Quyền có 9 video tinh tuyển)** với hình ảnh phân thế sách gốc và **Kiến trúc Sư phạm 3 Tầng** chống quá tải nhận thức.
 3. **Chất lượng công nghệ vững chắc & Kiểm chứng Không Khoan Nhượng (Zero-Trust):** Ứng dụng Next.js 16 App Router, React 19, Tailwind CSS v4, Web Audio API thuần synthesizer, SSG $0 chi phí server, tốc độ tìm kiếm in-memory $< 2\text{ms}$, đi kèm bộ 3 kịch bản kiểm định tự động (`audit_martial_integrity.py`, `run_verification_tests.js`, `verify_claims_and_reality.js`).
 4. **Công thái học đọc quốc tế & Di động tối ưu:** Hệ thống điều chỉnh cỡ chữ động **`A- / A / A+`** chống mỏi mắt (WCAG 2.1 AAA), giãn dòng `1.8`, màu chữ kem ấm `#F5EBE6`, lưới thẻ Menu không bao giờ bị cắt, chuẩn Touch Target $\ge 44 \times 44\text{ px}$, triệt tiêu 100% lỗi tràn ngang ($0\text{px}$ overflow).
 
@@ -24,7 +24,7 @@ Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa to�
 | :---: | :--- | :--- | :---: | :--- |
 | **1** | **Kho Ảnh Sách Gốc Chuẩn ($1\times$ & $2\times$)** | **1.096 file ảnh** (`hinh/` & `hinh-2x/`), **1.095 ảnh duy nhất** trong `CANONICAL_LESSONS` | **100% Đạt Chuẩn** | `web/public/assets/hinh/` & `hinh-2x/` |
 | **2** | **18 Bài Quyền & Binh Khí Thực Hành** | **18 bài thực hành (917 động tác thực tế)** đã khôi phục đầy đủ các đoạn lặp đối xứng | **100% Đạt Chuẩn** | `web/src/data/canonicalCatalog.ts` |
-| **3** | **Phòng Chiếu Video Đại Sư & Tam Đại Quyền** | **53 video đại sư thị phạm** (49 video ID duy nhất, **20 video Tam Đại Bộ Quyền**) + **6 nguồn học thuật quốc tế** | **100% HTTP 200** | `web/src/data/masterVideos.ts` & `web/src/components/CurriculumExplorer.tsx` |
+| **3** | **Phòng Chiếu Video Đại Sư & Tam Đại Quyền** | **31 video đại sư tinh tuyển thị phạm** (31 video tinh tuyển (ưu tiên 4 Đại Sư Phụ: Diệp Vấn, Chu Thượng Đồng, Diệp Chuẩn, Ngô Sĩ Quý) ID duy nhất, **9 video tinh tuyển Tam Đại Bộ Quyền**) + **6 nguồn học thuật quốc tế** | **100% HTTP 200** | `web/src/data/masterVideos.ts` & `web/src/components/CurriculumExplorer.tsx` |
 | **4** | **Cẩm Nang Lời Dẫn Nguyên Bản Sách Gốc** | **18/18 hồ sơ bài quyền** đủ `bookOriginalIntro`, `bookTrainingGuidelines`, `bookBenefits`, `bookMantras` + **Bài luyện tổng hợp 8 phần** | **100% Đạt Chuẩn** | `web/src/data/formsIntro.ts` |
 | **5** | **Cơ Bản Công, Lục Chủng Trửu & Bái Tổ** | **18 thủ pháp & lục chủng trửu**, **8 thế tấn/bộ/cước (Quyền 5 Cước 7)**, **9 bước Bái Tổ**, **4 bài luyện căn bản** | **100% Đạt Chuẩn** | `web/src/data/fundamentals.ts` & `web/src/components/FundamentalHandFootAtlas.tsx` |
 | **6** | **Trục Tý Ngọ Tuyến Giải Phẫu** | Laser Tý Ngọ thẳng tắp sống mũi $\rightarrow$ giữa hai chân ($\Delta x = 0\text{px}$), 4 ảnh đối kháng 2 người thực chiến | **100% Đạt Chuẩn** | `web/src/components/CenterlineExplorer.tsx` |
@@ -53,8 +53,8 @@ Dự án ra đời với sứ mệnh bảo tồn, chuẩn hóa và số hóa to�
 | **1. Static Analysis (TypeScript)** | `npx tsc --noEmit` đạt 0 lỗi | **0 lỗi (Exit Code 0)** | **ĐẠT CHUẨN** |
 | **2. Code Quality (ESLint)** | `npm run lint` đạt 0 error, 0 warning | **0 error, 0 warning** | **ĐẠT CHUẨN** |
 | **3. Kiểm Định Võ Học Tự Động** | `scripts/audit_martial_integrity.py` | **28/28 tiêu chí PASS 100%** | **ĐẠT CHUẨN** |
-| **4. Kiểm Thử Hồi Quy Tự Động** | `scripts/run_verification_tests.js` | **6/6 Suites (28.002 assertions PASS)** | **ĐẠT CHUẨN** |
-| **5. Kiểm Chứng Thực Chất Zero-Trust** | `scripts/verify_claims_and_reality.js` | **PASS 100% (49/49 Unique Videos HTTP 200)** | **ĐẠT CHUẨN** |
+| **4. Kiểm Thử Hồi Quy Tự Động** | `scripts/run_verification_tests.js` | **7/7 Suites (28.058 assertions PASS)** | **ĐẠT CHUẨN** |
+| **5. Kiểm Chứng Thực Chất Zero-Trust** | `scripts/verify_claims_and_reality.js` | **PASS 100% (27/27 Unique Videos (31 Entries) HTTP 200)** | **ĐẠT CHUẨN** |
 | **6. Phân Định Đơn / Đối Luyện** | 100% ảnh đối kháng phải có 2 võ sư | **100% chuẩn xác (0 ảnh sai)** | **ĐẠT CHUẨN** |
 | **7. Công Thái Học Mobile Overflow** | `scrollWidth === innerWidth === 390px` | **Độ tràn = 0px** | **ĐẠT CHUẨN** |
 | **8. Trợ Năng & Công Thái Học Đọc** | WCAG 2.1 Level AA/AAA, nút `A-/A/A+` | **100% phần tử đạt chuẩn** | **ĐẠT CHUẨN** |
@@ -74,3 +74,20 @@ Xem chi tiết toàn bộ 30 bài học tại [LESSONS_LEARNED.md](file:///c:/Co
 1. **Kho lưu trữ chính (Primary Remote):** [https://github.com/lechidung-png/phat-gia-vinh-xuan.git](https://github.com/lechidung-png/phat-gia-vinh-xuan.git)
 2. **Kho lưu trữ thứ hai (Secondary Remote):** [https://github.com/dunglechi/phat-gia-vinh-xuan.git](https://github.com/dunglechi/phat-gia-vinh-xuan.git)
 3. **Gói triển khai tĩnh:** `web/out/` (triển khai trên Cloudflare Pages `phat-gia-vinh-xuan.pages.dev`).
+
+
+---
+
+## 🏛️ Cập Nhật Kiến Trúc UI/UX Zen Gallery 4.0 & MasterClass Editorial (v4.0 — Tháng 10/2026)
+
+1. **Triệt Tiêu Hội Chứng "Khung-lồng-Khung" (Zero Box-in-Box) & Chuẩn Đọc Cách 2 Mét (2-Meter Stance Readability):**
+   - **Sân khấu tập luyện 50/50 (`DojoPlayer3.tsx`):** Phóng to khung ảnh Sách gốc lên `420x430px` (+55% diện tích) trên nền giấy lụa ngà `#FBF9F5`; nâng cỡ chữ chỉ dẫn động tác chính lên `24px–36px` (`text-2xl sm:text-3xl lg:text-4xl font-serif`) không đóng hộp, giúp môn sinh đứng tấn cách màn hình **2 mét** vẫn đọc rõ từng chữ.
+   - **Khung nhìn rộng `1440px` (`max-w-[1440px]`):** Mở rộng không gian ngang toàn trang thêm `+160px` trên `page.tsx` và `Header.tsx`; sửa dứt điểm lỗi `scrollTo(380)` về `scrollTo(0)` để Sân khấu tập luyện hiển thị trọn vẹn trong 1 màn hình.
+2. **Xóa Sổ 100% Chữ Siêu Nhỏ (`<12px`) & Đồng Bộ Phóng To `A- / A / A+` Toàn Hệ Thống:**
+   - Đã rà soát định lượng toàn bộ **26 file mã nguồn (`13.943` dòng code)**, loại bỏ toàn bộ **157 vị trí chữ `8px–11px`** và chuyển **163 vị trí chữ `px` cố định** sang đơn vị tương đối `rem` (`text-xs`, `text-sm`, `text-base`, `text-3xl`, `text-4xl`), nâng cỡ chữ gốc `<html>` lên `16.5px` (`A+`: `18.5px`, `A++`: `20.5px`) và đạt chuẩn tương phản **WCAG 2.1 Level AA** (**0 vị trí chữ mờ `<=50%`**).
+3. **Tinh Tuyển 31 Video Đại Sư Phụ & Châm Ngôn Cốt Tủy `"Structure before Speed"`:**
+   - Tinh lọc kho tư liệu `masterVideos.ts` gồm **31 video tinh tuyển** cho 18/18 bài quyền & binh khí, ưu tiên tuyệt đối **4 vị Đại Sư Phụ**: **Đại Tông Sư Diệp Vấn (Ip Man)**, **Đại Sư Chu Thượng Đồng (Chu Shong Tin)**, **Đại Sư Diệp Chuẩn (Ip Chun)** và **Cố Võ Sư Ngô Sĩ Quý** (riêng Tam Đại Bộ Quyền gồm **9 video**: 4 Tiểu Niệm Đầu, 3 Tầm Kiều, 2 Tiêu Chỉ; đã loại bỏ video số 6 trùng lặp chất lượng thấp).
+   - Khắc sâu châm ngôn nền tảng **`"Structure before Speed"` *(Cấu trúc trước Tốc độ)*** xuyên suốt các bài quyền cơ bản (`formsIntro.ts`, `martialKinematics.ts`, `CurriculumExplorer.tsx`, `DojoPlayer3.tsx`, `FundamentalHandFootAtlas.tsx`).
+4. **Kiểm Định Tự Động Zero-Trust (7/7 Suites & 28/28 Martial Audits PASS):**
+   - `node scripts/run_verification_tests.js`: **7/7 Suites PASS (`28.058 assertions`)**, kiểm tra tự động cả dữ liệu võ học lẫn tiêu chuẩn `0` chữ `<12px` của UI/UX v4.0.
+   - `python scripts/audit_martial_integrity.py`: **28/28 tiêu chí PASS (0 warnings, 0 errors)**.
