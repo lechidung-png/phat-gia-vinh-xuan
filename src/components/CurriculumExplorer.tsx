@@ -11,24 +11,17 @@ import {
   Swords,
   ArrowRight,
   X,
-  Quote,
   Shield,
-  Zap,
   ChevronDown,
   ChevronUp,
-  UserCheck,
   LayoutGrid,
   FlipHorizontal,
-  Maximize2,
   Globe,
   HeartPulse,
-  GraduationCap,
-  Scale,
   PlayCircle,
   Film,
   Columns,
   Eye,
-  CheckCircle2,
   ChevronLeft,
 } from "lucide-react";
 import {
@@ -40,15 +33,11 @@ import {
   FORMS_18_INTRO,
   FORM_CATEGORIES,
   FORMS_18_STAGES,
-  CLASSICAL_6_PILLARS,
-  LINEAGE_SCHOLARLY_INSIGHTS,
-  COMPOSITE_TRAINING_ROUTINE_8,
   getFormIntro,
   FormIntroduction,
 } from "@/data/formsIntro";
 import {
   getMasterVideosForForm,
-  AUTHORITATIVE_REFERENCES,
   MasterVideoItem,
 } from "@/data/masterVideos";
 import { DojoPlayer3 } from "@/components/DojoPlayer3";
@@ -79,7 +68,6 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   initialLessonId = "bai-07",
   initialMotionIndex = 0,
   navigationSeq = 0,
-  onNavigateTab,
 }) => {
   const FORMS_18 = useMemo(() => {
     return CANONICAL_LESSONS.filter((l) => l.motions && l.motions.length > 0);
@@ -151,21 +139,6 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
   }, [currentLesson.id]);
 
   const activeVideo: MasterVideoItem = currentVideos[selectedVideoIdx] || currentVideos[0];
-
-  const [showAllInsights, setShowAllInsights] = useState(false);
-
-  const relevantInsight = useMemo(() => {
-    if (currentLesson.id === "bai-07" || currentLesson.id === "bai-09") {
-      return LINEAGE_SCHOLARLY_INSIGHTS[0];
-    }
-    if (["bai-12", "bai-13", "bai-14", "bai-15"].includes(currentLesson.id)) {
-      return LINEAGE_SCHOLARLY_INSIGHTS[1];
-    }
-    if (["bai-10", "con", "bai-31"].includes(currentLesson.id)) {
-      return LINEAGE_SCHOLARLY_INSIGHTS[2];
-    }
-    return LINEAGE_SCHOLARLY_INSIGHTS[0];
-  }, [currentLesson.id]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
