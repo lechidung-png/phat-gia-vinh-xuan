@@ -274,7 +274,7 @@ export const HeritageReader: React.FC<HeritageReaderProps> = ({
               <div
                 key={idx}
                 id={`trang-${String(item.page).padStart(3, "0")}`}
-                className="flex items-center gap-3 pt-4 pb-1 text-[11px] font-mono text-[#E2B743]/80"
+                className="flex items-center gap-3 pt-4 pb-1 text-xs font-mono text-[#E2B743]/80"
               >
                 <span className="px-2.5 py-0.5 rounded bg-[#E2B743]/15 border border-[#E2B743]/30">
                   Trang sách gốc {item.page}
@@ -412,7 +412,7 @@ export const HeritageReader: React.FC<HeritageReaderProps> = ({
                     loading="lazy"
                     className="max-h-72 w-auto object-contain mx-auto bg-[#120B07]"
                   />
-                  <span className="absolute bottom-2 right-2 px-2 py-1 rounded-lg bg-black/75 text-[#F5D06C] text-[10px] font-sans flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+                  <span className="absolute bottom-2 right-2 px-2 py-1 rounded-lg bg-black/75 text-[#F5D06C] text-xs font-sans flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
                     <ZoomIn className="w-3 h-3" /> Phóng to
                   </span>
                 </button>

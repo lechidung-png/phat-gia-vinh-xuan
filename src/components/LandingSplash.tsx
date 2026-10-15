@@ -104,7 +104,7 @@ export const LandingSplash: React.FC<LandingSplashProps> = ({ onEnter }) => {
       <div className={`absolute bottom-8 left-0 right-0 text-center transition-opacity duration-1000 delay-700 ${
         mounted ? "opacity-100" : "opacity-0"
       }`}>
-        <p className="text-[10px] sm:text-xs text-slate-500/70 tracking-widest uppercase">
+        <p className="text-xs sm:text-sm text-slate-500/70 tracking-widest uppercase">
           Tài Liệu Nội Bộ Võ Đường Huỳnh Thúc Kháng
         </p>
       </div>

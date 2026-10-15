@@ -227,7 +227,7 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
             <div>
               <h3 className="text-base sm:text-lg font-bold text-white font-serif flex items-center gap-2">
                 Trình Luyện Thở 4 Thì Trực Quan
-                <span className="hidden sm:inline px-2 py-0.5 rounded-full text-[10px] font-mono bg-[#F5D06C]/15 text-[#F5D06C] border border-[#F5D06C]/30">
+                <span className="hidden sm:inline px-2 py-0.5 rounded-full text-xs font-mono bg-[#F5D06C]/15 text-[#F5D06C] border border-[#F5D06C]/30">
                   Thở Vuông Đan Điền
                 </span>
               </h3>
@@ -310,13 +310,13 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
               </div>
 
               {/* Hướng dẫn chuyển động bụng */}
-              <span className="text-[11px] sm:text-xs text-amber-100/90 font-medium px-2 leading-tight">
+              <span className="text-xs sm:text-sm text-amber-100/90 font-medium px-2 leading-tight">
                 {currentPhase.bellyAction.split("như")[0]}
               </span>
             </div>
 
             {/* Chỉ báo 4 thì quanh vòng tròn */}
-            <div className="absolute inset-0 pointer-events-none flex items-center justify-between text-[10px] font-mono text-amber-200/40">
+            <div className="absolute inset-0 pointer-events-none flex items-center justify-between text-xs font-mono text-amber-200/75">
               <span className={`absolute left-0 -translate-x-1 sm:-translate-x-3 px-2 py-0.5 rounded ${currentPhaseIndex === 0 ? "text-[#F5D06C] font-bold bg-[#F5D06C]/10" : ""}`}>
                 1. Thở Ra
               </span>
@@ -389,28 +389,28 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
           {/* Dải Thống Kê Tiến Trình: Chu Kỳ, Thời Gian Đã Tập, Mục Tiêu */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
             <div className="p-3 rounded-2xl bg-black/40 border border-white/10 text-center space-y-0.5">
-              <span className="text-[10px] sm:text-xs text-amber-200/60 uppercase font-mono">Chu kỳ hoàn tất</span>
+              <span className="text-xs sm:text-sm text-amber-200/60 uppercase font-mono">Chu kỳ hoàn tất</span>
               <div className="text-xl sm:text-2xl font-bold font-mono text-[#F5D06C]">
                 {completedCycles} <span className="text-xs font-normal text-slate-400">vòng</span>
               </div>
             </div>
 
             <div className="p-3 rounded-2xl bg-black/40 border border-white/10 text-center space-y-0.5">
-              <span className="text-[10px] sm:text-xs text-amber-200/60 uppercase font-mono">Thời gian đã thiền</span>
+              <span className="text-xs sm:text-sm text-amber-200/60 uppercase font-mono">Thời gian đã thiền</span>
               <div className="text-xl sm:text-2xl font-bold font-mono text-emerald-400">
                 {formatTime(totalSecondsElapsed)}
               </div>
             </div>
 
             <div className="p-3 rounded-2xl bg-black/40 border border-white/10 text-center space-y-0.5">
-              <span className="text-[10px] sm:text-xs text-amber-200/60 uppercase font-mono">Mục tiêu buổi tập</span>
+              <span className="text-xs sm:text-sm text-amber-200/60 uppercase font-mono">Mục tiêu buổi tập</span>
               <div className="text-xl sm:text-2xl font-bold font-mono text-white">
                 {targetDurationMinutes} <span className="text-xs font-normal text-slate-400">phút</span>
               </div>
             </div>
 
             <div className="p-3 rounded-2xl bg-black/40 border border-white/10 text-center space-y-0.5">
-              <span className="text-[10px] sm:text-xs text-amber-200/60 uppercase font-mono">Độ dài mỗi thì</span>
+              <span className="text-xs sm:text-sm text-amber-200/60 uppercase font-mono">Độ dài mỗi thì</span>
               <div className="text-xl sm:text-2xl font-bold font-mono text-amber-300">
                 {secondsPerPhase}s <span className="text-xs font-normal text-slate-400">/ thì</span>
               </div>
@@ -424,7 +424,7 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
                 <Sliders className="w-3.5 h-3.5" />
                 Lựa Chọn Nhịp Thở Vuông (Độ Dài Từng Thì):
               </span>
-              <span className="text-[11px] text-amber-200/60 italic">
+              <span className="text-xs text-amber-200/60 italic">
                 *Các thì luôn bằng nhau theo nguyên lý Thở Vuông
               </span>
             </div>
@@ -447,11 +447,11 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
                         <span className={isSelected ? "text-[#F5D06C]" : "text-white"}>{preset.name}</span>
                         {isSelected && <CheckCircle2 className="w-3.5 h-3.5 text-[#F5D06C]" />}
                       </div>
-                      <p className="text-[11px] text-amber-200/70 leading-relaxed mb-2 line-clamp-2">
+                      <p className="text-xs text-amber-200/70 leading-relaxed mb-2 line-clamp-2">
                         {preset.description}
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono text-emerald-400/90 font-medium">
+                    <span className="text-xs font-mono text-emerald-400/90 font-medium">
                       Chu kỳ: {preset.secondsPerPhase * 4}s
                     </span>
                   </button>
@@ -511,7 +511,7 @@ export const MeditationBreathingGuide: React.FC<MeditationBreathingGuideProps> =
                 <span className="text-xs font-bold text-emerald-400 font-mono">
                   Bước {step.step}: {step.title}
                 </span>
-                <p className="text-[11px] text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   {step.desc}
                 </p>
               </div>

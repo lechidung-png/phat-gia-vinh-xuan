@@ -154,7 +154,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </div>
 
           {/* Tagline */}
-          <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+          <p className="text-[#FAF6F0] text-base sm:text-lg leading-relaxed max-w-3xl">
             Được số hóa và gìn giữ bởi Võ Đường Huỳnh Thúc Kháng — Phục vụ môn sinh và người yêu võ tra cứu học tập.
           </p>
 
@@ -232,14 +232,14 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
                   <span className="text-5xl sm:text-6xl font-serif text-[#F5D06C] gold-gradient drop-shadow mb-1">
                     佛
                   </span>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-200/70">
+                  <span className="text-xs font-mono uppercase tracking-widest text-amber-200/70">
                     Phật Gia Vịnh Xuân
                   </span>
                 </div>
               )}
             </div>
             {dailyQuote.imageCaption && (
-              <span className="text-[11px] sm:text-xs font-mono text-[#F5D06C] text-center max-w-[200px] leading-tight opacity-90">
+              <span className="text-xs sm:text-sm font-mono text-[#F5D06C] text-center max-w-[200px] leading-tight opacity-90">
                 {dailyQuote.imageCaption}
               </span>
             )}
@@ -298,7 +298,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
                     <div className="w-11 h-11 rounded-2xl bg-[#140C08] border border-[#3D291F] group-hover:border-[#E2B743]/60 flex items-center justify-center text-[#E2B743] shadow-md transition-all group-hover:scale-110">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full font-mono ${item.tagColor}`}>
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full font-mono ${item.tagColor}`}>
                       {item.badge}
                     </span>
                   </div>
@@ -307,7 +307,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
                     <h3 className="text-base sm:text-lg font-serif font-bold text-white group-hover:text-[#E2B743] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-[11px] text-amber-200/70 font-medium">
+                    <p className="text-xs text-amber-200/70 font-medium">
                       {item.subtitle}
                     </p>
                   </div>
@@ -359,7 +359,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             <blockquote className="font-serif italic text-base sm:text-lg lg:text-xl text-amber-100 font-semibold leading-relaxed">
               &ldquo;Đến thì mở lòng đón nhận, đi thì nhẹ nhàng đưa tiễn; buông lỏng toàn thân để mượn lực đả lực. Cốt lõi của Vịnh Xuân không phải là thắng người bằng sức mạnh cơ bắp, mà là chiến thắng chính sự nóng vội và bản ngã của bản thân.&rdquo;
             </blockquote>
-            <p className="text-[11px] text-amber-200/70 font-mono italic">
+            <p className="text-xs text-amber-200/70 font-mono italic">
               — Khẩu quyết quyền lý truyền thừa • Phật Gia Vịnh Xuân
             </p>
 
@@ -383,7 +383,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
       <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-[#3D291F] space-y-5">
         <div className="border-b border-[#3D291F] pb-3">
           <div>
-            <span className="text-[11px] font-bold text-[#E2B743] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#E2B743] uppercase tracking-wider">
               Khuyến Nghị Huấn Luyện Chuẩn Sách Gốc
             </span>
             <h3 className="text-xl sm:text-2xl font-serif font-bold text-white">
@@ -392,7 +392,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {learningSteps.map((s) => (
             <div
               key={s.step}
@@ -409,7 +409,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#2A1C14] text-[#E2B743] font-mono">
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-[#2A1C14] text-[#E2B743] font-mono">
                     Chặng 0{s.step}
                   </span>
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#E2B743] group-hover:translate-x-1 transition-all" />
@@ -421,7 +421,7 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
                   {s.desc}
                 </p>
               </div>
-              <div className="mt-3 pt-2 border-t border-[#3D291F]/50 text-[11px] text-[#E2B743] font-medium flex items-center gap-1">
+              <div className="mt-3 pt-2 border-t border-[#3D291F]/50 text-xs text-[#E2B743] font-medium flex items-center gap-1">
                 Bắt đầu học <ArrowRight className="w-3 h-3" />
               </div>
             </div>

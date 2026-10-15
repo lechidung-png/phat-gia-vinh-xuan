@@ -73,7 +73,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({
                 <Icon className={`w-5 h-5 ${isActive ? "text-[#F5D06C]" : "text-slate-400"}`} />
               </div>
               <span
-                className={`text-[10px] tracking-tight mt-0.5 font-medium leading-none ${
+                className={`text-xs tracking-tight mt-0.5 font-medium leading-none ${
                   isActive ? "text-[#F5D06C] font-bold" : "text-slate-400"
                 }`}
               >

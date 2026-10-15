@@ -534,7 +534,7 @@ export const DojoPlayer3: React.FC<DojoPlayer3Props> = ({
 
           {/* 2. CHỈ DẪN ĐỘNG TÁC CHỮ KHỔ LỚN (24px–32px SERIF, KHÔNG ĐÓNG HỘP, ĐỌC RÕ TỪ 2 MÉT) */}
           <div className="space-y-4 py-1">
-            <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-bold font-serif text-[#FAF6F0] leading-[1.38] tracking-tight">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-[#FAF6F0] leading-[1.38] tracking-tight">
               {cleanedDesc && !cleanedDesc.includes("trang PDF")
                 ? cleanedDesc
                 : `Thực hiện tư thế số ${currentMotion.stepNo} của bài ${lesson.title} theo đúng trục trung tuyến.`}

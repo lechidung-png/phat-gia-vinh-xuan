@@ -216,14 +216,14 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
                 <span className="text-[#F5D06C] font-bold uppercase">
                   Bài {currentFormIndex + 1}/18 • {currentFormIntro.category}
                 </span>
-                <span className="text-white/30">•</span>
+                <span className="text-white/75">•</span>
                 <span className="text-emerald-400 font-semibold">
                   {currentLesson.motions.length} thế võ
                 </span>
                 {(currentFormIntro.category === "Tam Đại Quyền" ||
                   currentFormIntro.category === "108 Thế Liên Hoàn") && (
                   <>
-                    <span className="text-white/30 hidden sm:inline">•</span>
+                    <span className="text-white/75 hidden sm:inline">•</span>
                     <span className="text-amber-200 font-serif italic hidden sm:inline">
                       &ldquo;Structure before Speed&rdquo;
                     </span>
@@ -378,7 +378,7 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({
               </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {FORMS_18_STAGES.map((stage) => {
                 const stageLessons = FORMS_18.filter((l) => stage.formIds.includes(l.id));
                 return (

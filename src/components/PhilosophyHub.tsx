@@ -184,7 +184,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="hidden sm:inline">{STRATEGIC_APHORISMS.length} Đại Khẩu Quyết Sách Gốc</span>
                 <span className="sm:hidden">{STRATEGIC_APHORISMS.length} Khẩu Quyết</span>
               </div>
-              <div className={`text-[10px] truncate ${activeTab === "aphorisms" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
+              <div className={`text-xs truncate ${activeTab === "aphorisms" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
                 Trọn bộ Khẩu quyết Chương I–V
               </div>
             </div>
@@ -206,7 +206,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="hidden sm:inline">42 Lời Khuyên Của Sư Phụ</span>
                 <span className="sm:hidden">42 Lời Khuyên</span>
               </div>
-              <div className={`text-[10px] truncate ${activeTab === "counsels" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
+              <div className={`text-xs truncate ${activeTab === "counsels" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
                 Sư phụ truyền đời • Yếu lĩnh tu tập
               </div>
             </div>
@@ -228,7 +228,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="hidden sm:inline">Tinh Hoa Thế Giới</span>
                 <span className="sm:hidden">Vịnh Xuân TG</span>
               </div>
-              <div className={`text-[10px] truncate ${activeTab === "global" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
+              <div className={`text-xs truncate ${activeTab === "global" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
                 {GLOBAL_WING_CHUN_MASTERS.length} Danh Sư • {totalGlobalQuotes} Câu Quote
               </div>
             </div>
@@ -250,7 +250,7 @@ export const PhilosophyHub: React.FC = () => {
                 <span className="hidden sm:inline">Châm Ngôn Võ Đạo</span>
                 <span className="sm:hidden">Châm Ngôn</span>
               </div>
-              <div className={`text-[10px] truncate ${activeTab === "quotes" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
+              <div className={`text-xs truncate ${activeTab === "quotes" ? "text-[#2A0E0A]/80" : "text-amber-200/60"}`}>
                 Kho {MARTIAL_WISDOM_QUOTES.length} Lời Răn &amp; Châm Ngôn
               </div>
             </div>
@@ -277,7 +277,7 @@ export const PhilosophyHub: React.FC = () => {
                       : "bg-[#1C120B] text-amber-200/80 border-[#F5D06C]/20 hover:border-[#F5D06C]/60 hover:text-white"
                   }`}
                 >
-                  <span className={`w-6 h-6 rounded-full shrink-0 flex items-center justify-center font-mono text-[11px] ${isSelected ? "bg-[#2A0E0A] text-[#F5D06C]" : "bg-[#F5D06C]/15 text-[#F5D06C]"}`}>
+                  <span className={`w-6 h-6 rounded-full shrink-0 flex items-center justify-center font-mono text-xs ${isSelected ? "bg-[#2A0E0A] text-[#F5D06C]" : "bg-[#F5D06C]/15 text-[#F5D06C]"}`}>
                     {aph.order}
                   </span>
                   <span className="leading-snug line-clamp-2">{aph.title.split("(")[0].trim()}</span>
@@ -298,7 +298,7 @@ export const PhilosophyHub: React.FC = () => {
                   <span className="text-xs font-serif text-amber-200/70 font-mono">
                     {selectedAphorism.hanzi}
                   </span>
-                  <span className="text-[11px] text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
+                  <span className="text-xs text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/40 font-mono">
                     Tâm Pháp Chân Truyền
                   </span>
                 </div>
@@ -315,7 +315,7 @@ export const PhilosophyHub: React.FC = () => {
                 {selectedAphorism.keyConcepts.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="px-2.5 py-1 rounded-lg bg-[#2D160E] border border-[#F5D06C]/30 text-[#F5D06C] text-[11px] font-mono"
+                    className="px-2.5 py-1 rounded-lg bg-[#2D160E] border border-[#F5D06C]/30 text-[#F5D06C] text-xs font-mono"
                   >
                     #{tag}
                   </span>
@@ -338,7 +338,7 @@ export const PhilosophyHub: React.FC = () => {
                     {selectedAphorism.philosophy}
                   </p>
                 </div>
-                <div className="pt-2 border-t border-[#F5D06C]/10 text-[11px] text-amber-200/60 font-mono">
+                <div className="pt-2 border-t border-[#F5D06C]/10 text-xs text-amber-200/60 font-mono">
                   Phật Gia Vịnh Xuân • Tông Chỉ
                 </div>
               </div>
@@ -356,7 +356,7 @@ export const PhilosophyHub: React.FC = () => {
                     {selectedAphorism.biomechanics}
                   </p>
                 </div>
-                <div className="pt-2 border-t border-[#F5D06C]/10 text-[11px] text-emerald-400/80 font-mono">
+                <div className="pt-2 border-t border-[#F5D06C]/10 text-xs text-emerald-400/80 font-mono">
                   Cơ sở: PGS.TS Y Khoa Nguyễn Mạnh Nhâm
                 </div>
               </div>
@@ -374,7 +374,7 @@ export const PhilosophyHub: React.FC = () => {
                     {selectedAphorism.tacticalApplication}
                   </p>
                 </div>
-                <div className="pt-2 border-t border-[#F5D06C]/10 text-[11px] text-sky-400/80 font-mono">
+                <div className="pt-2 border-t border-[#F5D06C]/10 text-xs text-sky-400/80 font-mono">
                   Cận chiến sinh tồn
                 </div>
               </div>
@@ -382,7 +382,7 @@ export const PhilosophyHub: React.FC = () => {
 
             {/* Trích Dẫn Nguyên Bản Giáo Trình */}
             <div className="p-4 sm:p-5 rounded-2xl bg-[#2A140B] border-l-4 border-l-[#F5D06C] border border-[#F5D06C]/30 text-xs sm:text-sm text-amber-100 font-serif italic leading-relaxed">
-              <span className="not-italic font-mono font-bold text-[#F5D06C] uppercase text-[10px] block mb-1">
+              <span className="not-italic font-mono font-bold text-[#F5D06C] uppercase text-xs block mb-1">
                 Trích Dẫn Nguyên Văn Giáo Trình:
               </span>
               &ldquo;{selectedAphorism.originalQuote}&rdquo;
@@ -496,7 +496,7 @@ export const PhilosophyHub: React.FC = () => {
                         <span className="w-7 h-7 rounded-xl bg-gradient-to-r from-[#F5D06C] to-[#E2B743] text-[#2A0E0A] font-mono font-bold text-xs flex items-center justify-center shadow-xs">
                           #{counsel.number}
                         </span>
-                        <span className={`text-[10px] font-mono font-semibold px-2 py-0.5 rounded-md border ${badgeStyle}`}>
+                        <span className={`text-xs font-mono font-semibold px-2 py-0.5 rounded-md border ${badgeStyle}`}>
                           {counsel.categoryLabel}
                         </span>
                       </div>
@@ -513,7 +513,7 @@ export const PhilosophyHub: React.FC = () => {
 
                   <div className="pt-2 border-t border-[#F5D06C]/15 flex flex-wrap gap-1">
                     {counsel.keywords.map((kw, i) => (
-                      <span key={i} className="text-[10px] text-amber-200/60 font-mono">
+                      <span key={i} className="text-xs text-amber-200/60 font-mono">
                         #{kw}
                       </span>
                     ))}
@@ -585,7 +585,7 @@ export const PhilosophyHub: React.FC = () => {
                       ) : (
                         <div className="w-20 h-26 sm:w-24 sm:h-32 rounded-2xl border-2 border-[#F5D06C]/35 bg-[#25120a] flex flex-col items-center justify-center shrink-0 text-[#F5D06C] gap-1">
                           <BookOpen className="w-8 h-8 opacity-75" />
-                          <span className="text-[10px] font-serif opacity-60">Tông Sư</span>
+                          <span className="text-xs font-serif opacity-60">Tông Sư</span>
                         </div>
                       )}
                       <div className="space-y-1">
@@ -635,7 +635,7 @@ export const PhilosophyHub: React.FC = () => {
                             <div className="space-y-2">
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2 flex-wrap">
-                                  <span className="px-2 py-0.5 rounded-md bg-[#F5D06C]/20 text-[#F5D06C] font-mono text-[11px] font-bold">
+                                  <span className="px-2 py-0.5 rounded-md bg-[#F5D06C]/20 text-[#F5D06C] font-mono text-xs font-bold">
                                     Quote #{qIdx + 1}
                                   </span>
                                   {qItem.hanziOrOriginal && (
@@ -654,7 +654,7 @@ export const PhilosophyHub: React.FC = () => {
                                     )
                                   }
                                   title="Sao chép câu danh ngôn này"
-                                  className="px-2.5 py-1 rounded-lg bg-[#160D09] hover:bg-[#2E1810] text-amber-200/80 hover:text-white border border-[#F5D06C]/25 text-[11px] font-mono flex items-center gap-1 cursor-pointer transition shrink-0"
+                                  className="px-2.5 py-1 rounded-lg bg-[#160D09] hover:bg-[#2E1810] text-amber-200/80 hover:text-white border border-[#F5D06C]/25 text-xs font-mono flex items-center gap-1 cursor-pointer transition shrink-0"
                                 >
                                   {isThisCopied ? (
                                     <>
@@ -673,8 +673,8 @@ export const PhilosophyHub: React.FC = () => {
                                 &ldquo;{qItem.quote}&rdquo;
                               </p>
                             </div>
-                            <p className="text-xs sm:text-[13px] text-slate-300/95 font-serif leading-relaxed border-t border-[#F5D06C]/10 pt-2.5">
-                              <span className="text-[#F5D06C] font-mono text-[11px] uppercase mr-1.5 font-semibold">
+                            <p className="text-xs sm:text-sm text-slate-300/95 font-serif leading-relaxed border-t border-[#F5D06C]/10 pt-2.5">
+                              <span className="text-[#F5D06C] font-mono text-xs uppercase mr-1.5 font-semibold">
                                 Ý nghĩa:
                               </span>
                               {qItem.context}
@@ -793,7 +793,7 @@ export const PhilosophyHub: React.FC = () => {
                     </div>
 
                     {/* Câu Châm Ngôn Chính — Cỡ Chữ Cân Xứng Với Khung Ảnh */}
-                    <blockquote className="text-xl sm:text-2xl lg:text-[26px] font-serif font-bold text-white leading-relaxed gold-gradient py-1">
+                    <blockquote className="text-xl sm:text-2xl lg:text-2xl font-serif font-bold text-white leading-relaxed gold-gradient py-1">
                       &ldquo;{currentQuote.quote}&rdquo;
                     </blockquote>
 
@@ -803,7 +803,7 @@ export const PhilosophyHub: React.FC = () => {
                         <Sparkles className="w-3.5 h-3.5" />
                         Luận Giải Võ Đạo &amp; Ứng Dụng:
                       </div>
-                      <p className="text-sm sm:text-[15px] text-amber-100/95 font-serif leading-relaxed">
+                      <p className="text-sm sm:text-base text-amber-100/95 font-serif leading-relaxed">
                         {currentQuote.context}
                       </p>
                     </div>
@@ -905,7 +905,7 @@ export const PhilosophyHub: React.FC = () => {
                   ) : (
                     <div className="w-16 h-20 sm:w-20 sm:h-24 rounded-xl border border-[#F5D06C]/35 bg-[#24120B] flex flex-col items-center justify-center shrink-0 text-[#F5D06C]">
                       <Quote className="w-5 h-5 opacity-70 rotate-180" />
-                      <span className="text-[10px] font-serif mt-1 opacity-75">Khẩu Quyết</span>
+                      <span className="text-xs font-serif mt-1 opacity-75">Khẩu Quyết</span>
                     </div>
                   )}
 
@@ -916,7 +916,7 @@ export const PhilosophyHub: React.FC = () => {
                         <span className="text-[#F5D06C] font-serif font-bold truncate">
                           {q.author}
                         </span>
-                        <span className="px-2 py-0.5 rounded bg-[#F5D06C]/15 text-[#F5D06C] font-bold text-[10px] shrink-0">
+                        <span className="px-2 py-0.5 rounded bg-[#F5D06C]/15 text-[#F5D06C] font-bold text-xs shrink-0">
                           #{originalIndex + 1}
                         </span>
                       </div>
@@ -924,9 +924,9 @@ export const PhilosophyHub: React.FC = () => {
                         &ldquo;{q.quote}&rdquo;
                       </p>
                     </div>
-                    <div className="pt-1.5 border-t border-[#F5D06C]/10 flex items-center justify-between gap-2 text-[11px]">
+                    <div className="pt-1.5 border-t border-[#F5D06C]/10 flex items-center justify-between gap-2 text-xs">
                       <span className="text-amber-200/65 truncate">{q.roleOrSource}</span>
-                      <span className="text-[#F5D06C]/70 text-[10px] font-mono shrink-0">Xem chi tiết →</span>
+                      <span className="text-[#F5D06C]/70 text-xs font-mono shrink-0">Xem chi tiết →</span>
                     </div>
                   </div>
                 </div>

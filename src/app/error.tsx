@@ -30,7 +30,7 @@ export default function ErrorBoundary({ error, reset }: ErrorBoundaryProps) {
             Hệ thống võ đường gặp sự cố tải trang tạm thời. Vui lòng bấm thử lại để tái khởi động không gian võ học.
           </p>
           {error.digest && (
-            <p className="text-[10px] font-mono text-amber-200/50">
+            <p className="text-xs font-mono text-amber-200/75">
               Mã theo dõi: {error.digest}
             </p>
           )}

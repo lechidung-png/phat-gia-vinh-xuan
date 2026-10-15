@@ -183,7 +183,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                     <div className="min-w-0">
                       <div className="flex items-center gap-2">
                         <span
-                          className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded ${
+                          className={`text-xs font-mono font-bold px-2 py-0.5 rounded ${
                             isTech
                               ? "bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30"
                               : "bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30"
@@ -219,7 +219,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         </div>
 
         {/* Footer shortcuts */}
-        <div className="px-4 py-2.5 bg-[#080B10] border-t border-[#1E293B] flex items-center justify-between text-[11px] text-slate-500">
+        <div className="px-4 py-2.5 bg-[#080B10] border-t border-[#1E293B] flex items-center justify-between text-xs text-slate-500">
           <div className="hidden sm:flex items-center gap-3">
             <span>
               <kbd className="px-1.5 py-0.5 bg-slate-800 rounded text-slate-300">↑↓</kbd> Di chuyển

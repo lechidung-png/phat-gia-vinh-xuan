@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-[#140A06]/90 backdrop-blur-xl border-b border-white/10 shadow-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3 sm:gap-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3 sm:gap-6">
         
         {/* Logo & Title */}
         <div
@@ -137,7 +137,7 @@ export const Header: React.FC<HeaderProps> = ({
             <FontSizeControls />
           </div>
 
-          <div className="text-[10px] font-bold text-amber-200/60 uppercase tracking-widest px-1">
+          <div className="text-xs font-bold text-amber-200/60 uppercase tracking-widest px-1">
             Danh Mục Phân Hệ Võ Học &amp; Khí Công
           </div>
 

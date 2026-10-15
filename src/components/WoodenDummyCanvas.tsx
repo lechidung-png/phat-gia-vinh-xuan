@@ -179,7 +179,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   <Compass className="w-4 h-4" />
                   Bản Vẽ Mặt Bằng Mộc Nhân
                 </span>
-                <span className="text-[11px] font-mono text-amber-300 font-semibold bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
+                <span className="text-xs font-mono text-amber-300 font-semibold bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
                   Nhìn Từ Trên Cao
                 </span>
               </div>
@@ -197,7 +197,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                     className="object-contain martial-filter"
                     priority
                   />
-                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-[11px] font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
+                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-xs font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
                     <ZoomIn className="w-3.5 h-3.5 text-[#F5D06C]" />
                     Phóng to
                   </div>
@@ -264,7 +264,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 <span className="font-bold text-[#F5D06C] flex items-center gap-1.5">
                   <Eye className="w-4 h-4" /> 1. Mộc Nhân Treo Trên Khung Giá Đỡ
                 </span>
-                <span className="text-[10px] font-mono text-amber-300 bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
+                <span className="text-xs font-mono text-amber-300 bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-800/40">
                   Khung Treo Độc Bản
                 </span>
               </div>
@@ -280,7 +280,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   className="object-contain martial-filter"
                   priority
                 />
-                <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-[11px] font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
+                <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-xs font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
                   <ZoomIn className="w-3.5 h-3.5 text-[#F5D06C]" />
                   Phóng to
                 </div>
@@ -300,7 +300,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 <span className="font-bold text-[#10B981] flex items-center gap-1.5">
                   <Shield className="w-4 h-4" /> 2. Cây Mộc Nhân 5 Tầng Cọc Sư Tổ Tế Công 1954
                 </span>
-                <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-800/40">
+                <span className="text-xs font-mono text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-800/40">
                   Chuẩn Bản 38 Gia Ngư (1954)
                 </span>
               </div>
@@ -316,7 +316,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                   className="object-contain martial-filter"
                   priority
                 />
-                <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-[11px] font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
+                <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-black/80 text-white text-xs font-mono flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition shadow">
                   <ZoomIn className="w-3.5 h-3.5 text-[#F5D06C]" />
                   Phóng to
                 </div>
@@ -439,7 +439,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                     fill
                     className="object-contain martial-filter transition duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-black/80 text-white text-[10px] font-mono flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition shadow">
+                  <div className="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-black/80 text-white text-xs font-mono flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition shadow">
                     <ZoomIn className="w-3 h-3 text-[#F5D06C]" />
                     Phóng to
                   </div>
@@ -448,13 +448,13 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                 {/* Nội dung tư liệu võ học chuẩn xác */}
                 <div className="mt-4 flex-1 flex flex-col justify-between space-y-2.5">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-mono text-[#F5D06C] font-semibold uppercase tracking-wider block bg-[#2A0E0A] px-2 py-0.5 rounded border border-[#F5D06C]/20 w-fit">
+                    <span className="text-xs font-mono text-[#F5D06C] font-semibold uppercase tracking-wider block bg-[#2A0E0A] px-2 py-0.5 rounded border border-[#F5D06C]/20 w-fit">
                       {card.pageBadge}
                     </span>
                     <h4 className="text-sm font-bold text-white group-hover:text-[#F5D06C] transition font-serif line-clamp-1">
                       {card.title}
                     </h4>
-                    <p className="text-[11px] font-medium text-amber-200/90 italic">
+                    <p className="text-xs font-medium text-amber-200/90 italic">
                       {card.subtitle}
                     </p>
                     <p className="text-xs text-[#D9C3B4] leading-relaxed line-clamp-3">
@@ -462,7 +462,7 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                     </p>
                   </div>
 
-                  <div className="pt-2 border-t border-[#F5D06C]/15 text-[11px] text-[#F7E7D9]/80 flex items-start gap-1.5">
+                  <div className="pt-2 border-t border-[#F5D06C]/15 text-xs text-[#F7E7D9]/80 flex items-start gap-1.5">
                     <span className="text-[#F5D06C] font-bold shrink-0">&bull; Điểm cốt tủy:</span>
                     <span className="line-clamp-2">{card.focusPoint}</span>
                   </div>
@@ -525,19 +525,19 @@ export const WoodenDummyCanvas: React.FC<WoodenDummyCanvasProps> = ({
                       </div>
                       <div className="min-w-0">
                         <div className="flex items-center gap-1.5 flex-wrap">
-                          <span className="text-[10px] font-mono text-[#F5D06C] font-bold">
+                          <span className="text-xs font-mono text-[#F5D06C] font-bold">
                             #{motion.stepNo}
                           </span>
                           <h5 className="text-xs font-bold text-white truncate group-hover:text-[#F5D06C] transition">
                             Thế {motion.stepNo}
                           </h5>
                           {extractMotionChieu(motion.desc) && (
-                            <span className="text-[9px] text-[#F5D06C] bg-[#F5D06C]/10 border border-[#F5D06C]/25 px-1 py-0.2 rounded font-sans">
+                            <span className="text-xs text-[#F5D06C] bg-[#F5D06C]/10 border border-[#F5D06C]/25 px-1 py-0.2 rounded font-sans">
                               {extractMotionChieu(motion.desc)}
                             </span>
                           )}
                         </div>
-                        <p className="text-[11px] text-[#D9C3B4] line-clamp-1 mt-0.5">
+                        <p className="text-xs text-[#D9C3B4] line-clamp-1 mt-0.5">
                           {cleanMotionTitle(motion.desc)}
                         </p>
                       </div>

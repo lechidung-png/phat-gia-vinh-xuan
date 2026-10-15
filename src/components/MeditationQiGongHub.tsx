@@ -69,7 +69,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
               <span>
                 &quot;Đả quyền bất luyện công, đáo lão nhất trường không — Thần định Khí liễm, Ý thủ Đan Điền.&quot;
               </span>
-              <span className="text-[11px] font-mono text-[#F5D06C] not-italic shrink-0">
+              <span className="text-xs font-mono text-[#F5D06C] not-italic shrink-0">
                 Khí là vua của Lực
               </span>
             </div>
@@ -88,7 +88,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
-            <span className="text-[11px] font-serif text-amber-200/80 italic text-center">
+            <span className="text-xs font-serif text-amber-200/80 italic text-center">
               Võ sư Lê Đắc Kiên • Võ đường Huỳnh Thúc Kháng
             </span>
           </div>
@@ -221,7 +221,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
                     <span className="w-7 h-7 rounded-lg bg-[#F5D06C]/20 border border-[#F5D06C]/40 flex items-center justify-center text-xs font-mono font-bold text-[#F5D06C]">
                       {rule.no}
                     </span>
-                    <span className="text-xs font-serif text-amber-200/50">
+                    <span className="text-xs font-serif text-amber-200/75">
                       {rule.hanzi}
                     </span>
                   </div>
@@ -411,7 +411,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
                       <span className="text-xs text-[#F5D06C] font-mono">{p.alias}</span>
                     </div>
                     {p.hanzi && (
-                      <span className="text-sm font-serif text-amber-200/50">
+                      <span className="text-sm font-serif text-amber-200/75">
                         {p.hanzi}
                       </span>
                     )}
@@ -422,7 +422,7 @@ export const MeditationQiGongHub: React.FC<MeditationQiGongHubProps> = ({
                   </p>
 
                   <div className="space-y-2 pt-2">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-amber-200 block">
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-200 block">
                       Yếu lĩnh thực hiện:
                     </span>
                     <ul className="space-y-1.5 text-xs text-slate-300">

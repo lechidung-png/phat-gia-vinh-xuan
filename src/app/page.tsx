@@ -199,7 +199,7 @@ export default function Home() {
     setNavigationSeq((s) => s + 1);
     setActiveTab("forms");
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -221,7 +221,7 @@ export default function Home() {
     setNavigationSeq((s) => s + 1);
     setActiveTab("forms");
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -274,7 +274,7 @@ export default function Home() {
     }
     setNavigationSeq((s) => s + 1);
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -285,7 +285,7 @@ export default function Home() {
     setNavigationSeq((s) => s + 1);
     setActiveTab("forms");
     if (typeof window !== "undefined") {
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -302,8 +302,8 @@ export default function Home() {
         openSearch={() => setIsSearchOpen(true)}
       />
 
-      {/* Main Content Area */}
-      <main suppressHydrationWarning className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 pb-28 lg:pb-8">
+      {/* Main Content Area — Spacious 1440px Gallery Canvas */}
+      <main suppressHydrationWarning className="flex-1 max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-10 pt-6 sm:pt-8 pb-28 lg:pb-10">
         {/* Tab 0: Trang Chủ Chào Mừng (Welcome Portal & Di Sản Võ Học) */}
         {activeTab === "welcome" && (
           <WelcomePortal
@@ -380,26 +380,26 @@ export default function Home() {
       )}
 
       {/* Modern Martial Footer */}
-      <footer className="mt-auto border-t border-[#3D291F] glass-panel py-5 mb-16 lg:mb-0">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-amber-200/60">
-          <div className="flex items-center gap-2.5">
-            <div className="relative w-6 h-6 rounded-md overflow-hidden border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] shadow-sm">
+      <footer className="mt-auto border-t border-white/10 glass-panel py-6 mb-16 lg:mb-0">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-amber-200/80">
+          <div className="flex items-center gap-3">
+            <div className="relative w-7 h-7 rounded-lg overflow-hidden border border-[#F5D06C]/40 shrink-0 bg-[#FFFDF8] shadow-sm">
               <Image
                 src="/assets/images/logo/an_vuong_phat_gia_vinh_xuan.png"
                 alt="Ấn Vuông Phật Gia Vịnh Xuân"
                 fill
-                sizes="24px"
+                sizes="28px"
                 className="object-contain p-0.5"
               />
             </div>
-            <p className="text-center sm:text-left font-medium">
+            <p className="text-center sm:text-left font-medium text-[#FAF6F0]">
               Đơn vị đóng góp xây dựng: Võ đường Huỳnh Thúc Kháng • Phật Gia Vịnh Xuân Quyền
             </p>
           </div>
-          <div className="flex items-center gap-4 text-[11px]">
-            <span className="text-[#E2B743]">Di Sản Võ Học</span>
+          <div className="flex items-center gap-4 text-xs sm:text-sm">
+            <span className="text-[#F5D06C] font-semibold">Di Sản Võ Học</span>
             <span>•</span>
-            <span className="text-slate-400">Tài liệu: PGS.TS Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức</span>
+            <span className="text-amber-100/75">Tài liệu: PGS.TS Nguyễn Mạnh Nhâm &amp; ThS. Nguyễn Duy Thức</span>
           </div>
         </div>
       </footer>

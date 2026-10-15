@@ -191,7 +191,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
             <Compass className="w-4 h-4" />
             <span className="hidden sm:inline">Triết Lý &amp; Yếu Quyết</span>
             <span className="sm:hidden">Triết Lý</span>
-            <span className="px-1.5 py-0.5 rounded-md bg-emerald-950 text-emerald-300 text-[10px] font-mono border border-emerald-700/60 font-bold">
+            <span className="px-1.5 py-0.5 rounded-md bg-emerald-950 text-emerald-300 text-xs font-mono border border-emerald-700/60 font-bold">
               Mới
             </span>
           </button>
@@ -231,7 +231,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-1.5 inset-x-1 text-center">
-                <span className="text-[10px] font-mono font-bold text-[#E2B743] bg-black/85 px-2 py-0.5 rounded-full border border-[#E2B743]/40 shadow">
+                <span className="text-xs font-mono font-bold text-[#E2B743] bg-black/85 px-2 py-0.5 rounded-full border border-[#E2B743]/40 shadow">
                   Sư Tổ Khai Sơn
                 </span>
               </div>
@@ -336,12 +336,12 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-1.5 inset-x-1 text-center">
-                    <span className="text-[9px] sm:text-[10px] font-mono font-bold text-emerald-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-[#10B981]/40 shadow">
+                    <span className="text-xs sm:text-sm font-mono font-bold text-emerald-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-[#10B981]/40 shadow">
                       Thầy Nhâm
                     </span>
                   </div>
                 </div>
-                <span className="text-[11px] text-emerald-200/90 font-medium mt-1.5 text-center">PGS.TS Nguyễn Mạnh Nhâm</span>
+                <span className="text-xs text-emerald-200/90 font-medium mt-1.5 text-center">PGS.TS Nguyễn Mạnh Nhâm</span>
               </div>
 
               {/* Ảnh 2: ThS.DS Nguyễn Duy Thức */}
@@ -360,12 +360,12 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-1.5 inset-x-1 text-center">
-                    <span className="text-[9px] sm:text-[10px] font-mono font-bold text-amber-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-amber-500/40 shadow">
+                    <span className="text-xs sm:text-sm font-mono font-bold text-amber-300 bg-black/85 px-1.5 py-0.5 rounded-full border border-amber-500/40 shadow">
                       Thầy Thức
                     </span>
                   </div>
                 </div>
-                <span className="text-[11px] text-amber-200/90 font-medium mt-1.5 text-center">ThS.DS Nguyễn Duy Thức</span>
+                <span className="text-xs text-amber-200/90 font-medium mt-1.5 text-center">ThS.DS Nguyễn Duy Thức</span>
               </div>
             </div>
 
@@ -492,7 +492,7 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
         </div>
 
         {/* Tab Selector Cho 6 Chủ Đề Triết Lý */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {PHILOSOPHY_QUOTES.map((q) => {
             const isActive = q.id === activeQuoteId;
             return (
@@ -509,12 +509,12 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                   <span className="p-1 rounded-lg bg-black/40 border border-white/10">
                     {q.icon}
                   </span>
-                  <span className="text-[10px] font-mono text-amber-200/60">
+                  <span className="text-xs font-mono text-amber-200/60">
                     {q.hanNom}
                   </span>
                 </div>
                 <div>
-                  <span className="text-[11px] font-bold block leading-snug">
+                  <span className="text-xs font-bold block leading-snug">
                     {q.topic}
                   </span>
                 </div>
@@ -546,10 +546,10 @@ export const LineageTree: React.FC<LineageTreeProps> = ({
                 <h5 className="font-bold text-white text-sm font-serif">
                   Phật Gia Vịnh Xuân
                 </h5>
-                <p className="text-[11px] text-[#E2B743] font-mono">
+                <p className="text-xs text-[#E2B743] font-mono">
                   Võ Đường Huỳnh Thúc Kháng
                 </p>
-                <span className="text-[10px] text-amber-200/70 block font-mono">
+                <span className="text-xs text-amber-200/70 block font-mono">
                   Gìn Giữ &amp; Trao Truyền
                 </span>
               </div>

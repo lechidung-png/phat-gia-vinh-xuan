@@ -91,7 +91,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#F5D06C] bg-[#F5D06C]/15 px-2 py-0.5 rounded-full border border-[#F5D06C]/30">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#F5D06C] bg-[#F5D06C]/15 px-2 py-0.5 rounded-full border border-[#F5D06C]/30">
                   {master.generationLabel}
                 </span>
                 {master.hanzi && (
@@ -162,7 +162,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                   priority
                 />
               </div>
-              <span className="text-[11px] font-mono text-[#F5D06C] bg-black/70 px-3 py-1 rounded-full border border-[#F5D06C]/30 text-center font-bold">
+              <span className="text-xs font-mono text-[#F5D06C] bg-black/70 px-3 py-1 rounded-full border border-[#F5D06C]/30 text-center font-bold">
                 {master.period}
               </span>
             </div>
@@ -203,7 +203,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                     </blockquote>
                   </div>
                   {master.quoteContext && (
-                    <p className="text-[11px] text-amber-200/70 font-mono pl-8 italic">
+                    <p className="text-xs text-amber-200/70 font-mono pl-8 italic">
                       — {master.quoteContext}
                     </p>
                   )}
@@ -212,14 +212,14 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
 
               {/* Historical Locations Pills */}
               <div className="space-y-1.5 pt-1">
-                <span className="text-[11px] uppercase tracking-wider text-slate-400 font-bold block">
+                <span className="text-xs uppercase tracking-wider text-slate-400 font-bold block">
                   Địa danh lịch sử gắn liền:
                 </span>
                 <div className="flex flex-wrap gap-1.5 justify-center md:justify-start">
                   {master.historicalLocations.map((loc, i) => (
                     <span
                       key={i}
-                      className="px-2.5 py-0.5 rounded-lg bg-[#2A160E] border border-[#3D291F] text-[11px] font-mono text-amber-200/80"
+                      className="px-2.5 py-0.5 rounded-lg bg-[#2A160E] border border-[#3D291F] text-xs font-mono text-amber-200/80"
                     >
                       {loc}
                     </span>
@@ -287,7 +287,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
                     Ảnh Tư Liệu Lịch Sử
                   </h4>
                 </div>
-                <span className="text-[10px] font-mono text-[#F5D06C] bg-[#F5D06C]/15 px-2.5 py-0.5 rounded-full border border-[#F5D06C]/30 font-bold">
+                <span className="text-xs font-mono text-[#F5D06C] bg-[#F5D06C]/15 px-2.5 py-0.5 rounded-full border border-[#F5D06C]/30 font-bold">
                   Thập Niên 1950
                 </span>
               </div>
@@ -392,7 +392,7 @@ export const MasterDetailModal: React.FC<MasterDetailModalProps> = ({
 
         {/* BOTTOM ACTION BAR */}
         <div className="px-6 py-3.5 border-t border-[#3D291F] bg-[#1A0E08] flex items-center justify-between shrink-0">
-          <span className="text-[11px] text-slate-400 font-mono hidden sm:inline">
+          <span className="text-xs text-slate-400 font-mono hidden sm:inline">
             Nhấn <kbd className="px-1.5 py-0.5 rounded bg-black border border-white/20 text-white font-bold">Esc</kbd> để đóng • Dùng <kbd className="px-1.5 py-0.5 rounded bg-black border border-white/20 text-white font-bold">←</kbd> <kbd className="px-1.5 py-0.5 rounded bg-black border border-white/20 text-white font-bold">→</kbd> để chuyển vị thầy
           </span>
           <button

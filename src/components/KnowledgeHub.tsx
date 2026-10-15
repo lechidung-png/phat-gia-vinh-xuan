@@ -280,13 +280,13 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
                           <span className="px-2.5 py-0.5 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 font-bold font-mono">
                             Bài {String(lesson.bookOrder).padStart(2, "0")}
                           </span>
-                          <span className="text-slate-400 font-mono text-[11px]">
+                          <span className="text-slate-400 font-mono text-xs">
                             Trang {lesson.pageRange}
                           </span>
                         </div>
 
                         <div>
-                          <span className="text-[11px] text-amber-200/70 font-medium block mb-1">
+                          <span className="text-xs text-amber-200/70 font-medium block mb-1">
                             {groupObj?.name || lesson.groupId}
                           </span>
                           <h4 className="text-base font-bold text-white font-serif leading-snug">
@@ -294,7 +294,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
                           </h4>
                         </div>
 
-                        <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-300 pt-1">
+                        <div className="flex flex-wrap items-center gap-2 text-xs text-slate-300 pt-1">
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-black/35 border border-[#3D291F]">
                             <ImageIcon className="w-3 h-3 text-[#E2B743]" />
                             {lesson.assetCount} ảnh tư liệu
@@ -327,7 +327,7 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
                           <button
                             type="button"
                             onClick={() => onOpenDojoLesson(lesson.id)}
-                            className="px-2.5 py-1 rounded-lg bg-[#E2B743]/15 hover:bg-[#E2B743]/30 text-[#F5D06C] border border-[#E2B743]/30 text-[11px] font-bold transition"
+                            className="px-2.5 py-1 rounded-lg bg-[#E2B743]/15 hover:bg-[#E2B743]/30 text-[#F5D06C] border border-[#E2B743]/30 text-xs font-bold transition"
                           >
                             Tập bài quyền
                           </button>
@@ -375,13 +375,13 @@ export const KnowledgeHub: React.FC<KnowledgeHubProps> = ({
                     <span className="px-2.5 py-0.5 rounded-full bg-[#E2B743]/15 text-[#E2B743] border border-[#E2B743]/30 font-semibold">
                       {mono.badge}
                     </span>
-                    <span className="text-slate-500 flex items-center gap-1 font-mono text-[11px]">
+                    <span className="text-slate-500 flex items-center gap-1 font-mono text-xs">
                       <Clock className="w-3 h-3" /> {mono.readTime}
                     </span>
                   </div>
 
                   <div>
-                    <span className="text-[10px] text-slate-400 font-mono block mb-1">
+                    <span className="text-xs text-slate-400 font-mono block mb-1">
                       {mono.chapter}
                     </span>
                     <h4 className="text-base font-bold text-white group-hover:text-[#E2B743] transition font-serif leading-snug">

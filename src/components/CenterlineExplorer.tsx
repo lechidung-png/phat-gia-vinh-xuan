@@ -250,7 +250,7 @@ export const CenterlineExplorer: React.FC = () => {
                   </>
                 )}
               </span>
-              <span className="text-[11px] font-mono text-slate-400 bg-[#20150F] px-2 py-0.5 rounded border border-[#3D291F]">
+              <span className="text-xs font-mono text-slate-400 bg-[#20150F] px-2 py-0.5 rounded border border-[#3D291F]">
                 {viewMode === "person_centerline" ? "Võ sư thị phạm giải phẫu" : current.practitioners}
               </span>
             </div>
@@ -260,10 +260,10 @@ export const CenterlineExplorer: React.FC = () => {
               <div className="w-full flex flex-col items-center">
                 {/* Posture Switcher for Person */}
                 <div className="flex items-center gap-2 mb-3 text-xs">
-                  <span className="text-slate-400 text-[11px]">Tư thế võ sư:</span>
+                  <span className="text-slate-400 text-xs">Tư thế võ sư:</span>
                   <button
                     onClick={() => setStancePosture("bai_to")}
-                    className={`px-2.5 py-1 rounded-lg border text-[11px] transition ${
+                    className={`px-2.5 py-1 rounded-lg border text-xs transition ${
                       stancePosture === "bai_to"
                         ? "bg-[#E2B743]/20 border-[#E2B743] text-[#E2B743] font-semibold"
                         : "bg-[#140C08] border-[#3D291F] text-slate-400"
@@ -274,7 +274,7 @@ export const CenterlineExplorer: React.FC = () => {
                   </button>
                   <button
                     onClick={() => setStancePosture("strike")}
-                    className={`px-2.5 py-1 rounded-lg border text-[11px] transition ${
+                    className={`px-2.5 py-1 rounded-lg border text-xs transition ${
                       stancePosture === "strike"
                         ? "bg-[#E2B743]/20 border-[#E2B743] text-[#E2B743] font-semibold"
                         : "bg-[#140C08] border-[#3D291F] text-slate-400"
@@ -308,11 +308,11 @@ export const CenterlineExplorer: React.FC = () => {
                       style={{ zIndex: 10 }}
                     >
                       {/* Top Tý Label */}
-                      <div className="absolute -top-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
+                      <div className="absolute -top-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-xs font-mono font-bold tracking-wider">
                         TÝ
                       </div>
                       {/* Bottom Ngọ Label */}
-                      <div className="absolute -bottom-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-[9px] font-mono font-bold tracking-wider">
+                      <div className="absolute -bottom-1 -left-7 px-1.5 py-0.5 rounded bg-red-900/90 text-red-200 border border-red-500/50 text-xs font-mono font-bold tracking-wider">
                         NGỌ
                       </div>
                     </div>
@@ -358,7 +358,7 @@ export const CenterlineExplorer: React.FC = () => {
                           title={`${acu.name} - Bấm để xem phân tích`}
                           aria-label={acu.name}
                         >
-                          <span className="text-[8px] font-bold">
+                          <span className="text-xs font-bold">
                             {isSelected ? "●" : ""}
                           </span>
                         </button>
@@ -369,7 +369,7 @@ export const CenterlineExplorer: React.FC = () => {
 
                 {/* Controls below person photo */}
                 <div className="flex items-center justify-between w-full max-w-[300px] mt-3 px-1 text-xs">
-                  <label className="flex items-center gap-1.5 text-slate-300 text-[11px] cursor-pointer">
+                  <label className="flex items-center gap-1.5 text-slate-300 text-xs cursor-pointer">
                     <input
                       type="checkbox"
                       checked={showWedgeTriangle}
@@ -378,7 +378,7 @@ export const CenterlineExplorer: React.FC = () => {
                     />
                     Vòm Tam Giác Thủ Hộ (Mũi Nêm)
                   </label>
-                  <span className="text-slate-500 text-[10px]">
+                  <span className="text-slate-500 text-xs">
                     Bấm các chấm đỏ trên thân người để tra huyệt
                   </span>
                 </div>
@@ -389,17 +389,17 @@ export const CenterlineExplorer: React.FC = () => {
                     <span className="font-bold text-[#E2B743] flex items-center gap-1.5 text-sm">
                       <Crosshair className="w-3.5 h-3.5" /> {activeAcupointInfo.name}
                     </span>
-                    <span className="text-[11px] font-mono text-slate-400 px-2 py-0.5 bg-[#140C08] rounded border border-[#3D291F]">
+                    <span className="text-xs font-mono text-slate-400 px-2 py-0.5 bg-[#140C08] rounded border border-[#3D291F]">
                       Hán Tự: {activeAcupointInfo.hanTu}
                     </span>
                   </div>
-                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                  <p className="text-slate-300 text-xs leading-relaxed">
                     <strong>Giải phẫu:</strong> {activeAcupointInfo.role}
                   </p>
-                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                  <p className="text-slate-300 text-xs leading-relaxed">
                     <strong>Võ lý bảo vệ:</strong> {activeAcupointInfo.protection}
                   </p>
-                  <div className="pt-1 flex items-center gap-1.5 text-[11px] text-[#10B981] font-semibold">
+                  <div className="pt-1 flex items-center gap-1.5 text-xs text-[#10B981] font-semibold">
                     <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
                     <span>Thủ pháp ứng dụng: {activeAcupointInfo.wingChunTechnique}</span>
                   </div>
@@ -470,7 +470,7 @@ export const CenterlineExplorer: React.FC = () => {
                     sizes="400px"
                   />
                   {/* Subtle Badge */}
-                  <div className="absolute top-3 left-3 px-2 py-0.5 rounded-md bg-[#20150F]/90 text-[#F5D06C] border border-[#F5D06C]/40 text-[10px] font-semibold">
+                  <div className="absolute top-3 left-3 px-2 py-0.5 rounded-md bg-[#20150F]/90 text-[#F5D06C] border border-[#F5D06C]/40 text-xs font-semibold">
                     100% Ảnh Đối Kháng Thực Chiến
                   </div>
                 </div>
@@ -481,7 +481,7 @@ export const CenterlineExplorer: React.FC = () => {
                     <Target className="w-4 h-4 shrink-0" />
                     <span>{current.combatCaption}</span>
                   </div>
-                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                  <p className="text-slate-300 text-xs leading-relaxed">
                     <strong>Phân tích trục tuyến:</strong> {current.tacticalBreakdown}
                   </p>
                 </div>
@@ -549,7 +549,7 @@ export const CenterlineExplorer: React.FC = () => {
           {/* Tactical Breakdown Panel */}
           <div className="glass-panel p-6 rounded-2xl border border-[#3D291F] space-y-4">
             <div className="border-b border-[#3D291F] pb-3">
-              <span className="text-[10px] font-mono uppercase tracking-wider text-[#E2B743] block">
+              <span className="text-xs font-mono uppercase tracking-wider text-[#E2B743] block">
                 Phân Thế Đối Kháng Theo Trục Tuyến
               </span>
               <h3 className="text-xl font-bold font-serif text-white">{current.title}</h3>
@@ -560,30 +560,30 @@ export const CenterlineExplorer: React.FC = () => {
                 <strong className="text-red-400 flex items-center gap-1.5 mb-1">
                   <Target className="w-4 h-4" /> Ý đồ tấn công của đối thủ:
                 </strong>
-                <p className="text-slate-300 leading-relaxed text-xs sm:text-[13px]">{current.opponentAction}</p>
+                <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">{current.opponentAction}</p>
               </div>
 
               <div className="bg-[#140C08] p-3.5 rounded-xl border border-[#10B981]/30">
                 <strong className="text-[#10B981] flex items-center gap-1.5 mb-1">
                   <ShieldCheck className="w-4 h-4" /> Cách Vịnh Xuân giải mã & phản kích:
                 </strong>
-                <p className="text-slate-200 leading-relaxed text-xs sm:text-[13px]">{current.wingChunDefense}</p>
+                <p className="text-slate-200 leading-relaxed text-xs sm:text-sm">{current.wingChunDefense}</p>
               </div>
 
               <div className="bg-[#140C08] p-3.5 rounded-xl border border-[#E2B743]/30">
                 <strong className="text-[#E2B743] flex items-center gap-1.5 mb-1">
                   <Award className="w-4 h-4" /> Yếu lĩnh khẩu quyết cốt lõi:
                 </strong>
-                <p className="text-slate-300 italic leading-relaxed text-xs sm:text-[13px]">{current.corePrinciple}</p>
+                <p className="text-slate-300 italic leading-relaxed text-xs sm:text-sm">{current.corePrinciple}</p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="p-3 rounded-lg bg-[#20150F] border border-[#3D291F]">
-                  <span className="text-[11px] text-slate-400 block mb-0.5">Thủ pháp đề xuất:</span>
+                  <span className="text-xs text-slate-400 block mb-0.5">Thủ pháp đề xuất:</span>
                   <span className="font-semibold text-[#E2B743] text-xs">{current.hands}</span>
                 </div>
                 <div className="p-3 rounded-lg bg-[#20150F] border border-[#3D291F]">
-                  <span className="text-[11px] text-slate-400 block mb-0.5">Tấn pháp vận hành:</span>
+                  <span className="text-xs text-slate-400 block mb-0.5">Tấn pháp vận hành:</span>
                   <span className="font-semibold text-[#10B981] text-xs">{current.footwork}</span>
                 </div>
               </div>
@@ -598,15 +598,15 @@ export const CenterlineExplorer: React.FC = () => {
             </h4>
             <div className="space-y-2.5 text-xs text-slate-300">
               <div className="flex items-start gap-2">
-                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-[10px]">1</span>
+                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-xs">1</span>
                 <p><strong>Cùi chỏ không rời nách quá 1 nắm tay (Quy tắc Giữ Chỏ):</strong> Cùi chỏ luôn nằm trên trục che chắn chấn thủy và liên sườn, tuyệt đối không vung tay sang ngang làm hở sườn và nách.</p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-[10px]">2</span>
+                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-xs">2</span>
                 <p><strong>Mũi nhọn hướng tâm (Vòm Mũi Nêm Sắt):</strong> Hai mũi bàn tay luôn hướng thẳng vào sống mũi hoặc ngực đối thủ, tạo thành mũi nêm dẫn hướng đòn đánh của địch trượt ra ngoài an toàn.</p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-[10px]">3</span>
+                <span className="w-5 h-5 rounded bg-[#E2B743]/20 text-[#E2B743] font-bold flex items-center justify-center shrink-0 text-xs">3</span>
                 <p><strong>Triệt tiêu trước khi phát lực (Thủ Công Đồng Thời):</strong> Không đỡ rồi mới đánh; trong lúc bạt đòn đối thủ chệch trục 5cm thì tay kia lập tức thấu kình vào yếu huyệt trung môn.</p>
               </div>
             </div>
@@ -614,10 +614,10 @@ export const CenterlineExplorer: React.FC = () => {
 
           {/* Khẩu quyết từ Tài Liệu Khảo Cứu */}
           <div className="p-4 rounded-xl bg-[#20150F] border border-[#E2B743]/20 text-xs space-y-2">
-            <span className="text-[10px] font-mono text-[#E2B743] uppercase tracking-wider block">
+            <span className="text-xs font-mono text-[#E2B743] uppercase tracking-wider block">
               Khẩu Quyết Môn Phái (Tài Liệu Khảo Cứu)
             </span>
-            <p className="text-slate-300 italic text-[11px] leading-relaxed">
+            <p className="text-slate-300 italic text-xs leading-relaxed">
               &quot;Trục thẳng nối liền tâm ngực của ta và đối thủ. Ai khống chế được trục này, người đó kiểm soát trận đấu.<br />
               Lai lưu khứ tống, thoát thủ trực xông: Đòn tới thì mượn lực đón giữ, đòn rút đi thì áp sát tiễn theo; hễ tay rời đòn đỡ là lập tức phát xung quyền đánh thẳng vào trục trung môn đối phương.&quot;
             </p>

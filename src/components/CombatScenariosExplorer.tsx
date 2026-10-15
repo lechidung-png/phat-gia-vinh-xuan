@@ -236,7 +236,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                   }`}
                 >
                   <span>{cat.label}</span>
-                  <span className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+                  <span className={`px-1.5 py-0.2 rounded-full text-xs ${
                     selectedCategory === cat.id ? "bg-[#140C08]/30 text-[#140C08]" : "bg-[#3D291F] text-amber-300"
                   }`}>
                     {cat.count}
@@ -304,7 +304,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                 Hiển thị <strong className="text-[#E2B743]">{filteredScenarios.length}</strong> / 200 thế đối kháng
               </span>
               {searchQuery && (
-                <span className="text-amber-200/40">| Lọc: &quot;{searchQuery}&quot;</span>
+                <span className="text-amber-200/75">| Lọc: &quot;{searchQuery}&quot;</span>
               )}
             </div>
 
@@ -357,17 +357,17 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                       </span>
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-[10px] text-amber-200/70 font-semibold bg-[#20150F] px-2 py-0.5 rounded border border-[#3D291F]">
+                          <span className="text-xs text-amber-200/70 font-semibold bg-[#20150F] px-2 py-0.5 rounded border border-[#3D291F]">
                             {s.category}
                           </span>
-                          <span className={`text-[9px] font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
+                          <span className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
                             {s.dangerLevel}
                           </span>
                         </div>
                         <h4 className="text-xs sm:text-sm font-bold text-[#FBF8F3] group-hover:text-[#E2B743] transition-colors line-clamp-1">
                           {cleanTitle}
                         </h4>
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-1 text-[11px] text-amber-200/80">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-1 text-xs text-amber-200/80">
                           <span className="truncate text-rose-300/90">
                             <strong className="text-rose-400">Địch:</strong> {s.opponentAction}
                           </span>
@@ -420,11 +420,11 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                           <span className="font-mono text-xs font-bold text-[#E2B743] bg-[#E2B743]/15 px-2.5 py-0.5 rounded border border-[#E2B743]/30">
                             #{num.toString().padStart(3, "0")}
                           </span>
-                          <span className="text-[11px] text-amber-200/60 font-medium">
+                          <span className="text-xs text-amber-200/60 font-medium">
                             {s.category}
                           </span>
                         </div>
-                        <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
+                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${getDangerBadgeClass(s.dangerLevel)}`}>
                           {s.dangerLevel}
                         </span>
                       </div>
@@ -439,7 +439,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                         <div className="p-2.5 rounded-xl bg-[#2A1510]/50 border border-rose-900/40 text-rose-200/90 flex items-start gap-2">
                           <Swords className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
                           <div>
-                            <strong className="text-rose-300 font-semibold block text-[11px] uppercase tracking-wide">
+                            <strong className="text-rose-300 font-semibold block text-xs uppercase tracking-wide">
                               Đòn Tấn Công Của Địch:
                             </strong>
                             <p className="mt-0.5 leading-relaxed">{s.opponentAction}</p>
@@ -449,7 +449,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                         <div className="p-2.5 rounded-xl bg-[#142318]/50 border border-emerald-800/40 text-emerald-200/90 flex items-start gap-2">
                           <ShieldAlert className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                           <div>
-                            <strong className="text-emerald-300 font-semibold block text-[11px] uppercase tracking-wide">
+                            <strong className="text-emerald-300 font-semibold block text-xs uppercase tracking-wide">
                               Hóa Giải Vịnh Xuân:
                             </strong>
                             <p className="mt-0.5 leading-relaxed">{s.wingChunSolution}</p>
@@ -458,7 +458,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                       </div>
 
                       {/* Khẩu Quyết & Thủ Pháp */}
-                      <div className="mt-3 pt-3 border-t border-[#3D291F]/60 flex flex-wrap items-center gap-1.5 text-[11px]">
+                      <div className="mt-3 pt-3 border-t border-[#3D291F]/60 flex flex-wrap items-center gap-1.5 text-xs">
                         <span className="text-amber-400 font-medium">Thủ pháp:</span>
                         {s.hands.map((h, i) => (
                           <span key={i} className="px-1.5 py-0.5 rounded bg-[#20150F] text-amber-200/80 border border-[#3D291F]">
@@ -474,7 +474,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                       </div>
 
                       {/* Core Kinh */}
-                      <div className="mt-2 text-[11px] text-amber-200/60 italic flex items-center gap-1">
+                      <div className="mt-2 text-xs text-amber-200/60 italic flex items-center gap-1">
                         <Compass className="w-3 h-3 text-[#E2B743] shrink-0" />
                         <span className="truncate">&quot;{s.coreKinh}&quot;</span>
                       </div>
@@ -792,7 +792,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
                     <span className="font-mono font-bold mr-2">{String.fromCharCode(65 + i)}.</span>
                     {opt}
                     {i === selectedScenarioForModal.quiz.correctIndex && (
-                      <span className="ml-2 text-[10px] text-emerald-400 font-bold uppercase">(Đáp án chuẩn)</span>
+                      <span className="ml-2 text-xs text-emerald-400 font-bold uppercase">(Đáp án chuẩn)</span>
                     )}
                   </div>
                 ))}
@@ -802,7 +802,7 @@ export const CombatScenariosExplorer: React.FC<CombatScenariosExplorerProps> = (
             <div className="p-3 rounded-xl bg-[#140C08] border border-[#3D291F] text-xs text-amber-200/80 space-y-1">
               <strong className="text-[#E2B743] block">Võ lý & Giải phẫu:</strong>
               <p>{selectedScenarioForModal.quiz.explanation}</p>
-              <p className="text-[11px] text-amber-300/60 italic pt-1">{selectedScenarioForModal.biomechanics}</p>
+              <p className="text-xs text-amber-300/60 italic pt-1">{selectedScenarioForModal.biomechanics}</p>
             </div>
 
             <div className="flex items-center justify-end gap-2 pt-2">
