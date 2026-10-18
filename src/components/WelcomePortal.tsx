@@ -178,6 +178,14 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
             </button>
 
             <button
+              onClick={() => onNavigateTab("force")}
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-emerald-950/60 border border-emerald-400/50 text-emerald-200 hover:text-white hover:bg-emerald-900/70 hover:border-emerald-300 font-semibold text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
+            >
+              <Wind className="w-4 h-4 text-emerald-300" />
+              <span>Cơ chế Dùng lực &amp; Khí</span>
+            </button>
+
+            <button
               onClick={() => onNavigateTab("forms", "bai-07")}
               className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl bg-[#140C08] border border-[#3D291F] text-slate-300 hover:text-[#F5D06C] hover:border-[#F5D06C]/50 font-medium text-xs sm:text-sm transition flex items-center gap-1.5 sm:gap-2 cursor-pointer"
             >

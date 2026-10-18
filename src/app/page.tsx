@@ -42,6 +42,9 @@ const CombatScenariosExplorer = dynamic(() =>
 const MeditationQiGongHub = dynamic(() =>
   import("@/components/MeditationQiGongHub").then((m) => m.MeditationQiGongHub)
 );
+const ForcePhilosophyExplorer = dynamic(() =>
+  import("@/components/ForcePhilosophyExplorer").then((m) => m.ForcePhilosophyExplorer)
+);
 const CommandPalette = dynamic(() =>
   import("@/components/CommandPalette").then((m) => m.CommandPalette)
 );
@@ -158,7 +161,8 @@ export default function Home() {
         subTab === "bai-to" ||
         subTab === "drills" ||
         subTab === "centerline" ||
-        subTab === "theory"
+        subTab === "theory" ||
+        subTab === "force"
       ) {
         setFundamentalsSubTab(subTab);
       }
@@ -332,6 +336,11 @@ export default function Home() {
             onNavigateStage={handleNavigateStage}
             onOpenDojoLesson={handleOpenDojoLesson}
           />
+        )}
+
+        {/* Tab Chuyên Biệt: Cơ Chế Dùng Lực Tay - Chân & Khí Lực Vịnh Xuân */}
+        {activeTab === "force" && (
+          <ForcePhilosophyExplorer onOpenDojoLesson={handleOpenDojoLesson} />
         )}
 
         {/* Tab Chuyên Biệt: Thiền & Khí Công Dưỡng Sinh (Thở 4 Thì) */}

@@ -20,6 +20,7 @@ import {
   Eye,
   Compass,
   BookOpen,
+  Zap,
 } from "lucide-react";
 import {
   FOOT_STANCES,
@@ -36,8 +37,11 @@ const CenterlineExplorer = dynamic(() =>
 const KnowledgeHub = dynamic(() =>
   import("@/components/KnowledgeHub").then((m) => m.KnowledgeHub)
 );
+const ForcePhilosophyExplorer = dynamic(() =>
+  import("@/components/ForcePhilosophyExplorer").then((m) => m.ForcePhilosophyExplorer)
+);
 
-export type FundamentalSubTab = "hands" | "feet" | "bai-to" | "drills" | "centerline" | "theory";
+export type FundamentalSubTab = "hands" | "feet" | "bai-to" | "drills" | "centerline" | "theory" | "force";
 
 interface FundamentalAtlasProps {
   onNavigateStage?: (stageId: string) => void;
@@ -828,6 +832,19 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
           <BookOpen className="w-4 h-4" />
           <span className="hidden sm:inline">6. Lý Thuyết &amp; Khảo Cứu</span>
           <span className="sm:hidden">6. Lý Thuyết</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("force")}
+          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+            activeTab === "force"
+              ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
+              : "bg-[#20150F] text-[#F5D06C] hover:text-white border border-[#F5D06C]/40"
+          }`}
+        >
+          <Zap className="w-4 h-4" />
+          <span className="hidden sm:inline">7. Cơ Chế Dùng Lực &amp; Khí</span>
+          <span className="sm:hidden">7. Dùng Lực</span>
         </button>
       </div>
 
@@ -1810,6 +1827,15 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
             navigationSeq={navigationSeq}
             onOpenDojoLesson={onOpenDojoLesson}
           />
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* TAB 7: LÝ THUYẾT & TRIẾT LÝ CƠ CHẾ DÙNG LỰC TAY - CHÂN & KHÍ LỰC        */}
+      {/* ========================================================================= */}
+      {activeTab === "force" && (
+        <div className="space-y-6">
+          <ForcePhilosophyExplorer onOpenDojoLesson={onOpenDojoLesson} />
         </div>
       )}
 

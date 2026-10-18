@@ -12,11 +12,12 @@ import {
   Menu,
   X,
   Wind,
+  Zap,
 } from "lucide-react";
 import { FontSizeControls } from "@/components/FontSizeProvider";
 
 
-export type NavTab = "welcome" | "forms" | "fundamentals" | "meditation" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
+export type NavTab = "welcome" | "forms" | "fundamentals" | "force" | "meditation" | "scenarios" | "dummy" | "centerline" | "library" | "lineage";
 
 interface HeaderProps {
   activeTab: NavTab;
@@ -34,6 +35,7 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems: { id: NavTab; label: string; shortLabel: string; icon: React.ComponentType<{ className?: string }> }[] = [
     { id: "lineage", label: "Truyền Thừa", shortLabel: "Truyền Thừa", icon: GitBranch },
     { id: "fundamentals", label: "Cơ Bản", shortLabel: "Cơ Bản", icon: Hand },
+    { id: "force", label: "Dùng Lực & Khí", shortLabel: "Dùng Lực", icon: Zap },
     { id: "forms", label: "18 Bài Quyền", shortLabel: "18 Quyền", icon: Swords },
     { id: "meditation", label: "Thiền Khí Công", shortLabel: "Thiền", icon: Wind },
     { id: "dummy", label: "Mộc Nhân", shortLabel: "Mộc Nhân", icon: Sparkles },
