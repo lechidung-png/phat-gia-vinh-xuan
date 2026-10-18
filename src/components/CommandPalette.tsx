@@ -12,6 +12,7 @@ interface CommandPaletteProps {
   onClose: () => void;
   onSelectTechnique: (tech: Technique) => void;
   onSelectMonograph?: (mono: MonographSection) => void;
+  onSelectForcePhilosophy?: () => void;
 }
 
 export const CommandPalette: React.FC<CommandPaletteProps> = ({
@@ -19,6 +20,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
   onClose,
   onSelectTechnique,
   onSelectMonograph,
+  onSelectForcePhilosophy,
 }) => {
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -72,6 +74,9 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       onClose();
     } else if (item.type === "monograph" && item.rawMonograph && onSelectMonograph) {
       onSelectMonograph(item.rawMonograph);
+      onClose();
+    } else if (item.type === "force" && onSelectForcePhilosophy) {
+      onSelectForcePhilosophy();
       onClose();
     }
   };

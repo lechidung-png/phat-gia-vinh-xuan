@@ -1,5 +1,10 @@
 import { CANONICAL_LESSONS, CanonicalLesson, MotionStep } from "@/data/canonicalCatalog";
 import { MONOGRAPHS, MonographSection } from "@/data/monographs";
+import {
+  FIVE_KINETIC_QI_NODES,
+  LIMB_FORCE_SECRETS,
+  UNEXPLAINED_QI_PHENOMENA,
+} from "@/data/forcePhilosophy";
 import { Technique } from "@/data/techniques";
 import { cleanMotionTitle } from "@/lib/formatters";
 
@@ -17,7 +22,7 @@ export function removeVietnameseAccents(str: string): string {
 
 export interface SearchResultItem {
   id: string;
-  type: "technique" | "monograph";
+  type: "technique" | "monograph" | "force";
   title: string;
   subtitle: string;
   badge: string;
@@ -169,9 +174,60 @@ const INDEXED_MONOGRAPHS: IndexedMonographItem[] = MONOGRAPHS.map((mono) => ({
   normChapter: removeVietnameseAccents(mono.chapter),
 }));
 
+interface IndexedForceItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  badge: string;
+  snippet: string;
+  imgUrl?: string;
+  normTitle: string;
+  normBody: string;
+}
+
+// 4. Tiền xử lý chỉ mục Cơ Chế Dùng Lực Tay - Chân & Khí Lực Vịnh Xuân
+const INDEXED_FORCE_ITEMS: IndexedForceItem[] = [
+  ...FIVE_KINETIC_QI_NODES.map((node) => ({
+    id: `force-node-${node.id}`,
+    title: `${node.bodyPart} (${node.acupointOrAnatomy})`,
+    subtitle: `${node.hanNom} • Trạm ${node.step}/5 Chuỗi Dùng Lực & Khí`,
+    badge: `Trạm ${node.step}`,
+    snippet: node.shortRole,
+    imgUrl: node.bookImg,
+    normTitle: removeVietnameseAccents(`${node.bodyPart} ${node.acupointOrAnatomy} ${node.hanNom} ${node.biomechanicsTitle} ${node.easternQiTitle}`),
+    normBody: removeVietnameseAccents(
+      `${node.shortRole} ${node.biomechanicsMechanism} ${node.easternQiMechanism} ${node.canonicalBookQuote}`
+    ),
+  })),
+  ...LIMB_FORCE_SECRETS.map((sec) => ({
+    id: `force-secret-${sec.id}`,
+    title: `${sec.title} — ${sec.subtitle}`,
+    subtitle: `${sec.hanNom} • Bí Quyết Dùng Lực ${sec.category === "hand" ? "Thủ Pháp" : "Cước Pháp"}`,
+    badge: "Cơ Chế Lực",
+    snippet: sec.coreMechanism,
+    imgUrl: sec.imageUrl,
+    normTitle: removeVietnameseAccents(`${sec.title} ${sec.subtitle} ${sec.hanNom}`),
+    normBody: removeVietnameseAccents(
+      `${sec.coreMechanism} ${sec.scientificExplanation} ${sec.qiAndInternalExplanation} ${sec.keyTakeaways.join(" ")}`
+    ),
+  })),
+  ...UNEXPLAINED_QI_PHENOMENA.map((qi) => ({
+    id: `force-qi-${qi.id}`,
+    title: `${qi.title} (${qi.hanNom})`,
+    subtitle: `${qi.easternPrinciple} • Khí Lực & Khoa Học Cận Biên`,
+    badge: "Khí Lực",
+    snippet: qi.historicalEvidence,
+    imgUrl: qi.imageUrl,
+    normTitle: removeVietnameseAccents(`${qi.title} ${qi.hanNom} ${qi.easternPrinciple}`),
+    normBody: removeVietnameseAccents(
+      `${qi.historicalEvidence} ${qi.modernMedicalAndBiophysicsBridge} ${qi.whyWestCannotFullyExplainYet} ${qi.bookReference}`
+    ),
+  })),
+];
+
 /**
  * In-memory Search Engine tối ưu hóa cho Di Sản Phật Gia Vịnh Xuân
- * Phủ kín 36 bài học sách gốc, 917 bước động tác (1.095 tư liệu ảnh) và 6 chuyên đề khảo cứu.
+ * Phủ kín 36 bài học sách gốc, 917 bước động tác (1.095 tư liệu ảnh), 6 chuyên đề khảo cứu và 15 chuyên mục Cơ chế Dùng lực & Khí lực.
  */
 export function searchKnowledgeBase(query: string): SearchResultItem[] {
   const cleanQuery = query.trim();
@@ -326,6 +382,37 @@ export function searchKnowledgeBase(query: string): SearchResultItem[] {
         badge: mono.badge,
         highlightSnippet: mono.excerpt,
         rawMonograph: mono,
+        score,
+      });
+    }
+  }
+
+  // D. Tìm kiếm trong Cơ Chế Dùng Lực Tay - Chân & Khí Lực Vịnh Xuân
+  for (const item of INDEXED_FORCE_ITEMS) {
+    let score = 0;
+
+    if (item.normTitle.includes(normQuery)) score += 75;
+    if (item.normBody.includes(normQuery)) score += 35;
+
+    let tokensMatched = 0;
+    for (const token of queryTokens) {
+      if (item.normTitle.includes(token) || item.normBody.includes(token)) {
+        tokensMatched++;
+      }
+    }
+    if (tokensMatched === queryTokens.length) {
+      score += 20 * tokensMatched;
+    }
+
+    if (score > 25) {
+      results.push({
+        id: item.id,
+        type: "force",
+        title: item.title,
+        subtitle: item.subtitle,
+        badge: item.badge,
+        imgUrl: item.imgUrl,
+        highlightSnippet: item.snippet,
         score,
       });
     }

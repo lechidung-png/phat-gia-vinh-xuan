@@ -385,6 +385,7 @@ export default function Home() {
           onClose={() => setIsSearchOpen(false)}
           onSelectTechnique={handleSelectTechnique}
           onSelectMonograph={handleSelectMonograph}
+          onSelectForcePhilosophy={() => handleNavigateTab("force")}
         />
       )}
 

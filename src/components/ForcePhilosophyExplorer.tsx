@@ -19,6 +19,7 @@ import {
   ShieldCheck,
   ArrowRight,
   Layers,
+  GraduationCap,
 } from "lucide-react";
 import {
   FORCE_PHILOSOPHY_HERO,
@@ -27,6 +28,7 @@ import {
   LIMB_FORCE_SECRETS,
   UNEXPLAINED_QI_PHENOMENA,
   FOUR_SELF_EXPERIMENTS,
+  FORCE_ACADEMIC_BIBLIOGRAPHY,
   KineticQiNode,
 } from "@/data/forcePhilosophy";
 
@@ -118,8 +120,8 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
               <p className="text-lg sm:text-xl font-serif font-bold text-white">
                 &ldquo;{FORCE_PHILOSOPHY_HERO.coreMotto}&rdquo;
               </p>
-              <p className="text-xs sm:text-sm text-amber-200/85 font-mono pt-1">
-                📖 Nguồn: {FORCE_PHILOSOPHY_HERO.coreMottoSource}
+              <p className="text-xs sm:text-sm text-amber-200/90 font-mono pt-1">
+                📚 Nguồn trích dẫn gốc: {FORCE_PHILOSOPHY_HERO.coreMottoSource}
               </p>
             </div>
           </div>
@@ -193,7 +195,13 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
             href="#self-experiments"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            5. 4 Bài Tự Thực Nghiệm Tại Chỗ
+            5. 4 Bài Tự Thực Nghiệm
+          </a>
+          <a
+            href="#academic-bibliography"
+            className="px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-400/40 hover:bg-[#F5D06C] text-emerald-200 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
+          >
+            6. Nguồn Trích Dẫn Khoa Học ([1]–[10])
           </a>
         </div>
       </section>
@@ -214,7 +222,7 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
             <p className="text-sm sm:text-base text-amber-100/85 leading-relaxed">
               Bấm vào từng <strong>Trạm (1 → 5)</strong> trên sơ đồ tương tác hoặc chuyển đổi giữa chế độ{" "}
               <strong className="text-emerald-400">Thông Mạch Tùng Tĩnh (100%)</strong> và{" "}
-              <strong className="text-rose-400">Lỗi Gồng Vai Đứt Mạch (Chỉ còn 15% sức tay)</strong> để thấy rõ cơ chế truyền lực.
+              <strong className="text-rose-400">Lỗi Gồng Vai Đứt Mạch (Chỉ còn 15% sức tay)</strong> để thấy rõ cơ chế truyền lực kèm trích dẫn nguồn.
             </p>
           </div>
 
@@ -579,15 +587,55 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                 </div>
               </div>
 
-              {/* Cảnh báo Điểm Nghẽn (Tại sao người tập thất bại ở trạm này?) */}
-              <div className="p-5 rounded-2xl bg-rose-950/35 border border-rose-500/40 space-y-2">
-                <div className="flex items-center gap-2 text-rose-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
-                  <AlertTriangle className="w-4 h-4" />
-                  <span>Vì sao lực bị đứt nghẽn tại Trạm {activeNode.step}? (Lỗi thường gặp)</span>
+              {/* Cảnh báo Điểm Nghẽn + Ảnh Sách Gốc Đối Chứng */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
+                <div className="md:col-span-7 p-5 rounded-2xl bg-rose-950/35 border border-rose-500/40 space-y-2">
+                  <div className="flex items-center gap-2 text-rose-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
+                    <AlertTriangle className="w-4 h-4" />
+                    <span>Vì sao lực bị đứt nghẽn tại Trạm {activeNode.step}? (Lỗi thường gặp)</span>
+                  </div>
+                  <p className="text-sm sm:text-base text-rose-100 leading-relaxed">
+                    {activeNode.whyForceBreaks}
+                  </p>
                 </div>
-                <p className="text-sm sm:text-base text-rose-100 leading-relaxed">
-                  {activeNode.whyForceBreaks}
-                </p>
+
+                <div className="md:col-span-5">
+                  <div
+                    onClick={() =>
+                      setZoomImg({
+                        src: activeNode.bookImg,
+                        title: activeNode.bodyPart,
+                        caption: activeNode.bookImgCaption,
+                      })
+                    }
+                    className="group rounded-2xl overflow-hidden border border-[#F5D06C]/40 bg-[#FBF9F5] p-3 cursor-pointer hover:border-[#F5D06C] transition-all"
+                  >
+                    <div className="relative h-36 w-full">
+                      <Image
+                        src={activeNode.bookImg}
+                        alt={activeNode.bookImgCaption}
+                        fill
+                        className="object-contain martial-filter group-hover:scale-105 transition-transform"
+                        sizes="(max-width: 768px) 100vw, 280px"
+                      />
+                    </div>
+                    <p className="text-xs text-amber-950 font-serif font-bold text-center mt-2 line-clamp-2">
+                      📖 {activeNode.bookImgCaption} (Phóng to)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Khối Trích Dẫn Nguồn Học Thuật Cho Trạm Này */}
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                <span className="text-xs font-bold uppercase text-[#F5D06C] flex items-center gap-1.5">
+                  <GraduationCap className="w-4 h-4" /> Nguồn Trích Dẫn Khoa Học &amp; Giáo Trình Cho Trạm {activeNode.step}:
+                </span>
+                <ul className="space-y-1 text-xs sm:text-sm text-amber-100/90 font-mono">
+                  {activeNode.scientificCitations.map((cit, cIdx) => (
+                    <li key={cIdx}>• {cit}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -661,7 +709,6 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                   <line x1="70" y1="100" x2="630" y2="100" stroke="#FAF6F0" strokeOpacity="0.1" strokeDasharray="4 4" />
                   <line x1="70" y1="190" x2="630" y2="190" stroke="#FAF6F0" strokeOpacity="0.1" strokeDasharray="4 4" />
 
-                  {/* Đường cong 1: Chuyết lực / Đòn đẩy cơ bắp */}
                   <path
                     d="M70 280 Q180 280 240 205 Q330 155 430 210 Q520 265 610 280"
                     fill="#F87171"
@@ -674,7 +721,6 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                     Chuyết Lực / Đòn Đẩy Thường (Δt ≈ 180ms • Lực tản mát)
                   </text>
 
-                  {/* Đường cong 2: Thốn Kình / Nội Kình Vịnh Xuân */}
                   <path
                     d="M70 280 L145 280 L170 48 L198 280 L610 280"
                     fill="#F5D06C"
@@ -699,6 +745,9 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                 <p className="text-sm sm:text-base text-emerald-200 leading-relaxed">
                   Ngược lại, Vịnh Xuân giữ tay hoàn toàn <strong>Tùng tĩnh (thả lỏng như roi da)</strong> để đạt vận tốc cực đại, và chỉ <strong>khóa khớp kết cấu trong 0.015 giây cuối cùng</strong> khi chạm mục tiêu rồi lập tức thu về (<em>Thốn kình</em>). Khi Δt giảm đi 10 lần, lực đỉnh F_đỉnh tăng vọt gấp nhiều lần, tạo sóng xung kích xuyên sâu vào bên trong.
                 </p>
+                <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-mono text-amber-200/90">
+                  📚 Nguồn đối chứng: Sách gốc PGVX (Tr. 19, 164) [1]; Bolander et al., JSSM (2009) [4]; Neto et al., Sports Biomechanics (2007) [5].
+                </div>
               </div>
             </div>
           ) : (
@@ -753,8 +802,11 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                   Nếu dựa vào sợi cơ co rút (<em>Chuyết lực</em>), con người bắt đầu mất khối lượng cơ từ sau tuổi 35. Nhưng Vịnh Xuân dựa vào <strong>Khung xương tự khóa (Skeletal Alignment)</strong>, <strong>Độ đàn hồi của Mạc cơ – Gân (Fascia &amp; Tendons)</strong> và <strong>Độ tĩnh của Hệ thần kinh – Khí Đan Điền</strong>.
                 </p>
                 <p className="text-sm sm:text-base text-emerald-200 leading-relaxed">
-                  Càng luyện lâu năm, sự buông bỏ lực thừa (<em>Tùng tĩnh</em>) và cảm giác <em>Thính kình</em> càng tinh nhạy. Đó là lý do Đại Tông Sư Diệp Vấn, Đại sư Chu Thượng Đồng hay Cố Võ sư Ngô Sĩ Quý khi ở tuổi thất thập, bát thập chỉ cần khẽ chuyển mình là hóa giải và đánh bật những võ sĩ trẻ nặng gấp rưỡi mình.
+                  Càng luyện lâu năm, sự buông bỏ lực thừa (<em>Tùng tĩnh</em>) và cảm giác <em>Thính kình</em> càng tinh nhạy. Đó là lý do Sư tổ Nguyễn Tế Công, Đại Tông Sư Diệp Vấn, Đại sư Chu Thượng Đồng hay Cố Võ sư Ngô Sĩ Quý khi ở tuổi thất thập, bát thập chỉ cần khẽ chuyển mình là hóa giải và đánh bật những võ sĩ trẻ nặng gấp rưỡi mình.
                 </p>
+                <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs font-mono text-amber-200/90">
+                  📚 Nguồn đối chứng: Sách gốc PGVX Chương IV: «Khi có tuổi, sức mạnh nội công không giảm, có khi còn tăng!» (Tr. 167, 214) [1]; Ip Chun (1998) [3].
+                </div>
               </div>
             </div>
           )}
@@ -773,13 +825,16 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                 key={idx}
                 className="grid grid-cols-1 lg:grid-cols-12 gap-4 p-5 sm:p-6 hover:bg-white/[0.02] transition-colors"
               >
-                <div className="lg:col-span-3">
+                <div className="lg:col-span-3 space-y-1">
                   <span className="text-xs font-mono uppercase text-[#F5D06C] block">
                     Tiêu chí 0{idx + 1}
                   </span>
-                  <h4 className="text-base sm:text-lg font-bold text-white mt-0.5">
+                  <h4 className="text-base sm:text-lg font-bold text-white">
                     {row.criterion}
                   </h4>
+                  <p className="text-xs font-mono text-amber-200/80 pt-1">
+                    📖 {row.sourceRef}
+                  </p>
                 </div>
                 <div className="lg:col-span-4 p-4 rounded-2xl bg-rose-950/25 border border-rose-500/30">
                   <span className="text-xs font-bold uppercase text-rose-300 block mb-1">
@@ -817,7 +872,7 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
               6 Cơ Chế Dùng Lực Tay &amp; Chân Riêng Biệt Của Vịnh Xuân
             </h2>
             <p className="text-sm sm:text-base text-amber-100/85 leading-relaxed">
-              Trích xuất nguyên bản từ chương <em>Khẩu Quyết</em> (trang 161–166) và <em>Yếu Lĩnh Căn Bản</em> (trang 19, 25–30) của PGS.TS Y khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức.
+              Trích xuất nguyên bản từ chương <em>Khẩu Quyết</em> (trang 161–166) và <em>Yếu Lĩnh Căn Bản</em> (trang 19, 25–30) của PGS.TS Y khoa Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức, đối chiếu cùng giải phẫu học hiện đại.
             </p>
           </div>
 
@@ -947,6 +1002,18 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                     </li>
                   ))}
                 </ul>
+
+                {/* Trích dẫn nguồn học thuật */}
+                <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                  <span className="text-xs font-bold text-[#F5D06C] uppercase block">
+                    📚 Nguồn trích dẫn học thuật &amp; đối chứng:
+                  </span>
+                  {secret.academicCitations.map((cit, cIdx) => (
+                    <p key={cIdx} className="text-xs font-mono text-amber-100/85 leading-relaxed">
+                      • {cit}
+                    </p>
+                  ))}
+                </div>
               </div>
 
               {/* Ảnh minh họa sách gốc */}
@@ -1086,8 +1153,18 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
               </div>
 
               {/* Nguồn trích dẫn */}
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm text-amber-200/90 font-serif italic">
-                📚 <strong>Tư liệu &amp; Nguồn dẫn chứng:</strong> {activeQiPhenomenon.bookReference}
+              <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <span className="text-xs font-bold uppercase text-[#F5D06C] block">
+                  📚 Nguồn Trích Dẫn Học Thuật &amp; Giáo Trình:
+                </span>
+                <p className="text-xs sm:text-sm text-amber-200 font-serif italic">
+                  • {activeQiPhenomenon.bookReference}
+                </p>
+                {activeQiPhenomenon.academicCitations.map((cit, cIdx) => (
+                  <p key={cIdx} className="text-xs font-mono text-amber-100/85">
+                    • {cit}
+                  </p>
+                ))}
               </div>
             </div>
 
@@ -1212,13 +1289,68 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                 </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-emerald-950/30 border border-emerald-500/35 space-y-1">
-                <span className="text-xs font-bold uppercase text-emerald-300 block">
-                  🎯 Cảm nhận &amp; Kết quả kiểm chứng:
-                </span>
-                <p className="text-sm sm:text-base text-emerald-100 leading-relaxed">
-                  {exp.whatYouWillFeel}
+              <div className="space-y-2.5">
+                <div className="p-4 rounded-2xl bg-emerald-950/30 border border-emerald-500/35 space-y-1">
+                  <span className="text-xs font-bold uppercase text-emerald-300 block">
+                    🎯 Cảm nhận &amp; Kết quả kiểm chứng:
+                  </span>
+                  <p className="text-sm sm:text-base text-emerald-100 leading-relaxed">
+                    {exp.whatYouWillFeel}
+                  </p>
+                </div>
+                <p className="text-xs font-mono text-amber-200/80 px-1">
+                  📖 {exp.sourceCitation}
                 </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 7. CHƯƠNG VI: THƯ MỤC TÀI LIỆU THAM KHẢO & NGUỒN HỌC THUẬT ([1] - [10])   */}
+      {/* ========================================================================= */}
+      <section id="academic-bibliography" className="space-y-6 scroll-mt-24">
+        <div className="space-y-2 border-b border-white/10 pb-5">
+          <div className="inline-flex items-center gap-2 text-[#F5D06C] text-xs sm:text-sm font-bold uppercase tracking-wider">
+            <GraduationCap className="w-4 h-4" />
+            <span>Chương VI • Thư Mục Nguồn Trích Dẫn Học Thuật &amp; Giáo Trình Kinh Điển</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold font-serif gold-gradient">
+            10 Công Trình Khoa Học &amp; Giáo Trình Chân Truyền Đối Chứng ([1] – [10])
+          </h2>
+          <p className="text-sm sm:text-base text-amber-100/85 leading-relaxed max-w-4xl">
+            Toàn bộ các phân tích cơ sinh học, vật lý học Thốn kình, giải phẫu chuỗi mạc cơ (<em>Anatomy Trains</em>), áp điện kinh lạc và thuyết thần kinh nội công trên trang này đều được trích dẫn minh bạch từ 10 nguồn tư liệu có thẩm quyền cao nhất dưới đây:
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {FORCE_ACADEMIC_BIBLIOGRAPHY.map((bib) => (
+            <div
+              key={bib.id}
+              className="p-5 sm:p-6 rounded-2xl bg-[#150B07] border border-white/15 hover:border-[#F5D06C]/50 transition-all space-y-2.5 flex flex-col justify-between"
+            >
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <span className="px-2.5 py-0.5 rounded-lg bg-[#F5D06C] text-[#140A06] font-mono font-extrabold text-xs sm:text-sm">
+                    Mã trích dẫn {bib.code}
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 px-2.5 py-0.5 rounded-full">
+                    {bib.category}
+                  </span>
+                </div>
+                <h3 className="text-base sm:text-lg font-bold font-serif text-white leading-snug">
+                  {bib.title} ({bib.year})
+                </h3>
+                <p className="text-xs sm:text-sm text-[#F5D06C] font-medium">
+                  ✍️ <strong>Tác giả:</strong> {bib.authors}
+                </p>
+                <p className="text-xs font-mono text-amber-200/85">
+                  🏛️ {bib.publication} • {bib.pagesOrDoi}
+                </p>
+              </div>
+              <div className="pt-2 border-t border-white/10 text-xs sm:text-sm text-amber-100/90 leading-relaxed">
+                <strong className="text-emerald-300">Giá trị đối chứng:</strong> {bib.keyContribution}
               </div>
             </div>
           ))}
@@ -1226,7 +1358,7 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
 
         {/* Call to action: Áp dụng ngay vào Tiểu Niệm Đầu & Tầm Kiều */}
         {onOpenDojoLesson && (
-          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#24130C] via-[#1B0E09] to-[#24130C] border border-[#F5D06C]/40 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#24130C] via-[#1B0E09] to-[#24130C] border border-[#F5D06C]/40 flex flex-col md:flex-row items-center justify-between gap-6 mt-6">
             <div className="space-y-1.5">
               <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-2">
                 <Sparkles className="w-4 h-4" />
