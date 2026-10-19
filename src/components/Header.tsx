@@ -77,7 +77,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Desktop Navigation Menu (Spacious Pill Navigation) */}
-        <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 bg-[#1C100B] p-1 rounded-full border border-[#3D291F]">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -85,14 +85,15 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={item.id}
                 onClick={() => handleSelectNav(item.id)}
-                className={`px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition-all whitespace-nowrap cursor-pointer ${
+                className={`px-3 xl:px-3.5 py-2 rounded-full text-xs xl:text-sm font-semibold flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
                   isActive
                     ? "bg-[#F5D06C] text-[#1E0C06] font-bold shadow-md shadow-[#F5D06C]/20"
                     : "text-amber-100/80 hover:text-white hover:bg-white/8"
                 }`}
               >
-                <Icon className="w-4 h-4" />
-                <span>{item.label}</span>
+                <Icon className="w-4 h-4 shrink-0" />
+                <span className="hidden xl:inline">{item.label}</span>
+                <span className="xl:hidden">{item.shortLabel}</span>
               </button>
             );
           })}

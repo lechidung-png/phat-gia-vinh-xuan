@@ -679,8 +679,8 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
           </span>
         </div>
 
-        {/* 5 Learning Stages Stepper */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* 5 Learning Stages Stepper — Cân đối 5 cột đều nhau trên Desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 items-stretch">
           {LEARNING_STAGES.map((s) => {
             const isCurrent = s.id === "fundamentals";
             return (
@@ -694,35 +694,37 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
                     onNavigateStage?.(s.id);
                   }
                 }}
-                className={`p-3.5 rounded-xl border transition-all cursor-pointer relative overflow-hidden group ${
+                className={`p-3.5 rounded-xl border transition-all cursor-pointer relative overflow-hidden group flex flex-col justify-between ${
                   isCurrent
                     ? "bg-[#E2B743]/15 border-[#E2B743] shadow-lg shadow-[#E2B743]/10 ring-1 ring-[#E2B743]/40"
                     : "bg-[#180E09] border-[#3D291F] hover:border-[#E2B743]/60 hover:bg-[#20150F]"
                 }`}
               >
-                <div className="flex items-center justify-between mb-2">
-                  <span
-                    className={`text-xs font-bold px-2 py-0.5 rounded-full ${
-                      isCurrent
-                        ? "bg-[#E2B743] text-[#140C08]"
-                        : "bg-[#2A1C14] text-amber-200/80"
-                    }`}
-                  >
-                    Chặng {s.stage}
-                  </span>
-                  {isCurrent && (
-                    <span className="text-xs font-semibold text-[#10B981] flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-ping" />
-                      Đang Học
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span
+                      className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                        isCurrent
+                          ? "bg-[#E2B743] text-[#140C08]"
+                          : "bg-[#2A1C14] text-amber-200/80"
+                      }`}
+                    >
+                      Chặng {s.stage}
                     </span>
-                  )}
+                    {isCurrent && (
+                      <span className="text-xs font-semibold text-[#10B981] flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-ping" />
+                        Đang Học
+                      </span>
+                    )}
+                  </div>
+                  <h4 className="font-bold text-xs sm:text-sm text-white group-hover:text-[#E2B743] transition-colors line-clamp-1">
+                    {s.title}
+                  </h4>
+                  <p className="text-xs text-amber-200/70 mt-1 line-clamp-2 leading-relaxed">
+                    {s.desc}
+                  </p>
                 </div>
-                <h4 className="font-bold text-xs sm:text-sm text-white group-hover:text-[#E2B743] transition-colors line-clamp-1">
-                  {s.title}
-                </h4>
-                <p className="text-xs text-amber-200/70 mt-1 line-clamp-2 leading-relaxed">
-                  {s.desc}
-                </p>
                 <div className="mt-3 flex items-center justify-end text-xs text-[#E2B743] font-medium gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   Vào học ngay <ArrowRight className="w-3 h-3" />
                 </div>
@@ -755,96 +757,90 @@ export const FundamentalHandFootAtlas: React.FC<FundamentalAtlasProps> = ({
         </div>
       </div>
 
-      {/* 3. TABS CHUYÊN MỤC CƠ BẢN CÔNG */}
-      <div className="flex flex-wrap gap-1.5 sm:gap-2 border-b border-[#3D291F] pb-3">
+      {/* 3. TABS CHUYÊN MỤC CƠ BẢN CÔNG — Lưới 7 Tab Cân Đối */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-7 gap-2 border-b border-[#3D291F] pb-3">
         <button
           onClick={() => setActiveTab("hands")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "hands"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <Hand className="w-4 h-4" />
-          <span>1. Thủ Pháp</span>
+          <Hand className="w-4 h-4 shrink-0" />
+          <span className="truncate">1. Thủ Pháp</span>
         </button>
 
         <button
           onClick={() => setActiveTab("feet")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "feet"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <Footprints className="w-4 h-4" />
-          <span className="hidden sm:inline">2. Cước Pháp (8 Thế)</span>
-          <span className="sm:hidden">2. Cước Pháp (8)</span>
+          <Footprints className="w-4 h-4 shrink-0" />
+          <span className="truncate">2. Cước Pháp (8)</span>
         </button>
 
         <button
           onClick={() => setActiveTab("bai-to")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "bai-to"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <Flower2 className="w-4 h-4" />
-          <span className="hidden sm:inline">3. Bái Tổ (9 Bước)</span>
-          <span className="sm:hidden">3. Bái Tổ (9)</span>
+          <Flower2 className="w-4 h-4 shrink-0" />
+          <span className="truncate">3. Bái Tổ (9)</span>
         </button>
 
         <button
           onClick={() => setActiveTab("drills")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "drills"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <RotateCw className="w-4 h-4" />
-          <span className="hidden sm:inline">4. Bài Luyện Căn Bản</span>
-          <span className="sm:hidden">4. Bài Luyện</span>
+          <RotateCw className="w-4 h-4 shrink-0" />
+          <span className="truncate">4. Bài Luyện</span>
         </button>
 
         <button
           onClick={() => setActiveTab("centerline")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "centerline"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <Compass className="w-4 h-4" />
-          <span className="hidden sm:inline">5. Trục Tý Ngọ Tuyến</span>
-          <span className="sm:hidden">5. Trục Tý Ngọ</span>
+          <Compass className="w-4 h-4 shrink-0" />
+          <span className="truncate">5. Trục Tý Ngọ</span>
         </button>
 
         <button
           onClick={() => setActiveTab("theory")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
             activeTab === "theory"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-slate-300 hover:text-white border border-[#3D291F]"
           }`}
         >
-          <BookOpen className="w-4 h-4" />
-          <span className="hidden sm:inline">6. Lý Thuyết &amp; Khảo Cứu</span>
-          <span className="sm:hidden">6. Lý Thuyết</span>
+          <BookOpen className="w-4 h-4 shrink-0" />
+          <span className="truncate">6. Lý Thuyết</span>
         </button>
 
         <button
           onClick={() => setActiveTab("force")}
-          className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 transition-all cursor-pointer ${
+          className={`px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer col-span-2 sm:col-span-2 xl:col-span-1 ${
             activeTab === "force"
               ? "bg-[#E2B743] text-black font-bold shadow-lg shadow-[#E2B743]/20"
               : "bg-[#20150F] text-[#F5D06C] hover:text-white border border-[#F5D06C]/40"
           }`}
         >
-          <Zap className="w-4 h-4" />
-          <span className="hidden sm:inline">7. Cơ Chế Dùng Lực &amp; Khí</span>
-          <span className="sm:hidden">7. Dùng Lực</span>
+          <Zap className="w-4 h-4 shrink-0" />
+          <span className="truncate">7. Dùng Lực &amp; Khí</span>
         </button>
       </div>
 
