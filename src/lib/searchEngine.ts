@@ -4,6 +4,7 @@ import {
   FIVE_KINETIC_QI_NODES,
   LIMB_FORCE_SECRETS,
   UNEXPLAINED_QI_PHENOMENA,
+  WING_CHUN_STANCES_AND_FOOTWORK_ATLAS,
 } from "@/data/forcePhilosophy";
 import { Technique } from "@/data/techniques";
 import { cleanMotionTitle } from "@/lib/formatters";
@@ -185,8 +186,22 @@ interface IndexedForceItem {
   normBody: string;
 }
 
-// 4. Tiền xử lý chỉ mục Cơ Chế Dùng Lực Tay - Chân & Khí Lực Vịnh Xuân
+// 4. Tiền xử lý chỉ mục Cơ Chế Dùng Lực Tay - Chân, Tấn Pháp & Khí Lực Vịnh Xuân
 const INDEXED_FORCE_ITEMS: IndexedForceItem[] = [
+  ...WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.map((stance) => ({
+    id: `force-stance-${stance.id}`,
+    title: `${stance.title} (${stance.hanNom})`,
+    subtitle: `${stance.category} • ${stance.subtitle} • ${stance.bookPageRef}`,
+    badge: `Bộ Pháp 0${stance.order}`,
+    snippet: `${stance.geometryAndWeight.footSpacing} — ${stance.movementIntegration}`,
+    imgUrl: stance.primaryImg,
+    normTitle: removeVietnameseAccents(
+      `${stance.title} ${stance.hanNom} ${stance.subtitle} ${stance.category}`
+    ),
+    normBody: removeVietnameseAccents(
+      `${stance.geometryAndWeight.footSpacing} ${stance.geometryAndWeight.weightDistribution} ${stance.structuralCharacteristics.join(" ")} ${stance.movementIntegration} ${stance.canonicalQuote}`
+    ),
+  })),
   ...FIVE_KINETIC_QI_NODES.map((node) => ({
     id: `force-node-${node.id}`,
     title: `${node.bodyPart} (${node.acupointOrAnatomy})`,
@@ -227,7 +242,7 @@ const INDEXED_FORCE_ITEMS: IndexedForceItem[] = [
 
 /**
  * In-memory Search Engine tối ưu hóa cho Di Sản Phật Gia Vịnh Xuân
- * Phủ kín 36 bài học sách gốc, 917 bước động tác (1.095 tư liệu ảnh), 6 chuyên đề khảo cứu và 15 chuyên mục Cơ chế Dùng lực & Khí lực.
+ * Phủ kín 36 bài học sách gốc, 917 bước động tác (1.095 tư liệu ảnh), 6 chuyên đề khảo cứu, 8 bộ pháp Vịnh Xuân và 15 chuyên mục Cơ chế Dùng lực & Khí lực.
  */
 export function searchKnowledgeBase(query: string): SearchResultItem[] {
   const cleanQuery = query.trim();

@@ -750,3 +750,435 @@ export const FORCE_ACADEMIC_BIBLIOGRAPHY: AcademicBibliographyEntry[] = [
       "Cơ sở sinh lý học thần kinh cao cấp được PGS.TS Nguyễn Mạnh Nhâm dùng để giải thích trạng thái 'Cận sinh (Parabiose)' và 'Điểm ưu thế vỏ não' giúp huy động dự trữ của 10 tỷ tế bào thần kinh.",
   },
 ];
+
+// ============================================================================
+// 7. CHƯƠNG CHUYÊN KHẢO: HỆ THỐNG TẤN PHÁP & BỘ PHÁP DI CHUYỂN VỊNH XUÂN
+// Phân tích 8 Thế Đứng Tấn & Mã Bộ kết hợp Phương Pháp Di Chuyển + Đối Sánh Quốc Tế
+// ============================================================================
+
+export interface StanceAndFootworkStudy {
+  id: string;
+  order: number;
+  category: "Tấn Pháp Tĩnh & Chuyển Trục" | "Bộ Pháp Di Chuyển & Nhập Nội" | "Tấn Pháp Đặc Dị & Binh Khí";
+  title: string;
+  hanNom: string;
+  subtitle: string;
+  geometryAndWeight: {
+    footSpacing: string;
+    weightDistribution: string;
+    pivotPoint: string;
+    bodyAngle: string;
+  };
+  structuralCharacteristics: string[];
+  movementIntegration: string;
+  canonicalQuote: string;
+  bookPageRef: string;
+  academicCitations: string[];
+  primaryImg: string;
+  primaryImgCaption: string;
+  diagramImg: string;
+  diagramImgCaption: string;
+  relatedLessonId?: string;
+}
+
+export interface LineageStanceComparisonRow {
+  dimension: string;
+  pgvxVietnam: string;
+  gulaoLiangJan: string;
+  hongKongIpMan: string;
+  externalKarateBoxing: string;
+  sourceRef: string;
+}
+
+export interface FootworkMobilityPrinciple {
+  id: string;
+  number: string;
+  title: string;
+  hanNom: string;
+  metaphor: string;
+  mechanism: string;
+  sourceRef: string;
+}
+
+export const WING_CHUN_STANCES_AND_FOOTWORK_ATLAS: StanceAndFootworkStudy[] = [
+  {
+    id: "stance-1-nhi-tu-kiem-duong",
+    order: 1,
+    category: "Tấn Pháp Tĩnh & Chuyển Trục",
+    title: "Nhị Tự Kiềm Dương Mã (Tấn Chữ Bát Kẹp Dê)",
+    hanNom: "二字拫羊馬",
+    subtitle: "Tấn pháp gốc của 18 bài quyền: Chính thân diện đối, hai chân hẹp hình chữ Bát, gối khép hướng tâm",
+    geometryAndWeight: {
+      footSpacing: "Hai mũi chân cách nhau 1 bề ngang bàn chân; hai gót mở rộng cách nhau 2 bề ngang bàn chân",
+      weightDistribution: "50% Chân trái – 50% Chân phải (Đứng chính diện cân bằng tuyệt đối)",
+      pivotPoint: "Tâm giữa lòng bàn chân (Huyệt Dũng Tuyền K1) kết hợp 10 đầu ngón chân bấu đất",
+      bodyAngle: "Chính diện 0° (Trục Tý Ngọ Tuyến thẳng đứng như dây dọi, hai nắm đấm thu sát nách)",
+    },
+    structuralCharacteristics: [
+      "Khác biệt hoàn toàn với tấn Trung bình rộng hay Cung tiễn bộ (Lunge) của Trường quyền / Karate: Vịnh Xuân đứng hai bàn chân khá gần nhau theo hình chữ Bát (八), hai đầu gối hơi khuỵu xuống và khép hướng vào trung tuyến như hai thân cây kẹp chặt con dê ('Nhị thụ kiềm dương mã' — Điển tích Chí Thiện Thiền Sư, Trang 25).",
+      "Đặc trưng riêng của Phật Gia Vịnh Xuân Việt Nam (Trang 25 & 31): Tấn đứng 'hẹp hơn và cao hơn một chút so với các chi phái khác', thân mình đứng thẳng tắp, tuyệt đối tránh ngả đầu ra trước (Lời khuyên số 32, Trang 166), hai nắm đấm thu cao sát hai hốc nách.",
+      "Cấu trúc 'Con lật đật (Bất đảo ông)' (Trang 19, 162): Thượng bàn (vai, ngực, tay) thả lỏng rỗng nhẹ (Thượng hư), toàn bộ trọng lượng chìm xuống Đan Điền và hai bàn chân (Hạ thực), tạo vòm tam giác chịu lực nén từ cả 4 phương.",
+    ],
+    movementIntegration:
+      "Là 'Trạm gốc 0°' để biến hóa ra mọi bộ pháp: Từ Nhị Tự Kiềm Dương Mã, chỉ cần xoay đồng bộ hai bàn chân 30°–45° trên tâm bàn chân là lập tức chuyển thành Biên Thân Mã 90° né đòn; hoặc rút nhẹ một chân vào trung tâm là xuất ngay Vô Ảnh Cước mà thân trên không hề chao đảo.",
+    canonicalQuote:
+      "«Tấn chủ yếu là Nhị tự Kiềm dương Mã, đứng 2 bàn chân khá gần nhau, hình chữ bát, 2 mũi chân cách nhau 1 bề ngang bàn chân, 2 gót chân mở rộng ra ngoài cách nhau 2 bề ngang bàn chân; gối hơi khuỵu xuống (hẹp hơn và cao hơn một chút so với các chi phái khác). Thân mình đứng thẳng, tránh ngả ra trước.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 30, 33 & Chương III, Trang 162–165",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 25, 30, 33: Quy chuẩn hình học 1 bàn chân (mũi) – 2 bàn chân (gót).",
+      "[2] Đại sư Chu Thượng Đồng (2015), Vol. 1 (Siu Nim Tau): Khóa vòm gối hướng tâm & giải nén cột sống.",
+      "[7] Thomas Myers (2020), Anatomy Trains: Kích hoạt chuỗi mạc cơ sâu (Deep Front Line) từ gan bàn chân lên Đan Điền.",
+    ],
+    primaryImg: "/assets/hinh-2x/p037-h04.png",
+    primaryImgCaption: "Võ sư thị phạm Nhị Tự Kiềm Dương Mã phóng Nhật Tự Xung Quyền (Sách gốc Trang 37)",
+    diagramImg: "/assets/hinh-2x/p033-h02.png",
+    diagramImgCaption: "Sơ đồ khoảng cách 2 bàn chân chữ Bát chuẩn mực (Sách gốc Trang 33)",
+    relatedLessonId: "bai-07",
+  },
+  {
+    id: "stance-2-bien-than-toa-ma",
+    order: 2,
+    category: "Tấn Pháp Tĩnh & Chuyển Trục",
+    title: "Biên Thân Tọa Mã / Chuyển Mã (Quay Người 90°)",
+    hanNom: "偏身馬 / 轉馬",
+    subtitle: "Xoay bàn chân 30°–45°, quay thân nghiêng 90° chìa vai ra trước, hai bàn chân song song cách 1 bàn chân",
+    geometryAndWeight: {
+      footSpacing: "Hai bàn chân xoay song song với nhau, cách nhau đúng 1 bề ngang bàn chân",
+      weightDistribution: "70% dồn vào Chân sau (Trụ phát lực) – 30% ở Chân trước (Linh hoạt dò đường / xuất cước)",
+      pivotPoint: "Xoay trên toàn bộ bàn chân với điểm cố định ở CHÍNH GIỮA bàn chân (Tránh xoay bằng mũi hay gót)",
+      bodyAngle: "Nghiêng thân 90° (Biên thân) — Chìa một vai hướng thẳng về phía địch, giấu kín trục Tý Ngọ",
+    },
+    structuralCharacteristics: [
+      "Khi giao đấu thực chiến hoặc né đòn nhập nội, môn đồ Phật Gia Vịnh Xuân không đứng phơi ngực chính diện mà quay người 90° thành thế 'Biên thân' (Trang 25, 27, 32).",
+      "Điểm kỹ thuật cực kỳ đặc sắc của sách gốc (Trang 30 & 32): Khi quay người từ Kiềm Dương sang Biên Thân, hai bàn chân đang từ hình chữ Bát sẽ xoay 30°–45° để trở nên SONG SONG với nhau và cách nhau đúng 1 bề ngang bàn chân.",
+      "Tâm xoay chuẩn mực (Trang 32): 'Lúc đầu có thể nhấc nhẹ 2 gót chân, nhưng sau phải đặt xuống hoàn toàn và quay trên toàn bộ bàn chân. Điểm cố định sẽ là giữa bàn chân. Tránh quay với điểm cố định là mũi hay gót bàn chân.'",
+      "Lợi thế hình học 'Trường thắng đoản' (Trang 27 & 163): Khi đã biên thân, các tử huyệt trên Tý Ngọ Tuyến được che lấp bởi vai, hông và 2 tay; đồng thời vai trước tiến sát mục tiêu khiến đòn đấm thẳng của ta đi quãng đường ngắn nhất nhưng lại vươn dài hơn tay đấm vòng của địch.",
+    ],
+    movementIntegration:
+      "Kết hợp đồng bộ giữa 'Quay người + Quay tay (Chu kỳ 1 & 2)' (Trang 33): Vừa xoay thân biên thân vừa cuộn cổ tay Than thủ / Phục thủ để làm trượt đòn tấn công ngàn cân của đối thủ ('Tứ lạng bạt thiên cân'), đồng thời nén 70% trọng lượng xuống chân sau để nạp phản lực đất ('Lực do địa khởi') chuẩn bị bước Xước mã hoặc phóng quyền phản kích.",
+    canonicalQuote:
+      "«Quay người tại chỗ: Hai bàn chân quay 30–45°, thân người quay 90° sang trái. Hai bàn chân lúc này song song với nhau và cách nhau một bề ngang bàn chân. Người quay nghiêng hẳn và vai phải hướng ra trước (Biên thân). Lực chủ yếu ở chân sau, sức cảm thấy như ở lòng đất đi lên cơ thể (lực do địa khởi).»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 27, 30, 32–33 & Chương III, Trang 162–163",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 32–33: Kỹ thuật Quay người Biên thân & tâm xoay giữa bàn chân.",
+      "[2] Đại sư Chu Thượng Đồng (2015), Vol. 2 (Chum Kiu): Cơ chế xoay trục cột sống phát lực ly tâm.",
+      "[5] Neto, Magini & Saba (2007), Sports Biomechanics: Gia tăng khối lượng hiệu dụng khi truyền mô-men xoắn từ chân trụ sau qua hông.",
+    ],
+    primaryImg: "/assets/images/fundamentals/xoay_nguoi_bien_than_authentic.png",
+    primaryImgCaption: "Võ sư thị phạm thế Xoay Người Biên Thân 90° — 2 bàn chân song song (Sách gốc Trang 30)",
+    diagramImg: "/assets/hinh-2x/p034-h01.png",
+    diagramImgCaption: "Sơ đồ 2 bàn chân đặt song song trên trục Tý Ngọ Tuyến A–B (Sách gốc Trang 34)",
+    relatedLessonId: "bai-09",
+  },
+  {
+    id: "stance-3-xuoc-ma-truy-ma",
+    order: 3,
+    category: "Bộ Pháp Di Chuyển & Nhập Nội",
+    title: "Xước Mã & Truy Mã (Bộ Pháp «Như Người Leo Núi»)",
+    hanNom: "進退步法 / 追馬",
+    subtitle: "Tiến lùi nghiêng thân, chân trước chân sau song song lướt sát mặt đất ('Túc bất ly địa') & nhịp 'Đạp cung trung'",
+    geometryAndWeight: {
+      footSpacing: "Một chân trước – một chân sau, hai bàn chân giữ SONG SONG và cách nhau 1 bề ngang bàn chân",
+      weightDistribution: "70% ở Chân sau – 30% ở Chân trước (Giữ nguyên tỷ lệ ngay cả khi đang lướt tới hoặc lùi)",
+      pivotPoint: "Đế giày / gan bàn chân ma sát trượt sát mặt sàn ('Túc bất ly địa' — không nhấc bổng chân)",
+      bodyAngle: "Giữ nguyên tư thế nghiêng người (Biên thân) như người đang leo núi",
+    },
+    structuralCharacteristics: [
+      "Hình ảnh sư phạm kinh điển của Sách gốc (Trang 25, 31, 34): 'Khi tiến hay lùi đều nghiêng người, một chân trước một chân sau, như người leo núi (xước mã, truy mã). Hai bàn chân không ở cùng một mức nhưng vẫn phải song song nhau, sức nặng chủ yếu ở chân sau.'",
+      "Khác với lối bước chéo chân hoặc bước dài nhún nhảy của các môn võ khác, Xước mã giữ khung chậu ổn định ở cùng một độ cao, hai đùi trong kẹp nhẹ hướng tâm để bảo vệ hạ bộ trong suốt quá trình di chuyển.",
+      "Nhịp bước 'Đạp cung trung' (Trang 25, 31): Trong các bài quyền (như 108 Tiến Lùi, Ngũ Hình, Binh Khí), môn sinh thường tiến 3 bước một và lùi 3 bước một nhịp nhàng theo hơi thở Đan Điền.",
+    ],
+    movementIntegration:
+      "Sách gốc Trang 34 chỉ rõ 2 phương pháp kết hợp di chuyển tiến – lùi: (1) LƯỚT ĐỒNG BỘ 2 CHÂN: Cả hai bàn chân cùng trượt lướt về phía trước một lúc trên mặt sàn; (2) TRUY MÃ (Bước đuổi): Chân trước hơi nhích chuyển trước một chút rồi kéo chân sau lướt theo ngay lập tức (khi lùi thì chân sau lùi trước, chân trước rút theo). Nhờ 'Túc bất ly địa', võ sư có thể vừa lướt chân vừa phóng Liên xung quyền mà phản lực mặt đất không bị ngắt quãng dù chỉ 1 mili-giây.",
+    canonicalQuote:
+      "«Có thể tiến lên phía trước bằng hai chân cùng chuyển một lúc (lướt bàn chân) hay chân trước hơi chuyển trước một chút rồi kéo chân sau theo (truy mã)... Lúc di chuyển thường tiến nghiêng người, một bên vai hướng ra trước như người leo núi (xước mã). Chú ý không nhấc bàn chân lên khỏi mặt đất (túc bất ly địa).»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 31, 34–35 & Chương III, Trang 165",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 31, 34–35: Bộ pháp Xước mã, Truy mã, Đạp cung trung & Túc bất ly địa.",
+      "[4] Bolander, Neto & Bir (2009), JSSM: Duy trì tiếp xúc mặt đất liên tục giúp tối đa hóa xung lượng đòn đánh.",
+    ],
+    primaryImg: "/assets/images/fundamentals/di_chuyen_ma_bo_authentic.png",
+    primaryImgCaption: "Võ sư thị phạm Bộ pháp Di chuyển Xước Mã / Truy Mã nghiêng thân (Sách gốc Trang 30)",
+    diagramImg: "/assets/hinh-2x/p035-h01.png",
+    diagramImgCaption: "Sơ đồ 3 nhịp di chuyển chân Tiến – Lùi tuyến tính trên trục A–B (Sách gốc Trang 35)",
+    relatedLessonId: "bai-14",
+  },
+  {
+    id: "stance-4-hoanh-thoai-90-270",
+    order: 4,
+    category: "Bộ Pháp Di Chuyển & Nhập Nội",
+    title: "Hoành Thoái Bộ Pháp (Quay Vòng 90° & 270°)",
+    hanNom: "橫退步法 (90° & 270°)",
+    subtitle: "Tuyệt kỹ chuyển vòng bàn chân ra sau 1/4 hoặc 3/4 đường tròn để né đòn trực diện mà vẫn áp sát địch",
+    geometryAndWeight: {
+      footSpacing: "Kết thúc vòng quay: Hai bàn chân đặt song song cách nhau 1 bề ngang bàn chân trên trục mới vuông góc trục cũ",
+      weightDistribution: "Trong lúc xoay: 100% dồn vào chân trụ; Kết thúc xoay: 70% chân sau – 30% chân trước",
+      pivotPoint: "Một chân làm tâm trụ cố định, chân kia vẽ cung tròn 90° (1/4 vòng) hoặc 270° (3/4 vòng) ra sau",
+      bodyAngle: "Đổi hướng chiến đấu một góc vuông 90° (từ Bắc–Nam sang Đông–Tây), vai trước hướng thẳng vào sườn địch",
+    },
+    structuralCharacteristics: [
+      "Hoành thoái là kỹ thuật bộ pháp thượng thừa bậc nhất của Phật Gia Vịnh Xuân (Trang 34–35): Thay vì bước lùi thẳng về sau (dễ bị địch đuổi theo dồn ép), võ sư dùng 1 chân làm trụ và quét vòng chân kia ra sau kết hợp xoay thân để dạt sang bên cạnh mà vẫn đứng sát rạt đối thủ.",
+      "Kỹ thuật Hoành thoái sang Trái (90° — Trang 34): Từ thế biên thân chân phải ở trước, bàn chân trái quay vòng ra sau (ngược chiều kim đồng hồ) một góc 90°, thân và bàn chân phải quay theo đặt trước và song song chân trái. Hướng đánh mới vuông góc hướng cũ và ta đứng về bên trái.",
+      "Kỹ thuật Hoành thoái sang Phải (270° — Trang 34): Khó và hiểm hóc hơn: Bàn chân phải (đang ở trước) chuyển vòng lớn ra sau theo chiều kim đồng hồ một góc 270° (3/4 đường tròn), đồng thời thân và chân trái quay theo 90°, đưa vai trái và chân trái ra trước, đứng về bên phải hướng đánh cũ.",
+    ],
+    movementIntegration:
+      "Thực thi hoàn hảo khẩu quyết 'Lai lưu khứ tống' (Trang 35 & 161): Khi đối phương lao vào đấm hoặc đá dũng mãnh, Hoành thoái giúp ta thoát khỏi đường đạn của địch trong tích tắc nhưng không lùi xa — cơ thể ta lập tức nằm ngay sát mạn sườn đối phương (nơi địch đã lỡ đà và không thể dùng đòn đá quay người), tạo thế phản đòn tất thắng.",
+    canonicalQuote:
+      "«Quay nghiêng người (hoành thoái) rất quan trọng: đảm bảo tránh đòn mà không bị thoái lui, người vẫn sát vào địch để có thể trả đòn ngay trong khi địch ở vào thế bất lợi vì hướng đánh đã bị lạc... Kỹ thuật hoành thoái rất khó, cần được chỉ dạy trực tiếp bởi người thầy giỏi và đòi hỏi khổ luyện.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 34–35 & Chương III, Trang 162",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 34–35: Đồ hình Hoành thoái 90° / 270° & Điển tích Nguyễn Kỳ Sơn thắng Vu Nhạc Cương.",
+      "[3] Đại sư Diệp Chuẩn (1998): Nguyên lý chuyển góc (Angling & Shifting) hóa giải lực xung kích thẳng.",
+    ],
+    primaryImg: "/assets/hinh-2x/p034-h02.png",
+    primaryImgCaption: "Sơ đồ kỹ thuật Hoành Thoái 270° sang phải vẽ cung 3/4 đường tròn (Sách gốc Trang 34)",
+    diagramImg: "/assets/hinh-2x/p034-h03.png",
+    diagramImgCaption: "Sơ đồ kỹ thuật Hoành Thoái 90° sang trái vẽ cung 1/4 đường tròn (Sách gốc Trang 34)",
+    relatedLessonId: "bai-13",
+  },
+  {
+    id: "stance-5-buoc-vong-nhap-noi",
+    order: 5,
+    category: "Bộ Pháp Di Chuyển & Nhập Nội",
+    title: "Bộ Pháp Bước Vòng & Bước Chéo Nhập Nội Môn",
+    hanNom: "弧形步 / 踏中宮",
+    subtitle: "Vẽ cung lướt vòng qua chân trước của địch để đạp thẳng vào giữa hai chân đối phương ('Nhập nội môn')",
+    geometryAndWeight: {
+      footSpacing: "Chân trước vẽ cung lướt vòng qua điểm cản rồi cắm thẳng vào trục tâm A–B giữa hai chân địch",
+      weightDistribution: "Linh hoạt chuyển từ 70/30 sang khóa trụ khi chân trước đã cài sâu vào Nội môn đối thủ",
+      pivotPoint: "Chân sau giữ rễ định hướng, chân trước lướt cung tròn mượt như lưỡi liềm trên mặt sàn",
+      bodyAngle: "Biên thân nhập nội phối hợp nguyên lý 'Hoành lộ chế trực lộ — Trực lộ chế hoành lộ'",
+    },
+    structuralCharacteristics: [
+      "Sách gốc Trang 34–35 chỉ rõ: 'Có thể tiến bàn chân theo đường thẳng, đường hơi vòng hoặc bước chéo sang bên phải hoặc trái.'",
+      "Trong chiến đấu thực tế, đối thủ thường dùng chân trước và tay trước che chắn đường thẳng. Bộ pháp Bước vòng (Sơ đồ Trang 35) cho phép bàn chân trước của võ sư vẽ một đường cong lượn qua mắt cá/ống đồng đối phương để đặt chân thẳng vào 'Nội môn' (khoảng giữa hai chân địch — Lời khuyên số 27, Trang 166).",
+      "Đồng bộ với mật pháp dành cho nội gia đệ tử (Trang 27): 'Hoành lộ chế trực lộ — Trực lộ chế hoành lộ' (Dùng đường hơi vòng để khắc chế đường thẳng, dùng đường thẳng để khắc chế đường vòng).",
+    ],
+    movementIntegration:
+      "Kết hợp với 'Linh giác chi dưới' (Niêm cước — Trang 163): Khi bàn chân trước vừa chạm nhẹ vào chân địch, xúc giác của chân lập tức 'nghe' được trọng tâm của địch rồi lướt vòng qua chỗ trống để vừa khóa chân địch (cài mã) vừa phóng chưởng/quyền đánh ngã.",
+    canonicalQuote:
+      "«Hãy bước thẳng vào giữa 2 chân đối thủ (nội môn) và tấn công (nhập nội). Khi đối thủ lùi, không đứng yên mà cần lướt theo sát.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 27, 34–35 & Chương III, Trang 163, 166 (Lời khuyên 27, 29)",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 27, 35, 163, 166: Sơ đồ bước vòng & Linh giác chi dưới.",
+    ],
+    primaryImg: "/assets/hinh-2x/p035-h02.png",
+    primaryImgCaption: "Sơ đồ bộ pháp di chuyển đường vòng lách góc chiếm trục A–B (Sách gốc Trang 35)",
+    diagramImg: "/assets/hinh-2x/p163-h01.png",
+    diagramImgCaption: "Võ sư Nguyễn Văn Chiến và Võ sư Lê Văn Tùng thị phạm Linh giác chi dưới & Cài mã nhập nội (Sách gốc Trang 163)",
+    relatedLessonId: "bai-15",
+  },
+  {
+    id: "stance-6-quy-ma-tan",
+    order: 6,
+    category: "Tấn Pháp Đặc Dị & Binh Khí",
+    title: "Quy Mã Tấn (Tấn Quỳ Gối Hạ Thấp Trọng Tâm)",
+    hanNom: "龜馬 / 跪馬",
+    subtitle: "Hạ sập pháo đài cơ thể sát đất mà lưng vẫn thẳng đứng vuông góc với đùi — tuyệt đối không cúi gập lưng",
+    geometryAndWeight: {
+      footSpacing: "Một bàn chân giẫm phẳng xuống đất ở phía trước, đầu gối chân kia quỳ hạ sát mặt sàn phía sau",
+      weightDistribution: "60% trên chân quỳ gối trụ dưới – 40% trên bàn chân giẫm sàn phía trước",
+      pivotPoint: "Khớp háng hạ thấp theo phương thẳng đứng như thang máy, giữ nguyên trục cột sống",
+      bodyAngle: "Thân người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất, lưng thẳng tắp",
+    },
+    structuralCharacteristics: [
+      "Sách gốc Trang 25, 30, 31 & 34 quy định rất nghiêm ngặt: 'Khi địch hạ người xuống thấp, không được cúi người xuống mà tạ thấp người theo thế Quy Mã Tấn. Trong tấn này, một bàn chân giẫm xuống đất, chân kia quỳ gối, người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất.'",
+      "Giải thích cơ sinh học & nội công: Nếu người tập cúi gập thắt lưng để đỡ đòn thấp, đầu sẽ ngả ra trước (vi phạm điều cấm kỵ số 32, Trang 166), làm gãy trục Đốc Mạch, mất hoàn toàn khả năng dẫn lực từ chân lên tay và phơi gáy cho địch đánh. Quy Mã Tấn hạ thấp độ cao bằng khớp gối và khớp háng trong khi cột sống vẫn thẳng đứng hoàn hảo.",
+    ],
+    movementIntegration:
+      "Từ Biên Thân Mã hoặc Xước Mã, khi gặp đòn quét trụ hoặc khi cần đánh đòn thọc thấp vào hạ bàn / bụng dưới (như trong bài Hổ Quyền, Báo Quyền, Bát Trảm Đao, Lục Điểm Bán Côn), võ sư sập nhanh gối sau xuống thành Quy Mã, vừa tránh đòn tầm cao vừa tung đòn phản kích từ dưới lên rồi bật dậy ngay nhờ sức đàn hồi của đùi.",
+    canonicalQuote:
+      "«Khi địch hạ người xuống thấp, không được cúi người xuống mà 'tạ thấp' người theo thế Quy Mã Tấn (hình tr. 31). Trong tấn này, một bàn chân giẫm xuống đất, chân kia quỳ gối, người quay theo hướng vuông góc với đùi của chân giẫm bàn xuống đất.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 30, 31, 34 & Chương III, Trang 166",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 31, 34: Quy chuẩn Quy Mã Tấn & nguyên tắc giữ thẳng trục lưng.",
+      "[2] Đại sư Chu Thượng Đồng (2015): Bảo toàn trục thẳng đứng của cột sống trong mọi độ cao của tấn pháp.",
+    ],
+    primaryImg: "/assets/hinh-2x/p031-h01.png",
+    primaryImgCaption: "PGS.TS Nguyễn Mạnh Nhâm giám sát hai võ sư thị phạm Quy Mã Tấn đối kháng tầm thấp (Sách gốc Trang 31)",
+    diagramImg: "/assets/hinh-2x/p129-h01.png",
+    diagramImgCaption: "Ứng dụng tấn pháp thấp trong Ngũ Hình Quyền (Sách gốc Trang 129)",
+    relatedLessonId: "bai-23",
+  },
+  {
+    id: "stance-7-ma-cheo-xa-quyen",
+    order: 7,
+    category: "Tấn Pháp Đặc Dị & Binh Khí",
+    title: "Mã Chéo / Xoa Mã (Bộ Pháp Xà Quyền & Thượng Thừa)",
+    hanNom: "叉馬 / 蛇拳步",
+    subtitle: "Đan chéo hai chân sát nhau, xoay 2 chân sát nhau hoặc lướt 2 chân cùng lúc như rắn trườn",
+    geometryAndWeight: {
+      footSpacing: "Hai bàn chân đặt sát nhau và đan chéo hình chữ X (Xoa mã), hai đùi ép khít vào nhau",
+      weightDistribution: "Luân chuyển uyển chuyển 50/50 hoặc 80/20 giữa hai chân đang đan xoắn",
+      pivotPoint: "Hai bàn chân xoay sát nhau trên một diện tích cực hẹp hoặc trượt đồng thời",
+      bodyAngle: "Thân người uốn xoắn linh hoạt như thân rắn, hai tay xuất Xà thủ / Chỉ pháp trên trục Tý Ngọ",
+    },
+    structuralCharacteristics: [
+      "Sách gốc Trang 31 ghi rõ: 'Tuy nhiên, cũng có một số mã bộ phức tạp như mã chéo, mã di chuyển bằng quay 2 chân sát nhau (như trong bài Xà Quyền), lướt 2 chân cùng một lúc... chỉ khi học cao mới được tập.'",
+      "Về mặt cơ sinh học (Anatomy Trains [7]), tư thế đan chéo hai đùi ép sát nhau làm căng toàn bộ Chuỗi Mạc Cơ Xoắn Ốc (Spiral Line) từ bàn chân qua hông lên lồng ngực. Cơ thể lúc này giống như một chiếc lò xo xoắn (Torsion Spring) đang được vặn chặt: chỉ cần nhả nhẹ khớp háng là toàn thân bung xoay 180° hoặc vọt lướt đi với tốc độ cực cao.",
+    ],
+    movementIntegration:
+      "Dùng trong không gian chiến đấu chật hẹp ('Quyền đả ngọa ngưu chi địa' — mảnh đất vừa con trâu nằm, Trang 27): Cho phép võ sư đổi chân, chuyển hướng, khóa chặn đòn đá thấp của địch và luồn lách ra sau lưng đối phương mà không cần bước rộng.",
+    canonicalQuote:
+      "«Tuy nhiên, cũng có một số mã bộ phức tạp như mã chéo, mã di chuyển bằng quay 2 chân sát nhau (như trong bài Xà Quyền), lướt 2 chân cùng một lúc... chỉ khi học cao mới được tập.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 31 & Chương II (Bài Xà Quyền), Trang 124–128",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 31, 124–128: Kỹ thuật Mã chéo & Xà quyền.",
+      "[7] Thomas Myers (2020), Anatomy Trains (Ch. 6): Chuỗi mạc cơ xoắn ốc (Spiral Line) tích trữ năng lượng đàn hồi khi đan chéo chân.",
+    ],
+    primaryImg: "/assets/hinh-2x/p031-h02.png",
+    primaryImgCaption: "Võ sư thị phạm thế Mã Chéo (Xoa Mã) đặc trưng của bài Xà Quyền (Sách gốc Trang 31)",
+    diagramImg: "/assets/hinh-2x/p124-h02.png",
+    diagramImgCaption: "Thế tấn đan chéo uyển chuyển trong bài Xà Quyền (Sách gốc Trang 124)",
+    relatedLessonId: "bai-22",
+  },
+  {
+    id: "stance-8-doc-lap-tu-binh-chao-ma",
+    order: 8,
+    category: "Tấn Pháp Đặc Dị & Binh Khí",
+    title: "Độc Lập Tấn, Tứ Bình Mã & Chảo Mã (Cước & Binh Khí)",
+    hanNom: "獨立步 / 四平馬 / 吊馬",
+    subtitle: "Tấn 1 chân trụ xuất Vô Ảnh Cước ('Quyền 5 Cước 7') & Tấn rộng thấp trong Lục Điểm Bán Côn",
+    geometryAndWeight: {
+      footSpacing: "Độc lập tấn: 1 chân trụ bám đất, 1 gối nâng cao | Tứ bình & Chảo mã (Côn pháp): Mở rộng hơn tấn tay không",
+      weightDistribution: "Độc lập tấn: 100% chân trụ | Chảo mã / Tam giác mã binh khí: 70%–80% chân sau, 20%–30% chân trước",
+      pivotPoint: "Gót và toàn bộ gan bàn chân trụ cắm sâu xuống sàn như cọc tiêu chịu phản lực",
+      bodyAngle: "Độc lập tấn: Thân thẳng không ngả sau khi đá | Côn pháp: Hạ thấp trọng tâm, lưng thẳng, hợp nhất người và vũ khí",
+    },
+    structuralCharacteristics: [
+      "1. Độc Lập Tấn & Đòn Gối Cầm Nã Xuất Cước (Trang 29–30, 137): Sách gốc khẳng định 'Quyền 5 Cước 7 — Nếu hai người đòn tay bằng nhau thì ai cước hơn thì sẽ thắng'. Khi xuất cước (Vô ảnh cước, Toái tâm cước, Đoạt mệnh cước) hoặc trong bài Hạc Quyền, chân trụ bám đất vững chắc, chân kia dâng cao đầu gối vừa che hạ bộ, vừa phối hợp tay khống chế tay đối thủ (cầm nã) rồi xoay mũi bàn chân đá móc lên từ điểm mù.",
+      "2. Tứ Bình Mã, Chảo Mã & Tam Giác Mã trong Vũ Khí (Trang 25, 185, 199–201): Trong quyền tay không, PGVX ít dùng Trung bình tấn hay Chảo mã rộng (Trang 25). Nhưng khi cầm vũ khí (Bát Trảm Đao, Lục Điểm Bán Côn, Liễu Diệp Kiếm) hoặc tập Mộc Mã trận địa chiến, sách gốc Trang 185 & 201 chỉ rõ: 'Mã bộ cũng như đòn thế thường rộng hơn một chút. Lực chủ yếu dồn vào chân sau nhưng khi đánh tới đích thì dồn cả sức, khí vào vũ khí... Chủ yếu dùng tam giác mã và xước mã' và Chiêu 13 Lục Điểm Bán Côn dùng 'Chảo mã tấn lướt người vào thúc côn'.",
+    ],
+    movementIntegration:
+      "Trong Côn pháp (Trang 199–201), tấn thấp kết hợp với bộ pháp 'Lướt 2 chân về trước thúc côn' (Chiêu 3), 'Lùi 3 bước kéo lê côn' (Chiêu 5) và 'Loan côn tiến 3 bước – Loan côn lùi 5 bước' (Chiêu 15), biến sức nặng của cả cơ thể và mặt đất thành xung lượng đầu côn.",
+    canonicalQuote:
+      "«Khi dùng chân nhiều khi phải dâng cao đầu gối, khống chế tay đối thủ (cầm nã) và quay mũi bàn chân đá móc lên — đó là cách xuất cước khi cận chiến... Với vũ khí: Mã bộ thường rộng hơn một chút, lực chủ yếu dồn vào chân sau nhưng khi đánh tới đích thì dồn cả sức, khí vào vũ khí.»",
+    bookPageRef: "Sách gốc PGVX — Chương I, Trang 25, 29–30; Chương II (Hạc Quyền), Trang 137 & Chương V (Vũ Khí), Trang 185, 199–201",
+    academicCitations: [
+      "[1] PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức (2006), Tr. 29–30, 137, 185, 199–201: Quyền 5 Cước 7, Đòn gối cầm nã & Mã bộ Binh khí.",
+      "[3] Đại sư Diệp Chuẩn (1998), Ch. 6: Tứ bình đại mã & Điếu mã (Chảo mã) trong Lục Điểm Bán Côn.",
+    ],
+    primaryImg: "/assets/hinh-2x/p029-h05.png",
+    primaryImgCaption: "Võ sư thị phạm Tư thế chân trụ Độc Lập & nâng gối xuất cước cận chiến (Sách gốc Trang 29)",
+    diagramImg: "/assets/hinh-2x/p201-h05.png",
+    diagramImgCaption: "Võ sư Nguyễn Văn Chiến thị phạm Chảo Mã Tấn thúc côn trong bài Lục Điểm Bán Côn (Sách gốc Trang 201)",
+    relatedLessonId: "con",
+  },
+];
+
+export const WING_CHUN_LINEAGE_STANCE_COMPARISON: LineageStanceComparisonRow[] = [
+  {
+    dimension: "1. Độ rộng & Độ cao của Nhị Tự Kiềm Dương Mã",
+    pgvxVietnam:
+      "Hẹp và cao hơn một chút: Mũi chân cách 1 bề ngang bàn chân, gót cách 2 bề ngang bàn chân; gối hơi khuỵu nhẹ giúp di chuyển cực kỳ thanh thoát.",
+    gulaoLiangJan:
+      "Rất tương đồng với PGVX: Tấn cao, hẹp, linh hoạt (do Sư tổ Lương Tán đúc kết khi đã trên 70 tuổi truyền dạy tại làng Cổ Lao).",
+    hongKongIpMan:
+      "Rộng bằng vai (khoảng 1.5–2 bàn chân) và sập gối thấp hơn để rèn sức chịu đựng cơ đùi trong giai đoạn sơ cấp.",
+    externalKarateBoxing:
+      "Choãi chân rất rộng và dài (như Cung tiễn bộ / Zenkutsu-dachi) hoặc đứng nhón gót nhún nhảy (Boxing).",
+    sourceRef: "[1, Tr. 25, 30, 31], [2, Vol. 1], [3, Ch. 2]",
+  },
+  {
+    dimension: "2. Tư thế Thân người khi Giao đấu (Chính thân vs Biên thân)",
+    pgvxVietnam:
+      "Chủ đạo là BIÊN THÂN (Quay người nghiêng 90°, chìa một vai ra trước, hai bàn chân song song cách 1 bàn chân) để che kín Tý Ngọ Tuyến và vươn dài tầm tay ('Trường thắng đoản').",
+    gulaoLiangJan:
+      "Thiên về Biên thân (Thân nghiêng phỏng theo thế trúc nghiêng trước gió), dùng góc nghiêng để triệt tiêu lực trực diện.",
+    hongKongIpMan:
+      "Thường giữ Chính thân (Square-on facing) hoặc Bán biên thân (45°) để dùng cả hai tay cùng lúc trên trung tuyến.",
+    externalKarateBoxing:
+      "Xoay vai lấy đà vung hông lớn (Over-rotation) khi đấm móc hoặc đấm sau, dễ bị lộ sườn và mất trục khi đánh trượt.",
+    sourceRef: "[1, Tr. 25, 27, 32, 163], [2, Vol. 2]",
+  },
+  {
+    dimension: "3. Tâm Trục Xoay Bàn Chân khi Chuyển Mã",
+    pgvxVietnam:
+      "Đặt toàn bộ bàn chân xuống sàn, tâm xoay cố định ở CHÍNH GIỮA BÀN CHÂN (Huyệt Dũng Tuyền). Tránh xoay bằng mũi hay gót chân.",
+    gulaoLiangJan:
+      "Xoay trên lòng bàn chân kết hợp bước lướt nhẹ đổi góc liên hoàn.",
+    hongKongIpMan:
+      "Nhánh Chu Thượng Đồng xoay trên TRỤC GÓT CHÂN; nhánh Diệp Chuẩn / Lương Đĩnh xoay ở giữa bàn chân hoặc phần sau bàn chân.",
+    externalKarateBoxing:
+      "Xoay bằng ỨC MŨI CHÂN (kiểu nhón gót chân sau khi đấm Cross/Hook trong Boxing), làm giảm diện tích bám đất.",
+    sourceRef: "[1, Tr. 32], [2, Vol. 2], [3, Ch. 3]",
+  },
+  {
+    dimension: "4. Phân bổ Trọng lượng Chân trước / Chân sau",
+    pgvxVietnam:
+      "Chính diện Kiềm Dương: 50/50. Khi Biên thân & Di chuyển Xước mã: 70% CHÂN SAU / 30% CHÂN TRƯỚC ('Lực do địa khởi' từ chân sau).",
+    gulaoLiangJan:
+      "Trọng tâm dồn chủ yếu ở chân sau (60/40 hoặc 70/30) để chân trước nhẹ nhàng điểm cước hoặc chuyển bước.",
+    hongKongIpMan:
+      "Nhánh Chu Thượng Đồng / Hoàng Thuần Lương: 50/50; Nhánh Diệp Chuẩn / Lương Đĩnh: 0/100 hoặc 30/70 dồn chân sau.",
+    externalKarateBoxing:
+      "Đổ dồn 70%–80% trọng lượng lên CHÂN TRƯỚC khi bước đấm Lunge/Cross, rất dễ bị Vịnh Xuân kéo sập về trước ('Khứ tống').",
+    sourceRef: "[1, Tr. 31, 33, 34], [2], [3]",
+  },
+  {
+    dimension: "5. Phương pháp Di chuyển & Tránh đòn chủ đạo",
+    pgvxVietnam:
+      "Xước mã / Truy mã (như người leo núi), Túc bất ly địa, Đạp cung trung (tiến 3 lùi 3) và tuyệt kỹ HOÀNH THOÁI 90° & 270° vẽ cung tròn sát địch.",
+    gulaoLiangJan:
+      "Bộ pháp Tam giác và Xước mã lướt ngắn, áp sát liên tục khóa không gian đối thủ.",
+    hongKongIpMan:
+      "Biểu mã (Biu Ma / Bước mũi tên), Khuyên mã (Bước vòng cung) và Tam giác mã tiến – thoái.",
+    externalKarateBoxing:
+      "Nhảy bước dài (Pendulum bounce / Lunge step), có khoảng thời gian cả hai chân rời mặt đất nên không thể phát lực tức thời.",
+    sourceRef: "[1, Tr. 25, 31, 34–35, 165], [4]",
+  },
+];
+
+export const FIVE_FOOTWORK_MOBILITY_PRINCIPLES: FootworkMobilityPrinciple[] = [
+  {
+    id: "mob-1",
+    number: "Nguyên Tắc 01",
+    title: "Vững Động: «Chiếc Xe Đạp Đang Lăn Bánh & Con Lật Đật»",
+    hanNom: "動中求靜 • 不倒翁",
+    metaphor: "Con lật đật (Thượng hư hạ thực) & Xe đạp lăn bánh",
+    mechanism:
+      "Tấn Vịnh Xuân cao và hẹp nên nếu đứng cứng đờ bằng cơ bắp thì kém vững hơn tấn thấp rộng. Nhưng cái vững của Vịnh Xuân là 'Vững Động': Giống như chiếc xe đạp không bao giờ đổ khi đang lăn bánh và Trái Đất không rơi vào không gian vì nó tự quay — khi nội khí Đan Điền và bộ pháp Xước mã / Hoành thoái vận chuyển liên tục, mọi lực xô đẩy đều bị chuyển hóa thành mô-men phản kích.",
+    sourceRef: "[1] Sách gốc PGVX, Trang 19, 162 & 165",
+  },
+  {
+    id: "mob-2",
+    number: "Nguyên Tắc 02",
+    title: "«Túc Bất Ly Địa» — Đế Chân Ma Sát Mặt Đất Liên Tục",
+    hanNom: "足不離地 • 力由地起",
+    metaphor: "Con thuyền lướt trên mặt nước, rễ cây bám sâu lòng đất",
+    mechanism:
+      "Trong suốt quá trình tiến (Xước mã), đuổi (Truy mã) hay xoay vòng (Hoành thoái), đế bàn chân luôn lướt sát mặt sàn mà không nhảy bổng lên. Về mặt vật lý cơ sinh học, điều này đảm bảo vector Phản lực mặt đất (F_GRF) luôn lớn hơn 0 ở mọi phần nghìn giây, cho phép võ sư phát Thốn kình ngay trong tích tắc đang di chuyển.",
+    sourceRef: "[1] Sách gốc PGVX, Trang 34 & 165; [4] Bolander et al. (2009)",
+  },
+  {
+    id: "mob-3",
+    number: "Nguyên Tắc 03",
+    title: "«Biên Thân 90°» — Biến Đoản Thành Trường («Trường Thắng Đoản»)",
+    hanNom: "偏身九十 • 長勝短",
+    metaphor: "Xoay nghiêng cánh cửa thép, vươn mũi giáo thẳng",
+    mechanism:
+      "Khi quay người 90° đưa một vai ra trước và đặt 2 bàn chân song song cách nhau 1 bàn chân, toàn bộ các huyệt đạo chí mạng trên Tý Ngọ Tuyến của ta được giấu đi. Đồng thời, khớp vai trước được đẩy sát về phía địch thêm 15–20cm, làm đòn đấm thẳng ngắn của Vịnh Xuân lại chạm đích trước và dài hơn đòn đấm vòng của đối thủ.",
+    sourceRef: "[1] Sách gốc PGVX, Trang 25, 27, 32 & 163",
+  },
+  {
+    id: "mob-4",
+    number: "Nguyên Tắc 04",
+    title: "«Hoành Thoái 90° / 270°» — Tránh Đòn Mà Không Thoái Lui",
+    hanNom: "橫退不離 • 來留去送",
+    metaphor: "Nước rẽ quanh tảng đá rồi ập ngay vào sau tảng đá",
+    mechanism:
+      "Khi gặp đối thủ to khỏe tấn công vũ bão (như cao thủ Đường Lang Vu Nhạc Cương), nếu lùi thẳng về sau sẽ rơi vào tầm cước dài của địch. Dùng chân trụ và vẽ vòng chân kia 90° hoặc 270° ra sau (Hoành thoái) giúp ta thoát khỏi trục xung kích nhưng thân mình vẫn dán sát vào sườn địch, khóa chết mọi đòn chân của đối phương.",
+    sourceRef: "[1] Sách gốc PGVX, Trang 34–35 & 162",
+  },
+  {
+    id: "mob-5",
+    number: "Nguyên Tắc 05",
+    title: "«Quyền 5 Cước 7» & Hạ Thấp Bằng «Quy Mã» Không Cúi Lưng",
+    hanNom: "拳五腳七 • 龜馬直身",
+    metaphor: "Cột trụ thẳng đứng hạ ngầm xuống đất, cước ẩn dưới gối",
+    mechanism:
+      "Hai người đòn tay ngang nhau thì ai giỏi bộ pháp và cước pháp hơn sẽ thắng. Khi xuất cước (Vô ảnh cước, Đòn gối cầm nã đá móc), chân trụ phải mọc rễ; khi địch đánh thấp, tuyệt đối không cúi gập lưng làm gãy cột sống mà phải sập gối thành Quy Mã Tấn để giữ trục Tý Ngọ Tuyến thẳng đứng tuyệt đối.",
+    sourceRef: "[1] Sách gốc PGVX, Trang 29–31, 34 & 166",
+  },
+];
+

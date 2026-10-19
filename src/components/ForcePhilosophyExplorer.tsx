@@ -29,7 +29,11 @@ import {
   UNEXPLAINED_QI_PHENOMENA,
   FOUR_SELF_EXPERIMENTS,
   FORCE_ACADEMIC_BIBLIOGRAPHY,
+  WING_CHUN_STANCES_AND_FOOTWORK_ATLAS,
+  WING_CHUN_LINEAGE_STANCE_COMPARISON,
+  FIVE_FOOTWORK_MOBILITY_PRINCIPLES,
   KineticQiNode,
+  StanceAndFootworkStudy,
 } from "@/data/forcePhilosophy";
 
 interface ForcePhilosophyExplorerProps {
@@ -43,6 +47,16 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
   const [selectedStationIndex, setSelectedStationIndex] = useState<number>(0);
   // Chế độ mô phỏng mạch lực: "connected" (Tùng tĩnh thông suốt 100%) vs "blocked" (Gồng vai đứt mạch lực tại Trạm 4)
   const [simulationMode, setSimulationMode] = useState<"connected" | "blocked">("connected");
+  // Tư thế gốc trên sơ đồ 5 trạm: "chinh-than" (Nhị Tự Kiềm Dương Xung Quyền p037-h04) vs "bien-than" (Xước Mã Di Chuyển p030-h03)
+  const [stanceBodyView, setStanceBodyView] = useState<"chinh-than" | "bien-than">("chinh-than");
+  // Thế đứng tấn / Bộ pháp đang chọn trong Chương Chuyên khảo Bộ pháp
+  const [selectedStanceId, setSelectedStanceId] = useState<string>(
+    WING_CHUN_STANCES_AND_FOOTWORK_ATLAS[0].id
+  );
+  // Chế độ hiển thị Chương Bộ pháp: lọc theo nhóm hoặc xem tất cả 8 bộ
+  const [stanceCategoryFilter, setStanceCategoryFilter] = useState<
+    "all" | StanceAndFootworkStudy["category"]
+  >("all");
   // Chế độ biểu đồ vật lý & tuổi tác: "impulse" (Xung lực Thốn kình F(t)) vs "longevity" (Đường cong sức mạnh 20-80 tuổi)
   const [chartType, setChartType] = useState<"impulse" | "longevity">("impulse");
   // Bộ lọc chuyên đề Tay / Chân
@@ -54,6 +68,14 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
 
   const activeNode: KineticQiNode =
     FIVE_KINETIC_QI_NODES[selectedStationIndex] || FIVE_KINETIC_QI_NODES[0];
+
+  const activeStanceStudy: StanceAndFootworkStudy =
+    WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.find((s) => s.id === selectedStanceId) ||
+    WING_CHUN_STANCES_AND_FOOTWORK_ATLAS[0];
+
+  const filteredStanceAtlas = WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.filter((s) =>
+    stanceCategoryFilter === "all" ? true : s.category === stanceCategoryFilter
+  );
 
   const filteredLimbSecrets = LIMB_FORCE_SECRETS.filter((item) =>
     limbFilter === "all" ? true : item.category === limbFilter
@@ -73,14 +95,25 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [zoomImg]);
 
-  // Tọa độ các trạm trên sơ đồ SVG giải phẫu tương tác (viewBox 0 0 600 660)
-  const svgStationCoords = [
-    { station: 1, x: 255, y: 605, short: "1. Bàn Chân & Dũng Tuyền (K1)" },
-    { station: 2, x: 280, y: 470, short: "2. Vòm Khóa Gối Kiềm Dương" },
-    { station: 3, x: 250, y: 345, short: "3. Hạ Đan Điền & Cột Sống" },
-    { station: 4, x: 255, y: 210, short: "4. Trầm Kiên & Trửu Để Lực" },
-    { station: 5, x: 455, y: 205, short: "5. Lao Cung & Thốn Kình" },
-  ];
+  // Tọa độ 5 trạm chuẩn xác trên ảnh Võ sư Sách gốc (viewBox 0 0 600 660)
+  // Chính thân (p037-h04.png): Võ sư đứng Nhị Tự Kiềm Dương Mã phóng Nhật Tự Xung Quyền về phía trước
+  // Biên thân (di_chuyen_ma_bo_authentic.png): Võ sư đứng Biên Thân / Xước Mã tiến bước phóng quyền
+  const svgStationCoords =
+    stanceBodyView === "chinh-than"
+      ? [
+          { station: 1, x: 255, y: 585, short: "1. Bàn Chân Chữ Bát & Dũng Tuyền (K1)" },
+          { station: 2, x: 270, y: 465, short: "2. Vòm Khóa Gối Nhị Tự Kiềm Dương" },
+          { station: 3, x: 295, y: 345, short: "3. Hạ Đan Điền & Trục Lưng Thẳng" },
+          { station: 4, x: 330, y: 215, short: "4. Trầm Kiên & Thu Quyền Sát Nách" },
+          { station: 5, x: 245, y: 225, short: "5. Lao Cung & Nhật Tự Xung Quyền" },
+        ]
+      : [
+          { station: 1, x: 235, y: 585, short: "1. Chân Sau 70% & Túc Bất Ly Địa" },
+          { station: 2, x: 265, y: 465, short: "2. Khớp Gối Đàn Hồi Tiến Bộ" },
+          { station: 3, x: 285, y: 345, short: "3. Trục Xoay Biên Thân 90° & Đan Điền" },
+          { station: 4, x: 315, y: 215, short: "4. Vai Thả Lỏng Chìa Ra Trước (Trường Thắng Đoản)" },
+          { station: 5, x: 205, y: 205, short: "5. Nhật Tự Xung Quyền Bộc Phát" },
+        ];
 
   return (
     <div className="space-y-12 sm:space-y-16 animate-fadeIn">
@@ -126,32 +159,32 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
             </div>
           </div>
 
-          {/* Right 5 Cols: Bức Đồ Hình Giải Phẫu Cơ Sinh Học & Khí Lực */}
+          {/* Right 5 Cols: Bức Đồ Hình Chuẩn Tư Liệu Sách Gốc (Tấn Pháp & Chuỗi Truyền Lực 5 Trạm) */}
           <div className="lg:col-span-5">
             <div
               onClick={() =>
                 setZoomImg({
                   src: "/assets/images/fundamentals/wing_chun_kinetic_qi_diagram.jpg",
-                  title: "Đồ Hình Giải Phẫu Cơ Sinh Học & Kinh Mạch Khí Lực Vịnh Xuân Quyền",
+                  title: "Đồ Hình Chuẩn Sách Gốc: Hệ Thống Tấn Pháp, Bộ Pháp & Chuỗi Truyền Lực 5 Trạm Vịnh Xuân",
                   caption:
-                    "Sự giao thoa giữa Chuỗi Động Học Khép Kín (Phản lực mặt đất F_GRF -> Vòm gối -> Khung chậu -> Trầm kiên -> Trửu để lực) và Mạch Khí Đông Y (Huyệt Dũng Tuyền K1 -> Hạ Đan Điền -> Hỏa Long Mạch Đốc -> Huyệt Lao Cung PC8).",
+                    "Dựng trực tiếp từ ảnh võ sư thị phạm và sơ đồ bàn chân nguyên bản trong sách «Phật Gia Vịnh Xuân Quyền» (PGS.TS Nguyễn Mạnh Nhâm & ThS.DS Nguyễn Duy Thức, 2006 — Trang 19, 30–35, 37, 161–166): Nhị Tự Kiềm Dương Mã (2 mũi chân cách 1 bàn chân, 2 gót cách 2 bàn chân, gối hơi khuỵu, lưng thẳng, tay thu sát nách) kết hợp Biên Thân 90°, Xước Mã và Hoành Thoái.",
                 })
               }
               className="group relative rounded-2xl overflow-hidden border-2 border-[#F5D06C]/40 hover:border-[#F5D06C] shadow-2xl cursor-pointer bg-[#0F0805] transition-all"
             >
-              <div className="relative aspect-[16/10] w-full">
+              <div className="relative aspect-[16/9] w-full">
                 <Image
                   src="/assets/images/fundamentals/wing_chun_kinetic_qi_diagram.jpg"
-                  alt="Đồ hình Cơ chế dùng lực và Khí lực Vịnh Xuân Quyền"
+                  alt="Đồ hình Chuẩn Sách Gốc: Tấn pháp, Bộ pháp và Chuỗi truyền lực 5 trạm Vịnh Xuân Quyền"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-contain bg-[#110A07] group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   priority
                 />
               </div>
               <div className="p-3.5 bg-[#140A06]/95 border-t border-white/10 flex items-center justify-between gap-2">
                 <span className="text-xs sm:text-sm font-medium text-amber-100">
-                  Sơ đồ tổng thể 5 Trạm Truyền Lực &amp; Dẫn Khí
+                  Đồ hình Tấn Pháp &amp; 5 Trạm Dẫn Lực (Chuẩn Sách Gốc Tr. 30–37)
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#F5D06C]">
                   <Maximize2 className="w-4 h-4" />
@@ -171,58 +204,63 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
             href="#kinetic-5-stations"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            1. Mô Phỏng 5 Trạm Từ Chân Lên Tay
+            1. Mô Phỏng 5 Trạm Trên Tấn Chuẩn
+          </a>
+          <a
+            href="#stances-footwork-atlas"
+            className="px-4 py-2 rounded-full bg-[#F5D06C]/20 border border-[#F5D06C]/50 hover:bg-[#F5D06C] text-[#F5D06C] hover:text-[#140A06] text-xs sm:text-sm font-bold transition-all"
+          >
+            2. Chuyên Khảo 8 Tấn Pháp &amp; Bộ Pháp Di Chuyển
           </a>
           <a
             href="#physics-longevity-charts"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            2. Đồ Thị Vật Lý Thốn Kình &amp; Độ Tuổi
+            3. Đồ Thị Vật Lý Thốn Kình &amp; Độ Tuổi
           </a>
           <a
             href="#limb-force-secrets"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            3. Cơ Chế Dùng Lực Tay &amp; Chân (6 Bí Quyết)
+            4. 6 Bí Quyết Dùng Lực Tay &amp; Chân
           </a>
           <a
             href="#eastern-qi-mysteries"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            4. Khí Lực &amp; Những Điều Khoa Học Chưa Giải Mã Hết
+            5. Khí Lực &amp; Những Điều Khoa Học Chưa Giải Mã Hết
           </a>
           <a
             href="#self-experiments"
             className="px-4 py-2 rounded-full bg-white/8 hover:bg-[#F5D06C] text-amber-100 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            5. 4 Bài Tự Thực Nghiệm
+            6. 4 Bài Tự Thực Nghiệm
           </a>
           <a
             href="#academic-bibliography"
             className="px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-400/40 hover:bg-[#F5D06C] text-emerald-200 hover:text-[#140A06] text-xs sm:text-sm font-semibold transition-all"
           >
-            6. Nguồn Trích Dẫn Khoa Học ([1]–[10])
+            7. Nguồn Trích Dẫn Khoa Học ([1]–[10])
           </a>
         </div>
       </section>
 
       {/* ========================================================================= */}
-      {/* 2. MÔ HÌNH TƯƠNG TÁC 5 TRẠM: VÌ SAO LỰC TỪ CHÂN CHẠY LÊN TAY ĐƯỢC?        */}
+      {/* 2. MÔ HÌNH TƯƠNG TÁC 5 TRẠM TRÊN TƯ THẾ ĐỨNG TẤN SÁCH GỐC                 */}
       {/* ========================================================================= */}
       <section id="kinetic-5-stations" className="space-y-8 scroll-mt-24">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 border-b border-white/10 pb-5">
           <div className="space-y-2 max-w-3xl">
             <div className="inline-flex items-center gap-2 text-[#F5D06C] text-xs sm:text-sm font-bold uppercase tracking-wider">
               <Activity className="w-4 h-4" />
-              <span>Chương I • Giải Phẫu Chuỗi Động Học &amp; Kinh Mạch 5 Trạm</span>
+              <span>Chương I • Giải Phẫu Chuỗi Động Học &amp; Kinh Mạch Trên Tấn Pháp Chuẩn Sách Gốc</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif gold-gradient">
-              Vì Sao Đứng Tấn Tại Chỗ Mà Lực Từ Chân Lại Chạy Lên Tay Được?
+              Vì Sao Đứng Tấn Nhị Tự Kiềm Dương Hẹp &amp; Thẳng Lưng Mà Lực Từ Chân Lại Chạy Lên Tay Được?
             </h2>
             <p className="text-sm sm:text-base text-amber-100/85 leading-relaxed">
-              Bấm vào từng <strong>Trạm (1 → 5)</strong> trên sơ đồ tương tác hoặc chuyển đổi giữa chế độ{" "}
-              <strong className="text-emerald-400">Thông Mạch Tùng Tĩnh (100%)</strong> và{" "}
-              <strong className="text-rose-400">Lỗi Gồng Vai Đứt Mạch (Chỉ còn 15% sức tay)</strong> để thấy rõ cơ chế truyền lực kèm trích dẫn nguồn.
+              Khác hẳn với thế tấn choãi rộng kiểu Cung tiễn bộ của Ngoại gia hay nhón gót của Boxing, Vịnh Xuân đứng{" "}
+              <strong className="text-[#F5D06C]">Nhị Tự Kiềm Dương Mã</strong> rất gọn (2 mũi chân cách 1 bàn chân, 2 gót cách 2 bàn chân, gối hơi khuỵu hướng tâm, lưng thẳng đứng, hai nắm đấm thu sát nách — <em>Sách gốc Tr. 29–33, 37</em>). Bấm vào từng <strong>Trạm (1 → 5)</strong> trực tiếp trên hình chụp Võ sư Sách gốc để mổ xẻ cơ chế truyền lực.
             </p>
           </div>
 
@@ -256,21 +294,21 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
           </div>
         </div>
 
-        {/* Khung Chính 12 Cột: Cột Trái (5 Cột) Sơ Đồ SVG Tương Tác + Cột Phải (7 Cột) Chi Tiết Trạm */}
+        {/* Khung Chính 12 Cột: Cột Trái (5 Cột) Ảnh Võ Sư Sách Gốc + Vector 5 Trạm | Cột Phải (7 Cột) Chi Tiết Trạm */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* LEFT 5 COLS: Interactive SVG Kinetic & Qi Body Diagram */}
+          {/* LEFT 5 COLS: Authentic Book Master Stance + Interactive SVG 5 Stations */}
           <div className="lg:col-span-5 glass-panel rounded-3xl p-5 sm:p-6 border border-[#F5D06C]/30 bg-[#120906] space-y-4">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
               <div>
                 <h3 className="text-base sm:text-lg font-bold font-serif text-[#FAF6F0]">
-                  Sơ Đồ Truyền Lực &amp; Dẫn Khí 5 Trạm
+                  Tư Thế Đứng Tấn Thực Tế Trong Sách Gốc
                 </h3>
                 <p className="text-xs sm:text-sm text-amber-200/80">
-                  Nhấp vào các nút tròn số 1–5 trên cơ thể để mổ xẻ cơ chế
+                  Chọn góc đứng tấn và nhấp vào các nút số 1–5 trên cơ thể võ sư
                 </p>
               </div>
               <span
-                className={`px-3 py-1 rounded-full text-xs font-bold ${
+                className={`px-3 py-1 rounded-full text-xs font-bold self-start sm:self-auto ${
                   simulationMode === "connected"
                     ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
                     : "bg-rose-500/20 text-rose-300 border border-rose-500/40"
@@ -280,149 +318,232 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
               </span>
             </div>
 
-            {/* Interactive SVG Canvas */}
-            <div className="relative w-full aspect-[600/660] bg-gradient-to-b from-[#1A0E09] to-[#0D0604] rounded-2xl border border-white/10 overflow-hidden">
+            {/* Chuyển đổi giữa 2 tư thế đứng tấn thật trong Sách gốc */}
+            <div className="grid grid-cols-2 gap-2 bg-[#1A0E09] p-1.5 rounded-2xl border border-white/10">
+              <button
+                onClick={() => setStanceBodyView("chinh-than")}
+                className={`px-3 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                  stanceBodyView === "chinh-than"
+                    ? "bg-[#F5D06C] text-[#140A06] shadow-md"
+                    : "text-amber-100/80 hover:text-white"
+                }`}
+              >
+                1. Chính Thân Kiềm Dương (H.37)
+              </button>
+              <button
+                onClick={() => setStanceBodyView("bien-than")}
+                className={`px-3 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                  stanceBodyView === "bien-than"
+                    ? "bg-[#F5D06C] text-[#140A06] shadow-md"
+                    : "text-amber-100/80 hover:text-white"
+                }`}
+              >
+                2. Biên Thân Tiến Mã (H.22)
+              </button>
+            </div>
+
+            {/* Interactive Canvas: Ảnh Chụp Võ Sư Sách Gốc + Sơ Đồ Dấu Chân + Lớp Phủ SVG 5 Trạm */}
+            <div className="relative w-full aspect-[600/660] bg-[#FBF9F5] rounded-2xl border-2 border-[#F5D06C]/50 overflow-hidden shadow-inner">
+              {/* Ảnh nền là hình chụp Võ sư thị phạm nguyên bản trong Sách gốc */}
+              <div className="absolute inset-0 p-4 pb-20 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={
+                      stanceBodyView === "chinh-than"
+                        ? "/assets/hinh-2x/p037-h04.png"
+                        : "/assets/images/fundamentals/di_chuyen_ma_bo_authentic.png"
+                    }
+                    alt={
+                      stanceBodyView === "chinh-than"
+                        ? "Võ sư đứng Nhị Tự Kiềm Dương Mã phóng Nhật Tự Xung Quyền (Sách gốc Trang 37 - Hình 37)"
+                        : "Võ sư đứng Biên Thân tiến Xước Mã (Sách gốc Trang 30 - Hình 22)"
+                    }
+                    fill
+                    className="object-contain martial-filter"
+                    sizes="(max-width: 1024px) 100vw, 480px"
+                  />
+                </div>
+              </div>
+
+              {/* Hộp nhỏ góc dưới phải: Sơ đồ bàn chân chữ Bát / Song song nguyên bản trong Sách gốc Tr. 33-34 */}
+              <div
+                onClick={() =>
+                  setZoomImg({
+                    src:
+                      stanceBodyView === "chinh-than"
+                        ? "/assets/hinh-2x/p033-h02.png"
+                        : "/assets/hinh-2x/p034-h01.png",
+                    title:
+                      stanceBodyView === "chinh-than"
+                        ? "Sơ đồ hai bàn chân Nhị Tự Kiềm Dương Mã (Sách gốc Trang 33 - Hình 29)"
+                        : "Sơ đồ hai bàn chân song song khi Biên Thân 90° (Sách gốc Trang 34 - Hình 30)",
+                    caption:
+                      stanceBodyView === "chinh-than"
+                        ? "Hai mũi bàn chân xoay vào trong cách nhau 1 bàn chân, hai gót mở ra ngoài cách nhau 2 bàn chân tạo hình chữ Bát (八)."
+                        : "Khi quay người sang phải/trái 90° (Biên thân), hai bàn chân xoay trên tâm chính giữa bàn chân, trở nên song song nhau và cách nhau 1 bàn chân.",
+                  })
+                }
+                className="absolute bottom-2 right-2 z-20 w-36 sm:w-44 rounded-xl bg-white/95 border-2 border-[#140A06]/30 p-1.5 shadow-lg cursor-pointer hover:border-[#D97706] transition-all"
+              >
+                <div className="relative w-full h-14">
+                  <Image
+                    src={
+                      stanceBodyView === "chinh-than"
+                        ? "/assets/hinh-2x/p033-h02.png"
+                        : "/assets/hinh-2x/p034-h01.png"
+                    }
+                    alt="Sơ đồ hai bàn chân sách gốc"
+                    fill
+                    className="object-contain"
+                    sizes="176px"
+                  />
+                </div>
+                <p className="text-xs font-serif font-bold text-stone-900 text-center leading-tight">
+                  {stanceBodyView === "chinh-than"
+                    ? "Sơ đồ H.29: Mũi cách 1, gót cách 2 bàn chân"
+                    : "Sơ đồ H.30: 2 bàn chân xoay song song"}
+                </p>
+              </div>
+
+              {/* Nhãn chú thích góc dưới trái */}
+              <div className="absolute bottom-2 left-2 z-20 max-w-[52%] rounded-xl bg-[#140A06]/90 border border-[#F5D06C]/40 px-3 py-2 text-xs text-amber-100">
+                <strong className="text-[#F5D06C] block">
+                  {stanceBodyView === "chinh-than"
+                    ? "📖 Sách gốc Tr. 37 (Hình 37):"
+                    : "📖 Sách gốc Tr. 30 (Hình 22):"}
+                </strong>
+                <span>
+                  {stanceBodyView === "chinh-than"
+                    ? "Tấn Kiềm Dương cao vừa, gối hơi khuỵu, lưng thẳng, tay thu sát nách."
+                    : "Biên thân nghiêng người, chân sau trụ 70%, chân trước lướt nhẹ 30%."}
+                </span>
+              </div>
+
+              {/* Lớp phủ SVG Vector Dẫn Lực & 5 Trạm Tương Tác */}
               <svg
                 viewBox="0 0 600 660"
-                className="w-full h-full select-none"
+                className="relative z-10 w-full h-full select-none"
                 role="img"
-                aria-label="Sơ đồ tương tác 5 trạm truyền lực và dẫn khí từ bàn chân lên nắm đấm"
+                aria-label="Sơ đồ tương tác 5 trạm truyền lực và dẫn khí trực tiếp trên tư thế võ sư sách gốc"
               >
                 <defs>
                   <radialGradient id="dantianGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#34D399" stopOpacity="0.9" />
-                    <stop offset="60%" stopColor="#F5D06C" stopOpacity="0.4" />
-                    <stop offset="100%" stopColor="#F5D06C" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#10B981" stopOpacity="0.85" />
+                    <stop offset="60%" stopColor="#D97706" stopOpacity="0.35" />
+                    <stop offset="100%" stopColor="#D97706" stopOpacity="0" />
                   </radialGradient>
                   <radialGradient id="punchShockwave" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#F5D06C" stopOpacity="0.95" />
-                    <stop offset="50%" stopColor="#F59E0B" stopOpacity="0.45" />
+                    <stop offset="0%" stopColor="#D97706" stopOpacity="0.9" />
+                    <stop offset="50%" stopColor="#F59E0B" stopOpacity="0.4" />
                     <stop offset="100%" stopColor="#F59E0B" stopOpacity="0" />
                   </radialGradient>
                 </defs>
 
-                {/* Lưới tọa độ Tý Ngọ Tuyến nền */}
-                <line x1="250" y1="30" x2="250" y2="630" stroke="#F5D06C" strokeOpacity="0.18" strokeDasharray="6 6" strokeWidth="1.5" />
-                <line x1="60" y1="620" x2="540" y2="620" stroke="#F5D06C" strokeOpacity="0.35" strokeWidth="2" />
-                <text x="380" y="645" fill="#F5D06C" fontSize="13" fontWeight="bold" opacity="0.85">
-                  MẶT ĐẤT (PHẢN LỰC F_GRF)
-                </text>
-
-                {/* Phác họa Hình thái Giải phẫu Võ sư Đứng Tấn Kiềm Dương Phóng Quyền */}
-                <circle cx="250" cy="115" r="34" fill="#2A1810" stroke="#F5D06C" strokeWidth="2" strokeOpacity="0.6" />
-                <path d="M238 148 L238 175 L265 175 L265 148 Z" fill="#2A1810" stroke="#F5D06C" strokeWidth="1.5" strokeOpacity="0.5" />
-
-                {/* Thân người & Cột sống */}
-                <path
-                  d="M210 175 Q195 260 205 355 L285 355 Q295 260 280 175 Z"
-                  fill="#23130D"
-                  stroke="#F5D06C"
+                {/* Trục Tý Ngọ Tuyến thẳng đứng */}
+                <line
+                  x1="290"
+                  y1="30"
+                  x2="290"
+                  y2="595"
+                  stroke="#B45309"
+                  strokeOpacity="0.4"
+                  strokeDasharray="6 6"
                   strokeWidth="2"
-                  strokeOpacity="0.55"
                 />
 
-                {/* Chân sau & Chân trước tạo Vòm Chữ A Nhị Tự Kiềm Dương */}
+                {/* Đường dẫn Cơ sinh học từ Trạm 1 -> Trạm 2 -> Trạm 3 -> Trạm 4 */}
                 <path
-                  d="M215 355 L195 480 L175 605 L215 615 L235 485 L250 385 Z"
-                  fill="#1E100B"
-                  stroke="#F5D06C"
-                  strokeWidth="1.8"
-                  strokeOpacity="0.45"
-                />
-                <path
-                  d="M250 355 L295 470 L255 605 L305 612 L330 470 L285 355 Z"
-                  fill="#28150E"
-                  stroke="#F5D06C"
-                  strokeWidth="2"
-                  strokeOpacity="0.65"
-                />
-
-                {/* Cánh tay phóng Nhật Tự Xung Quyền */}
-                <path
-                  d="M255 195 L325 255 L445 205 L445 182 L330 225 L268 180 Z"
-                  fill="#2E1910"
-                  stroke="#F5D06C"
-                  strokeWidth="2"
-                  strokeOpacity="0.7"
-                />
-                <rect x="442" y="178" width="32" height="38" rx="8" fill="#F5D06C" fillOpacity="0.25" stroke="#F5D06C" strokeWidth="2.5" />
-
-                {/* 1. LUỒNG CƠ SINH HỌC (MÀU VÀNG KIM #F5D06C): Bàn chân -> Gối -> Khung chậu -> Vai */}
-                <path
-                  d="M255 605 C270 545, 290 500, 280 470 C270 430, 255 390, 250 345 C245 295, 248 250, 255 210"
+                  d={`M ${svgStationCoords[0].x} ${svgStationCoords[0].y} L ${svgStationCoords[1].x} ${svgStationCoords[1].y} L ${svgStationCoords[2].x} ${svgStationCoords[2].y} L ${svgStationCoords[3].x} ${svgStationCoords[3].y}`}
                   fill="none"
-                  stroke="#F5D06C"
+                  stroke="#D97706"
                   strokeWidth="6"
                   strokeLinecap="round"
                   strokeDasharray="10 5"
                 />
 
-                {/* Đoạn từ Vai (Trạm 4) ra Nắm đấm (Trạm 5): Phụ thuộc vào chế độ Tùng Tĩnh hay Gồng Vai */}
+                {/* Đoạn từ Trạm 4 (Vai/Nách) ra Trạm 5 (Nắm đấm Nhật Tự Xung Quyền) */}
                 {simulationMode === "connected" ? (
                   <>
                     <path
-                      d="M255 210 L328 242 L455 198"
+                      d={`M ${svgStationCoords[3].x} ${svgStationCoords[3].y} L ${svgStationCoords[4].x} ${svgStationCoords[4].y}`}
                       fill="none"
-                      stroke="#F5D06C"
+                      stroke="#D97706"
                       strokeWidth="6"
                       strokeLinecap="round"
                     />
                     <path
-                      d="M265 605 C282 540, 298 495, 288 470 C278 425, 260 390, 250 345 C235 290, 238 245, 255 210 L330 232 L455 198"
+                      d={`M ${svgStationCoords[0].x + 8} ${svgStationCoords[0].y} L ${svgStationCoords[1].x + 8} ${svgStationCoords[1].y} L ${svgStationCoords[2].x} ${svgStationCoords[2].y} L ${svgStationCoords[3].x} ${svgStationCoords[3].y - 6} L ${svgStationCoords[4].x} ${svgStationCoords[4].y}`}
                       fill="none"
-                      stroke="#34D399"
+                      stroke="#059669"
                       strokeWidth="3.5"
                       strokeLinecap="round"
                     />
-                    <circle cx="468" cy="197" r="48" fill="url(#punchShockwave)" />
-                    <path
-                      d="M490 155 Q525 197 490 240"
-                      fill="none"
-                      stroke="#F5D06C"
-                      strokeWidth="3"
-                      strokeLinecap="round"
+                    <circle
+                      cx={svgStationCoords[4].x}
+                      cy={svgStationCoords[4].y}
+                      r="42"
+                      fill="url(#punchShockwave)"
                     />
-                    <path
-                      d="M508 140 Q552 197 508 255"
-                      fill="none"
-                      stroke="#34D399"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeDasharray="4 4"
+                    <rect
+                      x="18"
+                      y="16"
+                      width="290"
+                      height="34"
+                      rx="10"
+                      fill="#140A06"
+                      fillOpacity="0.9"
+                      stroke="#10B981"
+                      strokeWidth="1.5"
                     />
-                    <text x="395" y="95" fill="#34D399" fontSize="13" fontWeight="bold">
-                      ⚡ 100% THỐN KÌNH BỘC PHÁT
+                    <text x="30" y="38" fill="#34D399" fontSize="13" fontWeight="bold">
+                      ⚡ TÙNG TĨNH THÔNG MẠCH: 100% THỐN KÌNH
                     </text>
                   </>
                 ) : (
                   <>
                     <path
-                      d="M255 210 L328 242 L455 198"
+                      d={`M ${svgStationCoords[3].x} ${svgStationCoords[3].y} L ${svgStationCoords[4].x} ${svgStationCoords[4].y}`}
                       fill="none"
-                      stroke="#F87171"
-                      strokeWidth="2.5"
+                      stroke="#DC2626"
+                      strokeWidth="3"
                       strokeDasharray="4 8"
-                      strokeOpacity="0.6"
                     />
-                    <circle cx="255" cy="210" r="32" fill="#DC2626" fillOpacity="0.3" stroke="#F87171" strokeWidth="2.5" />
-                    <line x1="238" y1="193" x2="272" y2="227" stroke="#FCA5A5" strokeWidth="4" strokeLinecap="round" />
-                    <line x1="272" y1="193" x2="238" y2="227" stroke="#FCA5A5" strokeWidth="4" strokeLinecap="round" />
-                    <rect x="290" y="130" width="275" height="44" rx="8" fill="#450A0A" stroke="#F87171" strokeWidth="1.5" />
-                    <text x="302" y="149" fill="#FCA5A5" fontSize="12" fontWeight="bold">
-                      ✕ GỒNG VAI = ĐỨT MẠCH LỰC TỪ CHÂN!
+                    <circle
+                      cx={svgStationCoords[3].x}
+                      cy={svgStationCoords[3].y}
+                      r="30"
+                      fill="#DC2626"
+                      fillOpacity="0.35"
+                      stroke="#DC2626"
+                      strokeWidth="2.5"
+                    />
+                    <rect
+                      x="18"
+                      y="16"
+                      width="340"
+                      height="46"
+                      rx="10"
+                      fill="#450A0A"
+                      fillOpacity="0.95"
+                      stroke="#F87171"
+                      strokeWidth="1.5"
+                    />
+                    <text x="30" y="36" fill="#FCA5A5" fontSize="12" fontWeight="bold">
+                      ✕ GỒNG VAI (TRẠM 4) = ĐỨT MẠCH LỰC TỪ CHÂN!
                     </text>
-                    <text x="302" y="166" fill="#FECACA" fontSize="11">
-                      Nắm đấm chỉ còn ~15% sức cơ bắp cánh tay
+                    <text x="30" y="53" fill="#FECACA" fontSize="12">
+                      Nắm đấm chỉ còn ~15% sức cơ bắp cánh tay cục bộ
                     </text>
                   </>
                 )}
 
                 {/* Quả cầu Nội Khí tại Hạ Đan Điền (Trạm 3) */}
-                <circle cx="250" cy="345" r="36" fill="url(#dantianGlow)" />
-
-                {/* Mũi tên Phản lực mặt đất F_GRF tại bàn chân */}
-                <path d="M235 648 L235 615 M228 623 L235 613 L242 623" stroke="#F5D06C" strokeWidth="2.5" fill="none" />
-                <path d="M275 648 L275 615 M268 623 L275 613 L282 623" stroke="#34D399" strokeWidth="2.5" fill="none" />
+                <circle
+                  cx={svgStationCoords[2].x}
+                  cy={svgStationCoords[2].y}
+                  r="32"
+                  fill="url(#dantianGlow)"
+                />
 
                 {/* Vẽ 5 Nút Trạm Tương Tác (Interactive Nodes 1..5) */}
                 {svgStationCoords.map((pt, idx) => {
@@ -437,19 +558,19 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                         <circle
                           cx={pt.x}
                           cy={pt.y}
-                          r="24"
+                          r="25"
                           fill="none"
-                          stroke="#F5D06C"
-                          strokeWidth="2.5"
-                          strokeDasharray="4 3"
+                          stroke="#D97706"
+                          strokeWidth="3"
+                          strokeDasharray="5 3"
                         />
                       )}
                       <circle
                         cx={pt.x}
                         cy={pt.y}
-                        r={isSelected ? "16" : "13"}
-                        fill={isSelected ? "#F5D06C" : "#1A0E09"}
-                        stroke={isSelected ? "#FFFFFF" : "#F5D06C"}
+                        r={isSelected ? "17" : "14"}
+                        fill={isSelected ? "#F5D06C" : "#140A06"}
+                        stroke={isSelected ? "#140A06" : "#F5D06C"}
                         strokeWidth="2.5"
                       />
                       <text
@@ -638,6 +759,512 @@ export const ForcePhilosophyExplorer: React.FC<ForcePhilosophyExplorerProps> = (
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 2B. CHƯƠNG CHUYÊN KHẢO: HỆ THỐNG 8 TẤN PHÁP & BỘ PHÁP DI CHUYỂN VỊNH XUÂN  */}
+      {/* ========================================================================= */}
+      <section id="stances-footwork-atlas" className="space-y-10 scroll-mt-24">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 border-b border-white/10 pb-6">
+          <div className="space-y-2.5 max-w-4xl">
+            <div className="inline-flex items-center gap-2 text-[#F5D06C] text-xs sm:text-sm font-bold uppercase tracking-wider">
+              <Footprints className="w-4 h-4" />
+              <span>Chương Chuyên Khảo Đặc Biệt • Tấn Pháp, Bộ Pháp &amp; Phương Pháp Di Chuyển Vịnh Xuân</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif gold-gradient">
+              Tổng Hợp 8 Thế Đứng Tấn &amp; Bộ Pháp Di Chuyển Của Vịnh Xuân Quyền
+            </h2>
+            <p className="text-sm sm:text-base text-amber-100/90 leading-relaxed">
+              Khảo cứu đối chứng từ <strong>Sách gốc Phật Gia Vịnh Xuân Quyền</strong> (PGS.TS Nguyễn Mạnh Nhâm &amp; ThS.DS Nguyễn Duy Thức, 2006 — Trang 19–20, 25, 29–35, 124, 137, 161–166, 185, 199–201) kết hợp các công trình của{" "}
+              <strong>Đại Tông Sư Diệp Vấn, Đại sư Chu Thượng Đồng, Đại sư Diệp Chuẩn</strong> và <strong>Sư tổ Lương Tán (Vịnh Xuân Cổ Lao)</strong>. Mỗi bộ pháp dưới đây đều đi kèm <strong>Ảnh Võ Sư Thị Phạm + Sơ Đồ Dấu Chân Sách Gốc + Cơ Chế Phối Hợp Di Chuyển</strong>.
+            </p>
+          </div>
+
+          {/* Bộ lọc nhóm Tấn pháp & Bộ pháp */}
+          <div className="flex flex-wrap items-center gap-2 bg-[#160B07] p-1.5 rounded-2xl border border-white/15 shrink-0">
+            <button
+              onClick={() => setStanceCategoryFilter("all")}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                stanceCategoryFilter === "all"
+                  ? "bg-[#F5D06C] text-[#140A06]"
+                  : "text-amber-100 hover:text-white"
+              }`}
+            >
+              Tất Cả (8 Bộ)
+            </button>
+            <button
+              onClick={() => setStanceCategoryFilter("Tấn Pháp Tĩnh & Chuyển Trục")}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                stanceCategoryFilter === "Tấn Pháp Tĩnh & Chuyển Trục"
+                  ? "bg-[#F5D06C] text-[#140A06]"
+                  : "text-amber-100 hover:text-white"
+              }`}
+            >
+              Tấn Gốc &amp; Chuyển Trục
+            </button>
+            <button
+              onClick={() => setStanceCategoryFilter("Bộ Pháp Di Chuyển & Nhập Nội")}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                stanceCategoryFilter === "Bộ Pháp Di Chuyển & Nhập Nội"
+                  ? "bg-[#F5D06C] text-[#140A06]"
+                  : "text-amber-100 hover:text-white"
+              }`}
+            >
+              Bộ Pháp Di Chuyển &amp; Hoành Thoái
+            </button>
+            <button
+              onClick={() => setStanceCategoryFilter("Tấn Pháp Đặc Dị & Binh Khí")}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                stanceCategoryFilter === "Tấn Pháp Đặc Dị & Binh Khí"
+                  ? "bg-[#F5D06C] text-[#140A06]"
+                  : "text-amber-100 hover:text-white"
+              }`}
+            >
+              Quy Mã, Xà, Cước &amp; Binh Khí
+            </button>
+          </div>
+        </div>
+
+        {/* Thanh chọn nhanh 8 Thế Tấn & Bộ Pháp */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
+          {WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.map((stance) => {
+            const isSelected = activeStanceStudy.id === stance.id;
+            const isDimmed =
+              stanceCategoryFilter !== "all" && stance.category !== stanceCategoryFilter;
+            return (
+              <button
+                key={stance.id}
+                onClick={() => setSelectedStanceId(stance.id)}
+                className={`p-3 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
+                  isSelected
+                    ? "bg-[#F5D06C] text-[#140A06] border-[#F5D06C] font-bold shadow-xl shadow-[#F5D06C]/20"
+                    : isDimmed
+                    ? "bg-[#120906] text-amber-200/70 border-white/10 hover:border-[#F5D06C]/40"
+                    : "bg-[#190D09] text-amber-100 border-white/15 hover:border-[#F5D06C]/60"
+                }`}
+              >
+                <span
+                  className={`text-xs font-mono uppercase ${
+                    isSelected ? "text-amber-950 font-extrabold" : "text-[#F5D06C]"
+                  }`}
+                >
+                  Bộ 0{stance.order}/08
+                </span>
+                <span className="text-xs sm:text-sm font-bold mt-1.5 line-clamp-2">
+                  {stance.title}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* BẢNG PHÂN TÍCH CHUYÊN SÂU CỦA BỘ PHÁP ĐANG CHỌN (ẢNH VÕ SƯ + SƠ ĐỒ BÀN CHÂN + PHÂN TÍCH) */}
+        <div className="glass-panel rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#F5D06C]/45 bg-gradient-to-br from-[#190E09] via-[#130A06] to-[#1B0F0A] space-y-8 shadow-2xl">
+          {/* Header của Bộ pháp đang chọn */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-white/10 pb-5">
+            <div className="space-y-2">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="px-3.5 py-1 rounded-full bg-[#F5D06C] text-[#140A06] text-xs sm:text-sm font-extrabold">
+                  BỘ PHÁP 0{activeStanceStudy.order} / 08
+                </span>
+                <span className="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-bold">
+                  {activeStanceStudy.category}
+                </span>
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#F5D06C]">
+                  {activeStanceStudy.hanNom}
+                </span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold font-serif text-white">
+                {activeStanceStudy.title}
+              </h3>
+              <p className="text-xs sm:text-sm text-amber-200 font-medium">
+                🎯 {activeStanceStudy.subtitle}
+              </p>
+            </div>
+
+            {/* Nút chuyển qua bộ pháp kế tiếp */}
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              {onOpenDojoLesson && activeStanceStudy.relatedLessonId && (
+                <button
+                  onClick={() => onOpenDojoLesson(activeStanceStudy.relatedLessonId!)}
+                  className="px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-[#F5D06C]/40 text-[#F5D06C] text-xs sm:text-sm font-bold transition-all cursor-pointer"
+                >
+                  🥋 Vào Bài Quyền Thực Hành ({activeStanceStudy.relatedLessonId.toUpperCase()})
+                </button>
+              )}
+              <button
+                onClick={() => {
+                  const currentIdx = WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.findIndex(
+                    (s) => s.id === activeStanceStudy.id
+                  );
+                  const nextIdx =
+                    currentIdx < WING_CHUN_STANCES_AND_FOOTWORK_ATLAS.length - 1
+                      ? currentIdx + 1
+                      : 0;
+                  setSelectedStanceId(WING_CHUN_STANCES_AND_FOOTWORK_ATLAS[nextIdx].id);
+                }}
+                className="px-5 py-3 rounded-2xl bg-[#F5D06C] hover:bg-[#E2B743] text-[#140A06] text-xs sm:text-sm font-extrabold flex items-center gap-2 transition-all cursor-pointer shadow-lg"
+              >
+                <span>Bộ Pháp Tiếp Theo</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          {/* Hàng 1: Cặp Tư Liệu Đối Chứng Sách Gốc (Ảnh Võ Sư Thị Phạm + Sơ Đồ Bàn Chân) & Thông Số Hình Học */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+            {/* Cột 1 (4 Cols): Ảnh Võ Sư Thị Phạm Sách Gốc */}
+            <div
+              onClick={() =>
+                setZoomImg({
+                  src: activeStanceStudy.primaryImg,
+                  title: `${activeStanceStudy.title} — Ảnh Tư Liệu Sách Gốc`,
+                  caption: activeStanceStudy.primaryImgCaption,
+                })
+              }
+              className="lg:col-span-4 group rounded-2xl overflow-hidden border-2 border-[#F5D06C]/45 bg-[#FBF9F5] p-4 flex flex-col justify-between cursor-pointer hover:border-[#F5D06C] transition-all shadow-lg"
+            >
+              <div className="relative h-64 sm:h-72 w-full">
+                <Image
+                  src={activeStanceStudy.primaryImg}
+                  alt={activeStanceStudy.primaryImgCaption}
+                  fill
+                  className="object-contain martial-filter group-hover:scale-105 transition-transform"
+                  sizes="(max-width: 1024px) 100vw, 360px"
+                />
+              </div>
+              <div className="mt-3 pt-3 border-t border-amber-900/20 text-center space-y-1">
+                <span className="text-xs font-extrabold uppercase text-amber-900 block">
+                  📸 Ảnh Tư Liệu Sách Gốc (Hình Chụp / Sơ Đồ Chính)
+                </span>
+                <p className="text-xs sm:text-sm font-serif font-bold text-stone-900">
+                  {activeStanceStudy.primaryImgCaption}
+                </p>
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-amber-800 underline">
+                  <Maximize2 className="w-3.5 h-3.5" /> Phóng to ảnh tư liệu
+                </span>
+              </div>
+            </div>
+
+            {/* Cột 2 (4 Cols): Sơ Đồ Dấu Chân / Quỹ Đạo Bước Chân Sách Gốc */}
+            <div
+              onClick={() =>
+                setZoomImg({
+                  src: activeStanceStudy.diagramImg,
+                  title: `${activeStanceStudy.title} — Sơ Đồ Bàn Chân & Đối Chứng`,
+                  caption: activeStanceStudy.diagramImgCaption,
+                })
+              }
+              className="lg:col-span-4 group rounded-2xl overflow-hidden border-2 border-emerald-500/45 bg-[#FBF9F5] p-4 flex flex-col justify-between cursor-pointer hover:border-emerald-400 transition-all shadow-lg"
+            >
+              <div className="relative h-64 sm:h-72 w-full">
+                <Image
+                  src={activeStanceStudy.diagramImg}
+                  alt={activeStanceStudy.diagramImgCaption}
+                  fill
+                  className="object-contain martial-filter group-hover:scale-105 transition-transform"
+                  sizes="(max-width: 1024px) 100vw, 360px"
+                />
+              </div>
+              <div className="mt-3 pt-3 border-t border-amber-900/20 text-center space-y-1">
+                <span className="text-xs font-extrabold uppercase text-emerald-900 block">
+                  👣 Sơ Đồ Bàn Chân / Ảnh Đối Chứng Sách Gốc
+                </span>
+                <p className="text-xs sm:text-sm font-serif font-bold text-stone-900">
+                  {activeStanceStudy.diagramImgCaption}
+                </p>
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 underline">
+                  <Maximize2 className="w-3.5 h-3.5" /> Phóng to sơ đồ đối chứng
+                </span>
+              </div>
+            </div>
+
+            {/* Cột 3 (4 Cols): Hộp Thông Số Hình Học & Trọng Lượng Chuẩn Xác */}
+            <div className="lg:col-span-4 rounded-2xl bg-[#1F110B] border border-[#F5D06C]/35 p-5 sm:p-6 flex flex-col justify-between space-y-4">
+              <div className="space-y-3.5">
+                <h4 className="text-base sm:text-lg font-bold font-serif text-[#F5D06C] border-b border-white/10 pb-2">
+                  📐 Thông Số Hình Học &amp; Phân Bổ Trọng Tâm
+                </h4>
+
+                <div className="space-y-1">
+                  <span className="text-xs font-bold uppercase text-amber-300 block">
+                    1. Khoảng cách &amp; Góc hai bàn chân:
+                  </span>
+                  <p className="text-xs sm:text-sm text-white leading-relaxed">
+                    {activeStanceStudy.geometryAndWeight.footSpacing}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="text-xs font-bold uppercase text-emerald-300 block">
+                    2. Phân bổ trọng lượng (Hư – Thực):
+                  </span>
+                  <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed">
+                    {activeStanceStudy.geometryAndWeight.weightDistribution}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="text-xs font-bold uppercase text-[#F5D06C] block">
+                    3. Tâm xoay &amp; Điểm tựa bàn chân:
+                  </span>
+                  <p className="text-xs sm:text-sm text-amber-100 leading-relaxed">
+                    {activeStanceStudy.geometryAndWeight.pivotPoint}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="text-xs font-bold uppercase text-sky-300 block">
+                    4. Góc thân người &amp; Trục Tý Ngọ:
+                  </span>
+                  <p className="text-xs sm:text-sm text-sky-100 leading-relaxed">
+                    {activeStanceStudy.geometryAndWeight.bodyAngle}
+                  </p>
+                </div>
+              </div>
+
+              {/* Nguyên văn trích dẫn sách gốc */}
+              <div className="p-3.5 rounded-xl bg-black/40 border-l-4 border-[#F5D06C] space-y-1">
+                <p className="text-xs sm:text-sm font-serif italic text-amber-100">
+                  {activeStanceStudy.canonicalQuote}
+                </p>
+                <span className="block text-xs font-mono font-bold text-[#F5D06C]">
+                  — {activeStanceStudy.bookPageRef}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Hàng 2: Phân Tích Đặc Điểm Cấu Trúc + Phương Pháp Kết Hợp Di Chuyển + Nguồn Trích Dẫn */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {/* Hộp 1 (7 Cols): Đặc điểm cấu trúc thân – thủ – bộ */}
+            <div className="lg:col-span-7 p-5 sm:p-6 rounded-2xl bg-[#170C08] border border-white/15 space-y-3">
+              <h4 className="text-sm sm:text-base font-bold uppercase tracking-wider text-[#F5D06C] flex items-center gap-2">
+                <Layers className="w-4 h-4" />
+                <span>1. Đặc Điểm Cấu Trúc Thân – Thủ – Bộ &amp; Phân Tích Sách Gốc</span>
+              </h4>
+              <ul className="space-y-2.5">
+                {activeStanceStudy.structuralCharacteristics.map((point, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-2.5 text-sm sm:text-base text-[#FAF6F0] leading-relaxed"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-[#F5D06C] shrink-0 mt-1" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Hộp 2 (5 Cols): Phương pháp kết hợp di chuyển & Nguồn trích dẫn */}
+            <div className="lg:col-span-5 space-y-5 flex flex-col justify-between">
+              <div className="p-5 sm:p-6 rounded-2xl bg-[#111C16] border border-emerald-500/35 space-y-2.5">
+                <h4 className="text-sm sm:text-base font-bold uppercase tracking-wider text-emerald-300 flex items-center gap-2">
+                  <Footprints className="w-4 h-4" />
+                  <span>2. Phương Pháp Kết Hợp Di Chuyển &amp; Ứng Dụng Chiến Đấu</span>
+                </h4>
+                <p className="text-sm sm:text-base text-emerald-50 leading-relaxed">
+                  {activeStanceStudy.movementIntegration}
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                <span className="text-xs sm:text-sm font-bold uppercase text-[#F5D06C] flex items-center gap-1.5">
+                  <GraduationCap className="w-4 h-4" /> Nguồn Trích Dẫn Cho Bộ Pháp 0{activeStanceStudy.order}:
+                </span>
+                <ul className="space-y-1 text-xs sm:text-sm font-mono text-amber-100/90">
+                  {activeStanceStudy.academicCitations.map((cit, idx) => (
+                    <li key={idx}>• {cit}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* LƯỚI TỔNG QUAN TOÀN BỘ 8 TẤN PHÁP & BỘ PHÁP (GALLERY ATLAS ĐỐI CHIẾU NHANH) */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg sm:text-xl font-bold font-serif text-[#F5D06C]">
+              Bản Đồ Trực Quan Toàn Bộ {filteredStanceAtlas.length} Thế Đứng Tấn &amp; Bộ Pháp (Bấm Vào Thẻ Để Mổ Xẻ Chi Tiết)
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {filteredStanceAtlas.map((stance) => {
+              const isCurrent = activeStanceStudy.id === stance.id;
+              return (
+                <div
+                  key={stance.id}
+                  onClick={() => setSelectedStanceId(stance.id)}
+                  className={`rounded-2xl p-4 border transition-all cursor-pointer flex flex-col justify-between space-y-3 ${
+                    isCurrent
+                      ? "bg-[#22120B] border-2 border-[#F5D06C] shadow-xl"
+                      : "bg-[#140B07] border-white/15 hover:border-[#F5D06C]/60"
+                  }`}
+                >
+                  <div className="space-y-2.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="px-2.5 py-0.5 rounded-full bg-[#F5D06C]/20 border border-[#F5D06C]/40 text-[#F5D06C] text-xs font-bold">
+                        Bộ 0{stance.order}
+                      </span>
+                      <span className="text-xs font-mono text-emerald-300 truncate">
+                        {stance.hanNom}
+                      </span>
+                    </div>
+
+                    {/* Cặp ảnh thu nhỏ: Võ sư + Sơ đồ chân */}
+                    <div className="grid grid-cols-2 gap-2 bg-[#FBF9F5] rounded-xl p-2 border border-amber-900/20">
+                      <div className="relative h-28 w-full">
+                        <Image
+                          src={stance.primaryImg}
+                          alt={stance.title}
+                          fill
+                          className="object-contain martial-filter"
+                          sizes="140px"
+                        />
+                      </div>
+                      <div className="relative h-28 w-full border-l border-stone-300 pl-1">
+                        <Image
+                          src={stance.diagramImg}
+                          alt={stance.diagramImgCaption}
+                          fill
+                          className="object-contain martial-filter"
+                          sizes="140px"
+                        />
+                      </div>
+                    </div>
+
+                    <h4 className="text-base font-bold font-serif text-white leading-snug">
+                      {stance.title}
+                    </h4>
+                    <p className="text-xs text-amber-100/85 line-clamp-3 leading-relaxed">
+                      {stance.subtitle}
+                    </p>
+                  </div>
+
+                  <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs font-mono text-[#F5D06C]">
+                    <span className="truncate max-w-[60%]">{stance.bookPageRef}</span>
+                    <span className="underline font-bold shrink-0">
+                      {isCurrent ? "Đang xem" : "Chi tiết →"}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 5 NGUYÊN TẮC VÀNG KHI KẾT HỢP TẤN PHÁP & DI CHUYỂN (SÁCH GỐC TR. 31-35, 161-166) */}
+        <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-[#F5D06C]/35 bg-[#150B07] space-y-6">
+          <div className="space-y-1.5 border-b border-white/10 pb-4">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-emerald-300 block">
+              Nguyên Lý Cốt Tủy Khi Vận Bộ (Sách Gốc Trang 31–35 &amp; 161–166)
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold font-serif text-white">
+              5 Nguyên Tắc Vàng Kết Hợp Giữa Đứng Tấn &amp; Phương Pháp Di Chuyển Vịnh Xuân
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {FIVE_FOOTWORK_MOBILITY_PRINCIPLES.map((prin) => (
+              <div
+                key={prin.id}
+                className="p-5 rounded-2xl bg-[#1D100A] border border-white/15 space-y-3 flex flex-col justify-between"
+              >
+                <div className="space-y-2.5">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="px-3 py-0.5 rounded-full bg-[#F5D06C] text-[#140A06] text-xs font-extrabold">
+                      {prin.number}
+                    </span>
+                    <span className="text-xs font-mono font-bold text-[#F5D06C]">
+                      {prin.hanNom}
+                    </span>
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold font-serif text-white leading-snug">
+                    {prin.title}
+                  </h4>
+                  <p className="text-xs sm:text-sm font-serif italic text-emerald-300 bg-emerald-950/30 p-3 rounded-xl border border-emerald-500/30">
+                    💡 Hình ảnh ẩn dụ: {prin.metaphor}
+                  </p>
+                  <p className="text-sm text-amber-100/90 leading-relaxed">
+                    {prin.mechanism}
+                  </p>
+                </div>
+                <p className="text-xs font-mono text-amber-200/85 pt-2 border-t border-white/10">
+                  📚 {prin.sourceRef}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* BẢNG ĐỐI SÁNH QUỐC TẾ 4 HỆ PHÁI: PHẬT GIA VỊNH XUÂN vs CỔ LAO vs HỒNG KÔNG vs NGOẠI GIA */}
+        <div className="glass-panel rounded-3xl overflow-hidden border border-[#F5D06C]/35 bg-[#140B07]">
+          <div className="p-5 sm:p-6 bg-[#1E110B] border-b border-white/10 space-y-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F5D06C] block">
+              Khảo Cứu Đối Chiếu Liên Hệ Phái (Sách Gốc Tr. 25, 31 &amp; Tư Liệu Quốc Tế [1], [2], [3], [4])
+            </span>
+            <h3 className="text-lg sm:text-2xl font-bold font-serif text-white">
+              Bảng Đối Sánh Tấn Pháp &amp; Bộ Pháp: Phật Gia Vịnh Xuân (VN) • Vịnh Xuân Cổ Lao (Lương Tán) • Vịnh Xuân Hồng Kông (Diệp Vấn) • Võ Ngoại Gia
+            </h3>
+          </div>
+
+          <div className="divide-y divide-white/10">
+            {WING_CHUN_LINEAGE_STANCE_COMPARISON.map((row, idx) => (
+              <div
+                key={idx}
+                className="p-5 sm:p-6 space-y-4 hover:bg-white/[0.02] transition-colors"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h4 className="text-base sm:text-lg font-bold font-serif text-[#F5D06C]">
+                    {row.dimension}
+                  </h4>
+                  <span className="text-xs font-mono text-amber-200/90">
+                    📖 {row.sourceRef}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="p-4 rounded-2xl bg-amber-950/35 border border-[#F5D06C]/45 space-y-1">
+                    <span className="text-xs font-extrabold uppercase text-[#F5D06C] block">
+                      🇻🇳 1. Phật Gia Vịnh Xuân (Việt Nam)
+                    </span>
+                    <p className="text-xs sm:text-sm text-[#FAF6F0] leading-relaxed">
+                      {row.pgvxVietnam}
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-emerald-950/30 border border-emerald-500/35 space-y-1">
+                    <span className="text-xs font-extrabold uppercase text-emerald-300 block">
+                      🏮 2. Vịnh Xuân Cổ Lao (Lương Tán)
+                    </span>
+                    <p className="text-xs sm:text-sm text-emerald-50 leading-relaxed">
+                      {row.gulaoLiangJan}
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-sky-950/30 border border-sky-400/35 space-y-1">
+                    <span className="text-xs font-extrabold uppercase text-sky-300 block">
+                      🇭🇰 3. Vịnh Xuân Hồng Kông (Diệp Vấn)
+                    </span>
+                    <p className="text-xs sm:text-sm text-sky-50 leading-relaxed">
+                      {row.hongKongIpMan}
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-rose-950/25 border border-rose-500/30 space-y-1">
+                    <span className="text-xs font-extrabold uppercase text-rose-300 block">
+                      🥊 4. Võ Ngoại Gia / Karate / Boxing
+                    </span>
+                    <p className="text-xs sm:text-sm text-rose-100 leading-relaxed">
+                      {row.externalKarateBoxing}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
